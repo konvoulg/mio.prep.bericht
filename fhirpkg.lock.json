@@ -1,12 +1,10 @@
 {
-  "updated": "2023-10-05T15:22:53.6002545+02:00",
+  "updated": "2023-10-05T16:41:50.2383279+02:00",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
-    "kbv.mio.patientenkurzakte": "1.0.0",
-    "de.basisprofil.r4": "0.9.13",
-    "kbv.mio.mutterpass": "1.1.0",
-    "kbv.mio.laborbefund": "1.0.0-kommentierung",
-    "kbv.basis": "1.2.1"
+    "de.basisprofil.r4": "1.4.0",
+    "kbv.basis": "1.5.0-Expansions",
+    "kbv.mio.laborbefund": "1.0.0-kommentierung"
   },
   "missing": {}
 }

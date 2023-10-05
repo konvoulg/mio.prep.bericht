@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="MIO-PrEP-Bericht-Observation-Body-Weight" />
   <url value="https://rki.de/fhir/StructureDefinition/MIO_PrEP_Bericht_Observation_Body_Weight" />
   <name value="MIO_PrEP_Bericht_Observation_Body_Weight" />
   <status value="draft" />
-  <date value="2023-09-05T12:37:06.3878796+00:00" />
+  <date value="2023-10-05T15:04:36.861714+00:00" />
   <description value="Dieses Profil bildet die Messung eines einzelnen Körpergewichts ab." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
