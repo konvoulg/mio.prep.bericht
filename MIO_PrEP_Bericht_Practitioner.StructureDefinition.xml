@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://rki.de/fhir/StructureDefinition/Mio_PrEP_Bericht_Practitioner" />
+  <name value="MIO_PrEP_Bericht_Practitioner" />
+  <status value="draft" />
+  <date value="2023-08-31T08:34:40.4559148+00:00" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Practitioner" />
+  <baseDefinition value="https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Practitioner" />
+  <derivation value="constraint" />
+</StructureDefinition>

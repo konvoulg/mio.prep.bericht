@@ -1,0 +1,12 @@
+{
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "kbv.mio.patientenkurzakte": "1.0.0",
+    "kbv.mio.mutterpass": "1.1.0",
+    "kbv.mio.laborbefund": "1.0.0-kommentierung",
+    "kbv.basis": "1.2.1"
+  }
+}

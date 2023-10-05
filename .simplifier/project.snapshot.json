@@ -1,0 +1,110 @@
+{
+  "Timestamp": "2023-10-05T11:07:23.2797883+00:00",
+  "Files": {
+    "MIO_PrEP_Bericht_AllergyIntolerance.StructureDefinition.xml": {
+      "Length": 10478,
+      "LastWriteTime": "2023-09-05T12:54:18+00:00",
+      "Hash": "D496E586C17C1690232DA8D6E6F63A72"
+    },
+    "MIO_PrEP_Bericht_Appointment_FollowUp.StructureDefinition.xml": {
+      "Length": 6682,
+      "LastWriteTime": "2023-09-18T09:00:40+00:00",
+      "Hash": "9659F4E29F4CC4E4FD38D6AD066557E3"
+    },
+    "MIO_PrEP_Bericht_Condition_Diagnosis_Anamnestisch.StructureDefinition.xml": {
+      "Length": 635,
+      "LastWriteTime": "2023-09-18T09:00:40+00:00",
+      "Hash": "98D9DDB2480872670660FB9866E9AA54"
+    },
+    "MIO_PrEP_Bericht_Encounter_General.StructureDefinition.xml": {
+      "Length": 8515,
+      "LastWriteTime": "2023-09-18T09:00:40+00:00",
+      "Hash": "979CBB152023171A8F396CE3DC0A32E3"
+    },
+    "MIO_PrEP_Bericht_Medication_PrEP.StructureDefinition.xml": {
+      "Length": 2753,
+      "LastWriteTime": "2023-09-18T10:58:44+00:00",
+      "Hash": "526EFE247E3ECABE2704B14392978C0A"
+    },
+    "MIO_PrEP_Bericht_Observation_Body_Weight.StructureDefinition.xml": {
+      "Length": 7843,
+      "LastWriteTime": "2023-09-05T10:37:06+00:00",
+      "Hash": "4F6325548EC24A7CD42986A5FF866EEA"
+    },
+    "MIO_PrEP_Bericht_Observation_Creatinin_Level.StructureDefinition.xml": {
+      "Length": 9633,
+      "LastWriteTime": "2023-09-18T12:40:30+00:00",
+      "Hash": "1867BDA37220C6D17AA00A7980D849B2"
+    },
+    "MIO_PrEP_Bericht_Observation_Examination_General.StructureDefinition.xml": {
+      "Length": 27538,
+      "LastWriteTime": "2023-10-05T13:15:47.367706+00:00",
+      "Hash": "FF5500D5F1EE69F93263023711C5988D"
+    },
+    "MIO_PrEP_Bericht_Observation_Pregnancy_Status.StructureDefinition.json": {
+      "Length": 1079,
+      "LastWriteTime": "2023-09-13T11:38:54+00:00",
+      "Hash": "3A44EA95660F4370CD0ADE9F2BAFED60"
+    },
+    "MIO_PrEP_Bericht_Observation_PrEP_Indication.StructureDefinition.xml": {
+      "Length": 9924,
+      "LastWriteTime": "2023-09-18T09:00:40+00:00",
+      "Hash": "E43C8F8E789C41BF49DF641EF244A0C0"
+    },
+    "MIO_PrEP_Bericht_Organization.StructureDefinition.xml": {
+      "Length": 591,
+      "LastWriteTime": "2023-08-31T06:42:40+00:00",
+      "Hash": "9E086ED37E773080285C622B6D003CCB"
+    },
+    "MIO_PrEP_Bericht_PatientIn.StructureDefinition.xml": {
+      "Length": 953,
+      "LastWriteTime": "2023-10-02T12:32:52+00:00",
+      "Hash": "9360959FD98BD7F9E1CACFE4B6B286CB"
+    },
+    "MIO_PrEP_Bericht_Practitioner.StructureDefinition.xml": {
+      "Length": 591,
+      "LastWriteTime": "2023-08-31T06:34:44+00:00",
+      "Hash": "8DE9CBE3D1CF43604C58505743CB4EEF"
+    },
+    "MIO_PrEP_Bericht_PractitionerRole.StructureDefinition.xml": {
+      "Length": 1224,
+      "LastWriteTime": "2023-09-05T12:54:18+00:00",
+      "Hash": "4ABF8F1BC91556054540F64DD24A3F1A"
+    },
+    "MIO_PrEP_Bericht_Procedure_PrEP.StructureDefinition.xml": {
+      "Length": 11362,
+      "LastWriteTime": "2023-09-18T10:58:44+00:00",
+      "Hash": "02F58EBCF9E495A421735B1B080452D5"
+    },
+    "package.json": {
+      "Length": 261,
+      "LastWriteTime": "2023-10-05T11:22:10+00:00",
+      "Hash": "72976769D7302D19E5CB89F5E1E19260"
+    },
+    "project.yaml": {
+      "Length": 20,
+      "LastWriteTime": "2023-08-31T06:34:44+00:00",
+      "Hash": "42B23FADEA2F80D9D76908D39CD8463A"
+    },
+    "vs_chltp_loinc.json": {
+      "Length": 18899,
+      "LastWriteTime": "2023-10-05T09:28:18+00:00",
+      "Hash": "FEA0B03BEA35C57255F2A8BC80F5CF28"
+    },
+    "vs_hivp_loinc.json": {
+      "Length": 19093,
+      "LastWriteTime": "2023-10-05T09:29:18+00:00",
+      "Hash": "52592AFE676D0EF4D8C0440A260ADCD0"
+    },
+    "vs_negp_loinc.json": {
+      "Length": 13941,
+      "LastWriteTime": "2023-10-05T09:28:48+00:00",
+      "Hash": "43F624D8C281AC3C817F4DD31BFB7919"
+    },
+    "vs_trkp_loinc.json": {
+      "Length": 15029,
+      "LastWriteTime": "2023-10-05T13:27:18.669019+00:00",
+      "Hash": "C1A0A6968A27CE6BBAAFE23F2ED23390"
+    }
+  }
+}

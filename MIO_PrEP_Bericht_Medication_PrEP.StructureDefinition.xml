@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://example.org/fhir/StructureDefinition/MIO_PrEP_Bericht_Medication_PrEP" />
+  <name value="MIO_PrEP_Bericht_Medication_PrEP" />
+  <status value="draft" />
+  <date value="2023-09-18T12:58:43.0976117+00:00" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Medication" />
+  <baseDefinition value="https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Medication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Medication.extension:Kategorie">
+      <path value="Medication.extension" />
+      <sliceName value="Kategorie" />
+    </element>
+    <element id="Medication.extension:Kategorie.value[x]:valueCodeableConcept">
+      <path value="Medication.extension.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+    </element>
+    <element id="Medication.extension:Kategorie.value[x]:valueCodeableConcept.coding.system">
+      <path value="Medication.extension.value[x].coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Medication.extension:Kategorie.value[x]:valueCodeableConcept.coding.code">
+      <path value="Medication.extension.value[x].coding.code" />
+      <fixedCode value="763158003" />
+    </element>
+    <element id="Medication.extension:Kategorie.value[x]:valueCodeableConcept.coding.display">
+      <path value="Medication.extension.value[x].coding.display" />
+      <fixedString value="Medicinal product (product)" />
+    </element>
+    <element id="Medication.extension:Kategorie.value[x]:valueCodeableConcept.coding.userSelected">
+      <path value="Medication.extension.value[x].coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.code.coding:atc">
+      <path value="Medication.code.coding" />
+      <sliceName value="atc" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:atc.code">
+      <path value="Medication.code.coding.code" />
+      <fixedCode value="J05AR03" />
+    </element>
+    <element id="Medication.code.coding:atc.display">
+      <path value="Medication.code.coding.display" />
+      <fixedString value="TENOFOVIR DISOPROXIL EMTRICITABINE" />
+    </element>
+    <element id="Medication.code.coding:atc.userSelected">
+      <path value="Medication.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.code.text">
+      <path value="Medication.code.text" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
