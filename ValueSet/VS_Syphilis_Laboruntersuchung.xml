@@ -1,0 +1,107 @@
+<valueSets>
+<project ident="hiv-prep-">
+<valueSet id="1.2.276.0.76.3.1.1.5.5.26.11.10" name="code_laboruntersuchung" displayName="Laboruntersuchung_Syphilis_LOINC" effectiveDate="2023-05-30T09:04:28" statusCode="draft">
+<sourceCodeSystem id="2.16.840.1.113883.6.1" identifierName="Logical Observation Identifier Names and Codes" canonicalUri="http://loinc.org" canonicalUriDSTU2="http://loinc.org" canonicalUriSTU3="http://loinc.org" canonicalUriR4="http://loinc.org"/>
+<publishingAuthority name="Kassenärztliche Bundesvereinigung (KBV)"/>
+<conceptList>
+<concept code="11084-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Titer] in Serum" level="0" type="L"/>
+<concept code="14904-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Presence] in Specimen by VDRL" level="0" type="L"/>
+<concept code="20507-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Presence] in Serum by RPR" level="0" type="L"/>
+<concept code="20508-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Units/volume] in Serum by RPR" level="0" type="L"/>
+<concept code="22459-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Presence] in Cerebral spinal fluid" level="0" type="L"/>
+<concept code="22460-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Units/volume] in Cerebral spinal fluid" level="0" type="L"/>
+<concept code="22461-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Presence] in Serum" level="0" type="L"/>
+<concept code="22462-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Units/volume] in Serum" level="0" type="L"/>
+<concept code="22464-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Presence] in Specimen" level="0" type="L"/>
+<concept code="22464-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Presence] in Specimen" level="0" type="L"/>
+<concept code="31147-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Titer] in Serum by RPR" level="0" type="L"/>
+<concept code="43813-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Presence] in Cord blood" level="0" type="L"/>
+<concept code="46203-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Titer] in Cerebral spinal fluid" level="0" type="L"/>
+<concept code="47235-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Titer] in Specimen by VDRL" level="0" type="L"/>
+<concept code="47360-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Presence] in Serum from Donor by RPR" level="0" type="L"/>
+<concept code="47476-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Titer] in Specimen" level="0" type="L"/>
+<concept code="51783-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Presence] in Cord blood by VDRL" level="0" type="L"/>
+<concept code="5289-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Units/volume] in Cerebral spinal fluid by VDRL" level="0" type="L"/>
+<concept code="11597-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Serum" level="0" type="L"/>
+<concept code="13288-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Blood by Immunofluorescence" level="0" type="L"/>
+<concept code="17723-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Serum by Immobilization" level="0" type="L"/>
+<concept code="17724-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Serum by Immunofluorescence" level="0" type="L"/>
+<concept code="17725-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Serum by Latex agglutination" level="0" type="L"/>
+<concept code="17726-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Presence] in Serum by Immunofluorescence" level="0" type="L"/>
+<concept code="17727-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Units/volume] in Serum by Immunofluorescence" level="0" type="L"/>
+<concept code="17728-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM Ab [Units/volume] in Serum by Immunofluorescence" level="0" type="L"/>
+<concept code="17729-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM Ab [Presence] in Serum by Immunofluorescence" level="0" type="L"/>
+<concept code="22585-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Blood" level="0" type="L"/>
+<concept code="22586-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Cerebral spinal fluid" level="0" type="L"/>
+<concept code="22586-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Cerebral spinal fluid" level="0" type="L"/>
+<concept code="22587-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Serum" level="0" type="L"/>
+<concept code="22590-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Titer] in Serum" level="0" type="L"/>
+<concept code="22592-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Units/volume] in Serum" level="0" type="L"/>
+<concept code="22594-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM Ab [Units/volume] in Serum" level="0" type="L"/>
+<concept code="24110-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Serum by Immunoassay" level="0" type="L"/>
+<concept code="24312-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Serum by Agglutination" level="0" type="L"/>
+<concept code="26009-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Titer] in Serum by Hemagglutination" level="0" type="L"/>
+<concept code="29310-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum [Presence] in Specimen by Immunofluorescence" level="0" type="L"/>
+<concept code="34147-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG+IgM Ab [Presence] in Serum" level="0" type="L"/>
+<concept code="34382-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Titer] in Serum by Immunofluorescence" level="0" type="L"/>
+<concept code="39015-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Body fluid by Hemagglutination" level="0" type="L"/>
+<concept code="40679-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Presence] in Serum by Immunoblot" level="0" type="L"/>
+<concept code="40680-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM Ab [Presence] in Serum by Immunoblot" level="0" type="L"/>
+<concept code="41122-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Specimen" level="0" type="L"/>
+<concept code="41163-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum DNA [Presence] in Specimen by NAA with probe detection" level="0" type="L"/>
+<concept code="43238-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Serum from Donor by Immunofluorescence" level="0" type="L"/>
+<concept code="46206-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Serum from Donor" level="0" type="L"/>
+<concept code="47051-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Units/volume] in Cerebral spinal fluid by Immunofluorescence" level="0" type="L"/>
+<concept code="47063-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM Ab [Units/volume] in Cerebral spinal fluid by Immunofluorescence" level="0" type="L"/>
+<concept code="47236-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG+IgM Ab [Presence] in Serum by Immunoassay" level="0" type="L"/>
+<concept code="47237-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM Ab [Presence] in Serum by Immunoassay" level="0" type="L"/>
+<concept code="47238-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Presence] in Serum by Immunoassay" level="0" type="L"/>
+<concept code="47361-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Presence] in Serum from Donor by Immunoassay" level="0" type="L"/>
+<concept code="47511-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Body fluid" level="0" type="L"/>
+<concept code="47512-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Units/volume] in Cerebral spinal fluid" level="0" type="L"/>
+<concept code="47513-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Presence] in Serum from Donor" level="0" type="L"/>
+<concept code="47514-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM Ab [Units/volume] in Cerebral spinal fluid" level="0" type="L"/>
+<concept code="49799-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum DNA [Presence] in Cerebral spinal fluid by NAA with probe detection" level="0" type="L"/>
+<concept code="49800-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Cerebral spinal fluid by Hemagglutination" level="0" type="L"/>
+<concept code="50689-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Cerebral spinal fluid by Hemagglutination" level="0" type="L"/>
+<concept code="50695-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Titer] in Cerebral spinal fluid by Hemagglutination" level="0" type="L"/>
+<concept code="51474-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Cerebral spinal fluid" level="0" type="L"/>
+<concept code="51475-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Titer] in Cerebral spinal fluid" level="0" type="L"/>
+<concept code="51838-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Units/volume] in Serum by Immunoassay" level="0" type="L"/>
+<concept code="51839-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM Ab [Units/volume] in Serum by Immunoassay" level="0" type="L"/>
+<concept code="53605-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum DNA [Presence] in Blood by NAA with probe detection" level="0" type="L"/>
+<concept code="5392-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Serum by Immobilization" level="0" type="L"/>
+<concept code="5393-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Serum by Immunofluorescence" level="0" type="L"/>
+<concept code="5394-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Titer] in Serum by Latex agglutination" level="0" type="L"/>
+<concept code="57032-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Serum by Immunoblot" level="0" type="L"/>
+<concept code="58031-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Presence] in Cerebral spinal fluid" level="0" type="L"/>
+<concept code="58751-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Presence] in Cerebral spinal fluid by Immunofluorescence" level="0" type="L"/>
+<concept code="63464-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Serum by Immunoassay" level="0" type="L"/>
+<concept code="76766-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum polA gene [Presence] in Genital specimen by NAA with probe detection" level="0" type="L"/>
+<concept code="8041-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Serum by Hemagglutination" level="0" type="L"/>
+<concept code="91846-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum DNA [Presence] in Genital specimen by NAA with probe detection" level="0" type="L"/>
+<concept code="98215-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Cerebral spinal fluid by Immunoassay" level="0" type="L"/>
+<concept code="98216-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Units/volume] in Cerebral spinal fluid by Immunoassay" level="0" type="L"/>
+<concept code="98217-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Titer] in Cerebral spinal fluid by Immunofluorescence" level="0" type="L"/>
+<concept code="98218-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM Ab [Titer] in Cerebral spinal fluid by Immunofluorescence" level="0" type="L"/>
+<concept code="98220-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Presence] in Cerebral spinal fluid by Immunoblot" level="0" type="L"/>
+<concept code="98221-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG bands [Identifier] in Serum by Immunoblot" level="0" type="L"/>
+<concept code="98222-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG bands [Identifier] in Cerebral spinal fluid by Immunoblot" level="0" type="L"/>
+<concept code="98223-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM bands [Identifier] in Serum by Immunoblot" level="0" type="L"/>
+<concept code="98224-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM bands [Identifier] in Cerebral spinal fluid by Immunoblot" level="0" type="L"/>
+<concept code="9826-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Presence] in Cerebral spinal fluid by Immunofluorescence" level="0" type="L"/>
+<concept code="31146-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Titer] in Cerebral spinal fluid by VDRL" level="0" type="L"/>
+<concept code="50690-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Titer] in Serum by VDRL" level="0" type="L"/>
+<concept code="5290-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Presence] in Cerebral spinal fluid by VDRL" level="0" type="L"/>
+<concept code="5291-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Units/volume] in Serum by VDRL" level="0" type="L"/>
+<concept code="5292-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Presence] in Serum by VDRL" level="0" type="L"/>
+<concept code="87925-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin Ab [Titer] in Cerebral spinal fluid by RPR" level="0" type="L"/>
+<concept code="6561-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgG Ab [Presence] in Serum" level="0" type="L"/>
+<concept code="6562-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM Ab [Presence] in Serum" level="0" type="L"/>
+<concept code="69946-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum IgM Ab [Presence] in Cerebral spinal fluid by Immunoblot" level="0" type="L"/>
+<concept code="71793-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treponema pallidum Ab [Titer] in Serum or Plasma by Agglutination" level="0" type="L"/>
+<concept code="73752-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reagin and Treponema pallidum IgG and IgM [Interpretation] in Serum or Plasma" level="0" type="L"/>
+</conceptList>
+</valueSet>
+</project>
+</valueSets>
