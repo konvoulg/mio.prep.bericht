@@ -2,7 +2,7 @@
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "de.basisprofil.r4": "1.4.0",
-    "kbv.basis": "1.5.0-Expansions",
+    "kbv.basis": "1.5.0",
     "kbv.mio.laborbefund": "1.0.0-kommentierung"
   },
   "fhirVersions": [

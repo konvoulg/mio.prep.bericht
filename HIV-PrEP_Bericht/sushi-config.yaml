@@ -27,7 +27,7 @@ publisher:
 dependencies:
   de.basisprofil.r4: 1.4.0
   de.ihe-d.terminology: 3.0.0
-  kbv.basis: 1.5.0-Expansions
+  kbv.basis: 1.5.0
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
