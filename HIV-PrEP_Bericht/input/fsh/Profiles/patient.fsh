@@ -1,14 +1,13 @@
-// This is a simple example of a FSH file.
-// This file can be renamed, and additional FSH files can be added.
-// SUSHI will look for definitions in any file using the .fsh ending.
-Profile: MyPatient
-Parent: Patient
-Description: "An example profile of the Patient resource."
-* name 1..* MS
+// This is the HIV-PrEP Patient Profile inherited from kbv.basis#1.5.0 
+// 
+// 
+Profile: RKI_PR_HIV-PrEP_Patient
+Parent: KBV_PR_Base_Patient
+Id: RKI-PR-HIV-PrEP-Patient
+Title: RKI_PR_HIV-PrEP_Patient
+Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsprophylaxe zur Prävention einer HIV-Infektion gemäß § 20j SGB V in Anspruch nimmt."
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV-PrEP_Patient"
+* ^status = #draft
+* insert Meta
 
-Instance: PatientExample
-InstanceOf: MyPatient
-Description: "An example of a patient with a license to krill."
-* name
-  * given[0] = "James"
-  * family = "Pond"
+
