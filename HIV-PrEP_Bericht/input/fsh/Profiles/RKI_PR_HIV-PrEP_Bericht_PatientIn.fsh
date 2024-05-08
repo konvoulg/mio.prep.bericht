@@ -96,7 +96,8 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * gender.extension[other-amtlich].value[x].code 1..
 * gender.extension[other-amtlich].value[x].display 1..
 * gender.extension[other-amtlich].value[x].userSelected ..0
-* gender.extension[anzeigenameCode] ^sliceName = "anzeigenameCode"
+
+/* gender.extension[anzeigenameCode] ^sliceName = "anzeigenameCode"
 * gender.extension[anzeigenameCode] ^mustSupport = true
 * gender.extension[anzeigenameCode].extension[content] ^sliceName = "content"
 * gender.extension[anzeigenameCode].extension[content] ^mustSupport = true
@@ -105,7 +106,8 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * gender.extension[anzeigenameCode].extension[content].value[x] ^slicing.discriminator.path = "$this"
 * gender.extension[anzeigenameCode].extension[content].value[x] ^slicing.rules = #closed
 * gender.extension[anzeigenameCode].extension[content].valueString MS
-* gender.extension[anzeigenameCode].extension[content].valueString ^sliceName = "valueString"
+* gender.extension[anzeigenameCode].extension[content].valueString ^sliceName = "valueString"*/
+
 * birthDate MS
 * deceased[x] ..0
 * address MS
