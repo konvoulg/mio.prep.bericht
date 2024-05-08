@@ -51,9 +51,6 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * name[name].family.extension[namenszusatz] ^mustSupport = true
 * name[name].family.extension[namenszusatz].value[x] MS
 * name[name].family.extension[namenszusatz].valueString MS
-* name[name].family.extension contains
-    nachname 1..1 MS and
-    vorsatzwort 0..1 MS
 * name[name].family.extension[nachname].value[x] MS
 * name[name].family.extension[nachname].valueString MS
 * name[name].family.extension[vorsatzwort].value[x] MS
@@ -65,7 +62,6 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * name[name].prefix.extension[prefix-qualifier].valueCode 1.. MS
 * name[name].suffix ..0
 * name[name].period ..0
-* name contains geburtsname 0..0
 * telecom MS
 * telecom.system MS
 * telecom.value MS
