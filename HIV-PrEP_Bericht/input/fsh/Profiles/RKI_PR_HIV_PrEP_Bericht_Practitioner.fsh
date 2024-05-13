@@ -102,7 +102,8 @@ Description: "In diesem Profil kann eine behandelnde Person dokumentiert werden.
 * name[name].suffix ..0
 * name[name].period ..0
 
-* name contains geburtsname 0..0 MS
+//Outcomment until fixing it
+//* geburtsname 0..0
 
 * telecom MS
 * telecom.system MS
@@ -110,19 +111,7 @@ Description: "In diesem Profil kann eine behandelnde Person dokumentiert werden.
 * telecom.system.extension ^slicing.discriminator.path = "url"
 * telecom.system.extension ^slicing.rules = #closed
 * telecom.system.extension ^min = 0
-* telecom.system.extension[anzeigenameCode] ^sliceName = "anzeigenameCode"
-* telecom.system.extension[anzeigenameCode] ^min = 0
-* telecom.system.extension[anzeigenameCode] ^mustSupport = true
-* telecom.system.extension[anzeigenameCode].extension ^slicing.discriminator.type = #value
-* telecom.system.extension[anzeigenameCode].extension ^slicing.discriminator.path = "url"
-* telecom.system.extension[anzeigenameCode].extension ^slicing.rules = #closed
-* telecom.system.extension[anzeigenameCode].extension[content] ^sliceName = "content"
-* telecom.system.extension[anzeigenameCode].extension[content].value[x] MS
-* telecom.system.extension[anzeigenameCode].extension[content].value[x] ^slicing.discriminator.type = #type
-* telecom.system.extension[anzeigenameCode].extension[content].value[x] ^slicing.discriminator.path = "$this"
-* telecom.system.extension[anzeigenameCode].extension[content].value[x] ^slicing.rules = #closed
-* telecom.system.extension[anzeigenameCode].extension[content].valueString MS
-* telecom.system.extension[anzeigenameCode].extension[content].valueString ^sliceName = "valueString"
+
 * telecom.value MS
 * telecom.use ..0
 * telecom.rank ..0
@@ -194,15 +183,6 @@ Description: "In diesem Profil kann eine behandelnde Person dokumentiert werden.
 * gender.extension[other-amtlich].value[x].display 1..
 * gender.extension[other-amtlich].value[x].userSelected ..0
 
-* gender.extension[anzeigenameCode] ^min = 0
-* gender.extension[anzeigenameCode] ^mustSupport = true
-
-* gender.extension[anzeigenameCode].extension[content] ^min = 0
-* gender.extension[anzeigenameCode].extension[content] ^mustSupport = true
-* gender.extension[anzeigenameCode].extension[content].value[x] MS
-
-* gender.extension[anzeigenameCode].extension[content].valueString MS
-
 * birthDate ..0
 * photo ..0
 
@@ -218,18 +198,6 @@ Description: "In diesem Profil kann eine behandelnde Person dokumentiert werden.
 * qualification.code.coding.display.extension ^slicing.discriminator.path = "url"
 * qualification.code.coding.display.extension ^slicing.rules = #closed
 * qualification.code.coding.display.extension ^min = 0
-* qualification.code.coding.display.extension contains anzeigenameQualifikation 0..1 MS
-
-* qualification.code.coding.display.extension[anzeigenameQualifikation].extension ^slicing.discriminator.type = #value
-* qualification.code.coding.display.extension[anzeigenameQualifikation].extension ^slicing.discriminator.path = "url"
-* qualification.code.coding.display.extension[anzeigenameQualifikation].extension ^slicing.rules = #closed
-* qualification.code.coding.display.extension[anzeigenameQualifikation].extension[content] ^sliceName = "content"
-* qualification.code.coding.display.extension[anzeigenameQualifikation].extension[content].value[x] MS
-* qualification.code.coding.display.extension[anzeigenameQualifikation].extension[content].value[x] ^slicing.discriminator.type = #type
-* qualification.code.coding.display.extension[anzeigenameQualifikation].extension[content].value[x] ^slicing.discriminator.path = "$this"
-* qualification.code.coding.display.extension[anzeigenameQualifikation].extension[content].value[x] ^slicing.rules = #closed
-* qualification.code.coding.display.extension[anzeigenameQualifikation].extension[content].valueString 1.. MS
-* qualification.code.coding.display.extension[anzeigenameQualifikation].extension[content].valueString ^sliceName = "valueString"
 
 * qualification.code.coding.userSelected ..0
 * qualification.code.text ..0
