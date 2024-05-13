@@ -5,7 +5,7 @@ Profile: RKI_PR_HIV_PrEP_Practitioner
 Parent: KBV_PR_Base_Practitioner
 Id: RKI-PR-HIV-PrEP-Practitioner
 Title: "RKI_PR_HIV-PrEP_Practitioner"
-Description: "In diesem Profil kann eine behandelnde Person dokumentiert werden."
+Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen ärztlichen, aber auch nicht ärztlichen Hintergrund besitzen."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner"
 
 * insert Meta
