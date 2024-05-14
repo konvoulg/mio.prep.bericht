@@ -9,6 +9,7 @@ Description: "Die Einrichtung beschreibt beispielsweise den Ort, an dem ein Kont
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization"
 
 * insert Meta
+
 * meta 1..
 * meta.versionId ..0
 * meta.lastUpdated ..0
