@@ -67,9 +67,17 @@ Description: "Die Einrichtung beschreibt beispielsweise den Ort, an dem ein Kont
 * identifier[KZV-Abrechnungsnummer].period ..0
 * identifier[KZV-Abrechnungsnummer].assigner ..0
 
+* identifier[Telematik-ID] ^mustSupport = true
+* identifier[Telematik-ID].use ..0
+* identifier[Telematik-ID].type.coding.userSelected ..0
+* identifier[Telematik-ID].type.text ..0
+* identifier[Telematik-ID].period ..0
+* identifier[Telematik-ID].assigner ..0
+
+
 * active ..0
 
-* type ..0
+//* type ..0
 
 * name MS
 
