@@ -46,21 +46,21 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 * organization.identifier ..0
 * organization.display ..0
 * code MS
-* code from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_LAB_RoleCare|1.0.0 (extensible)
+* code from https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care (required)
 * code.coding 1..1 MS
-* code.coding.system 1..
-* code.coding.version 1..
-* code.coding.code 1..
-* code.coding.display 1..
+* code.coding.system 1.. MS
+* code.coding.version 1.. MS
+* code.coding.code 1.. MS 
+* code.coding.display 1.. MS 
 * code.coding.userSelected ..0
 * code.text MS
 * specialty MS
 * specialty.coding ..1 MS
-* specialty.coding from https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE|1.01 (example)
-* specialty.coding.system 1..
-* specialty.coding.version 1..
-* specialty.coding.code 1..
-* specialty.coding.display 1..
+* specialty.coding from https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE|1.01 (required)
+* specialty.coding.system 1.. MS
+* specialty.coding.version 1.. MS
+* specialty.coding.code 1.. MS
+* specialty.coding.display 1.. MS
 * specialty.coding.userSelected ..0
 * specialty.text MS
 * location ..0
