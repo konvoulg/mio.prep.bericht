@@ -190,13 +190,14 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 * qualification.identifier ..0
 * qualification.code MS
 * qualification.code.coding 1..1 MS
+* qualification.code.coding from https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_Speciality (required)
 * qualification.code.coding.system 1..
 * qualification.code.coding.version 1..
 * qualification.code.coding.code 1..
 * qualification.code.coding.display 1..
 * qualification.code.coding.display.extension ^slicing.discriminator.type = #value
 * qualification.code.coding.display.extension ^slicing.discriminator.path = "url"
-* qualification.code.coding.display.extension ^slicing.rules = #closed
+* qualification.code.coding.display.extension ^slicing.rules = #open
 * qualification.code.coding.display.extension ^min = 0
 
 * qualification.code.coding.userSelected ..0
