@@ -8,7 +8,7 @@ Title: "RKI_PR_HIV-PrEP_Practitioner"
 Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen ärztlichen, aber auch nicht ärztlichen Hintergrund besitzen."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner"
 
-* insert Meta
+* insert Meta-Profile
 * meta 1..
 * meta.versionId ..0
 * meta.lastUpdated ..0

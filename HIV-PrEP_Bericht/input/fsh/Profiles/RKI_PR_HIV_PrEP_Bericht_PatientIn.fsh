@@ -8,7 +8,7 @@ Title: "RKI_PR_HIV-PrEP_PatientIn"
 Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsprophylaxe zur Prävention einer HIV-Infektion gemäß § 20j SGB V in Anspruch nimmt."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient"
 
-* insert Meta
+* insert Meta-Profile
 * meta 1..
 * meta.versionId ..0
 * meta.lastUpdated ..0

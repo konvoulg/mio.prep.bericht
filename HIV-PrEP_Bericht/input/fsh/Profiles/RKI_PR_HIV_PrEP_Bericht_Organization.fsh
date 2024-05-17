@@ -8,7 +8,7 @@ Title: "RKI_PR_HIV-PrEP_Organization"
 Description: "Die Einrichtung beschreibt beispielsweise den Ort, an dem ein Kontakt zwischen der zu behandelnden Person und der leistungserbringenden Person stattfindet (z. B. Praxis)."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization"
 
-* insert Meta
+* insert Meta-Profile
 
 * meta 1..
 * meta.versionId ..0

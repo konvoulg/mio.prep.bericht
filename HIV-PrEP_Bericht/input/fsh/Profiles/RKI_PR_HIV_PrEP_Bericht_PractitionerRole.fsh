@@ -8,7 +8,7 @@ Title: "RKI_PR_HIV-PrEP_PractitionerRole"
 Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug zu einer Einrichtung beschrieben."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_PractitionerRole"
 
-* insert Meta
+* insert Meta-Profile
 * meta 1..
 * meta.versionId ..0
 * meta.lastUpdated ..0
