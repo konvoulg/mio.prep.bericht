@@ -13,13 +13,13 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * meta MS
 * meta.versionId MS
 * meta.lastUpdated MS
-//* meta.source 
 * meta.profile MS
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains mioProfile 0..*
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient|0.1.0"
+//* meta.source 
 //* meta.security 
 //* meta.tag 
 // Nach Abstimmung werden wir kein ..0 benutzen nach HL7 Best Practices. 0..0 nur in ausnahmefällen
