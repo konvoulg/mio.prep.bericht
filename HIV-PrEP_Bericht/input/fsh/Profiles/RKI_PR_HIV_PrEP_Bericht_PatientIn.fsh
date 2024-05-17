@@ -233,10 +233,10 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * communication MS
 * communication.language MS
 * communication.language.coding 1..1 MS
-* communication.language.coding.system 1..
-* communication.language.coding.version 1..
-* communication.language.coding.code 1..
-* communication.language.coding.display 1..
+* communication.language.coding.system 1.. MS
+* communication.language.coding.version 1.. MS
+* communication.language.coding.code 1.. MS
+* communication.language.coding.display 1.. MS
 //* communication.language.coding.userSelected ..0
 //* communication.language.text ..0
 //* communication.preferred ..0
