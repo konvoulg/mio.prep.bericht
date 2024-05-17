@@ -13,15 +13,15 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * meta MS
 * meta.versionId MS
 * meta.lastUpdated MS
-* meta.source 
+//* meta.source 
 * meta.profile MS
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
-* meta.profile contains mioProfile
+* meta.profile contains mioProfile 0..*
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient|0.1.0"
-* meta.security 
-* meta.tag 
+//* meta.security 
+//* meta.tag 
 // Nach Abstimmung werden wir kein ..0 benutzen nach HL7 Best Practices. 0..0 nur in ausnahmefällen
 //* implicitRules ..0
 
@@ -140,24 +140,29 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * telecom MS
 * telecom.system MS
 * telecom.value MS
+
 //* telecom.use ..0
 //* telecom.rank ..0
 //* telecom.period ..0
+
 * gender MS
 * gender.extension ^min = 0
+
 //* gender.extension[other-amtlich] ^sliceName = "other-amtlich"
 //* gender.extension[other-amtlich] ^min = 0
+
 * gender.extension[other-amtlich] ^mustSupport = true
 * gender.extension[other-amtlich].value[x] MS
+
 //* gender.extension[other-amtlich].value[x] ^slicing.discriminator.type = #type
 //* gender.extension[other-amtlich].value[x] ^slicing.discriminator.path = "$this"
 //* gender.extension[other-amtlich].value[x] ^slicing.rules = #closed
-/*
-* gender.extension[other-amtlich].value[x].coding.system 1..
-* gender.extension[other-amtlich].value[x].coding.version 1..
-* gender.extension[other-amtlich].value[x].coding.code 1..
-* gender.extension[other-amtlich].value[x].coding.display 1..
-*/
+
+* gender.extension[other-amtlich].value[x].system 1.. MS
+* gender.extension[other-amtlich].value[x].version 1.. MS
+* gender.extension[other-amtlich].value[x].code 1.. MS
+* gender.extension[other-amtlich].value[x].display 1.. MS
+
 //* gender.extension[other-amtlich].value[x].userSelected ..0
 
 /* gender.extension[anzeigenameCode] ^sliceName = "anzeigenameCode"
