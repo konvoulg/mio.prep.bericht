@@ -9,7 +9,7 @@ name: HIV-PrEP Bericht
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
-version: 1.0.0
+version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -25,7 +25,7 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  de.basisprofil.r4: 1.4.0
+  #de.basisprofil.r4: 1.4.0
   #de.ihe-d.terminology: 3.0.0
   kbv.basis: 1.5.0
   kbv.mio.laborbefund: 1.0.0-kommentierung
@@ -78,9 +78,9 @@ dependencies:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Artifacts: artifacts.html
+#menu:
+# Home: index.html
+# Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -188,7 +188,7 @@ menu:
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.
 #
-# FSHOnly: false
+FSHOnly: true
 #
 #
 # When set to true, the "short" and "definition" field on the root element of an Extension will
