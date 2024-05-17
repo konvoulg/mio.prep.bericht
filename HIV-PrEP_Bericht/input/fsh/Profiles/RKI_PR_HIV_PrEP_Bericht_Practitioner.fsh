@@ -141,10 +141,11 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 * telecom.system.extension ^min = 0
 
 * telecom.value MS
-* telecom.use ..0
-* telecom.rank ..0
-* telecom.period ..0
+//* telecom.use ..0
+//* telecom.rank ..0
+//* telecom.period ..0
 
+* address MS
 * address[Strassenanschrift] ^mustSupport = true
 * address[Strassenanschrift].extension ^min = 0
 * address[Strassenanschrift].extension[Stadtteil] ^min = 0
@@ -216,7 +217,7 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 
 * qualification MS
 * qualification.identifier ..0
-* qualification.code MS
+* qualification.code 0..1 MS
 * qualification.code.coding 1..1 MS
 * qualification.code.coding from https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_Speciality|1.5.0 (required)
 * qualification.code.coding.system 1..
