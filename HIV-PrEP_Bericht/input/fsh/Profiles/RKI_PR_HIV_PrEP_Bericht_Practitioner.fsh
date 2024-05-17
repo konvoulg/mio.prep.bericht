@@ -9,7 +9,7 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner"
 
 * insert Meta-Profile
-* meta 1..
+* meta MS
 * meta.versionId MS
 * meta.lastUpdated MS
 //* meta.source ..0

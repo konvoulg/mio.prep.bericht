@@ -9,42 +9,50 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_PractitionerRole"
 
 * insert Meta-Profile
-* meta 1..
-* meta.versionId ..0
-* meta.lastUpdated ..0
-* meta.source ..0
-* meta.profile 1..1
-* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_PractitionerRole|0.1.0"
-* meta.security ..0
-* meta.tag ..0
+* meta MS
+* meta.versionId MS
+* meta.lastUpdated MS
+* meta.profile MS
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains mioProfile 0..*
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_PractitionerRole|0.1.0"
 
-* implicitRules ..0
+//* meta.source ..0
+//* meta.security ..0
+//* meta.tag ..0
 
-* language ..0
+//* implicitRules ..0
+
+//* language ..0
 
 * text ^definition = "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
 * text.status = #extensions
 
-* contained ..0
+//* contained ..0
 
-* identifier ..0
+//* identifier ..0
 
-* active ..0
+//* active ..0
 
-* period ..0
+//* period ..0
 
 * practitioner only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner|0.1.0)
 * practitioner MS
-* practitioner.reference 1.. MS
-* practitioner.type ..0
-* practitioner.identifier ..0
+* practitioner.reference MS
+* practitioner.identifier only $identifier-anr or $identifier-telematik-id
+* practitioner.identifier MS
+//* practitioner.type ..0
+* practitioner.identifier 
 * practitioner.display ..0
 * organization only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization|0.1.0)
 * organization MS
-* organization.reference 1.. MS
-* organization.type ..0
-* organization.identifier ..0
-* organization.display ..0
+* organization.reference MS
+//* organization.type ..0
+* organization.identifier only $identifier-iknr or $identifier-bsnr or $identifier-kzva or $identifier-telematik-id
+* organization.identifier MS
+//* organization.display ..0
 * code MS
 * code from https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care (required)
 * code.coding 1..1 MS
@@ -63,10 +71,10 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 * specialty.coding.display 1.. MS
 * specialty.coding.userSelected ..0
 * specialty.text MS
-* location ..0
-* healthcareService ..0
-* telecom ..0
-* availableTime ..0
-* notAvailable ..0
-* availabilityExceptions ..0
-* endpoint ..0
+//* location ..0
+//* healthcareService ..0
+//* telecom ..0
+//* availableTime ..0
+//* notAvailable ..0
+//* availabilityExceptions ..0
+//* endpoint ..0
