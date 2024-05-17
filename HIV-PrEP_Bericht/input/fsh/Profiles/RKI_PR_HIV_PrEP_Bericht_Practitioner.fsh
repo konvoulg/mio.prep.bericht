@@ -10,29 +10,33 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 
 * insert Meta-Profile
 * meta 1..
-* meta.versionId ..0
-* meta.lastUpdated ..0
-* meta.source ..0
-* meta.profile 1..1
-* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner|0.1.0"
-* meta.security ..0
-* meta.tag ..0
+* meta.versionId MS
+* meta.lastUpdated MS
+//* meta.source ..0
+* meta.profile MS
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains mioProfile 0..*
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner|0.1.0"
+//* meta.security ..0
+//* meta.tag ..0
 
-* implicitRules ..0
+//* implicitRules ..0
 
-* language ..0
+//* language ..0
 
 * text ^definition = "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
 * text.status = #extensions
 
-* contained ..0
+//* contained ..0
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #closed
 * extension ^min = 0
 
-* extension[ergaenzende_Angaben] ^sliceName = "ergaenzende_Angaben"
+/** extension[ergaenzende_Angaben] ^sliceName = "ergaenzende_Angaben"
 * extension[ergaenzende_Angaben] ^min = 0
 * extension[ergaenzende_Angaben] ^mustSupport = true
 * extension[ergaenzende_Angaben].value[x] MS
@@ -40,38 +44,62 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 * extension[ergaenzende_Angaben].value[x] ^slicing.discriminator.path = "$this"
 * extension[ergaenzende_Angaben].value[x] ^slicing.rules = #closed
 * extension[ergaenzende_Angaben].valueString MS
-* extension[ergaenzende_Angaben].valueString ^sliceName = "valueString"
+* extension[ergaenzende_Angaben].valueString ^sliceName = "valueString"*/
 
 * identifier MS
 * identifier[ANR] ^mustSupport = true
-* identifier[ANR].use ..0
-* identifier[ANR].type.coding.userSelected ..0
-* identifier[ANR].type.text ..0
-* identifier[ANR].period ..0
-* identifier[ANR].assigner ..0
+* identifier[ANR] ^definition = "Die Arztnummer (umgangssprachlich auch Lebenslange Arztnummer „LANR“ genannt) wird an jede im vertragsärztlichen Bereich oder in einem nach § 108 SGB V zugelassenen Krankenhaus ärztlich tätige Person vergeben. Im vertragsärztlichen Bereich erfolgt die Vergabe durch die zuständige Kassenärztliche Vereinigung, im Krankenhausbereich durch das Krankenhaus-Arztverzeichnis nach § 293 Abs. 7 SGB V. Die Arztnummer setzt sich aus insgesamt neun Ziffern zusammen:\n\n1. einer sechsstelligen eineindeutigen Ziffernfolge (Ziffern1-6);\n2. einer Prüfziffer (Ziffer 7);\n3. einem zweistelligen Arztgruppenschlüssel, der den Versorgungsbereich sowie die \n\nFacharztgruppe differenziert nach Schwerpunkten angibt (Ziffern 8-9) gemäß Anlage 2 (Richtlinie der Kassenärztlichen Bundesvereinigung nach § 75 Absatz 7 SGB V zur Vergabe der Arzt-, Betriebsstätten- sowie der Praxisnetznummern)."
+* identifier[ANR].type MS
+* identifier[ANR].type.coding MS
+* identifier[ANR].type.coding.system MS
+* identifier[ANR].type.coding.code MS
+* identifier[ANR].type.coding.display 1.. MS
+* identifier[ANR].system MS
+* identifier[ANR].value MS
+//* identifier[ANR].use ..0
+//* identifier[ANR].type.coding.userSelected ..0
+//* identifier[ANR].type.text ..0
+//* identifier[ANR].period ..0
+//* identifier[ANR].assigner ..0
 
-* identifier[EFN] ^mustSupport = true
+/** identifier[EFN] ^mustSupport = true
 * identifier[EFN].use ..0
 * identifier[EFN].type.coding.userSelected ..0
 * identifier[EFN].type.text ..0
 * identifier[EFN].period ..0
-* identifier[EFN].assigner ..0
+* identifier[EFN].assigner ..0*/
 
 * identifier[ZANR] ^mustSupport = true
+* identifier[ZANR].type MS
+* identifier[ZANR].type.coding MS
+* identifier[ZANR].type.coding.system MS
+* identifier[ZANR].type.coding.code MS
+* identifier[ZANR].type.coding.display 1.. MS
+* identifier[ZANR].system MS
+* identifier[ZANR].value MS
+/*
 * identifier[ZANR].use ..0
 * identifier[ZANR].type.coding.userSelected ..0
 * identifier[ZANR].type.text ..0
 * identifier[ZANR].period ..0
-* identifier[ZANR].assigner ..0
+* identifier[ZANR].assigner ..0 */
 
 * identifier[Telematik-ID] ^mustSupport = true
+* identifier[Telematik-ID].type MS
+* identifier[Telematik-ID].type.coding MS
+* identifier[Telematik-ID].type.coding.system MS
+* identifier[Telematik-ID].type.coding.code MS
+* identifier[Telematik-ID].type.coding.display 1.. MS
+* identifier[Telematik-ID].system MS
+* identifier[Telematik-ID].value MS
+/*
 * identifier[Telematik-ID].use ..0
 * identifier[Telematik-ID].type.coding.userSelected ..0
 * identifier[Telematik-ID].type.text ..0
 * identifier[Telematik-ID].period ..0
 * identifier[Telematik-ID].assigner ..0
-
-* active ..0
+*/
+//* active ..0
 
 * name MS
 * name[name] ^mustSupport = true
@@ -99,8 +127,8 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 
 * name[name].prefix.extension[prefix-qualifier].valueCode MS
 
-* name[name].suffix ..0
-* name[name].period ..0
+//* name[name].suffix ..0
+//* name[name].period ..0
 
 //Outcomment until fixing it
 //* geburtsname 0..0
@@ -183,14 +211,14 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 * gender.extension[other-amtlich].value[x].display 1..
 * gender.extension[other-amtlich].value[x].userSelected ..0
 
-* birthDate ..0
-* photo ..0
+//* birthDate ..0
+//* photo ..0
 
 * qualification MS
 * qualification.identifier ..0
 * qualification.code MS
 * qualification.code.coding 1..1 MS
-* qualification.code.coding from https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_Speciality (required)
+* qualification.code.coding from https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_Speciality|1.5.0 (required)
 * qualification.code.coding.system 1..
 * qualification.code.coding.version 1..
 * qualification.code.coding.code 1..
@@ -200,9 +228,9 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 * qualification.code.coding.display.extension ^slicing.rules = #open
 * qualification.code.coding.display.extension ^min = 0
 
-* qualification.code.coding.userSelected ..0
-* qualification.code.text ..0
-* qualification.period ..0
-* qualification.issuer ..0
+//* qualification.code.coding.userSelected ..0
+//* qualification.code.text ..0
+//* qualification.period ..0
+//* qualification.issuer ..0
 
-* communication ..0
+//* communication ..0
