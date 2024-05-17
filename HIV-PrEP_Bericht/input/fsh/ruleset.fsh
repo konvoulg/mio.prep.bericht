@@ -1,4 +1,4 @@
-RuleSet: Meta
+RuleSet: Meta-Profile
 * ^status = #draft
 * ^publisher = "Robert Koch Institut"
-* ^version = "1.0.0"
+* ^version = "0.1.0"
