@@ -65,10 +65,11 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 * specialty MS
 * specialty.coding ..1 MS
 * specialty.coding from https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE|1.01 (required)
-* specialty.coding.system 1.. MS
-* specialty.coding.version 1.. MS
-* specialty.coding.code 1.. MS
-* specialty.coding.display 1.. MS
+* specialty.coding[KBV-Fachgruppe] ^mustSupport = true
+* specialty.coding[KBV-Fachgruppe].system MS
+* specialty.coding[KBV-Fachgruppe].version MS
+* specialty.coding[KBV-Fachgruppe].code MS
+* specialty.coding[KBV-Fachgruppe].display MS
 * specialty.coding.userSelected ..0
 * specialty.text MS
 //* location ..0
