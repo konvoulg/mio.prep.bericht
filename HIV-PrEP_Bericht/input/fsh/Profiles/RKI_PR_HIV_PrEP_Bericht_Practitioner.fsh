@@ -216,8 +216,8 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 //* photo ..0
 
 * qualification MS
-* qualification.identifier ..0
-* qualification.code 0..1 MS
+//* qualification.identifier ..0
+* qualification.code MS
 * qualification.code.coding 1..1 MS
 * qualification.code.coding from https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_Speciality|1.5.0 (required)
 * qualification.code.coding.system 1..
