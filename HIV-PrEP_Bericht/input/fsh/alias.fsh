@@ -18,3 +18,10 @@ Alias: $IHEXDShealthcareFacilityTypeCode = http://ihe-d.de/ValueSets/IHEXDShealt
 Alias: $Fachabteilungsschluessel = http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel
 Alias: $Fachabteilungsschluessel-erweitert = http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert
 Alias: $KBV_VS_Base_Deuev_Anlage_8 = https://fhir.kbv.de/ValueSet/KBV_VS_Base_Deuev_Anlage_8
+
+//Aliases identifier Organization und Prctitioner
+Alias: $identifier-telematik-id = http://fhir.de/StructureDefinition/identifier-telematik-id
+Alias: $identifier-anr = http://fhir.de/StructureDefinition/identifier-lanr
+Alias: $identifier-iknr = http://fhir.de/StructureDefinition/identifier-iknr
+Alias: $identifier-bsnr = http://fhir.de/StructureDefinition/identifier-bsnr
+Alias: $identifier-kzva = http://fhir.de/StructureDefinition/identifier-kzva
