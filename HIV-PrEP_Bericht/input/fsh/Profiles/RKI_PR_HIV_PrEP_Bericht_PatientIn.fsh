@@ -9,65 +9,98 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient"
 
 * insert Meta-Profile
-* meta 1..
-* meta.versionId ..0
-* meta.lastUpdated ..0
-* meta.source ..0
-* meta.profile 1..1
-* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient|1.0.0"
-* meta.security ..0
-* meta.tag ..0
 
-* implicitRules ..0
+* meta MS
+* meta.versionId MS
+* meta.lastUpdated MS
+* meta.source 
+* meta.profile MS
+* meta.profile ^slicing.discriminator.type = #value
+* meta.profile ^slicing.discriminator.path = "$this"
+* meta.profile ^slicing.rules = #open
+* meta.profile contains mioProfile 1..1
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient|1.0.0"
+* meta.security 
+* meta.tag 
+// Nach Abstimmung werden wir kein ..0 benutzen nach HL7 Best Practices. 0..0 nur in ausnahmefällen
+//* implicitRules ..0
 
-* language ..0
+//* language ..0
 
 * text ^definition = "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
 * text.status = #extensions
 
-* contained ..0
+//* contained ..0
 
 * identifier MS
-
+/*
 * identifier[pid] ^mustSupport = true
 * identifier[pid].use ..0
 * identifier[pid].type.coding.userSelected ..0
 * identifier[pid].type.text ..0
 * identifier[pid].period ..0
 * identifier[pid].assigner ..0
-
+*/
 * identifier[versichertenId_GKV] ^mustSupport = true
-* identifier[versichertenId_GKV].use ..0
-* identifier[versichertenId_GKV].type.coding.userSelected ..0
-* identifier[versichertenId_GKV].type.text ..0
-* identifier[versichertenId_GKV].period ..0
-* identifier[versichertenId_GKV].assigner ..0
+* identifier[versichertenId_GKV].type MS
+* identifier[versichertenId_GKV].type.coding MS
+* identifier[versichertenId_GKV].type.coding.system MS
+* identifier[versichertenId_GKV].type.coding.code MS
+* identifier[versichertenId_GKV].type.coding.display 1.. MS
+* identifier[versichertenId_GKV].system MS
+* identifier[versichertenId_GKV].value MS
 
-* identifier[versichertennummer_pkv] ^mustSupport = true
+//* identifier[versichertenId_GKV].use 
+//* identifier[versichertenId_GKV].type.coding.userSelected ..0
+//* identifier[versichertenId_GKV].type.text ..0
+//* identifier[versichertenId_GKV].period ..0
+//* identifier[versichertenId_GKV].assigner ..0
+
+/** identifier[versichertennummer_pkv] ^mustSupport = true
 * identifier[versichertennummer_pkv].use ..0
 * identifier[versichertennummer_pkv].type.coding.userSelected ..0
 * identifier[versichertennummer_pkv].type.text ..0
-* identifier[versichertennummer_pkv].period ..0
+* identifier[versichertennummer_pkv].period ..0 */
+
+* identifier[versichertennummer_pkv] ^mustSupport = true
+* identifier[versichertennummer_pkv].type MS
+* identifier[versichertennummer_pkv].type.coding MS
+* identifier[versichertennummer_pkv].type.coding.system MS
+* identifier[versichertennummer_pkv].type.coding.code MS
+* identifier[versichertennummer_pkv].type.coding.display 1.. MS
+* identifier[versichertennummer_pkv].system MS
+* identifier[versichertennummer_pkv].value MS
 
 //In Basis profil 1..1 daher kann nicht auf 0..0 gesetzt
 //* identifier[versichertennummer_pkv].assigner ..0
 
-* identifier[reisepassnummer] ^mustSupport = true
+
+//Reisepass nr. wird nicht benötigt nur optional da von basis
+
+/** identifier[reisepassnummer] ^mustSupport = true
 * identifier[reisepassnummer].use ..0
 * identifier[reisepassnummer].type.coding.userSelected ..0
 * identifier[reisepassnummer].type.text ..0
 * identifier[reisepassnummer].period ..0
-* identifier[reisepassnummer].assigner ..0
+* identifier[reisepassnummer].assigner ..0*/
 
 * identifier[versichertennummer_kvk] ^mustSupport = true
+* identifier[versichertennummer_kvk].type MS
+* identifier[versichertennummer_kvk].type.coding MS
+* identifier[versichertennummer_kvk].type.coding.system MS
+* identifier[versichertennummer_kvk].type.coding.code MS
+* identifier[versichertennummer_kvk].type.coding.display 1.. MS
+* identifier[versichertennummer_kvk].system MS
+* identifier[versichertennummer_kvk].value MS
+/*
 * identifier[versichertennummer_kvk].use ..0
 * identifier[versichertennummer_kvk].type.coding.userSelected ..0
 * identifier[versichertennummer_kvk].type.text ..0
 * identifier[versichertennummer_kvk].value ^maxLength = 10
 * identifier[versichertennummer_kvk].period ..0
 * identifier[versichertennummer_kvk].assigner ..0
-
-* active ..0
+*/
+//* active ..0
 
 * name MS
 
@@ -100,16 +133,16 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * name[name].prefix.extension[prefix-qualifier].value[x] MS
 * name[name].prefix.extension[prefix-qualifier].valueCode 1.. MS
 
-* name[name].suffix ..0
+//* name[name].suffix ..0
 
-* name[name].period ..0
+//* name[name].period ..0
 
 * telecom MS
 * telecom.system MS
 * telecom.value MS
-* telecom.use ..0
-* telecom.rank ..0
-* telecom.period ..0
+//* telecom.use ..0
+//* telecom.rank ..0
+//* telecom.period ..0
 * gender MS
 * gender.extension ^min = 0
 * gender.extension[other-amtlich] ^sliceName = "other-amtlich"
@@ -123,7 +156,7 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * gender.extension[other-amtlich].value[x].version 1..
 * gender.extension[other-amtlich].value[x].code 1..
 * gender.extension[other-amtlich].value[x].display 1..
-* gender.extension[other-amtlich].value[x].userSelected ..0
+//* gender.extension[other-amtlich].value[x].userSelected ..0
 
 /* gender.extension[anzeigenameCode] ^sliceName = "anzeigenameCode"
 * gender.extension[anzeigenameCode] ^mustSupport = true
@@ -137,7 +170,9 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * gender.extension[anzeigenameCode].extension[content].valueString ^sliceName = "valueString"*/
 
 * birthDate MS
-* deceased[x] ..0
+
+//* deceased[x] ..0
+
 * address MS
 * address[Strassenanschrift] ^mustSupport = true
 * address[Strassenanschrift].extension ^min = 0
@@ -186,10 +221,15 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * address[Postfach].postalCode MS
 * address[Postfach].country MS
 * address[Postfach].period ..0
-* maritalStatus ..0
-* multipleBirth[x] ..0
-* photo ..0
-* contact ..0
+
+//* maritalStatus ..0
+
+//* multipleBirth[x] ..0
+
+//* photo ..0
+
+//* contact ..0
+
 * communication MS
 * communication.language MS
 * communication.language.coding 1..1 MS
@@ -197,9 +237,9 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * communication.language.coding.version 1..
 * communication.language.coding.code 1..
 * communication.language.coding.display 1..
-* communication.language.coding.userSelected ..0
-* communication.language.text ..0
-* communication.preferred ..0
-* generalPractitioner ..0
-* managingOrganization ..0
-* link ..0
+//* communication.language.coding.userSelected ..0
+//* communication.language.text ..0
+//* communication.preferred ..0
+//* generalPractitioner ..0
+//* managingOrganization ..0
+//* link ..0
