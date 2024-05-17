@@ -15,7 +15,7 @@ Description: "Die Einrichtung beschreibt beispielsweise den Ort, an dem ein Kont
 * meta.lastUpdated ..0
 * meta.source ..0
 * meta.profile 1..1
-* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization|1.0.0"
+* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization|0.1.0"
 * meta.security ..0
 * meta.tag ..0
 

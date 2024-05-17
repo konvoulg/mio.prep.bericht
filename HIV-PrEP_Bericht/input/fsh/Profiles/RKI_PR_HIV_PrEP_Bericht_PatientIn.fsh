@@ -18,8 +18,8 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
-* meta.profile contains mioProfile 1..1
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient|1.0.0"
+* meta.profile contains mioProfile
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient|0.1.0"
 * meta.security 
 * meta.tag 
 // Nach Abstimmung werden wir kein ..0 benutzen nach HL7 Best Practices. 0..0 nur in ausnahmefällen
@@ -145,17 +145,19 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 //* telecom.period ..0
 * gender MS
 * gender.extension ^min = 0
-* gender.extension[other-amtlich] ^sliceName = "other-amtlich"
-* gender.extension[other-amtlich] ^min = 0
+//* gender.extension[other-amtlich] ^sliceName = "other-amtlich"
+//* gender.extension[other-amtlich] ^min = 0
 * gender.extension[other-amtlich] ^mustSupport = true
 * gender.extension[other-amtlich].value[x] MS
-* gender.extension[other-amtlich].value[x] ^slicing.discriminator.type = #type
-* gender.extension[other-amtlich].value[x] ^slicing.discriminator.path = "$this"
-* gender.extension[other-amtlich].value[x] ^slicing.rules = #closed
-* gender.extension[other-amtlich].value[x].system 1..
-* gender.extension[other-amtlich].value[x].version 1..
-* gender.extension[other-amtlich].value[x].code 1..
-* gender.extension[other-amtlich].value[x].display 1..
+//* gender.extension[other-amtlich].value[x] ^slicing.discriminator.type = #type
+//* gender.extension[other-amtlich].value[x] ^slicing.discriminator.path = "$this"
+//* gender.extension[other-amtlich].value[x] ^slicing.rules = #closed
+/*
+* gender.extension[other-amtlich].value[x].coding.system 1..
+* gender.extension[other-amtlich].value[x].coding.version 1..
+* gender.extension[other-amtlich].value[x].coding.code 1..
+* gender.extension[other-amtlich].value[x].coding.display 1..
+*/
 //* gender.extension[other-amtlich].value[x].userSelected ..0
 
 /* gender.extension[anzeigenameCode] ^sliceName = "anzeigenameCode"

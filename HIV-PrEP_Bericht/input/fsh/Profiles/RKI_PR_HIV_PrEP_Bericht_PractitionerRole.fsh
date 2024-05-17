@@ -14,7 +14,7 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 * meta.lastUpdated ..0
 * meta.source ..0
 * meta.profile 1..1
-* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_PractitionerRole|1.0.0"
+* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_PractitionerRole|0.1.0"
 * meta.security ..0
 * meta.tag ..0
 
@@ -33,13 +33,13 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 
 * period ..0
 
-* practitioner only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner|1.0.0)
+* practitioner only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner|0.1.0)
 * practitioner MS
 * practitioner.reference 1.. MS
 * practitioner.type ..0
 * practitioner.identifier ..0
 * practitioner.display ..0
-* organization only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization|1.0.0)
+* organization only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization|0.1.0)
 * organization MS
 * organization.reference 1.. MS
 * organization.type ..0

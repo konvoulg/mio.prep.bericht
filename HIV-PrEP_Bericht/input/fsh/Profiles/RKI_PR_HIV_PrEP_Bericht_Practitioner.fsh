@@ -14,7 +14,7 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 * meta.lastUpdated ..0
 * meta.source ..0
 * meta.profile 1..1
-* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner|1.0.0"
+* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner|0.1.0"
 * meta.security ..0
 * meta.tag ..0
 
