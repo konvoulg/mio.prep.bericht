@@ -6,7 +6,8 @@ Id: RKI-PR-HIV-PrEP-AllergyIntolerance
 Title: "RKI_PR_HIV-PrEP_AllergyIntolerance"
 Description: "Hier kann eine einzelne Allergie oder Unverträglichkeit abgebildet werden."
 
-* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient"
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_AllergyIntolerance"
+
 * . ^definition = "Hier kann eine einzelne Allergie oder Unverträglichkeit abgebildet werden."
 
 * insert Meta-Profile
@@ -96,7 +97,7 @@ Description: "Hier kann eine einzelne Allergie oder Unverträglichkeit abgebilde
 * code.coding[atc-de].display 1.. MS
 * code.text MS
 
-* patient only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient|1.5.0)
+* patient only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient|1.5.0 or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient)
 * patient MS
 * patient.identifier 1.. MS
 * patient.identifier only $identifier-kvid-10
