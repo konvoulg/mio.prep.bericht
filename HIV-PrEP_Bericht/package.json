@@ -8,6 +8,7 @@
     "kbv.basis": "1.5.0",
     "kbv.mio.laborbefund": "1.0.0-kommentierung",
     "hl7.fhir.uv.extensions.r4": "5.1.0",
-    "kbv.mio.emp": "1.0.0-kommentierung.1"
+    "kbv.mio.emp": "1.0.0-kommentierung.1",
+    "hl7.fhir.us.core": "6.1.0"
   }
 }

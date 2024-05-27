@@ -1,5 +1,5 @@
 {
-  "updated": "2024-05-27T09:08:03.145082+02:00",
+  "updated": "2024-05-27T11:14:14.8522333+02:00",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "de.basisprofil.r4": "1.4.0",
@@ -8,7 +8,16 @@
     "hl7.fhir.uv.extensions.r4": "5.1.0",
     "kbv.mio.emp": "1.0.0-kommentierung.1",
     "de.gematik.fhir.directory": "0.10.2",
-    "de.gematik.epa.medication": "1.0.0-RC"
+    "de.gematik.epa.medication": "1.0.0-RC",
+    "hl7.fhir.us.core": "6.1.0",
+    "hl7.terminology.r4": "5.0.0",
+    "hl7.fhir.uv.bulkdata": "2.0.0",
+    "hl7.fhir.uv.smart-app-launch": "2.1.0",
+    "us.nlm.vsac": "0.11.0",
+    "hl7.fhir.uv.sdc": "3.0.0",
+    "hl7.fhir.r4.examples": "4.0.1",
+    "us.cdc.phinvads": "0.12.0",
+    "ihe.formatcode.fhir": "1.1.0"
   },
   "missing": {}
 }
