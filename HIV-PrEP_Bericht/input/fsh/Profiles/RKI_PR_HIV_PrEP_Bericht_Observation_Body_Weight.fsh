@@ -34,10 +34,15 @@ Description: "Dieses Profil bildet das Körpergewicht ab."
 * code ^definition = "Hier werden die Codes zur Bestimmung des genauen Vitalzeichens/Körpermaßes angegeben."
 * code.coding MS
 * code.coding ^definition = "Angabe eines spezifischen Codes zur Bestimmung des genauen Vitalzeichens/Körpermaßes."
+
+//Es gibt in Basis Profile und mios ein andere code für Gewicht
 //* code.coding ^comment = "Das MustSupport gilt nur für die vordefinierten Slices."
 //* code.coding[loinc] = $loinc#29463-7 "Body weight"
+
 * code.coding[loinc] MS
+
 //* code.coding[loinc] ^patternCoding.version = "2.74"
+
 * code.coding[loinc].system MS
 * code.coding[loinc].version MS
 * code.coding[loinc].code MS
