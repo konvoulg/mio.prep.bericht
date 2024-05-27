@@ -1,11 +1,14 @@
 {
-  "updated": "2024-05-13T10:04:53.2855009+02:00",
+  "updated": "2024-05-27T09:08:03.145082+02:00",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "de.basisprofil.r4": "1.4.0",
     "kbv.basis": "1.5.0",
     "kbv.mio.laborbefund": "1.0.0-kommentierung",
-    "hl7.fhir.uv.extensions.r4": "5.1.0"
+    "hl7.fhir.uv.extensions.r4": "5.1.0",
+    "kbv.mio.emp": "1.0.0-kommentierung.1",
+    "de.gematik.fhir.directory": "0.10.2",
+    "de.gematik.epa.medication": "1.0.0-RC"
   },
   "missing": {}
 }
