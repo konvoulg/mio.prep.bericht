@@ -48,7 +48,7 @@ Alias: $KBV_VS_Base_Route_of_Administration_SNOMED_CT = https://fhir.kbv.de/Valu
 
 Alias: $CodingATC = http://fhir.de/StructureDefinition/CodingATC
 Alias: $identifier-kvid-10 = http://fhir.de/StructureDefinition/identifier-kvid-10
-Alias: $identifier-telematik-id = http://fhir.de/StructureDefinition/identifier-telematik-id
+
 Alias: $CodingASK = http://fhir.de/StructureDefinition/CodingASK
 
 //Aliases KBV ObservationBodyweight eMP
