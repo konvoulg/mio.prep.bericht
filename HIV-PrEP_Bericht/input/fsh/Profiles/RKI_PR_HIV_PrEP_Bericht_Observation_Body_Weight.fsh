@@ -16,7 +16,7 @@ Description: "Dieses Profil bildet das Körpergewicht ab."
 
 * insert Meta-Profile
 
-* meta 1.. MS
+* meta MS
 * meta.versionId MS
 * meta.lastUpdated MS
 * meta.profile ^slicing.discriminator.type = #value
