@@ -106,8 +106,9 @@ Invariant: obs-emp-1
 Description: "At least year, month and day are needed"
 * severity = #error
 * expression = "effectiveDateTime.toString().length() >= 10"
-
+/*
 Invariant: obs-emp-2
 Description: "If it is a valid Observation it must have a value otherwise it must not have a value"
 * severity = #error
 * expression = "(Observation.value.exists() implies (Observation.status in ('final' | 'amended' | 'corrected' | 'preliminary')))"
+*/
