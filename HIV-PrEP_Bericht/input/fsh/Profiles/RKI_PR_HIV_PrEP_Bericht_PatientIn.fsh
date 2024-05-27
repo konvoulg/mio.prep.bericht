@@ -145,6 +145,10 @@ Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsproph
 //* telecom.rank ..0
 //* telecom.period ..0
 
+//Geschlechtsidentität Extension aus hl7.fhir.us.core
+* extension contains $extGenderIdentity named Geschlechtsidentität 0..1 MS
+
+
 * gender MS
 * gender.extension ^min = 0
 
