@@ -1,3 +1,9 @@
+//PrEP Bericht Aliases
+Alias: $RKI_PR_PrEP_Bericht_PatientIn = https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PatientIn
+
+//Aliases CodeSysteme
+Alias: $loinc = http://loinc.org
+Alias: $sct = http://snomed.info/sct
 
 
 
@@ -6,8 +12,6 @@ Alias: $KBV_EX_MIO_LAB_Documentation_Date = https://fhir.kbv.de/StructureDefinit
 Alias: $KBV_EX_MIO_LAB_Sorting_Number = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number
 Alias: $KBV_EX_MIO_LAB_Source_Reference_Range = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range
 Alias: $KBV_EX_MIO_LAB_zLog = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zLog
-
-Alias: $RKI_PR_PrEP_Bericht_PatientIn = https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PatientIn
 Alias: $KBV_EX_Base_Terminology_German = https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German
 
 //KBV Basis Organization Aliases
@@ -47,5 +51,7 @@ Alias: $identifier-kvid-10 = http://fhir.de/StructureDefinition/identifier-kvid-
 Alias: $identifier-telematik-id = http://fhir.de/StructureDefinition/identifier-telematik-id
 Alias: $CodingASK = http://fhir.de/StructureDefinition/CodingASK
 
+//Aliases KBV ObservationBodyweight eMP
 
+Alias: $KBV_PR_Base_Observation_Body_Weight = https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Body_Weight
 
