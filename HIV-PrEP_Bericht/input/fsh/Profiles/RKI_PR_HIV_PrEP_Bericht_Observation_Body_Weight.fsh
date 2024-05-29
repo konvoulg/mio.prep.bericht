@@ -55,7 +55,7 @@ Description: "Dieses Profil bildet das Körpergewicht ab."
 * code.coding[snomed].code MS
 * code.coding[snomed].display MS
 
-* subject only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient)
+* subject only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
 * subject MS
 * subject.identifier 1.. MS
 * subject.identifier only $identifier-kvid-10
@@ -67,7 +67,7 @@ Description: "Dieses Profil bildet das Körpergewicht ab."
 * effectiveDateTime ^definition = "Hier wird der Zeitpunkt der Messung angegeben."
 * performer ..1 MS
 
-* performer only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_PractitionerRole)
+* performer only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole)
 * performer ^definition = "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat."
 * performer.reference MS
 * performer.identifier only $identifier-kvid-10 or $identifier-telematik-id
@@ -82,7 +82,7 @@ Description: "Dieses Profil bildet das Körpergewicht ab."
 
 * note MS
 * note.author[x] MS
-* note.authorReference only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner)
+* note.authorReference only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner)
 * note.authorReference MS
 * note.authorReference.reference MS
 * note.authorReference.identifier only $identifier-kvid-10 or $identifier-telematik-id

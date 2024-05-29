@@ -1,12 +1,12 @@
 // This is the HIV-PrEP PractitionerRole Profile inherited from kbv.basis#1.5.0 
 // 
 // 
-Profile: RKI_PR_HIV_PrEP_Organization
+Profile: RKI_PR_HIV_PrEP_Bericht_Organization
 Parent: KBV_PR_Base_Organization
-Id: RKI-PR-HIV-PrEP-Organization
-Title: "RKI_PR_HIV-PrEP_Organization"
+Id: RKI-PR-HIV-PrEP-Bericht-Organization
+Title: "RKI_PR_HIV-PrEP_Bericht_Organization"
 Description: "Die Einrichtung beschreibt beispielsweise den Ort, an dem ein Kontakt zwischen der zu behandelnden Person und der leistungserbringenden Person stattfindet (z. B. Praxis)."
-* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization"
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization"
 
 * insert Meta-Profile
 
@@ -19,7 +19,7 @@ Description: "Die Einrichtung beschreibt beispielsweise den Ort, an dem ein Kont
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains mioProfile 0..* and vzdProfile 0..1
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization|0.1.0"
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0"
 * meta.profile[vzdProfile] = "https://gematik.de/fhir/directory/StructureDefinition/OrganizationDirectory"
 
 //* implicitRules ..0

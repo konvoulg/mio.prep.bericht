@@ -1,6 +1,6 @@
 Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status
 Parent: KBV_PR_Base_Observation_Pregnancy_Status
-Id: RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy
+Id: RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy-Status
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status"
 Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten Person eine Schwangerschaft besteht."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status"
@@ -36,7 +36,7 @@ Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten 
 * code.coding[loinc].display MS
 
 * subject 1.. MS
-* subject only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient)
+* subject only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
 * subject.identifier 1.. MS
 * subject.identifier only $identifier-kvid-10
 
@@ -47,7 +47,7 @@ Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten 
 * effectiveDateTime ^sliceName = "effectiveDateTime"
 
 * performer ..1 MS
-* performer only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient)
+* performer only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
 * performer ^definition = "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat."
 * performer.reference MS
 * performer.identifier only $identifier-kvid-10 or $identifier-telematik-id
@@ -74,7 +74,7 @@ Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten 
 * valueCodeableConcept.coding[snomed].display MS
 * note MS
 * note.author[x] MS
-* note.authorReference only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient)
+* note.authorReference only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
 * note.authorReference MS
 * note.authorReference ^definition = "Hier wird die Person referenziert, die die Notiz erstellt hat."
 * note.authorReference.reference MS
@@ -95,12 +95,12 @@ Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten 
 * method.coding[snomed].display MS
 * method.text MS
 * method.text ^definition = "Hier wird ein Freitext eingetragen."
-
+/* Brauchen wir nicht festzuhalten, nur wenn es schön da ist (nachnutzung)
 * hasMember ..1 MS
 * hasMember only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Estimated_Date_of_Delivery)
 * hasMember ^definition = "Hier kann der zu einer vorliegenden Schwangerschaft gehörende geschätzte Entbindungstermin referenziert werden."
 * hasMember.reference 1.. MS
-
+*/
 //Von emp übernommen
 Invariant: obs-emp-1
 Description: "At least year, month and day are needed"

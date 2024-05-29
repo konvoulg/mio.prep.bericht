@@ -116,7 +116,7 @@ Description: "Hier können nach Ermessen der behandelnden Person anamnestisch be
 
 //* bodySite.coding[snomed-ct].userSelected ..0
 //* bodySite.text ..0
-* subject only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient)
+* subject only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
 
 * subject MS
 * subject.identifier 1.. MS
@@ -184,7 +184,7 @@ Description: "Hier können nach Ermessen der behandelnden Person anamnestisch be
 //* evidence ..0
 * note ..1 MS
 * note.author[x] MS
-* note.authorReference only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Patient)
+* note.authorReference only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
 * note.authorReference MS
 * note.authorReference ^definition = "Hier wird die Person referenziert, die die Notiz erstellt hat."
 * note.authorReference.reference MS

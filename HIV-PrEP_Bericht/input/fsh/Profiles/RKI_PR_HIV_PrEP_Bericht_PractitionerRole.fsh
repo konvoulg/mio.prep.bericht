@@ -1,12 +1,12 @@
 // This is the HIV-PrEP PractitionerRole Profile inherited from kbv.basis#1.5.0 
 // 
 // 
-Profile: RKI_PR_HIV_PrEP_PractitionerRole
+Profile: RKI_PR_HIV_PrEP_Bericht_PractitionerRole
 Parent: KBV_PR_Base_PractitionerRole
-Id: RKI-PR-HIV-PrEP-PractitionerRole
+Id: RKI-PR-HIV-PrEP-Bericht-PractitionerRole
 Title: "RKI_PR_HIV-PrEP_PractitionerRole"
 Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug zu einer Einrichtung beschrieben."
-* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_PractitionerRole"
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole"
 
 * insert Meta-Profile
 * meta MS
@@ -17,7 +17,7 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains mioProfile 0..*
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_PractitionerRole|0.1.0"
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole|0.1.0"
 
 //* meta.source ..0
 //* meta.security ..0
@@ -38,7 +38,7 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 
 //* period ..0
 
-* practitioner only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Practitioner|0.1.0)
+* practitioner only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner|0.1.0)
 * practitioner MS
 * practitioner.reference MS
 * practitioner.identifier only $identifier-anr or $identifier-telematik-id
@@ -46,7 +46,7 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 //* practitioner.type ..0
 * practitioner.identifier 
 * practitioner.display ..0
-* organization only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Organization|0.1.0)
+* organization only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0)
 * organization MS
 * organization.reference MS
 //* organization.type ..0
