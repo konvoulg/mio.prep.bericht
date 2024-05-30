@@ -55,3 +55,10 @@ Alias: $CodingASK = http://fhir.de/StructureDefinition/CodingASK
 
 Alias: $KBV_PR_Base_Observation_Body_Weight = https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Body_Weight
 
+//Aliases KBV Laborbefund
+Alias: $KBV_EX_MIO_LAB_Documentation_Date = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Documentation_Date
+Alias: $KBV_EX_MIO_LAB_Sorting_Number = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number
+Alias: $KBV_EX_Base_Terminology_German = https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German
+Alias: $KBV_EX_MIO_LAB_Source_Reference_Range = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range
+Alias: $KBV_EX_MIO_LAB_zLog = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zLog
+
