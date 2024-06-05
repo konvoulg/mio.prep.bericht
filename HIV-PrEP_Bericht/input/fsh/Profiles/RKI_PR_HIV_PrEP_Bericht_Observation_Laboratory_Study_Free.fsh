@@ -1,3 +1,5 @@
+//BaseDefinition fhir.r4.core Observation - Profil ähnelt mio laborbefund
+
 Profile: RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free
 Parent: Observation
 Id: RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-Free
@@ -13,7 +15,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * obeys obs-1
 
 * . ^definition = "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. Eine Laboruntersuchung beschreibt die quantitative oder qualitative Untersuchung eines spezifischen Laborparameters in einem definierten Probenmaterial."
-
+* ^abstract = true
 * meta MS
 * meta.versionId MS
 * meta.lastUpdated MS
@@ -22,9 +24,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * meta.profile ^slicing.rules = #open
 * meta.profile contains mioProfile 0..*
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free"
-//* meta.profile[mioProfile] = "https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_LAB_Observation_Laboratory_Study"
-//* meta.security ..0
-//* meta.tag ..0
+
 
 //* implicitRules ..0
 
@@ -52,24 +52,6 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 //* basedOn ..0
 //* partOf ..0
 * status MS
-/*
-* status.extension ^slicing.discriminator.type = #value
-* status.extension ^slicing.discriminator.path = "url"
-* status.extension ^slicing.rules = #closed
-* status.extension contains $KBV_EX_Base_Terminology_German named anzeigenameStatus 1..1 MS
-* status.extension[anzeigenameStatus].extension ^slicing.discriminator.type = #value
-* status.extension[anzeigenameStatus].extension ^slicing.discriminator.path = "url"
-* status.extension[anzeigenameStatus].extension ^slicing.rules = #closed
-* status.extension[anzeigenameStatus].extension[content] ^sliceName = "content"
-* status.extension[anzeigenameStatus].extension[content] ^mustSupport = true
-* status.extension[anzeigenameStatus].extension[content].value[x] MS
-* status.extension[anzeigenameStatus].extension[content].value[x] ^slicing.discriminator.type = #type
-* status.extension[anzeigenameStatus].extension[content].value[x] ^slicing.discriminator.path = "$this"
-* status.extension[anzeigenameStatus].extension[content].value[x] ^slicing.rules = #closed
-* status.extension[anzeigenameStatus].extension[content].valueString 1.. MS
-* status.extension[anzeigenameStatus].extension[content].valueString ^sliceName = "valueString"
-* status.extension[anzeigenameStatus].extension[content].valueString ^definition = "In diesem Attribut soll die entsprechende deutsche Bezeichnung des Loinc oder Snomed-Codes aus der Conceptmap eingetragen werden, also in diesem Fall der Displayname des Targetsystems aus https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_LAB_ObservationStatus_German|1.0.0"
-*/
 
 //* category ..0
 
@@ -127,13 +109,14 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"
 * valueCodeableConcept.coding ^slicing.rules = #open
-* valueCodeableConcept.coding[snomedCode] ^sliceName = "snomedCode"
-* valueCodeableConcept.coding[snomedCode] ^mustSupport = true
-* valueCodeableConcept.coding[snomedCode].system 1.. MS
-* valueCodeableConcept.coding[snomedCode].system = "http://snomed.info/sct"
-* valueCodeableConcept.coding[snomedCode].version 1.. MS
-* valueCodeableConcept.coding[snomedCode].code 1.. MS
-* valueCodeableConcept.coding[snomedCode].display 1.. MS
+//* valueCodeableConcept.coding contains snomedCode named snomedCode 0..*
+* valueCodeableConcept.coding contains snomed_CT 0..1 MS
+//* valueCodeableConcept.coding ^mustSupport = true
+* valueCodeableConcept.coding[snomed_CT].system 1.. MS
+* valueCodeableConcept.coding[snomed_CT].system = "http://snomed.info/sct"
+* valueCodeableConcept.coding[snomed_CT].version 1.. MS
+* valueCodeableConcept.coding[snomed_CT].code 1.. MS
+* valueCodeableConcept.coding[snomed_CT].display 1.. MS
 //* valueCodeableConcept.coding[snomedCode].userSelected ..0
 * valueCodeableConcept.text MS
 
@@ -177,24 +160,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * dataAbsentReason.coding.version 1.. MS
 * dataAbsentReason.coding.code 1.. MS
 * dataAbsentReason.coding.display 1.. MS
-/*
-* dataAbsentReason.coding.display.extension ^slicing.discriminator.type = #value
-* dataAbsentReason.coding.display.extension ^slicing.discriminator.path = "url"
-* dataAbsentReason.coding.display.extension ^slicing.rules = #closed
-* dataAbsentReason.coding.display.extension contains $KBV_EX_Base_Terminology_German named anzeigenameDataAbsentReason 1..1 MS
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension ^slicing.discriminator.type = #value
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension ^slicing.discriminator.path = "url"
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension ^slicing.rules = #closed
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension[content] ^sliceName = "content"
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension[content] ^mustSupport = true
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension[content].value[x] MS
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension[content].value[x] ^slicing.discriminator.type = #type
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension[content].value[x] ^slicing.discriminator.path = "$this"
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension[content].value[x] ^slicing.rules = #closed
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension[content].valueString 1.. MS
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension[content].valueString ^sliceName = "valueString"
-* dataAbsentReason.coding.display.extension[anzeigenameDataAbsentReason].extension[content].valueString ^definition = "In diesem Attribut soll die entsprechende deutsche Bezeichnung des Loinc oder Snomed-Codes aus der Conceptmap eingetragen werden, also in diesem Fall der Displayname des Targetsystems aus https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_LAB_Data_Absent_Reason_German|1.0.0"
-*/
+
 //* dataAbsentReason.coding.userSelected ..0
 //* dataAbsentReason.text ..0
 
@@ -211,24 +177,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * interpretation.coding[hl7Interpretation].version 1.. MS
 * interpretation.coding[hl7Interpretation].code 1.. MS
 * interpretation.coding[hl7Interpretation].display 1.. MS 
-/*
-* interpretation.coding[hl7Interpretation].display.extension ^slicing.discriminator.type = #value
-* interpretation.coding[hl7Interpretation].display.extension ^slicing.discriminator.path = "url"
-* interpretation.coding[hl7Interpretation].display.extension ^slicing.rules = #closed
-* interpretation.coding[hl7Interpretation].display.extension contains $KBV_EX_Base_Terminology_German named anzeigenameHl7Interpretation 1..1 MS
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension ^slicing.discriminator.type = #value
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension ^slicing.discriminator.path = "url"
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension ^slicing.rules = #closed
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension[content] ^sliceName = "content"
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension[content] ^mustSupport = true
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension[content].value[x] MS
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension[content].value[x] ^slicing.discriminator.type = #type
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension[content].value[x] ^slicing.discriminator.path = "$this"
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension[content].value[x] ^slicing.rules = #closed
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension[content].valueString 1.. MS
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension[content].valueString ^sliceName = "valueString"
-* interpretation.coding[hl7Interpretation].display.extension[anzeigenameHl7Interpretation].extension[content].valueString ^definition = "In diesem Attribut soll die entsprechende deutsche Bezeichnung des Loinc oder Snomed-Codes aus der Conceptmap eingetragen werden, also in diesem Fall der Displayname des Targetsystems aus https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_LAB_ObservationInterpretationCodes_German|1.0.0"
-*/
+
 //* interpretation.coding[hl7Interpretation].userSelected ..0
 * interpretation.coding[snomedInterpretation].system 1.. MS
 * interpretation.coding[snomedInterpretation].system = "http://snomed.info/sct"
@@ -257,23 +206,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * method.coding.version 1.. 
 * method.coding.code 1.. 
 * method.coding.display 1..
-/*
-* method.coding.display.extension ^slicing.discriminator.type = #value
-* method.coding.display.extension ^slicing.discriminator.path = "url"
-* method.coding.display.extension ^slicing.rules = #closed
-* method.coding.display.extension contains $KBV_EX_Base_Terminology_German named anzeigenameMethod 0..1 MS
-* method.coding.display.extension[anzeigenameMethod].extension ^slicing.discriminator.type = #value
-* method.coding.display.extension[anzeigenameMethod].extension ^slicing.discriminator.path = "url"
-* method.coding.display.extension[anzeigenameMethod].extension ^slicing.rules = #closed
-* method.coding.display.extension[anzeigenameMethod].extension[content] ^sliceName = "content"
-* method.coding.display.extension[anzeigenameMethod].extension[content] ^mustSupport = true
-* method.coding.display.extension[anzeigenameMethod].extension[content].value[x] MS
-* method.coding.display.extension[anzeigenameMethod].extension[content].value[x] ^slicing.discriminator.type = #type
-* method.coding.display.extension[anzeigenameMethod].extension[content].value[x] ^slicing.discriminator.path = "$this"
-* method.coding.display.extension[anzeigenameMethod].extension[content].value[x] ^slicing.rules = #closed
-* method.coding.display.extension[anzeigenameMethod].extension[content].valueString 1.. MS
-* method.coding.display.extension[anzeigenameMethod].extension[content].valueString ^sliceName = "valueString"
-*/
+
 //* method.coding.userSelected ..0
 * method.text MS
 
@@ -316,24 +249,8 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * referenceRange.type.coding.version 1.. MS
 * referenceRange.type.coding.code 1.. MS 
 * referenceRange.type.coding.display 1.. MS
-/*
-* referenceRange.type.coding.display.extension ^slicing.discriminator.type = #value
-* referenceRange.type.coding.display.extension ^slicing.discriminator.path = "url"
-* referenceRange.type.coding.display.extension ^slicing.rules = #closed
-* referenceRange.type.coding.display.extension contains $KBV_EX_Base_Terminology_German named anzeigenameReferenceRangeType 1..1 MS
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension ^slicing.discriminator.type = #value
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension ^slicing.discriminator.path = "url"
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension ^slicing.rules = #closed
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension[content] ^sliceName = "content"
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension[content] ^mustSupport = true
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension[content].value[x] MS
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension[content].value[x] ^slicing.discriminator.type = #type
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension[content].value[x] ^slicing.discriminator.path = "$this"
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension[content].value[x] ^slicing.rules = #closed
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension[content].valueString 1.. MS
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension[content].valueString ^sliceName = "valueString"
-* referenceRange.type.coding.display.extension[anzeigenameReferenceRangeType].extension[content].valueString ^definition = "In diesem Attribut soll die entsprechende deutsche Bezeichnung des Loinc oder Snomed-Codes aus der Conceptmap eingetragen werden, also in diesem Fall der Displayname des Targetsystems aus https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_LAB_ObservationReferenceRangeMeaningCodes_German|1.0.0"
-*/
+
+
 //* referenceRange.type.coding.userSelected ..0
 * referenceRange.type.text MS
 * referenceRange.appliesTo ..1 MS
