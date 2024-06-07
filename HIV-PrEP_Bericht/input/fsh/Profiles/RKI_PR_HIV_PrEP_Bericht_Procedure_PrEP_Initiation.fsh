@@ -44,14 +44,14 @@ Description: "Hier wird die Leistung nach EBM 01921, die  PrEP  Einleitung / Re-
 
 * code 1.. MS
 * code.coding 1..1 MS
-* code.coding.system 1.. MS
-* code.coding.system = "http://snomed.info/sct" (exactly)
-* code.coding.version 1.. MS
-* code.coding.version = "http://snomed.info/sct/900000000000207008/version/20240501" (exactly)
-* code.coding.code 1.. MS
-* code.coding.code = #1287783000  (exactly)
-* code.coding.display 1.. MS
-* code.coding.display = "Administration of human immunodeficiency virus pre-exposure prophylaxis (procedure)"
+* code.coding[snomed].system 1.. MS
+* code.coding[snomed].system = "http://snomed.info/sct" (exactly)
+* code.coding[snomed].version 1.. MS
+* code.coding[snomed].version = "http://snomed.info/sct/900000000000207008/version/20240501" (exactly)
+* code.coding[snomed].code 1.. MS
+* code.coding[snomed].code = #1287783000  (exactly)
+* code.coding[snomed].display 1.. MS
+* code.coding[snomed].display = "Administration of human immunodeficiency virus pre-exposure prophylaxis (procedure)"
 /*
 * code.coding.display.extension ^slicing.discriminator.type = #value
 * code.coding.display.extension ^slicing.discriminator.path = "url"
