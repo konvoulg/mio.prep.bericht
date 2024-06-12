@@ -1,0 +1,106 @@
+[
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance.fsh",
+    "startLine": 3,
+    "endLine": 225
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Appointment-FollowUp.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp.fsh",
+    "startLine": 1,
+    "endLine": 59
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Bundle.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Bundle",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Bundle.fsh",
+    "startLine": 1,
+    "endLine": 52
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-History-Present.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_History_Present",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_History_Present.fsh",
+    "startLine": 1,
+    "endLine": 195
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Encounter-General.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Encounter_General",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Encounter_General.fsh",
+    "startLine": 1,
+    "endLine": 91
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight.fsh",
+    "startLine": 3,
+    "endLine": 92
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy-Status.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy.fsh",
+    "startLine": 1,
+    "endLine": 97
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Organization.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Organization",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Organization.fsh",
+    "startLine": 4,
+    "endLine": 213
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Patient.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Patient",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_PatientIn.fsh",
+    "startLine": 4,
+    "endLine": 250
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Practitioner.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Practitioner",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Practitioner.fsh",
+    "startLine": 4,
+    "endLine": 230
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-PractitionerRole.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_PractitionerRole",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_PractitionerRole.fsh",
+    "startLine": 4,
+    "endLine": 74
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Initiation.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation.fsh",
+    "startLine": 1,
+    "endLine": 133
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-Free.json",
+    "fshName": "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free.fsh",
+    "startLine": 3,
+    "endLine": 260
+  }
+]
