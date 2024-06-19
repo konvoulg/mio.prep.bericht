@@ -1,0 +1,346 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "RKI-PR-PrEP-Bericht-Questionnaire",
+  "item": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "drop-down",
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "display": "Drop down"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "code": [
+        {
+          "code": "275881005",
+          "system": "http://snomed.info/sct/11000274103",
+          "display": "History of sexually transmitted disease (situation)"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "260413007",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Kein"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASKU",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "asked but unknown"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "UNK",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "unknown"
+          }
+        }
+      ],
+      "type": "choice",
+      "linkId": "357318092995",
+      "text": "Vorherige STI Infektion",
+      "required": false
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "drop-down",
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "display": "Drop down"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "code": [
+        {
+          "code": "161775000",
+          "system": "http://snomed.info/sct/11000274103",
+          "display": "History of sheath usage (situation)"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "Ja"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "Nein"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASKU",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "asked but unknown"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "UNK",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "unknown"
+          }
+        }
+      ],
+      "type": "choice",
+      "linkId": "7742571432941",
+      "text": "Kondomnutzung"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "drop-down",
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "display": "Drop down"
+              }
+            ]
+          }
+        }
+      ],
+      "code": [
+        {
+          "code": "228388006",
+          "system": "http://snomed.info/sct/11000274103",
+          "display": "Intravenous drug user (finding)"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "226034001"
+          }
+        }
+      ],
+      "type": "choice",
+      "linkId": "1993731509843",
+      "text": "Drogen Intravenös"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "drop-down",
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "display": "Drop down"
+              }
+            ]
+          }
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "display": "Ja"
+          }
+        },
+        {
+          "valueCoding": {
+            "display": "Nein"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASKU",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "asked but unknown"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "UNK",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "unknown"
+          }
+        }
+      ],
+      "type": "choice",
+      "linkId": "5407091313032",
+      "text": "Serodiskordante Konstellation"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "drop-down",
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "display": "Drop down"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        }
+      ],
+      "code": [
+        {
+          "code": "66621004",
+          "system": "http://snomed.info/sct/11000274103",
+          "display": "Sexual orientation (observable entity)"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "42035005",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Bisexual (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "20430005",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Heterosexual (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "38628009",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Homosexual (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "OTH",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "other"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "UNK",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "unknown"
+          }
+        }
+      ],
+      "type": "choice",
+      "linkId": "7294102201786",
+      "text": "Sexuelle Orientierung"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "drop-down",
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "display": "Drop down"
+              }
+            ]
+          }
+        },
+        {
+          "valueBoolean": true,
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
+          "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+        }
+      ],
+      "code": [
+        {
+          "code": "33821000087103",
+          "system": "http://snomed.info/sct/11000274103",
+          "display": "Gender identity"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "446141000124107",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Identifies as female gender (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "446151000124109",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Identifies as male gender (finding)"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "33791000087105",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Identifies as gender nonbinary"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "asked-declined",
+            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+            "display": "Asked But Declined"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "UNK",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "Unknown"
+          }
+        }
+      ],
+      "type": "choice",
+      "linkId": "6401616433112",
+      "text": "Geschlechtsidentität"
+    }
+  ],
+  "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Questionnaire",
+  "version": "0.1.0",
+  "name": "Sexualanamnese",
+  "title": "Sexualanamnese",
+  "status": "draft",
+  "publisher": "Robert Koch Institut",
+  "description": "Dieses Frageboggen bildet die Sexualanamnese ab"
+}

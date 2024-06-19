@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "Questionnaire-RKI-PR-PrEP-Bericht-Questionnaire.json",
+    "fshName": "RKI-PR-PrEP-Bericht-Questionnaire",
+    "fshType": "Instance",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Questionnaire_Sexual_History.fsh",
+    "startLine": 6,
+    "endLine": 84
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance",
     "fshType": "Profile",
