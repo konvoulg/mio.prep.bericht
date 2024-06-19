@@ -34,8 +34,8 @@ Usage: #example
 * item[=].linkId = "7742571432941"
 * item[=].code = $11000274103#161775000 "History of sheath usage (situation)"
 * item[=].text = "Kondomnutzung"
-* item[=].answerOption[0].valueCoding.display = "Ja"
-* item[=].answerOption[+].valueCoding.display = "Nein"
+* item[=].answerOption[0].valueCoding = $11000274103#373066001 "Yes"
+* item[=].answerOption[+].valueCoding = $11000274103#260413007 "Kein"
 * item[=].answerOption[+].valueCoding = $v3-NullFlavor#ASKU "asked but unknown"
 * item[=].answerOption[+].valueCoding = $v3-NullFlavor#UNK "unknown"
 * item[+].type = #choice

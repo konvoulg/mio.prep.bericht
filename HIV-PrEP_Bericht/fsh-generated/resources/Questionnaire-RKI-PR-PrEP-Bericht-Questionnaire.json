@@ -92,12 +92,16 @@
       "answerOption": [
         {
           "valueCoding": {
-            "display": "Ja"
+            "code": "373066001",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Yes"
           }
         },
         {
           "valueCoding": {
-            "display": "Nein"
+            "code": "260413007",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Kein"
           }
         },
         {
