@@ -148,7 +148,30 @@
       "answerOption": [
         {
           "valueCoding": {
-            "code": "226034001"
+            "code": "373066001",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Yes"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "260413007",
+            "system": "http://snomed.info/sct/11000274103",
+            "display": "Kein"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "ASKU",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "asked but unknown"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "UNK",
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "display": "unknown"
           }
         }
       ],
@@ -338,6 +361,24 @@
       "type": "choice",
       "linkId": "6401616433112",
       "text": "Geschlechtsidentität"
+    },
+    {
+      "type": "boolean",
+      "linkId": "2142215437593",
+      "text": "Erstes mal HIV-PrEP?"
+    },
+    {
+      "enableWhen": [
+        {
+          "question": "2142215437593",
+          "operator": "=",
+          "answerBoolean": false
+        }
+      ],
+      "type": "date",
+      "linkId": "367085263815",
+      "text": "Wann würde HIV-PrEP erstmals genommen?",
+      "enableBehavior": "all"
     }
   ],
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Questionnaire",

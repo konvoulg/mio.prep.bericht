@@ -44,7 +44,10 @@ Usage: #example
 * item[=].linkId = "1993731509843"
 * item[=].code = $11000274103#228388006 "Intravenous drug user (finding)"
 * item[=].text = "Drogen Intravenös"
-* item[=].answerOption.valueCoding.code = #226034001
+* item[=].answerOption[0].valueCoding = $11000274103#373066001 "Yes"
+* item[=].answerOption[+].valueCoding = $11000274103#260413007 "Kein"
+* item[=].answerOption[+].valueCoding = $v3-NullFlavor#ASKU "asked but unknown"
+* item[=].answerOption[+].valueCoding = $v3-NullFlavor#UNK "unknown"
 * item[+].type = #choice
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension.valueCodeableConcept = $questionnaire-item-control#drop-down "Drop down"
@@ -82,3 +85,13 @@ Usage: #example
 * item[=].answerOption[+].valueCoding = $11000274103#33791000087105 "Identifies as gender nonbinary"
 * item[=].answerOption[+].valueCoding = $data-absent-reason#asked-declined "Asked But Declined"
 * item[=].answerOption[+].valueCoding = $v3-NullFlavor#UNK "Unknown"
+* item[+].type = #boolean
+* item[=].linkId = "2142215437593"
+* item[=].text = "Erstes mal HIV-PrEP?"
+* item[+].type = #date
+* item[=].linkId = "367085263815"
+* item[=].text = "Wann würde HIV-PrEP erstmals genommen?"
+* item[=].enableWhen.question = "2142215437593"
+* item[=].enableWhen.operator = #=
+* item[=].enableWhen.answerBoolean = false
+* item[=].enableBehavior = #all
