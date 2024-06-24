@@ -15,10 +15,6 @@
               }
             ]
           }
-        },
-        {
-          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-          "valueBoolean": true
         }
       ],
       "code": [
@@ -28,40 +24,11 @@
           "display": "History of sexually transmitted disease (situation)"
         }
       ],
-      "answerOption": [
-        {
-          "valueCoding": {
-            "code": "373066001",
-            "system": "http://snomed.info/sct/11000274103",
-            "display": "Yes"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "260413007",
-            "system": "http://snomed.info/sct/11000274103",
-            "display": "Kein"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "ASKU",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "display": "asked but unknown"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "UNK",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "display": "unknown"
-          }
-        }
-      ],
       "type": "choice",
       "linkId": "357318092995",
       "text": "Vorherige STI Infektion",
-      "required": false
+      "required": false,
+      "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
     },
     {
       "extension": [
@@ -76,10 +43,6 @@
               }
             ]
           }
-        },
-        {
-          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-          "valueBoolean": true
         }
       ],
       "code": [
@@ -89,39 +52,10 @@
           "display": "History of sheath usage (situation)"
         }
       ],
-      "answerOption": [
-        {
-          "valueCoding": {
-            "code": "373066001",
-            "system": "http://snomed.info/sct/11000274103",
-            "display": "Yes"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "260413007",
-            "system": "http://snomed.info/sct/11000274103",
-            "display": "Kein"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "ASKU",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "display": "asked but unknown"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "UNK",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "display": "unknown"
-          }
-        }
-      ],
       "type": "choice",
       "linkId": "7742571432941",
-      "text": "Kondomnutzung"
+      "text": "Kondomnutzung",
+      "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
     },
     {
       "extension": [
@@ -145,39 +79,10 @@
           "display": "Intravenous drug user (finding)"
         }
       ],
-      "answerOption": [
-        {
-          "valueCoding": {
-            "code": "373066001",
-            "system": "http://snomed.info/sct/11000274103",
-            "display": "Yes"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "260413007",
-            "system": "http://snomed.info/sct/11000274103",
-            "display": "Kein"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "ASKU",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "display": "asked but unknown"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "UNK",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "display": "unknown"
-          }
-        }
-      ],
       "type": "choice",
       "linkId": "1993731509843",
-      "text": "Drogen Intravenös"
+      "text": "Drogen Intravenös",
+      "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
     },
     {
       "extension": [
@@ -191,38 +96,13 @@
                 "display": "Drop down"
               }
             ]
-          }
-        }
-      ],
-      "answerOption": [
-        {
-          "valueCoding": {
-            "display": "Ja"
-          }
-        },
-        {
-          "valueCoding": {
-            "display": "Nein"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "ASKU",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "display": "asked but unknown"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "UNK",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "display": "unknown"
           }
         }
       ],
       "type": "choice",
       "linkId": "5407091313032",
-      "text": "Serodiskordante Konstellation"
+      "text": "Serodiskordante Konstellation",
+      "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
     },
     {
       "extension": [
@@ -237,10 +117,6 @@
               }
             ]
           }
-        },
-        {
-          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
-          "valueBoolean": true
         }
       ],
       "code": [
@@ -306,10 +182,6 @@
           }
         },
         {
-          "valueBoolean": true,
-          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
-        },
-        {
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
           "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
         }
@@ -352,29 +224,38 @@
         },
         {
           "valueCoding": {
-            "code": "UNK",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "code": "Unknown",
+            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
             "display": "Unknown"
           }
         }
       ],
       "type": "choice",
       "linkId": "6401616433112",
-      "text": "Geschlechtsidentität"
+      "text": "Geschlechtsidentitaet",
+      "definition": "Patient.extension:Geschlechtsidentitaet"
     },
     {
-      "type": "boolean",
-      "linkId": "2142215437593",
-      "text": "Erstes mal HIV-PrEP?"
-    },
-    {
-      "enableWhen": [
+      "extension": [
         {
-          "question": "2142215437593",
-          "operator": "=",
-          "answerBoolean": false
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "drop-down",
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "display": "Drop down"
+              }
+            ]
+          }
         }
       ],
+      "type": "choice",
+      "linkId": "2142215437593",
+      "text": "Erstes mal HIV-PrEP?",
+      "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
+    },
+    {
       "type": "date",
       "linkId": "367085263815",
       "text": "Wann würde HIV-PrEP erstmals genommen?",
