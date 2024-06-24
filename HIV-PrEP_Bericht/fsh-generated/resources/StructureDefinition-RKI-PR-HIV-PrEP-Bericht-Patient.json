@@ -91,9 +91,9 @@
         "patternCode": "extensions"
       },
       {
-        "id": "Patient.extension:Geschlechtsidentität",
+        "id": "Patient.extension:Geschlechtsidentitaet",
         "path": "Patient.extension",
-        "sliceName": "Geschlechtsidentität",
+        "sliceName": "Geschlechtsidentitaet",
         "min": 0,
         "max": "1",
         "type": [
