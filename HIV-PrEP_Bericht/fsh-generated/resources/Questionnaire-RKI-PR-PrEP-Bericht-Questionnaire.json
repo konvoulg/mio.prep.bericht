@@ -130,21 +130,21 @@
         {
           "valueCoding": {
             "code": "42035005",
-            "system": "http://snomed.info/sct/11000274103",
+            "system": "http://snomed.info/sct",
             "display": "Bisexual (finding)"
           }
         },
         {
           "valueCoding": {
             "code": "20430005",
-            "system": "http://snomed.info/sct/11000274103",
+            "system": "http://snomed.info/sct",
             "display": "Heterosexual (finding)"
           }
         },
         {
           "valueCoding": {
             "code": "38628009",
-            "system": "http://snomed.info/sct/11000274103",
+            "system": "http://snomed.info/sct",
             "display": "Homosexual (finding)"
           }
         },
@@ -184,6 +184,14 @@
         {
           "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer",
           "valueUrl": "https://snowstorm.ihtsdotools.org/fhir"
+        },
+        {
+          "valueExpression": {
+            "description": "Patient des Questionnaires",
+            "language": "text/fhirpath",
+            "expression": "%patient"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext"
         }
       ],
       "code": [
@@ -197,21 +205,21 @@
         {
           "valueCoding": {
             "code": "446141000124107",
-            "system": "http://snomed.info/sct/11000274103",
+            "system": "http://snomed.info/sct",
             "display": "Identifies as female gender (finding)"
           }
         },
         {
           "valueCoding": {
             "code": "446151000124109",
-            "system": "http://snomed.info/sct/11000274103",
+            "system": "http://snomed.info/sct",
             "display": "Identifies as male gender (finding)"
           }
         },
         {
           "valueCoding": {
             "code": "33791000087105",
-            "system": "http://snomed.info/sct/11000274103",
+            "system": "http://snomed.info/sct",
             "display": "Identifies as gender nonbinary"
           }
         },

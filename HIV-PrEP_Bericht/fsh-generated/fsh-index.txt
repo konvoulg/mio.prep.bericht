@@ -1,5 +1,5 @@
 Output File                                                                     Name                                                   Type      FSH File                                                                Lines
-Questionnaire-RKI-PR-PrEP-Bericht-Questionnaire.json                            RKI-PR-PrEP-Bericht-Questionnaire                      Instance  Profiles\RKI_PR_HIV_PrEP_Bericht_Questionnaire_Sexual_History.fsh       6 - 97
+Questionnaire-RKI-PR-PrEP-Bericht-Questionnaire.json                            RKI-PR-PrEP-Bericht-Questionnaire                      Instance  Profiles\RKI_PR_HIV_PrEP_Bericht_Questionnaire_Sexual_History.fsh       5 - 81
 StructureDefinition-RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance.json             RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance             Profile   Profiles\RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance.fsh                 3 - 225
 StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Appointment-FollowUp.json           RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp           Profile   Profiles\RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp.fsh               1 - 59
 StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Bundle.json                         RKI_PR_HIV_PrEP_Bericht_Bundle                         Profile   Profiles\RKI_PR_HIV_PrEP_Bericht_Bundle.fsh                             1 - 52
@@ -13,3 +13,4 @@ StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Practitioner.json                   
 StructureDefinition-RKI-PR-HIV-PrEP-Bericht-PractitionerRole.json               RKI_PR_HIV_PrEP_Bericht_PractitionerRole               Profile   Profiles\RKI_PR_HIV_PrEP_Bericht_PractitionerRole.fsh                   4 - 74
 StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Initiation.json      RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation      Profile   Profiles\RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation.fsh          1 - 133
 StructureDefinition-RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-Free.json  RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free  Profile   Profiles\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free.fsh  3 - 260
+ValueSet-YesNoInformation.json                                                  YesNoInformation                                       ValueSet  ValueSets\RKI_VS_HIV_PrEP_Bericht_Yes_No_Information.fsh                1 - 13
