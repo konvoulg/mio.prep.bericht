@@ -4,6 +4,11 @@ Alias: $extGenderIdentity = http://hl7.org/fhir/us/core/StructureDefinition/us-c
 //Aliases CodeSysteme
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
+Alias: $data_absent = http://terminology.hl7.org/CodeSystem/data-absent-reason
+
+//Aliases Questionnaire
+
+
 
 
 
@@ -61,4 +66,5 @@ Alias: $KBV_EX_MIO_LAB_Sorting_Number = https://fhir.kbv.de/StructureDefinition/
 Alias: $KBV_EX_Base_Terminology_German = https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German
 Alias: $KBV_EX_MIO_LAB_Source_Reference_Range = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range
 Alias: $KBV_EX_MIO_LAB_zLog = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zLog
+
 
