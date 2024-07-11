@@ -1,5 +1,5 @@
 Profile: RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation
-Parent: KBV_PR_Base_Procedure
+Parent: https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Procedure
 Id: RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Initiation
 Title: "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation"
 Description: "Hier wird die Leistung nach EBM 01921, die  PrEP  Einleitung / Re-initiierung dokumentiert."
