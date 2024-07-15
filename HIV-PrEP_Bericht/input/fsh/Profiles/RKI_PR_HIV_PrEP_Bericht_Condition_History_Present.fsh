@@ -41,16 +41,32 @@ Description: "Hier können nach Ermessen der behandelnden Person anamnestisch be
 * clinicalStatus.coding.version 1.. MS
 * clinicalStatus.coding.code 1.. MS
 * clinicalStatus.coding.display 1.. MS
-
 //* clinicalStatus.coding.userSelected ..0
-
 //* clinicalStatus.text ..0
-//* verificationStatus ..0
-//* category ..0
+
+* verificationStatus MS
+* verificationStatus.coding 1..1 MS
+* verificationStatus.coding.system 1.. MS
+* verificationStatus.coding.version 1.. MS
+* verificationStatus.coding.code 1.. MS
+* verificationStatus.coding.display 1.. MS
+
+
+* category MS 
+* category.coding 1.. MS
+* category.coding from $loinc (required)
+* category.coding.code 1..1 MS
+* category.coding.code ^patternCoding.code = #10164-2
+* category.coding.system 1..1 MS
+* category.coding.system ^patternCoding.system = "http://loinc.org"
+* category.coding.version 1..1 MS
+* category.coding.version ^patternCoding.version = "2.77"
+* category.coding.display 1..1 MS
+* category.coding.display ^patternCoding.display = "History of Present illness Narrative"
+
 
 * severity MS
 * severity.coding ..1 MS
-
 * severity.coding[snomed] ^mustSupport = true
 * severity.coding[snomed].system MS
 * severity.coding[snomed].version MS
@@ -81,6 +97,9 @@ Description: "Hier können nach Ermessen der behandelnden Person anamnestisch be
 
 //* code.coding[ICD-10-GM].extension[Seitenlokalisation] ^min = 0
 * code.coding[ICD-10-GM].extension[Seitenlokalisation] ^mustSupport = true
+* code.coding[ICD-10-GM].system MS
+* code.coding[ICD-10-GM].version MS
+* code.coding[ICD-10-GM].code MS
 * code.coding[ICD-10-GM].display 1.. MS
 //* code.coding[ICD-10-GM].userSelected ..0
 
@@ -123,7 +142,8 @@ Description: "Hier können nach Ermessen der behandelnden Person anamnestisch be
 * subject.identifier only $identifier-kvid-10
 
 // Diskutieren ob hier ein Encounter Referenz Hier kommt
-//* encounter ..0
+* encounter 0..1 MS
+* encounter only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General) 
 
 * onset[x] only dateTime or Age
 * onset[x] MS
