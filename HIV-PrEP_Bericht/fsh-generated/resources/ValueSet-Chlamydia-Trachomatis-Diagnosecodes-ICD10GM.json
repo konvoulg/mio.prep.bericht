@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "Chlamydia_Trachomatis_Diagnosecodes_ICD10GM",
+  "id": "Chlamydia-Trachomatis-Diagnosecodes-ICD10GM",
+  "title": "Chlamydia Trachomatis Diagnosecodes ICD10GM",
+  "description": "Das ValueSet Chlamydia_Trachomatis_Diagnosecodes_ICD10GM enthält die Codes für die Diagnose von Chlamydia Trachomatis Infektion",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Chlamydia_Trachomatis_Diagnosecodes_ICD10GM",
+  "version": "0.1.0",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "date": "2024-07-15",
+  "immutable": false,
+  "copyright": "WHO, BfArM 1994 - 2024 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des  Bundesinstituts fÃ¼r Arzneimittel und Medizinprodukte (BfArM)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "*"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "concept": [
+          {
+            "code": "A56",
+            "display": "Sonstige durch Geschlechtsverkehr übertragene Chlamydienkrankheiten"
+          },
+          {
+            "code": "A56.0",
+            "display": "Chlamydieninfektion des unteren Urogenitaltraktes"
+          },
+          {
+            "code": "A56.1",
+            "display": "Chlamydieninfektion des Pelviperitoneums und sonstiger Urogenitalorgane"
+          },
+          {
+            "code": "A56.2",
+            "display": "Chlamydieninfektion des Urogenitaltraktes, nicht näher bezeichnet"
+          },
+          {
+            "code": "A56.3",
+            "display": "Chlamydieninfektion des Anus und des Rektums"
+          },
+          {
+            "code": "A56.4",
+            "display": "Chlamydieninfektion des Pharynx"
+          },
+          {
+            "code": "A56.8",
+            "display": "Durch Geschlechtsverkehr übertragene Chlamydieninfektion an sonstigen Lokalisationen"
+          }
+        ]
+      }
+    ]
+  }
+}
