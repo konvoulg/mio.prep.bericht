@@ -43,7 +43,7 @@ Alias: $identifier-kzva = http://fhir.de/StructureDefinition/identifier-kzva
 
 //Aliases KBV Basis Allergy Intolerance
 Alias: $KBV_EX_Base_AllergyIntolerance_Abatement = https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_AllergyIntolerance_Abatement
-Alias: $KBV_EX_Base_Stage_Life = https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Stage_Life
+//Alias: $KBV_EX_Base_Stage_Life = https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Stage_Life
 Alias: $CodingASK = http://fhir.de/StructureDefinition/CodingASK
 Alias: $KBV_VS_Base_Allergy_Substance_SNOMED_CT = https://fhir.kbv.de/ValueSet/KBV_VS_Base_Allergy_Substance_SNOMED_CT
 Alias: $KBV_VS_Base_Reaction_Allergy = https://fhir.kbv.de/ValueSet/KBV_VS_Base_Reaction_Allergy
@@ -67,4 +67,12 @@ Alias: $KBV_EX_Base_Terminology_German = https://fhir.kbv.de/StructureDefinition
 Alias: $KBV_EX_MIO_LAB_Source_Reference_Range = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range
 Alias: $KBV_EX_MIO_LAB_zLog = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zLog
 
+//Aliases Basis Condition Diagnosis
+Alias: $CodingICD10GM = http://fhir.de/StructureDefinition/CodingICD10GM
+Alias: $CodingAlphaID = http://fhir.de/StructureDefinition/CodingAlphaID
+Alias: $KBV_EX_Base_Stage_Life = https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Stage_Life
+Alias: $condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
+Alias: $KBV_VS_Base_Diagnosis_SNOMED_CT = https://fhir.kbv.de/ValueSet/KBV_VS_Base_Diagnosis_SNOMED_CT
 
+//Alias neue ICD10GM Bfarm
+Alias: $CodingICD10GMBfARM = http://fhir.de/CodeSystem/bfarm/icd-10-gm

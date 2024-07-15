@@ -32,12 +32,20 @@
     "endLine": 52
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Free.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free.fsh",
+    "startLine": 1,
+    "endLine": 204
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-History-Present.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_History_Present",
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_History_Present.fsh",
     "startLine": 1,
-    "endLine": 195
+    "endLine": 215
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Encounter-General.json",
@@ -110,6 +118,14 @@
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free.fsh",
     "startLine": 3,
     "endLine": 260
+  },
+  {
+    "outputFile": "ValueSet-Chlamydia-Trachomatis-Diagnosecodes-ICD10GM.json",
+    "fshName": "Chlamydia_Trachomatis_Diagnosecodes_ICD10GM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Chlamydia_Trachomatis_Diagnosecodes_ICD10GM.fsh",
+    "startLine": 1,
+    "endLine": 17
   },
   {
     "outputFile": "ValueSet-YesNoInformation.json",
