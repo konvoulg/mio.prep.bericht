@@ -128,6 +128,30 @@
     "endLine": 17
   },
   {
+    "outputFile": "ValueSet-Gonokokkeninfektion-Diagnosecodes-ICD10GM.json",
+    "fshName": "Gonokokkeninfektion_Diagnosecodes_ICD10GM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Gonokokkeninfektion_Diagnosecodes_ICD10GM.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-HIV-Diagnosecodes-ICD10GM.json",
+    "fshName": "HIV_Diagnosecodes_ICD10GM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HIV_Diagnosecodes_ICD10GM.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-Syphilis-Diagnosecodes-ICD10GM.json",
+    "fshName": "Syphilis_Diagnosecodes_ICD10GM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Syphilis_Diagnosecodes_ICD10GM.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
     "outputFile": "ValueSet-YesNoInformation.json",
     "fshName": "YesNoInformation",
     "fshType": "ValueSet",
