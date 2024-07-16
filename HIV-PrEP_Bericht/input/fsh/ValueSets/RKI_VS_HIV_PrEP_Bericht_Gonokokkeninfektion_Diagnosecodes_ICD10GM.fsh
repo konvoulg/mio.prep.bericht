@@ -1,7 +1,7 @@
 ValueSet: Gonokokkeninfektion_Diagnosecodes_ICD10GM
 Id: Gonokokkeninfektion-Diagnosecodes-ICD10GM
 Title: "Gonokokkeninfektion Diagnosecodes ICD10GM"
-Description: "Das ValueSet Gonokokkeninfektion_Diagnosecodes_ICD10GM enthält die Codes für die Diagnose von Chlamydia Trachomatis Infektion"
+Description: "Das ValueSet Gonokokkeninfektion_Diagnosecodes_ICD10GM enthält die Codes für die Diagnose von Gonokokken Infektion"
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Gonokokkeninfektion_Diagnosecodes_ICD10GM"
 * insert MetadataTerminology
 * ^date = "2024-07-16"
