@@ -33,10 +33,6 @@
             "display": "Asymptomatische HIV-Infektion [Humane Immundefizienz-Virusinfektion]"
           },
           {
-            "code": "B23.-",
-            "display": "Sonstige Krankheitszustände infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
-          },
-          {
             "code": "B23.0",
             "display": "Akutes HIV-Infektionssyndrom"
           },
