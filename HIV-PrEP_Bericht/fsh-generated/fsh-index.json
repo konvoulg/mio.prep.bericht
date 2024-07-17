@@ -141,7 +141,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HIV_Diagnosecodes_ICD10GM.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 16
   },
   {
     "outputFile": "ValueSet-Syphilis-Diagnosecodes-ICD10GM.json",
