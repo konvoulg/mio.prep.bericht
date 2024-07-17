@@ -1,5 +1,5 @@
 ValueSet: HepatitisC_Diagnosecodes_ICD10GM
-Id: HepatitisC-ICD10GM
+Id: HepatitisC-Diagnosecodes-ICD10GM
 Title: "Hepatitis C Diagnosecodes ICD10GM"
 Description: "Das ValueSet HepatitisC_Diagnosecodes_ICD10GM enthält die Codes für die Diagnose von Hepatitis C-Viruskrankheit Infektion"
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_HepatitisC_Diagnosecodes_ICD10GM"

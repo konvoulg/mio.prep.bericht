@@ -144,7 +144,7 @@
     "endLine": 16
   },
   {
-    "outputFile": "ValueSet-HepatitisB-ICD10GM.json",
+    "outputFile": "ValueSet-HepatitisB-Diagnosecodes-ICD10GM.json",
     "fshName": "HepatitisB_Diagnosecodes_ICD10GM",
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HepatitisB_Diagnosecodes_ICD10GM.fsh",
@@ -152,7 +152,7 @@
     "endLine": 25
   },
   {
-    "outputFile": "ValueSet-HepatitisC-ICD10GM.json",
+    "outputFile": "ValueSet-HepatitisC-Diagnosecodes-ICD10GM.json",
     "fshName": "HepatitisC_Diagnosecodes_ICD10GM",
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HepatitisC_Diagnosecodes_ICD10GM.fsh",

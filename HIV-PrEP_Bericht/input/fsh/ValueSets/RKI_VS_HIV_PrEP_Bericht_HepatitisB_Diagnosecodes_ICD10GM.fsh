@@ -1,5 +1,5 @@
 ValueSet: HepatitisB_Diagnosecodes_ICD10GM
-Id: HepatitisB-ICD10GM
+Id: HepatitisB-Diagnosecodes-ICD10GM
 Title: "HepatitisB Diagnosecodes ICD10GM"
 Description: "Das ValueSet HepatitisB_Diagnosecodes_ICD10GM enthält die Codes für die Diagnose von Hepatitis B-Viruskrankheit Infektion"
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_HepatitisB_Diagnosecodes_ICD10GM"
