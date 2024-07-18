@@ -38,12 +38,14 @@ Description: "Hier wird die Leistung nach EBM 01921, die  PrEP  Einleitung / Re-
 // Status Completed? Ist das semantisch ok oder offen lassen?
 
 * status = #completed (exactly)
+* status MS
 
 //* statusReason ..0
 //* category ..0
 
 * code 1.. MS
 * code.coding 1..1 MS
+* code.coding[snomed] ^mustSupport = true
 * code.coding[snomed].system 1.. MS
 * code.coding[snomed].system = "http://snomed.info/sct" (exactly)
 * code.coding[snomed].version 1.. MS
@@ -51,7 +53,7 @@ Description: "Hier wird die Leistung nach EBM 01921, die  PrEP  Einleitung / Re-
 * code.coding[snomed].code 1.. MS
 * code.coding[snomed].code = #1287783000  (exactly)
 * code.coding[snomed].display 1.. MS
-* code.coding[snomed].display = "Administration of human immunodeficiency virus pre-exposure prophylaxis (procedure)"
+* code.coding[snomed].display = "Administration of human immunodeficiency virus pre-exposure prophylaxis (procedure)" (exactly)
 /*
 * code.coding.display.extension ^slicing.discriminator.type = #value
 * code.coding.display.extension ^slicing.discriminator.path = "url"

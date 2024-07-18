@@ -66,7 +66,8 @@
       {
         "id": "Procedure.status",
         "path": "Procedure.status",
-        "fixedCode": "completed"
+        "fixedCode": "completed",
+        "mustSupport": true
       },
       {
         "id": "Procedure.code",
@@ -83,7 +84,8 @@
       {
         "id": "Procedure.code.coding:snomed",
         "path": "Procedure.code.coding",
-        "sliceName": "snomed"
+        "sliceName": "snomed",
+        "mustSupport": true
       },
       {
         "id": "Procedure.code.coding:snomed.system",
@@ -106,7 +108,7 @@
       {
         "id": "Procedure.code.coding:snomed.display",
         "path": "Procedure.code.coding.display",
-        "patternString": "Administration of human immunodeficiency virus pre-exposure prophylaxis (procedure)",
+        "fixedString": "Administration of human immunodeficiency virus pre-exposure prophylaxis (procedure)",
         "mustSupport": true
       },
       {
