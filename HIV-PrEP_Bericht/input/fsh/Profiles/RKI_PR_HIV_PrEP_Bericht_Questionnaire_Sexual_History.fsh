@@ -1,7 +1,3 @@
-Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
-Alias: $11000274103 = http://snomed.info/sct/11000274103
-Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
-
 Instance: RKI-PR-PrEP-Bericht-Questionnaire
 InstanceOf: Questionnaire
 Usage: #example
@@ -11,10 +7,10 @@ Usage: #example
 * title = "Sexualanamnese"
 * status = #draft
 * publisher = "Robert Koch Institut"
-* description = "Dieses Frageboggen bildet die Sexualanamnese ab"
+* description = "Dieser Frageboggen bildet die Sexualanamnese ab"
 * item[0].type = #choice
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-* item[=].extension.valueCodeableConcept = $questionnaire-item-control#drop-down "Drop down"
+* item[=].extension.valueCodeableConcept = $questionnaire-item-control#radio-button "Radio Button"
 * item[=].linkId = "357318092995"
 * item[=].code = $11000274103#275881005 "History of sexually transmitted disease (situation)"
 * item[=].text = "Vorherige STI Infektion"
@@ -22,21 +18,21 @@ Usage: #example
 * item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
 * item[+].type = #choice
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-* item[=].extension.valueCodeableConcept = $questionnaire-item-control#drop-down "Drop down"
+* item[=].extension.valueCodeableConcept = $questionnaire-item-control#radio-button "Radio Button"
 * item[=].linkId = "7742571432941"
 * item[=].code = $11000274103#161775000 "History of sheath usage (situation)"
 * item[=].text = "Kondomnutzung"
 * item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
 * item[+].type = #choice
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-* item[=].extension.valueCodeableConcept = $questionnaire-item-control#drop-down "Drop down"
+* item[=].extension.valueCodeableConcept = $questionnaire-item-control#radio-button "Radio Button"
 * item[=].linkId = "1993731509843"
 * item[=].code = $11000274103#228388006 "Intravenous drug user (finding)"
 * item[=].text = "Drogen Intravenös"
 * item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
 * item[+].type = #choice
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-* item[=].extension.valueCodeableConcept = $questionnaire-item-control#drop-down "Drop down"
+* item[=].extension.valueCodeableConcept = $questionnaire-item-control#radio-button "Radio Button"
 * item[=].linkId = "5407091313032"
 * item[=].text = "Serodiskordante Konstellation"
 * item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"

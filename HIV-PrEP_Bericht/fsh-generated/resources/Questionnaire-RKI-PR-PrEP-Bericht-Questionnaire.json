@@ -9,9 +9,9 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "drop-down",
+                "code": "radio-button",
                 "system": "http://hl7.org/fhir/questionnaire-item-control",
-                "display": "Drop down"
+                "display": "Radio Button"
               }
             ]
           }
@@ -37,9 +37,9 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "drop-down",
+                "code": "radio-button",
                 "system": "http://hl7.org/fhir/questionnaire-item-control",
-                "display": "Drop down"
+                "display": "Radio Button"
               }
             ]
           }
@@ -64,9 +64,9 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "drop-down",
+                "code": "radio-button",
                 "system": "http://hl7.org/fhir/questionnaire-item-control",
-                "display": "Drop down"
+                "display": "Radio Button"
               }
             ]
           }
@@ -91,9 +91,9 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "drop-down",
+                "code": "radio-button",
                 "system": "http://hl7.org/fhir/questionnaire-item-control",
-                "display": "Drop down"
+                "display": "Radio Button"
               }
             ]
           }
@@ -276,5 +276,5 @@
   "title": "Sexualanamnese",
   "status": "draft",
   "publisher": "Robert Koch Institut",
-  "description": "Dieses Frageboggen bildet die Sexualanamnese ab"
+  "description": "Dieser Frageboggen bildet die Sexualanamnese ab"
 }

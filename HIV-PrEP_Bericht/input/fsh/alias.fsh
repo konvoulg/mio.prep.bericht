@@ -8,8 +8,9 @@ Alias: $data_absent = http://terminology.hl7.org/CodeSystem/data-absent-reason
 
 //Aliases Questionnaire
 
-
-
+Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
+Alias: $11000274103 = http://snomed.info/sct/11000274103
+Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 
 
 //KBV Laborbefund Aliases
