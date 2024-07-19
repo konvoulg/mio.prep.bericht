@@ -1,10 +1,10 @@
-Profile: RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine
-Parent: RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free
-Id: RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-Creatinine
-Title: "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
+Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine
+Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
+Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Creatinine
+Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
 Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins dokumentiert."
 
-* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
 
 * insert Meta-Profile
 
@@ -23,7 +23,7 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 //* meta.profile ^slicing.rules = #open
 //* meta.profile contains mioProfile 0..*
 //*/
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
 
 
 //* implicitRules ..0

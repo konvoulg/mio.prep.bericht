@@ -1,10 +1,10 @@
-Profile: RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_GFR
-Parent: RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free
-Id: RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-GFR
-Title: "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_GFR"
+Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR
+Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
+Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-GFR
+Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR"
 Description: "In diesem Profil kann eine Laboruntersuchung der Glomerulären Filtrationsrate dokumentiert werden."
 
-* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_GFR"
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR"
 
 * insert Meta-Profile
 
@@ -23,7 +23,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Glomerulären Fil
 //* meta.profile ^slicing.rules = #open
 //* meta.profile contains mioProfile 0..*
 //*/
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_GFR"
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR"
 
 
 //* implicitRules ..0

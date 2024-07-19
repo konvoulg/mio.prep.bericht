@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-Free",
-  "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free",
+  "id": "RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Free",
+  "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
   "version": "0.1.0",
-  "name": "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free",
-  "title": "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free",
+  "name": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
+  "title": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
   "status": "draft",
   "publisher": "Robert Koch Institut",
   "description": "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. Eine Laboruntersuchung beschreibt die quantitative oder qualitative Untersuchung eines spezifischen Laborparameters in einem definierten Probenmaterial.",
@@ -57,7 +57,7 @@
           {
             "key": "obs-1",
             "human": "At least year, month and day are needed",
-            "source": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free",
+            "source": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
             "severity": "error",
             "expression": "effectiveDateTime.toString().length() >= 10"
           }

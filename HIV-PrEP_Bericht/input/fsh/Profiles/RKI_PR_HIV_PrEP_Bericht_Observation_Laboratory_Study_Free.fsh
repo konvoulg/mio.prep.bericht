@@ -1,12 +1,12 @@
 //BaseDefinition fhir.r4.core Observation - Profil ähnelt mio laborbefund
 
-Profile: RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free
+Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Parent: Observation
-Id: RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-Free
-Title: "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free"
+Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Free
+Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free"
 Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. Eine Laboruntersuchung beschreibt die quantitative oder qualitative Untersuchung eines spezifischen Laborparameters in einem definierten Probenmaterial."
 
-* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free"
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free"
 
 * insert Meta-Profile
 
