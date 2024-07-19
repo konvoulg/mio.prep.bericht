@@ -112,6 +112,14 @@
     "endLine": 136
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-Creatinine.json",
+    "fshName": "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine.fsh",
+    "startLine": 1,
+    "endLine": 219
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-Free.json",
     "fshName": "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free",
     "fshType": "Profile",

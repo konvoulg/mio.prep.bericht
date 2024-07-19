@@ -96,8 +96,7 @@
         "path": "Observation.meta.profile",
         "sliceName": "mioProfile",
         "min": 0,
-        "max": "*",
-        "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free"
+        "max": "*"
       },
       {
         "id": "Observation.text",
