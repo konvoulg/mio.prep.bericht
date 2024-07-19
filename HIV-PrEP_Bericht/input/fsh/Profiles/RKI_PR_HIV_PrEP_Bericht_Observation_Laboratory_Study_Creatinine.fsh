@@ -1,10 +1,10 @@
 Profile: RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine
 Parent: RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-Creatinine
-Title: "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free"
-Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. Eine Laboruntersuchung beschreibt die quantitative oder qualitative Untersuchung eines spezifischen Laborparameters in einem definierten Probenmaterial."
+Title: "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
+Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins dokumentiert."
 
-* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free"
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Cratinine"
 
 * insert Meta-Profile
 
@@ -14,25 +14,24 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 
 * . ^definition = "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins dokumentiert."
 * ^abstract = false
-/*
-* meta MS
+
+//* meta MS
 * meta.versionId MS
 * meta.lastUpdated MS
-* meta.profile ^slicing.discriminator.type = #value
-* meta.profile ^slicing.discriminator.path = "$this"
-* meta.profile ^slicing.rules = #open
-* meta.profile contains mioProfile 0..*
-*/
+//* meta.profile ^slicing.discriminator.type = #value
+//* meta.profile ^slicing.discriminator.path = "$this"
+//* meta.profile ^slicing.rules = #open
+//* meta.profile contains mioProfile 0..*
+//*/
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
 
 
 //* implicitRules ..0
 
 //* language ..0
-/*
+
 * text ^definition = "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
 * text.status = #extensions
-*/
 //* contained ..0
 /*
 * extension ^slicing.discriminator.type = #value
@@ -55,11 +54,23 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 //* status MS
 
 //* category ..0
-
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding ^comment = "Das MustSupport gilt nur für die vordefinierten Slices."
+* code.coding contains loinc 1..1 MS
+* code.coding[loinc] from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine|1.0.0 (required)
+* code.coding[loinc] ^definition = "Hier wird die Laboruntersuchung zur Bestimmung des Serumkreatinins mittels eines spezifischen Codes definiert. Die deutschen Konzepte entsprechen den offiziellen Übersetzungen in der deutschen LOINC-Version."
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc].system 1.. MS
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version 1.. MS
+* code.coding[loinc].code 1.. MS
+* code.coding[loinc].display 1.. MS
 //* code MS
 //* code.coding 1..1 MS
-* code.coding from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine|1.0.0 (required)
-* code.coding ^definition = "Hier wird die Laboruntersuchung zur Bestimmung des Serumkreatinins mittels eines spezifischen Codes definiert. Die deutschen Konzepte entsprechen den offiziellen Übersetzungen in der deutschen LOINC-Version."
+//* code.coding from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine|1.0.0 (required)
+//* code.coding ^definition = "Hier wird die Laboruntersuchung zur Bestimmung des Serumkreatinins mittels eines spezifischen Codes definiert. Die deutschen Konzepte entsprechen den offiziellen Übersetzungen in der deutschen LOINC-Version."
 //* code.coding.system 1.. MS
 //* code.coding.system = "http://loinc.org"
 //* code.coding.version 1.. MS
@@ -96,11 +107,12 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * performer.identifier only $identifier-telematik-id
 
 * value[x] only Quantity //or CodeableConcept or Range or Ratio
+//* value[x] contains valueQuantity 
 //* value[x] MS
-//* value[x] ^slicing.discriminator.type = #type
-//* value[x] ^slicing.discriminator.path = "$this"
-//* value[x] ^slicing.rules = #closed
-
+* value[x] ^slicing.discriminator.type = #type
+* value[x] ^slicing.discriminator.path = "$this"
+* value[x] ^slicing.rules = #closed
+//* value[x] contains valueQuantity 1..1 MS
 * valueQuantity only Quantity
 * valueQuantity 0..1
 * valueQuantity from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0 (required)
