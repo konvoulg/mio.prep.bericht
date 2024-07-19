@@ -133,6 +133,7 @@ Description: "Hier wird die Leistung nach EBM 01921, die  PrEP  Einleitung / Re-
 * note.authorReference.identifier only $identifier-kvid-10 or $identifier-telematik-id
 * note.authorReference.identifier MS
 * note.time MS
+* note.text MS
 
 //* focalDevice ..0
 

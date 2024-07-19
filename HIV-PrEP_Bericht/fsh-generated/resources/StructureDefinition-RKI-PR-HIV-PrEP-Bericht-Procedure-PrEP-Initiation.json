@@ -276,6 +276,11 @@
         "id": "Procedure.note.time",
         "path": "Procedure.note.time",
         "mustSupport": true
+      },
+      {
+        "id": "Procedure.note.text",
+        "path": "Procedure.note.text",
+        "mustSupport": true
       }
     ]
   }
