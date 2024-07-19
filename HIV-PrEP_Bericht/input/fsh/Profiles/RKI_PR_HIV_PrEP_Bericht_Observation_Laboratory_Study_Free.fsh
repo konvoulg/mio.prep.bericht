@@ -56,7 +56,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 //* category ..0
 
 * code MS
-* code.coding 1..1 MS
+* code.coding 1.. MS
 * code.coding.system 1.. MS
 * code.coding.system = "http://loinc.org"
 * code.coding.version 1.. MS
