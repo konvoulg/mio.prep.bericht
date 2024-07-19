@@ -128,6 +128,14 @@
     "endLine": 260
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-GFR.json",
+    "fshName": "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_GFR",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR.fsh",
+    "startLine": 1,
+    "endLine": 232
+  },
+  {
     "outputFile": "ValueSet-Chlamydia-Trachomatis-Diagnosecodes-ICD10GM.json",
     "fshName": "Chlamydia_Trachomatis_Diagnosecodes_ICD10GM",
     "fshType": "ValueSet",

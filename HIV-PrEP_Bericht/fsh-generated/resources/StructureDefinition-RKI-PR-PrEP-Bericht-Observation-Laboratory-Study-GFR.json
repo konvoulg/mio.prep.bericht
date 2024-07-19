@@ -1,0 +1,210 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-GFR",
+  "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_GFR",
+  "version": "0.1.0",
+  "name": "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_GFR",
+  "title": "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_GFR",
+  "status": "draft",
+  "publisher": "Robert Koch Institut",
+  "description": "In diesem Profil kann eine Laboruntersuchung der Glomerulären Filtrationsrate dokumentiert werden.",
+  "copyright": "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Free",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "definition": "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins dokumentiert.",
+        "constraint": [
+          {
+            "key": "obs-1",
+            "human": "At least year, month and day are needed",
+            "source": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_GFR",
+            "severity": "error",
+            "expression": "effectiveDateTime.toString().length() >= 10"
+          },
+          {
+            "key": "obs-emp-2",
+            "human": "If it is a valid Observation it must have a value otherwise it must not have a value",
+            "source": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_GFR",
+            "severity": "error",
+            "expression": "(Observation.value.exists() implies (Observation.status in ('final' | 'amended' | 'corrected' | 'preliminary')))"
+          }
+        ]
+      },
+      {
+        "id": "Observation.meta.profile:mioProfile",
+        "path": "Observation.meta.profile",
+        "sliceName": "mioProfile",
+        "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_GFR"
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "comment": "Das MustSupport gilt nur für die vordefinierten Slices."
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "definition": "Hier wird die Laboruntersuchung zur Bestimmung der Glomerulären Filtrationsrate (GFR) mittels eines spezifischen Codes definiert.",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Glomerular_Filtration_Rate|1.0.0"
+        }
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "definition": "Hier wird ein Zeitpunkt der Untersuchung eingetragen, wobei dieser mindestens Tag, Monat und Jahr beinhalten muss.",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "definition": "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat.",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole",
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer.reference",
+        "path": "Observation.performer.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer.identifier",
+        "path": "Observation.performer.identifier",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-telematik-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "definition": "Hier wird das Messergebnis als quantitativer Wert abgebildet.",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "patternQuantity": {
+          "code": "mL/min/{1.73_m2}",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milliliter per minute per 1.73 square meter"
+        },
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value",
+        "path": "Observation.value[x].value",
+        "definition": "Numerischer Wert für eine gemessene Größe, eine Zahl mit optionalen Dezimalstellen."
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.comparator",
+        "path": "Observation.value[x].comparator",
+        "definition": "Der Komparator kann sein\n* <   (kleiner)\n* <= (kleiner oder gleich)\n* >= (größer oder gleich)\n* >   (größer)\n\nDie häufigste Option ist, dass ein Laborwertergebnis = (gleich) eines Wertes ist. In diesem Fall wird kein Komparator gesetzt."
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "definition": "Die Einheit leitet sich aus der Messgröße (gemessene Eigenschaft und Mengenmaß) ab. Ein Beispiel: Wenn die Messgröße \"Massekonzentration pro Volumen\" ist, kommen als Einheiten mg/dl oder g/dl in Frage. Nur UCUM-Einheiten sind zulässig."
+      },
+      {
+        "id": "Observation.note.time",
+        "path": "Observation.note.time",
+        "definition": "Hier wird der Zeitpunkt angegeben, zu dem die Notiz erstellt wurde."
+      }
+    ]
+  }
+}
