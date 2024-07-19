@@ -4,7 +4,7 @@ Id: RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-Creatinine
 Title: "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
 Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins dokumentiert."
 
-* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Cratinine"
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
 
 * insert Meta-Profile
 

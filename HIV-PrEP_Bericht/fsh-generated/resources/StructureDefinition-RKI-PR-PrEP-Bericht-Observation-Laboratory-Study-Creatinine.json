@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-PrEP-Bericht-Observation-Laboratory-Study-Creatinine",
-  "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Cratinine",
+  "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine",
   "version": "0.1.0",
   "name": "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine",
   "title": "RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine",
@@ -57,14 +57,14 @@
           {
             "key": "obs-1",
             "human": "At least year, month and day are needed",
-            "source": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Cratinine",
+            "source": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine",
             "severity": "error",
             "expression": "effectiveDateTime.toString().length() >= 10"
           },
           {
             "key": "obs-emp-2",
             "human": "If it is a valid Observation it must have a value otherwise it must not have a value",
-            "source": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Cratinine",
+            "source": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Observation_Laboratory_Study_Creatinine",
             "severity": "error",
             "expression": "(Observation.value.exists() implies (Observation.status in ('final' | 'amended' | 'corrected' | 'preliminary')))"
           }
