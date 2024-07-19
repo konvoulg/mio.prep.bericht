@@ -77,3 +77,6 @@ Alias: $KBV_VS_Base_Diagnosis_SNOMED_CT = https://fhir.kbv.de/ValueSet/KBV_VS_Ba
 
 //Alias neue ICD10GM Bfarm
 Alias: $CodingICD10GMBfARM = http://fhir.de/CodeSystem/bfarm/icd-10-gm
+
+//Alias UCUM
+Alias: $unitsofmeasure = http://unitsofmeasure.org
