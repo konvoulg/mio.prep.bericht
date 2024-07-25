@@ -1,0 +1,408 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RKI-PR-HIV-PrEP-Bericht-Medication",
+  "url": "https://fhir.kbv.de/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication",
+  "version": "0.1.0",
+  "name": "RKI_PR_HIV_PrEP_Bericht_Medication",
+  "title": "RKI_PR_HIV_PrEP_Bericht_Medication",
+  "status": "draft",
+  "publisher": "Robert Koch Institut",
+  "description": "Dieses Profil bildet ein Arzneimittel ab.",
+  "copyright": "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® SNOMED CT® which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from Loinc http://loinc.org. Loinc is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes Loinc Committee and is available at no cost under the license at http://loinc.org/license. Loinc® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures UCUM Organization. All rights reserved. THE UCUM TABLE IN ALL FORMATS, UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "https://gematik.de/fhir/epa-medication/StructureDefinition/epa-medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication",
+        "path": "Medication",
+        "definition": "Dieses Profil bildet ein Arzneimittel ab."
+      },
+      {
+        "id": "Medication.meta.profile",
+        "path": "Medication.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Medication.meta.profile:mioProfile",
+        "path": "Medication.meta.profile",
+        "sliceName": "mioProfile",
+        "min": 0,
+        "max": "*",
+        "patternCanonical": "https://fhir.kbv.de/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication"
+      },
+      {
+        "id": "Medication.text",
+        "path": "Medication.text",
+        "definition": "In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
+      },
+      {
+        "id": "Medication.text.status",
+        "path": "Medication.text.status",
+        "fixedCode": "extensions"
+      },
+      {
+        "id": "Medication.code",
+        "path": "Medication.code",
+        "definition": "Dieses Element beinhaltet die Bezeichnung des Arzneimittels oder der Rezeptur, entweder als codierte Information oder als Freitext.",
+        "min": 1
+      },
+      {
+        "id": "Medication.code.coding",
+        "path": "Medication.code.coding",
+        "definition": "Hier kann das Arzneimitell als codierte Information angegeben werden.",
+        "comment": "Das MustSupport gilt nur für die vordefinierten Slices."
+      },
+      {
+        "id": "Medication.code.coding:pzn",
+        "path": "Medication.code.coding",
+        "sliceName": "pzn",
+        "definition": "Hier kann die PZN angegeben werden, sofern es sich um ein Fertigarzneimittel handelt."
+      },
+      {
+        "id": "Medication.code.coding:pzn.display",
+        "path": "Medication.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Medication.code.coding:atc-de",
+        "path": "Medication.code.coding",
+        "sliceName": "atc-de",
+        "definition": "Hier kann ein deutscher ATC-Code angegeben werden.",
+        "max": "1"
+      },
+      {
+        "id": "Medication.code.coding:atc-de.version",
+        "path": "Medication.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:atc-de.display",
+        "path": "Medication.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Medication.code.coding:ask",
+        "path": "Medication.code.coding",
+        "sliceName": "ask",
+        "definition": "Hier kann ein ASK-Code angegeben werden.",
+        "max": "1"
+      },
+      {
+        "id": "Medication.code.coding:ask.display",
+        "path": "Medication.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Medication.code.coding:snomed",
+        "path": "Medication.code.coding",
+        "sliceName": "snomed",
+        "definition": "Hier kann ein SNOMED CT®-Code angegeben werden.",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:snomed.version",
+        "path": "Medication.code.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Medication.code.coding:snomed.display",
+        "path": "Medication.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Medication.code.text",
+        "path": "Medication.code.text",
+        "definition": "Hier kann eine freitextliche Bezeichnung/Beschreibung des Arzneimittels angegeben werden, z. B. eine gebräuchliche Bezeichnung oder der Handelsname."
+      },
+      {
+        "id": "Medication.form",
+        "path": "Medication.form",
+        "definition": "Diese Gruppe enthält die Bezeichnung / den Namen der Darreichungsform als Code oder als Freitexteintrag."
+      },
+      {
+        "id": "Medication.form.coding",
+        "path": "Medication.form.coding",
+        "definition": "Hier kann die Darreichungsform als Code angegeben werden.",
+        "comment": "Das MustSupport gilt nur für die vordefinierten Slices."
+      },
+      {
+        "id": "Medication.form.coding:edqm",
+        "path": "Medication.form.coding",
+        "sliceName": "edqm",
+        "definition": "Hier wird ein Code aus dem EDQM ValueSet medicine-doseform angegeben. Die Expansion der EDQM-Konzepte entspricht der Änderungshistorie vom 16.05.2022 (https://standardterms.edqm.eu/index/6).",
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Medicine_Doseform|1.5.0"
+        }
+      },
+      {
+        "id": "Medication.form.coding:edqm.display",
+        "path": "Medication.form.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Medication.form.coding:snomed",
+        "path": "Medication.form.coding",
+        "sliceName": "snomed",
+        "definition": "Hier kann ein SNOMED CT®-Code angegeben werden.",
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Dose_Form_SNOMED_CT|1.0.0"
+        }
+      },
+      {
+        "id": "Medication.form.coding:snomed.version",
+        "path": "Medication.form.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Medication.form.coding:snomed.display",
+        "path": "Medication.form.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Medication.form.coding:kbvDarreichungsform",
+        "path": "Medication.form.coding",
+        "sliceName": "kbvDarreichungsform",
+        "definition": "Hier kann ein Code nach dem Code-System S_KBV_DARREICHUNGSFORM angegeben werden.",
+        "max": "1"
+      },
+      {
+        "id": "Medication.form.coding:kbvDarreichungsform.version",
+        "path": "Medication.form.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.form.coding:kbvDarreichungsform.display",
+        "path": "Medication.form.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Medication.form.text",
+        "path": "Medication.form.text",
+        "definition": "Hier kann die Darreichungsform als Freitext angegeben werden.",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.amount",
+        "path": "Medication.amount",
+        "definition": "Hier kann die Packungsgröße/Gesamtmenge der Packung angegeben werden."
+      },
+      {
+        "id": "Medication.amount.numerator",
+        "path": "Medication.amount.numerator",
+        "definition": "Hier kann eine Einheit zur Gesamtmenge des Arzneimittels als Code oder als Freitext angegeben werden.",
+        "min": 1
+      },
+      {
+        "id": "Medication.amount.numerator.value",
+        "path": "Medication.amount.numerator.value",
+        "definition": "Hier wird die Anzahl bzw. Menge des in einer Packung enthaltenen Arzneimittels als Zahl angegeben.",
+        "min": 1
+      },
+      {
+        "id": "Medication.amount.numerator.unit",
+        "path": "Medication.amount.numerator.unit",
+        "definition": "Hier kann eine Einheit zur angegebenen Menge des in einer Packung enthaltenen Arzneimittels als Freitext angegeben werden.",
+        "min": 1
+      },
+      {
+        "id": "Medication.amount.numerator.system",
+        "path": "Medication.amount.numerator.system",
+        "min": 1
+      },
+      {
+        "id": "Medication.amount.numerator.code",
+        "path": "Medication.amount.numerator.code",
+        "definition": "Einheit als Code.",
+        "min": 1
+      },
+      {
+        "id": "Medication.amount.denominator",
+        "path": "Medication.amount.denominator",
+        "definition": "Hier wird die Einheit der Bezugsgröße angegeben, in der die genannte Menge des Bestandteils enthalten ist.",
+        "min": 1
+      },
+      {
+        "id": "Medication.amount.denominator.value",
+        "path": "Medication.amount.denominator.value",
+        "definition": "Hier wird die Anzahl bzw. Menge der Bezugsgröße angegeben, in der die genannte Menge enthalten ist. Beispiele: 1 Packung, 1 Blister, 1 Liter Lösung, ... (in allen genannten Beispielen wäre 1 als Zahl der Bezugsgröße anzugeben)",
+        "min": 1
+      },
+      {
+        "id": "Medication.amount.denominator.unit",
+        "path": "Medication.amount.denominator.unit",
+        "definition": "Hier wird die Einheit der Bezugsgröße angegeben, in der die genannte Menge enthalten ist. Beispiele: Packung, Blister, Liter.",
+        "min": 1
+      },
+      {
+        "id": "Medication.amount.denominator.system",
+        "path": "Medication.amount.denominator.system",
+        "min": 1
+      },
+      {
+        "id": "Medication.amount.denominator.code",
+        "path": "Medication.amount.denominator.code",
+        "definition": "Einheit als Code.",
+        "min": 1
+      },
+      {
+        "id": "Medication.ingredient",
+        "path": "Medication.ingredient",
+        "definition": "Hier können Bestandteile, die Wirkstoffe oder keine Wirkstoffe sind, erfasst werden."
+      },
+      {
+        "id": "Medication.ingredient.item[x]",
+        "path": "Medication.ingredient.item[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept",
+        "path": "Medication.ingredient.item[x]",
+        "sliceName": "itemCodeableConcept",
+        "definition": "Hier kann ein Bestandteil als Code oder Freitext angegeben werden.",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding",
+        "path": "Medication.ingredient.item[x].coding",
+        "definition": "Hier kann der Bestandteil als Code angegeben werden.",
+        "comment": "Das MustSupport gilt nur für die vordefinierten Slices."
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:ask",
+        "path": "Medication.ingredient.item[x].coding",
+        "sliceName": "ask",
+        "definition": "ASK-Code für den Bestandteil.",
+        "max": "1"
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:ask.display",
+        "path": "Medication.ingredient.item[x].coding.display",
+        "min": 1
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:atc-de",
+        "path": "Medication.ingredient.item[x].coding",
+        "sliceName": "atc-de",
+        "definition": "ATC-Code für den Bestandteil.",
+        "max": "1"
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:atc-de.version",
+        "path": "Medication.ingredient.item[x].coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:atc-de.display",
+        "path": "Medication.ingredient.item[x].coding.display",
+        "min": 1
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:snomed",
+        "path": "Medication.ingredient.item[x].coding",
+        "sliceName": "snomed",
+        "definition": "SNOMED CT®-Code für den Bestandteil.",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:snomed.version",
+        "path": "Medication.ingredient.item[x].coding.version",
+        "min": 1
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:snomed.display",
+        "path": "Medication.ingredient.item[x].coding.display",
+        "min": 1
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.text",
+        "path": "Medication.ingredient.item[x].text",
+        "definition": "Hier kann der Bestandteil als Freitext angegeben werden."
+      },
+      {
+        "id": "Medication.ingredient.strength",
+        "path": "Medication.ingredient.strength",
+        "definition": "Hier kann angegeben werden, in welcher Menge der genannte Bestandteil im Arzneimittel vorhanden ist."
+      },
+      {
+        "id": "Medication.ingredient.strength.numerator",
+        "path": "Medication.ingredient.strength.numerator",
+        "definition": "Hier wird die Anzahl bzw. Menge des enthaltenen Bestandteils angegeben. Dieser besteht aus einem Wert und einer Einheit."
+      },
+      {
+        "id": "Medication.ingredient.strength.numerator.value",
+        "path": "Medication.ingredient.strength.numerator.value",
+        "definition": "Hier wird der Wert der Anzahl bzw. Menge des enthaltenen Bestandteils als Zahl angegeben."
+      },
+      {
+        "id": "Medication.ingredient.strength.numerator.unit",
+        "path": "Medication.ingredient.strength.numerator.unit",
+        "definition": "Hier wird die Einheit zur erfassten Menge als Freitext angegeben, z. B. mg oder IE.",
+        "min": 1
+      },
+      {
+        "id": "Medication.ingredient.strength.numerator.code",
+        "path": "Medication.ingredient.strength.numerator.code",
+        "definition": "Einheit als Code."
+      },
+      {
+        "id": "Medication.ingredient.strength.denominator",
+        "path": "Medication.ingredient.strength.denominator",
+        "definition": "Hier wird die Anzahl bzw. Menge der Bezugsgröße angegeben, in der die genannte Menge enthalten ist.\n\n**Beispiele** (in allen genannten Beispielen wäre 1 als Zahl der Bezugsgröße anzugeben)\n* 1 Tbl.\n* 1 ml Lösung\n* 1 Fertigspritze",
+        "min": 1
+      },
+      {
+        "id": "Medication.ingredient.strength.denominator.value",
+        "path": "Medication.ingredient.strength.denominator.value",
+        "definition": "Hier wird die Anzahl bzw. Menge der Bezugsgröße angegeben, in der die genannte Menge enthalten ist."
+      },
+      {
+        "id": "Medication.ingredient.strength.denominator.unit",
+        "path": "Medication.ingredient.strength.denominator.unit",
+        "definition": "Hier wird die Einheit der Bezugsgröße angegeben, in der die genannte Menge enthalten ist.\n\n**Beispiele:**\n* Tbl.\n* ml\n* Fertigspritze",
+        "min": 1
+      },
+      {
+        "id": "Medication.ingredient.strength.denominator.code",
+        "path": "Medication.ingredient.strength.denominator.code",
+        "definition": "Einheit als Code."
+      }
+    ]
+  }
+}
