@@ -1,7 +1,7 @@
 //Kopiert von mio emp
 
 Profile: RKI_PR_HIV_PrEP_Bericht_Medication_PrEP
-Parent: RKI_PR_HIV_PrEP_Bericht_Medication
+Parent: RKI_PR_HIV_PrEP_Bericht_Medication_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Medication-PrEP
 Title: "RKI_PR_HIV_PrEP_Bericht_Medication_PrEP"
 Description: "Dieses Profil bildet der HIV PrEP Arzneimittel ab."
