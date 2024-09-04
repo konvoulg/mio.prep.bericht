@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "RKI-PR-HIV-PrEP-Bericht-Medication",
-  "url": "https://fhir.kbv.de/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication",
+  "id": "RKI-PR-HIV-PrEP-Bericht-Medication-Free",
+  "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free",
   "version": "0.1.0",
-  "name": "RKI_PR_HIV_PrEP_Bericht_Medication",
-  "title": "RKI_PR_HIV_PrEP_Bericht_Medication",
+  "name": "RKI_PR_HIV_PrEP_Bericht_Medication_Free",
+  "title": "RKI_PR_HIV_PrEP_Bericht_Medication_Free",
   "status": "draft",
   "publisher": "Robert Koch Institut",
   "description": "Dieses Profil bildet ein Arzneimittel ab.",
@@ -41,7 +41,7 @@
         "sliceName": "mioProfile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://fhir.kbv.de/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication"
+        "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free"
       },
       {
         "id": "Medication.text",

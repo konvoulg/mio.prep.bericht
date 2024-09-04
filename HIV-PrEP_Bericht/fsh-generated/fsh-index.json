@@ -56,12 +56,20 @@
     "endLine": 91
   },
   {
-    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication.json",
-    "fshName": "RKI_PR_HIV_PrEP_Bericht_Medication",
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication-Free.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Medication_Free",
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Medication.fsh",
     "startLine": 3,
     "endLine": 123
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication-PrEP.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Medication_PrEP",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Medication_PrEP.fsh",
+    "startLine": 3,
+    "endLine": 126
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight.json",
@@ -166,6 +174,14 @@
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HIV_Diagnosecodes_ICD10GM.fsh",
     "startLine": 1,
     "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-HIV-PrEP-Medikation-ATC.json",
+    "fshName": "HIV_PrEP_Medikation_ATC",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HIV_PrEP_Medikation_ATC.fsh",
+    "startLine": 1,
+    "endLine": 10
   },
   {
     "outputFile": "ValueSet-HepatitisB-Diagnosecodes-ICD10GM.json",
