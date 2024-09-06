@@ -109,7 +109,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Encounter_General.fsh",
     "startLine": 1,
-    "endLine": 91
+    "endLine": 99
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication-Free.json",

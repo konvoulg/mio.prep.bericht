@@ -40,7 +40,15 @@ Description: "Hier werden Begegnungen bzw. Aufenthalte, Arzt-Patientenkontakte m
 * class.display = "ambulatory" (exactly)
 //* class.userSelected ..0
 //* classHistory ..0
-//* type ..0
+* type MS
+* type.coding 1..1 MS
+* type.coding from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Encounter_Type (required)
+* type.coding.code 1..1 MS
+* type.coding.system 1..1 MS
+* type.coding.system = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type" (exactly)
+* type.coding.version 1..1 MS
+* type.coding.display 1..1 MS
+
 //* serviceType ..0
 //* priority ..0
 
