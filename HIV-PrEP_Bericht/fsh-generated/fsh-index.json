@@ -64,6 +64,14 @@
     "endLine": 76
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-HepatitisB.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisB",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisB.fsh",
+    "startLine": 1,
+    "endLine": 76
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Syphilis.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Syphilis",
     "fshType": "Profile",
