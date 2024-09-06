@@ -87,8 +87,7 @@
         "path": "Condition.meta.profile",
         "sliceName": "mioProfile",
         "min": 0,
-        "max": "*",
-        "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free"
+        "max": "*"
       },
       {
         "id": "Condition.text.status",

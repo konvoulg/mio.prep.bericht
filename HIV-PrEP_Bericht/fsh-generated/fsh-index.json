@@ -40,6 +40,14 @@
     "endLine": 204
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-HIV.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HIV",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HIV.fsh",
+    "startLine": 1,
+    "endLine": 76
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-History-Present.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_History_Present",
     "fshType": "Profile",
@@ -61,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Medication.fsh",
     "startLine": 3,
-    "endLine": 123
+    "endLine": 124
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication-PrEP.json",
@@ -144,12 +152,28 @@
     "endLine": 74
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Counselling.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling.fsh",
+    "startLine": 3,
+    "endLine": 92
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Initiation.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation",
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation.fsh",
     "startLine": 1,
     "endLine": 136
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-QuestionnaireResponse-Sexual-History.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse_Sexual_History",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse_Sexual_History.fsh",
+    "startLine": 2,
+    "endLine": 40
   },
   {
     "outputFile": "ValueSet-Chlamydia-Trachomatis-Diagnosecodes-ICD10GM.json",

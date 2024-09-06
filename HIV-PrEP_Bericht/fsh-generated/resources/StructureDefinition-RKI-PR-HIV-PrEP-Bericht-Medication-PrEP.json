@@ -18,6 +18,12 @@
   "differential": {
     "element": [
       {
+        "id": "Medication.meta.profile:mioProfile",
+        "path": "Medication.meta.profile",
+        "sliceName": "mioProfile",
+        "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_PrEP"
+      },
+      {
         "id": "Medication.code.coding",
         "path": "Medication.code.coding",
         "min": 1

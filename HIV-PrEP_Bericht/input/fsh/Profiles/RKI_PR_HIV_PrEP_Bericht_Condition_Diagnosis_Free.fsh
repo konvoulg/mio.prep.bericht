@@ -14,7 +14,7 @@ Description: "Hier werden relevante Diagnosen (ICD-10 GM) im Rahmen der PrEP Beh
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains mioProfile 0..*
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free"
+//* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free"
 
 //* implicitRules ..0
 //* language ..0
