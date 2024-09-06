@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-HepatitisB",
-  "url": "https://rki.de/fhir/hiv_prep_bericht/StructureDefinition/RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-HepatitisB",
+  "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisB",
   "version": "0.1.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisB",
   "title": "RKI_PR_HIV_PrEP_Bericht_Condition_HepatitisB",
@@ -45,7 +45,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Condition",
-  "baseDefinition": "https://rki.de/fhir/hiv_prep_bericht/StructureDefinition/RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Free",
+  "baseDefinition": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free",
   "derivation": "constraint",
   "differential": {
     "element": [
