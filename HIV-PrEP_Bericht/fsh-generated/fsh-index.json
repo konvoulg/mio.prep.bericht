@@ -32,12 +32,28 @@
     "endLine": 52
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Chlamydia-Tracomatis.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Tracomatis",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Trachomatis.fsh",
+    "startLine": 1,
+    "endLine": 76
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Free.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free",
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free.fsh",
     "startLine": 1,
     "endLine": 204
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Gonokokkeninfektion.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Gonokokkeninfektion",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Gonokokkeninfektion.fsh",
+    "startLine": 1,
+    "endLine": 76
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-HIV.json",
@@ -67,7 +83,7 @@
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication-Free.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Medication_Free",
     "fshType": "Profile",
-    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Medication.fsh",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Medication_Free.fsh",
     "startLine": 3,
     "endLine": 124
   },
