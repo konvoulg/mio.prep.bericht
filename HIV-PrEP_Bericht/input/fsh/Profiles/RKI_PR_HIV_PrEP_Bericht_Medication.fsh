@@ -5,6 +5,7 @@ Parent: EPAMedication
 Id: RKI-PR-HIV-PrEP-Bericht-Medication-Free
 Title: "RKI_PR_HIV_PrEP_Bericht_Medication_Free"
 Description: "Dieses Profil bildet ein Arzneimittel ab."
+* ^abstract = true
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free"
 * insert Meta-Profile
 
@@ -18,7 +19,7 @@ Description: "Dieses Profil bildet ein Arzneimittel ab."
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains mioProfile 0..*
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free"
+//* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free"
 * text ^definition = "In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
 * text.status = #extensions (exactly)
 * code 1..
