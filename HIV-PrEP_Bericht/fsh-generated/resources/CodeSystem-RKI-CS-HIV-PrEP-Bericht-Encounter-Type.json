@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "RKI_CS_HIV_PrEP_Bericht_Encounter_Type",
+  "id": "RKI-CS-HIV-PrEP-Bericht-Encounter-Type",
+  "title": "Art der Begegnung",
+  "description": "Dieses CodeSystem enthält die Codes für deutsche Bezeichner für Begegnungstypen im Rahmen der HIV Peexpositionsprophylaxe.",
+  "url": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type",
+  "concept": [
+    {
+      "code": "PrEPInitiierung",
+      "display": "HIV-PrEP Initiierungsbegegnung"
+    },
+    {
+      "code": "PrEPBeratung",
+      "display": "HIV-PrEP Beratungsbegegnung"
+    },
+    {
+      "code": "PrEPKontrolle",
+      "display": "HIV-PrEP Kontrollbegegnung"
+    }
+  ],
+  "version": "0.1.0",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "count": 3
+}
