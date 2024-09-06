@@ -2,6 +2,8 @@
 Alias: $ATC_DE = http://fhir.de/CodeSystem/bfarm/atc
 Alias: $RKI_PR_PrEP_Bericht_PatientIn = https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PatientIn
 Alias: $extGenderIdentity = http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity
+Alias: $PrEPatient = https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient
+Alias: $PrEPractitioner = https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner
 //Aliases CodeSysteme
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
