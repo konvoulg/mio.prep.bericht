@@ -126,46 +126,10 @@
           "display": "Sexual orientation (observable entity)"
         }
       ],
-      "answerOption": [
-        {
-          "valueCoding": {
-            "code": "42035005",
-            "system": "http://snomed.info/sct",
-            "display": "Bisexual (finding)"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "20430005",
-            "system": "http://snomed.info/sct",
-            "display": "Heterosexual (finding)"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "38628009",
-            "system": "http://snomed.info/sct",
-            "display": "Homosexual (finding)"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "OTH",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "display": "other"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "UNK",
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "display": "unknown"
-          }
-        }
-      ],
       "type": "choice",
       "linkId": "7294102201786",
-      "text": "Sexuelle Orientierung"
+      "text": "Sexuelle Orientierung",
+      "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT"
     },
     {
       "extension": [
@@ -201,47 +165,11 @@
           "display": "Gender identity"
         }
       ],
-      "answerOption": [
-        {
-          "valueCoding": {
-            "code": "446141000124107",
-            "system": "http://snomed.info/sct",
-            "display": "Identifies as female gender (finding)"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "446151000124109",
-            "system": "http://snomed.info/sct",
-            "display": "Identifies as male gender (finding)"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "33791000087105",
-            "system": "http://snomed.info/sct",
-            "display": "Identifies as gender nonbinary"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "asked-declined",
-            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-            "display": "Asked But Declined"
-          }
-        },
-        {
-          "valueCoding": {
-            "code": "Unknown",
-            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-            "display": "Unknown"
-          }
-        }
-      ],
       "type": "choice",
       "linkId": "6401616433112",
       "text": "Geschlechtsidentitaet",
-      "definition": "Patient.extension:Geschlechtsidentitaet"
+      "definition": "Patient.extension:Geschlechtsidentitaet",
+      "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Gender_Identity_SNOMEDCT"
     },
     {
       "extension": [

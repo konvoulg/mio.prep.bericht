@@ -42,11 +42,14 @@ Usage: #example
 * item[=].linkId = "7294102201786"
 * item[=].code = $11000274103#66621004 "Sexual orientation (observable entity)"
 * item[=].text = "Sexuelle Orientierung"
+* item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT"
+/*
 * item[=].answerOption[0].valueCoding = $sct#42035005 "Bisexual (finding)"
 * item[=].answerOption[+].valueCoding = $sct#20430005 "Heterosexual (finding)"
 * item[=].answerOption[+].valueCoding = $sct#38628009 "Homosexual (finding)"
 * item[=].answerOption[+].valueCoding = $v3-NullFlavor#OTH "other"
 * item[=].answerOption[+].valueCoding = $v3-NullFlavor#UNK "unknown"
+*/
 * item[+].type = #choice
 * item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension[=].valueCodeableConcept = $questionnaire-item-control#drop-down "Drop down"
@@ -56,11 +59,14 @@ Usage: #example
 * item[=].code = $11000274103#33821000087103 "Gender identity"
 * item[=].text = "Geschlechtsidentitaet"
 * item[=].definition = https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient#Patient.extension:Geschlechtsidentitaet
+* item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Gender_Identity_SNOMEDCT"
+/*
 * item[=].answerOption[0].valueCoding = $sct#446141000124107 "Identifies as female gender (finding)"
 * item[=].answerOption[+].valueCoding = $sct#446151000124109 "Identifies as male gender (finding)"
 * item[=].answerOption[+].valueCoding = $sct#33791000087105 "Identifies as gender nonbinary"
 * item[=].answerOption[+].valueCoding = $data_absent#asked-declined "Asked But Declined"
 * item[=].answerOption[+].valueCoding = $data_absent#Unknown "Unknown"
+*/
 * item[=].extension[+].url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext"
 * item[=].extension[=].valueExpression.description = "Patient des Questionnaires"
 * item[=].extension[=].valueExpression.language = #text/fhirpath
