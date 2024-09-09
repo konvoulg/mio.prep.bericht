@@ -1,7 +1,7 @@
 ValueSet: Sexual_Orientation_SNOMEDCT
 Id: Sexual-Orientation-SNOMEDCT
 Title: "Sexual Orientation SNOMEDCT"
-Description: "Das ValueSet Sexual_Orientation_SNOMEDCT enthält die Codes für die Diagnose von Humane Immundefizienz-Viruskrankheit Infektion"
+Description: "Das ValueSet Sexual_Orientation_SNOMEDCT enthält die Codes für die vom Patienten angegebene sexuelle Orientierung (d. h. die körperliche und/oder emotionale Anziehung einer Person zu einer anderen Person des gleichen Geschlechts, des anderen Geschlechts oder beider Geschlechter)."
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT"
 * insert MetadataTerminology
 * ^date = "2024-09-09"

@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Questionnaire_Sexual_History.fsh",
     "startLine": 1,
-    "endLine": 77
+    "endLine": 83
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance.json",
