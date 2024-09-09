@@ -232,6 +232,14 @@
     "endLine": 17
   },
   {
+    "outputFile": "ValueSet-Gender-Identity-SNOMEDCT.json",
+    "fshName": "Gender_Identity_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Gender_Identity_SNOMEDCT.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
     "outputFile": "ValueSet-Gonokokkeninfektion-Diagnosecodes-ICD10GM.json",
     "fshName": "Gonokokkeninfektion_Diagnosecodes_ICD10GM",
     "fshType": "ValueSet",
@@ -278,6 +286,14 @@
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HepatitisC_Diagnosecodes_ICD10GM.fsh",
     "startLine": 1,
     "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-Sexual-Orientation-SNOMEDCT.json",
+    "fshName": "Sexual_Orientation_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT.fsh",
+    "startLine": 1,
+    "endLine": 24
   },
   {
     "outputFile": "ValueSet-Syphilis-Diagnosecodes-ICD10GM.json",
