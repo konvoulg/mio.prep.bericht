@@ -1,0 +1,363 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "RKI_VS_HIV_PrEP_Bericht_Chlamydia_Trachomatis_LOINC",
+  "id": "RKI-VS-HIV-PrEP-Bericht-Chlamydia-Trachomatis-LOINC",
+  "title": "Chlamydia Trachomatis Laboruntersuchung LOINC",
+  "description": "Dieses ValueSet beinhaltet LOINC Codes zum Laboruntersuchung Chlamydia Trachomatis",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Chlamydia_Trachomatis_Lab_Study_LOINC",
+  "version": "0.1.0",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "date": "2024-09-10",
+  "immutable": false,
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "16601-7",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Urine by Probe"
+          },
+          {
+            "code": "21189-6",
+            "display": "Chlamydia trachomatis DNA [Presence] in Cervical mucus by NAA with probe detection"
+          },
+          {
+            "code": "21192-0",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Urethra by Probe"
+          },
+          {
+            "code": "45078-3",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Cervix by Probe"
+          },
+          {
+            "code": "45080-9",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by Probe"
+          },
+          {
+            "code": "45097-3",
+            "display": "Chlamydia sp identified in Anal by Organism specific culture"
+          },
+          {
+            "code": "45099-9",
+            "display": "Chlamydia sp identified in Body fluid by Organism specific culture"
+          },
+          {
+            "code": "24005-1",
+            "display": "Chlamydia sp identified in Bronchial specimen by Organism specific culture"
+          },
+          {
+            "code": "45098-1",
+            "display": "Chlamydia sp identified in Cervix by Organism specific culture"
+          },
+          {
+            "code": "556-1",
+            "display": "Chlamydia sp identified in Conjunctival specimen by Organism specific culture"
+          },
+          {
+            "code": "557-9",
+            "display": "Chlamydia sp identified in Genital specimen by Organism specific culture"
+          },
+          {
+            "code": "45101-3",
+            "display": "Chlamydia sp identified in Nasopharynx by Organism specific culture"
+          },
+          {
+            "code": "560-3",
+            "display": "Chlamydia sp identified in Specimen by Organism specific culture"
+          },
+          {
+            "code": "6348-7",
+            "display": "Chlamydia sp identified in Sputum by Organism specific culture"
+          },
+          {
+            "code": "558-7",
+            "display": "Chlamydia sp identified in Throat by Organism specific culture"
+          },
+          {
+            "code": "559-5",
+            "display": "Chlamydia sp identified in Urethra by Organism specific culture"
+          },
+          {
+            "code": "45100-5",
+            "display": "Chlamydia sp identified in Vaginal fluid by Organism specific culture"
+          },
+          {
+            "code": "30204-2",
+            "display": "Chlamydia trachomatis Ab [Presence] in Serum"
+          },
+          {
+            "code": "22187-9",
+            "display": "Chlamydia trachomatis Ab [Titer] in Serum"
+          },
+          {
+            "code": "7824-6",
+            "display": "Chlamydia trachomatis Ab [Units/volume] in Serum"
+          },
+          {
+            "code": "31777-6",
+            "display": "Chlamydia trachomatis Ag [Presence] in Specimen"
+          },
+          {
+            "code": "47212-6",
+            "display": "Chlamydia trachomatis DNA [Identifier] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "45090-8",
+            "display": "Chlamydia trachomatis DNA [Presence] in Anal by NAA with probe detection"
+          },
+          {
+            "code": "80363-5",
+            "display": "Chlamydia trachomatis DNA [Presence] in Anorectal by NAA with probe detection"
+          },
+          {
+            "code": "16599-3",
+            "display": "Chlamydia trachomatis DNA [Presence] in Blood by NAA with probe detection"
+          },
+          {
+            "code": "21190-4",
+            "display": "Chlamydia trachomatis DNA [Presence] in Cervix by NAA with probe detection"
+          },
+          {
+            "code": "21187-0",
+            "display": "Chlamydia trachomatis DNA [Presence] in Conjunctival specimen by NAA with probe detection"
+          },
+          {
+            "code": "6356-0",
+            "display": "Chlamydia trachomatis DNA [Presence] in Genital specimen by NAA with probe detection"
+          },
+          {
+            "code": "45086-6",
+            "display": "Chlamydia trachomatis DNA [Presence] in Nasopharynx by NAA with probe detection"
+          },
+          {
+            "code": "51578-3",
+            "display": "Chlamydia trachomatis DNA [Presence] in Semen by NAA with probe detection"
+          },
+          {
+            "code": "21613-5",
+            "display": "Chlamydia trachomatis DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "43404-3",
+            "display": "Chlamydia trachomatis DNA [Presence] in Specimen by Probe with signal amplification"
+          },
+          {
+            "code": "50311-0",
+            "display": "Chlamydia trachomatis DNA [Presence] in Specimen from Donor by NAA with probe detection"
+          },
+          {
+            "code": "88221-7",
+            "display": "Chlamydia trachomatis DNA [Presence] in Throat by NAA with probe detection"
+          },
+          {
+            "code": "87949-4",
+            "display": "Chlamydia trachomatis DNA [Presence] in Tissue by NAA with probe detection"
+          },
+          {
+            "code": "21191-2",
+            "display": "Chlamydia trachomatis DNA [Presence] in Urethra by NAA with probe detection"
+          },
+          {
+            "code": "6357-8",
+            "display": "Chlamydia trachomatis DNA [Presence] in Urine by NAA with probe detection"
+          },
+          {
+            "code": "45084-1",
+            "display": "Chlamydia trachomatis DNA [Presence] in Vaginal fluid by NAA with probe detection"
+          },
+          {
+            "code": "49096-1",
+            "display": "Chlamydia trachomatis DNA [Units/volume] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "45005-6",
+            "display": "Chlamydia trachomatis IgA Ab [Presence] in Serum"
+          },
+          {
+            "code": "22189-5",
+            "display": "Chlamydia trachomatis IgA Ab [Titer] in Serum"
+          },
+          {
+            "code": "22191-1",
+            "display": "Chlamydia trachomatis IgG Ab [Titer] in Serum"
+          },
+          {
+            "code": "5089-8",
+            "display": "Chlamydia trachomatis IgG Ab [Units/volume] in Serum"
+          },
+          {
+            "code": "41157-9",
+            "display": "Chlamydia trachomatis IgM Ab [Presence] in Serum"
+          },
+          {
+            "code": "22193-7",
+            "display": "Chlamydia trachomatis IgM Ab [Titer] in Serum"
+          },
+          {
+            "code": "5090-6",
+            "display": "Chlamydia trachomatis IgM Ab [Units/volume] in Serum"
+          },
+          {
+            "code": "26668-4",
+            "display": "Chlamydia trachomatis L1 Ab [Presence] in Serum"
+          },
+          {
+            "code": "90365-8",
+            "display": "Chlamydia trachomatis L1 Ab.IgG+IgA+IgM Interpretation in Serum by Immunoassay"
+          },
+          {
+            "code": "90361-7",
+            "display": "Chlamydia trachomatis L1 IgA Ab [Titer] in Serum by Immunoassay"
+          },
+          {
+            "code": "90362-5",
+            "display": "Chlamydia trachomatis L1 IgG Ab [Titer] in Serum by Immunoassay"
+          },
+          {
+            "code": "90363-3",
+            "display": "Chlamydia trachomatis L1 IgM Ab [Titer] in Serum by Immunoassay"
+          },
+          {
+            "code": "26626-2",
+            "display": "Chlamydia trachomatis L2 Ab [Presence] in Serum"
+          },
+          {
+            "code": "47211-8",
+            "display": "Chlamydia trachomatis L2 DNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "44985-0",
+            "display": "Chlamydia trachomatis L2 IgA Ab [Presence] in Serum"
+          },
+          {
+            "code": "40855-9",
+            "display": "Chlamydia trachomatis L2 IgA Ab [Titer] in Serum"
+          },
+          {
+            "code": "43174-2",
+            "display": "Chlamydia trachomatis L2 IgA Ab [Titer] in Serum by Immunofluorescence"
+          },
+          {
+            "code": "51734-2",
+            "display": "Chlamydia trachomatis L2 IgA and IgG and IgM [Interpretation] in Serum"
+          },
+          {
+            "code": "44984-3",
+            "display": "Chlamydia trachomatis L2 IgG Ab [Presence] in Serum"
+          },
+          {
+            "code": "40854-2",
+            "display": "Chlamydia trachomatis L2 IgG Ab [Titer] in Serum"
+          },
+          {
+            "code": "43173-4",
+            "display": "Chlamydia trachomatis L2 IgG Ab [Titer] in Serum by Immunofluorescence"
+          },
+          {
+            "code": "44983-5",
+            "display": "Chlamydia trachomatis L2 IgM Ab [Presence] in Serum"
+          },
+          {
+            "code": "40856-7",
+            "display": "Chlamydia trachomatis L2 IgM Ab [Titer] in Serum"
+          },
+          {
+            "code": "43175-9",
+            "display": "Chlamydia trachomatis L2 IgM Ab [Titer] in Serum by Immunofluorescence"
+          },
+          {
+            "code": "57287-5",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Anal by NAA with probe detection"
+          },
+          {
+            "code": "45089-0",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Anal by Probe"
+          },
+          {
+            "code": "80364-3",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Anorectal by NAA with probe detection"
+          },
+          {
+            "code": "38469-3",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Blood by Probe"
+          },
+          {
+            "code": "50387-0",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Cervix by NAA with probe detection"
+          },
+          {
+            "code": "99778-3",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Conjunctival specimen by NAA with probe detection"
+          },
+          {
+            "code": "21188-8",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Conjunctival specimen by Probe"
+          },
+          {
+            "code": "23838-6",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Genital fluid by Probe"
+          },
+          {
+            "code": "16600-9",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Genital specimen by Probe"
+          },
+          {
+            "code": "57288-3",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Nasopharynx by NAA with probe detection"
+          },
+          {
+            "code": "45085-8",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Nasopharynx by Probe"
+          },
+          {
+            "code": "43304-5",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection"
+          },
+          {
+            "code": "4993-2",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Specimen by Probe"
+          },
+          {
+            "code": "50411-8",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Specimen from Donor by NAA with probe detection"
+          },
+          {
+            "code": "82306-2",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Throat by NAA with probe detection"
+          },
+          {
+            "code": "53925-4",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Urethra by NAA with probe detection"
+          },
+          {
+            "code": "42931-6",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Urine by NAA with probe detection"
+          },
+          {
+            "code": "53926-2",
+            "display": "Chlamydia trachomatis rRNA [Presence] in Vaginal fluid by NAA with probe detection"
+          },
+          {
+            "code": "43846-5",
+            "display": "Chlamydophila sp Ab [Interpretation] in Serum"
+          }
+        ]
+      }
+    ]
+  }
+}
