@@ -304,6 +304,14 @@
     "endLine": 129
   },
   {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Neisseria-gonorrhoeae-LOINC.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Neisseria_gonorrhoeae_LOINC",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Neisseria gonorrhoeae_Lab_Study_LOINC.fsh",
+    "startLine": 1,
+    "endLine": 67
+  },
+  {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Syphilis-Lab-Study-LOINC.json",
     "fshName": "RKI_VS_HIV_PrEP_Bericht_Syphilis_Lab_Study_LOINC",
     "fshType": "ValueSet",
