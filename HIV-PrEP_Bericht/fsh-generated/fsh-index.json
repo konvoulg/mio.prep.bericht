@@ -136,6 +136,14 @@
     "endLine": 92
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Chlamydia.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis.fsh",
+    "startLine": 1,
+    "endLine": 63
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Creatinine.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine",
     "fshType": "Profile",
@@ -164,6 +172,14 @@
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV",
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV.fsh",
+    "startLine": 1,
+    "endLine": 63
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisB.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB.fsh",
     "startLine": 1,
     "endLine": 63
   },

@@ -1,10 +1,10 @@
-Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV
+Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB
 Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
-Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HIV
-Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV"
-Description: "In diesem Profil kann eine Laboruntersuchung des Humanes Immundefizienz-Virus (HIV) dokumentiert werden."
+Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisB
+Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
+Description: "In diesem Profil kann eine Laboruntersuchung der Hepatitis B Infektion dokumentiert werden."
 
-* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV"
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
 
 * insert Meta-Profile
 
@@ -12,7 +12,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung des Humanes Immundefi
 
 * obeys obs-1 and obs-emp-2
 
-* . ^definition = "In diesem Profil wird eine Laboruntersuchung des HIV dokumentiert."
+* . ^definition = "In diesem Profil wird eine Laboruntersuchung der HepatitisB Infektion dokumentiert."
 * ^abstract = false
 
 //* meta MS
@@ -23,7 +23,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung des Humanes Immundefi
 //* meta.profile ^slicing.rules = #open
 //* meta.profile contains mioProfile 0..*
 //*/
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV"
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
 
 
 //* implicitRules ..0
@@ -59,8 +59,8 @@ Description: "In diesem Profil kann eine Laboruntersuchung des Humanes Immundefi
 * code.coding ^slicing.rules = #open
 * code.coding ^comment = "Das MustSupport gilt nur für die vordefinierten Slices."
 * code.coding contains loinc 1..1 MS
-* code.coding[loinc] from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_HIV_Lab_Study_LOINC (extensible)
-* code.coding[loinc] ^definition = "Hier wird die Laboruntersuchung zur Bestimmung der HIV-Infektion mittels eines spezifischen Codes definiert."
+* code.coding[loinc] from https://demis.rki.de/fhir/ValueSet/laboratoryTestHBVP (extensible)
+* code.coding[loinc] ^definition = "Hier wird die Laboruntersuchung zur Bestimmung der Hepatitis B Virus-Infektion mittels eines spezifischen Codes definiert."
 /*
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"
 * code.coding[loinc].system 1.. MS
