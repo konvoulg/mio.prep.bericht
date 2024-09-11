@@ -106,6 +106,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * valueCodeableConcept MS
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding MS
+* valueCodeableConcept.coding ^definition = "In diesem Element werden die Qualitative Ergebnisse der Laboruntersuchung mittels SNOMED CT Kodierung dokumentiert" 
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"
 * valueCodeableConcept.coding ^slicing.rules = #open

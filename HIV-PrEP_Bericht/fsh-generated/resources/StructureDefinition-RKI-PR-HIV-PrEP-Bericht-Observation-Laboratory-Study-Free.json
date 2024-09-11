@@ -375,6 +375,7 @@
           ],
           "rules": "open"
         },
+        "definition": "In diesem Element werden die Qualitative Ergebnisse der Laboruntersuchung mittels SNOMED CT Kodierung dokumentiert",
         "mustSupport": true
       },
       {
