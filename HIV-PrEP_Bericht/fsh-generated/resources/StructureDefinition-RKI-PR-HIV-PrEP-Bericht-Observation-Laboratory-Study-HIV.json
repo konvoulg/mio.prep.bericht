@@ -99,7 +99,7 @@
         "max": "1",
         "mustSupport": true,
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_HIV_Lab_Study_LOINC"
         }
       }
