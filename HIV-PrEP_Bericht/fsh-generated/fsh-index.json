@@ -184,6 +184,14 @@
     "endLine": 63
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisC.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC.fsh",
+    "startLine": 1,
+    "endLine": 63
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy-Status.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status",
     "fshType": "Profile",
