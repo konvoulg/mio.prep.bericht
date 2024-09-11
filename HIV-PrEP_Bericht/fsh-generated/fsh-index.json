@@ -149,7 +149,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free.fsh",
     "startLine": 3,
-    "endLine": 261
+    "endLine": 262
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-GFR.json",
@@ -310,6 +310,14 @@
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HIV_Lab_Study_LOINC.fsh",
     "startLine": 1,
     "endLine": 129
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Lab-Study-Result-Qualitative-SNOMEDCT.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT.fsh",
+    "startLine": 3,
+    "endLine": 25
   },
   {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Neisseria-gonorrhoeae-LOINC.json",

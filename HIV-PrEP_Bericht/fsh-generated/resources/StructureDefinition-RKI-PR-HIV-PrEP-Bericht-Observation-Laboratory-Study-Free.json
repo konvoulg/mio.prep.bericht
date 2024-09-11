@@ -376,7 +376,11 @@
           "rules": "open"
         },
         "definition": "In diesem Element werden die Qualitative Ergebnisse der Laboruntersuchung mittels SNOMED CT Kodierung dokumentiert",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT"
+        }
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept.coding:snomed_CT",
