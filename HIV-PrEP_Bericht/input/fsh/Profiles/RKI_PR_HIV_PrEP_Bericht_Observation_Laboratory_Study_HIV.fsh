@@ -54,11 +54,13 @@ Description: "In diesem Profil kann eine Laboruntersuchung des Humanes Immundefi
 //* status MS
 
 //* category ..0
+/*
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding ^comment = "Das MustSupport gilt nur für die vordefinierten Slices."
 * code.coding contains loinc 1..1 MS
+*/
 * code.coding[loinc] from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_HIV_Lab_Study_LOINC (extensible)
 * code.coding[loinc] ^definition = "Hier wird die Laboruntersuchung zur Bestimmung der HIV-Infektion mittels eines spezifischen Codes definiert."
 /*

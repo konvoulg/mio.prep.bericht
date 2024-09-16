@@ -34,12 +34,13 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * text.status = #extensions
 
 //* contained ..0
+* extension MS
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #closed
 * extension contains
     $KBV_EX_MIO_LAB_Documentation_Date named dokumentationszeitpunkt 1..1 MS and
-    $KBV_EX_MIO_LAB_Sorting_Number named sortiernummerUntersuchung 0..1 MS
+    $KBV_EX_MIO_LAB_Sorting_Number named sortiernummerUntersuchung 0..1 
 
 * identifier ..1 MS
 //* identifier.id ..0
@@ -53,23 +54,35 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 //* partOf ..0
 * status MS
 
-//* category ..0
+* category MS
+* category = $secondary-finding#laboratory
+* category ^short = "Kategorie der Laboruntersuchung"
 
 * code MS
+* code.coding MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding.system 1.. MS
+* code.coding.code 1.. MS
+* code.coding.display MS
+* code.coding contains loinc 1..* MS
+* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+/*
 * code.coding 1.. MS
 * code.coding.system 1.. MS
 * code.coding.system = "http://loinc.org"
 * code.coding.version 1.. MS
 * code.coding.code 1.. MS
 * code.coding.display 1.. MS
-
+*/
 //* code.coding.userSelected ..0
 
 * code.text MS
 
 * subject 1.. MS
 * subject only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
-* subject.reference 1..
+* subject.reference 1.. MS
 * subject.type ..0
 * subject.identifier only $identifier-kvid-10
 //* subject.display ..0
@@ -87,7 +100,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 //* performer ..0
 
 * value[x] only Quantity or CodeableConcept or Range or Ratio
-* value[x] MS
+//* value[x] MS
 * value[x] ^slicing.discriminator.type = #type
 * value[x] ^slicing.discriminator.path = "$this"
 * value[x] ^slicing.rules = #closed

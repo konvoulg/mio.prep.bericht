@@ -54,16 +54,19 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Glomerulären Fil
 //* status MS
 
 //* category ..0
+/*
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding ^comment = "Das MustSupport gilt nur für die vordefinierten Slices."
 * code.coding contains loinc 1..1 MS
+*/
 * code.coding[loinc] from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Glomerular_Filtration_Rate|1.0.0 (required)
 * code.coding[loinc] ^definition = "Hier wird die Laboruntersuchung zur Bestimmung der Glomerulären Filtrationsrate (GFR) mittels eines spezifischen Codes definiert."
-* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+
+//* code.coding[loinc] ^patternCoding.system = "http://loinc.org"
 * code.coding[loinc].system 1.. MS
-* code.coding[loinc].system = "http://loinc.org"
+//* code.coding[loinc].system = "http://loinc.org"
 * code.coding[loinc].version 1.. MS
 * code.coding[loinc].code 1.. MS
 * code.coding[loinc].display 1.. MS

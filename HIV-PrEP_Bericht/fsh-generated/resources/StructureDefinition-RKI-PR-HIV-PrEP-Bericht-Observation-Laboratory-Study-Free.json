@@ -121,7 +121,8 @@
           "description": "Extensions are always sliced by (at least) url",
           "rules": "closed"
         },
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Observation.extension:dokumentationszeitpunkt",
@@ -152,8 +153,7 @@
               "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.identifier",
@@ -179,6 +179,20 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "short": "Kategorie der Laboruntersuchung",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "laboratory",
+              "system": "http://hl7.org/fhir/secondary-finding"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
         "id": "Observation.code",
         "path": "Observation.code",
         "mustSupport": true
@@ -186,19 +200,21 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 1,
         "mustSupport": true
       },
       {
         "id": "Observation.code.coding.system",
         "path": "Observation.code.coding.system",
-        "min": 1,
-        "patternUri": "http://loinc.org",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding.version",
-        "path": "Observation.code.coding.version",
         "min": 1,
         "mustSupport": true
       },
@@ -211,7 +227,17 @@
       {
         "id": "Observation.code.coding.display",
         "path": "Observation.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
         "min": 1,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
         "mustSupport": true
       },
       {
@@ -236,7 +262,8 @@
       {
         "id": "Observation.subject.reference",
         "path": "Observation.subject.reference",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Observation.subject.type",
@@ -304,8 +331,7 @@
           {
             "code": "Ratio"
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.value[x]:valueQuantity",

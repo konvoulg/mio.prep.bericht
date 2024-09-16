@@ -5,6 +5,7 @@ Alias: $extGenderIdentity = http://hl7.org/fhir/us/core/StructureDefinition/us-c
 Alias: $PrEPatient = https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient
 Alias: $PrEPractitioner = https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner
 Alias: $SyphilisLab = https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Syphilis_Lab_Study_LOINC
+Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
 
 //Aliases CodeSysteme
 Alias: $loinc = http://loinc.org
