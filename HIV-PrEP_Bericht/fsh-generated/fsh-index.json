@@ -1,5 +1,21 @@
 [
   {
+    "outputFile": "CapabilityStatement-ISiKCapabilityStatementMedikationInformation.json",
+    "fshName": "ISiKCapabilityStatementMedikationInformation",
+    "fshType": "Instance",
+    "fshFile": "CapabilityStatements\\Isik_CapabilityStatement.fsh",
+    "startLine": 1,
+    "endLine": 418
+  },
+  {
+    "outputFile": "CapabilityStatement-capabilitystatement-ecr.json",
+    "fshName": "capabilitystatement-ecr",
+    "fshType": "Instance",
+    "fshFile": "CapabilityStatements\\RKI_PR_HIV_PrEP_Bericht_CapabilityStatementECR.fsh",
+    "startLine": 1,
+    "endLine": 276
+  },
+  {
     "outputFile": "CodeSystem-RKI-CS-HIV-PrEP-Bericht-Encounter-Type.json",
     "fshName": "RKI_CS_HIV_PrEP_Bericht_Encounter_Type",
     "fshType": "CodeSystem",
@@ -256,12 +272,12 @@
     "endLine": 136
   },
   {
-    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-QuestionnaireResponse-Sexual-History.json",
-    "fshName": "RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse_Sexual_History",
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-QuestionnaireResponse.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse",
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse_Sexual_History.fsh",
     "startLine": 2,
-    "endLine": 40
+    "endLine": 46
   },
   {
     "outputFile": "ValueSet-Chlamydia-Trachomatis-Diagnosecodes-ICD10GM.json",
