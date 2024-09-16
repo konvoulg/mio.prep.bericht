@@ -343,8 +343,7 @@
           {
             "code": "Quantity"
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.value[x]:valueQuantity.value",
@@ -386,8 +385,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept.coding",
@@ -456,8 +454,7 @@
           {
             "code": "Ratio"
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.value[x]:valueRatio.numerator",
@@ -535,8 +532,7 @@
           {
             "code": "Range"
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.value[x]:valueRange.low",

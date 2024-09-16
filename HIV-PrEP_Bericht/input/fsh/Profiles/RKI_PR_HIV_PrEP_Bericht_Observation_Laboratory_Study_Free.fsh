@@ -89,8 +89,9 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 //* focus ..0
 * encounter only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General)
 
-* effective[x] only dateTime
 * effective[x] MS
+* effective[x] only dateTime
+
 
 * effectiveDateTime 1.. MS
 * effectiveDateTime only dateTime
@@ -106,7 +107,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * value[x] ^slicing.rules = #closed
 
 * valueQuantity only Quantity
-* valueQuantity MS
+//* valueQuantity MS
 * valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity.value 1.. MS
 * valueQuantity.comparator MS
@@ -116,7 +117,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * valueQuantity.code 1.. MS
 
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept MS
+//* valueCodeableConcept MS
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT (extensible)
@@ -136,7 +137,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * valueCodeableConcept.text MS
 
 * valueRatio only Ratio
-* valueRatio MS
+//* valueRatio MS
 * valueRatio ^sliceName = "valueRatio"
 * valueRatio.numerator 1.. MS
 * valueRatio.numerator.value 1.. MS
@@ -154,7 +155,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * valueRatio.denominator.code MS
 
 * valueRange only Range
-* valueRange MS
+//* valueRange MS
 * valueRange ^sliceName = "valueRange"
 * valueRange.low 1.. MS
 * valueRange.low.value 1.. MS
