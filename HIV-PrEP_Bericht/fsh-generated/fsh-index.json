@@ -181,7 +181,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR.fsh",
     "startLine": 1,
-    "endLine": 235
+    "endLine": 236
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Gonorrhea.json",

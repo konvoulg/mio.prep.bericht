@@ -77,6 +77,11 @@
         "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR"
       },
       {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "definition": "Hier wird die Laboruntersuchung zur Bestimmung der Glomerulären Filtrationsrate (GFR) mittels eines spezifischen Codes definiert."
+      },
+      {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",

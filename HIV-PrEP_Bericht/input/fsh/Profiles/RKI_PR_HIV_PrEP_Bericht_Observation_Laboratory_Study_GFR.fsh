@@ -54,6 +54,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Glomerulären Fil
 //* status MS
 
 //* category ..0
+* code ^definition = "Hier wird die Laboruntersuchung zur Bestimmung der Glomerulären Filtrationsrate (GFR) mittels eines spezifischen Codes definiert."
 /*
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"
