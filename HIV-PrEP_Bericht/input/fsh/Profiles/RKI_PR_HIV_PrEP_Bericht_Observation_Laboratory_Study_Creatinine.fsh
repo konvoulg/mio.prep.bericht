@@ -93,8 +93,9 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 //* focus ..0
 //* encounter only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General)
 
-* effective[x] only dateTime
 * effective[x] MS
+* effective[x] only dateTime
+
 
 * effectiveDateTime 1.. MS
 * effectiveDateTime only dateTime
@@ -103,7 +104,7 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 
 //* issued ..0
 * performer ..1 MS
-* performer only Reference(Organization or Patient or Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner)
+* performer only Reference(Organization or Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner)
 * performer ^definition = "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat."
 * performer.reference MS
 * performer.identifier 1.. MS
@@ -121,21 +122,22 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 * valueQuantity from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0 (required)
 * valueQuantity ^definition = "Hier wird das Messergebnis als quantitativer Wert abgebildet."
 //* valueQuantity ^sliceName = "valueQuantity"
-//* valueQuantity.value 1.. MS
+* valueQuantity.value 1.. MS
 * valueQuantity.value ^definition = "Numerischer Wert für eine gemessene Größe, eine Zahl mit optionalen Dezimalstellen."
-//* valueQuantity.comparator MS
+* valueQuantity.comparator MS
 * valueQuantity.comparator ^definition = "Der Komparator kann sein\n* <   (kleiner)\n* <= (kleiner oder gleich)\n* >= (größer oder gleich)\n* >   (größer)\n\nDie häufigste Option ist, dass ein Laborwertergebnis = (gleich) eines Wertes ist. In diesem Fall wird kein Komparator gesetzt."
-//* valueQuantity.unit 1.. MS
+* valueQuantity.unit 1.. MS
 * valueQuantity.unit ^definition = "Die Einheit leitet sich aus der Messgröße (gemessene Eigenschaft und Mengenmaß) ab. Ein Beispiel: Wenn die Messgröße \"Massekonzentration pro Volumen\" ist, kommen als Einheiten mg/dl oder g/dl in Frage. Nur UCUM-Einheiten sind zulässig."
 
-//* valueQuantity.system 1.. MS
-//* valueQuantity.system = "http://unitsofmeasure.org"
-//* valueQuantity.code 1.. MS
+* valueQuantity.system 1.. MS
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code 1.. MS
 * valueQuantity.code ^definition = "Die Messeinheit als Code. Hier sind nur UCUM-Einheiten zulässig."
 
+* valueCodeableConcept 0..0
 /*
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept MS
+
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
@@ -152,9 +154,10 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 //* valueCodeableConcept.coding[snomedCode].userSelected ..0
 * valueCodeableConcept.text MS
 */
+* valueRatio 0..0
 /*
 * valueRatio only Ratio
-* valueRatio MS
+
 * valueRatio ^sliceName = "valueRatio"
 * valueRatio.numerator 1.. MS
 * valueRatio.numerator.value 1.. MS
@@ -170,7 +173,9 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 * valueRatio.denominator.system = "http://unitsofmeasure.org"
 * valueRatio.denominator.system MS
 * valueRatio.denominator.code MS
-
+*/
+* valueRatio 0..0
+/*
 * valueRange only Range
 * valueRange MS
 * valueRange ^sliceName = "valueRange"
@@ -223,7 +228,9 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 
 * note ..1 MS
 * note.author[x] MS
-* note.authorReference only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
+*/
+* note.authorReference only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner)
+/*
 * note.authorReference MS
 * note.authorReference ^definition = "Hier wird die Person referenziert, die die Notiz erstellt hat."
 * note.authorReference.reference MS
@@ -237,8 +244,9 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 * note.text MS
 */
 //* bodySite ..0
+
+* method MS
 /*
-* method 
 * method.coding ..1 
 * method.coding.system 1.. 
 * method.coding.version 1.. 
@@ -269,13 +277,17 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 * referenceRange.extension contains
     $KBV_EX_MIO_LAB_Source_Reference_Range named quelleReferenzbereich 0..1 MS and
     $KBV_EX_MIO_LAB_zLog named zLog-Wert 0..1 MS
-* referenceRange.low MS
+*/
+* referenceRange.low from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0 (required)
+/*
 * referenceRange.low ^patternQuantity.system = "http://unitsofmeasure.org"
 * referenceRange.low.value 1.. MS
 * referenceRange.low.unit 1.. MS
 * referenceRange.low.system 1.. MS
 * referenceRange.low.code 1.. MS
-* referenceRange.high MS
+*/
+* referenceRange.high from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0 (required)
+/*
 * referenceRange.high ^patternQuantity.system = "http://unitsofmeasure.org"
 * referenceRange.high.value 1.. MS
 * referenceRange.high.unit 1.. MS
@@ -292,14 +304,15 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 //* referenceRange.type.coding.userSelected ..0
 * referenceRange.type.text MS
 * referenceRange.appliesTo ..1 MS
-//* referenceRange.appliesTo.coding ..0
-* referenceRange.appliesTo.text 1.. MS
-//* referenceRange.age ..0
-* referenceRange.text MS
+*/
+* referenceRange.appliesTo.coding MS
+//* referenceRange.appliesTo.text 1.. MS
+* referenceRange.age MS
+//* referenceRange.text MS
 //* hasMember ..0
 //* derivedFrom ..0
 //* component ..0
-
+/*
 Invariant: obs-1
 Description: "At least year, month and day are needed"
 * severity = #error

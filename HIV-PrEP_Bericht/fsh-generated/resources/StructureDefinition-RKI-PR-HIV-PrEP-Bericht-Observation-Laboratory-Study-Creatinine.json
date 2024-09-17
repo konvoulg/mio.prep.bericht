@@ -118,7 +118,6 @@
             "code": "Reference",
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
               "http://hl7.org/fhir/StructureDefinition/Practitioner",
               "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
               "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole",
@@ -192,9 +191,76 @@
         "definition": "Die Messeinheit als Code. Hier sind nur UCUM-Einheiten zulässig."
       },
       {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "max": "0",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueRatio",
+        "path": "Observation.value[x]",
+        "sliceName": "valueRatio",
+        "max": "0",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Observation.note.author[x]:authorReference",
+        "path": "Observation.note.author[x]",
+        "sliceName": "authorReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.note.time",
         "path": "Observation.note.time",
         "definition": "Hier wird der Zeitpunkt angegeben, zu dem die Notiz erstellt wurde."
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low",
+        "path": "Observation.referenceRange.low",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0"
+        }
+      },
+      {
+        "id": "Observation.referenceRange.high",
+        "path": "Observation.referenceRange.high",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0"
+        }
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo.coding",
+        "path": "Observation.referenceRange.appliesTo.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.age",
+        "path": "Observation.referenceRange.age",
+        "mustSupport": true
       }
     ]
   }
