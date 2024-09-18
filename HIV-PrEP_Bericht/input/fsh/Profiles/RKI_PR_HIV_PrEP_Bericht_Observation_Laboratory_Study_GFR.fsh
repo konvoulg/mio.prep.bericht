@@ -117,8 +117,9 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Glomerulären Fil
 * value[x] ^slicing.discriminator.path = "$this"
 * value[x] ^slicing.rules = #closed
 //* value[x] contains valueQuantity 1..1 MS
+* valueQuantity 0..1 MS
 * valueQuantity only Quantity
-* valueQuantity 0..1
+
 * valueQuantity = $unitsofmeasure#mL/min/{1.73_m2} "milliliter per minute per 1.73 square meter"
 * valueQuantity from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0 (required)
 * valueQuantity ^definition = "Hier wird das Messergebnis als quantitativer Wert abgebildet."
@@ -135,9 +136,10 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Glomerulären Fil
 //* valueQuantity.code 1.. MS
 //* valueQuantity.code ^definition = "Die Messeinheit als Code. Hier sind nur UCUM-Einheiten zulässig."
 
+
+//* valueCodeableConcept only CodeableConcept
+* valueCodeableConcept 0..0
 /*
-* valueCodeableConcept only CodeableConcept
-* valueCodeableConcept MS
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
@@ -154,9 +156,10 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Glomerulären Fil
 //* valueCodeableConcept.coding[snomedCode].userSelected ..0
 * valueCodeableConcept.text MS
 */
+
+//* valueRatio only Ratio
+* valueRatio 0..0
 /*
-* valueRatio only Ratio
-* valueRatio MS
 * valueRatio ^sliceName = "valueRatio"
 * valueRatio.numerator 1.. MS
 * valueRatio.numerator.value 1.. MS
@@ -172,9 +175,10 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Glomerulären Fil
 * valueRatio.denominator.system = "http://unitsofmeasure.org"
 * valueRatio.denominator.system MS
 * valueRatio.denominator.code MS
-
-* valueRange only Range
-* valueRange MS
+*/
+//* valueRange only Range
+* valueRange 0..0
+/*
 * valueRange ^sliceName = "valueRange"
 * valueRange.low 1.. MS
 * valueRange.low.value 1.. MS
