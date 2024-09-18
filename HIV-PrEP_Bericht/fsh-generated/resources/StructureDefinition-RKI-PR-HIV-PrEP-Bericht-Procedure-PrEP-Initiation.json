@@ -82,6 +82,12 @@
         "mustSupport": true
       },
       {
+        "id": "Procedure.code.coding:ops",
+        "path": "Procedure.code.coding",
+        "sliceName": "ops",
+        "max": "0"
+      },
+      {
         "id": "Procedure.code.coding:snomed",
         "path": "Procedure.code.coding",
         "sliceName": "snomed",
@@ -90,25 +96,60 @@
       {
         "id": "Procedure.code.coding:snomed.system",
         "path": "Procedure.code.coding.system",
-        "fixedUri": "http://snomed.info/sct",
+        "patternUri": "http://snomed.info/sct",
         "mustSupport": true
       },
       {
         "id": "Procedure.code.coding:snomed.version",
         "path": "Procedure.code.coding.version",
-        "fixedString": "http://snomed.info/sct/900000000000207008/version/20240501",
+        "patternString": "http://snomed.info/sct/900000000000207008/version/20240501",
         "mustSupport": true
       },
       {
         "id": "Procedure.code.coding:snomed.code",
         "path": "Procedure.code.coding.code",
-        "fixedCode": "1287783000",
+        "patternCode": "1287783000",
         "mustSupport": true
       },
       {
         "id": "Procedure.code.coding:snomed.display",
         "path": "Procedure.code.coding.display",
-        "fixedString": "Administration of human immunodeficiency virus pre-exposure prophylaxis (procedure)",
+        "patternString": "Administration of human immunodeficiency virus pre-exposure prophylaxis (procedure)",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:icd10gm",
+        "path": "Procedure.code.coding",
+        "sliceName": "icd10gm",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:icd10gm.system",
+        "path": "Procedure.code.coding.system",
+        "min": 1,
+        "patternUri": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:icd10gm.version",
+        "path": "Procedure.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:icd10gm.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1,
+        "patternCode": "Z29.22",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding:icd10gm.display",
+        "path": "Procedure.code.coding.display",
+        "min": 1,
+        "patternString": "HIV-Präexpositionsprophylaxe",
         "mustSupport": true
       },
       {

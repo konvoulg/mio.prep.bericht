@@ -45,15 +45,25 @@ Description: "Hier wird die Leistung nach EBM 01921, die  PrEP  Einleitung / Re-
 
 * code 1.. MS
 * code.coding 1..1 MS
+* code.coding contains icd10gm 1..1 
+* code.coding[icd10gm] ^mustSupport = true
+* code.coding[icd10gm].system 1.. MS
+* code.coding[icd10gm].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm" //(exactly)
+* code.coding[icd10gm].version 1.. MS
+* code.coding[icd10gm].code 1.. MS
+* code.coding[icd10gm].code = $CodingICD10GMBfARM#Z29.22 //(exactly)
+* code.coding[icd10gm].display 1.. MS
+* code.coding[icd10gm].display = "HIV-Präexpositionsprophylaxe"
 * code.coding[snomed] ^mustSupport = true
 * code.coding[snomed].system 1.. MS
-* code.coding[snomed].system = "http://snomed.info/sct" (exactly)
+* code.coding[snomed].system = "http://snomed.info/sct" //(exactly)
 * code.coding[snomed].version 1.. MS
-* code.coding[snomed].version = "http://snomed.info/sct/900000000000207008/version/20240501" (exactly)
+* code.coding[snomed].version = "http://snomed.info/sct/900000000000207008/version/20240501" //(exactly)
 * code.coding[snomed].code 1.. MS
-* code.coding[snomed].code = #1287783000  (exactly)
+* code.coding[snomed].code = #1287783000  //(exactly)
 * code.coding[snomed].display 1.. MS
-* code.coding[snomed].display = "Administration of human immunodeficiency virus pre-exposure prophylaxis (procedure)" (exactly)
+* code.coding[snomed].display = "Administration of human immunodeficiency virus pre-exposure prophylaxis (procedure)" //(exactly)
+* code.coding[ops] 0..0
 /*
 * code.coding.display.extension ^slicing.discriminator.type = #value
 * code.coding.display.extension ^slicing.discriminator.path = "url"
