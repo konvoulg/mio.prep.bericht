@@ -74,6 +74,17 @@ Alias: $KBV_EX_Base_Terminology_German = https://fhir.kbv.de/StructureDefinition
 Alias: $KBV_EX_MIO_LAB_Source_Reference_Range = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range
 Alias: $KBV_EX_MIO_LAB_zLog = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zLog
 
+//Aliases KBV Basis MedicationStatement
+
+Alias: $KBV_VS_Base_Drug_Therapy_Status_Codes_SNOMED_CT = https://fhir.kbv.de/ValueSet/KBV_VS_Base_Drug_Therapy_Status_Codes_SNOMED_CT
+Alias: $KBV_VS_Base_EventTiming = https://fhir.kbv.de/ValueSet/KBV_VS_Base_EventTiming
+Alias: $KBV_VS_Base_TimingEvent = https://fhir.kbv.de/ValueSet/KBV_VS_Base_TimingEvent
+Alias: $KBV_VS_Base_PRN_Medication_Reason_SNOMED_CT = https://fhir.kbv.de/ValueSet/KBV_VS_Base_PRN_Medication_Reason_SNOMED_CT
+Alias: $KBV_VS_Base_Route_of_Administration_SNOMED_CT = https://fhir.kbv.de/ValueSet/KBV_VS_Base_Route_of_Administration_SNOMED_CT
+Alias: $KBV_VS_Base_Medicine_Route_Of_Administration = https://fhir.kbv.de/ValueSet/KBV_VS_Base_Medicine_Route_Of_Administration
+Alias: $KBV_VS_SFHIR_BMP_DOSIEREINHEIT = https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT
+
+
 //Aliases Basis Condition Diagnosis
 Alias: $CodingICD10GM = http://fhir.de/StructureDefinition/CodingICD10GM
 Alias: $CodingAlphaID = http://fhir.de/StructureDefinition/CodingAlphaID
