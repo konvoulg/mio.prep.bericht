@@ -87,28 +87,6 @@
         }
       },
       {
-        "id": "Observation.code.coding:loinc.version",
-        "path": "Observation.code.coding.version",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.display",
-        "path": "Observation.code.coding.display",
-        "min": 1
-      },
-      {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
-        "sliceName": "effectiveDateTime",
-        "definition": "Hier wird ein Zeitpunkt der Untersuchung eingetragen, wobei dieser mindestens Tag, Monat und Jahr beinhalten muss.",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
-      },
-      {
         "id": "Observation.performer",
         "path": "Observation.performer",
         "definition": "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat.",
@@ -165,6 +143,7 @@
             "code": "Quantity"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0"
@@ -209,6 +188,17 @@
         "type": [
           {
             "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueRange",
+        "path": "Observation.value[x]",
+        "sliceName": "valueRange",
+        "max": "0",
+        "type": [
+          {
+            "code": "Range"
           }
         ]
       },

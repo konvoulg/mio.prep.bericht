@@ -117,8 +117,9 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 * value[x] ^slicing.discriminator.path = "$this"
 * value[x] ^slicing.rules = #closed
 //* value[x] contains valueQuantity 1..1 MS
+* valueQuantity 0..1 MS
 * valueQuantity only Quantity
-* valueQuantity 0..1
+
 * valueQuantity from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0 (required)
 * valueQuantity ^definition = "Hier wird das Messergebnis als quantitativer Wert abgebildet."
 //* valueQuantity ^sliceName = "valueQuantity"
@@ -174,7 +175,7 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 * valueRatio.denominator.system MS
 * valueRatio.denominator.code MS
 */
-* valueRatio 0..0
+* valueRange 0..0
 /*
 * valueRange only Range
 * valueRange MS
