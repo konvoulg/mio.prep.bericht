@@ -60,14 +60,18 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 
 * code MS
 * code.coding MS
-* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
-* code.coding.system 1.. MS
-* code.coding.code 1.. MS
-* code.coding.display MS
-* code.coding contains loinc 1..* MS
+* code.coding contains loinc 1..1 MS
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"
+* code.coding[loinc].system 1.. MS
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version 1.. MS
+* code.coding[loinc].code 1.. MS
+* code.coding[loinc].display 1.. MS
+
+
 /*
 * code.coding 1.. MS
 * code.coding.system 1.. MS
@@ -85,23 +89,36 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * subject.reference 1.. MS
 * subject.type ..0
 * subject.identifier only $identifier-kvid-10
+
+* effective[x] only dateTime
+* effective[x] MS
+/*
+* effective[x] ^slicing.discriminator.type = #type
+* effective[x] ^slicing.discriminator.path = "$this"
+* effective[x] ^slicing.rules = #closed
+*/
+* effectiveDateTime 1..1 MS
+* effectiveDateTime only dateTime
+* effectiveDateTime ^sliceName = "effectiveDateTime"
+* effectiveDateTime ^definition = "Hier wird ein Zeitpunkt der Untersuchung eingetragen, wobei dieser mindestens Tag, Monat und Jahr beinhalten muss."
+
 //* subject.display ..0
 //* focus ..0
 * encounter only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General)
 
-* effective[x] MS
+/*
 * effective[x] only dateTime
-
+* effective[x] 1..1 MS
 
 * effectiveDateTime 1.. MS
 * effectiveDateTime only dateTime
 * effectiveDateTime ^sliceName = "effectiveDateTime"
-
+*/
 //* issued ..0
 //* performer ..0
-
+* value[x] MS
 * value[x] only Quantity or CodeableConcept or Range or Ratio
-//* value[x] MS
+
 * value[x] ^slicing.discriminator.type = #type
 * value[x] ^slicing.discriminator.path = "$this"
 * value[x] ^slicing.rules = #closed
