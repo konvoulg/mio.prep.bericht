@@ -98,3 +98,6 @@ Alias: $CodingICD10GMBfARM = http://fhir.de/CodeSystem/bfarm/icd-10-gm
 
 //Alias UCUM
 Alias: $unitsofmeasure = http://unitsofmeasure.org
+
+//Aliases emp MedicationStatement
+Alias: $KBV_PR_MIO_EMP_Identifier_Line_Item = https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_EMP_Identifier_Line_Item
