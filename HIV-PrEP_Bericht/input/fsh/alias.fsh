@@ -11,6 +11,7 @@ Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $data_absent = http://terminology.hl7.org/CodeSystem/data-absent-reason
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 
 //Aliases Questionnaire
 
