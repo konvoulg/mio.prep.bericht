@@ -1,0 +1,71 @@
+{
+  "resourceType": "Patient",
+  "id": "ExamplePatient",
+  "meta": {
+    "profile": [
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient|0.1.0"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis",
+            "code": "GKV",
+            "display": "Gesetzliche Krankenversicherung"
+          }
+        ]
+      },
+      "system": "http://fhir.de/NamingSystem/gkv/versichertenId_GKV",
+      "value": "GKV-123456789"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "John"
+      ],
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Bill"
+          }
+        ]
+      }
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "Einanderestr. 0"
+      ],
+      "city": "Berlin",
+      "postalCode": "03030",
+      "country": "D"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+49 0123456789",
+      "use": "mobile"
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "de",
+            "display": "German"
+          }
+        ]
+      }
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1900-12-19"
+}

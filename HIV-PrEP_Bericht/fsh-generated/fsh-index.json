@@ -24,6 +24,14 @@
     "endLine": 12
   },
   {
+    "outputFile": "Patient-ExamplePatient.json",
+    "fshName": "ExamplePatient",
+    "fshType": "Instance",
+    "fshFile": "Examples\\patient.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
     "outputFile": "Questionnaire-RKI-PR-PrEP-Bericht-Questionnaire.json",
     "fshName": "RKI-PR-PrEP-Bericht-Questionnaire",
     "fshType": "Instance",
@@ -149,7 +157,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free.fsh",
     "startLine": 3,
-    "endLine": 536
+    "endLine": 537
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight.json",

@@ -1,5 +1,5 @@
 Instance: ExamplePatient
-InstanceOf: RKI_PR_HIV_PrEP_Bericht_Patient
+InstanceOf: Patient
 Title: "Example Patient for PrEP"
 Description: "This is an example patient instance for HIV PrEP reporting"
 Usage: #example
@@ -13,9 +13,9 @@ Usage: #example
 * identifier[0].type.coding[0].display = "Gesetzliche Krankenversicherung"
 
 
-* name[0].family.extension.nachname.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
-* name[0].family.extension.nachname.value = "Bill"
-* name[0].given[0] = "John"
+* name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
+* name.family.extension.valueString = "Bill"
+* name.given = "John"
 
 * gender = #male
 
