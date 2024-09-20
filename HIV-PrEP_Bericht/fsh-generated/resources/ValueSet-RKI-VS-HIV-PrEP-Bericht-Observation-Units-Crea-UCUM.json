@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_Crea_UCUM",
+  "id": "RKI-VS-HIV-PrEP-Bericht-Observation-Units-Crea-UCUM",
+  "title": "Creatinine Observation Units UCUM",
+  "description": "Dieses ValueSet beinhaltet UCUM-Einheiten für die Observation Creatinine",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Crea_UCUM",
+  "version": "0.1.0",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "date": "2024-09-20",
+  "compose": {
+    "include": [
+      {
+        "system": "http://unitsofmeasure.org",
+        "concept": [
+          {
+            "code": "mg/dL",
+            "display": "milligram per deciliter"
+          },
+          {
+            "code": "umol/L",
+            "display": "micromol per liter"
+          }
+        ]
+      }
+    ]
+  }
+}

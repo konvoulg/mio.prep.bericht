@@ -400,6 +400,14 @@
     "endLine": 67
   },
   {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Observation-Units-Crea-UCUM.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_Crea_UCUM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_Creatinine.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Syphilis-Lab-Study-LOINC.json",
     "fshName": "RKI_VS_HIV_PrEP_Bericht_Syphilis_Lab_Study_LOINC",
     "fshType": "ValueSet",
