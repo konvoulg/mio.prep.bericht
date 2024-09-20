@@ -129,7 +129,7 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 * valueQuantity.comparator ^definition = "Der Komparator kann sein\n* <   (kleiner)\n* <= (kleiner oder gleich)\n* >= (größer oder gleich)\n* >   (größer)\n\nDie häufigste Option ist, dass ein Laborwertergebnis = (gleich) eines Wertes ist. In diesem Fall wird kein Komparator gesetzt."
 * valueQuantity.unit 1.. MS
 * valueQuantity.unit ^definition = "Die Einheit leitet sich aus der Messgröße (gemessene Eigenschaft und Mengenmaß) ab. Ein Beispiel: Wenn die Messgröße \"Massekonzentration pro Volumen\" ist, kommen als Einheiten mg/dl oder g/dl in Frage. Nur UCUM-Einheiten sind zulässig."
-
+* valueQuantity from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Crea_UCUM (required)
 * valueQuantity.system 1.. MS
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code 1.. MS
@@ -279,7 +279,7 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
     $KBV_EX_MIO_LAB_Source_Reference_Range named quelleReferenzbereich 0..1 MS and
     $KBV_EX_MIO_LAB_zLog named zLog-Wert 0..1 MS
 */
-* referenceRange.low from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0 (required)
+* referenceRange.low from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Crea_UCUM (required)
 /*
 * referenceRange.low ^patternQuantity.system = "http://unitsofmeasure.org"
 * referenceRange.low.value 1.. MS
@@ -287,7 +287,7 @@ Description: "In diesem Profil wird eine Laboruntersuchung des Serumkreatinins d
 * referenceRange.low.system 1.. MS
 * referenceRange.low.code 1.. MS
 */
-* referenceRange.high from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0 (required)
+* referenceRange.high from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Crea_UCUM (required)
 /*
 * referenceRange.high ^patternQuantity.system = "http://unitsofmeasure.org"
 * referenceRange.high.value 1.. MS

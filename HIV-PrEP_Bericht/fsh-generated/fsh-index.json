@@ -205,7 +205,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR.fsh",
     "startLine": 1,
-    "endLine": 240
+    "endLine": 292
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Gonorrhea.json",
@@ -406,6 +406,14 @@
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_Creatinine.fsh",
     "startLine": 1,
     "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Observation-Units-GFR-UCUM.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM.fsh",
+    "startLine": 1,
+    "endLine": 8
   },
   {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Syphilis-Lab-Study-LOINC.json",

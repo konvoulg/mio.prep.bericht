@@ -146,7 +146,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0"
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Crea_UCUM"
         }
       },
       {
@@ -231,7 +231,7 @@
         "path": "Observation.referenceRange.low",
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0"
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Crea_UCUM"
         }
       },
       {
@@ -239,7 +239,7 @@
         "path": "Observation.referenceRange.high",
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0"
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Crea_UCUM"
         }
       },
       {

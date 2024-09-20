@@ -149,15 +149,10 @@
             "code": "Quantity"
           }
         ],
-        "patternQuantity": {
-          "code": "mL/min/{1.73_m2}",
-          "system": "http://unitsofmeasure.org",
-          "unit": "milliliter per minute per 1.73 square meter"
-        },
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0"
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM"
         }
       },
       {
@@ -212,6 +207,22 @@
         "id": "Observation.note.time",
         "path": "Observation.note.time",
         "definition": "Hier wird der Zeitpunkt angegeben, zu dem die Notiz erstellt wurde."
+      },
+      {
+        "id": "Observation.referenceRange.low.unit",
+        "path": "Observation.referenceRange.low.unit",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM"
+        }
+      },
+      {
+        "id": "Observation.referenceRange.high.unit",
+        "path": "Observation.referenceRange.high.unit",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM"
+        }
       }
     ]
   }

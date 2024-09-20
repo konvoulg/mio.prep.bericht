@@ -120,8 +120,8 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Glomerulären Fil
 * valueQuantity 0..1 MS
 * valueQuantity only Quantity
 
-* valueQuantity = $unitsofmeasure#mL/min/{1.73_m2} "milliliter per minute per 1.73 square meter"
-* valueQuantity from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0 (required)
+//* valueQuantity = $unitsofmeasure#mL/min/{1.73_m2} "milliliter per minute per 1.73 square meter"
+* valueQuantity from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM (required)
 * valueQuantity ^definition = "Hier wird das Messergebnis als quantitativer Wert abgebildet."
 //* valueQuantity ^sliceName = "valueQuantity"
 //* valueQuantity.value 1.. MS
@@ -276,6 +276,9 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Glomerulären Fil
     $KBV_EX_MIO_LAB_Source_Reference_Range named quelleReferenzbereich 0..1 MS and
     $KBV_EX_MIO_LAB_zLog named zLog-Wert 0..1 MS
 * referenceRange.low MS
+*/
+* referenceRange.low.unit from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM (required)
+/*
 * referenceRange.low ^patternQuantity.system = "http://unitsofmeasure.org"
 * referenceRange.low.value 1.. MS
 * referenceRange.low.unit 1.. MS
@@ -285,6 +288,9 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Glomerulären Fil
 * referenceRange.high ^patternQuantity.system = "http://unitsofmeasure.org"
 * referenceRange.high.value 1.. MS
 * referenceRange.high.unit 1.. MS
+*/
+* referenceRange.high.unit from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM (required)
+/*
 * referenceRange.high.system 1.. MS
 * referenceRange.high.code 1.. MS
 * referenceRange.type 1.. MS
