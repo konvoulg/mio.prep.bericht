@@ -136,6 +136,14 @@
     "endLine": 99
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Immunization.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Immunization",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Immunization.fsh",
+    "startLine": 5,
+    "endLine": 177
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication-Free.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Medication_Free",
     "fshType": "Profile",
@@ -405,7 +413,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_Creatinine.fsh",
     "startLine": 1,
-    "endLine": 9
+    "endLine": 10
   },
   {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Observation-Units-GFR-UCUM.json",
@@ -413,7 +421,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 9
   },
   {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Syphilis-Lab-Study-LOINC.json",
