@@ -137,13 +137,14 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 //* valueCodeableConcept MS
 * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding MS
-* valueCodeableConcept.coding from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT (extensible)
+//* valueCodeableConcept.coding from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT (extensible)
 * valueCodeableConcept.coding ^definition = "In diesem Element werden die Qualitative Ergebnisse der Laboruntersuchung mittels SNOMED CT Kodierung dokumentiert" 
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "system"
 * valueCodeableConcept.coding ^slicing.rules = #open
 //* valueCodeableConcept.coding contains snomedCode named snomedCode 0..*
-* valueCodeableConcept.coding contains snomed_CT 0..1 MS
+* valueCodeableConcept.coding contains snomed_CT 0..1 MS  
+* valueCodeableConcept.coding[snomed_CT] from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT (extensible)
 //* valueCodeableConcept.coding ^mustSupport = true
 * valueCodeableConcept.coding[snomed_CT].system 1.. MS
 * valueCodeableConcept.coding[snomed_CT].system = "http://snomed.info/sct"
