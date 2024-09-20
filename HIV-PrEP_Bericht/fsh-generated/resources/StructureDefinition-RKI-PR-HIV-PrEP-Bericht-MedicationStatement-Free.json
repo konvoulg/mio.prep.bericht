@@ -320,7 +320,8 @@
           "rules": "open"
         },
         "definition": "Hier kann der Grund in codierter Form angegeben werden.",
-        "comment": "Das MustSupport gilt nur für die vordefinierten Slices."
+        "comment": "Das MustSupport gilt nur für die vordefinierten Slices.",
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.reasonCode.coding:ICD-10-GM",

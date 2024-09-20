@@ -110,7 +110,7 @@ Description: "Dieses Profil bildet die Medikationsinformation ab."
 * informationSource.identifier MS
 
 * reasonCode MS
-
+* reasonCode.coding MS
 * reasonCode ^definition = "Hier wird der Grund angegeben, aus dem das Arzneimittel eingesetzt anhand eines entsprechenden Codes oder alternativ mit einem Freitext angegeben."
 * reasonCode.coding ^slicing.discriminator.type = #value
 * reasonCode.coding ^slicing.discriminator.path = "system"
