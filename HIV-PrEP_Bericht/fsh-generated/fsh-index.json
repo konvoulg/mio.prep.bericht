@@ -160,6 +160,14 @@
     "endLine": 537
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-MedicationStatement-PrEP.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP.fsh",
+    "startLine": 3,
+    "endLine": 155
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight",
     "fshType": "Profile",
