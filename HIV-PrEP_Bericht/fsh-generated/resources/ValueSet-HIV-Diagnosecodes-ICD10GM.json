@@ -29,10 +29,6 @@
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "concept": [
           {
-            "code": "Z21",
-            "display": "Asymptomatische HIV-Infektion [Humane Immundefizienz-Virusinfektion]"
-          },
-          {
             "code": "B23.0",
             "display": "Akutes HIV-Infektionssyndrom"
           },
@@ -59,6 +55,10 @@
           {
             "code": "B23",
             "display": "onstige Krankheitszustände infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          },
+          {
+            "code": "Z21",
+            "display": "Asymptomatische HIV-Infektion [Humane Immundefizienz-Virusinfektion]"
           }
         ]
       }
