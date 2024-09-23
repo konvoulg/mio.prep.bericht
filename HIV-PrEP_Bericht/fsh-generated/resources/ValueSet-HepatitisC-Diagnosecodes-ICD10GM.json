@@ -35,6 +35,14 @@
           {
             "code": "B18.2",
             "display": "Chronische Virushepatitis C"
+          },
+          {
+            "code": "B18.9",
+            "display": "Chronische Virushepatitis, nicht näher bezeichnet"
+          },
+          {
+            "code": "K73.9",
+            "display": "Chronische Hepatitis, nicht näher bezeichnet"
           }
         ]
       }

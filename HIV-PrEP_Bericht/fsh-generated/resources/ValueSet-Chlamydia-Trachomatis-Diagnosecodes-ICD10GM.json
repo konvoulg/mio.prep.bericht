@@ -33,6 +33,10 @@
             "display": "Sonstige durch Geschlechtsverkehr übertragene Chlamydienkrankheiten"
           },
           {
+            "code": "A55",
+            "display": "Lymphogranuloma inguinale (venereum) durch Chlamydien"
+          },
+          {
             "code": "A56.0",
             "display": "Chlamydieninfektion des unteren Urogenitaltraktes"
           },
@@ -55,6 +59,10 @@
           {
             "code": "A56.8",
             "display": "Durch Geschlechtsverkehr übertragene Chlamydieninfektion an sonstigen Lokalisationen"
+          },
+          {
+            "code": "A74.9",
+            "display": "Chlamydieninfektion, nicht näher bezeichnet"
           }
         ]
       }

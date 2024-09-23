@@ -47,6 +47,18 @@
           {
             "code": "B24",
             "display": "Nicht näher bezeichnete HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          },
+          {
+            "code": "B21",
+            "display": "Bösartige Neubildungen infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          },
+          {
+            "code": "B22",
+            "display": "Sonstige näher bezeichnete Krankheiten infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          },
+          {
+            "code": "B23",
+            "display": "onstige Krankheitszustände infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
           }
         ]
       }

@@ -103,6 +103,14 @@
           {
             "code": "A52.9",
             "display": "Spätsyphilis, nicht näher bezeichnet"
+          },
+          {
+            "code": "A50",
+            "display": "Syphilis connata"
+          },
+          {
+            "code": "Z22.4",
+            "display": "Keimträger von Infektionskrankheiten, die vorwiegend durch Geschlechtsverkehr übertragen werden"
           }
         ]
       }
