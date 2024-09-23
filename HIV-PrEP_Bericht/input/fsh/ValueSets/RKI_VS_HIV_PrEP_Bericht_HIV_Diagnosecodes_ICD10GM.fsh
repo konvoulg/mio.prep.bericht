@@ -14,6 +14,10 @@ Description: "Das ValueSet HIV_Diagnosecodes_ICD10GM enthält die Codes für die
 * $CodingICD10GMBfARM#B23.8 "Sonstige näher bezeichnete Krankheitszustände infolge HIV-Krankheit (Persistierende) generalisierte Lymphadenopathie"
 * $CodingICD10GMBfARM#B20 "Infektiöse und parasitäre Krankheiten infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
 * $CodingICD10GMBfARM#B24 "Nicht näher bezeichnete HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+* $CodingICD10GMBfARM#B21 "Bösartige Neubildungen infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+* $CodingICD10GMBfARM#B22 "Sonstige näher bezeichnete Krankheiten infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+* $CodingICD10GMBfARM#B23 "onstige Krankheitszustände infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+* $CodingICD10GMBfARM#Z21 "Asymptomatische HIV-Infektion [Humane Immundefizienz-Virusinfektion]"
 
 /*
 * $sct#373066001 "Yes (qualifier value)"

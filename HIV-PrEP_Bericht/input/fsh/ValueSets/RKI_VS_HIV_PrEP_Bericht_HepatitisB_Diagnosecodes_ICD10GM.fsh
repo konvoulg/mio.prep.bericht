@@ -8,6 +8,7 @@ Description: "Das ValueSet HepatitisB_Diagnosecodes_ICD10GM enthält die Codes f
 * ^immutable = false
 * ^copyright = "WHO, BfArM 1994 - 2024 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des  Bundesinstituts fÃ¼r Arzneimittel und Medizinprodukte (BfArM)"
 //* include codes from system http://fhir.de/CodeSystem/bfarm/icd-10-gm|*
+* $CodingICD10GMBfARM#B16 "Akute Virushepatitis B"
 * $CodingICD10GMBfARM#B16.0 "Akute Virushepatitis B mit Delta-Virus (Begleitinfektion) und mit Coma hepaticum"
 * $CodingICD10GMBfARM#B16.1 "Akute Virushepatitis B mit Delta-Virus (Begleitinfektion) ohne Coma hepaticum"
 * $CodingICD10GMBfARM#B16.2 "Akute Virushepatitis B ohne Delta-Virus mit Coma hepaticum"

@@ -27,8 +27,10 @@ Description: "Das ValueSet Syphilis_Diagnosecodes_ICD10GM enthält die Codes fü
 * $CodingICD10GMBfARM#A52.7 "Sonstige floride Spätsyphilis"
 * $CodingICD10GMBfARM#A52.8 "Latente Spätsyphilis"
 * $CodingICD10GMBfARM#A52.9 "Spätsyphilis, nicht näher bezeichnet"
-
-
+* $CodingICD10GMBfARM#A53.9 "Syphilis, nicht näher bezeichnet"
+* $CodingICD10GMBfARM#A50 "Syphilis connata"
+* $CodingICD10GMBfARM#Z22.4 "Keimträger von Infektionskrankheiten, die vorwiegend durch Geschlechtsverkehr übertragen werden"
+//* $CodingICD10GMBfARM
 
 
 /*
