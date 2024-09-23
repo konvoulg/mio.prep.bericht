@@ -17,8 +17,8 @@
           }
         ]
       },
-      "system": "http://fhir.de/NamingSystem/gkv/versichertenId_GKV",
-      "value": "GKV-123456789"
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "value": "G123456789"
     }
   ],
   "name": [
@@ -60,7 +60,8 @@
           {
             "system": "urn:ietf:bcp:47",
             "code": "de",
-            "display": "German"
+            "display": "German",
+            "version": "2.0.1"
           }
         ]
       }
