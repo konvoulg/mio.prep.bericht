@@ -17,18 +17,15 @@ Usage: #example
 * identifier[0].type.coding[0].code = #ANR
 * identifier[0].type.coding[0].display = "Arztnummer"
 
-* name[0].family = "Müller"
-* name[0].given[0] = "Hans"
+* name[0].family = "Poppins"
+* name[0].given[0] = "Mary"
 * name[0].prefix[0] = "Dr."
 
 * telecom[0].system = #phone
-* telecom[0].value = "+49 123 4567890"
+* telecom[0].value = "+49 0123456789"
 
 * address[0].line[0] = "Beispielstraße 1"
 * address[0].city = "Berlin"
 * address[0].postalCode = "10115"
 * address[0].country = "D"
-
-* gender[0].extension[http://fhir.de/StructureDefinition/gender-amtlich-de].code = dfsfdsfds
-
 

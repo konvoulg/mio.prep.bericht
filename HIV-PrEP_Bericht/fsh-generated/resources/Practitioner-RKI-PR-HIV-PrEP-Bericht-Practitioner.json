@@ -30,17 +30,18 @@
   "name": [
     {
       "given": [
-        "Hans"
+        "Mary"
       ],
       "prefix": [
         "Dr."
       ],
-      "family": "Müller"
+      "family": "Poppins"
     }
   ],
   "telecom": [
     {
-      "value": "+49 123 4567890"
+      "system": "phone",
+      "value": "+49 0123456789"
     }
   ],
   "address": [

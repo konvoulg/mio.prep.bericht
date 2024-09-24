@@ -316,20 +316,6 @@
         "mustSupport": true
       },
       {
-        "id": "Practitioner.telecom.system.extension",
-        "path": "Practitioner.telecom.system.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "closed"
-        }
-      },
-      {
         "id": "Practitioner.telecom.value",
         "path": "Practitioner.telecom.value",
         "mustSupport": true
