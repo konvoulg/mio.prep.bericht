@@ -9,12 +9,14 @@ Description: "Das ValueSet Chlamydia_Trachomatis_Diagnosecodes_ICD10GM enthält 
 * ^copyright = "WHO, BfArM 1994 - 2024 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des  Bundesinstituts fÃ¼r Arzneimittel und Medizinprodukte (BfArM)"
 //* include codes from system http://fhir.de/CodeSystem/bfarm/icd-10-gm|*
 * $CodingICD10GMBfARM#A56 "Sonstige durch Geschlechtsverkehr übertragene Chlamydienkrankheiten"
+* $CodingICD10GMBfARM#A55 "Lymphogranuloma inguinale (venereum) durch Chlamydien"
 * $CodingICD10GMBfARM#A56.0 "Chlamydieninfektion des unteren Urogenitaltraktes"
 * $CodingICD10GMBfARM#A56.1 "Chlamydieninfektion des Pelviperitoneums und sonstiger Urogenitalorgane"
 * $CodingICD10GMBfARM#A56.2 "Chlamydieninfektion des Urogenitaltraktes, nicht näher bezeichnet"
 * $CodingICD10GMBfARM#A56.3 "Chlamydieninfektion des Anus und des Rektums"
 * $CodingICD10GMBfARM#A56.4 "Chlamydieninfektion des Pharynx"
 * $CodingICD10GMBfARM#A56.8 "Durch Geschlechtsverkehr übertragene Chlamydieninfektion an sonstigen Lokalisationen"
+* $CodingICD10GMBfARM#A74.9 "Chlamydieninfektion, nicht näher bezeichnet"
 /*
 * $sct#373066001 "Yes (qualifier value)"
 * $sct#373067005 "No (qualifier value)"

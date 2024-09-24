@@ -29,15 +29,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\patient.fsh",
     "startLine": 1,
-    "endLine": 40
-  },
-  {
-    "outputFile": "Practitioner-RKI-PR-HIV-PrEP-Bericht-Practitioner.json",
-    "fshName": "RKI-PR-HIV-PrEP-Bericht-Practitioner",
-    "fshType": "Instance",
-    "fshFile": "Examples\\practitioner.fsh",
-    "startLine": 1,
-    "endLine": 32
+    "endLine": 36
   },
   {
     "outputFile": "Questionnaire-RKI-PR-PrEP-Bericht-Questionnaire.json",
@@ -325,7 +317,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Chlamydia_Trachomatis_Diagnosecodes_ICD10GM.fsh",
     "startLine": 1,
-    "endLine": 17
+    "endLine": 19
   },
   {
     "outputFile": "ValueSet-Gender-Identity-SNOMEDCT.json",
@@ -349,7 +341,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HIV_Diagnosecodes_ICD10GM.fsh",
     "startLine": 1,
-    "endLine": 16
+    "endLine": 19
   },
   {
     "outputFile": "ValueSet-HIV-PrEP-Encounter-Type.json",
@@ -373,7 +365,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HepatitisB_Diagnosecodes_ICD10GM.fsh",
     "startLine": 1,
-    "endLine": 25
+    "endLine": 26
   },
   {
     "outputFile": "ValueSet-HepatitisC-Diagnosecodes-ICD10GM.json",
@@ -381,7 +373,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HepatitisC_Diagnosecodes_ICD10GM.fsh",
     "startLine": 1,
-    "endLine": 12
+    "endLine": 14
   },
   {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Chlamydia-Trachomatis-LOINC.json",
@@ -453,7 +445,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Syphilis_Diagnosecodes_ICD10GM.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 31
   },
   {
     "outputFile": "ValueSet-YesNoInformation.json",

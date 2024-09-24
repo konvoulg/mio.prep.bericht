@@ -29,6 +29,10 @@
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "concept": [
           {
+            "code": "B16",
+            "display": "Akute Virushepatitis B"
+          },
+          {
             "code": "B16.0",
             "display": "Akute Virushepatitis B mit Delta-Virus (Begleitinfektion) und mit Coma hepaticum"
           },

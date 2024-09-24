@@ -10,7 +10,8 @@ Description: "Das ValueSet HepatitisC_Diagnosecodes_ICD10GM enthält die Codes f
 //* include codes from system http://fhir.de/CodeSystem/bfarm/icd-10-gm|*
 * $CodingICD10GMBfARM#B17.1 "Akute Virushepatitis C"
 * $CodingICD10GMBfARM#B18.2 "Chronische Virushepatitis C"
-
+* $CodingICD10GMBfARM#B18.9 "Chronische Virushepatitis, nicht näher bezeichnet"
+* $CodingICD10GMBfARM#K73.9 "Chronische Hepatitis, nicht näher bezeichnet"
 /*
 * $sct#373066001 "Yes (qualifier value)"
 * $sct#373067005 "No (qualifier value)"
