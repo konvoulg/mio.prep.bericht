@@ -20,7 +20,6 @@ Usage: #example
 
 * name[name].family.extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Bill"
 * name[name].given[0] = "John"
-* name.given = "John"
 
 * gender = #male
 
