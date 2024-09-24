@@ -1,0 +1,56 @@
+{
+  "resourceType": "Practitioner",
+  "id": "RKI-PR-HIV-PrEP-Bericht-Practitioner",
+  "meta": {
+    "profile": [
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner|0.1.0"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment",
+      "valueString": "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment"
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "ANR",
+            "display": "Arztnummer"
+          }
+        ]
+      },
+      "system": "http://fhir.de/NamingSystem/arznr",
+      "value": "123456789"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Hans"
+      ],
+      "prefix": [
+        "Dr."
+      ],
+      "family": "Müller"
+    }
+  ],
+  "telecom": [
+    {
+      "value": "+49 123 4567890"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "Beispielstraße 1"
+      ],
+      "city": "Berlin",
+      "postalCode": "10115",
+      "country": "D"
+    }
+  ]
+}

@@ -135,10 +135,12 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 
 * telecom MS
 * telecom.system MS
+/*
 * telecom.system.extension ^slicing.discriminator.type = #value
 * telecom.system.extension ^slicing.discriminator.path = "url"
 * telecom.system.extension ^slicing.rules = #closed
 * telecom.system.extension ^min = 0
+*/
 
 * telecom.value MS
 //* telecom.use ..0

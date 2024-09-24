@@ -24,12 +24,20 @@
     "endLine": 12
   },
   {
-    "outputFile": "Patient-ExamplePatient.json",
-    "fshName": "ExamplePatient",
+    "outputFile": "Patient-RKI-PR-HIV-PrEP-Bericht-Patient.json",
+    "fshName": "RKI-PR-HIV-PrEP-Bericht-Patient",
     "fshType": "Instance",
     "fshFile": "Examples\\patient.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 40
+  },
+  {
+    "outputFile": "Practitioner-RKI-PR-HIV-PrEP-Bericht-Practitioner.json",
+    "fshName": "RKI-PR-HIV-PrEP-Bericht-Practitioner",
+    "fshType": "Instance",
+    "fshFile": "Examples\\practitioner.fsh",
+    "startLine": 1,
+    "endLine": 32
   },
   {
     "outputFile": "Questionnaire-RKI-PR-PrEP-Bericht-Questionnaire.json",

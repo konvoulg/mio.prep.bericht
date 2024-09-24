@@ -1,21 +1,25 @@
-Instance: ExamplePatient
-InstanceOf: Patient
+Instance: RKI-PR-HIV-PrEP-Bericht-Patient
+InstanceOf: RKI_PR_HIV_PrEP_Bericht_Patient
 Title: "Example Patient for PrEP"
 Description: "This is an example patient instance for HIV PrEP reporting"
 Usage: #example
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient|0.1.0"
 
-* identifier[0].system = "http://fhir.de/NamingSystem/gkv/versichertenId_GKV"
-* identifier[0].value = "GKV-123456789"
+* identifier[0].system = "http://fhir.de/sid/gkv/kvid-10"
+* identifier[0].value = "G123456789"
 * identifier[0].type.coding[0].system = "http://fhir.de/CodeSystem/identifier-type-de-basis"
 * identifier[0].type.coding[0].code = #GKV
 * identifier[0].type.coding[0].display = "Gesetzliche Krankenversicherung"
 
+//Geschlechtsidentitaet
+* extension[0].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity"
+* extension[0].valueCodeableConcept.coding[0].code = #other
+* extension[0].valueCodeableConcept.text = "Non-binary"
 
-* name.family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
-* name.family.extension.valueString = "Bill"
-* name.given = "John"
+
+* name[name].family.extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Bill"
+* name[name].given[0] = "John"
 
 * gender = #male
 
@@ -33,3 +37,4 @@ Usage: #example
 * communication[0].language.coding[0].system = "urn:ietf:bcp:47"
 * communication[0].language.coding[0].code = #de
 * communication[0].language.coding[0].display = "German"
+* communication[0].language.coding[0].version = "2.0.1"

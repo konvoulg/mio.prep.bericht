@@ -5,8 +5,8 @@
   "id": "Syphilis-Diagnosecodes-ICD10GM",
   "title": "Syphilis Diagnosecodes ICD10GM",
   "description": "Das ValueSet Syphilis_Diagnosecodes_ICD10GM enthält die Codes für die Diagnose von Treponema pallidum Infektion",
-  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Gonokokkeninfektion_Diagnosecodes_ICD10GM",
   "version": "0.1.0",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Gonokokkeninfektion_Diagnosecodes_ICD10GM",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [
