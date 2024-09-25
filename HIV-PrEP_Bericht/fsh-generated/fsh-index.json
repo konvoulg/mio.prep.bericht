@@ -29,7 +29,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\patient.fsh",
     "startLine": 1,
-    "endLine": 43
+    "endLine": 40
   },
   {
     "outputFile": "Practitioner-RKI-PR-HIV-PrEP-Bericht-Practitioner.json",

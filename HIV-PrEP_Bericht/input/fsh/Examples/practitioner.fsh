@@ -1,31 +1,30 @@
 Instance: RKI-PR-HIV-PrEP-Bericht-Practitioner
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Practitioner
-Title: "Example Practitioner for HIV PrEP"
+Title: "Example Practitioner for PrEP"
 Description: "This is an example practitioner instance for HIV PrEP reporting"
 Usage: #example
 
-* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner|0.1.0"
+* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
 
-// ergaenyende_Angaben
+* identifier[ANR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[ANR].type.coding.code = #LANR
+* identifier[ANR].system = "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"
+* identifier[ANR].value = "123456"
 
-* extension[ergaenzende_Angaben].url = "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment"
-* extension[ergaenzende_Angaben].valueString = "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment"
+* name[name].family.extension[nachname].valueString = "Poppins"
+* name[name].given = "Mary"
+* name[name].prefix.extension[prefix-qualifier].valueCode = #AC
 
-* identifier[0].system = "http://fhir.de/NamingSystem/arznr"
-* identifier[0].value = "123456789"
-* identifier[0].type.coding[0].system = "http://hl7.org/fhir/v2/0203"
-* identifier[0].type.coding[0].code = #ANR
-* identifier[0].type.coding[0].display = "Arztnummer"
+* telecom.system = #phone
+* telecom.value = "+43 0123456789"
 
-* name[0].family = "Poppins"
-* name[0].given[0] = "Mary"
-* name[0].prefix[0] = "Dr."
+* address[Strassenanschrift].line.extension[Strasse].valueString = "Einestraße"
+* address[Strassenanschrift].line.extension[Hausnummer].valueString = "5"
+* address[Strassenanschrift].type = #both
+* address[Strassenanschrift].city = "Einstadt"
+* address[Strassenanschrift].postalCode = "12345"
 
-* telecom[0].system = #phone
-* telecom[0].value = "+49 0123456789"
-
-* address[0].line[0] = "Beispielstraße 1"
-* address[0].city = "Berlin"
-* address[0].postalCode = "10115"
-* address[0].country = "D"
-
+* qualification.code.coding.system = "http://snomed.info/sct"
+* qualification.code.coding.display = "Physician (occupation)"
+* qualification.code.coding.code = #309343006
+* qualification.code.coding.version = "1.5.0"
