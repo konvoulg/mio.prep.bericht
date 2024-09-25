@@ -24,7 +24,7 @@ Usage: #example
 * address[Strassenanschrift].city = "Einstadt"
 * address[Strassenanschrift].postalCode = "12345"
 
-* qualification.code.coding.system = "http://snomed.info/sct"
-* qualification.code.coding.display = "Physician (occupation)"
-* qualification.code.coding.code = #309343006
+* qualification.code.coding.system = "urn:oid:1.2.276.0.76.5.514"
+* qualification.code.coding.display = "FA Urologie"
+* qualification.code.coding.code = #371001
 * qualification.code.coding.version = "1.5.0"
