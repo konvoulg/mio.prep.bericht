@@ -1,11 +1,11 @@
 [
   {
-    "outputFile": "CapabilityStatement-ISiKCapabilityStatementMedikationInformation.json",
-    "fshName": "ISiKCapabilityStatementMedikationInformation",
+    "outputFile": "CapabilityStatement-RKI-HIV-PrEP-Bericht-CapabilityStatement.json",
+    "fshName": "RKI-HIV-PrEP-Bericht-CapabilityStatement",
     "fshType": "Instance",
-    "fshFile": "CapabilityStatements\\Isik_CapabilityStatement.fsh",
+    "fshFile": "CapabilityStatements\\RKI_HIV_PrEP_Bericht_CapabilityStatement.fsh",
     "startLine": 1,
-    "endLine": 418
+    "endLine": 555
   },
   {
     "outputFile": "CapabilityStatement-capabilitystatement-ecr.json",
