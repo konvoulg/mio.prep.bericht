@@ -64,7 +64,7 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 * code.text MS
 * specialty MS
 * specialty.coding ..1 MS
-* specialty.coding from https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE|1.01 (required)
+* specialty.coding from https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE (required)
 * specialty.coding[KBV-Fachgruppe] ^mustSupport = true
 * specialty.coding[KBV-Fachgruppe].system MS
 * specialty.coding[KBV-Fachgruppe].version MS
