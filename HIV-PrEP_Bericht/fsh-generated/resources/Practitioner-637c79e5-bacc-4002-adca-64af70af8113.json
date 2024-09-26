@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "RKI-PR-HIV-PrEP-Bericht-Practitioner",
+  "id": "637c79e5-bacc-4002-adca-64af70af8113",
   "meta": {
     "profile": [
       "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
