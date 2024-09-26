@@ -24,6 +24,14 @@
     "endLine": 12
   },
   {
+    "outputFile": "Organization-81eacc87-e116-4505-a4e2-02404a022039.json",
+    "fshName": "81eacc87-e116-4505-a4e2-02404a022039",
+    "fshType": "Instance",
+    "fshFile": "Examples\\organization.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
     "outputFile": "Patient-RKI-PR-HIV-PrEP-Bericht-Patient.json",
     "fshName": "RKI-PR-HIV-PrEP-Bericht-Patient",
     "fshType": "Instance",
@@ -32,12 +40,20 @@
     "endLine": 40
   },
   {
-    "outputFile": "Practitioner-RKI-PR-HIV-PrEP-Bericht-Practitioner.json",
-    "fshName": "RKI-PR-HIV-PrEP-Bericht-Practitioner",
+    "outputFile": "Practitioner-637c79e5-bacc-4002-adca-64af70af8113.json",
+    "fshName": "637c79e5-bacc-4002-adca-64af70af8113",
     "fshType": "Instance",
     "fshFile": "Examples\\practitioner.fsh",
     "startLine": 1,
     "endLine": 30
+  },
+  {
+    "outputFile": "PractitionerRole-RKI-PR-HIV-PrEP-Bericht-PractitionerRole.json",
+    "fshName": "RKI-PR-HIV-PrEP-Bericht-PractitionerRole",
+    "fshType": "Instance",
+    "fshFile": "Examples\\practitioner-role.fsh",
+    "startLine": 1,
+    "endLine": 21
   },
   {
     "outputFile": "Questionnaire-RKI-PR-PrEP-Bericht-Questionnaire.json",
