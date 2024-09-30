@@ -1,0 +1,92 @@
+{
+  "resourceType": "Observation",
+  "id": "c72db78e-5bd4-4b58-a897-aed3d5a9632c",
+  "meta": {
+    "profile": [
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Documentation_Date",
+      "valueDateTime": "2017-01-01"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "1.0.0",
+        "code": "77140-2",
+        "display": "Creatinine [Moles/volume] in Serum, Plasma or Blood"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+  },
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://gematik.de/fhir/sid/telematik-id",
+        "value": "e9ee4679-1e5b-4f04-828d-cf24d33717eb"
+      },
+      "reference": "e9ee4679-1e5b-4f04-828d-cf24d33717eb"
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 0.9,
+    "unit": "mg/dL",
+    "code": "mg/dL"
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "system": "http://unitsofmeasure.org",
+        "value": 0.6,
+        "code": "mg/dL",
+        "unit": "mg/dL"
+      },
+      "high": {
+        "system": "http://unitsofmeasure.org",
+        "value": 1.2,
+        "code": "mg/dL",
+        "unit": "mg/dL"
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+            "version": "1.0.1",
+            "code": "type",
+            "display": "Type"
+          }
+        ]
+      },
+      "appliesTo": [
+        {
+          "coding": [
+            {
+              "code": "248152002",
+              "system": "http://snomed.info/sct",
+              "display": "male"
+            }
+          ],
+          "text": "male"
+        }
+      ]
+    }
+  ],
+  "status": "final"
+}

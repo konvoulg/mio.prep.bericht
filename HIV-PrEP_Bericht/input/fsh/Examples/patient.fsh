@@ -1,4 +1,4 @@
-Instance: RKI-PR-HIV-PrEP-Bericht-Patient
+Instance: 4a311b0a-ec7e-4486-bb6b-1c275f0cbee1
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Patient
 Title: "Example Patient for PrEP"
 Description: "This is an example patient instance for HIV PrEP reporting"

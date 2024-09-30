@@ -1,0 +1,58 @@
+{
+  "resourceType": "Observation",
+  "id": "abeb63fe-e33d-4e72-832d-7bdbec7d9b69",
+  "meta": {
+    "profile": [
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Documentation_Date",
+      "valueDateTime": "2017-02-02"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "1.0.0",
+        "code": "25835-0",
+        "display": "HIV 1 RNA [Presence] in Serum or Plasma by NAA with probe detection"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+  },
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://gematik.de/fhir/sid/telematik-id",
+        "value": "e9ee4679-1e5b-4f04-828d-cf24d33717eb"
+      },
+      "reference": "e9ee4679-1e5b-4f04-828d-cf24d33717eb"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "0.1.0",
+        "code": "260385009",
+        "display": "Negative (qualifier value)"
+      }
+    ]
+  },
+  "status": "final"
+}
