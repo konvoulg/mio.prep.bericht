@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "CapabilityStatements\\RKI_HIV_PrEP_Bericht_CapabilityStatement.fsh",
     "startLine": 1,
-    "endLine": 553
+    "endLine": 631
   },
   {
     "outputFile": "CapabilityStatement-capabilitystatement-ecr.json",
@@ -213,7 +213,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis.fsh",
     "startLine": 1,
-    "endLine": 65
+    "endLine": 112
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Creatinine.json",
@@ -229,7 +229,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free.fsh",
     "startLine": 3,
-    "endLine": 294
+    "endLine": 298
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-GFR.json",
@@ -245,7 +245,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea.fsh",
     "startLine": 1,
-    "endLine": 65
+    "endLine": 112
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HIV.json",
@@ -253,7 +253,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV.fsh",
     "startLine": 1,
-    "endLine": 65
+    "endLine": 112
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisB.json",
@@ -261,7 +261,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB.fsh",
     "startLine": 1,
-    "endLine": 65
+    "endLine": 112
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisC.json",
@@ -269,7 +269,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC.fsh",
     "startLine": 1,
-    "endLine": 65
+    "endLine": 112
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy-Status.json",
