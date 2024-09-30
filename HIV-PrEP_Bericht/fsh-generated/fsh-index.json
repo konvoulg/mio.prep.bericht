@@ -24,6 +24,54 @@
     "endLine": 12
   },
   {
+    "outputFile": "Observation-39a8b719-ee89-4400-9078-1227bd31fe67.json",
+    "fshName": "39a8b719-ee89-4400-9078-1227bd31fe67",
+    "fshType": "Instance",
+    "fshFile": "Examples\\hepatitisB-observation.fsh",
+    "startLine": 5,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-3e97326d-9401-4fca-b416-4e9aa8346f5a.json",
+    "fshName": "3e97326d-9401-4fca-b416-4e9aa8346f5a",
+    "fshType": "Instance",
+    "fshFile": "Examples\\gonorrhea-observation.fsh",
+    "startLine": 5,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-4a7fea51-25ea-4862-9fc1-4b677b03ec1b.json",
+    "fshName": "4a7fea51-25ea-4862-9fc1-4b677b03ec1b",
+    "fshType": "Instance",
+    "fshFile": "Examples\\hepatitisC-observation.fsh",
+    "startLine": 5,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-793671d7-db7b-44fb-94a6-27f7acd332be.json",
+    "fshName": "793671d7-db7b-44fb-94a6-27f7acd332be",
+    "fshType": "Instance",
+    "fshFile": "Examples\\chlamydia-observation.fsh",
+    "startLine": 5,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-abeb63fe-e33d-4e72-832d-7bdbec7d9b69.json",
+    "fshName": "abeb63fe-e33d-4e72-832d-7bdbec7d9b69",
+    "fshType": "Instance",
+    "fshFile": "Examples\\hiv-observation.fsh",
+    "startLine": 5,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-c72db78e-5bd4-4b58-a897-aed3d5a9632c.json",
+    "fshName": "c72db78e-5bd4-4b58-a897-aed3d5a9632c",
+    "fshType": "Instance",
+    "fshFile": "Examples\\creatinine-observation.fsh",
+    "startLine": 5,
+    "endLine": 46
+  },
+  {
     "outputFile": "Organization-81eacc87-e116-4505-a4e2-02404a022039.json",
     "fshName": "81eacc87-e116-4505-a4e2-02404a022039",
     "fshType": "Instance",
@@ -32,8 +80,8 @@
     "endLine": 28
   },
   {
-    "outputFile": "Patient-RKI-PR-HIV-PrEP-Bericht-Patient.json",
-    "fshName": "RKI-PR-HIV-PrEP-Bericht-Patient",
+    "outputFile": "Patient-4a311b0a-ec7e-4486-bb6b-1c275f0cbee1.json",
+    "fshName": "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1",
     "fshType": "Instance",
     "fshFile": "Examples\\patient.fsh",
     "startLine": 1,
@@ -44,6 +92,14 @@
     "fshName": "637c79e5-bacc-4002-adca-64af70af8113",
     "fshType": "Instance",
     "fshFile": "Examples\\practitioner.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Practitioner-e9ee4679-1e5b-4f04-828d-cf24d33717eb.json",
+    "fshName": "e9ee4679-1e5b-4f04-828d-cf24d33717eb",
+    "fshType": "Instance",
+    "fshFile": "Examples\\lab-practitioner.fsh",
     "startLine": 1,
     "endLine": 30
   },

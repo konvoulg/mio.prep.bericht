@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "637c79e5-bacc-4002-adca-64af70af8113",
+  "id": "e9ee4679-1e5b-4f04-828d-cf24d33717eb",
   "meta": {
     "profile": [
       "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
@@ -18,20 +18,20 @@
         ]
       },
       "system": "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR",
-      "value": "123456"
+      "value": "543211"
     }
   ],
   "name": [
     {
       "given": [
-        "Mary"
+        "Mike"
       ],
       "use": "official",
       "_family": {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-            "valueString": "Poppins"
+            "valueString": "Scott"
           }
         ]
       },
@@ -50,7 +50,7 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "+49 0123456789"
+      "value": "+49 01234548599"
     }
   ],
   "address": [
@@ -67,7 +67,7 @@
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "5"
+              "valueString": "10"
             }
           ]
         }
@@ -80,8 +80,8 @@
         "coding": [
           {
             "system": "urn:oid:1.2.276.0.76.5.514",
-            "display": "FA Urologie",
-            "code": "371001",
+            "display": "FA Laboratoriumsmedizin",
+            "code": "171001",
             "version": "1.5.0"
           }
         ]
