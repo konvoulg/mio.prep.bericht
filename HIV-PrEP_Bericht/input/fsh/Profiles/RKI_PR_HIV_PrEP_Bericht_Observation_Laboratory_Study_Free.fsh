@@ -90,17 +90,21 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * subject.type ..0
 * subject.identifier only $identifier-kvid-10
 
+* effective[x] MS
+* effective[x] ^short = "Zeitpunkt der Untersuchung"
+* effectiveDateTime 0..1 MS
+* effectiveDateTime only dateTime
+* effectiveDateTime ^sliceName = "effectiveDateTime"
+/*
 * effective[x] only dateTime
 * effective[x] MS
-/*
 * effective[x] ^slicing.discriminator.type = #type
 * effective[x] ^slicing.discriminator.path = "$this"
 * effective[x] ^slicing.rules = #closed
-*/
 * effectiveDateTime 1..1 MS
-* effectiveDateTime only dateTime
-* effectiveDateTime ^sliceName = "effectiveDateTime"
-* effectiveDateTime ^definition = "Hier wird ein Zeitpunkt der Untersuchung eingetragen, wobei dieser mindestens Tag, Monat und Jahr beinhalten muss."
+//* effectiveDateTime only dateTime
+//* effectiveDateTime ^sliceName = "effectiveDateTime"
+//* effectiveDateTime ^definition = "Hier wird ein Zeitpunkt der Untersuchung eingetragen, wobei dieser mindestens Tag, Monat und Jahr beinhalten muss."
 
 //* subject.display ..0
 //* focus ..0

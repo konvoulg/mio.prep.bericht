@@ -216,8 +216,6 @@ Usage: #definition
 * rest.resource[=].searchParam[=].name = "_profile"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-profile"
 * rest.resource[=].searchParam[=].type = #uri
-* rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchParam[=].extension.valueCode = #MAY
 
 * rest.resource[=].type = #Organization
 * rest.resource[=].supportedProfile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization"
@@ -286,8 +284,6 @@ Usage: #definition
 * rest.resource[=].searchParam[=].name = "_profile"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-profile"
 * rest.resource[=].searchParam[=].type = #uri
-* rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchParam[=].extension.valueCode = #MAY
 
 * rest.resource[=].type = #AllergyIntolerance
 * rest.resource[=].supportedProfile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance"
@@ -616,18 +612,18 @@ Usage: #definition
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-profile"
 * rest.resource[=].searchParam[=].type = #uri
 * rest.resource[=].searchInclude[0] = "Encounter:patient"
+* rest.resource[=].searchInclude[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchInclude[+] = "Encounter:subject"
+* rest.resource[=].searchInclude[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchInclude[+] = "Encounter:part-of"
-* rest.resource[=].searchInclude[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
-* rest.resource[=].searchInclude[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
-* rest.resource[=].searchInclude[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].searchInclude[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchInclude[=].extension.valueCode = #SHALL
 * rest.resource[=].searchRevInclude = "Encounter:part-of"
 * rest.resource[=].searchRevInclude.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchRevInclude.extension.valueCode = #SHALL
-* rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHALL
 
 

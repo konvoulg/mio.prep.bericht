@@ -405,17 +405,6 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "name": "address-city",
-              "definition": "http://hl7.org/fhir/SearchParameter/Organization-address-city",
-              "type": "string"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
               "name": "address-country",
               "definition": "http://hl7.org/fhir/SearchParameter/Organization-address-country",
               "type": "string"
@@ -496,14 +485,6 @@
               "name": "_profile",
               "definition": "http://hl7.org/fhir/SearchParameter/Resource-profile",
               "type": "uri"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ]
             }
           ],
           "searchInclude": [
@@ -1216,14 +1197,6 @@
             }
           ],
           "type": "Encounter"
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-              "valueCode": "SHALL"
-            }
-          ]
         }
       ],
       "interaction": [

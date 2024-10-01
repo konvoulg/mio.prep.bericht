@@ -5,8 +5,8 @@
   "id": "HIV-PrEP-Medikation-ATC",
   "title": "HIV_PrEP_Medikation_ATC",
   "description": "Das ValueSet HIV_PrEP_Medikation_ATC enthält die HIV PrEP Arzneimittel",
-  "version": "0.1.0",
   "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_HIV_PrEP_Medikation_ATC",
+  "version": "0.1.0",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [
