@@ -48,6 +48,14 @@
     "endLine": 35
   },
   {
+    "outputFile": "Observation-548dd131-3f58-4426-9e44-3d9ce3b6db72.json",
+    "fshName": "548dd131-3f58-4426-9e44-3d9ce3b6db72",
+    "fshType": "Instance",
+    "fshFile": "Examples\\gfr-observation.fsh",
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
     "outputFile": "Observation-793671d7-db7b-44fb-94a6-27f7acd332be.json",
     "fshName": "793671d7-db7b-44fb-94a6-27f7acd332be",
     "fshType": "Instance",
@@ -70,6 +78,14 @@
     "fshFile": "Examples\\creatinine-observation.fsh",
     "startLine": 5,
     "endLine": 46
+  },
+  {
+    "outputFile": "Observation-d24a5fdb-51bb-470c-bca8-a3c8e90a6265.json",
+    "fshName": "d24a5fdb-51bb-470c-bca8-a3c8e90a6265",
+    "fshType": "Instance",
+    "fshFile": "Examples\\bodyweight-observation.fsh",
+    "startLine": 5,
+    "endLine": 34
   },
   {
     "outputFile": "Organization-81eacc87-e116-4505-a4e2-02404a022039.json",
