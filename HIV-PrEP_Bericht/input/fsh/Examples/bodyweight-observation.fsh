@@ -20,6 +20,8 @@ Usage: #example
 * code.coding[loinc].display = "Body weight"
 
 * subject.reference = "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+* subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
+* subject.identifier.value = "1234"
 
 * effectiveDateTime = "2017-01-01"
 

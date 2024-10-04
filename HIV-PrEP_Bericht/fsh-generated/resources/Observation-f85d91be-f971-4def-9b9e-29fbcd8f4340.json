@@ -1,0 +1,59 @@
+{
+  "resourceType": "Observation",
+  "id": "f85d91be-f971-4def-9b9e-29fbcd8f4340",
+  "meta": {
+    "profile": [
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Documentation_Date",
+      "valueDateTime": "2017-01-01"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.74",
+        "code": "22587-0",
+        "display": "Treponema pallidum Ab [Presence] in Serum"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+  },
+  "performer": [
+    {
+      "identifier": {
+        "system": "https://gematik.de/fhir/sid/telematik-id",
+        "value": "123456"
+      },
+      "reference": "e9ee4679-1e5b-4f04-828d-cf24d33717eb"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "0.1.0",
+        "code": "260385009",
+        "display": "Negative (qualifier value)"
+      }
+    ]
+  },
+  "status": "final",
+  "effectiveDateTime": "2017-01-01"
+}

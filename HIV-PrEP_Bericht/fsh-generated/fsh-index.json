@@ -85,7 +85,15 @@
     "fshType": "Instance",
     "fshFile": "Examples\\bodyweight-observation.fsh",
     "startLine": 5,
-    "endLine": 34
+    "endLine": 36
+  },
+  {
+    "outputFile": "Observation-f85d91be-f971-4def-9b9e-29fbcd8f4340.json",
+    "fshName": "f85d91be-f971-4def-9b9e-29fbcd8f4340",
+    "fshType": "Instance",
+    "fshFile": "Examples\\syphilis-observation.fsh",
+    "startLine": 5,
+    "endLine": 36
   },
   {
     "outputFile": "Organization-81eacc87-e116-4505-a4e2-02404a022039.json",
@@ -340,6 +348,14 @@
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC",
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC.fsh",
+    "startLine": 1,
+    "endLine": 112
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_laboratory_Study_Syphilis.fsh",
     "startLine": 1,
     "endLine": 112
   },
