@@ -40,6 +40,14 @@
     "endLine": 22
   },
   {
+    "outputFile": "Medication-5a27bacd-1db6-43c8-8fad-18b898a29473.json",
+    "fshName": "5a27bacd-1db6-43c8-8fad-18b898a29473",
+    "fshType": "Instance",
+    "fshFile": "Examples\\medication-prep.fsh",
+    "startLine": 4,
+    "endLine": 28
+  },
+  {
     "outputFile": "Observation-39a8b719-ee89-4400-9078-1227bd31fe67.json",
     "fshName": "39a8b719-ee89-4400-9078-1227bd31fe67",
     "fshType": "Instance",

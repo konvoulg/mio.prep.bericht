@@ -10,14 +10,13 @@ Usage: #example
 
 * appointmentType = $v2#FOLLOWUP "A follow up visit from a previous appointment"
 
-* start = "2022-09-23T09:00:00+08:00"
+* start = "2021-05-23T09:00:00+08:00"
 
 * participant[0].actor.reference = "637c79e5-bacc-4002-adca-64af70af8113"
-* participant[=].actor.type = "Organization"
+* participant[=].actor.type = "Practitioner"
 * participant[=].status = #accepted
 
 
 * participant[+].actor.reference = "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
 * participant[=].actor.type = "Patient"
 * participant[=].status = #accepted
-

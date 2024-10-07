@@ -11,7 +11,7 @@
     {
       "actor": {
         "reference": "637c79e5-bacc-4002-adca-64af70af8113",
-        "type": "Organization"
+        "type": "Practitioner"
       },
       "required": "required",
       "status": "accepted"
@@ -35,5 +35,5 @@
       }
     ]
   },
-  "start": "2022-09-23T09:00:00+08:00"
+  "start": "2021-05-23T09:00:00+08:00"
 }
