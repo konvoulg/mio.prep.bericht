@@ -1,0 +1,33 @@
+{
+  "resourceType": "Encounter",
+  "id": "c4269483-dd6e-4a26-a69e-3d060f6c58fe",
+  "meta": {
+    "profile": [
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
+    ]
+  },
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "version": "2.0.0",
+    "code": "AMB",
+    "display": "ambulatory"
+  },
+  "subject": {
+    "identifier": {
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "value": "1234"
+    },
+    "reference": "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+  },
+  "period": {
+    "start": "2021-02-02"
+  },
+  "serviceProvider": {
+    "identifier": {
+      "system": "https://gematik.de/fhir/sid/telematik-id",
+      "value": "123456"
+    },
+    "reference": "81eacc87-e116-4505-a4e2-02404a022039"
+  },
+  "status": "finished"
+}
