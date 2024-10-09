@@ -1,8 +1,8 @@
-
-Alias: $v2 = http://terminology.hl7.org/CodeSystem/v2-0276
-
 Instance: 5a27bacd-1db6-43c8-8fad-18b898a29473
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Medication-PrEP
+Title: "Example of a prep medication"
+Description: "This is an example medication instance for HIV PrEP reporting"
+
 Usage: #example
 
 * status = #active

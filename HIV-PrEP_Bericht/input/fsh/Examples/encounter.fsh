@@ -2,6 +2,9 @@ Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
 Instance: c4269483-dd6e-4a26-a69e-3d060f6c58fe
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Encounter-General
+Title: "Example of a general encounter"
+Description: "This is an example general encounter instance for HIV PrEP reporting"
+
 Usage: #example
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
