@@ -1,5 +1,5 @@
 {
-  "updated": "2024-05-27T11:14:14.8522333+02:00",
+  "updated": "2024-10-10T13:21:52.9648216+02:00",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "de.basisprofil.r4": "1.4.0",
@@ -17,7 +17,8 @@
     "hl7.fhir.uv.sdc": "3.0.0",
     "hl7.fhir.r4.examples": "4.0.1",
     "us.cdc.phinvads": "0.12.0",
-    "ihe.formatcode.fhir": "1.1.0"
+    "ihe.formatcode.fhir": "1.1.0",
+    "kbv.mio.impfpass": "1.1.0"
   },
   "missing": {}
 }

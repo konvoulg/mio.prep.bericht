@@ -2095,6 +2095,46 @@
               "code": "search-type"
             }
           ],
+          "searchParam": [
+            {
+              "name": "patient",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
+              "type": "date"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "manufacturer",
+              "definition": "http://fhir.de/SearchParameter/Immunization-manufacturer",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "vaccine-code",
+              "definition": "http://hl7.org/fhir/SearchParameter/Immunization-vaccine-code",
+              "type": "token"
+            }
+          ],
           "type": "Immunization"
         }
       ],

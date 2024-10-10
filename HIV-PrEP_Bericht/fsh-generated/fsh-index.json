@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "CapabilityStatements\\RKI_HIV_PrEP_Bericht_CapabilityStatement.fsh",
     "startLine": 1,
-    "endLine": 917
+    "endLine": 944
   },
   {
     "outputFile": "CapabilityStatement-capabilitystatement-ecr.json",
@@ -285,7 +285,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Immunization.fsh",
     "startLine": 5,
-    "endLine": 177
+    "endLine": 159
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication-Free.json",
