@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\appointment.fsh",
     "startLine": 3,
-    "endLine": 22
+    "endLine": 29
   },
   {
     "outputFile": "CapabilityStatement-RKI-HIV-PrEP-Bericht-CapabilityStatement.json",
@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "CapabilityStatements\\RKI_HIV_PrEP_Bericht_CapabilityStatement.fsh",
     "startLine": 1,
-    "endLine": 631
+    "endLine": 868
   },
   {
     "outputFile": "CapabilityStatement-capabilitystatement-ecr.json",
@@ -181,7 +181,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 67
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Bundle.json",

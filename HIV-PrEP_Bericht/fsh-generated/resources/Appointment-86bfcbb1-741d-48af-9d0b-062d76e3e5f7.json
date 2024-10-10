@@ -7,6 +7,16 @@
       "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp"
     ]
   },
+  "appointmentType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+        "code": "FOLLOWUP",
+        "display": "A follow up visit from a previous appointment",
+        "version": "2.0.0"
+      }
+    ]
+  },
   "participant": [
     {
       "actor": {
@@ -26,14 +36,5 @@
     }
   ],
   "status": "booked",
-  "appointmentType": {
-    "coding": [
-      {
-        "code": "FOLLOWUP",
-        "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
-        "display": "A follow up visit from a previous appointment"
-      }
-    ]
-  },
   "start": "2021-05-23T09:00:00+08:00"
 }

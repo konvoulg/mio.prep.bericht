@@ -6,7 +6,6 @@
   "id": "RKI-CS-HIV-PrEP-Bericht-Encounter-Type",
   "title": "Art der Begegnung",
   "description": "Dieses CodeSystem enthält die Codes für deutsche Bezeichner für Begegnungstypen im Rahmen der HIV Peexpositionsprophylaxe.",
-  "version": "0.1.0",
   "url": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type",
   "concept": [
     {
@@ -22,6 +21,7 @@
       "display": "HIV-PrEP Kontrollbegegnung"
     }
   ],
+  "version": "0.1.0",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [
