@@ -37,15 +37,23 @@
     "fshType": "Instance",
     "fshFile": "Examples\\encounter.fsh",
     "startLine": 3,
-    "endLine": 22
+    "endLine": 25
   },
   {
     "outputFile": "Medication-5a27bacd-1db6-43c8-8fad-18b898a29473.json",
     "fshName": "5a27bacd-1db6-43c8-8fad-18b898a29473",
     "fshType": "Instance",
     "fshFile": "Examples\\medication-prep.fsh",
-    "startLine": 4,
+    "startLine": 1,
     "endLine": 28
+  },
+  {
+    "outputFile": "MedicationStatement-0ac9e5ae-fe98-47f1-b580-a9dbb2d9f218.json",
+    "fshName": "0ac9e5ae-fe98-47f1-b580-a9dbb2d9f218",
+    "fshType": "Instance",
+    "fshFile": "Examples\\medication-statement.fsh",
+    "startLine": 3,
+    "endLine": 23
   },
   {
     "outputFile": "Observation-39a8b719-ee89-4400-9078-1227bd31fe67.json",
@@ -158,6 +166,14 @@
     "fshFile": "Examples\\practitioner-role.fsh",
     "startLine": 1,
     "endLine": 21
+  },
+  {
+    "outputFile": "Procedure-1f51b58f-6e45-46ba-b45d-64871f4c21ff.json",
+    "fshName": "1f51b58f-6e45-46ba-b45d-64871f4c21ff",
+    "fshType": "Instance",
+    "fshFile": "Examples\\prep-initiation-procedure.fsh",
+    "startLine": 1,
+    "endLine": 28
   },
   {
     "outputFile": "Questionnaire-RKI-PR-PrEP-Bericht-Questionnaire.json",

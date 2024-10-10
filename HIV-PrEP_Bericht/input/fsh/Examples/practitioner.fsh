@@ -9,7 +9,7 @@ Usage: #example
 * identifier[ANR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[ANR].type.coding.code = #LANR
 * identifier[ANR].system = "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"
-* identifier[ANR].value = "123456"
+* identifier[ANR].value = "543210"
 
 * name[name].family.extension[nachname].valueString = "Poppins"
 * name[name].given = "Mary"
