@@ -31,7 +31,15 @@ Description: "r werden geplante Begegnungen, Arzt-Patientenkontakte mit Interakt
 //* serviceCategory ..0
 //* serviceType ..0
 //* specialty ..0
-//* appointmentType ..0
+* appointmentType 1.. MS
+* appointmentType from $v2-0276 (required)
+* appointmentType.coding.code 1..1 MS
+* appointmentType.coding.code = #FOLLOWUP (exactly)
+* appointmentType.coding.system 1..1 MS
+* appointmentType.coding.system = $v2-0276
+* appointmentType.coding.version 1..1 MS
+* appointmentType.coding.display 1..1 MS
+* appointmentType.coding.display = "A follow up visit from a previous appointment"
 //* reasonCode ..0
 //* reasonReference ..0
 
