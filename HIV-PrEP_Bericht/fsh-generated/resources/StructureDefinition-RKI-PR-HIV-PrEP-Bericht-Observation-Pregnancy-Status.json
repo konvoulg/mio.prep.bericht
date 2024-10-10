@@ -28,12 +28,22 @@
       "identity": "rim",
       "uri": "http://hl7.org/v3",
       "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
     }
   ],
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Pregnancy_Status",
+  "baseDefinition": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -59,125 +69,34 @@
         ]
       },
       {
-        "id": "Observation.meta",
-        "path": "Observation.meta",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.meta.versionId",
-        "path": "Observation.meta.versionId",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.meta.lastUpdated",
-        "path": "Observation.meta.lastUpdated",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.meta.profile",
-        "path": "Observation.meta.profile",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
         "id": "Observation.meta.profile:mioProfile",
         "path": "Observation.meta.profile",
         "sliceName": "mioProfile",
-        "min": 0,
-        "max": "*",
         "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status"
-      },
-      {
-        "id": "Observation.text",
-        "path": "Observation.text",
-        "definition": "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
-      },
-      {
-        "id": "Observation.text.status",
-        "path": "Observation.text.status",
-        "patternCode": "extensions"
       },
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "definition": "Hier wird ein Code aus dem FHIR ValueSet http://hl7.org/fhir/ValueSet/observation-status angegeben.",
-        "mustSupport": true
+        "definition": "Hier wird ein Code aus dem FHIR ValueSet http://hl7.org/fhir/ValueSet/observation-status angegeben."
       },
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "definition": "Die Codes in diesem Abschnitt beschreiben das Konzept \"Schwangerschaftsstatus\".",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "mustSupport": true
+        "definition": "Die Codes in diesem Abschnitt beschreiben das Konzept \"Schwangerschaftsstatus\"."
       },
       {
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
-        "definition": "Der Code in diesem Abschnitt beschreibt das Konzept \"Schwangerschaftsstatus\".",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.system",
-        "path": "Observation.code.coding.system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.version",
-        "path": "Observation.code.coding.version",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.display",
-        "path": "Observation.code.coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.subject.identifier",
-        "path": "Observation.subject.identifier",
-        "min": 1,
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10"
-            ]
-          }
-        ],
-        "mustSupport": true
+        "definition": "Der Code in diesem Abschnitt beschreibt das Konzept \"Schwangerschaftsstatus\"."
       },
       {
         "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1
+      },
+      {
+        "id": "Observation.effective[x]:effectiveDateTime",
         "path": "Observation.effective[x]",
         "sliceName": "effectiveDateTime",
         "min": 1,
@@ -185,44 +104,7 @@
           {
             "code": "dateTime"
           }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "definition": "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat.",
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.performer.reference",
-        "path": "Observation.performer.reference",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.performer.identifier",
-        "path": "Observation.performer.identifier",
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10",
-              "http://fhir.de/StructureDefinition/identifier-telematik-id"
-            ]
-          }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.value[x]",
@@ -231,8 +113,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.value[x]:valueCodeableConcept",
@@ -247,122 +128,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]:valueCodeableConcept.coding",
-        "path": "Observation.value[x].coding",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:loinc",
-        "path": "Observation.value[x].coding",
-        "sliceName": "loinc",
-        "definition": "Hier wird das Ergebnis als LOINC®-Code aus einem vorgegebenen Valueset angegeben.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:loinc.system",
-        "path": "Observation.value[x].coding.system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:loinc.version",
-        "path": "Observation.value[x].coding.version",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:loinc.code",
-        "path": "Observation.value[x].coding.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:loinc.display",
-        "path": "Observation.value[x].coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed",
-        "path": "Observation.value[x].coding",
-        "sliceName": "snomed",
-        "definition": "Hier wird das Ergebnis als SNOMED CT®-Code aus einem vorgegebenen Valueset angegeben.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed.system",
-        "path": "Observation.value[x].coding.system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed.version",
-        "path": "Observation.value[x].coding.version",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed.code",
-        "path": "Observation.value[x].coding.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed.display",
-        "path": "Observation.value[x].coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note",
-        "path": "Observation.note",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note.author[x]",
-        "path": "Observation.note.author[x]",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note.author[x]:authorReference",
-        "path": "Observation.note.author[x]",
-        "sliceName": "authorReference",
-        "definition": "Hier wird die Person referenziert, die die Notiz erstellt hat.",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note.author[x]:authorReference.reference",
-        "path": "Observation.note.author[x].reference",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note.author[x]:authorReference.identifier",
-        "path": "Observation.note.author[x].identifier",
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10",
-              "http://fhir.de/StructureDefinition/identifier-telematik-id"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note.time",
-        "path": "Observation.note.time",
-        "comment": "Dieses Element sollte in der Regel automatisiert ohne Aufwand für die Person, die die Notiz erstellt befüllt werden.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note.text",
-        "path": "Observation.note.text",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.method",
         "path": "Observation.method",
         "mustSupport": true
@@ -371,39 +136,6 @@
         "id": "Observation.method.coding",
         "path": "Observation.method.coding",
         "comment": "Das MustSupport gilt nur für die vordefinierten Slices.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.method.coding:snomed",
-        "path": "Observation.method.coding",
-        "sliceName": "snomed",
-        "definition": "Hier wird die Methode der Untersuchung als entsprechender SNOMED CT®-Code angegeben.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.method.coding:snomed.system",
-        "path": "Observation.method.coding.system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.method.coding:snomed.version",
-        "path": "Observation.method.coding.version",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.method.coding:snomed.code",
-        "path": "Observation.method.coding.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.method.coding:snomed.display",
-        "path": "Observation.method.coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.method.text",
-        "path": "Observation.method.text",
-        "definition": "Hier wird ein Freitext eingetragen.",
         "mustSupport": true
       }
     ]

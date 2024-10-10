@@ -26,8 +26,8 @@ Usage: #example
 * effectiveDateTime = "2017-01-01"
 
 * performer.reference = "e9ee4679-1e5b-4f04-828d-cf24d33717eb" // Reference to the Practitioner
-* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
-* performer.identifier.value = "123456"
+//* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+//* performer.identifier.value = "123456"
 
 
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"

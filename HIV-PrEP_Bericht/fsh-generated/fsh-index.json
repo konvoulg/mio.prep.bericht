@@ -325,7 +325,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight.fsh",
     "startLine": 3,
-    "endLine": 92
+    "endLine": 94
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Chlamydia.json",
@@ -333,7 +333,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis.fsh",
     "startLine": 1,
-    "endLine": 112
+    "endLine": 65
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Creatinine.json",
@@ -341,7 +341,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine.fsh",
     "startLine": 1,
-    "endLine": 311
+    "endLine": 312
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Free.json",
@@ -349,7 +349,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free.fsh",
     "startLine": 3,
-    "endLine": 298
+    "endLine": 309
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-GFR.json",
@@ -357,7 +357,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR.fsh",
     "startLine": 1,
-    "endLine": 292
+    "endLine": 293
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Gonorrhea.json",
@@ -365,7 +365,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea.fsh",
     "startLine": 1,
-    "endLine": 112
+    "endLine": 65
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HIV.json",
@@ -373,7 +373,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV.fsh",
     "startLine": 1,
-    "endLine": 112
+    "endLine": 65
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisB.json",
@@ -381,7 +381,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB.fsh",
     "startLine": 1,
-    "endLine": 112
+    "endLine": 65
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisC.json",
@@ -389,7 +389,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC.fsh",
     "startLine": 1,
-    "endLine": 112
+    "endLine": 65
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis.json",
@@ -397,15 +397,15 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_laboratory_Study_Syphilis.fsh",
     "startLine": 1,
-    "endLine": 112
+    "endLine": 65
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy-Status.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status",
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy.fsh",
-    "startLine": 1,
-    "endLine": 97
+    "startLine": 3,
+    "endLine": 94
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Organization.json",

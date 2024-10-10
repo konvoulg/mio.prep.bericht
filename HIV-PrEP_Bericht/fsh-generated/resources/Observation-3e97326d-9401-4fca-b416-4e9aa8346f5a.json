@@ -37,10 +37,6 @@
   },
   "performer": [
     {
-      "identifier": {
-        "system": "https://gematik.de/fhir/sid/telematik-id",
-        "value": "123456"
-      },
       "reference": "e9ee4679-1e5b-4f04-828d-cf24d33717eb"
     }
   ],

@@ -1,7 +1,7 @@
-//Abgeleitet von KBV Basis 1.5.0 - MS, Kardinalitäten, CodeSysteme von mio Medikatonsplan
+//Angelehnt an KBV Basis 1.5.0 - MS, Kardinalitäten, CodeSysteme von mio Medikatonsplan
 
 Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight
-Parent: $KBV_PR_Base_Observation_Body_Weight
+Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight"
 Description: "Dieses Profil bildet das Körpergewicht ab."
@@ -19,10 +19,12 @@ Description: "Dieses Profil bildet das Körpergewicht ab."
 * meta MS
 * meta.versionId MS
 * meta.lastUpdated MS
+/*
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains mioProfile 0..*
+*/
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight"
 
 * text ^definition = "In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
@@ -54,25 +56,25 @@ Description: "Dieses Profil bildet das Körpergewicht ab."
 * code.coding[snomed].version MS
 * code.coding[snomed].code MS
 * code.coding[snomed].display MS
-
+/*
 * subject only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
 * subject MS
-* subject.identifier 1.. MS
+* subject.identifier MS
 * subject.identifier only $identifier-kvid-10
-
+*/
 * effective[x] MS
 
 * effectiveDateTime 1.. MS
 * effectiveDateTime only dateTime
 * effectiveDateTime ^definition = "Hier wird der Zeitpunkt der Messung angegeben."
 * performer ..1 MS
-
+/*
 * performer only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole)
 * performer ^definition = "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat."
 * performer.reference MS
 * performer.identifier only $identifier-kvid-10 or $identifier-telematik-id
 * performer.identifier MS
-
+*/
 * value[x] MS
 * valueQuantity MS
 * valueQuantity.value MS

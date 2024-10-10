@@ -85,45 +85,6 @@
           "strength": "extensible",
           "valueSet": "https://demis.rki.de/fhir/ValueSet/laboratoryTestHBVP"
         }
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "definition": "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat.",
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization",
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Practitioner",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.performer.reference",
-        "path": "Observation.performer.reference",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.performer.identifier",
-        "path": "Observation.performer.identifier",
-        "min": 1,
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-telematik-id"
-            ]
-          }
-        ],
-        "mustSupport": true
       }
     ]
   }
