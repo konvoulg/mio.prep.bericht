@@ -169,7 +169,7 @@
       "linkId": "6401616433112",
       "text": "Geschlechtsidentitaet",
       "definition": "Patient.extension:Geschlechtsidentitaet",
-      "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Gender_Identity_SNOMEDCT"
+      "answerValueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.32"
     },
     {
       "extension": [
