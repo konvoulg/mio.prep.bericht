@@ -3,7 +3,7 @@ Parent: Appointment
 Id: RKI-PR-HIV-PrEP-Bericht-Appointment-FollowUp
 Title: "RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp"
 Description: "r werden geplante Begegnungen, Arzt-Patientenkontakte mit Interaktionen zwischen behandelter und behandelnder Person mit Datum abgebildet. Dies kann zum Beispiel ein geplanter Termin zur PrEP-Beratung, PrEP-Einleitung oder PrEP-Kontrolle sein."
-* ^url = "https://fhir.kbv.de/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp"
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp"
 
 * insert Meta-Profile
 
