@@ -11,15 +11,20 @@ Usage: #example
 
 * status = #finished
 
+* type.coding.system = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type"
+* type.coding.version = "0.1.0"
+* type.coding.code = #PrEPInitiierung
+* type.coding.display = "HIV-PrEP Initiierungsbegegnung"
+
 * class.version = "2.0.0"
 * class = $v3-ActCode#AMB "ambulatory"
 
-* subject.reference = "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "1234"
 
 * period.start = "2021-02-02"
 
-* serviceProvider.reference = "81eacc87-e116-4505-a4e2-02404a022039"
+* serviceProvider.reference = "urn:uuid:81eacc87-e116-4505-a4e2-02404a022039"
 * serviceProvider.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * serviceProvider.identifier.value = "123456"

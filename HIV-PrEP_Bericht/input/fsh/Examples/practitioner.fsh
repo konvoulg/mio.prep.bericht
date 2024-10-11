@@ -14,10 +14,12 @@ Usage: #example
 * name[name].family.extension[nachname].valueString = "Poppins"
 * name[name].given = "Mary"
 * name[name].prefix.extension[prefix-qualifier].valueCode = #AC
+* name[name].prefix = "Dr."
 
 * telecom.system = #phone
 * telecom.value = "+49 0123456789"
 
+* address[Strassenanschrift].line = "Einestraße 5"
 * address[Strassenanschrift].line.extension[Strasse].valueString = "Einestraße"
 * address[Strassenanschrift].line.extension[Hausnummer].valueString = "5"
 * address[Strassenanschrift].type = #both

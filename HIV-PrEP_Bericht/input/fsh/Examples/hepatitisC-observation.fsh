@@ -21,11 +21,11 @@ Usage: #example
 * code.coding[loinc].code = #11259-9
 * code.coding[loinc].display = "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
 
-* subject.reference = "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
 
 * effectiveDateTime = "2017-01-01"
 
-* performer.reference = "e9ee4679-1e5b-4f04-828d-cf24d33717eb" // Reference to the Practitioner
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-828d-cf24d33717eb" // Reference to the Practitioner
 * performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * performer.identifier.value = "123456"
 

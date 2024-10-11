@@ -26,15 +26,9 @@
       "given": [
         "Mike"
       ],
-      "use": "official",
-      "_family": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-            "valueString": "Scott"
-          }
-        ]
-      },
+      "prefix": [
+        "Dr."
+      ],
       "_prefix": [
         {
           "extension": [
@@ -44,7 +38,17 @@
             }
           ]
         }
-      ]
+      ],
+      "use": "official",
+      "family": "Scott",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Scott"
+          }
+        ]
+      }
     }
   ],
   "telecom": [
@@ -55,9 +59,9 @@
   ],
   "address": [
     {
-      "type": "both",
-      "city": "Einstadt",
-      "postalCode": "12345",
+      "line": [
+        "Einestraße 10"
+      ],
       "_line": [
         {
           "extension": [
@@ -71,7 +75,10 @@
             }
           ]
         }
-      ]
+      ],
+      "type": "both",
+      "city": "Einstadt",
+      "postalCode": "12345"
     }
   ],
   "qualification": [

@@ -10,7 +10,7 @@
   "participant": [
     {
       "actor": {
-        "reference": "637c79e5-bacc-4002-adca-64af70af8113",
+        "reference": "urn:uuid:637c79e5-bacc-4002-adca-64af70af8113",
         "type": "Practitioner"
       },
       "required": "required",
@@ -18,7 +18,7 @@
     },
     {
       "actor": {
-        "reference": "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1",
+        "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1",
         "type": "Patient"
       },
       "required": "required",

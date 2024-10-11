@@ -23,14 +23,14 @@
     }
   ],
   "medicationReference": {
-    "reference": "5a27bacd-1db6-43c8-8fad-18b898a29473"
+    "reference": "urn:uuid:5a27bacd-1db6-43c8-8fad-18b898a29473"
   },
   "subject": {
     "identifier": {
       "system": "http://fhir.de/sid/gkv/kvid-10",
       "value": "1234"
     },
-    "reference": "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+    "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
   },
   "status": "active",
   "effectiveDateTime": "2017-01-01"

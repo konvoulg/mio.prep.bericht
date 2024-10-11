@@ -6,6 +6,18 @@
       "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
     ]
   },
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type",
+          "version": "0.1.0",
+          "code": "PrEPInitiierung",
+          "display": "HIV-PrEP Initiierungsbegegnung"
+        }
+      ]
+    }
+  ],
   "class": {
     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
     "version": "2.0.0",
@@ -17,7 +29,7 @@
       "system": "http://fhir.de/sid/gkv/kvid-10",
       "value": "1234"
     },
-    "reference": "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+    "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
   },
   "period": {
     "start": "2021-02-02"
@@ -27,7 +39,7 @@
       "system": "https://gematik.de/fhir/sid/telematik-id",
       "value": "123456"
     },
-    "reference": "81eacc87-e116-4505-a4e2-02404a022039"
+    "reference": "urn:uuid:81eacc87-e116-4505-a4e2-02404a022039"
   },
   "status": "finished"
 }

@@ -7,10 +7,10 @@
     ]
   },
   "practitioner": {
-    "reference": "637c79e5-bacc-4002-adca-64af70af8113"
+    "reference": "urn:uuid:637c79e5-bacc-4002-adca-64af70af8113"
   },
   "organization": {
-    "reference": "81eacc87-e116-4505-a4e2-02404a022039"
+    "reference": "urn:uuid:81eacc87-e116-4505-a4e2-02404a022039"
   },
   "code": [
     {

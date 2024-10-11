@@ -26,10 +26,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "other"
+            "code": "446151000124109"
           }
-        ],
-        "text": "Non-binary"
+        ]
       },
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity"
     }
@@ -40,6 +39,7 @@
         "John"
       ],
       "use": "official",
+      "family": "Bill",
       "_family": {
         "extension": [
           {

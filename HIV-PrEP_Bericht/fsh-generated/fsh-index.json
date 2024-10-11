@@ -37,7 +37,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\encounter.fsh",
     "startLine": 3,
-    "endLine": 25
+    "endLine": 30
   },
   {
     "outputFile": "Medication-5a27bacd-1db6-43c8-8fad-18b898a29473.json",
@@ -149,7 +149,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\practitioner.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 32
   },
   {
     "outputFile": "Practitioner-e9ee4679-1e5b-4f04-828d-cf24d33717eb.json",
@@ -157,7 +157,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\lab-practitioner.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 33
   },
   {
     "outputFile": "PractitionerRole-RKI-PR-HIV-PrEP-Bericht-PractitionerRole.json",
@@ -182,6 +182,14 @@
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Questionnaire_Sexual_History.fsh",
     "startLine": 1,
     "endLine": 83
+  },
+  {
+    "outputFile": "QuestionnaireResponse-e772935d-66ef-4afc-ad7b-60d26df4d81d.json",
+    "fshName": "e772935d-66ef-4afc-ad7b-60d26df4d81d",
+    "fshType": "Instance",
+    "fshFile": "Examples\\questionnaireresponse.fsh",
+    "startLine": 1,
+    "endLine": 38
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance.json",

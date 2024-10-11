@@ -12,7 +12,7 @@
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "code": "Z29.22",
         "display": "HIV-Präexpositionsprophylaxe",
-        "version": "ICD -10- GM"
+        "version": "2024"
       }
     ]
   },
@@ -21,10 +21,10 @@
       "system": "http://fhir.de/sid/gkv/kvid-10",
       "value": "1234"
     },
-    "reference": "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+    "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
   },
   "encounter": {
-    "reference": "c4269483-dd6e-4a26-a69e-3d060f6c58fe"
+    "reference": "urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c58fe"
   },
   "performer": [
     {
@@ -33,7 +33,7 @@
           "system": "https://gematik.de/fhir/sid/telematik-id",
           "value": "543210"
         },
-        "reference": "637c79e5-bacc-4002-adca-64af70af8113"
+        "reference": "urn:uuid:637c79e5-bacc-4002-adca-64af70af8113"
       }
     }
   ],

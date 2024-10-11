@@ -26,15 +26,9 @@
       "given": [
         "Mary"
       ],
-      "use": "official",
-      "_family": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
-            "valueString": "Poppins"
-          }
-        ]
-      },
+      "prefix": [
+        "Dr."
+      ],
       "_prefix": [
         {
           "extension": [
@@ -44,7 +38,16 @@
             }
           ]
         }
-      ]
+      ],
+      "use": "official",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Poppins"
+          }
+        ]
+      }
     }
   ],
   "telecom": [
@@ -55,9 +58,9 @@
   ],
   "address": [
     {
-      "type": "both",
-      "city": "Einstadt",
-      "postalCode": "12345",
+      "line": [
+        "Einestraße 5"
+      ],
       "_line": [
         {
           "extension": [
@@ -71,7 +74,10 @@
             }
           ]
         }
-      ]
+      ],
+      "type": "both",
+      "city": "Einstadt",
+      "postalCode": "12345"
     }
   ],
   "qualification": [

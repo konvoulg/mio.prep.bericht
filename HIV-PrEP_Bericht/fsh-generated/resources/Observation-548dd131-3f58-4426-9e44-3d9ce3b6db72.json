@@ -33,7 +33,7 @@
     ]
   },
   "subject": {
-    "reference": "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+    "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
   },
   "performer": [
     {
@@ -41,7 +41,7 @@
         "system": "https://gematik.de/fhir/sid/telematik-id",
         "value": "123456"
       },
-      "reference": "e9ee4679-1e5b-4f04-828d-cf24d33717eb"
+      "reference": "urn:uuid:e9ee4679-1e5b-4f04-828d-cf24d33717eb"
     }
   ],
   "valueQuantity": {

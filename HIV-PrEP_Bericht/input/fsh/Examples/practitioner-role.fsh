@@ -6,9 +6,9 @@ Usage: #example
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole|0.1.0"
 
-* practitioner.reference = "637c79e5-bacc-4002-adca-64af70af8113"
+* practitioner.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8113"
 
-* organization.reference = "81eacc87-e116-4505-a4e2-02404a022039"
+* organization.reference = "urn:uuid:81eacc87-e116-4505-a4e2-02404a022039"
 
 * code.coding[RolleDerEinrichtung].system = "KBV_CS_Base_Role_Care"
 * code.coding[RolleDerEinrichtung].version = "1.5.0"

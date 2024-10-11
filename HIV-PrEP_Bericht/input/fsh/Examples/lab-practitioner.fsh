@@ -11,13 +11,16 @@ Usage: #example
 * identifier[ANR].system = "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"
 * identifier[ANR].value = "123456"
 
+* name[name].family = "Scott"
 * name[name].family.extension[nachname].valueString = "Scott"
 * name[name].given = "Mike"
 * name[name].prefix.extension[prefix-qualifier].valueCode = #AC
+* name[name].prefix = "Dr."
 
 * telecom.system = #phone
 * telecom.value = "+49 01234548599"
 
+* address[Strassenanschrift].line = "Einestraße 10"
 * address[Strassenanschrift].line.extension[Strasse].valueString = "Einestraße"
 * address[Strassenanschrift].line.extension[Hausnummer].valueString = "10"
 * address[Strassenanschrift].type = #both

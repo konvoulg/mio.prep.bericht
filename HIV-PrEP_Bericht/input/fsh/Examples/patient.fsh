@@ -14,10 +14,10 @@ Usage: #example
 
 //Geschlechtsidentitaet
 * extension[0].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity"
-* extension[0].valueCodeableConcept.coding[0].code = #other
-* extension[0].valueCodeableConcept.text = "Non-binary"
+* extension[0].valueCodeableConcept.coding[0].code = #446151000124109
+// * extension[0].valueCodeableConcept.text = "Non-binary"
 
-
+* name[name].family = "Bill"
 * name[name].family.extension[http://hl7.org/fhir/StructureDefinition/humanname-own-name].valueString = "Bill"
 * name[name].given[0] = "John"
 

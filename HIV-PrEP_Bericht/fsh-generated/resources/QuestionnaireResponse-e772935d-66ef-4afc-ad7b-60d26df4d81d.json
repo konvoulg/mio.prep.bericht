@@ -1,0 +1,89 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "e772935d-66ef-4afc-ad7b-60d26df4d81d",
+  "meta": {
+    "profile": [
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse"
+    ]
+  },
+  "subject": {
+    "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373066001"
+          }
+        }
+      ],
+      "linkId": "357318092995"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005"
+          }
+        }
+      ],
+      "linkId": "7742571432941"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005"
+          }
+        }
+      ],
+      "linkId": "1993731509843"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005"
+          }
+        }
+      ],
+      "linkId": "5407091313032"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "38628009"
+          }
+        }
+      ],
+      "linkId": "7294102201786"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "446151000124109"
+          }
+        }
+      ],
+      "linkId": "6401616433112"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373066001"
+          }
+        }
+      ],
+      "linkId": "2142215437593"
+    }
+  ],
+  "status": "completed",
+  "questionnaire": "RKI-PR-PrEP-Bericht-Questionnaire",
+  "author": {
+    "reference": "urn:uuid:637c79e5-bacc-4002-adca-64af70af8113"
+  }
+}

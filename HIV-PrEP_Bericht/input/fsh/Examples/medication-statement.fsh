@@ -14,10 +14,11 @@ Usage: #example
 
 * status = #active
 
-* medicationReference.reference = "5a27bacd-1db6-43c8-8fad-18b898a29473"
+* medicationReference.reference = "urn:uuid:5a27bacd-1db6-43c8-8fad-18b898a29473"
 
 * effectiveDateTime = "2017-01-01"
 
-* subject.reference = "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "1234"
+
