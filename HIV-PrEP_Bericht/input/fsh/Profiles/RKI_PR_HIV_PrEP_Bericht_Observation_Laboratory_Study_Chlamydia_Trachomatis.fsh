@@ -103,13 +103,14 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Chlamydia_Trachom
 * effectiveDateTime ^definition = "Hier wird ein Zeitpunkt der Untersuchung eingetragen, wobei dieser mindestens Tag, Monat und Jahr beinhalten muss."
 */
 //* issued ..0
-
+/*
 * performer ..1 MS
 * performer only Reference(Organization or Patient or Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner)
 * performer ^definition = "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat."
 * performer.reference MS
-* performer.identifier 1.. MS
+* performer.identifier MS
 * performer.identifier only $identifier-telematik-id
+*/
 /*
 * value[x] only Quantity or CodeableConcept or Range or Ratio
 * value[x] contains valueQuantity 

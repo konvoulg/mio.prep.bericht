@@ -11,7 +11,7 @@ Usage: #example
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight"
 
 * status = #final
-
+* extension[dokumentationszeitpunkt].valueDateTime = "2017-02-02"
 * category = $secondary-finding#laboratory
 
 * code.coding[loinc].system = "http://loinc.org"
@@ -25,9 +25,15 @@ Usage: #example
 
 * effectiveDateTime = "2017-01-01"
 
+<<<<<<< HEAD
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-828d-cf24d33717eb" // Reference to the Practitioner
 * performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * performer.identifier.value = "123456"
+=======
+* performer.reference = "e9ee4679-1e5b-4f04-828d-cf24d33717eb" // Reference to the Practitioner
+//* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+//* performer.identifier.value = "123456"
+>>>>>>> 2b6d7e3a604e35bab51a286cce8d2cf2ef2f5acd
 
 
 * valueQuantity.value = 76

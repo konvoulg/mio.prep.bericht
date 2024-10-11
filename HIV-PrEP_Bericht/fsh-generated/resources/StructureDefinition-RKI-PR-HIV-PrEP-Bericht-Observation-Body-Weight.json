@@ -10,10 +10,42 @@
   "description": "Dieses Profil bildet das Körpergewicht ab.",
   "copyright": "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® SNOMED CT® which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from Loinc http://loinc.org. Loinc is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes Loinc Committee and is available at no cost under the license at http://loinc.org/license. Loinc® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures UCUM Organization. All rights reserved. THE UCUM TABLE IN ALL FORMATS, UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
   "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Body_Weight",
+  "baseDefinition": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -32,39 +64,9 @@
         ]
       },
       {
-        "id": "Observation.meta",
-        "path": "Observation.meta",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.meta.versionId",
-        "path": "Observation.meta.versionId",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.meta.lastUpdated",
-        "path": "Observation.meta.lastUpdated",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.meta.profile",
-        "path": "Observation.meta.profile",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
         "id": "Observation.meta.profile:mioProfile",
         "path": "Observation.meta.profile",
         "sliceName": "mioProfile",
-        "min": 0,
-        "max": "*",
         "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight"
       },
       {
@@ -80,46 +82,17 @@
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "definition": "Hier wird ein Code aus dem FHIR ValueSet http://hl7.org/fhir/ValueSet/observation-status angegeben.",
-        "mustSupport": true
+        "definition": "Hier wird ein Code aus dem FHIR ValueSet http://hl7.org/fhir/ValueSet/observation-status angegeben."
       },
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "definition": "Hier werden die Codes zur Bestimmung des genauen Vitalzeichens/Körpermaßes angegeben.",
-        "mustSupport": true
+        "definition": "Hier werden die Codes zur Bestimmung des genauen Vitalzeichens/Körpermaßes angegeben."
       },
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "definition": "Angabe eines spezifischen Codes zur Bestimmung des genauen Vitalzeichens/Körpermaßes.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc",
-        "path": "Observation.code.coding",
-        "sliceName": "loinc",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.system",
-        "path": "Observation.code.coding.system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.version",
-        "path": "Observation.code.coding.version",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.code",
-        "path": "Observation.code.coding.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:loinc.display",
-        "path": "Observation.code.coding.display",
-        "mustSupport": true
+        "definition": "Angabe eines spezifischen Codes zur Bestimmung des genauen Vitalzeichens/Körpermaßes."
       },
       {
         "id": "Observation.code.coding:snomed",
@@ -130,60 +103,17 @@
           "system": "http://snomed.info/sct",
           "display": "Body weight (observable entity)",
           "version": "http://snomed.info/sct/900000000000207008/version/20230731"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:snomed.system",
-        "path": "Observation.code.coding.system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:snomed.version",
-        "path": "Observation.code.coding.version",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:snomed.code",
-        "path": "Observation.code.coding.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code.coding:snomed.display",
-        "path": "Observation.code.coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient"
-            ]
-          }
-        ],
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.subject.identifier",
         "path": "Observation.subject.identifier",
-        "min": 1,
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "Observation.effective[x]:effectiveDateTime",
@@ -195,48 +125,12 @@
           {
             "code": "dateTime"
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "definition": "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat.",
         "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.performer.reference",
-        "path": "Observation.performer.reference",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.performer.identifier",
-        "path": "Observation.performer.identifier",
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10",
-              "http://fhir.de/StructureDefinition/identifier-telematik-id"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
         "mustSupport": true
       },
       {
@@ -248,36 +142,6 @@
             "code": "Quantity"
           }
         ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.value",
-        "path": "Observation.value[x].value",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.unit",
-        "path": "Observation.value[x].unit",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.system",
-        "path": "Observation.value[x].system",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.value[x]:valueQuantity.code",
-        "path": "Observation.value[x].code",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note",
-        "path": "Observation.note",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note.author[x]",
-        "path": "Observation.note.author[x]",
         "mustSupport": true
       },
       {
@@ -293,38 +157,7 @@
               "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
             ]
           }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note.author[x]:authorReference.reference",
-        "path": "Observation.note.author[x].reference",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note.author[x]:authorReference.identifier",
-        "path": "Observation.note.author[x].identifier",
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10",
-              "http://fhir.de/StructureDefinition/identifier-telematik-id"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note.time",
-        "path": "Observation.note.time",
-        "comment": "Dieses Element sollte in der Regel automatisiert ohne Aufwand für die Person, die die Notiz erstellt befüllt werden.",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.note.text",
-        "path": "Observation.note.text",
-        "mustSupport": true
+        ]
       }
     ]
   }

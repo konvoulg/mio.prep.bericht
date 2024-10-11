@@ -218,7 +218,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.kbv.de/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp"
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp"
             ]
           }
         ]

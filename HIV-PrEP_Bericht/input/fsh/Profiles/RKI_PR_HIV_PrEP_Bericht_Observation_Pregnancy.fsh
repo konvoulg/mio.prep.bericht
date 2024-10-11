@@ -1,5 +1,7 @@
+//Angelehnt an KBV Basis 1.5.0 - MS, Kardinalitäten, CodeSysteme von mio Medikatonsplan
+
 Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status
-Parent: KBV_PR_Base_Observation_Pregnancy_Status
+Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy-Status
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status"
 Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten Person eine Schwangerschaft besteht."
@@ -13,10 +15,12 @@ Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten 
 * meta MS
 * meta.versionId MS
 * meta.lastUpdated MS
+/*
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains mioProfile 0..*
+*/
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status"
 
 * text ^definition = "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
@@ -34,32 +38,32 @@ Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten 
 * code.coding[loinc].version MS
 * code.coding[loinc].code MS
 * code.coding[loinc].display MS
-
+/*
 * subject 1.. MS
 * subject only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
-* subject.identifier 1.. MS
+* subject.identifier MS
 * subject.identifier only $identifier-kvid-10
-
+*/
 * effective[x] MS
 
 * effectiveDateTime 1..1 MS
 * effectiveDateTime only dateTime
 * effectiveDateTime ^sliceName = "effectiveDateTime"
-
+/*
 * performer ..1 MS
 * performer only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
 * performer ^definition = "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat."
 * performer.reference MS
 * performer.identifier only $identifier-kvid-10 or $identifier-telematik-id
 * performer.identifier MS
-
+*/
 * value[x] only CodeableConcept
 * value[x] MS
 * valueCodeableConcept only CodeableConcept
 * valueCodeableConcept MS
 * valueCodeableConcept ^definition = "Hier wird angeben, ob eine Schwangerschaft vorliegt."
 * valueCodeableConcept.coding MS
-
+/*
 * valueCodeableConcept.coding[loinc] MS
 * valueCodeableConcept.coding[loinc] ^definition = "Hier wird das Ergebnis als LOINC®-Code aus einem vorgegebenen Valueset angegeben."
 * valueCodeableConcept.coding[loinc].system MS
@@ -72,6 +76,7 @@ Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten 
 * valueCodeableConcept.coding[snomed].version MS
 * valueCodeableConcept.coding[snomed].code MS
 * valueCodeableConcept.coding[snomed].display MS
+*/
 * note MS
 * note.author[x] MS
 * note.authorReference only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
@@ -87,6 +92,7 @@ Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten 
 * method MS
 * method.coding MS
 * method.coding ^comment = "Das MustSupport gilt nur für die vordefinierten Slices."
+/*
 * method.coding[snomed] MS
 * method.coding[snomed] ^definition = "Hier wird die Methode der Untersuchung als entsprechender SNOMED CT®-Code angegeben."
 * method.coding[snomed].system MS
@@ -95,6 +101,7 @@ Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten 
 * method.coding[snomed].display MS
 * method.text MS
 * method.text ^definition = "Hier wird ein Freitext eingetragen."
+*/
 /* Brauchen wir nicht festzuhalten, nur wenn es schön da ist (nachnutzung)
 * hasMember ..1 MS
 * hasMember only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Estimated_Date_of_Delivery)

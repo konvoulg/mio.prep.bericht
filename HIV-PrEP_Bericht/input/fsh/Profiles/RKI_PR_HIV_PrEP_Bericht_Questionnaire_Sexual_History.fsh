@@ -59,7 +59,7 @@ Usage: #example
 * item[=].code = $11000274103#33821000087103 "Gender identity"
 * item[=].text = "Geschlechtsidentitaet"
 * item[=].definition = https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient#Patient.extension:Geschlechtsidentitaet
-* item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Gender_Identity_SNOMEDCT"
+* item[=].answerValueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.32"
 /*
 * item[=].answerOption[0].valueCoding = $sct#446141000124107 "Identifies as female gender (finding)"
 * item[=].answerOption[+].valueCoding = $sct#446151000124109 "Identifies as male gender (finding)"

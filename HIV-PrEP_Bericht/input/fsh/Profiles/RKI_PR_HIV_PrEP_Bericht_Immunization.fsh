@@ -1,4 +1,4 @@
-// Kopie von mio impfpass v1.1.0
+// Anpassung von mio impfpass v1.1.0 - Extensions Removed
 
 //Alias: $KBV_EX_Base_Terminology_German = https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German
 
@@ -25,6 +25,7 @@ Id: RKI-PR-HIV-PrEP-Bericht-Immunization
 * language ..0
 * text.status = #extensions (exactly)
 * contained ..0
+/*
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -33,6 +34,7 @@ Id: RKI-PR-HIV-PrEP-Bericht-Immunization
     https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Attester|1.1.0 named verantwortliche_Person 1..1 MS and
     https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Enterer|1.1.0 named eintragende_Person 0..1 MS
 * extension[verantwortliche_Person] ^short = "Verantwortliche Person"
+*/
 * identifier ..0
 * status = #completed (exactly)
 * statusReason ..0
@@ -96,8 +98,8 @@ Id: RKI-PR-HIV-PrEP-Bericht-Immunization
 * occurrenceDateTime ^short = "Datum der Schutzimpfung"
 * occurrenceDateTime ^definition = "Im Anwendungsszenario \"Daten eintragen\" entspricht es dem Datum, an dem die Impfung durchgeführt wurde.\n\nIm Anwendungsszenario \"Daten nach- oder übertragen\" entspricht es dem Datum oder einer gröberen Angabe der Zeit bzw. des Zeitraums einer zurückliegenden Impfung, die im Impfpass nachgetragen wird. Wird eine abgeschlossene Grundimmunisierung übertragen, so sollte das Datum der Gabe der letzten Dosis dokumentiert werden."
 * recorded ..0
-* primarySource 1..
-* primarySource = true (exactly)
+//* primarySource 1..
+//* primarySource = true (exactly)
 * reportOrigin ..0
 * location ..0
 * manufacturer MS
@@ -137,13 +139,15 @@ Id: RKI-PR-HIV-PrEP-Bericht-Immunization
 * programEligibility ..0
 * fundingSource ..0
 * reaction ..0
-* protocolApplied 1..1 MS
+* protocolApplied MS
+
 * protocolApplied.extension ^slicing.discriminator.type = #value
 * protocolApplied.extension ^slicing.discriminator.path = "url"
 * protocolApplied.extension ^slicing.rules = #open
 * protocolApplied.extension contains https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Follow_Up|1.1.0 named datum_der_Folgeimpfung 0..* MS
 * protocolApplied.series ..0
 * protocolApplied.authority ..0
+
 * protocolApplied.targetDisease 1.. MS
 * protocolApplied.targetDisease from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease|1.1.0 (required)
 * protocolApplied.targetDisease ^short = "Erkrankung gegen die geimpft wird"
@@ -164,8 +168,9 @@ Id: RKI-PR-HIV-PrEP-Bericht-Immunization
 * protocolApplied.targetDisease.coding.display.extension[anzeigenameCodeSnomed].extension[content] ^sliceName = "content"
 * protocolApplied.targetDisease.coding.display.extension[anzeigenameCodeSnomed].extension[content].valueString ^sliceName = "valueString"
 * protocolApplied.targetDisease.coding.display.extension[anzeigenameCodeSnomed].extension[content].valueString ^definition = "In diesem Attribut sollen die entsprechende deutsche Bezeichnung des Snomed-Codes aus der Conceptmap eingetragen werden, also in diesem Fall den Displaynamen des Targetsystems aus https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_Vaccination_Vaccine_Targetdisease"
-*/
 * protocolApplied.targetDisease.text ..0
+*/
+/*
 * protocolApplied.doseNumber[x] ^slicing.discriminator.type = #type
 * protocolApplied.doseNumber[x] ^slicing.discriminator.path = "$this"
 * protocolApplied.doseNumber[x] ^slicing.rules = #open
@@ -175,7 +180,7 @@ Id: RKI-PR-HIV-PrEP-Bericht-Immunization
 * protocolApplied.doseNumberString.extension ^slicing.discriminator.type = #value
 * protocolApplied.doseNumberString.extension ^slicing.discriminator.path = "url"
 * protocolApplied.doseNumberString.extension ^slicing.rules = #open
-/*
+
 * protocolApplied.doseNumberString.extension[data-absent-reason] only DataAbsentReason
 * protocolApplied.doseNumberString.extension[data-absent-reason] ^sliceName = "data-absent-reason"
 * protocolApplied.doseNumberString.extension[data-absent-reason].value[x] ^slicing.discriminator.type = #type

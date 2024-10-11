@@ -63,14 +63,19 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
-* code.coding contains loinc 1..1 MS
+* code.coding contains loinc 1..1 MS and snomed 0..1 MS
 * code.coding[loinc] ^patternCoding.system = "http://loinc.org"
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].system = "http://loinc.org"
 * code.coding[loinc].version 1.. MS
 * code.coding[loinc].code 1.. MS
 * code.coding[loinc].display 1.. MS
-
+* code.coding[snomed] ^patternCoding.system = "http://snomed.info/sct"
+* code.coding[snomed].system 1.. MS
+* code.coding[snomed].system = "http://snomed.info/sct"
+* code.coding[snomed].version 1.. MS
+* code.coding[snomed].code 1.. MS
+* code.coding[snomed].display 1.. MS
 
 /*
 * code.coding 1.. MS
@@ -87,7 +92,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * subject 1.. MS
 * subject only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
 * subject.reference 1.. MS
-* subject.type ..0
+//* subject.type ..0
 * subject.identifier only $identifier-kvid-10
 
 * effective[x] MS
@@ -120,6 +125,12 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 */
 //* issued ..0
 //* performer ..0
+* performer only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole)
+* performer ^definition = "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat."
+* performer.reference MS
+* performer.identifier only $identifier-kvid-10 or $identifier-telematik-id
+* performer.identifier MS
+
 * value[x] MS
 * value[x] only Quantity or CodeableConcept or Range or Ratio
 

@@ -11,7 +11,14 @@ Usage: #example
 
 * status = #booked
 
-* appointmentType = $v2#FOLLOWUP "A follow up visit from a previous appointment"
+* appointmentType.coding.code = #FOLLOWUP "A follow up visit from a previous appointment"
+* appointmentType.coding.display = "A follow up visit from a previous appointment"
+//* appointmentType.coding.system = $v2-0276
+* appointmentType.coding.version = "2.0.0"
+
+
+
+
 
 * start = "2021-05-23T09:00:00+08:00"
 

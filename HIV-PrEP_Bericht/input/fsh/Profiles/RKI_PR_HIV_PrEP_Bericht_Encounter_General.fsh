@@ -76,7 +76,7 @@ Description: "Hier werden Begegnungen bzw. Aufenthalte, Arzt-Patientenkontakte m
 * participant.individual.identifier only $identifier-telematik-id
 //* participant.individual.display ..0
 // Mit Stefan darüber Diskutieren ob sinvol
-* appointment only Reference(https://fhir.kbv.de/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp)
+* appointment only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp)
 
 * period 1.. MS
 * period.start 1.. MS

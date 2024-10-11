@@ -9,6 +9,7 @@
     "kbv.mio.laborbefund": "1.0.0-kommentierung",
     "hl7.fhir.uv.extensions.r4": "5.1.0",
     "kbv.mio.emp": "1.0.0-kommentierung.1",
-    "hl7.fhir.us.core": "6.1.0"
+    "hl7.fhir.us.core": "6.1.0",
+    "kbv.mio.impfpass": "1.1.0"
   }
 }
