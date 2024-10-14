@@ -25,15 +25,9 @@ Usage: #example
 
 * effectiveDateTime = "2017-01-01"
 
-<<<<<<< HEAD
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-828d-cf24d33717eb" // Reference to the Practitioner
-* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
-* performer.identifier.value = "123456"
-=======
-* performer.reference = "e9ee4679-1e5b-4f04-828d-cf24d33717eb" // Reference to the Practitioner
 //* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 //* performer.identifier.value = "123456"
->>>>>>> 2b6d7e3a604e35bab51a286cce8d2cf2ef2f5acd
 
 * valueQuantity.value = 0.9
 * valueQuantity.unit = "mg/dL"
