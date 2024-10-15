@@ -32,6 +32,20 @@
     },
     "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
   },
+  "dosage": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "code": "1",
+            "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT",
+            "unit": "Stück",
+            "value": 1
+          }
+        }
+      ]
+    }
+  ],
   "status": "active",
   "effectiveDateTime": "2017-01-01"
 }

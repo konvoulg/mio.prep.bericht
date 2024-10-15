@@ -32,6 +32,14 @@
     "endLine": 12
   },
   {
+    "outputFile": "Condition-fba75e92-0315-430f-9a01-a493b665b483.json",
+    "fshName": "fba75e92-0315-430f-9a01-a493b665b483",
+    "fshType": "Instance",
+    "fshFile": "Examples\\chlamydia-condition.fsh",
+    "startLine": 5,
+    "endLine": 30
+  },
+  {
     "outputFile": "Encounter-c4269483-dd6e-4a26-a69e-3d060f6c58fe.json",
     "fshName": "c4269483-dd6e-4a26-a69e-3d060f6c58fe",
     "fshType": "Instance",
@@ -53,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\medication-statement.fsh",
     "startLine": 3,
-    "endLine": 23
+    "endLine": 26
   },
   {
     "outputFile": "Observation-39a8b719-ee89-4400-9078-1227bd31fe67.json",
