@@ -7,6 +7,7 @@ Alias: $PrEPractitioner = https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrE
 Alias: $SyphilisLab = https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Syphilis_Lab_Study_LOINC
 Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
 Alias: $PrEPEncounter = https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General
+Alias: $obscategory = http://terminology.hl7.org/CodeSystem/observation-category
 
 //Aliases CodeSysteme
 Alias: $loinc = http://loinc.org
