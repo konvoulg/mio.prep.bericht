@@ -1,0 +1,119 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "Syphilis_Diagnosecodes_ICD10GM",
+  "id": "Syphilis-Diagnosecodes-ICD10GM",
+  "title": "Syphilis Diagnosecodes ICD10GM",
+  "description": "Das ValueSet Syphilis_Diagnosecodes_ICD10GM enthält die Codes für die Diagnose von Treponema pallidum Infektion",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Gonokokkeninfektion_Diagnosecodes_ICD10GM",
+  "version": "0.1.0",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "date": "2024-07-16",
+  "immutable": false,
+  "copyright": "WHO, BfArM 1994 - 2024 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des  Bundesinstituts fÃ¼r Arzneimittel und Medizinprodukte (BfArM)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "concept": [
+          {
+            "code": "A51",
+            "display": "Frühsyphilis"
+          },
+          {
+            "code": "A51.0",
+            "display": "Primärer syphilitischer Genitalaffekt"
+          },
+          {
+            "code": "A51.1",
+            "display": "Analer Primäraffekt bei Syphilis"
+          },
+          {
+            "code": "A51.2",
+            "display": "Primäraffekt bei Syphilis, sonstige Lokalisationen"
+          },
+          {
+            "code": "A51.3",
+            "display": "Sekundäre Syphilis der Haut und der Schleimhäute"
+          },
+          {
+            "code": "A51.4",
+            "display": "Sonstige sekundäre Syphilis"
+          },
+          {
+            "code": "A51.5",
+            "display": "Latente Frühsyphilis"
+          },
+          {
+            "code": "A51.9",
+            "display": "Frühsyphilis, nicht näher bezeichnet"
+          },
+          {
+            "code": "A53",
+            "display": "Sonstige und nicht näher bezeichnete Syphilis"
+          },
+          {
+            "code": "A53.0",
+            "display": "Latente Syphilis, nicht als früh oder spät bezeichnet"
+          },
+          {
+            "code": "A53.9",
+            "display": "Syphilis, nicht näher bezeichnet"
+          },
+          {
+            "code": "A52",
+            "display": "Spätsyphilis"
+          },
+          {
+            "code": "A52.0",
+            "display": "Kardiovaskuläre Syphilis"
+          },
+          {
+            "code": "A52.1",
+            "display": "Floride Neurosyphilis"
+          },
+          {
+            "code": "A52.2",
+            "display": "Asymptomatische Neurosyphilis"
+          },
+          {
+            "code": "A52.3",
+            "display": "Neurosyphilis, nicht näher bezeichnet"
+          },
+          {
+            "code": "A52.7",
+            "display": "Sonstige floride Spätsyphilis"
+          },
+          {
+            "code": "A52.8",
+            "display": "Latente Spätsyphilis"
+          },
+          {
+            "code": "A52.9",
+            "display": "Spätsyphilis, nicht näher bezeichnet"
+          },
+          {
+            "code": "A50",
+            "display": "Syphilis connata"
+          },
+          {
+            "code": "Z22.4",
+            "display": "Keimträger von Infektionskrankheiten, die vorwiegend durch Geschlechtsverkehr übertragen werden"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,634 @@
+[
+  {
+    "outputFile": "Appointment-86bfcbb1-741d-48af-9d0b-062d76e3e5f7.json",
+    "fshName": "86bfcbb1-741d-48af-9d0b-062d76e3e5f7",
+    "fshType": "Instance",
+    "fshFile": "Examples\\appointment.fsh",
+    "startLine": 3,
+    "endLine": 31
+  },
+  {
+    "outputFile": "CapabilityStatement-RKI-HIV-PrEP-Bericht-CapabilityStatement.json",
+    "fshName": "RKI-HIV-PrEP-Bericht-CapabilityStatement",
+    "fshType": "Instance",
+    "fshFile": "CapabilityStatements\\RKI_HIV_PrEP_Bericht_CapabilityStatement.fsh",
+    "startLine": 1,
+    "endLine": 944
+  },
+  {
+    "outputFile": "CapabilityStatement-capabilitystatement-ecr.json",
+    "fshName": "capabilitystatement-ecr",
+    "fshType": "Instance",
+    "fshFile": "CapabilityStatements\\RKI_PR_HIV_PrEP_Bericht_CapabilityStatementECR.fsh",
+    "startLine": 1,
+    "endLine": 276
+  },
+  {
+    "outputFile": "CodeSystem-RKI-CS-HIV-PrEP-Bericht-Encounter-Type.json",
+    "fshName": "RKI_CS_HIV_PrEP_Bericht_Encounter_Type",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems\\RKI_CS_HIV_PrEP_Bericht_Encounter_Type.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Condition-fba75e92-0315-430f-9a01-a493b665b483.json",
+    "fshName": "fba75e92-0315-430f-9a01-a493b665b483",
+    "fshType": "Instance",
+    "fshFile": "Examples\\chlamydia-condition.fsh",
+    "startLine": 5,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Encounter-c4269483-dd6e-4a26-a69e-3d060f6c58fe.json",
+    "fshName": "c4269483-dd6e-4a26-a69e-3d060f6c58fe",
+    "fshType": "Instance",
+    "fshFile": "Examples\\encounter.fsh",
+    "startLine": 3,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Medication-5a27bacd-1db6-43c8-8fad-18b898a29473.json",
+    "fshName": "5a27bacd-1db6-43c8-8fad-18b898a29473",
+    "fshType": "Instance",
+    "fshFile": "Examples\\medication-prep.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "MedicationStatement-0ac9e5ae-fe98-47f1-b580-a9dbb2d9f218.json",
+    "fshName": "0ac9e5ae-fe98-47f1-b580-a9dbb2d9f218",
+    "fshType": "Instance",
+    "fshFile": "Examples\\medication-statement.fsh",
+    "startLine": 3,
+    "endLine": 26
+  },
+  {
+    "outputFile": "Observation-39a8b719-ee89-4400-9078-1227bd31fe67.json",
+    "fshName": "39a8b719-ee89-4400-9078-1227bd31fe67",
+    "fshType": "Instance",
+    "fshFile": "Examples\\hepatitisB-observation.fsh",
+    "startLine": 5,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-3e97326d-9401-4fca-b416-4e9aa8346f5a.json",
+    "fshName": "3e97326d-9401-4fca-b416-4e9aa8346f5a",
+    "fshType": "Instance",
+    "fshFile": "Examples\\gonorrhea-observation.fsh",
+    "startLine": 5,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-4a7fea51-25ea-4862-9fc1-4b677b03ec1b.json",
+    "fshName": "4a7fea51-25ea-4862-9fc1-4b677b03ec1b",
+    "fshType": "Instance",
+    "fshFile": "Examples\\hepatitisC-observation.fsh",
+    "startLine": 5,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-548dd131-3f58-4426-9e44-3d9ce3b6db72.json",
+    "fshName": "548dd131-3f58-4426-9e44-3d9ce3b6db72",
+    "fshType": "Instance",
+    "fshFile": "Examples\\gfr-observation.fsh",
+    "startLine": 5,
+    "endLine": 42
+  },
+  {
+    "outputFile": "Observation-793671d7-db7b-44fb-94a6-27f7acd332be.json",
+    "fshName": "793671d7-db7b-44fb-94a6-27f7acd332be",
+    "fshType": "Instance",
+    "fshFile": "Examples\\chlamydia-observation.fsh",
+    "startLine": 5,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-abeb63fe-e33d-4e72-832d-7bdbec7d9b69.json",
+    "fshName": "abeb63fe-e33d-4e72-832d-7bdbec7d9b69",
+    "fshType": "Instance",
+    "fshFile": "Examples\\hiv-observation.fsh",
+    "startLine": 5,
+    "endLine": 35
+  },
+  {
+    "outputFile": "Observation-c72db78e-5bd4-4b58-a897-aed3d5a9632c.json",
+    "fshName": "c72db78e-5bd4-4b58-a897-aed3d5a9632c",
+    "fshType": "Instance",
+    "fshFile": "Examples\\creatinine-observation.fsh",
+    "startLine": 5,
+    "endLine": 46
+  },
+  {
+    "outputFile": "Observation-d24a5fdb-51bb-470c-bca8-a3c8e90a6265.json",
+    "fshName": "d24a5fdb-51bb-470c-bca8-a3c8e90a6265",
+    "fshType": "Instance",
+    "fshFile": "Examples\\bodyweight-observation.fsh",
+    "startLine": 5,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Observation-f85d91be-f971-4def-9b9e-29fbcd8f4340.json",
+    "fshName": "f85d91be-f971-4def-9b9e-29fbcd8f4340",
+    "fshType": "Instance",
+    "fshFile": "Examples\\syphilis-observation.fsh",
+    "startLine": 5,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Organization-81eacc87-e116-4505-a4e2-02404a022039.json",
+    "fshName": "81eacc87-e116-4505-a4e2-02404a022039",
+    "fshType": "Instance",
+    "fshFile": "Examples\\organization.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "Patient-4a311b0a-ec7e-4486-bb6b-1c275f0cbee1.json",
+    "fshName": "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1",
+    "fshType": "Instance",
+    "fshFile": "Examples\\patient.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Practitioner-637c79e5-bacc-4002-adca-64af70af8113.json",
+    "fshName": "637c79e5-bacc-4002-adca-64af70af8113",
+    "fshType": "Instance",
+    "fshFile": "Examples\\practitioner.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Practitioner-e9ee4679-1e5b-4f04-828d-cf24d33717eb.json",
+    "fshName": "e9ee4679-1e5b-4f04-828d-cf24d33717eb",
+    "fshType": "Instance",
+    "fshFile": "Examples\\lab-practitioner.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "PractitionerRole-RKI-PR-HIV-PrEP-Bericht-PractitionerRole.json",
+    "fshName": "RKI-PR-HIV-PrEP-Bericht-PractitionerRole",
+    "fshType": "Instance",
+    "fshFile": "Examples\\practitioner-role.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "Procedure-1f51b58f-6e45-46ba-b45d-64871f4c21ff.json",
+    "fshName": "1f51b58f-6e45-46ba-b45d-64871f4c21ff",
+    "fshType": "Instance",
+    "fshFile": "Examples\\prep-initiation-procedure.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "Questionnaire-RKI-PR-PrEP-Bericht-Questionnaire.json",
+    "fshName": "RKI-PR-PrEP-Bericht-Questionnaire",
+    "fshType": "Instance",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Questionnaire_Sexual_History.fsh",
+    "startLine": 1,
+    "endLine": 83
+  },
+  {
+    "outputFile": "QuestionnaireResponse-e772935d-66ef-4afc-ad7b-60d26df4d81d.json",
+    "fshName": "e772935d-66ef-4afc-ad7b-60d26df4d81d",
+    "fshType": "Instance",
+    "fshFile": "Examples\\questionnaireresponse.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance.fsh",
+    "startLine": 3,
+    "endLine": 225
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Appointment-FollowUp.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp.fsh",
+    "startLine": 1,
+    "endLine": 67
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Bundle.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Bundle",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Bundle.fsh",
+    "startLine": 1,
+    "endLine": 52
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Chlamydia-Tracomatis.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Tracomatis",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Trachomatis.fsh",
+    "startLine": 1,
+    "endLine": 78
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Free.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free.fsh",
+    "startLine": 1,
+    "endLine": 205
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Gonokokkeninfektion.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Gonokokkeninfektion",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Gonokokkeninfektion.fsh",
+    "startLine": 1,
+    "endLine": 78
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-HIV.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HIV",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HIV.fsh",
+    "startLine": 1,
+    "endLine": 78
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-HepatitisB.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisB",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisB.fsh",
+    "startLine": 1,
+    "endLine": 78
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-HepatitisC.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisC",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisC.fsh",
+    "startLine": 1,
+    "endLine": 78
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Syphilis.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Syphilis",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Syphilis.fsh",
+    "startLine": 1,
+    "endLine": 78
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-History-Present.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_History_Present",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_History_Present.fsh",
+    "startLine": 1,
+    "endLine": 216
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Encounter-General.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Encounter_General",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Encounter_General.fsh",
+    "startLine": 1,
+    "endLine": 99
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Immunization.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Immunization",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Immunization.fsh",
+    "startLine": 5,
+    "endLine": 159
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication-Free.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Medication_Free",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Medication_Free.fsh",
+    "startLine": 3,
+    "endLine": 124
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication-PrEP.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Medication_PrEP",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Medication_PrEP.fsh",
+    "startLine": 3,
+    "endLine": 126
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-MedicationStatement-Free.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free.fsh",
+    "startLine": 3,
+    "endLine": 537
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-MedicationStatement-PrEP.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP.fsh",
+    "startLine": 3,
+    "endLine": 155
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight.fsh",
+    "startLine": 3,
+    "endLine": 94
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Chlamydia.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis.fsh",
+    "startLine": 1,
+    "endLine": 65
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Creatinine.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine.fsh",
+    "startLine": 1,
+    "endLine": 312
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Free.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free.fsh",
+    "startLine": 3,
+    "endLine": 309
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-GFR.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR.fsh",
+    "startLine": 1,
+    "endLine": 293
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Gonorrhea.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea.fsh",
+    "startLine": 1,
+    "endLine": 65
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HIV.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV.fsh",
+    "startLine": 1,
+    "endLine": 65
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisB.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB.fsh",
+    "startLine": 1,
+    "endLine": 65
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisC.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC.fsh",
+    "startLine": 1,
+    "endLine": 65
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_laboratory_Study_Syphilis.fsh",
+    "startLine": 1,
+    "endLine": 65
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy-Status.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy.fsh",
+    "startLine": 3,
+    "endLine": 94
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Organization.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Organization",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Organization.fsh",
+    "startLine": 4,
+    "endLine": 213
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Patient.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Patient",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_PatientIn.fsh",
+    "startLine": 4,
+    "endLine": 250
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Practitioner.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Practitioner",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Practitioner.fsh",
+    "startLine": 4,
+    "endLine": 232
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-PractitionerRole.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_PractitionerRole",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_PractitionerRole.fsh",
+    "startLine": 4,
+    "endLine": 74
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Counselling.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling.fsh",
+    "startLine": 3,
+    "endLine": 92
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Initiation.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation.fsh",
+    "startLine": 1,
+    "endLine": 146
+  },
+  {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-QuestionnaireResponse.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse.fsh",
+    "startLine": 2,
+    "endLine": 46
+  },
+  {
+    "outputFile": "ValueSet-Chlamydia-Trachomatis-Diagnosecodes-ICD10GM.json",
+    "fshName": "Chlamydia_Trachomatis_Diagnosecodes_ICD10GM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Chlamydia_Trachomatis_Diagnosecodes_ICD10GM.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-Gender-Identity-SNOMEDCT.json",
+    "fshName": "Gender_Identity_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Gender_Identity_SNOMEDCT.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-Gonokokkeninfektion-Diagnosecodes-ICD10GM.json",
+    "fshName": "Gonokokkeninfektion_Diagnosecodes_ICD10GM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Gonokokkeninfektion_Diagnosecodes_ICD10GM.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-HIV-Diagnosecodes-ICD10GM.json",
+    "fshName": "HIV_Diagnosecodes_ICD10GM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HIV_Diagnosecodes_ICD10GM.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "ValueSet-HIV-PrEP-Encounter-Type.json",
+    "fshName": "HIV_PrEP_Encounter_Type",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Encounter_Type.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-HIV-PrEP-Medikation-ATC.json",
+    "fshName": "HIV_PrEP_Medikation_ATC",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HIV_PrEP_Medikation_ATC.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-HepatitisB-Diagnosecodes-ICD10GM.json",
+    "fshName": "HepatitisB_Diagnosecodes_ICD10GM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HepatitisB_Diagnosecodes_ICD10GM.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "ValueSet-HepatitisC-Diagnosecodes-ICD10GM.json",
+    "fshName": "HepatitisC_Diagnosecodes_ICD10GM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HepatitisC_Diagnosecodes_ICD10GM.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Chlamydia-Trachomatis-LOINC.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Chlamydia_Trachomatis_LOINC",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Chlamydia_Trachomatis_Lab_Study_LOINC.fsh",
+    "startLine": 1,
+    "endLine": 91
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-HIV-Lab-Study-LOINC.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_HIV_Lab_Study_LOINC",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_HIV_Lab_Study_LOINC.fsh",
+    "startLine": 1,
+    "endLine": 129
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Indication-PrEP-SNOMEDCT.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Indication_PrEP_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_PrEP_Indication.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Lab-Study-Result-Qualitative-SNOMEDCT.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT.fsh",
+    "startLine": 3,
+    "endLine": 25
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Neisseria-gonorrhoeae-LOINC.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Neisseria_gonorrhoeae_LOINC",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Neisseria gonorrhoeae_Lab_Study_LOINC.fsh",
+    "startLine": 1,
+    "endLine": 67
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Observation-Units-Crea-UCUM.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_Crea_UCUM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_Creatinine.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Observation-Units-GFR-UCUM.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Syphilis-Lab-Study-LOINC.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Syphilis_Lab_Study_LOINC",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Syphilis_Lab_Study_LOINC.fsh",
+    "startLine": 1,
+    "endLine": 104
+  },
+  {
+    "outputFile": "ValueSet-Sexual-Orientation-SNOMEDCT.json",
+    "fshName": "Sexual_Orientation_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "ValueSet-Syphilis-Diagnosecodes-ICD10GM.json",
+    "fshName": "Syphilis_Diagnosecodes_ICD10GM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Syphilis_Diagnosecodes_ICD10GM.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "ValueSet-YesNoInformation.json",
+    "fshName": "YesNoInformation",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Yes_No_Information.fsh",
+    "startLine": 1,
+    "endLine": 13
+  }
+]

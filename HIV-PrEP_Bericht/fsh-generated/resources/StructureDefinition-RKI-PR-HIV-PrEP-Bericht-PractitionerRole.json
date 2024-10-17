@@ -1,0 +1,297 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RKI-PR-HIV-PrEP-Bericht-PractitionerRole",
+  "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole",
+  "version": "0.1.0",
+  "name": "RKI_PR_HIV_PrEP_Bericht_PractitionerRole",
+  "title": "RKI_PR_HIV-PrEP_PractitionerRole",
+  "status": "draft",
+  "publisher": "Robert Koch Institut",
+  "description": "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug zu einer Einrichtung beschrieben.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.meta",
+        "path": "PractitionerRole.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.meta.versionId",
+        "path": "PractitionerRole.meta.versionId",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.meta.lastUpdated",
+        "path": "PractitionerRole.meta.lastUpdated",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.meta.profile",
+        "path": "PractitionerRole.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.meta.profile:mioProfile",
+        "path": "PractitionerRole.meta.profile",
+        "sliceName": "mioProfile",
+        "min": 0,
+        "max": "*",
+        "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole|0.1.0"
+      },
+      {
+        "id": "PractitionerRole.text",
+        "path": "PractitionerRole.text",
+        "definition": "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
+      },
+      {
+        "id": "PractitionerRole.text.status",
+        "path": "PractitionerRole.text.status",
+        "patternCode": "extensions"
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner|0.1.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.practitioner.reference",
+        "path": "PractitionerRole.practitioner.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.practitioner.identifier",
+        "path": "PractitionerRole.practitioner.identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-lanr",
+              "http://fhir.de/StructureDefinition/identifier-telematik-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.practitioner.display",
+        "path": "PractitionerRole.practitioner.display",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.organization.reference",
+        "path": "PractitionerRole.organization.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.organization.identifier",
+        "path": "PractitionerRole.organization.identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-iknr",
+              "http://fhir.de/StructureDefinition/identifier-bsnr",
+              "http://fhir.de/StructureDefinition/identifier-kzva",
+              "http://fhir.de/StructureDefinition/identifier-telematik-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding",
+        "path": "PractitionerRole.code.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code.coding.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code.coding.version",
+        "path": "PractitionerRole.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code.coding.code",
+        "path": "PractitionerRole.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code.coding.display",
+        "path": "PractitionerRole.code.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code.coding.userSelected",
+        "path": "PractitionerRole.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.code.coding:RolleDerEinrichtung",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "RolleDerEinrichtung"
+      },
+      {
+        "id": "PractitionerRole.code.coding:RolleDerEinrichtung.system",
+        "path": "PractitionerRole.code.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code.coding:RolleDerEinrichtung.version",
+        "path": "PractitionerRole.code.coding.version",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code.coding:RolleDerEinrichtung.code",
+        "path": "PractitionerRole.code.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code.coding:RolleDerEinrichtung.display",
+        "path": "PractitionerRole.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code.coding:RolleDerEinrichtung.userSelected",
+        "path": "PractitionerRole.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.code.text",
+        "path": "PractitionerRole.code.text",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.specialty.coding",
+        "path": "PractitionerRole.specialty.coding",
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BAR2_ARZTNRFACHGRUPPE"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty.coding.userSelected",
+        "path": "PractitionerRole.specialty.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.specialty.coding:KBV-Fachgruppe",
+        "path": "PractitionerRole.specialty.coding",
+        "sliceName": "KBV-Fachgruppe",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.specialty.coding:KBV-Fachgruppe.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.specialty.coding:KBV-Fachgruppe.version",
+        "path": "PractitionerRole.specialty.coding.version",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.specialty.coding:KBV-Fachgruppe.code",
+        "path": "PractitionerRole.specialty.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.specialty.coding:KBV-Fachgruppe.display",
+        "path": "PractitionerRole.specialty.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.specialty.coding:KBV-Fachgruppe.userSelected",
+        "path": "PractitionerRole.specialty.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.specialty.text",
+        "path": "PractitionerRole.specialty.text",
+        "mustSupport": true
+      }
+    ]
+  }
+}

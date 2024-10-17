@@ -1,0 +1,1091 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Free",
+  "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
+  "version": "0.1.0",
+  "name": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
+  "title": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
+  "status": "draft",
+  "publisher": "Robert Koch Institut",
+  "description": "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. Eine Laboruntersuchung beschreibt die quantitative oder qualitative Untersuchung eines spezifischen Laborparameters in einem definierten Probenmaterial.",
+  "copyright": "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": true,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "definition": "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. Eine Laboruntersuchung beschreibt die quantitative oder qualitative Untersuchung eines spezifischen Laborparameters in einem definierten Probenmaterial.",
+        "constraint": [
+          {
+            "key": "obs-1",
+            "human": "At least year, month and day are needed",
+            "source": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
+            "severity": "error",
+            "expression": "effectiveDateTime.toString().length() >= 10"
+          }
+        ]
+      },
+      {
+        "id": "Observation.meta",
+        "path": "Observation.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.meta.versionId",
+        "path": "Observation.meta.versionId",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.meta.lastUpdated",
+        "path": "Observation.meta.lastUpdated",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.meta.profile",
+        "path": "Observation.meta.profile",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.meta.profile:mioProfile",
+        "path": "Observation.meta.profile",
+        "sliceName": "mioProfile",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Observation.text",
+        "path": "Observation.text",
+        "definition": "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
+      },
+      {
+        "id": "Observation.text.status",
+        "path": "Observation.text.status",
+        "patternCode": "extensions"
+      },
+      {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "closed"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.extension:dokumentationszeitpunkt",
+        "path": "Observation.extension",
+        "sliceName": "dokumentationszeitpunkt",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Documentation_Date"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.extension:sortiernummerUntersuchung",
+        "path": "Observation.extension",
+        "sliceName": "sortiernummerUntersuchung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Sorting_Number"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.identifier.system",
+        "path": "Observation.identifier.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.identifier.value",
+        "path": "Observation.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "short": "Kategorie der Laboruntersuchung",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "laboratory",
+              "system": "http://hl7.org/fhir/secondary-finding"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "patternUri": "http://loinc.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.display",
+        "path": "Observation.code.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:snomed",
+        "path": "Observation.code.coding",
+        "sliceName": "snomed",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:snomed.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:snomed.version",
+        "path": "Observation.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:snomed.code",
+        "path": "Observation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:snomed.display",
+        "path": "Observation.code.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.text",
+        "path": "Observation.code.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject.reference",
+        "path": "Observation.subject.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject.identifier",
+        "path": "Observation.subject.identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-kvid-10"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "short": "Zeitpunkt der Untersuchung",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]:effectiveDateTime",
+        "path": "Observation.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "definition": "Hier wird die behandelnde Person/Einrichtung referenziert, die die Beobachtung durchgeführt hat.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner",
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer.reference",
+        "path": "Observation.performer.reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.performer.identifier",
+        "path": "Observation.performer.identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-kvid-10",
+              "http://fhir.de/StructureDefinition/identifier-telematik-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "closed"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Range"
+          },
+          {
+            "code": "Ratio"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value",
+        "path": "Observation.value[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.comparator",
+        "path": "Observation.value[x].comparator",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.unit",
+        "path": "Observation.value[x].unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.system",
+        "path": "Observation.value[x].system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.coding",
+        "path": "Observation.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "definition": "In diesem Element werden die Qualitative Ergebnisse der Laboruntersuchung mittels SNOMED CT Kodierung dokumentiert",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed_CT",
+        "path": "Observation.value[x].coding",
+        "sliceName": "snomed_CT",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed_CT.system",
+        "path": "Observation.value[x].coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed_CT.version",
+        "path": "Observation.value[x].coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed_CT.code",
+        "path": "Observation.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed_CT.display",
+        "path": "Observation.value[x].coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.text",
+        "path": "Observation.value[x].text",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio",
+        "path": "Observation.value[x]",
+        "sliceName": "valueRatio",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.numerator",
+        "path": "Observation.value[x].numerator",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.numerator.value",
+        "path": "Observation.value[x].numerator.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.numerator.comparator",
+        "path": "Observation.value[x].numerator.comparator",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.numerator.unit",
+        "path": "Observation.value[x].numerator.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.numerator.system",
+        "path": "Observation.value[x].numerator.system",
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.numerator.code",
+        "path": "Observation.value[x].numerator.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.denominator",
+        "path": "Observation.value[x].denominator",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.denominator.value",
+        "path": "Observation.value[x].denominator.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.denominator.comparator",
+        "path": "Observation.value[x].denominator.comparator",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.denominator.unit",
+        "path": "Observation.value[x].denominator.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.denominator.system",
+        "path": "Observation.value[x].denominator.system",
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRatio.denominator.code",
+        "path": "Observation.value[x].denominator.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRange",
+        "path": "Observation.value[x]",
+        "sliceName": "valueRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueRange.low",
+        "path": "Observation.value[x].low",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRange.low.value",
+        "path": "Observation.value[x].low.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRange.low.unit",
+        "path": "Observation.value[x].low.unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRange.low.system",
+        "path": "Observation.value[x].low.system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRange.low.code",
+        "path": "Observation.value[x].low.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRange.high",
+        "path": "Observation.value[x].high",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRange.high.value",
+        "path": "Observation.value[x].high.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRange.high.unit",
+        "path": "Observation.value[x].high.unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRange.high.system",
+        "path": "Observation.value[x].high.system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueRange.high.code",
+        "path": "Observation.value[x].high.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason.coding",
+        "path": "Observation.dataAbsentReason.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason.coding.system",
+        "path": "Observation.dataAbsentReason.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason.coding.version",
+        "path": "Observation.dataAbsentReason.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason.coding.code",
+        "path": "Observation.dataAbsentReason.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason.coding.display",
+        "path": "Observation.dataAbsentReason.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.coding",
+        "path": "Observation.interpretation.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.coding:hl7Interpretation",
+        "path": "Observation.interpretation.coding",
+        "sliceName": "hl7Interpretation",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.coding:hl7Interpretation.system",
+        "path": "Observation.interpretation.coding.system",
+        "min": 1,
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.coding:hl7Interpretation.version",
+        "path": "Observation.interpretation.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.coding:hl7Interpretation.code",
+        "path": "Observation.interpretation.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.coding:hl7Interpretation.display",
+        "path": "Observation.interpretation.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.coding:snomedInterpretation",
+        "path": "Observation.interpretation.coding",
+        "sliceName": "snomedInterpretation",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.coding:snomedInterpretation.system",
+        "path": "Observation.interpretation.coding.system",
+        "min": 1,
+        "patternUri": "http://snomed.info/sct",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.coding:snomedInterpretation.version",
+        "path": "Observation.interpretation.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.coding:snomedInterpretation.code",
+        "path": "Observation.interpretation.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.coding:snomedInterpretation.display",
+        "path": "Observation.interpretation.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation.text",
+        "path": "Observation.interpretation.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note.author[x]",
+        "path": "Observation.note.author[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note.author[x]:authorReference",
+        "path": "Observation.note.author[x]",
+        "sliceName": "authorReference",
+        "definition": "Hier wird die Person referenziert, die die Notiz erstellt hat.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner",
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note.author[x]:authorReference.reference",
+        "path": "Observation.note.author[x].reference",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note.author[x]:authorReference.identifier",
+        "path": "Observation.note.author[x].identifier",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-kvid-10",
+              "http://fhir.de/StructureDefinition/identifier-telematik-id"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note.time",
+        "path": "Observation.note.time",
+        "comment": "Dieses Element sollte in der Regel automatisiert ohne Aufwand für die Person, die die Notiz erstellt befüllt werden.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note.text",
+        "path": "Observation.note.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method.coding",
+        "path": "Observation.method.coding",
+        "max": "1"
+      },
+      {
+        "id": "Observation.method.coding.system",
+        "path": "Observation.method.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.method.coding.version",
+        "path": "Observation.method.coding.version",
+        "min": 1
+      },
+      {
+        "id": "Observation.method.coding.code",
+        "path": "Observation.method.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.method.coding.display",
+        "path": "Observation.method.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Observation.method.text",
+        "path": "Observation.method.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.device",
+        "path": "Observation.device",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Device"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.extension",
+        "path": "Observation.referenceRange.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "Observation.referenceRange.extension:quelleReferenzbereich",
+        "path": "Observation.referenceRange.extension",
+        "sliceName": "quelleReferenzbereich",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Source_Reference_Range"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.extension:zLog-Wert",
+        "path": "Observation.referenceRange.extension",
+        "sliceName": "zLog-Wert",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_zLog"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low",
+        "path": "Observation.referenceRange.low",
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.value",
+        "path": "Observation.referenceRange.low.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.unit",
+        "path": "Observation.referenceRange.low.unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.system",
+        "path": "Observation.referenceRange.low.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.low.code",
+        "path": "Observation.referenceRange.low.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high",
+        "path": "Observation.referenceRange.high",
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.value",
+        "path": "Observation.referenceRange.high.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.unit",
+        "path": "Observation.referenceRange.high.unit",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.system",
+        "path": "Observation.referenceRange.high.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.high.code",
+        "path": "Observation.referenceRange.high.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type",
+        "path": "Observation.referenceRange.type",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type.coding",
+        "path": "Observation.referenceRange.type.coding",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type.coding.system",
+        "path": "Observation.referenceRange.type.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type.coding.version",
+        "path": "Observation.referenceRange.type.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type.coding.code",
+        "path": "Observation.referenceRange.type.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type.coding.display",
+        "path": "Observation.referenceRange.type.coding.display",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type.text",
+        "path": "Observation.referenceRange.type.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo",
+        "path": "Observation.referenceRange.appliesTo",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo.text",
+        "path": "Observation.referenceRange.appliesTo.text",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.text",
+        "path": "Observation.referenceRange.text",
+        "mustSupport": true
+      }
+    ]
+  }
+}
