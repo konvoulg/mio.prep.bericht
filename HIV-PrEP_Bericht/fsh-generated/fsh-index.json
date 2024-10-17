@@ -224,6 +224,14 @@
     "endLine": 52
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Composition.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Composition",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Composition.fsh",
+    "startLine": 11,
+    "endLine": 76
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Chlamydia-Tracomatis.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Tracomatis",
     "fshType": "Profile",
