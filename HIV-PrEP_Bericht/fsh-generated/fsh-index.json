@@ -416,6 +416,14 @@
     "endLine": 65
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-PrEP-Indication.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication.fsh",
+    "startLine": 3,
+    "endLine": 136
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy-Status.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status",
     "fshType": "Profile",
