@@ -69,7 +69,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\hepatitisB-observation.fsh",
     "startLine": 5,
-    "endLine": 35
+    "endLine": 36
   },
   {
     "outputFile": "Observation-3e97326d-9401-4fca-b416-4e9aa8346f5a.json",
@@ -77,7 +77,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\gonorrhea-observation.fsh",
     "startLine": 5,
-    "endLine": 35
+    "endLine": 37
   },
   {
     "outputFile": "Observation-4a7fea51-25ea-4862-9fc1-4b677b03ec1b.json",
@@ -85,7 +85,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\hepatitisC-observation.fsh",
     "startLine": 5,
-    "endLine": 35
+    "endLine": 37
   },
   {
     "outputFile": "Observation-548dd131-3f58-4426-9e44-3d9ce3b6db72.json",
@@ -93,7 +93,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\gfr-observation.fsh",
     "startLine": 5,
-    "endLine": 42
+    "endLine": 44
   },
   {
     "outputFile": "Observation-793671d7-db7b-44fb-94a6-27f7acd332be.json",
@@ -101,7 +101,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\chlamydia-observation.fsh",
     "startLine": 5,
-    "endLine": 35
+    "endLine": 37
   },
   {
     "outputFile": "Observation-abeb63fe-e33d-4e72-832d-7bdbec7d9b69.json",
@@ -117,7 +117,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\creatinine-observation.fsh",
     "startLine": 5,
-    "endLine": 46
+    "endLine": 48
   },
   {
     "outputFile": "Observation-d24a5fdb-51bb-470c-bca8-a3c8e90a6265.json",
@@ -125,7 +125,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\bodyweight-observation.fsh",
     "startLine": 5,
-    "endLine": 36
+    "endLine": 38
   },
   {
     "outputFile": "Observation-f85d91be-f971-4def-9b9e-29fbcd8f4340.json",
@@ -133,7 +133,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\syphilis-observation.fsh",
     "startLine": 5,
-    "endLine": 36
+    "endLine": 38
   },
   {
     "outputFile": "Organization-81eacc87-e116-4505-a4e2-02404a022039.json",

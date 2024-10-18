@@ -34,6 +34,7 @@ Description: "Hier werden relevante Diagnosen (ICD-10 GM) im Rahmen der PrEP Beh
 * extension[Feststellungsdatum].value[x] ^slicing.discriminator.path = "$this"
 * extension[Feststellungsdatum].value[x] ^slicing.rules = #closed
 * extension[Feststellungsdatum].valueDateTime 1.. MS
+
 //* extension[Feststellungsdatum].valueDateTime ^sliceName = "valueDateTime"*/
 //* identifier ..0
 * clinicalStatus MS
