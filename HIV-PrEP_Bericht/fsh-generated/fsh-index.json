@@ -48,6 +48,14 @@
     "endLine": 30
   },
   {
+    "outputFile": "Immunization-f8e1b41b-2828-49ff-8038-5636e9f2d0cd.json",
+    "fshName": "f8e1b41b-2828-49ff-8038-5636e9f2d0cd",
+    "fshType": "Instance",
+    "fshFile": "Examples\\immunization.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
     "outputFile": "Medication-5a27bacd-1db6-43c8-8fad-18b898a29473.json",
     "fshName": "5a27bacd-1db6-43c8-8fad-18b898a29473",
     "fshType": "Instance",
@@ -109,7 +117,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\hiv-observation.fsh",
     "startLine": 5,
-    "endLine": 35
+    "endLine": 37
   },
   {
     "outputFile": "Observation-c72db78e-5bd4-4b58-a897-aed3d5a9632c.json",
@@ -245,7 +253,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free.fsh",
     "startLine": 1,
-    "endLine": 205
+    "endLine": 206
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Gonokokkeninfektion.json",
