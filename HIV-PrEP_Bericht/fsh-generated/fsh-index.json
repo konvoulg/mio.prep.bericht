@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "AllergyIntolerance-4f0fdac3-335a-4907-a6da-d072dff0c75a.json",
+    "fshName": "4f0fdac3-335a-4907-a6da-d072dff0c75a",
+    "fshType": "Instance",
+    "fshFile": "Examples\\allergy-intolerance.fsh",
+    "startLine": 6,
+    "endLine": 33
+  },
+  {
     "outputFile": "Appointment-86bfcbb1-741d-48af-9d0b-062d76e3e5f7.json",
     "fshName": "86bfcbb1-741d-48af-9d0b-062d76e3e5f7",
     "fshType": "Instance",

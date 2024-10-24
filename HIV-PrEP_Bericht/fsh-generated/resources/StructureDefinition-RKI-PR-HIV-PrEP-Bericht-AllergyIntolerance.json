@@ -334,7 +334,6 @@
       {
         "id": "AllergyIntolerance.patient.identifier",
         "path": "AllergyIntolerance.patient.identifier",
-        "min": 1,
         "type": [
           {
             "code": "Identifier",

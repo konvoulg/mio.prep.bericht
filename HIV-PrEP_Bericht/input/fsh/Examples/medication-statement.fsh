@@ -24,4 +24,3 @@ Usage: #example
 
 * dosage.doseAndRate.doseQuantity = $kbv#1 "Stück"
 * dosage.doseAndRate.doseQuantity.value = 1.0
-//* dosage.doseRange
