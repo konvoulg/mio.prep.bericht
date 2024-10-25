@@ -40,6 +40,14 @@
     "endLine": 12
   },
   {
+    "outputFile": "Composition-9a9ba169-33fe-41de-ab02-ddebf1cce45b.json",
+    "fshName": "9a9ba169-33fe-41de-ab02-ddebf1cce45b",
+    "fshType": "Instance",
+    "fshFile": "Examples\\composition.fsh",
+    "startLine": 3,
+    "endLine": 29
+  },
+  {
     "outputFile": "Condition-fba75e92-0315-430f-9a01-a493b665b483.json",
     "fshName": "fba75e92-0315-430f-9a01-a493b665b483",
     "fshType": "Instance",
@@ -184,8 +192,8 @@
     "endLine": 33
   },
   {
-    "outputFile": "PractitionerRole-RKI-PR-HIV-PrEP-Bericht-PractitionerRole.json",
-    "fshName": "RKI-PR-HIV-PrEP-Bericht-PractitionerRole",
+    "outputFile": "PractitionerRole-aec32544-52fd-4243-8626-32db47648529.json",
+    "fshName": "aec32544-52fd-4243-8626-32db47648529",
     "fshType": "Instance",
     "fshFile": "Examples\\practitioner-role.fsh",
     "startLine": 1,
