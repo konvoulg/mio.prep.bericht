@@ -26,5 +26,5 @@ Usage: #example
 * section[0].title = "Behandelnde Person / Einrichtung"
 * section[=].code.coding.code = #SectionBehandelndePersonEinrichtung
 * section[=].code.coding.display = "Behandelnde Person / Einrichtung"
-* section[=].entry.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8113" // Practitioner's reference
+* section[=].entry.reference = "urn:uuid:aec32544-52fd-4243-8626-32db47648529"
 
