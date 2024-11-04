@@ -40,6 +40,14 @@
     "endLine": 12
   },
   {
+    "outputFile": "CodeSystem-RKI-CS-HIV-PrEP-Bericht-SectionCodes.json",
+    "fshName": "RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems\\RKI_CS_HIV_PrEP_Bericht_SectionCodes.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
     "outputFile": "Composition-9a9ba169-33fe-41de-ab02-ddebf1cce45b.json",
     "fshName": "9a9ba169-33fe-41de-ab02-ddebf1cce45b",
     "fshType": "Instance",
@@ -536,6 +544,14 @@
     "endLine": 19
   },
   {
+    "outputFile": "ValueSet-Counselling-SNOMEDCT.json",
+    "fshName": "Counselling_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Counselling_SNOMEDCT.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
     "outputFile": "ValueSet-Gender-Identity-SNOMEDCT.json",
     "fshName": "Gender_Identity_SNOMEDCT",
     "fshType": "ValueSet",
@@ -629,13 +645,13 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Lab_Test_HBVP.fsh",
     "startLine": 1,
-    "endLine": 706
+    "endLine": 707
   },
   {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Lab-Test-HCVP.json",
     "fshName": "RKI_VS_HIV_PrEP_Bericht_Lab_Test_HCVP",
     "fshType": "ValueSet",
-    "fshFile": "ValueSets\\temp.fsh",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Lab_Test_HCVP.fsh",
     "startLine": 1,
     "endLine": 467
   },
