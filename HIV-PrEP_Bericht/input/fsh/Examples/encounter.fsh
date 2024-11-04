@@ -13,8 +13,8 @@ Usage: #example
 
 * type.coding.system = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type"
 * type.coding.version = "0.1.0"
-* type.coding.code = #PrEPInitiierung
-* type.coding.display = "HIV-PrEP Initiierungsbegegnung"
+* type.coding.code = #01921
+* type.coding.display = "Einleitung der Präexpositionsprophylaxe"
 
 * class.version = "2.0.0"
 * class = $v3-ActCode#AMB "ambulatory"

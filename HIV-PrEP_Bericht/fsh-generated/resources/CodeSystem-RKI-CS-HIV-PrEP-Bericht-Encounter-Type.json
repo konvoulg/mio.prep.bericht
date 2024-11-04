@@ -5,20 +5,20 @@
   "name": "RKI_CS_HIV_PrEP_Bericht_Encounter_Type",
   "id": "RKI-CS-HIV-PrEP-Bericht-Encounter-Type",
   "title": "Art der Begegnung",
-  "description": "Dieses CodeSystem enthält die Codes für deutsche Bezeichner für Begegnungstypen im Rahmen der HIV Peexpositionsprophylaxe.",
+  "description": "Dieses CodeSystem enthält die EBM Codes für Bezeichner für die Begegnungstypen im Rahmen der HIV Peexpositionsprophylaxe. Dafür wird der Einheitliche Bewertungsmaßstab (EBM) verwendet. Da ein EBM FHIR CodeSystem noch nicht existiert wird hier ein temporäre CodeSystem dazu erstellt",
   "url": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type",
   "concept": [
     {
-      "code": "PrEPInitiierung",
-      "display": "HIV-PrEP Initiierungsbegegnung"
+      "code": "01920",
+      "display": "Beratung vor Präexpositionsprophylaxe"
     },
     {
-      "code": "PrEPBeratung",
-      "display": "HIV-PrEP Beratungsbegegnung"
+      "code": "01921",
+      "display": "Einleitung der Präexpositionsprophylaxe"
     },
     {
-      "code": "PrEPKontrolle",
-      "display": "HIV-PrEP Kontrollbegegnung"
+      "code": "01922",
+      "display": "Kontrolle im Rahmen der Präexpositionsprophylaxe"
     }
   ],
   "version": "0.1.0",
