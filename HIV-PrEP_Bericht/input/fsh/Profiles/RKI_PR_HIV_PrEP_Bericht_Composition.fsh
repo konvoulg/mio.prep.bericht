@@ -38,11 +38,11 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * type MS
 * type.coding 1..1 MS
 * type.coding = $sct#22131000087102 "Electronic report (record artifact)"
-* type.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20240930"
-* type.coding.system 1..
-* type.coding.version 1..
-* type.coding.code 1..
-* type.coding.display 1..
+//* type.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20240930"
+* type.coding.system 1.. MS
+* type.coding.version 1.. MS
+* type.coding.code 1.. MS
+* type.coding.display 1.. MS
 * type.coding.userSelected ..0
 * type.text ..0
 //* category ..0
