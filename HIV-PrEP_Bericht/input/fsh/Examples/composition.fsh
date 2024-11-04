@@ -23,8 +23,8 @@ Usage: #example
 
 * custodian.reference = "urn:uuid:81eacc87-e116-4505-a4e2-02404a022039"
 
-* section[0].title = "Behandelnde Person / Einrichtung"
-* section[=].code.coding.code = #SectionBehandelndePersonEinrichtung
-* section[=].code.coding.display = "Behandelnde Person / Einrichtung"
-* section[=].entry.reference = "urn:uuid:aec32544-52fd-4243-8626-32db47648529"
+* section[behandelndePersonEinrichtung].title = "Behandelnde Person / Einrichtung"
+* section[behandelndePersonEinrichtung].code.coding.code = #SectionBehandelndePersonEinrichtung
+* section[behandelndePersonEinrichtung].code.coding.display = "Behandelnde Person / Einrichtung"
+* section[behandelndePersonEinrichtung].entry.reference = "urn:uuid:aec32544-52fd-4243-8626-32db47648529"
 
