@@ -40,6 +40,14 @@
     "endLine": 12
   },
   {
+    "outputFile": "CodeSystem-RKI-CS-HIV-PrEP-Bericht-SectionCodes.json",
+    "fshName": "RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems\\RKI_CS_HIV_PrEP_Bericht_SectionCodes.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
     "outputFile": "Condition-fba75e92-0315-430f-9a01-a493b665b483.json",
     "fshName": "fba75e92-0315-430f-9a01-a493b665b483",
     "fshType": "Instance",
@@ -240,12 +248,20 @@
     "endLine": 52
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-ClinicalImpression-PrEP.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP.fsh",
+    "startLine": 3,
+    "endLine": 68
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Composition.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Composition",
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Composition.fsh",
     "startLine": 11,
-    "endLine": 76
+    "endLine": 334
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Chlamydia-Tracomatis.json",
