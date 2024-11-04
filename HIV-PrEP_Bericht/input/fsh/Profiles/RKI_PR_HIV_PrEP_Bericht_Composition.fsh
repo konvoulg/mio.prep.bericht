@@ -15,9 +15,7 @@ Title: "RKI_PR_HIV_PrEP_Bericht_Composition"
 Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition"
 * insert Meta-Profile
-//* ^version = "1.0.0"
-//* ^status = #draft
-//* ^publisher = "Kassenärztliche Bundesvereinigung (KBV)"
+
 * ^copyright = "Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, Alpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation."
 * . ^definition = "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * meta MS
@@ -36,11 +34,11 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 
 //* identifier ..0
 * status MS
-//* status from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_KHE_CompositionStatus|1.0.0 (required)
+
 * type MS
 * type.coding 1..1 MS
 * type.coding = $sct#22131000087102 "Electronic report (record artifact)"
-//* type.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20220531"
+* type.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20240930"
 * type.coding.system 1..
 * type.coding.version 1..
 * type.coding.code 1..
@@ -56,7 +54,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 //* subject.type ..0
 //* subject.identifier ..0
 //* subject.display ..0
-//* encounter ..0
+* encounter only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General)
 * date MS
 * author ..1 MS
 * author only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole|0.1.0)
@@ -77,7 +75,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 //* custodian.display ..0
 //* relatesTo ..0
 //* event ..0
-/*
+
 * section 1.. MS
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code.coding"
@@ -90,7 +88,8 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
     diagnosen 0..1 MS and
     medikation 0..1 MS and
     kontakte 0..1 MS and
-    termine 0..1 MS 
+    termine 0..1 MS and
+    immunisierungen 0..1 MS
 * section[behandelndePersonEinrichtung].title 1.. MS
 * section[behandelndePersonEinrichtung].title = "Behandelnde Person / Einrichtung" (exactly)
 * section[behandelndePersonEinrichtung].code 1.. MS
@@ -100,7 +99,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[behandelndePersonEinrichtung].code.coding.system ..0
 * section[behandelndePersonEinrichtung].code.coding.version ..0
 * section[behandelndePersonEinrichtung].code.coding.code 1.. MS
-* section[behandelndePersonEinrichtung].code.coding.code = "behandelnde_person_einrichtung" (exactly)
+* section[behandelndePersonEinrichtung].code.coding.code = $sectioncodes#SectionBehandelndePersonEinrichtung (exactly)
 * section[behandelndePersonEinrichtung].code.coding.display 1.. MS
 * section[behandelndePersonEinrichtung].code.coding.display = "Behandelnde Person / Einrichtung"
 /*
@@ -112,7 +111,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[behandelndePersonEinrichtung].mode ..0
 * section[behandelndePersonEinrichtung].orderedBy ..0
 */
-/*
+
 * section[behandelndePersonEinrichtung].entry 1..3 MS
 * section[behandelndePersonEinrichtung].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0 or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole)
 * section[behandelndePersonEinrichtung].entry.reference 1.. MS
@@ -133,17 +132,17 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[anamnese].code.coding.code 1.. MS
 * section[anamnese].code.coding.display 1.. MS
 * section[anamnese].code.coding.userSelected ..0
-*/
-/*
+
+
 //* section[anamnese].code.text ..0
 //* section[anamnese].author ..0
 //* section[anamnese].focus ..0
 //* section[anamnese].text ..0
 //* section[anamnese].mode ..0
 //* section[anamnese].orderedBy ..0
-//* section[anamnese].entry 1..1 MS
-//* section[anamnese].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_ClinicalImpression_Referral|1.0.0)
-//* section[anamnese].entry.reference 1.. MS
+* section[anamnese].entry 1..1 MS
+* section[anamnese].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP)
+* section[anamnese].entry.reference 1.. MS
 //* section[anamnese].entry.type ..0
 //* section[anamnese].entry.identifier ..0
 //* section[anamnese].entry.display ..0
@@ -154,192 +153,188 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[anamnese].section ^slicing.rules = #closed
 * section[anamnese].section contains
     koerpergewicht 0..1 MS and
-    schwangerschaftsstatus 0..1 MS
     allergienUndUnvertaeglichkeiten 0..1 MS and
     anamnestischeDiagnosen 0..1 MS and
+    schwangerschaftsstatus 0..1 MS and
     sexualanamnese 0..1 MS and
     prepindikation 0..1 MS
-
-
-* section[anamnese].section[abschnitt].title 1..
-* section[anamnese].section[abschnitt].title = "Abschnitt"
-* section[anamnese].section[abschnitt].code 1.. MS
-* section[anamnese].section[abschnitt].code.coding 1..1 MS
-* section[anamnese].section[abschnitt].code.coding = $loinc#35090-0 "Patient history"
-* section[anamnese].section[abschnitt].code.coding ^patternCoding.version = "2.71"
-* section[anamnese].section[abschnitt].code.coding.system 1..
-* section[anamnese].section[abschnitt].code.coding.version 1..
-* section[anamnese].section[abschnitt].code.coding.code 1..
-* section[anamnese].section[abschnitt].code.coding.display 1..
-* section[anamnese].section[abschnitt].code.coding.userSelected ..0
-* section[anamnese].section[abschnitt].code.text ..0
-* section[anamnese].section[abschnitt].author ..0
-* section[anamnese].section[abschnitt].focus ..0
-* section[anamnese].section[abschnitt].text ..0
-* section[anamnese].section[abschnitt].mode ..0
-* section[anamnese].section[abschnitt].orderedBy ..0
-* section[anamnese].section[abschnitt].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Section_Anamnesis|1.0.0)
-* section[anamnese].section[abschnitt].entry MS
-* section[anamnese].section[abschnitt].entry.reference 1.. MS
-* section[anamnese].section[abschnitt].entry.type ..0
-* section[anamnese].section[abschnitt].entry.identifier ..0
-* section[anamnese].section[abschnitt].entry.display ..0
-* section[anamnese].section[abschnitt].emptyReason ..0
-* section[anamnese].section[abschnitt].section ..0
+* section[anamnese].section[koerpergewicht].title 1..
+* section[anamnese].section[koerpergewicht].title = "Koerpergewicht"
+* section[anamnese].section[koerpergewicht].code 1.. MS
+* section[anamnese].section[koerpergewicht].code.coding 1..1 MS
+* section[anamnese].section[koerpergewicht].code.coding = $sct#27113001 "Body weight (observable entity)"
+* section[anamnese].section[koerpergewicht].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20230930"
+* section[anamnese].section[koerpergewicht].code.coding.system 1..
+* section[anamnese].section[koerpergewicht].code.coding.version 1..
+* section[anamnese].section[koerpergewicht].code.coding.code 1..
+* section[anamnese].section[koerpergewicht].code.coding.display 1..
+* section[anamnese].section[koerpergewicht].code.coding.userSelected ..0
+//* section[anamnese].section[koerpergewicht].code.text ..0
+//* section[anamnese].section[koerpergewicht].author ..0
+//* section[anamnese].section[koerpergewicht].focus ..0
+//* section[anamnese].section[koerpergewicht].text ..0
+//* section[anamnese].section[koerpergewicht].mode ..0
+//* section[anamnese].section[koerpergewicht].orderedBy ..0
+* section[anamnese].section[koerpergewicht].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight)
+* section[anamnese].section[koerpergewicht].entry MS
+* section[anamnese].section[koerpergewicht].entry.reference 1.. MS
+//* section[anamnese].section[koerpergewicht].entry.type ..0
+//* section[anamnese].section[koerpergewicht].entry.identifier ..0
+//* section[anamnese].section[koerpergewicht].entry.display ..0
+//* section[anamnese].section[koerpergewicht].emptyReason ..0
+* section[anamnese].section[koerpergewicht].section ..0
 * section[anamnese].section[allergienUndUnvertaeglichkeiten].title 1.. MS
 * section[anamnese].section[allergienUndUnvertaeglichkeiten].code 1.. MS
 * section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding 1..1 MS
 * section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding ^patternCoding.version = "2.71"
+* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding ^patternCoding.version = "2.78"
 * section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding.system 1..
 * section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding.version 1..
 * section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding.code 1..
 * section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding.display 1..
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding.userSelected ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.text ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].author ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].focus ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].text ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].mode ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].orderedBy ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_AllergyIntolerance|1.0.0 or https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_AllergyIntolerance_Free|1.0.0)
+//* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding.userSelected ..0
+//* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.text ..0
+//* section[anamnese].section[allergienUndUnvertaeglichkeiten].author ..0
+//* section[anamnese].section[allergienUndUnvertaeglichkeiten].focus ..0
+//* section[anamnese].section[allergienUndUnvertaeglichkeiten].text ..0
+//* section[anamnese].section[allergienUndUnvertaeglichkeiten].mode ..0
+//* section[anamnese].section[allergienUndUnvertaeglichkeiten].orderedBy ..0
+* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance)
 * section[anamnese].section[allergienUndUnvertaeglichkeiten].entry MS
 * section[anamnese].section[allergienUndUnvertaeglichkeiten].entry.reference 1.. MS
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry.type ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry.identifier ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry.display ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].emptyReason ..0
+//* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry.type ..0
+//* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry.identifier ..0
+//* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry.display ..0
+//* section[anamnese].section[allergienUndUnvertaeglichkeiten].emptyReason ..0
 * section[anamnese].section[allergienUndUnvertaeglichkeiten].section ..0
 * section[anamnese].section[anamnestischeDiagnosen].title 1.. MS
 * section[anamnese].section[anamnestischeDiagnosen].title = "Anamnestische Diagnosen"
 * section[anamnese].section[anamnestischeDiagnosen].code 1.. MS
 * section[anamnese].section[anamnestischeDiagnosen].code.coding 1..1 MS
 * section[anamnese].section[anamnestischeDiagnosen].code.coding = $loinc#10164-2 "History of Present illness Narrative"
-* section[anamnese].section[anamnestischeDiagnosen].code.coding ^patternCoding.version = "2.71"
+* section[anamnese].section[anamnestischeDiagnosen].code.coding ^patternCoding.version = "2.78"
 * section[anamnese].section[anamnestischeDiagnosen].code.coding.system 1..
 * section[anamnese].section[anamnestischeDiagnosen].code.coding.version 1..
 * section[anamnese].section[anamnestischeDiagnosen].code.coding.code 1..
 * section[anamnese].section[anamnestischeDiagnosen].code.coding.display 1..
-* section[anamnese].section[anamnestischeDiagnosen].code.coding.userSelected ..0
-* section[anamnese].section[anamnestischeDiagnosen].code.text ..0
-* section[anamnese].section[anamnestischeDiagnosen].author ..0
-* section[anamnese].section[anamnestischeDiagnosen].focus ..0
-* section[anamnese].section[anamnestischeDiagnosen].text ..0
-* section[anamnese].section[anamnestischeDiagnosen].mode ..0
-* section[anamnese].section[anamnestischeDiagnosen].orderedBy ..0
-* section[anamnese].section[anamnestischeDiagnosen].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Condition_Diagnosis|1.0.0)
+//* section[anamnese].section[anamnestischeDiagnosen].code.coding.userSelected ..0
+//* section[anamnese].section[anamnestischeDiagnosen].code.text ..0
+//* section[anamnese].section[anamnestischeDiagnosen].author ..0
+//* section[anamnese].section[anamnestischeDiagnosen].focus ..0
+//* section[anamnese].section[anamnestischeDiagnosen].text ..0
+//* section[anamnese].section[anamnestischeDiagnosen].mode ..0
+//* section[anamnese].section[anamnestischeDiagnosen].orderedBy ..0
+* section[anamnese].section[anamnestischeDiagnosen].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present)
 * section[anamnese].section[anamnestischeDiagnosen].entry MS
 * section[anamnese].section[anamnestischeDiagnosen].entry.reference 1.. MS
-* section[anamnese].section[anamnestischeDiagnosen].entry.type ..0
-* section[anamnese].section[anamnestischeDiagnosen].entry.identifier ..0
-* section[anamnese].section[anamnestischeDiagnosen].entry.display ..0
-* section[anamnese].section[anamnestischeDiagnosen].emptyReason ..0
+//* section[anamnese].section[anamnestischeDiagnosen].entry.type ..0
+//* section[anamnese].section[anamnestischeDiagnosen].entry.identifier ..0
+//* section[anamnese].section[anamnestischeDiagnosen].entry.display ..0
+//* section[anamnese].section[anamnestischeDiagnosen].emptyReason ..0
 * section[anamnese].section[anamnestischeDiagnosen].section ..0
-* section[anamnese].section[vorherigeProzeduren].title 1.. MS
-* section[anamnese].section[vorherigeProzeduren].title = "Vorherige Prozeduren"
-* section[anamnese].section[vorherigeProzeduren].code 1.. MS
-* section[anamnese].section[vorherigeProzeduren].code.coding 1..1 MS
-* section[anamnese].section[vorherigeProzeduren].code.coding = $sct#1003640003 "History of past procedure section (record artifact)"
-* section[anamnese].section[vorherigeProzeduren].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20220531"
-* section[anamnese].section[vorherigeProzeduren].code.coding.system 1..
-* section[anamnese].section[vorherigeProzeduren].code.coding.version 1..
-* section[anamnese].section[vorherigeProzeduren].code.coding.code 1..
-* section[anamnese].section[vorherigeProzeduren].code.coding.display 1..
-* section[anamnese].section[vorherigeProzeduren].code.coding.userSelected ..0
-* section[anamnese].section[vorherigeProzeduren].code.text ..0
-* section[anamnese].section[vorherigeProzeduren].author ..0
-* section[anamnese].section[vorherigeProzeduren].focus ..0
-* section[anamnese].section[vorherigeProzeduren].text ..0
-* section[anamnese].section[vorherigeProzeduren].mode ..0
-* section[anamnese].section[vorherigeProzeduren].orderedBy ..0
-* section[anamnese].section[vorherigeProzeduren].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Procedure|1.0.0 or https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Procedure_Free|1.0.0)
-* section[anamnese].section[vorherigeProzeduren].entry MS
-* section[anamnese].section[vorherigeProzeduren].entry.reference 1.. MS
-* section[anamnese].section[vorherigeProzeduren].entry.type ..0
-* section[anamnese].section[vorherigeProzeduren].entry.identifier ..0
-* section[anamnese].section[vorherigeProzeduren].entry.display ..0
-* section[anamnese].section[vorherigeProzeduren].emptyReason ..0
-* section[anamnese].section[vorherigeProzeduren].section ..0
-* section[anamnese].section[vorhandeneImplantate].title 1.. MS
-* section[anamnese].section[vorhandeneImplantate].title = "Vorhandene Implantate"
-* section[anamnese].section[vorhandeneImplantate].code 1.. MS
-* section[anamnese].section[vorhandeneImplantate].code.coding 1..1 MS
-* section[anamnese].section[vorhandeneImplantate].code.coding = $loinc#46264-8 "History of medical device use"
-* section[anamnese].section[vorhandeneImplantate].code.coding ^patternCoding.version = "2.71"
-* section[anamnese].section[vorhandeneImplantate].code.coding.system 1..
-* section[anamnese].section[vorhandeneImplantate].code.coding.version 1..
-* section[anamnese].section[vorhandeneImplantate].code.coding.code 1..
-* section[anamnese].section[vorhandeneImplantate].code.coding.display 1..
-* section[anamnese].section[vorhandeneImplantate].code.coding.userSelected ..0
-* section[anamnese].section[vorhandeneImplantate].code.text ..0
-* section[anamnese].section[vorhandeneImplantate].author ..0
-* section[anamnese].section[vorhandeneImplantate].focus ..0
-* section[anamnese].section[vorhandeneImplantate].text ..0
-* section[anamnese].section[vorhandeneImplantate].mode ..0
-* section[anamnese].section[vorhandeneImplantate].orderedBy ..0
-* section[anamnese].section[vorhandeneImplantate].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_DeviceUseStatement|1.0.0 or https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Device_Implant_Free|1.0.0)
-* section[anamnese].section[vorhandeneImplantate].entry MS
-* section[anamnese].section[vorhandeneImplantate].entry.reference 1.. MS
-* section[anamnese].section[vorhandeneImplantate].entry.type ..0
-* section[anamnese].section[vorhandeneImplantate].entry.identifier ..0
-* section[anamnese].section[vorhandeneImplantate].entry.display ..0
-* section[anamnese].section[vorhandeneImplantate].emptyReason ..0
-* section[anamnese].section[vorhandeneImplantate].section ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].title 1.. MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].title = "Diagnosen und Infektionen/Besiedelungen durch multiresistente Erreger"
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].code 1.. MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].code.coding 1..1 MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].code.coding = $KBV_CS_MIO_KHE_Section_Codes#SectionDiagnosen "Bereich Diagnosen"
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].code.coding ^patternCoding.version = "1.0.0"
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].code.coding.system 1..
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].code.coding.version 1..
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].code.coding.code 1..
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].code.coding.display 1..
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].code.coding.userSelected ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].code.text ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].author ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].focus ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].text ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].mode ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].orderedBy ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Condition_Diagnosis|1.0.0)
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].entry MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].entry.reference 1.. MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].entry.type ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].entry.identifier ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].entry.display ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].emptyReason ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section ..1 MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section ^slicing.discriminator.type = #pattern
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section ^slicing.discriminator.path = "code.coding"
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section ^slicing.rules = #closed
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section contains infektionenDurchMultiresistenteErreger 1..1 MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].title 1.. MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].title = "Infektion oder Besiedelung durch multiresistente Erreger"
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].code 1.. MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].code.coding 1..1 MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].code.coding = $sct#439401001:246093002=409793007 "Diagnosis (observable entity) : Component (attribute) = Antimicrobial resistant bacteria (organism)"
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20220531"
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].code.coding.system 1..
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].code.coding.version 1..
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].code.coding.code 1..
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].code.coding.display 1..
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].code.coding.userSelected ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].code.text ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].author ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].focus ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].text ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].mode ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].orderedBy ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].entry 1..1 MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Infection_By_Multi_Resistant_Pathogens|1.0.0)
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].entry.reference 1.. MS
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].entry.type ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].entry.identifier ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].entry.display ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].emptyReason ..0
-* section[diagnosenUndInfektionenDurchMultiresistenteErreger].section[infektionenDurchMultiresistenteErreger].section ..0
+* section[anamnese].section[schwangerschaftsstatus].title 1.. MS
+* section[anamnese].section[schwangerschaftsstatus].title = "Schwangerschaftsstatus"
+* section[anamnese].section[schwangerschaftsstatus].code 1.. MS
+* section[anamnese].section[schwangerschaftsstatus].code.coding 1..1 MS
+* section[anamnese].section[schwangerschaftsstatus].code.coding = $loinc#82810-3 "Pregnancy status"
+* section[anamnese].section[schwangerschaftsstatus].code.coding ^patternCoding.version = "2.78"
+* section[anamnese].section[schwangerschaftsstatus].code.coding.system 1..
+* section[anamnese].section[schwangerschaftsstatus].code.coding.version 1..
+* section[anamnese].section[schwangerschaftsstatus].code.coding.code 1..
+* section[anamnese].section[schwangerschaftsstatus].code.coding.display 1..
+//* section[anamnese].section[schwangerschaftsstatus].code.coding.userSelected ..0
+//* section[anamnese].section[schwangerschaftsstatus].code.text ..0
+//* section[anamnese].section[schwangerschaftsstatus].author ..0
+//* section[anamnese].section[schwangerschaftsstatus].focus ..0
+//* section[anamnese].section[schwangerschaftsstatus].text ..0
+//* section[anamnese].section[schwangerschaftsstatus].mode ..0
+//* section[anamnese].section[schwangerschaftsstatus].orderedBy ..0
+* section[anamnese].section[schwangerschaftsstatus].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status)
+* section[anamnese].section[schwangerschaftsstatus].entry MS
+* section[anamnese].section[schwangerschaftsstatus].entry.reference 1.. MS
+//* section[anamnese].section[schwangerschaftsstatus].entry.type ..0
+//* section[anamnese].section[schwangerschaftsstatus].entry.identifier ..0
+//* section[anamnese].section[schwangerschaftsstatus].entry.display ..0
+//* section[anamnese].section[schwangerschaftsstatus].emptyReason ..0
+* section[anamnese].section[schwangerschaftsstatus].section ..0
+* section[anamnese].section[sexualanamnese].title 1.. MS
+* section[anamnese].section[sexualanamnese].title = "Sexualanamnese"
+* section[anamnese].section[sexualanamnese].code 1.. MS
+* section[anamnese].section[sexualanamnese].code.coding 1..1 MS
+* section[anamnese].section[sexualanamnese].code.coding = $loinc#11351-4 "History of Sexual behavior"
+* section[anamnese].section[sexualanamnese].code.coding ^patternCoding.version = "2.78"
+* section[anamnese].section[sexualanamnese].code.coding.system 1..
+* section[anamnese].section[sexualanamnese].code.coding.version 1..
+* section[anamnese].section[sexualanamnese].code.coding.code 1..
+* section[anamnese].section[sexualanamnese].code.coding.display 1..
+//* section[anamnese].section[sexualanamnese].code.coding.userSelected ..0
+//* section[anamnese].section[sexualanamnese].code.text ..0
+//* section[anamnese].section[sexualanamnese].author ..0
+//* section[anamnese].section[sexualanamnese].focus ..0
+//* section[anamnese].section[sexualanamnese].text ..0
+//* section[anamnese].section[sexualanamnese].mode ..0
+//* section[anamnese].section[sexualanamnese].orderedBy ..0
+* section[anamnese].section[sexualanamnese].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse)
+* section[anamnese].section[sexualanamnese].entry MS
+* section[anamnese].section[sexualanamnese].entry.reference 1.. MS
+//* section[anamnese].section[sexualanamnese].entry.type ..0
+//* section[anamnese].section[sexualanamnese].entry.identifier ..0
+//* section[anamnese].section[sexualanamnese].entry.display ..0
+//* section[anamnese].section[sexualanamnese].emptyReason ..0
+* section[anamnese].section[sexualanamnese].section ..0
+* section[anamnese].section[prepindikation].title 1.. MS
+* section[anamnese].section[prepindikation].title = "HIV PrEP Indikation"
+* section[anamnese].section[prepindikation].code 1.. MS
+* section[anamnese].section[prepindikation].code.coding 1..1 MS
+* section[anamnese].section[prepindikation].code.coding = $sct#370782005 "Assessment of susceptibility for infection (procedure)"
+* section[anamnese].section[prepindikation].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20230930"
+* section[anamnese].section[prepindikation].code.coding.system 1..
+* section[anamnese].section[prepindikation].code.coding.version 1..
+* section[anamnese].section[prepindikation].code.coding.code 1..
+* section[anamnese].section[prepindikation].code.coding.display 1..
+//* section[anamnese].section[prepindikation].code.coding.userSelected ..0
+//* section[anamnese].section[prepindikation].code.text ..0
+//* section[anamnese].section[prepindikation].author ..0
+//* section[anamnese].section[prepindikation].focus ..0
+//* section[anamnese].section[prepindikation].text ..0
+//* section[anamnese].section[prepindikation].mode ..0
+//* section[anamnese].section[prepindikation].orderedBy ..0
+* section[anamnese].section[prepindikation].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication)
+* section[anamnese].section[prepindikation].entry MS
+* section[anamnese].section[prepindikation].entry.reference 1.. MS
+//* section[anamnese].section[prepindikation].entry.type ..0
+//* section[anamnese].section[prepindikation].entry.identifier ..0
+//* section[anamnese].section[prepindikation].entry.display ..0
+//* section[anamnese].section[prepindikation].emptyReason ..0
+* section[anamnese].section[prepindikation].section ..0
+* section[beratung].title 1.. MS
+* section[beratung].title = "HIV PrEP Beratung"
+* section[beratung].code 1.. MS
+* section[beratung].code.coding 1..1 MS
+* section[beratung].code.coding = $sct#409063005 "Counseling (procedure)"
+* section[beratung].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20230930"
+* section[beratung].code.coding.system 1..
+* section[beratung].code.coding.version 1..
+* section[beratung].code.coding.code 1..
+* section[beratung].code.coding.display 1..
+* section[beratung].code.coding.userSelected ..0
+//* section[beratung].code.text ..0
+//* section[beratung].author ..0
+//* section[beratung].focus ..0
+//* section[beratung].text ..0
+//* section[beratung].mode ..0
+//* section[beratung].orderedBy ..0
+* section[beratung].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling)
+* section[beratung].entry MS
+* section[beratung].entry.reference 1.. MS
+//* section[beratung].entry.type ..0
+//* section[beratung].entry.identifier ..0
+//* section[beratung].entry.display ..0
+//* section[beratung].emptyReason ..0
+* section[beratung].section ..0 
+/*
 * section[prozeduren].title 1.. MS
+
 * section[prozeduren].title = "Prozeduren"
 * section[prozeduren].code 1.. MS
 * section[prozeduren].code.coding 1..1 MS
