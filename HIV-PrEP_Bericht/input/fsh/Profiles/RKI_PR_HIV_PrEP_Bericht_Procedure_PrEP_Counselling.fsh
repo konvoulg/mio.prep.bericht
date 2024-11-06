@@ -37,13 +37,13 @@ Description: "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
 //* category ..0
 * code 1.. MS
 * code.coding 1..1 MS
-* code.coding.system 1..
+* code.coding.system 1.. MS
 * code.coding.system = "http://snomed.info/sct" (exactly)
-* code.coding.version 1..
-* code.coding.version = "http://snomed.info/sct/11000274103/version/20240515" (exactly)
-* code.coding.code 1..
+* code.coding.version 1.. MS
+//* code.coding.version = "http://snomed.info/sct/11000274103/version/20240515" (exactly)
+* code.coding.code 1.. MS
 * code.coding.code = #409063005 (exactly)
-* code.coding.display 1..
+* code.coding.display 1.. MS
 * code.coding.display = "Beratung"
 * code.coding.userSelected ..0
 //* code.text ..0
@@ -82,11 +82,11 @@ Description: "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
 //* location ..0
 * reasonCode MS
 * reasonCode.coding 1..1 MS
-* reasonCode.coding from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_MR_Counselling|1.1.0 (required)
+* reasonCode.coding from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Counselling_SNOMEDCT (extensible)
 * reasonCode.coding.system 1.. MS
 * reasonCode.coding.system = "http://snomed.info/sct" (exactly)
 * reasonCode.coding.version 1.. MS
-* reasonCode.coding.version = "http://snomed.info/sct/900000000000207008/version/20210731" (exactly)
+//* reasonCode.coding.version = "http://snomed.info/sct/900000000000207008/version/20210731" (exactly)
 * reasonCode.coding.code 1.. MS
 * reasonCode.coding.display 1.. MS
 * reasonCode.coding.userSelected ..0

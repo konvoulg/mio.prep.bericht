@@ -40,6 +40,14 @@
     "endLine": 12
   },
   {
+    "outputFile": "CodeSystem-RKI-CS-HIV-PrEP-Bericht-SectionCodes.json",
+    "fshName": "RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems\\RKI_CS_HIV_PrEP_Bericht_SectionCodes.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
     "outputFile": "Composition-9a9ba169-33fe-41de-ab02-ddebf1cce45b.json",
     "fshName": "9a9ba169-33fe-41de-ab02-ddebf1cce45b",
     "fshType": "Instance",
@@ -248,12 +256,20 @@
     "endLine": 52
   },
   {
+    "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-ClinicalImpression-PrEP.json",
+    "fshName": "RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP",
+    "fshType": "Profile",
+    "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP.fsh",
+    "startLine": 3,
+    "endLine": 68
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Composition.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Composition",
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Composition.fsh",
     "startLine": 11,
-    "endLine": 76
+    "endLine": 334
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Chlamydia-Tracomatis.json",
@@ -528,6 +544,14 @@
     "endLine": 19
   },
   {
+    "outputFile": "ValueSet-Counselling-SNOMEDCT.json",
+    "fshName": "Counselling_SNOMEDCT",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Counselling_SNOMEDCT.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
     "outputFile": "ValueSet-Gender-Identity-SNOMEDCT.json",
     "fshName": "Gender_Identity_SNOMEDCT",
     "fshType": "ValueSet",
@@ -614,6 +638,22 @@
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT.fsh",
     "startLine": 3,
     "endLine": 25
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Lab-Test-HBVP.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Lab_Test_HBVP",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Lab_Test_HBVP.fsh",
+    "startLine": 1,
+    "endLine": 707
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Lab-Test-HCVP.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Lab_Test_HCVP",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Lab_Test_HCVP.fsh",
+    "startLine": 1,
+    "endLine": 467
   },
   {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Neisseria-gonorrhoeae-LOINC.json",
