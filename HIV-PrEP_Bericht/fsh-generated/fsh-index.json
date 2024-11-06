@@ -616,28 +616,20 @@
     "endLine": 25
   },
   {
-    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Lab-Test-HBVP.json",
-    "fshName": "RKI_VS_HIV_PrEP_Bericht_Lab_Test_HBVP",
-    "fshType": "ValueSet",
-    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Lab_Test_HBVP.fsh",
-    "startLine": 1,
-    "endLine": 706
-  },
-  {
-    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Lab-Test-HCVP.json",
-    "fshName": "RKI_VS_HIV_PrEP_Bericht_Lab_Test_HCVP",
-    "fshType": "ValueSet",
-    "fshFile": "ValueSets\\temp.fsh",
-    "startLine": 1,
-    "endLine": 467
-  },
-  {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Neisseria-gonorrhoeae-LOINC.json",
     "fshName": "RKI_VS_HIV_PrEP_Bericht_Neisseria_gonorrhoeae_LOINC",
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Neisseria gonorrhoeae_Lab_Study_LOINC.fsh",
     "startLine": 1,
     "endLine": 67
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Observation-Units-Chlamydia-UCUM.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_Chlamydia_UCUM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_Chlamydia_UCUM.fsh",
+    "startLine": 1,
+    "endLine": 10
   },
   {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Observation-Units-Crea-UCUM.json",
@@ -654,6 +646,38 @@
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM.fsh",
     "startLine": 1,
     "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Observation-Units-HIV-UCUM.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_HIV_UCUM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_HIV_UCUM.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Observation-Units-HepatitisB-UCUM.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_HepatitisB_UCUM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_HepatitisB_UCUM.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Observation-Units-HepatitisC-UCUM.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_HepatitisC_UCUM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_HepatitisC_UCUM.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Observation-Units-Syphilis-UCUM.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_Syphilis_UCUM",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Observation_Units_Syphilis_UCUM.fsh",
+    "startLine": 1,
+    "endLine": 13
   },
   {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Syphilis-Lab-Study-LOINC.json",
