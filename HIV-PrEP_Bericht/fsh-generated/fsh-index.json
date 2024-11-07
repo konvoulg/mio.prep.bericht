@@ -640,22 +640,6 @@
     "endLine": 25
   },
   {
-    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Lab-Test-HBVP.json",
-    "fshName": "RKI_VS_HIV_PrEP_Bericht_Lab_Test_HBVP",
-    "fshType": "ValueSet",
-    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Lab_Test_HBVP.fsh",
-    "startLine": 1,
-    "endLine": 707
-  },
-  {
-    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Lab-Test-HCVP.json",
-    "fshName": "RKI_VS_HIV_PrEP_Bericht_Lab_Test_HCVP",
-    "fshType": "ValueSet",
-    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Lab_Test_HCVP.fsh",
-    "startLine": 1,
-    "endLine": 467
-  },
-  {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Neisseria-gonorrhoeae-LOINC.json",
     "fshName": "RKI_VS_HIV_PrEP_Bericht_Neisseria_gonorrhoeae_LOINC",
     "fshType": "ValueSet",
