@@ -122,7 +122,9 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Gonorrhoe Infekti
 * valueQuantity only Quantity
 * valueQuantity 0..1
 //* valueQuantity = $unitsofmeasure#mL/min/{1.73_m2} "milliliter per minute per 1.73 square meter"
+*/
 //* valueQuantity from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0 (required)
+/*
 * valueQuantity ^definition = "Hier wird das Messergebnis als quantitativer Wert abgebildet."
 * valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity.value 1.. MS
