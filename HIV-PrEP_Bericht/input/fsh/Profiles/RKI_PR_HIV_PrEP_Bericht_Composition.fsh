@@ -87,7 +87,6 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
     laboruntersuchungen 0..1 MS and
     diagnosen 0..1 MS and
     medikation 0..1 MS and
-    kontakte 0..1 MS and
     termine 0..1 MS and
     immunisierungen 0..1 MS
 * section[behandelndePersonEinrichtung].title 1.. MS
@@ -102,7 +101,6 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[behandelndePersonEinrichtung].code.coding.code = $sectioncodes#SectionBehandelndePersonEinrichtung (exactly)
 * section[behandelndePersonEinrichtung].code.coding.display 1.. MS
 * section[behandelndePersonEinrichtung].code.coding.display = "Behandelnde Person / Einrichtung"
-/*
 * section[behandelndePersonEinrichtung].code.coding.userSelected ..0
 * section[behandelndePersonEinrichtung].code.text ..0
 * section[behandelndePersonEinrichtung].author ..0
@@ -110,7 +108,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[behandelndePersonEinrichtung].text ..0
 * section[behandelndePersonEinrichtung].mode ..0
 * section[behandelndePersonEinrichtung].orderedBy ..0
-*/
+
 
 * section[behandelndePersonEinrichtung].entry 1..3 MS
 * section[behandelndePersonEinrichtung].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0 or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole)
@@ -126,14 +124,12 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[anamnese].code 1.. MS
 * section[anamnese].code.coding 1..1 MS
 * section[anamnese].code.coding = $sct#1003642006 "Past medical history section (record artifact)"
-* section[anamnese].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20240930"
+//* section[anamnese].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20240930"
 * section[anamnese].code.coding.system 1.. MS
 * section[anamnese].code.coding.version 1.. MS
 * section[anamnese].code.coding.code 1.. MS
 * section[anamnese].code.coding.display 1.. MS
 * section[anamnese].code.coding.userSelected ..0
-
-
 //* section[anamnese].code.text ..0
 //* section[anamnese].author ..0
 //* section[anamnese].focus ..0
@@ -147,172 +143,14 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 //* section[anamnese].entry.identifier ..0
 //* section[anamnese].entry.display ..0
 //* section[anamnese].emptyReason ..0
-* section[anamnese].section MS
-* section[anamnese].section ^slicing.discriminator.type = #pattern
-* section[anamnese].section ^slicing.discriminator.path = "code.coding"
-* section[anamnese].section ^slicing.rules = #closed
-* section[anamnese].section contains
-    koerpergewicht 0..1 MS and
-    allergienUndUnvertaeglichkeiten 0..1 MS and
-    anamnestischeDiagnosen 0..1 MS and
-    schwangerschaftsstatus 0..1 MS and
-    sexualanamnese 0..1 MS and
-    prepindikation 0..1 MS
-* section[anamnese].section[koerpergewicht].title 1..
-* section[anamnese].section[koerpergewicht].title = "Koerpergewicht"
-* section[anamnese].section[koerpergewicht].code 1.. MS
-* section[anamnese].section[koerpergewicht].code.coding 1..1 MS
-* section[anamnese].section[koerpergewicht].code.coding = $sct#27113001 "Body weight (observable entity)"
-* section[anamnese].section[koerpergewicht].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20230930"
-* section[anamnese].section[koerpergewicht].code.coding.system 1..
-* section[anamnese].section[koerpergewicht].code.coding.version 1..
-* section[anamnese].section[koerpergewicht].code.coding.code 1..
-* section[anamnese].section[koerpergewicht].code.coding.display 1..
-* section[anamnese].section[koerpergewicht].code.coding.userSelected ..0
-//* section[anamnese].section[koerpergewicht].code.text ..0
-//* section[anamnese].section[koerpergewicht].author ..0
-//* section[anamnese].section[koerpergewicht].focus ..0
-//* section[anamnese].section[koerpergewicht].text ..0
-//* section[anamnese].section[koerpergewicht].mode ..0
-//* section[anamnese].section[koerpergewicht].orderedBy ..0
-* section[anamnese].section[koerpergewicht].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight)
-* section[anamnese].section[koerpergewicht].entry MS
-* section[anamnese].section[koerpergewicht].entry.reference 1.. MS
-//* section[anamnese].section[koerpergewicht].entry.type ..0
-//* section[anamnese].section[koerpergewicht].entry.identifier ..0
-//* section[anamnese].section[koerpergewicht].entry.display ..0
-//* section[anamnese].section[koerpergewicht].emptyReason ..0
-* section[anamnese].section[koerpergewicht].section ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].title 1.. MS
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].code 1.. MS
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding 1..1 MS
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding = $loinc#48765-2 "Allergies and adverse reactions Document"
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding ^patternCoding.version = "2.78"
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding.system 1..
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding.version 1..
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding.code 1..
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding.display 1..
-//* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.coding.userSelected ..0
-//* section[anamnese].section[allergienUndUnvertaeglichkeiten].code.text ..0
-//* section[anamnese].section[allergienUndUnvertaeglichkeiten].author ..0
-//* section[anamnese].section[allergienUndUnvertaeglichkeiten].focus ..0
-//* section[anamnese].section[allergienUndUnvertaeglichkeiten].text ..0
-//* section[anamnese].section[allergienUndUnvertaeglichkeiten].mode ..0
-//* section[anamnese].section[allergienUndUnvertaeglichkeiten].orderedBy ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance)
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry MS
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry.reference 1.. MS
-//* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry.type ..0
-//* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry.identifier ..0
-//* section[anamnese].section[allergienUndUnvertaeglichkeiten].entry.display ..0
-//* section[anamnese].section[allergienUndUnvertaeglichkeiten].emptyReason ..0
-* section[anamnese].section[allergienUndUnvertaeglichkeiten].section ..0
-* section[anamnese].section[anamnestischeDiagnosen].title 1.. MS
-* section[anamnese].section[anamnestischeDiagnosen].title = "Anamnestische Diagnosen"
-* section[anamnese].section[anamnestischeDiagnosen].code 1.. MS
-* section[anamnese].section[anamnestischeDiagnosen].code.coding 1..1 MS
-* section[anamnese].section[anamnestischeDiagnosen].code.coding = $loinc#10164-2 "History of Present illness Narrative"
-* section[anamnese].section[anamnestischeDiagnosen].code.coding ^patternCoding.version = "2.78"
-* section[anamnese].section[anamnestischeDiagnosen].code.coding.system 1..
-* section[anamnese].section[anamnestischeDiagnosen].code.coding.version 1..
-* section[anamnese].section[anamnestischeDiagnosen].code.coding.code 1..
-* section[anamnese].section[anamnestischeDiagnosen].code.coding.display 1..
-//* section[anamnese].section[anamnestischeDiagnosen].code.coding.userSelected ..0
-//* section[anamnese].section[anamnestischeDiagnosen].code.text ..0
-//* section[anamnese].section[anamnestischeDiagnosen].author ..0
-//* section[anamnese].section[anamnestischeDiagnosen].focus ..0
-//* section[anamnese].section[anamnestischeDiagnosen].text ..0
-//* section[anamnese].section[anamnestischeDiagnosen].mode ..0
-//* section[anamnese].section[anamnestischeDiagnosen].orderedBy ..0
-* section[anamnese].section[anamnestischeDiagnosen].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present)
-* section[anamnese].section[anamnestischeDiagnosen].entry MS
-* section[anamnese].section[anamnestischeDiagnosen].entry.reference 1.. MS
-//* section[anamnese].section[anamnestischeDiagnosen].entry.type ..0
-//* section[anamnese].section[anamnestischeDiagnosen].entry.identifier ..0
-//* section[anamnese].section[anamnestischeDiagnosen].entry.display ..0
-//* section[anamnese].section[anamnestischeDiagnosen].emptyReason ..0
-* section[anamnese].section[anamnestischeDiagnosen].section ..0
-* section[anamnese].section[schwangerschaftsstatus].title 1.. MS
-* section[anamnese].section[schwangerschaftsstatus].title = "Schwangerschaftsstatus"
-* section[anamnese].section[schwangerschaftsstatus].code 1.. MS
-* section[anamnese].section[schwangerschaftsstatus].code.coding 1..1 MS
-* section[anamnese].section[schwangerschaftsstatus].code.coding = $loinc#82810-3 "Pregnancy status"
-* section[anamnese].section[schwangerschaftsstatus].code.coding ^patternCoding.version = "2.78"
-* section[anamnese].section[schwangerschaftsstatus].code.coding.system 1..
-* section[anamnese].section[schwangerschaftsstatus].code.coding.version 1..
-* section[anamnese].section[schwangerschaftsstatus].code.coding.code 1..
-* section[anamnese].section[schwangerschaftsstatus].code.coding.display 1..
-//* section[anamnese].section[schwangerschaftsstatus].code.coding.userSelected ..0
-//* section[anamnese].section[schwangerschaftsstatus].code.text ..0
-//* section[anamnese].section[schwangerschaftsstatus].author ..0
-//* section[anamnese].section[schwangerschaftsstatus].focus ..0
-//* section[anamnese].section[schwangerschaftsstatus].text ..0
-//* section[anamnese].section[schwangerschaftsstatus].mode ..0
-//* section[anamnese].section[schwangerschaftsstatus].orderedBy ..0
-* section[anamnese].section[schwangerschaftsstatus].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status)
-* section[anamnese].section[schwangerschaftsstatus].entry MS
-* section[anamnese].section[schwangerschaftsstatus].entry.reference 1.. MS
-//* section[anamnese].section[schwangerschaftsstatus].entry.type ..0
-//* section[anamnese].section[schwangerschaftsstatus].entry.identifier ..0
-//* section[anamnese].section[schwangerschaftsstatus].entry.display ..0
-//* section[anamnese].section[schwangerschaftsstatus].emptyReason ..0
-* section[anamnese].section[schwangerschaftsstatus].section ..0
-* section[anamnese].section[sexualanamnese].title 1.. MS
-* section[anamnese].section[sexualanamnese].title = "Sexualanamnese"
-* section[anamnese].section[sexualanamnese].code 1.. MS
-* section[anamnese].section[sexualanamnese].code.coding 1..1 MS
-* section[anamnese].section[sexualanamnese].code.coding = $loinc#11351-4 "History of Sexual behavior"
-* section[anamnese].section[sexualanamnese].code.coding ^patternCoding.version = "2.78"
-* section[anamnese].section[sexualanamnese].code.coding.system 1..
-* section[anamnese].section[sexualanamnese].code.coding.version 1..
-* section[anamnese].section[sexualanamnese].code.coding.code 1..
-* section[anamnese].section[sexualanamnese].code.coding.display 1..
-//* section[anamnese].section[sexualanamnese].code.coding.userSelected ..0
-//* section[anamnese].section[sexualanamnese].code.text ..0
-//* section[anamnese].section[sexualanamnese].author ..0
-//* section[anamnese].section[sexualanamnese].focus ..0
-//* section[anamnese].section[sexualanamnese].text ..0
-//* section[anamnese].section[sexualanamnese].mode ..0
-//* section[anamnese].section[sexualanamnese].orderedBy ..0
-* section[anamnese].section[sexualanamnese].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse)
-* section[anamnese].section[sexualanamnese].entry MS
-* section[anamnese].section[sexualanamnese].entry.reference 1.. MS
-//* section[anamnese].section[sexualanamnese].entry.type ..0
-//* section[anamnese].section[sexualanamnese].entry.identifier ..0
-//* section[anamnese].section[sexualanamnese].entry.display ..0
-//* section[anamnese].section[sexualanamnese].emptyReason ..0
-* section[anamnese].section[sexualanamnese].section ..0
-* section[anamnese].section[prepindikation].title 1.. MS
-* section[anamnese].section[prepindikation].title = "HIV PrEP Indikation"
-* section[anamnese].section[prepindikation].code 1.. MS
-* section[anamnese].section[prepindikation].code.coding 1..1 MS
-* section[anamnese].section[prepindikation].code.coding = $sct#370782005 "Assessment of susceptibility for infection (procedure)"
-* section[anamnese].section[prepindikation].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20230930"
-* section[anamnese].section[prepindikation].code.coding.system 1..
-* section[anamnese].section[prepindikation].code.coding.version 1..
-* section[anamnese].section[prepindikation].code.coding.code 1..
-* section[anamnese].section[prepindikation].code.coding.display 1..
-//* section[anamnese].section[prepindikation].code.coding.userSelected ..0
-//* section[anamnese].section[prepindikation].code.text ..0
-//* section[anamnese].section[prepindikation].author ..0
-//* section[anamnese].section[prepindikation].focus ..0
-//* section[anamnese].section[prepindikation].text ..0
-//* section[anamnese].section[prepindikation].mode ..0
-//* section[anamnese].section[prepindikation].orderedBy ..0
-* section[anamnese].section[prepindikation].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication)
-* section[anamnese].section[prepindikation].entry MS
-* section[anamnese].section[prepindikation].entry.reference 1.. MS
-//* section[anamnese].section[prepindikation].entry.type ..0
-//* section[anamnese].section[prepindikation].entry.identifier ..0
-//* section[anamnese].section[prepindikation].entry.display ..0
-//* section[anamnese].section[prepindikation].emptyReason ..0
-* section[anamnese].section[prepindikation].section ..0
+//* section[anamnese].section MS
+
 * section[beratung].title 1.. MS
-* section[beratung].title = "HIV PrEP Beratung"
+* section[beratung].title = "HIV PrEP Beratung" (exactly)
 * section[beratung].code 1.. MS
 * section[beratung].code.coding 1..1 MS
 * section[beratung].code.coding = $sct#409063005 "Counseling (procedure)"
-* section[beratung].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20230930"
+//* section[beratung].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20230930"
 * section[beratung].code.coding.system 1..
 * section[beratung].code.coding.version 1..
 * section[beratung].code.coding.code 1..
@@ -331,232 +169,210 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 //* section[beratung].entry.identifier ..0
 //* section[beratung].entry.display ..0
 //* section[beratung].emptyReason ..0
-* section[beratung].section ..0 
-/*
-* section[prozeduren].title 1.. MS
+* section[beratung].section ..1 MS 
+* section[beratung].section ^slicing.discriminator.type = #pattern
+* section[beratung].section ^slicing.discriminator.path = "code"
+* section[beratung].section ^slicing.rules = #closed
+* section[beratung].section contains
+    prepinitiierung 0..1 MS 
+* section[beratung].section[prepinitiierung].title 1.. MS
+* section[beratung].section[prepinitiierung].title = "HIV Präexpositionsprophylaxe Initiierung"
+* section[beratung].section[prepinitiierung].code = $sectioncodes#SectionPrEPInit "HIV Präexpositionsprophylaxe Initiierung"
+* section[beratung].section[prepinitiierung].code MS
+//* section[beratung].section[prepinitiierung].code ^patternCodeableConcept.coding.version = "1.0.0"
+* section[beratung].section[prepinitiierung].code.coding 1..1 MS
+* section[beratung].section[prepinitiierung].code.coding.system 1.. MS
+* section[beratung].section[prepinitiierung].code.coding.version 1.. MS
+* section[beratung].section[prepinitiierung].code.coding.code 1.. MS
+* section[beratung].section[prepinitiierung].code.coding.display 1.. MS
+* section[beratung].section[prepinitiierung].code.coding.userSelected ..0
+* section[beratung].section[prepinitiierung].code.text ..0
+* section[beratung].section[prepinitiierung].author ..0
+* section[beratung].section[prepinitiierung].focus ..0
+* section[beratung].section[prepinitiierung].text ..0
+* section[beratung].section[prepinitiierung].mode ..0
+* section[beratung].section[prepinitiierung].orderedBy ..0
+* section[beratung].section[prepinitiierung].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation)
+* section[beratung].section[prepinitiierung].entry MS
+* section[beratung].section[prepinitiierung].entry.reference 1.. MS
+* section[beratung].section[prepinitiierung].entry.type ..0
+* section[beratung].section[prepinitiierung].entry.identifier ..0
+* section[beratung].section[prepinitiierung].entry.display ..0
+* section[beratung].section[prepinitiierung].emptyReason ..0
+* section[beratung].section[prepinitiierung].section ..0
 
-* section[prozeduren].title = "Prozeduren"
-* section[prozeduren].code 1.. MS
-* section[prozeduren].code.coding 1..1 MS
-* section[prozeduren].code.coding = $KBV_CS_MIO_KHE_Section_Codes#SectionProzeduren "Bereich Prozeduren"
-* section[prozeduren].code.coding ^patternCoding.version = "1.0.0"
-* section[prozeduren].code.coding.system 1..
-* section[prozeduren].code.coding.version 1..
-* section[prozeduren].code.coding.code 1..
-* section[prozeduren].code.coding.display 1..
-* section[prozeduren].code.coding.userSelected ..0
-* section[prozeduren].code.text ..0
-* section[prozeduren].author ..0
-* section[prozeduren].focus ..0
-* section[prozeduren].text ..0
-* section[prozeduren].mode ..0
-* section[prozeduren].orderedBy ..0
-* section[prozeduren].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Procedure|1.0.0)
-* section[prozeduren].entry MS
-* section[prozeduren].entry.reference 1.. MS
-* section[prozeduren].entry.type ..0
-* section[prozeduren].entry.identifier ..0
-* section[prozeduren].entry.display ..0
-* section[prozeduren].emptyReason ..0
-* section[prozeduren].section ..0
-* section[implantate].title 1.. MS
-* section[implantate].title = "Implantate"
-* section[implantate].code 1.. MS
-* section[implantate].code.coding 1..1 MS
-* section[implantate].code.coding = $sct#1184586001 "Medical device document section (record artifact)"
-* section[implantate].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20220531"
-* section[implantate].code.coding.system 1..
-* section[implantate].code.coding.version 1..
-* section[implantate].code.coding.code 1..
-* section[implantate].code.coding.display 1..
-* section[implantate].code.coding.userSelected ..0
-* section[implantate].code.text ..0
-* section[implantate].author ..0
-* section[implantate].focus ..0
-* section[implantate].text ..0
-* section[implantate].mode ..0
-* section[implantate].orderedBy ..0
-* section[implantate].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_DeviceUseStatement|1.0.0 or https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Device_Implant_Free|1.0.0)
-* section[implantate].entry MS
-* section[implantate].entry.reference 1.. MS
-* section[implantate].entry.type ..0
-* section[implantate].entry.identifier ..0
-* section[implantate].entry.display ..0
-* section[implantate].emptyReason ..0
-* section[implantate].section ..0
-* section[verlauf].title 1.. MS
-* section[verlauf].title = "Verlauf"
-* section[verlauf].code 1.. MS
-* section[verlauf].code.coding 1..1 MS
-* section[verlauf].code.coding = $sct#444754002 "Hospital inpatient progress report (record artifact)"
-* section[verlauf].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20220531"
-* section[verlauf].code.coding.system 1..
-* section[verlauf].code.coding.version 1..
-* section[verlauf].code.coding.code 1..
-* section[verlauf].code.coding.display 1..
-* section[verlauf].code.coding.userSelected ..0
-* section[verlauf].code.text ..0
-* section[verlauf].author ..0
-* section[verlauf].focus ..0
-* section[verlauf].text ..0
-* section[verlauf].mode ..0
-* section[verlauf].orderedBy ..0
-* section[verlauf].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Section_Inpatient_Stay|1.0.0)
-* section[verlauf].entry MS
-* section[verlauf].entry.reference 1.. MS
-* section[verlauf].entry.type ..0
-* section[verlauf].entry.identifier ..0
-* section[verlauf].entry.display ..0
-* section[verlauf].emptyReason ..0
-* section[verlauf].section ..0
-* section[entlassungsbefund].title 1.. MS
-* section[entlassungsbefund].title = "Entlassungsbefund"
-* section[entlassungsbefund].code 1.. MS
-* section[entlassungsbefund].code.coding 1..1 MS
-* section[entlassungsbefund].code.coding = $loinc#10184-0 "Hospital discharge physical findings Narrative"
-* section[entlassungsbefund].code.coding ^patternCoding.version = "2.71"
-* section[entlassungsbefund].code.coding.system 1..
-* section[entlassungsbefund].code.coding.version 1..
-* section[entlassungsbefund].code.coding.code 1..
-* section[entlassungsbefund].code.coding.display 1..
-* section[entlassungsbefund].code.coding.userSelected ..0
-* section[entlassungsbefund].code.text ..0
-* section[entlassungsbefund].author ..0
-* section[entlassungsbefund].focus ..0
-* section[entlassungsbefund].text ..0
-* section[entlassungsbefund].mode ..0
-* section[entlassungsbefund].orderedBy ..0
-* section[entlassungsbefund].entry 1..1 MS
-* section[entlassungsbefund].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Discharge_Report|1.0.0)
-* section[entlassungsbefund].entry.reference 1.. MS
-* section[entlassungsbefund].entry.type ..0
-* section[entlassungsbefund].entry.identifier ..0
-* section[entlassungsbefund].entry.display ..0
-* section[entlassungsbefund].emptyReason ..0
-* section[entlassungsbefund].section ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].title 1.. MS
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].title = "Weiteres Prozedere und Empfehlungen, Veranlasste Leistungen und Nachfolgende Versorgungseinrichtung"
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].code 1.. MS
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].code.coding 1..1 MS
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].code.coding = $loinc#8653-8 "Hospital Discharge instructions"
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].code.coding ^patternCoding.version = "2.71"
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].code.coding.system 1..
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].code.coding.version 1..
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].code.coding.code 1..
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].code.coding.display 1..
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].code.coding.userSelected ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].code.text ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].author ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].focus ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].text ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].mode ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].orderedBy ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].entry 1..1 MS
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Care_Plan|1.0.0)
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].entry.reference 1.. MS
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].entry.type ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].entry.identifier ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].entry.display ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].emptyReason ..0
-* section[weiteresProzedereEmpfehlungenVeranlassteLeistungen].section ..0
-* section[pflegegrad].title 1.. MS
-* section[pflegegrad].title = "Pflegegrad"
-* section[pflegegrad].code 1.. MS
-* section[pflegegrad].code.coding 1..1 MS
-* section[pflegegrad].code.coding = $loinc#80391-6 "Level of care [Type]"
-* section[pflegegrad].code.coding ^patternCoding.version = "2.71"
-* section[pflegegrad].code.coding.system 1..
-* section[pflegegrad].code.coding.version 1..
-* section[pflegegrad].code.coding.code 1..
-* section[pflegegrad].code.coding.display 1..
-* section[pflegegrad].code.coding.userSelected ..0
-* section[pflegegrad].code.text ..0
-* section[pflegegrad].author ..0
-* section[pflegegrad].focus ..0
-* section[pflegegrad].text ..0
-* section[pflegegrad].mode ..0
-* section[pflegegrad].orderedBy ..0
-* section[pflegegrad].entry ..2 MS
-* section[pflegegrad].entry only Reference(Resource or https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Care_Level|1.0.0)
-* section[pflegegrad].entry.reference 1.. MS
-* section[pflegegrad].entry.type ..0
-* section[pflegegrad].entry.identifier ..0
-* section[pflegegrad].entry.display ..0
-* section[pflegegrad].emptyReason ..0
-* section[pflegegrad].section ..0
-* section[medikationEntlassung].title 1.. MS
-* section[medikationEntlassung].title = "Medikation Entlassung"
-* section[medikationEntlassung].code 1.. MS
-* section[medikationEntlassung].code.coding 1..1 MS
-* section[medikationEntlassung].code.coding = $loinc#8654-6 "Hospital discharge medications"
-* section[medikationEntlassung].code.coding ^patternCoding.version = "2.71"
-* section[medikationEntlassung].code.coding.system 1..
-* section[medikationEntlassung].code.coding.version 1..
-* section[medikationEntlassung].code.coding.code 1..
-* section[medikationEntlassung].code.coding.display 1..
-* section[medikationEntlassung].code.coding.userSelected ..0
-* section[medikationEntlassung].code.text ..0
-* section[medikationEntlassung].author ..0
-* section[medikationEntlassung].focus ..0
-* section[medikationEntlassung].text ..0
-* section[medikationEntlassung].mode ..0
-* section[medikationEntlassung].orderedBy ..0
-* section[medikationEntlassung].entry 1.. MS
-* section[medikationEntlassung].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_List_Medication_Discharge|1.0.0)
-* section[medikationEntlassung].entry.reference 1.. MS
-* section[medikationEntlassung].entry.type ..0
-* section[medikationEntlassung].entry.identifier ..0
-* section[medikationEntlassung].entry.display ..0
-* section[medikationEntlassung].emptyReason ..0
-* section[medikationEntlassung].section ..0
-* section[auBis].title 1.. MS
-* section[auBis].title = "AU bis"
-* section[auBis].code 1.. MS
-* section[auBis].code.coding 1..1 MS
-* section[auBis].code.coding = $sct#450771002 "Issuing of certificate of incapacity (procedure)"
-* section[auBis].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20220531"
-* section[auBis].code.coding.system 1..
-* section[auBis].code.coding.version 1..
-* section[auBis].code.coding.code 1..
-* section[auBis].code.coding.display 1..
-* section[auBis].code.coding.userSelected ..0
-* section[auBis].code.text ..0
-* section[auBis].author ..0
-* section[auBis].focus ..0
-* section[auBis].text ..0
-* section[auBis].mode ..0
-* section[auBis].orderedBy ..0
-* section[auBis].entry ..1 MS
-* section[auBis].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_Observation_Incapacity_To_Work|1.0.0)
-* section[auBis].entry.reference 1.. MS
-* section[auBis].entry.type ..0
-* section[auBis].entry.identifier ..0
-* section[auBis].entry.display ..0
-* section[auBis].emptyReason ..0
-* section[auBis].section ..0
-* section[dokumentationseintrag].title 1.. MS
-* section[dokumentationseintrag].title = "Dokumentationseintrag"
-* section[dokumentationseintrag].code 1.. MS
-* section[dokumentationseintrag].code.coding 1..1 MS
-* section[dokumentationseintrag].code.coding = $sct#371524004 "Clinical report (record artifact)"
-* section[dokumentationseintrag].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20220531"
-* section[dokumentationseintrag].code.coding.system 1..
-* section[dokumentationseintrag].code.coding.version 1..
-* section[dokumentationseintrag].code.coding.code 1..
-* section[dokumentationseintrag].code.coding.display 1..
-* section[dokumentationseintrag].code.coding.userSelected ..0
-* section[dokumentationseintrag].code.text ..0
-* section[dokumentationseintrag].author ..0
-* section[dokumentationseintrag].focus ..0
-* section[dokumentationseintrag].text ..0
-* section[dokumentationseintrag].mode ..0
-* section[dokumentationseintrag].orderedBy ..0
-* section[dokumentationseintrag].entry 1.. MS
-* section[dokumentationseintrag].entry only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_KHE_DocumentReference|1.0.0)
-* section[dokumentationseintrag].entry.reference 1.. MS
-* section[dokumentationseintrag].entry.type ..0
-* section[dokumentationseintrag].entry.identifier ..0
-* section[dokumentationseintrag].entry.display ..0
-* section[dokumentationseintrag].emptyReason ..0
-* section[dokumentationseintrag].section ..0
-*/
+* section[laboruntersuchungen].title 1.. MS
+* section[laboruntersuchungen].title = "Laboruntersuchungen" (exactly)
+* section[laboruntersuchungen].code 1.. MS
+* section[laboruntersuchungen].code.coding 1..1 MS
+* section[laboruntersuchungen].code.coding = $sectioncodes#SectionLaboruntersuchungen "Laboruntersuchungen"
+//* section[laboruntersuchungen].code.coding ^patternCoding.version = "1.0.0"
+* section[laboruntersuchungen].code.coding.system 1.. MS
+* section[laboruntersuchungen].code.coding.version 1.. MS
+* section[laboruntersuchungen].code.coding.code 1.. MS
+* section[laboruntersuchungen].code.coding.display 1.. MS
+* section[laboruntersuchungen].code.coding.userSelected ..0
+* section[laboruntersuchungen].code.text ..0
+* section[laboruntersuchungen].author ..0
+* section[laboruntersuchungen].focus ..0
+* section[laboruntersuchungen].text ..0
+* section[laboruntersuchungen].mode ..0
+* section[laboruntersuchungen].orderedBy ..0
+* section[laboruntersuchungen].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free)
+* section[laboruntersuchungen].entry MS
+* section[laboruntersuchungen].entry.reference 1.. MS
+* section[laboruntersuchungen].entry.type ..0
+* section[laboruntersuchungen].entry.identifier ..0
+* section[laboruntersuchungen].entry.display ..0
+* section[laboruntersuchungen].emptyReason ..0
+* section[laboruntersuchungen].section ..0
+
+* section[diagnosen].title 1.. MS
+* section[diagnosen].title = "STI Diagnosen"
+* section[diagnosen].code 1.. MS
+* section[diagnosen].code.coding 1..1 MS
+* section[diagnosen].code.coding = $sectioncodes#SectionStiDiagnosen "STI Diagnosen"
+//* section[diagnosen].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20220531"
+* section[diagnosen].code.coding.system 1.. MS
+* section[diagnosen].code.coding.version 1.. MS
+* section[diagnosen].code.coding.code 1.. MS
+* section[diagnosen].code.coding.display 1.. MS
+* section[diagnosen].code.coding.userSelected ..0
+* section[diagnosen].code.text ..0
+* section[diagnosen].author ..0
+* section[diagnosen].focus ..0
+* section[diagnosen].text ..0
+* section[diagnosen].mode ..0
+* section[diagnosen].orderedBy ..0
+* section[diagnosen].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Tracomatis or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Gonokokkeninfektion or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisB or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisC or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HIV or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Syphilis)
+* section[diagnosen].entry MS
+* section[diagnosen].entry.reference 1.. MS
+* section[diagnosen].entry.type ..0
+* section[diagnosen].entry.identifier ..0
+* section[diagnosen].entry.display ..0
+* section[diagnosen].emptyReason ..0
+* section[diagnosen].section ..0
+
+* section[medikation].title 1.. MS
+* section[medikation].title = "Medikation"
+* section[medikation].code 1.. MS
+* section[medikation].code = $loinc#56445-0 "Medication summary Document"
+//* section[medikation].code ^patternCodeableConcept.coding.version = "2.71"
+* section[medikation].code.coding 1..1 MS
+* section[medikation].code.coding.system 1.. MS
+* section[medikation].code.coding.version 1.. MS
+* section[medikation].code.coding.code 1.. MS
+* section[medikation].code.coding.display 1.. MS
+* section[medikation].code.coding.userSelected ..0
+* section[medikation].code.text ..0
+* section[medikation].author ..0
+* section[medikation].focus ..0
+* section[medikation].text ..0
+* section[medikation].mode ..0
+* section[medikation].orderedBy ..0
+* section[medikation].entry ..0
+* section[medikation].emptyReason ..0
+* section[medikation].section ..2 MS
+* section[medikation].section ^slicing.discriminator.type = #pattern
+* section[medikation].section ^slicing.discriminator.path = "code"
+* section[medikation].section ^slicing.rules = #closed
+* section[medikation].section contains
+    prepMedikation 0..1 MS and
+    behandlungsrelevanteMedikation 0..1 MS
+* section[medikation].section[prepMedikation].title 1.. MS
+* section[medikation].section[prepMedikation].title = "HIV PrEP Medikation"
+* section[medikation].section[prepMedikation].code = $sectioncodes#SectionPrEPMedikation "HIV PrEP Medikation"
+* section[medikation].section[prepMedikation].code MS
+//* section[medikation].section[prepMedikation].code ^patternCodeableConcept.coding.version = "1.0.0"
+* section[medikation].section[prepMedikation].code.coding 1..1 MS
+* section[medikation].section[prepMedikation].code.coding.system 1.. MS
+* section[medikation].section[prepMedikation].code.coding.version 1.. MS
+* section[medikation].section[prepMedikation].code.coding.code 1.. MS
+* section[medikation].section[prepMedikation].code.coding.display 1.. MS
+* section[medikation].section[prepMedikation].code.coding.userSelected ..0
+* section[medikation].section[prepMedikation].code.text ..0
+* section[medikation].section[prepMedikation].author ..0
+* section[medikation].section[prepMedikation].focus ..0
+* section[medikation].section[prepMedikation].text ..0
+* section[medikation].section[prepMedikation].mode ..0
+* section[medikation].section[prepMedikation].orderedBy ..0
+* section[medikation].section[prepMedikation].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP)
+* section[medikation].section[prepMedikation].entry MS
+* section[medikation].section[prepMedikation].entry.reference 1.. MS
+* section[medikation].section[prepMedikation].entry.type ..0
+* section[medikation].section[prepMedikation].entry.identifier ..0
+* section[medikation].section[prepMedikation].entry.display ..0
+* section[medikation].section[prepMedikation].emptyReason ..0
+* section[medikation].section[prepMedikation].section ..0
+* section[medikation].section[behandlungsrelevanteMedikation].title 1.. MS
+* section[medikation].section[behandlungsrelevanteMedikation].title = "Behandlungsrelevante Medikation"
+* section[medikation].section[behandlungsrelevanteMedikation].code = $sectioncodes#SectionBehandlungsrelevanteMedikation "Behandlungsrelevante Medikation"
+* section[medikation].section[behandlungsrelevanteMedikation].code MS
+//* section[medikation].section[behandlungsrelevanteMedikation].code ^patternCodeableConcept.coding.version = "1.0.0"
+* section[medikation].section[behandlungsrelevanteMedikation].code.coding 1..1 MS
+* section[medikation].section[behandlungsrelevanteMedikation].code.coding.system 1..
+* section[medikation].section[behandlungsrelevanteMedikation].code.coding.version 1..
+* section[medikation].section[behandlungsrelevanteMedikation].code.coding.code 1..
+* section[medikation].section[behandlungsrelevanteMedikation].code.coding.display 1..
+* section[medikation].section[behandlungsrelevanteMedikation].code.coding.userSelected ..0
+* section[medikation].section[behandlungsrelevanteMedikation].code.text ..0
+* section[medikation].section[behandlungsrelevanteMedikation].author ..0
+* section[medikation].section[behandlungsrelevanteMedikation].focus ..0
+* section[medikation].section[behandlungsrelevanteMedikation].text ..0
+* section[medikation].section[behandlungsrelevanteMedikation].mode ..0
+* section[medikation].section[behandlungsrelevanteMedikation].orderedBy ..0
+* section[medikation].section[behandlungsrelevanteMedikation].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free)
+* section[medikation].section[behandlungsrelevanteMedikation].entry MS
+* section[medikation].section[behandlungsrelevanteMedikation].entry.reference 1.. MS
+* section[medikation].section[behandlungsrelevanteMedikation].entry.type ..0
+* section[medikation].section[behandlungsrelevanteMedikation].entry.identifier ..0
+* section[medikation].section[behandlungsrelevanteMedikation].entry.display ..0
+* section[medikation].section[behandlungsrelevanteMedikation].emptyReason ..0
+* section[medikation].section[behandlungsrelevanteMedikation].section ..0
+
+* section[termine].title 1.. MS
+* section[termine].title = "Termine"
+* section[termine].code 1.. MS
+* section[termine].code = $loinc#56446-8 "Appointment summary Document"
+//* section[termine].code ^patternCodeableConcept.coding.version = "2.71"
+* section[termine].code.coding 1..1 MS
+* section[termine].code.coding.system 1.. MS
+* section[termine].code.coding.version 1.. MS
+* section[termine].code.coding.code 1.. MS
+* section[termine].code.coding.display 1.. MS
+* section[termine].code.coding.userSelected ..0
+* section[termine].code.text ..0
+* section[termine].author ..0
+* section[termine].focus ..0
+* section[termine].text ..0
+* section[termine].mode ..0
+* section[termine].orderedBy ..0
+* section[termine].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General)
+* section[termine].entry MS
+* section[termine].emptyReason ..0
+* section[termine].section ..0
+
+* section[immunisierungen].title 1..1 MS 
+* section[immunisierungen].title = "Immunisierungen"
+* section[immunisierungen].code 1.. MS
+* section[immunisierungen].code = $sct#713404003 "Vaccination given (situation)"
+* section[immunisierungen].code.coding 1..1 MS
+* section[immunisierungen].code.coding.system 1.. MS
+* section[immunisierungen].code.coding.version 1.. MS
+* section[immunisierungen].code.coding.code 1.. MS
+* section[immunisierungen].code.coding.display 1.. MS
+* section[immunisierungen].code.coding.userSelected ..0
+* section[immunisierungen].code.text ..0
+* section[immunisierungen].author ..0
+* section[immunisierungen].focus ..0
+* section[immunisierungen].text ..0
+* section[immunisierungen].mode ..0
+* section[immunisierungen].orderedBy ..0
+* section[immunisierungen].entry 1..1 MS
+* section[immunisierungen].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization)
+* section[immunisierungen].entry.reference 1..
+* section[immunisierungen].entry.type ..0
+* section[immunisierungen].entry.identifier ..0
+* section[immunisierungen].entry.display ..0
+* section[immunisierungen].emptyReason ..0
+* section[immunisierungen].section ..0
