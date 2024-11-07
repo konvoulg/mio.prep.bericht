@@ -1,0 +1,68 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "4f0fdac3-335a-4907-a6da-d072dff0c75a",
+  "meta": {
+    "profile": [
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance|0.1.0"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "version": "http://snomed.info/sct/11000274103/version/20231115",
+        "code": "227493005",
+        "system": "http://snomed.info/sct",
+        "display": "Cashew nut (substance)"
+      },
+      {
+        "version": "1.4.0",
+        "code": "11849",
+        "system": "http://fhir.de/CodeSystem/ask",
+        "display": "ausgedacht"
+      }
+    ],
+    "text": "Cashewnüsse"
+  },
+  "extension": [
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_AllergyIntolerance_Abatement",
+      "valueDateTime": "2012"
+    },
+    {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "version": "http://snomed.info/sct/11000274103/version/20231115",
+            "code": "271872005",
+            "system": "http://snomed.info/sct",
+            "display": "Old age (qualifier value)"
+          }
+        ]
+      },
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Stage_Life"
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "version": "4.0.1",
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "version": "4.0.1",
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "display": "Confirmed"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+  }
+}
