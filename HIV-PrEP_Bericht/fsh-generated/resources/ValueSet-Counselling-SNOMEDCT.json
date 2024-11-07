@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "Counselling_SNOMEDCT",
+  "id": "Counselling-SNOMEDCT",
+  "title": "Counselling SNOMEDCT",
+  "description": "Das ValueSet Counselling_SNOMEDCT enthält die Themenpunkte, zu denen eine Beratung der behandelten Person stattgefunden hat.",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Counselling_SNOMEDCT",
+  "version": "0.1.0",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "date": "2024-09-09",
+  "immutable": false,
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "710534005",
+            "display": "Education about treatment regime (procedure)"
+          },
+          {
+            "code": "313208007",
+            "display": "Human immunodeficiency virus prevention education (procedure)"
+          },
+          {
+            "code": "439057000",
+            "display": "Education about sexually transmitted disease prevention (procedure)"
+          },
+          {
+            "code": "386467004",
+            "display": "Safe sex education (procedure)"
+          },
+          {
+            "code": "410264007",
+            "display": "Medication action/side effects education, guidance, and counseling (procedure)"
+          },
+          {
+            "code": "313077009",
+            "display": "Human immunodeficiency virus counseling (procedure)"
+          },
+          {
+            "code": "710737001",
+            "display": "Education about risk reduction technique (procedure)"
+          },
+          {
+            "code": "410123007",
+            "display": "Medication regimen compliance education (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}
