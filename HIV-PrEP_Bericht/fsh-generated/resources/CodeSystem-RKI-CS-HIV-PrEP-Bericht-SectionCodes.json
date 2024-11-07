@@ -6,6 +6,7 @@
   "id": "RKI-CS-HIV-PrEP-Bericht-SectionCodes",
   "title": "RKI_CS_HIV_PrEP_Bericht_SectionCodes",
   "description": "Dieses Codesystem enthält die Codes für deutsche Bezeichner für RKI_CS_HIV_PrEP_Bericht_SectionCodes.",
+  "version": "0.1.0",
   "url": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
   "concept": [
     {
@@ -33,7 +34,6 @@
       "display": "Behandlungsrelevante Medikation"
     }
   ],
-  "version": "0.1.0",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [

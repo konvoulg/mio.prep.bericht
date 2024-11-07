@@ -32,6 +32,14 @@
     "endLine": 276
   },
   {
+    "outputFile": "ClinicalImpression-bb5004d3-251a-4cd2-8ba1-973279777537.json",
+    "fshName": "bb5004d3-251a-4cd2-8ba1-973279777537",
+    "fshType": "Instance",
+    "fshFile": "Examples\\clinical-impression.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
     "outputFile": "CodeSystem-RKI-CS-HIV-PrEP-Bericht-Encounter-Type.json",
     "fshName": "RKI_CS_HIV_PrEP_Bericht_Encounter_Type",
     "fshType": "CodeSystem",
@@ -142,6 +150,14 @@
     "fshFile": "Examples\\hiv-observation.fsh",
     "startLine": 5,
     "endLine": 37
+  },
+  {
+    "outputFile": "Observation-be552245-9130-4363-8699-44eb481731ab.json",
+    "fshName": "be552245-9130-4363-8699-44eb481731ab",
+    "fshType": "Instance",
+    "fshFile": "Examples\\prep-indication-observation.fsh",
+    "startLine": 1,
+    "endLine": 23
   },
   {
     "outputFile": "Observation-c72db78e-5bd4-4b58-a897-aed3d5a9632c.json",
