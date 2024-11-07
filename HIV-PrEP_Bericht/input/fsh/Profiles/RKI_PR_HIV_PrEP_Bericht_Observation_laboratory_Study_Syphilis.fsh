@@ -122,7 +122,9 @@ Description: "In diesem Profil kann eine Laboruntersuchung des Humanes Treponema
 * valueQuantity only Quantity
 * valueQuantity 0..1
 //* valueQuantity = $unitsofmeasure#mL/min/{1.73_m2} "milliliter per minute per 1.73 square meter"
-//* valueQuantity from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_EMP_Creatinine_Unit|1.0.0 (required)
+*/
+* valueQuantity from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Syphilis_UCUM (required)
+/*
 * valueQuantity ^definition = "Hier wird das Messergebnis als quantitativer Wert abgebildet."
 * valueQuantity ^sliceName = "valueQuantity"
 * valueQuantity.value 1.. MS
@@ -274,12 +276,18 @@ Description: "In diesem Profil kann eine Laboruntersuchung des Humanes Treponema
     $KBV_EX_MIO_LAB_Source_Reference_Range named quelleReferenzbereich 0..1 MS and
     $KBV_EX_MIO_LAB_zLog named zLog-Wert 0..1 MS
 * referenceRange.low MS
+*/
+* referenceRange.low from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Syphilis_UCUM (required)
+/*
 * referenceRange.low ^patternQuantity.system = "http://unitsofmeasure.org"
 * referenceRange.low.value 1.. MS
 * referenceRange.low.unit 1.. MS
 * referenceRange.low.system 1.. MS
 * referenceRange.low.code 1.. MS
 * referenceRange.high MS
+*/
+* referenceRange.high from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Syphilis_UCUM (required)
+/*
 * referenceRange.high ^patternQuantity.system = "http://unitsofmeasure.org"
 * referenceRange.high.value 1.. MS
 * referenceRange.high.unit 1.. MS
