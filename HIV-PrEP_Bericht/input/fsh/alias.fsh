@@ -89,6 +89,11 @@ Alias: $KBV_VS_Base_Route_of_Administration_SNOMED_CT = https://fhir.kbv.de/Valu
 Alias: $KBV_VS_Base_Medicine_Route_Of_Administration = https://fhir.kbv.de/ValueSet/KBV_VS_Base_Medicine_Route_Of_Administration
 Alias: $KBV_VS_SFHIR_BMP_DOSIEREINHEIT = https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_BMP_DOSIEREINHEIT
 
+//Aliases KBV Basis DocumentReference
+
+Alias: $IHEXDStypeCode = http://ihe-d.de/ValueSets/IHEXDStypeCode
+Alias: $IHEXDSclassCode = http://ihe-d.de/ValueSets/IHEXDSclassCode
+
 
 //Aliases Basis Condition Diagnosis
 Alias: $CodingICD10GM = http://fhir.de/StructureDefinition/CodingICD10GM
@@ -105,3 +110,4 @@ Alias: $unitsofmeasure = http://unitsofmeasure.org
 
 //Aliases emp MedicationStatement
 Alias: $KBV_PR_MIO_EMP_Identifier_Line_Item = https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_EMP_Identifier_Line_Item
+
