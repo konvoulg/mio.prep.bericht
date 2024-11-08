@@ -3,12 +3,12 @@ Alias: $sct = http://snomed.info/sct
 Alias: $con-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 
 Instance: fba75e92-0315-430f-9a01-a493b665b483
-InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis-Chlamydia-Tracomatis
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
 Title: "Example of a Chlamydia Tracomatis condition"
 Description: "This is an example chlamydia tracomatis instance"
 Usage: #example
 
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Trachomatis"
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 
 * extension[Feststellungsdatum].valueDateTime = "2017-01-01"
 
