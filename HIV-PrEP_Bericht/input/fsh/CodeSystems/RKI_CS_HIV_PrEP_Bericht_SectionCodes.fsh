@@ -26,5 +26,6 @@ Description: "Dieses Codesystem enthält die Codes für deutsche Bezeichner für
 * #SectionPrEPInit "HIV Präexpositionsprophylaxe Initiierung"
 * #SectionPrEPMedikation "HIV PrEP Medikation"
 * #SectionBehandlungsrelevanteMedikation "Behandlungsrelevante Medikation"
+* #SectionDokumentenverweisAnhang "Dokumentenverweis/Anhang"
 //* #SectionVergangeneDiagnosen "Bereich Vergangene Diagnosen"
 //* #SectionAktuelleDiagnosen "Bereich Aktuelle Diagnosen"
