@@ -88,7 +88,8 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
     diagnosen 0..1 MS and
     medikation 0..1 MS and
     termine 0..1 MS and
-    immunisierungen 0..1 MS
+    immunisierungen 0..1 MS and
+    dokumentenverweisAnhang 0..1 MS
 * section[behandelndePersonEinrichtung].title 1.. MS
 * section[behandelndePersonEinrichtung].title = "Behandelnde Person / Einrichtung" (exactly)
 * section[behandelndePersonEinrichtung].code 1.. MS
@@ -376,3 +377,30 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[immunisierungen].entry.display ..0
 * section[immunisierungen].emptyReason ..0
 * section[immunisierungen].section ..0
+
+* section[dokumentenverweisAnhang].title 1.. MS
+* section[dokumentenverweisAnhang].title = "Dokumentenverweis/Anhang"
+* section[dokumentenverweisAnhang].code 1.. MS
+* section[dokumentenverweisAnhang].code = $sectioncodes#SectionDokumentenverweisAnhang "Dokumentenverweis/Anhang"
+//* section[dokumentenverweisAnhang].code ^patternCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20230131"
+* section[dokumentenverweisAnhang].code.coding 1..1 MS
+* section[dokumentenverweisAnhang].code.coding.system 1.. MS
+//* section[dokumentenverweisAnhang].code.coding.system ^mustSupport = false
+* section[dokumentenverweisAnhang].code.coding.version 1.. MS
+* section[dokumentenverweisAnhang].code.coding.code 1.. MS
+* section[dokumentenverweisAnhang].code.coding.display 1.. MS
+* section[dokumentenverweisAnhang].code.coding.userSelected ..0
+* section[dokumentenverweisAnhang].code.text ..0
+* section[dokumentenverweisAnhang].author ..0
+* section[dokumentenverweisAnhang].focus ..0
+* section[dokumentenverweisAnhang].text.status = #extensions
+* section[dokumentenverweisAnhang].mode ..0
+* section[dokumentenverweisAnhang].orderedBy ..0
+* section[dokumentenverweisAnhang].entry 1.. MS
+* section[dokumentenverweisAnhang].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_DocumentReference)
+* section[dokumentenverweisAnhang].entry.reference 1.. MS
+* section[dokumentenverweisAnhang].entry.type ..0
+* section[dokumentenverweisAnhang].entry.identifier ..0
+* section[dokumentenverweisAnhang].entry.display ..0
+* section[dokumentenverweisAnhang].emptyReason ..0
+* section[dokumentenverweisAnhang].section ..0
