@@ -3,8 +3,7 @@
   "id": "fba75e92-0315-430f-9a01-a493b665b483",
   "meta": {
     "profile": [
-      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Tracomatis",
-      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Trachomatis"
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
     ]
   },
   "extension": [
