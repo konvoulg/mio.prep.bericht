@@ -1,0 +1,57 @@
+{
+  "resourceType": "ClinicalImpression",
+  "id": "bb5004d3-251a-4cd2-8ba1-973279777537",
+  "meta": {
+    "profile": [
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "35090-0",
+        "system": "http://loinc.org",
+        "display": "Patient history",
+        "version": "2.78"
+      }
+    ]
+  },
+  "problem": [
+    {
+      "reference": "urn:uuid:4f0fdac3-335a-4907-a6da-d072dff0c75a"
+    }
+  ],
+  "investigation": [
+    {
+      "item": [
+        {
+          "reference": "urn:uuid:d24a5fdb-51bb-470c-bca8-a3c8e90a6265"
+        },
+        {
+          "reference": "urn:uuid:e772935d-66ef-4afc-ad7b-60d26df4d81d"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "271336007"
+          }
+        ]
+      }
+    }
+  ],
+  "finding": [
+    {
+      "itemReference": {
+        "reference": "urn:uuid:be552245-9130-4363-8699-44eb481731ab"
+      }
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+  },
+  "assessor": {
+    "reference": "urn:uuid:aec32544-52fd-4243-8626-32db47648529"
+  }
+}
