@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Profil
+  filename: Medication_Profil.page.md
+- name: Anmerkungen zu den Must-Support Feldern
+  filename: Medication_Anmerkungen-zu-den-Must-Support-Feldern.page.md
+- name: Interaktionen
+  filename: Medication_Interaktionen.page.md
+- name: Beispiele
+  filename: Medication_Beispiele.page.md

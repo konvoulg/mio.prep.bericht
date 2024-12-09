@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Profil
+  filename: AllergyIntolerance_Profil.page.md
+- name: Anmerkungen zu den Must-Support Feldern
+  filename: AllergyIntolerance_Anmerkungen-zu-den-Must-Support-Feldern.page.md
+- name: Interaktionen
+  filename: AllergyIntolerance_Interaktionen.page.md
+- name: Beispiele
+  filename: AllergyIntolerance_Beispiele.page.md
