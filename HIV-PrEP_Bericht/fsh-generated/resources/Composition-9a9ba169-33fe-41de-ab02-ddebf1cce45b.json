@@ -16,17 +16,11 @@
       }
     ]
   },
-  "subject": {
-    "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
-  },
   "author": [
     {
       "reference": "urn:uuid:aec32544-52fd-4243-8626-32db47648529"
     }
   ],
-  "custodian": {
-    "reference": "urn:uuid:81eacc87-e116-4505-a4e2-02404a022039"
-  },
   "section": [
     {
       "code": {
@@ -47,5 +41,11 @@
   ],
   "title": "HIV PrEP Bericht",
   "status": "final",
-  "date": "2020"
+  "subject": {
+    "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+  },
+  "date": "2020",
+  "custodian": {
+    "reference": "urn:uuid:81eacc87-e116-4505-a4e2-02404a022039"
+  }
 }

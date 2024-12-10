@@ -11,6 +11,7 @@ Usage: #example
 * identifier[ANR].system = "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"
 * identifier[ANR].value = "543210"
 
+* name[name].family = "Poppins"
 * name[name].family.extension[nachname].valueString = "Poppins"
 * name[name].given = "Mary"
 * name[name].prefix.extension[prefix-qualifier].valueCode = #AC

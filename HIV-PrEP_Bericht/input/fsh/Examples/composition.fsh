@@ -13,18 +13,18 @@ Usage: #example
 * type.coding = $snomed#22131000087102 "Electronic report (record artifact)"
 * type.coding.version = "http://snomed.info/sct/900000000000207008/version/20240930"
 
-* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+* subject = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1)
 
 * date = "2020"
 
-* author.reference = "urn:uuid:aec32544-52fd-4243-8626-32db47648529"
+* author = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648529)
 
 * title = "HIV PrEP Bericht"
 
-* custodian.reference = "urn:uuid:81eacc87-e116-4505-a4e2-02404a022039"
+* custodian = Reference(urn:uuid:81eacc87-e116-4505-a4e2-02404a022039)
 
 * section[behandelndePersonEinrichtung].title = "Behandelnde Person / Einrichtung"
 * section[behandelndePersonEinrichtung].code.coding.code = #SectionBehandelndePersonEinrichtung
 * section[behandelndePersonEinrichtung].code.coding.display = "Behandelnde Person / Einrichtung"
-* section[behandelndePersonEinrichtung].entry.reference = "urn:uuid:aec32544-52fd-4243-8626-32db47648529"
+* section[behandelndePersonEinrichtung].entry = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648529)
 

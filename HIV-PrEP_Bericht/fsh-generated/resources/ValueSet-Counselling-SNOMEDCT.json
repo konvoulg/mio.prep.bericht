@@ -5,8 +5,8 @@
   "id": "Counselling-SNOMEDCT",
   "title": "Counselling SNOMEDCT",
   "description": "Das ValueSet Counselling_SNOMEDCT enthält die Themenpunkte, zu denen eine Beratung der behandelten Person stattgefunden hat.",
-  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Counselling_SNOMEDCT",
   "version": "0.1.0",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Counselling_SNOMEDCT",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [
