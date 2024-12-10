@@ -37,6 +37,147 @@
         }
       ],
       "title": "Behandelnde Person / Einrichtung"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "1003642006",
+            "system": "http://snomed.info/sct",
+            "display": "Past medical history section (record artifact)",
+            "version": "4.0.1"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:bb5004d3-251a-4cd2-8ba1-973279777537"
+        }
+      ],
+      "title": "Anamnese"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "409063005",
+            "system": "http://snomed.info/sct",
+            "display": "Counseling (procedure)",
+            "version": "4.0.1"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:9a8ba8af-39a4-497b-bbeb-47f97b7d955d"
+        }
+      ],
+      "title": "HIV PrEP Beratung"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "SectionLaboruntersuchungen",
+            "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+            "display": "Laboruntersuchungen",
+            "version": "4.0.1"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:793671d7-db7b-44fb-94a6-27f7acd332be"
+        }
+      ],
+      "title": "Laboruntersuchungen"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "SectionStiDiagnosen",
+            "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+            "display": "STI Diagnosen",
+            "version": "4.0.1"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:fba75e92-0315-430f-9a01-a493b665b483"
+        }
+      ],
+      "title": "STI Diagnosen"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "56445-0",
+            "system": "http://loinc.org",
+            "display": "Medication summary Document",
+            "version": "4.0.1"
+          }
+        ]
+      },
+      "section": [
+        {
+          "entry": [
+            {
+              "reference": "urn:uuid:0ac9e5ae-fe98-47f1-b580-a9dbb2d9f218"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "code": "SectionPrEPMedikation",
+                "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+                "display": "HIV PrEP Medikation",
+                "version": "4.0.1"
+              }
+            ]
+          },
+          "title": "HIV PrEP Medikation"
+        }
+      ],
+      "title": "Medikation"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "56446-8",
+            "system": "http://loinc.org",
+            "display": "Appointment summary Document",
+            "version": "4.0.1"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:86bfcbb1-741d-48af-9d0b-062d76e3e5f7"
+        }
+      ],
+      "title": "Termine"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "713404003",
+            "system": "http://snomed.info/sct",
+            "display": "Vaccination given (situation)",
+            "version": "4.0.1"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "urn:uuid:f8e1b41b-2828-49ff-8038-5636e9f2d0cd"
+        }
+      ],
+      "title": "Immunisierungen"
     }
   ],
   "title": "HIV PrEP Bericht",
