@@ -133,8 +133,9 @@ Description: "Hier werden relevante Diagnosen im Rahmen der PrEP Behandlung doku
 * subject.identifier 1.. MS
 * subject.identifier only $identifier-kvid-10
 
-// Diskutieren ob hier ein Encounter Referenz Hier kommt
-//* encounter ..0
+
+* encounter MS
+* encounter only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General or Encounter)
 
 * onset[x] only dateTime or Age
 * onset[x] MS
