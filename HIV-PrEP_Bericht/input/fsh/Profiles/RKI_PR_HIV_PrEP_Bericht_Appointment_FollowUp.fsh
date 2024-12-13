@@ -25,7 +25,7 @@ Description: "Hier werden geplante Termine zwischen behandelter und behandelnder
 * text ^definition = "In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
 //* contained ..0
 //* identifier ..0
-
+* status MS
 * status = #booked (exactly)
 //* cancelationReason ..0
 //* serviceCategory ..0
