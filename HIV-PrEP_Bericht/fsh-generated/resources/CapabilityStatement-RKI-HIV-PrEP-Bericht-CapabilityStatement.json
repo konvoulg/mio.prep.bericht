@@ -41,7 +41,7 @@
             }
           ],
           "supportedProfile": [
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient"
+            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse"
           ],
           "interaction": [
             {
@@ -79,6 +79,24 @@
                 }
               ],
               "code": "search-type"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
             }
           ],
           "searchParam": [
@@ -100,8 +118,19 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "name": "identifier",
-              "definition": "http://hl7.org/fhir/SearchParameter/Patient-identifier",
+              "name": "author",
+              "definition": "http://hl7.org/fhir/SearchParameter/QuestionnaireResponse-author",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/QuestionnaireResponse-status",
               "type": "token"
             },
             {
@@ -111,20 +140,9 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "name": "family",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-family",
-              "type": "string"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "given",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-given",
-              "type": "string"
+              "name": "subject",
+              "definition": "http://hl7.org/fhir/SearchParameter/QuestionnaireResponse-subject",
+              "type": "reference"
             },
             {
               "extension": [
@@ -248,14 +266,18 @@
             "Procedure:patient",
             "Procedure:subject",
             "AllergyIntolerance:patient",
-            "Observation:patient"
+            "Observation:patient",
+            "Appointment:actor",
+            "ClinicalImpression:subject",
+            "MedicationStatement:subject",
+            "QuestionnaireResponse:subject"
           ],
           "_searchRevInclude": [
             {
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "MAY"
                 }
               ]
             },
@@ -263,7 +285,7 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "MAY"
                 }
               ]
             },
@@ -271,7 +293,7 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "MAY"
                 }
               ]
             },
@@ -279,7 +301,7 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "MAY"
                 }
               ]
             },
@@ -287,7 +309,7 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "MAY"
                 }
               ]
             },
@@ -295,7 +317,7 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "MAY"
                 }
               ]
             },
@@ -303,7 +325,7 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "MAY"
                 }
               ]
             },
@@ -311,7 +333,7 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "MAY"
                 }
               ]
             },
@@ -319,7 +341,7 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "MAY"
                 }
               ]
             },
@@ -327,7 +349,7 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "MAY"
                 }
               ]
             },
@@ -335,12 +357,37 @@
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
+                  "valueCode": "MAY"
                 }
               ]
-            }
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ]
+            },
+            null
           ],
-          "type": "Patient"
+          "type": "QuestionnaireResponse"
         },
         {
           "extension": [
@@ -350,7 +397,7 @@
             }
           ],
           "supportedProfile": [
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
+            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free"
           ],
           "interaction": [
             {
@@ -409,8 +456,19 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "name": "identifier",
-              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-identifier",
+              "name": "date",
+              "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
+              "type": "date"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "status",
+              "definition": "http://hl7.org/fhir/SearchParameter/ClinicalImpression-status",
               "type": "token"
             },
             {
@@ -420,9 +478,9 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "name": "family",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-family",
-              "type": "string"
+              "name": "subject",
+              "definition": "http://hl7.org/fhir/SearchParameter/ClinicalImpression-subject",
+              "type": "reference"
             },
             {
               "extension": [
@@ -431,56 +489,78 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "name": "given",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-given",
-              "type": "string"
+              "name": "assesor",
+              "definition": "http://hl7.org/fhir/SearchParameter/ClinicalImpression-assesor",
+              "type": "reference"
             },
             {
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
                 }
               ],
-              "name": "address",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-address",
-              "type": "string"
+              "name": "encounter",
+              "definition": "http://hl7.org/fhir/SearchParameter/ClinicalImpression-encounter",
+              "type": "reference"
             },
             {
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
                 }
               ],
-              "name": "gender",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-gender",
-              "type": "token"
+              "name": "problem",
+              "definition": "http://hl7.org/fhir/SearchParameter/ClinicalImpression-problem",
+              "type": "reference"
             },
             {
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
                 }
               ],
-              "name": "_profile",
-              "definition": "http://hl7.org/fhir/SearchParameter/Resource-profile",
-              "type": "uri"
+              "name": "investigation",
+              "definition": "http://hl7.org/fhir/SearchParameter/ClinicalImpression-investigation",
+              "type": "reference"
             },
             {
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
+                  "valueCode": "SHALL"
                 }
               ],
-              "name": "name",
-              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-name",
-              "type": "string"
+              "name": "finding-ref",
+              "definition": "http://hl7.org/fhir/SearchParameter/ClinicalImpression-finding-ref",
+              "type": "reference"
             }
           ],
-          "type": "Practitioner"
+          "searchInclude": [
+            "ClinicalImpression:subject",
+            "ClinicalImpression:patient"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "type": "ClinicalImpression"
         },
         {
           "extension": [
@@ -490,7 +570,7 @@
             }
           ],
           "supportedProfile": [
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole"
+            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition"
           ],
           "interaction": [
             {
@@ -598,7 +678,7 @@
               "type": "uri"
             }
           ],
-          "type": "PractitionerRole"
+          "type": "Composition"
         },
         {
           "extension": [
@@ -608,7 +688,7 @@
             }
           ],
           "supportedProfile": [
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization"
+            "https://fhir.kbv.de/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Bundle"
           ],
           "interaction": [
             {
@@ -771,160 +851,7 @@
               "type": "uri"
             }
           ],
-          "type": "Organization"
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-              "valueCode": "SHALL"
-            }
-          ],
-          "supportedProfile": [
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance"
-          ],
-          "interaction": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "code": "create"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "code": "read"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "code": "update"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "code": "search-type"
-            }
-          ],
-          "searchInclude": [
-            "AllergyIntolerance:patient"
-          ],
-          "_searchInclude": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            }
-          ],
-          "searchParam": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "_id",
-              "definition": "http://hl7.org/fhir/SearchParameter/Resource-id",
-              "type": "token"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "clinical-status",
-              "definition": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-clinical-status",
-              "type": "token"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "patient",
-              "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
-              "type": "reference"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "onset",
-              "definition": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-onset",
-              "type": "date"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "date",
-              "definition": "http://hl7.org/fhir/SearchParameter/conformance-date",
-              "type": "date"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "_profile",
-              "definition": "http://hl7.org/fhir/SearchParameter/Resource-profile",
-              "type": "token"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "category",
-              "definition": "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-category",
-              "type": "token"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "type",
-              "definition": "http://hl7.org/fhir/SearchParameter/clinical-type",
-              "type": "token"
-            }
-          ],
-          "type": "AllergyIntolerance"
+          "type": "Bundle"
         },
         {
           "extension": [
@@ -943,7 +870,9 @@
             "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea",
             "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB",
             "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC",
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV"
+            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV",
+            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis",
+            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication"
           ],
           "interaction": [
             {
@@ -981,19 +910,6 @@
                 }
               ],
               "code": "search-type"
-            }
-          ],
-          "searchInclude": [
-            "Observation:patient"
-          ],
-          "_searchInclude": [
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
             }
           ],
           "searchParam": [
@@ -1029,17 +945,6 @@
               "name": "date",
               "definition": "http://hl7.org/fhir/SearchParameter/conformance-date",
               "type": "date"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "encounter",
-              "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
-              "type": "reference"
             },
             {
               "extension": [
@@ -1107,6 +1012,23 @@
               "definition": "http://hl7.org/fhir/SearchParameter/Observation-category",
               "type": "token"
             }
+          ],
+          "searchInclude": [
+            "Observation:patient",
+            "Observation:subject",
+            "AllergyIntolerance:asserter"
+          ],
+          "_searchInclude": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            null,
+            null
           ],
           "type": "Observation"
         },
@@ -1450,17 +1372,6 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "name": "identifier",
-              "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
-              "type": "token"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
               "name": "status",
               "definition": "http://hl7.org/fhir/SearchParameter/Encounter-status",
               "type": "token"
@@ -1613,15 +1524,6 @@
                 }
               ],
               "code": "search-type"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "code": "patch"
             }
           ],
           "searchParam": [
@@ -1865,13 +1767,7 @@
             }
           ],
           "supportedProfile": [
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free",
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Tracomatis",
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Gonokokkeninfektion",
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisB",
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisC",
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HIV",
-            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Syphilis",
+            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis",
             "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present"
           ],
           "interaction": [
@@ -1978,28 +1874,6 @@
               "name": "recorded-date",
               "definition": "http://hl7.org/fhir/SearchParameter/Condition-recorded-date",
               "type": "date"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ],
-              "name": "related",
-              "definition": "http://fhir.de/SearchParameter/Condition-related",
-              "type": "reference"
-            },
-            {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "MAY"
-                }
-              ],
-              "name": "category",
-              "definition": "http://hl7.org/fhir/SearchParameter/Condition-category",
-              "type": "token"
             }
           ],
           "searchInclude": [
@@ -2024,6 +1898,19 @@
                 }
               ]
             },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            }
+          ],
+          "searchRevInclude": [
+            "Encounter:diagnosis"
+          ],
+          "_searchRevInclude": [
             {
               "extension": [
                 {
@@ -2097,6 +1984,12 @@
           ],
           "searchParam": [
             {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
               "name": "patient",
               "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
               "type": "reference"
@@ -2136,6 +2029,102 @@
             }
           ],
           "type": "Immunization"
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+              "valueCode": "SHALL"
+            }
+          ],
+          "supportedProfile": [
+            "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_DocumentReference"
+          ],
+          "interaction": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "create"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "read"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "update"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "code": "search-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "subject",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-subject",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "category",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-category",
+              "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "author",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-author",
+              "type": "reference"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "contenttype",
+              "definition": "http://hl7.org/fhir/SearchParameter/DocumentReference-contenttype",
+              "type": "token"
+            }
+          ],
+          "type": "DocumentReference"
         }
       ],
       "mode": "server"

@@ -93,7 +93,8 @@
       {
         "id": "Appointment.status",
         "path": "Appointment.status",
-        "fixedCode": "booked"
+        "fixedCode": "booked",
+        "mustSupport": true
       },
       {
         "id": "Appointment.appointmentType",

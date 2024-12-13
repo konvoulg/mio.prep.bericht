@@ -66,7 +66,8 @@
       {
         "id": "Encounter.status",
         "path": "Encounter.status",
-        "fixedCode": "finished"
+        "fixedCode": "finished",
+        "mustSupport": true
       },
       {
         "id": "Encounter.class",
@@ -100,6 +101,7 @@
       {
         "id": "Encounter.type",
         "path": "Encounter.type",
+        "min": 1,
         "mustSupport": true
       },
       {

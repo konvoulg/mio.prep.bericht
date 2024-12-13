@@ -21,7 +21,7 @@
     "fshType": "Instance",
     "fshFile": "CapabilityStatements\\RKI_HIV_PrEP_Bericht_CapabilityStatement.fsh",
     "startLine": 1,
-    "endLine": 944
+    "endLine": 1178
   },
   {
     "outputFile": "ClinicalImpression-bb5004d3-251a-4cd2-8ba1-973279777537.json",
@@ -269,7 +269,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP.fsh",
     "startLine": 2,
-    "endLine": 69
+    "endLine": 71
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Composition.json",
@@ -285,7 +285,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis.fsh",
     "startLine": 1,
-    "endLine": 206
+    "endLine": 207
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-History-Present.json",

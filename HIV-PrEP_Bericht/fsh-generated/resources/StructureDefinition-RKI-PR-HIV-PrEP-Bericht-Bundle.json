@@ -128,7 +128,7 @@
       {
         "id": "Bundle.type",
         "path": "Bundle.type",
-        "patternCode": "collection",
+        "patternCode": "document",
         "mustSupport": true
       },
       {
