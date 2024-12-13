@@ -31,7 +31,7 @@ Description: "Dieses Profil dient als bündelndes Element. Das Bundle kann als K
 * identifier.period ..0
 * identifier.assigner ..0
 
-* type = #collection
+* type = #document
 
 * type MS
 
