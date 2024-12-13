@@ -563,10 +563,7 @@ Usage: #definition
 * rest.resource[=].extension.valueCode = #SHALL
 * rest.resource[=].supportedProfile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition"
 
-* rest.resource[+].type = #Bundle
-* rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].extension.valueCode = #SHALL
-* rest.resource[=].supportedProfile = "https://fhir.kbv.de/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Bundle"
+
 
 
 
