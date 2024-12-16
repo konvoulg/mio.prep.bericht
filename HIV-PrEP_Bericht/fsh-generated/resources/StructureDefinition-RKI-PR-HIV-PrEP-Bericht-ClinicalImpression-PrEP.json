@@ -80,30 +80,33 @@
         "patternCoding": {
           "code": "35090-0",
           "system": "http://loinc.org",
-          "display": "Patient history",
-          "version": "2.78"
+          "display": "Patient history"
         },
         "mustSupport": true
       },
       {
         "id": "ClinicalImpression.code.coding.system",
         "path": "ClinicalImpression.code.coding.system",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "ClinicalImpression.code.coding.version",
         "path": "ClinicalImpression.code.coding.version",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "ClinicalImpression.code.coding.code",
         "path": "ClinicalImpression.code.coding.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "ClinicalImpression.code.coding.display",
         "path": "ClinicalImpression.code.coding.display",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "ClinicalImpression.subject",
@@ -201,6 +204,44 @@
       {
         "id": "ClinicalImpression.investigation",
         "path": "ClinicalImpression.investigation",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.investigation.code",
+        "path": "ClinicalImpression.investigation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.investigation.code.coding",
+        "path": "ClinicalImpression.investigation.code.coding",
+        "patternCoding": {
+          "code": "84100007",
+          "system": "http://snomed.info/sct",
+          "display": "Anamneseerhebung"
+        }
+      },
+      {
+        "id": "ClinicalImpression.investigation.code.coding.system",
+        "path": "ClinicalImpression.investigation.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.investigation.code.coding.version",
+        "path": "ClinicalImpression.investigation.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.investigation.code.coding.code",
+        "path": "ClinicalImpression.investigation.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ClinicalImpression.investigation.code.coding.display",
+        "path": "ClinicalImpression.investigation.code.coding.display",
+        "min": 1,
         "mustSupport": true
       },
       {

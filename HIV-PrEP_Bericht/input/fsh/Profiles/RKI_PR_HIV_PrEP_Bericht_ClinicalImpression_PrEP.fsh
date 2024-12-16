@@ -29,11 +29,11 @@ Description: "Dieses Profil bildet Informationen zur PrEP Anamnese ab."
 * code 1.. MS
 * code.coding 1..1 MS
 * code.coding = $loinc#35090-0 "Patient history"
-* code.coding ^patternCoding.version = "2.78"
-* code.coding.system 1..
-* code.coding.version 1..
-* code.coding.code 1..
-* code.coding.display 1..
+//* code.coding ^patternCoding.version = "2.78"
+* code.coding.system 1.. MS
+* code.coding.version 1.. MS
+* code.coding.code 1.. MS
+* code.coding.display 1.. MS
 //* code.coding.userSelected ..0
 //* code.text ..0
 //* description ..0
@@ -59,6 +59,12 @@ Description: "Dieses Profil bildet Informationen zur PrEP Anamnese ab."
 * problem MS
 * problem only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present)
 * investigation MS
+* investigation.code MS
+* investigation.code.coding = $sct#84100007 "Anamneseerhebung"
+* investigation.code.coding.system 1.. MS
+* investigation.code.coding.version 1.. MS
+* investigation.code.coding.code 1.. MS
+* investigation.code.coding.display 1.. MS
 * investigation.item MS 
 * investigation.item only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse)
 * investigation.item.reference 1.. MS
