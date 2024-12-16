@@ -23,6 +23,16 @@
   ],
   "investigation": [
     {
+      "code": {
+        "coding": [
+          {
+            "code": "84100007",
+            "system": "http://snomed.info/sct",
+            "display": "Anamneseerhebung",
+            "version": "http://snomed.info/sct/11000274103/version/20241115"
+          }
+        ]
+      },
       "item": [
         {
           "reference": "urn:uuid:d24a5fdb-51bb-470c-bca8-a3c8e90a6265"
@@ -30,14 +40,7 @@
         {
           "reference": "urn:uuid:e772935d-66ef-4afc-ad7b-60d26df4d81d"
         }
-      ],
-      "code": {
-        "coding": [
-          {
-            "code": "271336007"
-          }
-        ]
-      }
+      ]
     }
   ],
   "finding": [
