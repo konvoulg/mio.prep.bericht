@@ -13,7 +13,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\appointment.fsh",
     "startLine": 3,
-    "endLine": 31
+    "endLine": 32
   },
   {
     "outputFile": "CapabilityStatement-RKI-HIV-PrEP-Bericht-CapabilityStatement.json",
@@ -29,7 +29,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\clinical-impression.fsh",
     "startLine": 1,
-    "endLine": 31
+    "endLine": 32
   },
   {
     "outputFile": "CodeSystem-RKI-CS-HIV-PrEP-Bericht-Encounter-Type.json",
@@ -60,8 +60,8 @@
     "fshName": "fba75e92-0315-430f-9a01-a493b665b483",
     "fshType": "Instance",
     "fshFile": "Examples\\chlamydia-condition.fsh",
-    "startLine": 5,
-    "endLine": 30
+    "startLine": 6,
+    "endLine": 35
   },
   {
     "outputFile": "Encounter-c4269483-dd6e-4a26-a69e-3d060f6c58fe.json",
@@ -261,7 +261,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp.fsh",
     "startLine": 1,
-    "endLine": 67
+    "endLine": 68
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Bundle.json",
@@ -277,7 +277,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP.fsh",
     "startLine": 2,
-    "endLine": 71
+    "endLine": 77
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Composition.json",
@@ -285,7 +285,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Composition.fsh",
     "startLine": 2,
-    "endLine": 451
+    "endLine": 454
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis.json",
