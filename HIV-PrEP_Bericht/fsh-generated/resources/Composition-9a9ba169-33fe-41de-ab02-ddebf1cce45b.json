@@ -79,9 +79,8 @@
         "coding": [
           {
             "code": "SectionLaboruntersuchungen",
-            "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
-            "display": "Laboruntersuchungen",
-            "version": "4.0.1"
+            "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+            "display": "Laboruntersuchungen"
           }
         ]
       },
@@ -97,9 +96,8 @@
         "coding": [
           {
             "code": "SectionStiDiagnosen",
-            "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
-            "display": "STI Diagnosen",
-            "version": "4.0.1"
+            "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+            "display": "STI Diagnosen"
           }
         ]
       },
@@ -117,7 +115,7 @@
             "code": "56445-0",
             "system": "http://loinc.org",
             "display": "Medication summary Document",
-            "version": "4.0.1"
+            "version": "2.78"
           }
         ]
       },
@@ -132,9 +130,8 @@
             "coding": [
               {
                 "code": "SectionPrEPMedikation",
-                "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
-                "display": "HIV PrEP Medikation",
-                "version": "4.0.1"
+                "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+                "display": "HIV PrEP Medikation"
               }
             ]
           },
@@ -147,16 +144,48 @@
       "code": {
         "coding": [
           {
-            "code": "56446-8",
-            "system": "http://loinc.org",
-            "display": "Appointment summary Document",
-            "version": "4.0.1"
+            "code": "SectionTermine",
+            "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+            "display": "Termine"
           }
         ]
       },
-      "entry": [
+      "section": [
         {
-          "reference": "urn:uuid:86bfcbb1-741d-48af-9d0b-062d76e3e5f7"
+          "entry": [
+            {
+              "reference": "urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c58fe"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "code": "866144008",
+                "system": "http://snomed.info/sct",
+                "display": "Encounter note (record artifact)",
+                "version": "http://snomed.info/sct/11000274103/version/20241115"
+              }
+            ]
+          },
+          "title": "Begegnung"
+        },
+        {
+          "entry": [
+            {
+              "reference": "urn:uuid:86bfcbb1-741d-48af-9d0b-062d76e3e5f7"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "code": "39084006",
+                "system": "http://snomed.info/sct",
+                "display": "Naechster Termin",
+                "version": "http://snomed.info/sct/11000274103/version/20241115"
+              }
+            ]
+          },
+          "title": "Naechster Termin"
         }
       ],
       "title": "Termine"
