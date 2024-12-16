@@ -2,7 +2,7 @@ CodeSystem: RKI_CS_HIV_PrEP_Bericht_SectionCodes
 Id: RKI-CS-HIV-PrEP-Bericht-SectionCodes
 Title: "RKI_CS_HIV_PrEP_Bericht_SectionCodes"
 Description: "Dieses Codesystem enthält die Codes für deutsche Bezeichner für RKI_CS_HIV_PrEP_Bericht_SectionCodes."
-* ^url = "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes"
+* ^url = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes"
 * insert MetadataTerminology
 //* ^version = "1.0.0"
 //* ^status = #active
@@ -22,6 +22,7 @@ Description: "Dieses Codesystem enthält die Codes für deutsche Bezeichner für
 //* #SectionAktuelleMedikation "Bereich Aktuelle Medikation"
 * #SectionBehandelndePersonEinrichtung "Behandelnde Person / Einrichtung"
 * #SectionStiDiagnosen "STI Diagnosen"
+* #SectionTermine "Termine"
 * #SectionLaboruntersuchungen "Laboruntersuchungen"
 * #SectionPrEPInit "HIV Präexpositionsprophylaxe Initiierung"
 * #SectionPrEPMedikation "HIV PrEP Medikation"

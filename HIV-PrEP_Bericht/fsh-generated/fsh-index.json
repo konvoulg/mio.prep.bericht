@@ -45,7 +45,7 @@
     "fshType": "CodeSystem",
     "fshFile": "CodeSystems\\RKI_CS_HIV_PrEP_Bericht_SectionCodes.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 30
   },
   {
     "outputFile": "Composition-9a9ba169-33fe-41de-ab02-ddebf1cce45b.json",
@@ -53,7 +53,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\composition.fsh",
     "startLine": 3,
-    "endLine": 83
+    "endLine": 96
   },
   {
     "outputFile": "Condition-fba75e92-0315-430f-9a01-a493b665b483.json",
@@ -284,8 +284,8 @@
     "fshName": "RKI_PR_HIV_PrEP_Bericht_Composition",
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Composition.fsh",
-    "startLine": 11,
-    "endLine": 406
+    "startLine": 2,
+    "endLine": 451
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis.json",
