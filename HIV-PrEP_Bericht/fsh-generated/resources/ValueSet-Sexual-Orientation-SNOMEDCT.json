@@ -5,8 +5,8 @@
   "id": "Sexual-Orientation-SNOMEDCT",
   "title": "Sexual Orientation SNOMEDCT",
   "description": "Das ValueSet Sexual_Orientation_SNOMEDCT enthält die Codes für die vom Patienten angegebene sexuelle Orientierung (d. h. die körperliche und/oder emotionale Anziehung einer Person zu einer anderen Person des gleichen Geschlechts, des anderen Geschlechts oder beider Geschlechter).",
-  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT",
   "version": "0.1.0",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [
