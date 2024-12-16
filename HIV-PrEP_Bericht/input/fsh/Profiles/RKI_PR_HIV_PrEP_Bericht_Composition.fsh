@@ -45,20 +45,22 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 //* subject.type ..0
 //* subject.identifier ..0
 //* subject.display ..0
+* encounter MS
 * encounter only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General)
 * date MS
 * author ..1 MS
-* author only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole|0.1.0)
+* author only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole)
 * author.reference 1.. MS
 //* author.type ..0
 * author.identifier 0..1 MS
 * author.identifier only $identifier-telematik-id
 //* author.display ..0
+* title MS
 * title = "HIV PrEP Bericht"
 //* confidentiality ..0
 //* attester ..0
 * custodian 1.. MS
-* custodian only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0)
+* custodian only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization)
 * custodian.reference 1.. MS
 //* custodian.type ..0
 * custodian.identifier 0..1 MS
@@ -82,7 +84,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
     immunisierungen 0..1 MS and
     dokumentenverweisAnhang 0..1 MS
 * section[behandelndePersonEinrichtung].title 1.. MS
-* section[behandelndePersonEinrichtung].title = "Behandelnde Person / Einrichtung" (exactly)
+* section[behandelndePersonEinrichtung].title = "Behandelnde Person / Einrichtung" 
 * section[behandelndePersonEinrichtung].code 1.. MS
 * section[behandelndePersonEinrichtung].code.coding 1..1 MS
 //* section[behandelndePersonEinrichtung].code.coding = $loinc#75218-8 "Case report"
@@ -90,7 +92,8 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[behandelndePersonEinrichtung].code.coding.system MS
 * section[behandelndePersonEinrichtung].code.coding.version MS
 * section[behandelndePersonEinrichtung].code.coding.code 1.. MS
-* section[behandelndePersonEinrichtung].code.coding.code = $sectioncodes#SectionBehandelndePersonEinrichtung (exactly)
+//* section[behandelndePersonEinrichtung].code.coding
+* section[behandelndePersonEinrichtung].code.coding.code = $sectioncodes#SectionBehandelndePersonEinrichtung 
 * section[behandelndePersonEinrichtung].code.coding.display MS
 * section[behandelndePersonEinrichtung].code.coding.display = "Behandelnde Person / Einrichtung"
 * section[behandelndePersonEinrichtung].code.coding.userSelected ..0
@@ -103,7 +106,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 
 
 * section[behandelndePersonEinrichtung].entry 1..3 MS
-* section[behandelndePersonEinrichtung].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0 or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole)
+* section[behandelndePersonEinrichtung].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole)
 * section[behandelndePersonEinrichtung].entry.reference 1.. MS
 //* section[behandelndePersonEinrichtung].entry.type ..0
 * section[behandelndePersonEinrichtung].entry.identifier ..1
@@ -138,7 +141,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 //* section[anamnese].section MS
 
 * section[beratung].title 1.. MS
-* section[beratung].title = "HIV PrEP Beratung" (exactly)
+* section[beratung].title = "HIV PrEP Beratung" 
 * section[beratung].code 1.. MS
 * section[beratung].code.coding 1..1 MS
 * section[beratung].code.coding = $sct#409063005 "Counseling (procedure)"
@@ -194,7 +197,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[beratung].section[prepinitiierung].section ..0
 
 * section[laboruntersuchungen].title 1.. MS
-* section[laboruntersuchungen].title = "Laboruntersuchungen" (exactly)
+* section[laboruntersuchungen].title = "Laboruntersuchungen"
 * section[laboruntersuchungen].code 1.. MS
 * section[laboruntersuchungen].code.coding 1..1 MS
 * section[laboruntersuchungen].code.coding = $sectioncodes#SectionLaboruntersuchungen "Laboruntersuchungen"

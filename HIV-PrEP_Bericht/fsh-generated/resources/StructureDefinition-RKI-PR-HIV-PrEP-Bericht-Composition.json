@@ -204,7 +204,8 @@
               "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Composition.date",
@@ -219,7 +220,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole|0.1.0"
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole"
             ]
           }
         ],
@@ -247,7 +248,8 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "patternString": "HIV PrEP Bericht"
+        "patternString": "HIV PrEP Bericht",
+        "mustSupport": true
       },
       {
         "id": "Composition.custodian",
@@ -257,7 +259,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0"
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization"
             ]
           }
         ],
@@ -309,7 +311,7 @@
         "id": "Composition.section:behandelndePersonEinrichtung.title",
         "path": "Composition.section.title",
         "min": 1,
-        "fixedString": "Behandelnde Person / Einrichtung",
+        "patternString": "Behandelnde Person / Einrichtung",
         "mustSupport": true
       },
       {
@@ -339,7 +341,7 @@
         "id": "Composition.section:behandelndePersonEinrichtung.code.coding.code",
         "path": "Composition.section.code.coding.code",
         "min": 1,
-        "fixedCode": "SectionBehandelndePersonEinrichtung",
+        "patternCode": "SectionBehandelndePersonEinrichtung",
         "mustSupport": true
       },
       {
@@ -392,7 +394,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0",
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
               "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner",
               "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole"
             ]
@@ -513,7 +515,7 @@
         "id": "Composition.section:beratung.title",
         "path": "Composition.section.title",
         "min": 1,
-        "fixedString": "HIV PrEP Beratung",
+        "patternString": "HIV PrEP Beratung",
         "mustSupport": true
       },
       {
@@ -748,7 +750,7 @@
         "id": "Composition.section:laboruntersuchungen.title",
         "path": "Composition.section.title",
         "min": 1,
-        "fixedString": "Laboruntersuchungen",
+        "patternString": "Laboruntersuchungen",
         "mustSupport": true
       },
       {
