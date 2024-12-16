@@ -21,6 +21,7 @@ Usage: #example
 
 
 * start = "2021-05-23T09:00:00+08:00"
+* end = "2021-05-23T10:00:00+08:00"
 
 * participant[0].actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8113"
 * participant[=].actor.type = "Practitioner"
