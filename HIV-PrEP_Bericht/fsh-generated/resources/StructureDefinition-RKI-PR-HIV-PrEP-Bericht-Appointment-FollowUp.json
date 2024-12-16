@@ -107,6 +107,11 @@
         }
       },
       {
+        "id": "Appointment.appointmentType.coding",
+        "path": "Appointment.appointmentType.coding",
+        "mustSupport": true
+      },
+      {
         "id": "Appointment.appointmentType.coding.system",
         "path": "Appointment.appointmentType.coding.system",
         "min": 1,
@@ -116,7 +121,6 @@
       {
         "id": "Appointment.appointmentType.coding.version",
         "path": "Appointment.appointmentType.coding.version",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -129,7 +133,6 @@
       {
         "id": "Appointment.appointmentType.coding.display",
         "path": "Appointment.appointmentType.coding.display",
-        "min": 1,
         "patternString": "A follow up visit from a previous appointment",
         "mustSupport": true
       },
