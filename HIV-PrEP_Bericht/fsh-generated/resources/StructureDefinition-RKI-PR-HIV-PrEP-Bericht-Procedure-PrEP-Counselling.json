@@ -78,71 +78,11 @@
         "mustSupport": true
       },
       {
-        "id": "Procedure.code.coding.system",
-        "path": "Procedure.code.coding.system",
-        "min": 1,
-        "fixedUri": "http://snomed.info/sct",
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.code.coding.version",
-        "path": "Procedure.code.coding.version",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.code.coding.code",
-        "path": "Procedure.code.coding.code",
-        "min": 1,
-        "fixedCode": "409063005",
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.code.coding.display",
-        "path": "Procedure.code.coding.display",
-        "min": 1,
-        "patternString": "Beratung",
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.code.coding.userSelected",
-        "path": "Procedure.code.coding.userSelected",
-        "max": "0"
-      },
-      {
-        "id": "Procedure.code.coding:ops",
-        "path": "Procedure.code.coding",
-        "sliceName": "ops"
-      },
-      {
-        "id": "Procedure.code.coding:ops.system",
-        "path": "Procedure.code.coding.system",
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.code.coding:ops.version",
-        "path": "Procedure.code.coding.version",
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.code.coding:ops.code",
-        "path": "Procedure.code.coding.code",
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.code.coding:ops.display",
-        "path": "Procedure.code.coding.display",
-        "mustSupport": true
-      },
-      {
-        "id": "Procedure.code.coding:ops.userSelected",
-        "path": "Procedure.code.coding.userSelected",
-        "max": "0"
-      },
-      {
         "id": "Procedure.code.coding:snomed",
         "path": "Procedure.code.coding",
-        "sliceName": "snomed"
+        "sliceName": "snomed",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Procedure.code.coding:snomed.system",
@@ -157,6 +97,7 @@
       {
         "id": "Procedure.code.coding:snomed.code",
         "path": "Procedure.code.coding.code",
+        "patternCode": "409063005",
         "mustSupport": true
       },
       {

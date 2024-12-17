@@ -37,15 +37,14 @@ Description: "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
 //* category ..0
 * code 1.. MS
 * code.coding 1..1 MS
-* code.coding.system 1.. MS
-* code.coding.system = "http://snomed.info/sct" (exactly)
-* code.coding.version 1.. MS
+* code.coding[snomed] 1..1 MS
+* code.coding[snomed].system 1.. MS
+* code.coding[snomed].version 1.. MS
 //* code.coding.version = "http://snomed.info/sct/11000274103/version/20240515" (exactly)
-* code.coding.code 1.. MS
-* code.coding.code = #409063005 (exactly)
-* code.coding.display 1.. MS
-* code.coding.display = "Beratung"
-* code.coding.userSelected ..0
+* code.coding[snomed].code 1.. MS
+* code.coding[snomed].code = $sct#409063005 "Beratung"
+* code.coding[snomed].display 1.. MS
+* code.coding[snomed].userSelected ..0
 //* code.text ..0
 * subject only Reference($PrEPatient)
 * subject MS
