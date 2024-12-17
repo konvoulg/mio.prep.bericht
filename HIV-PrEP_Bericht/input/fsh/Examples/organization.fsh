@@ -21,6 +21,7 @@ Usage: #example
 * telecom.system = #phone
 * telecom.value = "+49 0123456789"
 
+* address.line = "Einestraße 5"
 * address[Strassenanschrift].line.extension[Strasse].valueString = "Einestraße"
 * address[Strassenanschrift].line.extension[Hausnummer].valueString = "5"
 * address[Strassenanschrift].type = #both

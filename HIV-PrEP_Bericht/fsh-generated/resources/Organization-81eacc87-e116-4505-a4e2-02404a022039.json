@@ -41,6 +41,11 @@
   ],
   "address": [
     {
+      "line": [
+        "Einestraße 5"
+      ]
+    },
+    {
       "type": "both",
       "city": "Einstadt",
       "postalCode": "12345",

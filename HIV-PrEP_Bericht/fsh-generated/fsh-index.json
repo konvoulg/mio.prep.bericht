@@ -181,7 +181,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\organization.fsh",
     "startLine": 1,
-    "endLine": 28
+    "endLine": 29
   },
   {
     "outputFile": "Patient-4a311b0a-ec7e-4486-bb6b-1c275f0cbee1.json",
@@ -493,7 +493,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling.fsh",
     "startLine": 3,
-    "endLine": 92
+    "endLine": 91
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Initiation.json",
