@@ -9,10 +9,10 @@
   "code": {
     "coding": [
       {
-        "system": "http://fhir.de/CodeSystem/bfarm/ops",
-        "code": "5-470",
-        "display": "5-470",
-        "version": "2024"
+        "code": "409063005",
+        "system": "http://snomed.info/sct",
+        "display": "Beratung",
+        "version": "http://snomed.info/sct/11000274103/version/20241115"
       }
     ]
   },
@@ -38,7 +38,7 @@
       "coding": [
         {
           "system": "http://snomed.info/sct",
-          "version": "0.1.0",
+          "version": "http://snomed.info/sct/11000274103/version/20241115",
           "code": "710534005",
           "display": "Education about treatment regime (procedure)"
         }
