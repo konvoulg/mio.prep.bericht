@@ -1,7 +1,7 @@
 Profile: RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis
 Parent: KBV_PR_Base_Condition_Diagnosis
 Id: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
-Title: "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free"
+Title: "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 Description: "Hier werden relevante Diagnosen im Rahmen der PrEP Behandlung dokumentiert."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 * insert Meta-Profile

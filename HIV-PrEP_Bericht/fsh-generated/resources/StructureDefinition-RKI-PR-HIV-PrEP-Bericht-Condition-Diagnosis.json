@@ -4,7 +4,7 @@
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis",
   "version": "0.1.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis",
-  "title": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free",
+  "title": "RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis",
   "status": "draft",
   "publisher": "Robert Koch Institut",
   "description": "Hier werden relevante Diagnosen im Rahmen der PrEP Behandlung dokumentiert.",
