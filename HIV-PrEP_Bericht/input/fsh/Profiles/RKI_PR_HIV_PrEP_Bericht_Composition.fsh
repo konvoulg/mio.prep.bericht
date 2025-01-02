@@ -3,7 +3,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Composition
 Parent: Composition
 Id: RKI-PR-HIV-PrEP-Bericht-Composition
 Title: "RKI_PR_HIV_PrEP_Bericht_Composition"
-Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
+Description: "Dieses Profil bündelt die Informationen zum HIV-PrEP-Bericht."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition"
 * insert Meta-Profile
 

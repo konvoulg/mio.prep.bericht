@@ -7,7 +7,7 @@
   "title": "RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP",
   "status": "draft",
   "publisher": "Robert Koch Institut",
-  "description": "Dieses Profil bildet die Medikationsinformation ab.",
+  "description": "Dieses Profil bildet die Angaben zur Einnahme bzw. Verabreichung eines HIV-PrEP-Arzneimittels ab.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

@@ -4,7 +4,7 @@
   "name": "RKI_VS_HIV_PrEP_Bericht_Chlamydia_Trachomatis_LOINC",
   "id": "RKI-VS-HIV-PrEP-Bericht-Chlamydia-Trachomatis-LOINC",
   "title": "Chlamydia Trachomatis Laboruntersuchung LOINC",
-  "description": "Dieses ValueSet beinhaltet LOINC Codes zum Laboruntersuchung Chlamydia Trachomatis",
+  "description": "Dieses ValueSet beinhaltet LOINC-Codes zur Laboruntersuchung von Chlamydia Trachomatis.",
   "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Chlamydia_Trachomatis_Lab_Study_LOINC",
   "version": "0.1.0",
   "experimental": false,

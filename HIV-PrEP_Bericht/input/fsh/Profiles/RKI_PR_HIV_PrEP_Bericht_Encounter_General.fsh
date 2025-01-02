@@ -2,7 +2,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Encounter_General
 Parent: KBV_PR_Base_Encounter
 Id: RKI-PR-HIV-PrEP-Bericht-Encounter-General
 Title: "RKI_PR_HIV-PrEP_Bericht_Encounter_General"
-Description: "Hier werden Begegnungen bzw. Aufenthalte, Arzt-Patientenkontakte mit Interaktionen zwischen behandelter und behandelnder Person mit Datum abgebildet. Dies kann zum Beispiel ein vergangene Termin zur PrEP-Beratung, PrEP-Einleitung oder PrEP-Kontrolle sein. "
+Description: "Hier werden Begegnungen bzw. Aufenthalte mit Interaktionen zwischen behandelter und behandelnder Person (Arzt-Patientenkontakte) mit Datum abgebildet. Dies kann zum Beispiel ein vergangener Termin zur PrEP-Beratung, PrEP-Einleitung oder PrEP-Kontrolle sein."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
 
 * insert Meta-Profile

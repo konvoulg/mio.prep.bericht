@@ -2,7 +2,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachoma
 Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Chlamydia
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis"
-Description: "In diesem Profil kann eine Laboruntersuchung der Chlamydia_Trachomatis Infektion dokumentiert werden."
+Description: "In diesem Profil kann eine Laboruntersuchung einer Chlamydia-Trachomatis-Infektion dokumentiert werden."
 
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis"
 

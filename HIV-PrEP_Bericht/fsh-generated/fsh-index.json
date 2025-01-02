@@ -325,7 +325,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Immunization.fsh",
     "startLine": 5,
-    "endLine": 159
+    "endLine": 161
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication-Free.json",

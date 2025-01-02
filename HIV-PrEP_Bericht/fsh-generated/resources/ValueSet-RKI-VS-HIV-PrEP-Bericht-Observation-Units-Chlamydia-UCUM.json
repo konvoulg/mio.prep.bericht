@@ -4,7 +4,7 @@
   "name": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_Chlamydia_UCUM",
   "id": "RKI-VS-HIV-PrEP-Bericht-Observation-Units-Chlamydia-UCUM",
   "title": "Chlamydia Trachomatis Laboruntersuchung UCUM",
-  "description": "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung von Chlamydia Trachomatis",
+  "description": "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung von Chlamydia Trachomatis.",
   "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Chlamydia_UCUM",
   "version": "0.1.0",
   "experimental": false,

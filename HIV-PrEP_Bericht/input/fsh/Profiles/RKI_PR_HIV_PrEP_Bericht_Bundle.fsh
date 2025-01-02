@@ -2,7 +2,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Bundle
 Parent: Bundle
 Id: RKI-PR-HIV-PrEP-Bericht-Bundle
 Title: "RKI_PR_HIV-PrEP_Bericht_Bundle"
-Description: "Dieses Profil dient als bündelndes Element. Das Bundle kann als Klammer-Ressource verstanden werden, die die notwendigen Ressourcen zusammenfügt. Diese Ressource und die darin gebündelten Ressourcen können dann mit einer Signatur versehen werden. Das Bundle umfasst in dieser Anwendung einen HIV-PrEP Bericht."
+Description: "Dieses Profil dient als bündelndes Element. Das Bundle kann als Klammer-Ressource verstanden werden, die die notwendigen Ressourcen zusammenfügt. Diese Klammer-Ressource und die darin gebündelten Ressourcen können dann mit einer Signatur versehen werden. Das Bundle umfasst in dieser Anwendung einen HIV-PrEP-Bericht."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Bundle"
 
 * insert Meta-Profile

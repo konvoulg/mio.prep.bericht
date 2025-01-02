@@ -1,7 +1,7 @@
 ValueSet: RKI_VS_HIV_PrEP_Bericht_Observation_Units_HIV_UCUM
 Id: RKI-VS-HIV-PrEP-Bericht-Observation-Units-HIV-UCUM
 Title: "HIV Units UCUM"
-Description: "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung HIV"
+Description: "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung von HIV."
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_HIV_UCUM"
 * insert MetadataTerminology
 * ^date = "2024-11-06"

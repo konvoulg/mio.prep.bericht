@@ -2,7 +2,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB
 Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisB
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
-Description: "In diesem Profil kann eine Laboruntersuchung der Hepatitis B Infektion dokumentiert werden."
+Description: "In diesem Profil kann eine Laboruntersuchung einer Hepatitis-B-Infektion dokumentiert werden."
 
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
 

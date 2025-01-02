@@ -4,7 +4,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status
 Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy-Status
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status"
-Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten Person eine Schwangerschaft besteht."
+Description: "In diesem Profil kann dokumentiert werden, ob bei der versicherten Person eine Schwangerschaft besteht."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status"
 
 

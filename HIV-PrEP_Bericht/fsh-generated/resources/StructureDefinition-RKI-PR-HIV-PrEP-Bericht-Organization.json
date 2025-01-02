@@ -7,7 +7,7 @@
   "title": "RKI_PR_HIV-PrEP_Bericht_Organization",
   "status": "draft",
   "publisher": "Robert Koch Institut",
-  "description": "Die Einrichtung beschreibt beispielsweise den Ort, an dem ein Kontakt zwischen der zu behandelnden Person und der leistungserbringenden Person stattfindet (z. B. Praxis).",
+  "description": "Die Einrichtung beschreibt beispielsweise den Ort (z.B. Praxis), an dem ein Kontakt zwischen der zu behandelnden Person und der leistungserbringenden Person stattfindet.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -2,7 +2,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis
 Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis"
-Description: "In diesem Profil kann eine Laboruntersuchung des Humanes Treponema Pallidum-Virus (Syphilis) dokumentiert werden."
+Description: "In diesem Profil kann eine Laboruntersuchung einer Syphilis bzw. ihres Erregers Treponema Pallidum dokumentiert werden."
 
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis"
 

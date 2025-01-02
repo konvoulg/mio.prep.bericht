@@ -1,7 +1,7 @@
 ValueSet: RKI_VS_HIV_PrEP_Bericht_Observation_Units_Syphilis_UCUM
 Id: RKI-VS-HIV-PrEP-Bericht-Observation-Units-Syphilis-UCUM
 Title: "Syphilis Units UCUM"
-Description: "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung Syphilis"
+Description: "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung von Syphilis."
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Syphilis_UCUM"
 * insert MetadataTerminology
 * ^date = "2024-11-06"

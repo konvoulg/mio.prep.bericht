@@ -4,7 +4,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling
 Parent: https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Procedure
 Id: RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Counselling
 Title: "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
-Description: "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
+Description: "Hier wird eine HIV-PrEP-Beratung dokumentiert."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
 
 * insert Meta-Profile

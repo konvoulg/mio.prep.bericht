@@ -7,7 +7,7 @@
   "title": "RKI_PR_HIV-PrEP_PatientIn",
   "status": "draft",
   "publisher": "Robert Koch Institut",
-  "description": "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsprophylaxe zur Prävention einer HIV-Infektion gemäß § 20j SGB V in Anspruch nimmt.",
+  "description": "Dieses Profil beschreibt eine Person, die eine Präexpositionsprophylaxe zur Prävention einer HIV-Infektion gemäß § 20j SGB V in Anspruch nimmt.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

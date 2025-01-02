@@ -5,7 +5,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_PractitionerRole
 Parent: KBV_PR_Base_PractitionerRole
 Id: RKI-PR-HIV-PrEP-Bericht-PractitionerRole
 Title: "RKI_PR_HIV-PrEP_PractitionerRole"
-Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug zu einer Einrichtung beschrieben."
+Description: "Hier wird eine (ggf. zeitlich definierte) Rolle einer behandelnden Person in Bezug zu einer Einrichtung beschrieben."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole"
 
 * insert Meta-Profile

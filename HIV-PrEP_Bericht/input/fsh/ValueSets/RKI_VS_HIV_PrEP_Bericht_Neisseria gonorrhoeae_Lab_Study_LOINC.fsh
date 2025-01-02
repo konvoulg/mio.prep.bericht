@@ -1,7 +1,7 @@
 ValueSet: RKI_VS_HIV_PrEP_Bericht_Neisseria_gonorrhoeae_LOINC
 Id: RKI-VS-HIV-PrEP-Bericht-Neisseria-gonorrhoeae-LOINC
 Title: "Neisseria gonorrhoeae Laboruntersuchung LOINC"
-Description: "Dieses ValueSet beinhaltet LOINC Codes zum Laboruntersuchung Neisseria gonorrhoeae"
+Description: "Dieses ValueSet beinhaltet LOINC-Codes zur Laboruntersuchung von Neisseria gonorrhoeae."
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Neisseria_gonorrhoeae_Lab_Study_LOINC"
 * insert MetadataTerminology
 * ^date = "2024-09-10"

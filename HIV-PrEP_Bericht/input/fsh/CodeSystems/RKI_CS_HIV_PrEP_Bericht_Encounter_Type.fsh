@@ -1,7 +1,7 @@
 CodeSystem: RKI_CS_HIV_PrEP_Bericht_Encounter_Type
 Id: RKI-CS-HIV-PrEP-Bericht-Encounter-Type
 Title: "Art der Begegnung"
-Description: "Dieses CodeSystem enthält die EBM Codes für Bezeichner für die Begegnungstypen im Rahmen der HIV Peexpositionsprophylaxe. Dafür wird der Einheitliche Bewertungsmaßstab (EBM) verwendet. Da ein EBM FHIR CodeSystem noch nicht existiert wird hier ein temporäre CodeSystem dazu erstellt"
+Description: "Dieses CodeSystem enthält die EBM-Codes für Bezeichner für die Begegnungstypen im Rahmen der HIV-Präexpositionsprophylaxe. Dafür wird der Einheitliche Bewertungsmaßstab (EBM) verwendet. Da ein EBM-FHIR-CodeSystem noch nicht existiert, wird hier ein temporäres CodeSystem dazu bereitgestellt."
 * ^url = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type"
 
 * insert MetadataTerminology

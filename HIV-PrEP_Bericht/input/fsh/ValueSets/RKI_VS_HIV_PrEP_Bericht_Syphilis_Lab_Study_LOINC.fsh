@@ -1,7 +1,7 @@
 ValueSet: RKI_VS_HIV_PrEP_Bericht_Syphilis_Lab_Study_LOINC
 Id: RKI-VS-HIV-PrEP-Bericht-Syphilis-Lab-Study-LOINC
 Title: "Syphilis Laboruntersuchung LOINC"
-Description: "Dieses ValueSet beinhaltet Loinc Codes zum Laboruntersuchung Treponema pallidum (Syphilis)."
+Description: "Dieses ValueSet beinhaltet Loinc-Codes zur Laboruntersuchung von Treponema pallidum (Syphilis)."
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Syphilis_Lab_Study_LOINC"
 * insert MetadataTerminology
 * ^date = "2024-09-09"

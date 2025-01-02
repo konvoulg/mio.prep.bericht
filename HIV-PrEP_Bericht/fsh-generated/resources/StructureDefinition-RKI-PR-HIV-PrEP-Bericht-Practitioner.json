@@ -7,7 +7,7 @@
   "title": "RKI_PR_HIV-PrEP_Practitioner",
   "status": "draft",
   "publisher": "Robert Koch Institut",
-  "description": "Dieses Element beschreibt die behandelnde Person. Diese kann einen ärztlichen, aber auch nicht ärztlichen Hintergrund besitzen.",
+  "description": "Dieses Element beschreibt die behandelnde Person. Diese kann einen ärztlichen, aber auch nicht-ärztlichen Hintergrund haben.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

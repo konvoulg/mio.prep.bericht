@@ -1,7 +1,7 @@
 ValueSet: RKI_VS_HIV_PrEP_Bericht_Indication_PrEP_SNOMEDCT
 Id: RKI-VS-HIV-PrEP-Bericht-Indication-PrEP-SNOMEDCT
 Title: "Gender Identity SNOMEDCT"
-Description: "Das ValueSet Gender_Identity_SNOMEDCT enthält die Codes für die verschiedenen Geschlechtsidentitäten"
+Description: "Dieses ValueSet enthält die Codes für die verschiedenen Indikationen für eine HIV-Präexpositionsprophylaxe."
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Indication_PrEP_SNOMEDCT"
 * insert MetadataTerminology
 * ^date = "2024-10-16"

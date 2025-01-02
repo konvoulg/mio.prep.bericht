@@ -1,7 +1,7 @@
 ValueSet: YesNoInformation
 Id: YesNoInformation
 Title: "Answer Yes/No/Unknown/Asked but Declined"
-Description: "Das ValueSet YesOrNoOrNoInformation enthält die Codes für die Antwortenmöglichkeiten Ja, Nein, nicht erhoben und nicht ermittelbar."
+Description: "Das ValueSet YesNoInformation enthält die Codes für die Antwortenmöglichkeiten Ja, Nein, Nicht erhoben und Nicht ermittelbar."
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
 * insert MetadataTerminology
 * ^date = "2024-06-24"

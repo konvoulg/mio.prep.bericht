@@ -2,7 +2,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea
 Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Gonorrhea
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
-Description: "In diesem Profil kann eine Laboruntersuchung der Gonorrhoe Infektion dokumentiert werden."
+Description: "In diesem Profil kann eine Laboruntersuchung einer Gonorrhoe dokumentiert werden."
 
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
 

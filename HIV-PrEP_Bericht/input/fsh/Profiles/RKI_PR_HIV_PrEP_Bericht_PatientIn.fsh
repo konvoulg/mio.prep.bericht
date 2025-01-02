@@ -5,7 +5,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Patient
 Parent: KBV_PR_Base_Patient
 Id: RKI-PR-HIV-PrEP-Bericht-Patient
 Title: "RKI_PR_HIV-PrEP_PatientIn"
-Description: "Dieses Profil beschreibt eine Person, die HIV-Präexpositionsprophylaxe zur Prävention einer HIV-Infektion gemäß § 20j SGB V in Anspruch nimmt."
+Description: "Dieses Profil beschreibt eine Person, die eine Präexpositionsprophylaxe zur Prävention einer HIV-Infektion gemäß § 20j SGB V in Anspruch nimmt."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient"
 
 * insert Meta-Profile

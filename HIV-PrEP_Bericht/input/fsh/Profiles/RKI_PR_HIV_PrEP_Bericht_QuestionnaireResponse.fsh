@@ -3,7 +3,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse
 Parent: QuestionnaireResponse
 Id: RKI-PR-HIV-PrEP-Bericht-QuestionnaireResponse
 Title: "RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse"
-Description: "Hier werden die Antworten zum Fragebogen dokumentiert"
+Description: "Hier werden die Antworten zum Sexualanamnese Fragebogen dokumentiert."
 
 
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse"

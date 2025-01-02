@@ -1,7 +1,7 @@
 ValueSet: RKI_VS_HIV_PrEP_Bericht_Observation_Units_HepatitisB_UCUM
 Id: RKI-VS-HIV-PrEP-Bericht-Observation-Units-HepatitisB-UCUM
 Title: "HepatitisB Units UCUM"
-Description: "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung HepatitisB"
+Description: "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung von Hepatitis B."
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_HepatitisB_UCUM"
 * insert MetadataTerminology
 * ^date = "2024-11-06"

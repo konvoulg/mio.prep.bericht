@@ -5,6 +5,8 @@
 Profile: RKI_PR_HIV_PrEP_Bericht_Immunization
 Parent: Immunization
 Id: RKI-PR-HIV-PrEP-Bericht-Immunization
+Title: "RKI_PR_HIV_PrEP_Bericht_Immunization"
+Description: "Dieses Profil bildet eine Impfung bzw. Verabreichung eines Impfstoffs ab."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
 * insert Meta-Profile
 

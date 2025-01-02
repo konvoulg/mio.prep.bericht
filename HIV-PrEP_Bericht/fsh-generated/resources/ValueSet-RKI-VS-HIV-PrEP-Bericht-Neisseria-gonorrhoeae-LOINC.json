@@ -4,7 +4,7 @@
   "name": "RKI_VS_HIV_PrEP_Bericht_Neisseria_gonorrhoeae_LOINC",
   "id": "RKI-VS-HIV-PrEP-Bericht-Neisseria-gonorrhoeae-LOINC",
   "title": "Neisseria gonorrhoeae Laboruntersuchung LOINC",
-  "description": "Dieses ValueSet beinhaltet LOINC Codes zum Laboruntersuchung Neisseria gonorrhoeae",
+  "description": "Dieses ValueSet beinhaltet LOINC-Codes zur Laboruntersuchung von Neisseria gonorrhoeae.",
   "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Neisseria_gonorrhoeae_Lab_Study_LOINC",
   "version": "0.1.0",
   "experimental": false,

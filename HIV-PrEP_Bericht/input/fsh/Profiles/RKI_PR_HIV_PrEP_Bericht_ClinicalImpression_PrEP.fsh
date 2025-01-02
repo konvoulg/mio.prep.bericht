@@ -3,7 +3,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP
 Parent: ClinicalImpression
 Id: RKI-PR-HIV-PrEP-Bericht-ClinicalImpression-PrEP
 Title: "RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP"
-Description: "Dieses Profil bildet Informationen zur PrEP Anamnese ab."
+Description: "Dieses Profil bildet Informationen zur PrEP-Anamnese ab."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP"
 * insert Meta-Profile
 

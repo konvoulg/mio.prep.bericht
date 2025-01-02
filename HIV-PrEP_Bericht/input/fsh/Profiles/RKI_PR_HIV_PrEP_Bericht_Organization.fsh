@@ -5,7 +5,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Organization
 Parent: KBV_PR_Base_Organization
 Id: RKI-PR-HIV-PrEP-Bericht-Organization
 Title: "RKI_PR_HIV-PrEP_Bericht_Organization"
-Description: "Die Einrichtung beschreibt beispielsweise den Ort, an dem ein Kontakt zwischen der zu behandelnden Person und der leistungserbringenden Person stattfindet (z. B. Praxis)."
+Description: "Die Einrichtung beschreibt beispielsweise den Ort (z.B. Praxis), an dem ein Kontakt zwischen der zu behandelnden Person und der leistungserbringenden Person stattfindet."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization"
 
 * insert Meta-Profile

@@ -7,7 +7,7 @@
   "title": "RKI_PR_HIV-PrEP_PractitionerRole",
   "status": "draft",
   "publisher": "Robert Koch Institut",
-  "description": "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug zu einer Einrichtung beschrieben.",
+  "description": "Hier wird eine (ggf. zeitlich definierte) Rolle einer behandelnden Person in Bezug zu einer Einrichtung beschrieben.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

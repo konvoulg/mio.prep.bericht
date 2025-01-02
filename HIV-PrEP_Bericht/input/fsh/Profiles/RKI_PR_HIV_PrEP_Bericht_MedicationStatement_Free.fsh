@@ -4,7 +4,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free
 Parent: KBV_PR_Base_MedicationStatement
 Id: RKI-PR-HIV-PrEP-Bericht-MedicationStatement-Free
 Title: "RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free"
-Description: "Dieses Profil bildet die Medikationsinformation ab."
+Description: "Dieses Profil bildet die Angaben zur Einnahme bzw. Verabreichung eines bestimmten Arzneimittels ab."
 * ^abstract = true
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free"
 * insert Meta-Profile
