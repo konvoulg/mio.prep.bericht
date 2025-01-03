@@ -18,15 +18,19 @@ Description: "Dieses Profil bildet die Angaben zur Einnahme bzw. Verabreichung e
 * extension[behandlungsziel] ^definition = "Hier können Behandlungsziele erfasst werden, welche durch die Arzneimittelverordnung erreicht werden sollen.\\nDies kann z.B. ein bestimmter INR-Zielbereich bei einer oralen Antikoagulation, ein LDL-Zielbereich bei einer kardiovaskulären Erkrankung oder ein therapeutischer Wirkstoffspiegel sein. Die Referenz soll eine Instanz der Ressource KBV_Base_Treatment_Goal sein."
 * status ^definition = "Hier wird der Status der Medikations-Information angegeben."
 */
-/*
-* meta MS
+
+//* meta MS
 * meta.versionId MS
 * meta.lastUpdated MS
+
+* meta.profile ^mustSupport = true
+/*
 * meta.profile ^slicing.discriminator.type = #value
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
-* meta.profile contains mioProfile 0..*
+* meta.profile contains mioProfile 0..* MS
 */
+* meta.profile[mioProfile] ^mustSupport = true
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP"
 /*
 * text ^definition = "In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
