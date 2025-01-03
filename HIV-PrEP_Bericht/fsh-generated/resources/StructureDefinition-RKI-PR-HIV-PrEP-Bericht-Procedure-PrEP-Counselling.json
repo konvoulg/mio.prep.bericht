@@ -238,6 +238,8 @@
       {
         "id": "Procedure.reasonCode",
         "path": "Procedure.reasonCode",
+        "short": "Beratungspunkte",
+        "definition": "Hier werden die Themen der Beratung dokumentiert",
         "mustSupport": true
       },
       {

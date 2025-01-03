@@ -41,6 +41,8 @@ Description: "Hier werden Begegnungen bzw. Aufenthalte mit Interaktionen zwische
 * class.userSelected ..0
 //* classHistory ..0
 * type 1.. MS
+* type ^short = "Typ der Begegnung"
+* type ^definition = "Hier wird der Typ der Begegnung angegeben. Im Rahmen des HIV PrEP werden nach EBM drei begegnugstypen unterschieden: Beratung, Einleitung und Kontrolle."
 * type.coding 1..1 MS
 * type.coding from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Encounter_Type (required)
 * type.coding.code 1..1 MS

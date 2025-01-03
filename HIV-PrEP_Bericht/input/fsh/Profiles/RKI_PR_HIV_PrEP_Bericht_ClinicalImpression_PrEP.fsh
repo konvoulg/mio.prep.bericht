@@ -14,7 +14,7 @@ Description: "Dieses Profil bildet Informationen zur PrEP-Anamnese ab."
 //* meta.versionId ..0
 //* meta.lastUpdated ..0
 //* meta.source ..0
-* meta.profile 0..*
+* meta.profile 0..* MS
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP"
 //* meta.security ..0
 //* meta.tag ..0
@@ -57,15 +57,20 @@ Description: "Dieses Profil bildet Informationen zur PrEP-Anamnese ab."
 //* assessor.display ..0
 //* previous ..0
 * problem MS
+* problem ^short = "Allergien und Unverträglichkeiten und Anamnestische Diagnosen"
+* problem ^definition = "Hier werden die Allergien und Unverträglichkeiten und anamnestischen Diagnosen referenziert."
 * problem only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present)
 * investigation MS
 * investigation.code MS
+* investigation.code.coding MS
 * investigation.code.coding = $sct#84100007 "Anamneseerhebung"
 * investigation.code.coding.system 1.. MS
 * investigation.code.coding.version 1.. MS
 * investigation.code.coding.code 1.. MS
 * investigation.code.coding.display 1.. MS
 * investigation.item MS 
+* investigation.item ^short = "Beobachtungen"
+* investigation.item ^definition = "Hier werden die Beobachtungen zur Schwangerschaftsstatus, Körpergewicht und zur Sexualanamnese referenziert."	
 * investigation.item only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse)
 * investigation.item.reference 1.. MS
 //* protocol ..0
@@ -73,6 +78,8 @@ Description: "Dieses Profil bildet Informationen zur PrEP-Anamnese ab."
 * finding MS
 * finding.itemCodeableConcept ..0
 * finding.itemReference 1.. MS
+* finding.itemReference ^short = "Indikation zur HIV PrEP"
+* finding.itemReference ^definition = "Hier wird die Indikation zur HIV PrEP referenziert."
 * finding.itemReference only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication)
 * finding.itemReference.reference 1.. MS
 //* finding.itemReference.type ..0

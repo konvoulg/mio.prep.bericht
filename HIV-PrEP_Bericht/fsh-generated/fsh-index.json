@@ -277,7 +277,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP.fsh",
     "startLine": 2,
-    "endLine": 77
+    "endLine": 84
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Composition.json",
@@ -317,7 +317,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Encounter_General.fsh",
     "startLine": 1,
-    "endLine": 99
+    "endLine": 101
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Immunization.json",
@@ -493,7 +493,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling.fsh",
     "startLine": 3,
-    "endLine": 92
+    "endLine": 94
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Initiation.json",
@@ -661,7 +661,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT.fsh",
     "startLine": 1,
-    "endLine": 26
+    "endLine": 25
   },
   {
     "outputFile": "ValueSet-YesNoInformation.json",

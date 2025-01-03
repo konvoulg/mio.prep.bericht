@@ -81,6 +81,8 @@ Description: "Hier wird eine HIV-PrEP-Beratung dokumentiert."
 //* performer.onBehalfOf ..0
 //* location ..0
 * reasonCode MS
+* reasonCode ^short = "Beratungspunkte"
+* reasonCode ^definition = "Hier werden die Themen der Beratung dokumentiert"
 * reasonCode.coding 1..1 MS
 * reasonCode.coding from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Counselling_SNOMEDCT (extensible)
 * reasonCode.coding.system 1.. MS

@@ -53,7 +53,8 @@
       {
         "id": "ClinicalImpression.meta.profile",
         "path": "ClinicalImpression.meta.profile",
-        "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP"
+        "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP",
+        "mustSupport": true
       },
       {
         "id": "ClinicalImpression.text.status",
@@ -190,6 +191,8 @@
       {
         "id": "ClinicalImpression.problem",
         "path": "ClinicalImpression.problem",
+        "short": "Allergien und Unverträglichkeiten und Anamnestische Diagnosen",
+        "definition": "Hier werden die Allergien und Unverträglichkeiten und anamnestischen Diagnosen referenziert.",
         "type": [
           {
             "code": "Reference",
@@ -218,7 +221,8 @@
           "code": "84100007",
           "system": "http://snomed.info/sct",
           "display": "Anamneseerhebung"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "ClinicalImpression.investigation.code.coding.system",
@@ -247,6 +251,8 @@
       {
         "id": "ClinicalImpression.investigation.item",
         "path": "ClinicalImpression.investigation.item",
+        "short": "Beobachtungen",
+        "definition": "Hier werden die Beobachtungen zur Schwangerschaftsstatus, Körpergewicht und zur Sexualanamnese referenziert.",
         "type": [
           {
             "code": "Reference",
@@ -283,6 +289,8 @@
       {
         "id": "ClinicalImpression.finding.itemReference",
         "path": "ClinicalImpression.finding.itemReference",
+        "short": "Indikation zur HIV PrEP",
+        "definition": "Hier wird die Indikation zur HIV PrEP referenziert.",
         "min": 1,
         "type": [
           {
