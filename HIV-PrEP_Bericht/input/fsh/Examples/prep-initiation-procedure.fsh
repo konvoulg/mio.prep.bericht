@@ -17,7 +17,7 @@ Usage: #example
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
-* subject.identifier.value = "1234"
+* subject.identifier.value = "X123456789"
 
 * encounter.reference = "urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c58fe"
 

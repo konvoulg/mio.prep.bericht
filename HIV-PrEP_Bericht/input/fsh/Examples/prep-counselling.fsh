@@ -21,7 +21,7 @@ Usage: #example
 
 * performer.actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8113"
 * performer.actor.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
-* performer.actor.identifier.value = "543210"
+* performer.actor.identifier.value = "123456789"
 
 * reasonCode.coding.system = "http://snomed.info/sct"
 * reasonCode.coding.version = "http://snomed.info/sct/11000274103/version/20241115"

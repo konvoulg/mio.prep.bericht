@@ -7,7 +7,7 @@ Usage: #example
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient|0.1.0"
 
 * identifier[0].system = "http://fhir.de/sid/gkv/kvid-10"
-* identifier[0].value = "G123456789"
+* identifier[0].value = "X123456789"
 * identifier[0].type.coding[0].system = "http://fhir.de/CodeSystem/identifier-type-de-basis"
 * identifier[0].type.coding[0].code = #GKV
 * identifier[0].type.coding[0].display = "Gesetzliche Krankenversicherung"
