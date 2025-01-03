@@ -33,6 +33,6 @@ Usage: #example
 
 
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.version = "0.1.0"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * valueCodeableConcept.coding.code = #260385009
 * valueCodeableConcept.coding.display = "Negative (qualifier value)"
