@@ -3,25 +3,19 @@
   "id": "4f0fdac3-335a-4907-a6da-d072dff0c75a",
   "meta": {
     "profile": [
-      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance|0.1.0"
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance"
     ]
   },
   "code": {
     "coding": [
       {
         "version": "http://snomed.info/sct/11000274103/version/20231115",
-        "code": "227493005",
+        "code": "372478003",
         "system": "http://snomed.info/sct",
-        "display": "Cashew nut (substance)"
-      },
-      {
-        "version": "1.4.0",
-        "code": "11849",
-        "system": "http://fhir.de/CodeSystem/ask",
-        "display": "ausgedacht"
+        "display": "Doxycyclin"
       }
     ],
-    "text": "Cashewnüsse"
+    "text": "Doxycyclin"
   },
   "extension": [
     {
