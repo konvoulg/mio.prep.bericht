@@ -17,7 +17,7 @@ Usage: #example
 * category = $secondary-finding#laboratory
 
 * code.coding[loinc].system = "http://loinc.org"
-* code.coding[loinc].version = "1.0.0"
+* code.coding[loinc].version = "2.73"
 * code.coding[loinc].code = #77140-2
 * code.coding[loinc].display = "Creatinine [Moles/volume] in Serum, Plasma or Blood"
 

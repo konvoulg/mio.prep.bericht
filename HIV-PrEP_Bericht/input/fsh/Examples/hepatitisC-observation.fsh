@@ -17,7 +17,7 @@ Usage: #example
 * category = $secondary-finding#laboratory
 
 * code.coding[loinc].system = "http://loinc.org"
-* code.coding[loinc].version = "1.0.0"
+* code.coding[loinc].version = "2.73"
 * code.coding[loinc].code = #11259-9
 * code.coding[loinc].display = "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
 
@@ -32,6 +32,6 @@ Usage: #example
 */
 
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.version = "0.1.0"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * valueCodeableConcept.coding.code = #260385009
 * valueCodeableConcept.coding.display = "Negative (qualifier value)"

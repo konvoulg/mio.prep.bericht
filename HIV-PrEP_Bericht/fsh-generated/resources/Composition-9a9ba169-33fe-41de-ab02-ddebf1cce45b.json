@@ -45,7 +45,7 @@
             "code": "1003642006",
             "system": "http://snomed.info/sct",
             "display": "Past medical history section (record artifact)",
-            "version": "4.0.1"
+            "version": "http://snomed.info/sct/900000000000207008/version/20241130"
           }
         ]
       },
@@ -63,7 +63,7 @@
             "code": "409063005",
             "system": "http://snomed.info/sct",
             "display": "Counseling (procedure)",
-            "version": "4.0.1"
+            "version": "http://snomed.info/sct/900000000000207008/version/20241130"
           }
         ]
       },
@@ -197,7 +197,7 @@
             "code": "713404003",
             "system": "http://snomed.info/sct",
             "display": "Vaccination given (situation)",
-            "version": "4.0.1"
+            "version": "http://snomed.info/sct/900000000000207008/version/20241130"
           }
         ]
       },

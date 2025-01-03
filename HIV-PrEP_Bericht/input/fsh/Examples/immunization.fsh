@@ -27,7 +27,7 @@ Usage: #example
 * protocolApplied.targetDisease.coding.system = "http://snomed.info/sct"
 * protocolApplied.targetDisease.coding.code = #66071002
 * protocolApplied.targetDisease.coding.display = "Viral hepatitis type B (disorder)"
-* protocolApplied.targetDisease.coding.version = "1.2.0" 
+* protocolApplied.targetDisease.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130" 
 * protocolApplied.doseNumberString = "1 of 3"
 
 * note[hinweis].text = "Bei einer ungewöhnlichen Impfreaktion sollte die impfende ärztliche Person benachrichtigt werden. Die ärztlich tätige Person hat, wenn der Verdacht einer gesundheitlichen Schädigung besteht, die über das übliche Ausmaß einer Impfreaktion hinaus geht verpflichtet, den Verdacht dem zuständigen Gesundheitsamt namentlich zu melden (§ 6 Absatz 1 Nr 3 des lnfektionsschutzgesetzes • lfSG) Im Falle eines Impfschadens besteht unter den Voraussetzungen des § 60 Absatz 1 lfSG ein Anspruch auf Entschädigung in entsprechender Anwendung der Vorschriften des Bundesversorgungsgesetzes. Der Antrag ist bei der für die Durchführung des Bundesversorgungsgesetzes zuständigen Behörde (§ 64 Absatz 1 lfSG, i.d.R. 'Versorgungsamt') zu stellen. Weitere Auskünfte erteilt das zuständige Gesundheitsamt."

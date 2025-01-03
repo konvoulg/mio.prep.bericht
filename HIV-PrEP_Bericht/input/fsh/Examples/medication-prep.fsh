@@ -8,7 +8,7 @@ Usage: #example
 * status = #active
 
 * code.coding[atc-de].system = "http://fhir.de/CodeSystem/bfarm/atc"
-* code.coding[atc-de].version = "0.1.0"
+* code.coding[atc-de].version = "2024"
 * code.coding[atc-de].display = "Tenofovirdisoproxil und Emtricitabin"
 * code.coding[atc-de].code = #J05AR03
 

@@ -26,7 +26,7 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "version": "1.0.0",
+        "version": "2.73",
         "code": "11259-9",
         "display": "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
       }
@@ -44,7 +44,7 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "version": "0.1.0",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241130",
         "code": "260385009",
         "display": "Negative (qualifier value)"
       }

@@ -17,7 +17,7 @@ Usage: #example
 * category = $secondary-finding#laboratory
 
 * code.coding[loinc].system = "http://loinc.org"
-* code.coding[loinc].version = "1.0.0"
+* code.coding[loinc].version = "2.73"
 * code.coding[loinc].code = #43304-5
 * code.coding[loinc].display = "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection"
 
@@ -32,6 +32,6 @@ Usage: #example
 */
 
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.version = "0.1.0"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * valueCodeableConcept.coding.code = #10828004
 * valueCodeableConcept.coding.display = "Positive (qualifier value)"

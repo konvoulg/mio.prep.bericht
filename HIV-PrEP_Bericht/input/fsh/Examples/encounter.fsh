@@ -12,7 +12,7 @@ Usage: #example
 * status = #finished
 
 * type.coding.system = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type"
-* type.coding.version = "0.1.0"
+* type.coding.version = "1.0.0"
 * type.coding.code = #01921
 * type.coding.display = "Einleitung der Präexpositionsprophylaxe"
 

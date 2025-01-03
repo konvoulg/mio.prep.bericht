@@ -30,14 +30,14 @@ Usage: #example
 
 * section[anamnese].title = "Anamnese"
 * section[anamnese].code.coding.system = "http://snomed.info/sct"
-* section[anamnese].code.coding.version = "4.0.1"
+* section[anamnese].code.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * section[anamnese].code.coding.code = #1003642006
 * section[anamnese].code.coding.display = "Past medical history section (record artifact)"
 * section[anamnese].entry = Reference(urn:uuid:bb5004d3-251a-4cd2-8ba1-973279777537)
 
 * section[beratung].title = "HIV PrEP Beratung"
 * section[beratung].code.coding.system = "http://snomed.info/sct"
-* section[beratung].code.coding.version = "4.0.1"
+* section[beratung].code.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * section[beratung].code.coding.code = #409063005
 * section[beratung].code.coding.display = "Counseling (procedure)"
 * section[beratung].entry = Reference(urn:uuid:9a8ba8af-39a4-497b-bbeb-47f97b7d955d)
@@ -90,7 +90,7 @@ Usage: #example
 
 * section[immunisierungen].title = "Immunisierungen"
 * section[immunisierungen].code.coding.system = "http://snomed.info/sct"
-* section[immunisierungen].code.coding.version = "4.0.1"
+* section[immunisierungen].code.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * section[immunisierungen].code.coding.code = #713404003
 * section[immunisierungen].code.coding.display = "Vaccination given (situation)"
 * section[immunisierungen].entry = Reference(urn:uuid:f8e1b41b-2828-49ff-8038-5636e9f2d0cd)
