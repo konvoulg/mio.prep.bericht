@@ -30,15 +30,15 @@ Description: "Hier werden Begegnungen bzw. Aufenthalte mit Interaktionen zwische
 //* statusHistory ..0
 
 * class MS
-* class.system 1..
+* class.system 1.. MS
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode" (exactly)
-* class.version 1..
+* class.version 1.. MS
 * class.version = "2.0.0" (exactly)
-* class.code 1..
+* class.code 1.. MS
 * class.code = #AMB (exactly)
-* class.display 1..
+* class.display 1.. MS
 * class.display = "ambulatory" (exactly)
-//* class.userSelected ..0
+* class.userSelected ..0
 //* classHistory ..0
 * type 1.. MS
 * type.coding 1..1 MS

@@ -123,6 +123,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung einer Chlamydia-Trach
 * valueQuantity 0..1
 //* valueQuantity = $unitsofmeasure#mL/min/{1.73_m2} "milliliter per minute per 1.73 square meter"
 */
+* valueQuantity MS
 * valueQuantity from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Chlamydia_UCUM (required)
 /*
 * valueQuantity ^definition = "Hier wird das Messergebnis als quantitativer Wert abgebildet."
