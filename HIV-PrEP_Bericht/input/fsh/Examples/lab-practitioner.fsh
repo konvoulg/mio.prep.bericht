@@ -18,7 +18,7 @@ Usage: #example
 * name[name].prefix = "Dr."
 
 * telecom.system = #phone
-* telecom.value = "+49 01234548599"
+* telecom.value = "+4901234548599"
 
 * address[Strassenanschrift].line = "Einestraße 10"
 * address[Strassenanschrift].line.extension[Strasse].valueString = "Einestraße"

@@ -19,7 +19,7 @@ Usage: #example
 * type.coding[HL7-Fachschluesselgruppe-erweitert].display = "Urologie"
 
 * telecom.system = #phone
-* telecom.value = "+49 0123456789"
+* telecom.value = "+490123456789"
 
 * address.line = "Einestraße 5"
 * address[Strassenanschrift].line.extension[Strasse].valueString = "Einestraße"

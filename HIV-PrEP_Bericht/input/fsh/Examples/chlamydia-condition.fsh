@@ -24,7 +24,7 @@ Usage: #example
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X123456789"
 
-* onsetDateTime = "2017-01-01"
+* onsetDateTime = "2017-01-01T09:00:00+08:00"
 
 * clinicalStatus.coding = $con-clinical#active "Active"
 * clinicalStatus.coding.version = "3.0.0"
@@ -32,4 +32,4 @@ Usage: #example
 * verificationStatus.coding.version = "4.0.1"
 
 
-* recordedDate = "2017-01-01"
+* recordedDate = "2017-02-01"
