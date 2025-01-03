@@ -13,6 +13,10 @@ Usage: #example
 * vaccineCode.coding[snomed_CT].display = "Rekombinanter Hepatitis B-Impfstoff (adsorbiert) - Erwachsene (Engerix B Erwachsene, HBVaxPro - Erwachsene)"
 * vaccineCode.coding[snomed_CT].version = "1.2.0"
 * vaccineCode.text = "snomed_CT"
+* vaccineCode.coding[atc].system = "http://fhir.de/CodeSystem/dimdi/atc"
+* vaccineCode.coding[atc].version = "2025"
+* vaccineCode.coding[atc].code = #J07BC01
+* vaccineCode.coding[atc].display = "Hepatitis B, gereinigtes Antigen"
 
 * patient.reference = "4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"  // Reference to the Patient resource
 
