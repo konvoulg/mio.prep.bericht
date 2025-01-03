@@ -19,7 +19,7 @@ Description: "Die Einrichtung beschreibt beispielsweise den Ort (z.B. Praxis), a
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains mioProfile 0..* and vzdProfile 0..1
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0"
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization"
 * meta.profile[vzdProfile] = "https://gematik.de/fhir/directory/StructureDefinition/OrganizationDirectory"
 
 //* implicitRules ..0
