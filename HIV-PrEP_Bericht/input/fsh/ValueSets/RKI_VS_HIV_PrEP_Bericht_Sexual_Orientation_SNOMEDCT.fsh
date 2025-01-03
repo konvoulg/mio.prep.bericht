@@ -17,6 +17,8 @@ Description: "Das ValueSet Sexual_Orientation_SNOMEDCT enthält die Codes für d
 * $sct#38628009 "Homosexual (finding)"
 * $sct#38628009 ^designation.language = #de-DE
 * $sct#38628009 ^designation.value = "homosexuell"
+* $sct#1332083003 "Transgender male"
+* $sct#1332082008 "Transgender female"
 
 * $v3-NullFlavor#OTH "other"
 * $v3-NullFlavor#UNK "unknown"
