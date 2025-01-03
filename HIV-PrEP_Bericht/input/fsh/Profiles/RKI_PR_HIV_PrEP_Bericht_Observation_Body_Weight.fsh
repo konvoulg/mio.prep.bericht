@@ -77,10 +77,14 @@ Description: "Dieses Profil bildet das Körpergewicht ab."
 */
 * value[x] MS
 * valueQuantity MS
-* valueQuantity.value MS
-* valueQuantity.unit MS
-* valueQuantity.system MS
-* valueQuantity.code MS
+* valueQuantity ^definition = "Hier wird der gemessene Wert des Körpermaßes angegeben."
+* valueQuantity from http://fhir.de/ValueSet/VitalSignDE_Body_Weigth_UCUM (required)
+* valueQuantity.value 1..1 MS
+* valueQuantity.unit 1..1 MS
+* valueQuantity.system 1..1 MS
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code 1..1 MS
+* valueQuantity.code from http://fhir.de/ValueSet/UcumVitalsCommonDE (required)
 
 * note MS
 * note.author[x] MS
