@@ -44,6 +44,7 @@ Description: "Hier wird eine HIV-PrEP-Beratung dokumentiert."
 * code.coding[snomed].code 1.. MS
 * code.coding[snomed].code = $sct#409063005 "Beratung"
 * code.coding[snomed].display 1.. MS
+* code.coding[snomed].display = "Beratung"
 * code.coding[snomed].userSelected ..0
 //* code.text ..0
 * subject only Reference($PrEPatient)
