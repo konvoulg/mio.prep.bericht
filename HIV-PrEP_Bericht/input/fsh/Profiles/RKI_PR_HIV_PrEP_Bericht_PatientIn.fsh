@@ -146,8 +146,8 @@ Description: "Dieses Profil beschreibt eine Person, die eine Präexpositionsprop
 //* telecom.period ..0
 
 //Geschlechtsidentität Extension aus hl7.fhir.us.core
-* extension contains $extGenderIdentity named Geschlechtsidentitaet 0..1 MS
-
+* extension contains http://hl7.org/fhir/StructureDefinition/patient-genderIdentity named Geschlechtsidentitaet 0..1 MS
+* extension[Geschlechtsidentitaet].valueCodeableConcept from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Gender_Identity_SNOMEDCT (required)
 
 * gender MS
 * gender.extension ^min = 0
