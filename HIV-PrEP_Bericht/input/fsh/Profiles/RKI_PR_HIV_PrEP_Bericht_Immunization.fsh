@@ -56,8 +56,8 @@ Description: "Dieses Profil bildet eine Impfung bzw. Verabreichung eines Impfsto
 * vaccineCode.coding[snomed_CT].system 1.. MS
 * vaccineCode.coding[snomed_CT].system = "http://snomed.info/sct" (exactly)
 * vaccineCode.coding[snomed_CT].version 1.. MS
-* vaccineCode.coding[snomed_CT].code 1..
-* vaccineCode.coding[snomed_CT].display 1..
+* vaccineCode.coding[snomed_CT].code 1.. MS
+* vaccineCode.coding[snomed_CT].display 1.. MS 
 /*
 * vaccineCode.coding[snomed_CT].display.extension ^slicing.discriminator.type = #value
 * vaccineCode.coding[snomed_CT].display.extension ^slicing.discriminator.path = "url"
@@ -68,11 +68,11 @@ Description: "Dieses Profil bildet eine Impfung bzw. Verabreichung eines Impfsto
 * vaccineCode.coding[atc] from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_ATC|1.1.0 (required)
 * vaccineCode.coding[atc] ^short = "ATC"
 * vaccineCode.coding[atc] ^definition = "Bezeichnung des Impfstoffs oder des Kombinationsimpfstoffes als Anatomisch-Therapeutisch-Chemische Klassifikation samt ATC-Code des Impfstoffs oder Kombinationsimpfstoffes. Grundlage ist die amtliche Fassung des ATC-Index für Deutschland (DIMDI). Es sind alle ATC-Codes aus der amtlichen Fassung des ATC-Index gelistet, unabhängig von deren Marktverfügbarkeit."
-* vaccineCode.coding[atc].system 1..
-* vaccineCode.coding[atc].system = "http://fhir.de/CodeSystem/dimdi/atc" (exactly)
-* vaccineCode.coding[atc].version 1..
-* vaccineCode.coding[atc].code 1..
-* vaccineCode.coding[atc].display 1..
+* vaccineCode.coding[atc].system 1.. MS
+* vaccineCode.coding[atc].system = "http://fhir.de/CodeSystem/dimdi/atc"
+* vaccineCode.coding[atc].version 1.. MS
+* vaccineCode.coding[atc].code 1.. MS
+* vaccineCode.coding[atc].display 1.. MS
 * vaccineCode.coding[atc].userSelected ..0
 * vaccineCode.coding[pharmazentralnummer_pzn] ^definition = "8-stellige Pharmazentralnummer (PZN) des Fertigarzneimittels (Impfstoffs). Die PZN definiert ein Fertigarzneimittel eindeutig."
 * vaccineCode.coding[pharmazentralnummer_pzn].system 1.. MS
@@ -91,12 +91,12 @@ Description: "Dieses Profil bildet eine Impfung bzw. Verabreichung eines Impfsto
 * patient.display ..0
 * encounter only Reference($PrEPEncounter)
 * occurrence[x] MS
-* occurrence[x] ^slicing.discriminator.type = #type
-* occurrence[x] ^slicing.discriminator.path = "$this"
-* occurrence[x] ^slicing.rules = #open
+//* occurrence[x] ^slicing.discriminator.type = #type
+//* occurrence[x] ^slicing.discriminator.path = "$this"
+//* occurrence[x] ^slicing.rules = #open
 * occurrenceDateTime 1.. MS
 * occurrenceDateTime only dateTime
-* occurrenceDateTime ^sliceName = "occurrenceDateTime"
+//* occurrenceDateTime ^sliceName = "occurrenceDateTime"
 * occurrenceDateTime ^short = "Datum der Schutzimpfung"
 * occurrenceDateTime ^definition = "Im Anwendungsszenario \"Daten eintragen\" entspricht es dem Datum, an dem die Impfung durchgeführt wurde.\n\nIm Anwendungsszenario \"Daten nach- oder übertragen\" entspricht es dem Datum oder einer gröberen Angabe der Zeit bzw. des Zeitraums einer zurückliegenden Impfung, die im Impfpass nachgetragen wird. Wird eine abgeschlossene Grundimmunisierung übertragen, so sollte das Datum der Gabe der letzten Dosis dokumentiert werden."
 * recorded ..0
@@ -129,7 +129,7 @@ Description: "Dieses Profil bildet eine Impfung bzw. Verabreichung eines Impfsto
 * note ^definition = "In diesem Element wird der Hinweis und die Anmerkungen zur durchgeführten Impfung eingetragen werden."
 * note.author[x] ..0
 * note.time ..0
-* note contains hinweis 1..1
+* note contains hinweis 1..1 MS
 * note[hinweis].author[x] ..0
 * note[hinweis].time ..0
 * note[hinweis].text = "Bei einer ungewöhnlichen Impfreaktion sollte die impfende ärztliche Person benachrichtigt werden. Die ärztlich tätige Person hat, wenn der Verdacht einer gesundheitlichen Schädigung besteht, die über das übliche Ausmaß einer Impfreaktion hinaus geht verpflichtet, den Verdacht dem zuständigen Gesundheitsamt namentlich zu melden (§ 6 Absatz 1 Nr 3 des lnfektionsschutzgesetzes • lfSG) Im Falle eines Impfschadens besteht unter den Voraussetzungen des § 60 Absatz 1 lfSG ein Anspruch auf Entschädigung in entsprechender Anwendung der Vorschriften des Bundesversorgungsgesetzes. Der Antrag ist bei der für die Durchführung des Bundesversorgungsgesetzes zuständigen Behörde (§ 64 Absatz 1 lfSG, i.d.R. 'Versorgungsamt') zu stellen. Weitere Auskünfte erteilt das zuständige Gesundheitsamt." (exactly)
