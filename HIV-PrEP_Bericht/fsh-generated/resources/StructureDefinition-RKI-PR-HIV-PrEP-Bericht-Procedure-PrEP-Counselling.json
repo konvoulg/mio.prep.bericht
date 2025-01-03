@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Counselling",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling",
   "title": "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling",
   "status": "draft",
@@ -103,6 +103,7 @@
       {
         "id": "Procedure.code.coding:snomed.display",
         "path": "Procedure.code.coding.display",
+        "patternString": "Beratung",
         "mustSupport": true
       },
       {

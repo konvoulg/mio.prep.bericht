@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Initiation",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation",
   "title": "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Initiation",
   "status": "draft",

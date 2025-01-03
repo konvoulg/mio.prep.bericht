@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Chlamydia",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis",
   "title": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis",
   "status": "draft",
@@ -95,6 +95,7 @@
             "code": "Quantity"
           }
         ],
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Chlamydia_UCUM"

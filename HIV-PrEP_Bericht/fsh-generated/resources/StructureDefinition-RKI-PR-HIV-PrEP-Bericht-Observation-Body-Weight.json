@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight",
   "title": "RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight",
   "status": "draft",
@@ -132,12 +132,25 @@
         "id": "Observation.value[x]:valueQuantity",
         "path": "Observation.value[x]",
         "sliceName": "valueQuantity",
+        "definition": "Hier wird der gemessene Wert des Körpermaßes angegeben.",
         "type": [
           {
             "code": "Quantity"
           }
         ],
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/ValueSet/VitalSignDE_Body_Weigth_UCUM"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/ValueSet/UcumVitalsCommonDE"
+        }
       },
       {
         "id": "Observation.note.author[x]:authorReference",

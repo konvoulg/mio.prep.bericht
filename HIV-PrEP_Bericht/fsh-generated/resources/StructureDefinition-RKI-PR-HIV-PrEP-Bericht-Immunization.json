@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-Immunization",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Immunization",
   "title": "RKI_PR_HIV_PrEP_Bericht_Immunization",
   "status": "draft",
@@ -188,12 +188,14 @@
       {
         "id": "Immunization.vaccineCode.coding:snomed_CT.code",
         "path": "Immunization.vaccineCode.coding.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Immunization.vaccineCode.coding:snomed_CT.display",
         "path": "Immunization.vaccineCode.coding.display",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Immunization.vaccineCode.coding:snomed_CT.userSelected",
@@ -218,22 +220,26 @@
         "id": "Immunization.vaccineCode.coding:atc.system",
         "path": "Immunization.vaccineCode.coding.system",
         "min": 1,
-        "fixedUri": "http://fhir.de/CodeSystem/dimdi/atc"
+        "patternUri": "http://fhir.de/CodeSystem/dimdi/atc",
+        "mustSupport": true
       },
       {
         "id": "Immunization.vaccineCode.coding:atc.version",
         "path": "Immunization.vaccineCode.coding.version",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Immunization.vaccineCode.coding:atc.code",
         "path": "Immunization.vaccineCode.coding.code",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Immunization.vaccineCode.coding:atc.display",
         "path": "Immunization.vaccineCode.coding.display",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Immunization.vaccineCode.coding:atc.userSelected",
@@ -344,6 +350,7 @@
               "path": "$this"
             }
           ],
+          "ordered": false,
           "rules": "open"
         },
         "mustSupport": true
@@ -474,7 +481,8 @@
         "path": "Immunization.note",
         "sliceName": "hinweis",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Immunization.note:hinweis.text",

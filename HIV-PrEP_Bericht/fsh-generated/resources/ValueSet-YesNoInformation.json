@@ -6,7 +6,7 @@
   "title": "Answer Yes/No/Unknown/Asked but Declined",
   "description": "Das ValueSet YesNoInformation enthält die Codes für die Antwortenmöglichkeiten Ja, Nein, Nicht erhoben und Nicht ermittelbar.",
   "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [

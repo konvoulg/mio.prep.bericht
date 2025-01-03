@@ -77,7 +77,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\immunization.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 33
   },
   {
     "outputFile": "Medication-5a27bacd-1db6-43c8-8fad-18b898a29473.json",
@@ -357,7 +357,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP.fsh",
     "startLine": 3,
-    "endLine": 155
+    "endLine": 159
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight.json",
@@ -365,7 +365,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight.fsh",
     "startLine": 3,
-    "endLine": 94
+    "endLine": 98
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Chlamydia.json",
@@ -373,7 +373,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis.fsh",
     "startLine": 1,
-    "endLine": 289
+    "endLine": 290
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Creatinine.json",
@@ -405,7 +405,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea.fsh",
     "startLine": 1,
-    "endLine": 65
+    "endLine": 154
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HIV.json",
@@ -413,7 +413,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV.fsh",
     "startLine": 1,
-    "endLine": 289
+    "endLine": 290
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisB.json",
@@ -421,7 +421,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB.fsh",
     "startLine": 1,
-    "endLine": 289
+    "endLine": 290
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisC.json",
@@ -429,7 +429,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC.fsh",
     "startLine": 1,
-    "endLine": 289
+    "endLine": 290
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis.json",
@@ -437,7 +437,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_laboratory_Study_Syphilis.fsh",
     "startLine": 1,
-    "endLine": 289
+    "endLine": 290
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-PrEP-Indication.json",
@@ -453,7 +453,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy.fsh",
     "startLine": 3,
-    "endLine": 94
+    "endLine": 97
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Organization.json",
@@ -485,7 +485,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_PractitionerRole.fsh",
     "startLine": 4,
-    "endLine": 74
+    "endLine": 75
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Counselling.json",
@@ -493,7 +493,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling.fsh",
     "startLine": 3,
-    "endLine": 91
+    "endLine": 92
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Initiation.json",
@@ -640,6 +640,14 @@
     "endLine": 13
   },
   {
+    "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Pregnancy-Status-LOINC.json",
+    "fshName": "RKI_VS_HIV_PrEP_Bericht_Pregnancy_Status_LOINC",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Pregnancy_Status_LOINC.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
     "outputFile": "ValueSet-RKI-VS-HIV-PrEP-Bericht-Syphilis-Lab-Study-LOINC.json",
     "fshName": "RKI_VS_HIV_PrEP_Bericht_Syphilis_Lab_Study_LOINC",
     "fshType": "ValueSet",
@@ -653,7 +661,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 26
   },
   {
     "outputFile": "ValueSet-YesNoInformation.json",

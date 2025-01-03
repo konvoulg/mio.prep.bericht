@@ -6,7 +6,7 @@
   "title": "HIV PrEP Begegnungstyp",
   "description": "Das ValueSet HIV_PrEP_Encounter_Type enthält die Codes für die Art der Begegnungen im Rahmen der HIV-PrEP-Versorgung.",
   "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Encounter_Type",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [

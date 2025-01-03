@@ -6,29 +6,13 @@
       "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP"
     ]
   },
-  "identifier": [
-    {
-      "type": {
-        "coding": [
-          {
-            "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_EMP_Identifier_Type",
-            "version": "1.0.0",
-            "code": "zeilenid",
-            "display": "Zeilen-ID"
-          }
-        ]
-      },
-      "system": "urn:ietf:rfc:3986",
-      "value": "1234567"
-    }
-  ],
   "medicationReference": {
     "reference": "urn:uuid:5a27bacd-1db6-43c8-8fad-18b898a29473"
   },
   "subject": {
     "identifier": {
       "system": "http://fhir.de/sid/gkv/kvid-10",
-      "value": "1234"
+      "value": "X123456789"
     },
     "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
   },

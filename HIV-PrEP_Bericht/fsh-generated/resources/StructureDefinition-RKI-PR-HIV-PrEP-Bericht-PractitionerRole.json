@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-PractitionerRole",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_PractitionerRole",
   "title": "RKI_PR_HIV-PrEP_PractitionerRole",
   "status": "draft",
@@ -92,7 +92,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner|0.1.0"
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
             ]
           }
         ],
@@ -129,7 +129,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0"
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization"
             ]
           }
         ],
@@ -204,7 +204,8 @@
       {
         "id": "PractitionerRole.code.coding:RolleDerEinrichtung",
         "path": "PractitionerRole.code.coding",
-        "sliceName": "RolleDerEinrichtung"
+        "sliceName": "RolleDerEinrichtung",
+        "mustSupport": true
       },
       {
         "id": "PractitionerRole.code.coding:RolleDerEinrichtung.system",

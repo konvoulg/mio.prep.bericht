@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-Organization",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Organization",
   "title": "RKI_PR_HIV-PrEP_Bericht_Organization",
   "status": "draft",
@@ -73,7 +73,7 @@
         "sliceName": "mioProfile",
         "min": 0,
         "max": "*",
-        "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0"
+        "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization"
       },
       {
         "id": "Organization.meta.profile:vzdProfile",

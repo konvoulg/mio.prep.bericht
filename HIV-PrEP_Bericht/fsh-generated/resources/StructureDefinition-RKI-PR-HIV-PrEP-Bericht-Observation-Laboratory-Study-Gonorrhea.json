@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Gonorrhea",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea",
   "title": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea",
   "status": "draft",
@@ -84,6 +84,25 @@
         "binding": {
           "strength": "extensible",
           "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Neisseria_gonorrhoeae_Lab_Study_LOINC"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed_CT",
+        "path": "Observation.value[x].coding",
+        "sliceName": "snomed_CT",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT"
         }
       }
     ]

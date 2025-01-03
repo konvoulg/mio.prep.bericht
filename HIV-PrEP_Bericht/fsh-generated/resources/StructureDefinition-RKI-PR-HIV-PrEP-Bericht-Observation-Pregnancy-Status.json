@@ -91,6 +91,11 @@
         "definition": "Der Code in diesem Abschnitt beschreibt das Konzept \"Schwangerschaftsstatus\"."
       },
       {
+        "id": "Observation.code.coding:loinc.code",
+        "path": "Observation.code.coding.code",
+        "patternCode": "82810-3"
+      },
+      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
         "min": 1
@@ -109,6 +114,7 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"
@@ -120,12 +126,21 @@
         "path": "Observation.value[x]",
         "sliceName": "valueCodeableConcept",
         "definition": "Hier wird angeben, ob eine Schwangerschaft vorliegt.",
+        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.coding",
+        "path": "Observation.value[x].coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Pregnancy_Status_LOINC"
+        }
       },
       {
         "id": "Observation.method",

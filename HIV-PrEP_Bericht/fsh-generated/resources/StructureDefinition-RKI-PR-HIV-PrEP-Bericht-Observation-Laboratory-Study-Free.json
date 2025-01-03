@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Free",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
   "title": "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
   "status": "draft",

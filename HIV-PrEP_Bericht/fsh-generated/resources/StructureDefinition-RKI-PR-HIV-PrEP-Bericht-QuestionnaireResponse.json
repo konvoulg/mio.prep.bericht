@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-QuestionnaireResponse",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse",
   "title": "RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse",
   "status": "draft",
@@ -103,12 +103,14 @@
               "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "QuestionnaireResponse.subject.reference",
         "path": "QuestionnaireResponse.subject.reference",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "QuestionnaireResponse.author",

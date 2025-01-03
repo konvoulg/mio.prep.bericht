@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-Encounter-General",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Encounter_General",
   "title": "RKI_PR_HIV-PrEP_Bericht_Encounter_General",
   "status": "draft",
@@ -78,25 +78,34 @@
         "id": "Encounter.class.system",
         "path": "Encounter.class.system",
         "min": 1,
-        "fixedUri": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "mustSupport": true
       },
       {
         "id": "Encounter.class.version",
         "path": "Encounter.class.version",
         "min": 1,
-        "fixedString": "2.0.0"
+        "fixedString": "2.0.0",
+        "mustSupport": true
       },
       {
         "id": "Encounter.class.code",
         "path": "Encounter.class.code",
         "min": 1,
-        "fixedCode": "AMB"
+        "fixedCode": "AMB",
+        "mustSupport": true
       },
       {
         "id": "Encounter.class.display",
         "path": "Encounter.class.display",
         "min": 1,
-        "fixedString": "ambulatory"
+        "fixedString": "ambulatory",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.class.userSelected",
+        "path": "Encounter.class.userSelected",
+        "max": "0"
       },
       {
         "id": "Encounter.type",

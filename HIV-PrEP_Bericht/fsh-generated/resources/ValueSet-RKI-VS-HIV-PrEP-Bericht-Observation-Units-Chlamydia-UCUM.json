@@ -6,7 +6,7 @@
   "title": "Chlamydia Trachomatis Laboruntersuchung UCUM",
   "description": "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung von Chlamydia Trachomatis.",
   "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Chlamydia_UCUM",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [

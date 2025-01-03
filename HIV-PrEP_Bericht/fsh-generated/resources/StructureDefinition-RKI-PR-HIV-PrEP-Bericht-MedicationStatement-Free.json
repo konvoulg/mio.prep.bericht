@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-MedicationStatement-Free",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free",
   "title": "RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free",
   "status": "draft",
@@ -74,7 +74,6 @@
           "rules": "open"
         },
         "comment": "Das MustSupport gilt nur für die vordefinierten Slices.",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -82,7 +81,7 @@
         "path": "MedicationStatement.identifier",
         "sliceName": "zeilenId",
         "definition": "Für eine eindeutige Identifizierung der Medikations-Information bzw. des Zeileneintrags, auf den sich die Medikationsinformation bezieht, wird diese hier als UUID abgebildet.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {

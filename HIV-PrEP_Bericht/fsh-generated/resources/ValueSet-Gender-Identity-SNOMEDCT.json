@@ -6,7 +6,7 @@
   "title": "Gender Identity SNOMEDCT",
   "description": "Das ValueSet Gender_Identity_SNOMEDCT enthält die Codes für die verschiedenen Geschlechtsidentitäten.",
   "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Gender_Identity_SNOMEDCT",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [

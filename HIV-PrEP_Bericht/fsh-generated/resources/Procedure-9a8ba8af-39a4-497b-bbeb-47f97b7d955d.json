@@ -10,8 +10,8 @@
     "coding": [
       {
         "code": "409063005",
-        "system": "http://snomed.info/sct",
         "display": "Beratung",
+        "system": "http://snomed.info/sct",
         "version": "http://snomed.info/sct/11000274103/version/20241115"
       }
     ]
@@ -27,7 +27,7 @@
       "actor": {
         "identifier": {
           "system": "https://gematik.de/fhir/sid/telematik-id",
-          "value": "543210"
+          "value": "123456789"
         },
         "reference": "urn:uuid:637c79e5-bacc-4002-adca-64af70af8113"
       }

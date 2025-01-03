@@ -13,6 +13,12 @@
         "code": "871822003",
         "display": "Rekombinanter Hepatitis B-Impfstoff (adsorbiert) - Erwachsene (Engerix B Erwachsene, HBVaxPro - Erwachsene)",
         "version": "1.2.0"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/dimdi/atc",
+        "version": "2025",
+        "code": "J07BC01",
+        "display": "Hepatitis B, gereinigtes Antigen"
       }
     ],
     "text": "snomed_CT"
