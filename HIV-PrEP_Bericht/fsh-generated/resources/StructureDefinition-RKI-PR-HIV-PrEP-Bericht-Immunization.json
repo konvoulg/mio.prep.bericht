@@ -169,7 +169,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine|1.1.0"
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List"
         }
       },
       {
@@ -213,7 +213,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_ATC|1.1.0"
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List_ATC"
         }
       },
       {

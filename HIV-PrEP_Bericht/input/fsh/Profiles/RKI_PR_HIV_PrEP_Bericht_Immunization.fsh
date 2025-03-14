@@ -50,7 +50,7 @@ Description: "Dieses Profil bildet eine Impfung bzw. Verabreichung eines Impfsto
     snomed_CT 1..1 MS and
     atc 0..1 MS and
     pharmazentralnummer_pzn 0..1 MS
-* vaccineCode.coding[snomed_CT] from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine|1.1.0 (required)
+* vaccineCode.coding[snomed_CT] from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List (required)
 * vaccineCode.coding[snomed_CT] ^short = "Snomed CT"
 * vaccineCode.coding[snomed_CT] ^definition = "Dieses Element beschreibt den Impfstoff als SNOMED CT®  Product Code."
 * vaccineCode.coding[snomed_CT].system 1.. MS
@@ -65,7 +65,7 @@ Description: "Dieses Profil bildet eine Impfung bzw. Verabreichung eines Impfsto
 * vaccineCode.coding[snomed_CT].display.extension contains $KBV_EX_Base_Terminology_German named anzeigenameCodeSnomed 1..1
 */
 * vaccineCode.coding[snomed_CT].userSelected ..0
-* vaccineCode.coding[atc] from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_ATC|1.1.0 (required)
+* vaccineCode.coding[atc] from https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List_ATC (required)
 * vaccineCode.coding[atc] ^short = "ATC"
 * vaccineCode.coding[atc] ^definition = "Bezeichnung des Impfstoffs oder des Kombinationsimpfstoffes als Anatomisch-Therapeutisch-Chemische Klassifikation samt ATC-Code des Impfstoffs oder Kombinationsimpfstoffes. Grundlage ist die amtliche Fassung des ATC-Index für Deutschland (DIMDI). Es sind alle ATC-Codes aus der amtlichen Fassung des ATC-Index gelistet, unabhängig von deren Marktverfügbarkeit."
 * vaccineCode.coding[atc].system 1.. MS
