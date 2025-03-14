@@ -27,6 +27,7 @@ Description: "Dieses Profil bildet Informationen zur PrEP-Anamnese ab."
 * status = #completed
 //* statusReason ..0
 * code 1.. MS
+* code from $loinc
 * code.coding 1..1 MS
 * code.coding = $loinc#35090-0 "Patient history"
 //* code.coding ^patternCoding.version = "2.78"
