@@ -16,6 +16,22 @@
     "endLine": 32
   },
   {
+    "outputFile": "Appointment-86bfcbb1-741d-48af-9d0b-062d76e3e5f9.json",
+    "fshName": "86bfcbb1-741d-48af-9d0b-062d76e3e5f9",
+    "fshType": "Instance",
+    "fshFile": "Examples\\bundle.fsh",
+    "startLine": 1050,
+    "endLine": 1075
+  },
+  {
+    "outputFile": "Bundle-d317ce08-1da0-48d4-8dd7-8edbe88d51f3.json",
+    "fshName": "d317ce08-1da0-48d4-8dd7-8edbe88d51f3",
+    "fshType": "Instance",
+    "fshFile": "Examples\\bundle.fsh",
+    "startLine": 1,
+    "endLine": 119
+  },
+  {
     "outputFile": "CapabilityStatement-RKI-HIV-PrEP-Bericht-CapabilityStatement.json",
     "fshName": "RKI-HIV-PrEP-Bericht-CapabilityStatement",
     "fshType": "Instance",
@@ -78,6 +94,14 @@
     "fshFile": "Examples\\immunization.fsh",
     "startLine": 1,
     "endLine": 33
+  },
+  {
+    "outputFile": "Immunization-f8e1b41b-2830-49ff-8038-5636e9f2d0cd.json",
+    "fshName": "f8e1b41b-2830-49ff-8038-5636e9f2d0cd",
+    "fshType": "Instance",
+    "fshFile": "Examples\\bundle.fsh",
+    "startLine": 1079,
+    "endLine": 1111
   },
   {
     "outputFile": "Medication-5a27bacd-1db6-43c8-8fad-18b898a29473.json",
@@ -150,6 +174,14 @@
     "fshFile": "Examples\\prep-indication-observation.fsh",
     "startLine": 1,
     "endLine": 23
+  },
+  {
+    "outputFile": "Observation-be552245-9130-4363-8699-44eb481740ab.json",
+    "fshName": "be552245-9130-4363-8699-44eb481740ab",
+    "fshType": "Instance",
+    "fshFile": "Examples\\bundle.fsh",
+    "startLine": 566,
+    "endLine": 588
   },
   {
     "outputFile": "Observation-c72db78e-5bd4-4b58-a897-aed3d5a9632c.json",
@@ -248,6 +280,14 @@
     "endLine": 38
   },
   {
+    "outputFile": "QuestionnaireResponse-e772935d-66ef-4afc-ad7b-60d26df4d85d.json",
+    "fshName": "e772935d-66ef-4afc-ad7b-60d26df4d85d",
+    "fshType": "Instance",
+    "fshFile": "Examples\\bundle.fsh",
+    "startLine": 525,
+    "endLine": 562
+  },
+  {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance.json",
     "fshName": "RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance",
     "fshType": "Profile",
@@ -277,7 +317,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP.fsh",
     "startLine": 2,
-    "endLine": 84
+    "endLine": 85
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Composition.json",
@@ -285,7 +325,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Composition.fsh",
     "startLine": 2,
-    "endLine": 454
+    "endLine": 455
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis.json",
@@ -301,7 +341,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_History_Present.fsh",
     "startLine": 1,
-    "endLine": 216
+    "endLine": 217
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-DocumentReference.json",
@@ -661,7 +701,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT.fsh",
     "startLine": 1,
-    "endLine": 25
+    "endLine": 32
   },
   {
     "outputFile": "ValueSet-YesNoInformation.json",

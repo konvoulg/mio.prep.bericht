@@ -183,6 +183,7 @@ Description: "Hier können nach Ermessen der behandelnden Person anamnestisch be
 */
 //* abatementAge.extension ^min = 0
 
+
 * abatementAge.extension[lebensphase-bis] ^mustSupport = true
 * abatementAge.extension[lebensphase-bis].value[x] MS
 * abatementAge.extension[lebensphase-bis].value[x] ^slicing.discriminator.type = #type
