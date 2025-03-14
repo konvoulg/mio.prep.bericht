@@ -706,6 +706,7 @@ Usage: #inline
 * valueQuantity.system = "http://unitsofmeasure.org"
 
 * interpretation.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+* interpretation.coding[0].version = "1.4.0"
 * interpretation.coding[0].code = #N
 * interpretation.coding[0].display = "Normal"
 
