@@ -94,6 +94,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV-PrEP-Bericht."
 * section[behandelndePersonEinrichtung].code.coding.code 1.. MS
 //* section[behandelndePersonEinrichtung].code.coding
 * section[behandelndePersonEinrichtung].code.coding.code = $sectioncodes#SectionBehandelndePersonEinrichtung 
+* section[behandelndePersonEinrichtung].code.coding.system = $sectioncodes
 * section[behandelndePersonEinrichtung].code.coding.display MS
 * section[behandelndePersonEinrichtung].code.coding.display = "Behandelnde Person / Einrichtung"
 * section[behandelndePersonEinrichtung].code.coding.userSelected ..0
