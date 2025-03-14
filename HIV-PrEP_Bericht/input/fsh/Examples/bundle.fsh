@@ -16,8 +16,8 @@ Usage: #example
 
 //Composition Subject
 
-* entry[1].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient/4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
-* entry[1].resource = 4a311b0a-ec7e-4486-bb6b-1c275f0cbee1
+* entry[1].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient/4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+* entry[1].resource = 4a311b0a-ec7e-4486-bb6b-1a257f0bbee1
 
 // Author PractitionerRole
 * entry[2].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole/aec32544-52fd-4243-8626-32db47648530"
@@ -136,7 +136,7 @@ Usage: #inline
 * type.coding = $snomed#22131000087102 "Electronic report (record artifact)"
 * type.coding.version = "http://snomed.info/sct/900000000000207008/version/20240930"
 
-* subject = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1)
+* subject = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)
 
 * encounter = Reference(urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fe)
 
