@@ -9,7 +9,7 @@ Usage: #example
 * type = #document
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value  = "urn:uuid:d317ce08-1da0-48d4-8dd7-8edbe88d51f3"
-* timestamp = "2022-12-07T09:50:00+01:00"
+* timestamp = "2019-10-01T09:50:00+01:00"
 //Compostition
 * entry[0].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/9a9ba169-33fe-41de-ab02-ddebf1cce45b"
 * entry[0].resource = 9a9ba169-33fe-41de-ab02-ddebf1cce45b
@@ -140,7 +140,7 @@ Usage: #inline
 
 * encounter = Reference(urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fe)
 
-* date = "2017-02-02"
+* date = "2019-10-01"
 
 * author = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648530)
 
@@ -424,11 +424,11 @@ Usage: #inline
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance"
 
-* code.coding[0].version = "http://snomed.info/sct/11000274103/version/20231115"
-* code.coding[=] = $sct#372478003 "Doxycyclin"
+* code.coding[0].version = "http://snomed.info/sct/11000274103/version/20241115"
+* code.coding[=] = $sct#91936005 "Allergie gegen Penicillin"
 //* code.coding[+].version = "http://snomed.info/sct/11000274103/version/20241115"
 //* code.coding[=] = $ask#11849 "ausgedacht"
-* code.text = "Doxycyclin"
+* code.text = "Allergie gegen Penicillin"
 
 * extension[0].url = "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_AllergyIntolerance_Abatement"
 * extension[=].valueDateTime = "2012"
@@ -459,7 +459,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present"
 
 
-* extension[Feststellungsdatum].valueDateTime = "2017-01-01"
+* extension[Feststellungsdatum].valueDateTime = "2019-10-01"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
@@ -478,7 +478,7 @@ Usage: #inline
 * verificationStatus.coding = $ver-clinical#confirmed "Confirmed"
 * verificationStatus.coding.version = "4.0.1"
 
-* recordedDate = "2017-02-01"
+* recordedDate = "2019-09-23"
 
 //ClinicalImpression investigation item 0 Observation Body Weight
 Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
@@ -494,7 +494,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight"
 
 * status = #final
-* extension[dokumentationszeitpunkt].valueDateTime = "2017-02-02"
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-23"
 * category = $secondary-finding#laboratory
 
 * code.coding[loinc].system = "http://loinc.org"
@@ -506,7 +506,7 @@ Usage: #inline
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* effectiveDateTime = "2017-01-01"
+* effectiveDateTime = "2019-09-23"
 
 * performer.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114" // Reference to the Practitioner
 
@@ -541,25 +541,25 @@ Usage: #example
 * author = Reference(urn:uuid:637c79e5-bacc-4002-adca-64af70af8114)
 
 * item[0].linkId = "357318092995"
-* item[0].answer.valueCoding = #373066001
+* item[0].answer.valueCoding = $sct#373066001 "Yes"
 
 * item[+].linkId = "7742571432941"
-* item[=].answer.valueCoding = #373067005
+* item[=].answer.valueCoding = $sct#373067005 "No"
 
 * item[+].linkId = "1993731509843"
-* item[=].answer.valueCoding = #373067005
+* item[=].answer.valueCoding = $sct#373067005 "No"
 
 * item[+].linkId = "5407091313032"
-* item[=].answer.valueCoding = #373067005
+* item[=].answer.valueCoding = $sct#373067005 "No"
 
 * item[+].linkId = "7294102201786"
-* item[=].answer.valueCoding = #38628009
+* item[=].answer.valueCoding = $sct#38628009 "Homosexual"
 
 * item[+].linkId = "6401616433112"
-* item[=].answer.valueCoding = #446151000124109
+* item[=].answer.valueCoding = $sct#446151000124109 "Identifies as male gender"
 
 * item[+].linkId = "2142215437593"
-* item[=].answer.valueCoding = #373066001
+* item[=].answer.valueCoding = $sct#373066001 "Yes"
 
 //ClinicalImpression finding itemReference Prep Indication
 
@@ -576,16 +576,16 @@ Usage: #example
 * code.coding[snomed].system = "http://snomed.info/sct"
 * code.coding[snomed].code = #370782005
 * code.coding[snomed].display = "Assessment of susceptibility for infection (procedure)"
-* code.coding[snomed].version = "http://snomed.info/sct/900000000000207008/version/20241130"
+* code.coding[snomed].version = "http://snomed.info/sct/11000274103/version/20241115"
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2017-01-01"
+* effectiveDateTime = "2019-09-23"
 
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * valueCodeableConcept.coding.code = #230165009
-* valueCodeableConcept.coding.display = "Indication of (contextual qualifier) (qualifier value)"
+* valueCodeableConcept.coding.display = "With indication"
 
 
 // Beratung
@@ -609,7 +609,7 @@ Usage: #inline
 
 * encounter.reference = "urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fe"
 
-* performedDateTime = "2017-02-02"
+* performedDateTime = "2019-09-23"
 
 * performer.actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
 * performer.actor.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
@@ -659,7 +659,7 @@ Usage: #inline
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* period.start = "2021-02-02"
+* period.start = "2019-10-01"
 
 * serviceProvider.reference = "urn:uuid:81eacc87-e116-4505-a4e2-02404a022040"
 * serviceProvider.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
@@ -679,7 +679,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
 
-* extension[dokumentationszeitpunkt].valueDateTime = "2017-01-01"
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 
 * status = #final
 
@@ -692,7 +692,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2017-01-01T09:00:00+08:00"
+* effectiveDateTime = "2019-09-25T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
@@ -732,7 +732,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis"
 
-* extension[dokumentationszeitpunkt].valueDateTime = "2017-02-02"
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 
 * status = #final
 
@@ -745,7 +745,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2017-01-01T09:00:00+08:00"
+* effectiveDateTime = "2019-09-25T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
@@ -772,7 +772,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
 
-* extension[dokumentationszeitpunkt].valueDateTime = "2017-02-02"
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 
 * status = #final
 
@@ -785,7 +785,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2017-01-01T09:00:00+08:00"
+* effectiveDateTime = "2019-09-25T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
@@ -810,7 +810,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
 
-* extension[dokumentationszeitpunkt].valueDateTime = "2017-02-02"
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 
 * status = #final
 
@@ -823,12 +823,34 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2017-01-01T09:00:00+08:00"
+* effectiveDateTime = "2019-09-25T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
 * performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * performer.identifier.value = "123456"
+*/
+/*
+* valueQuantity.value = 0.9
+* valueQuantity.unit = "mg/dL"
+* valueQuantity.code = #mg/dL
+* valueQuantity.system = "http://unitsofmeasure.org"
+
+* interpretation.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+* interpretation.coding[0].version = "1.4.0"
+* interpretation.coding[0].code = #N
+* interpretation.coding[0].display = "Normal"
+
+* referenceRange.low = 0.6 'mg/dL'
+* referenceRange.low.unit = "mg/dL"
+* referenceRange.high = 1.2 'mg/dL'
+* referenceRange.high.unit = "mg/dL"
+* referenceRange.type.coding.system = "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+* referenceRange.type.coding.version = "1.0.1"
+* referenceRange.type.coding.code = #type
+* referenceRange.type.coding.display = "Type"
+* referenceRange.appliesTo = $sct#248152002 "male"
+* referenceRange.appliesTo.text = "male"
 */
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
@@ -848,7 +870,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC"
 
-* extension[dokumentationszeitpunkt].valueDateTime = "2017-02-02T09:00:00+08:00"
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25T09:00:00+08:00"
 
 * status = #final
 
@@ -861,7 +883,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2017-01-01T09:00:00+08:00"
+* effectiveDateTime = "2019-09-25T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
@@ -885,7 +907,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV"
 
-* extension[dokumentationszeitpunkt].valueDateTime = "2017-02-02T09:00:00+08:00"
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25T09:00:00+08:00"
 
 * status = #final
 
@@ -898,7 +920,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2017-01-01T09:00:00+08:00"
+* effectiveDateTime = "2019-09-25T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
@@ -962,7 +984,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 
 
-* extension[Feststellungsdatum].valueDateTime = "2017-02-02T09:00:00+08:00"
+* extension[Feststellungsdatum].valueDateTime = "2019-09-25T09:00:00+08:00"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
@@ -974,7 +996,7 @@ Usage: #inline
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* onsetDateTime = "2017-01-01T09:00:00+08:00"
+* onsetDateTime = "2019-09-25T09:00:00+08:00"
 
 * clinicalStatus.coding = $con-clinical#active "Active"
 * clinicalStatus.coding.version = "3.0.0"
@@ -982,7 +1004,7 @@ Usage: #inline
 * verificationStatus.coding.version = "4.0.1"
 
 
-* recordedDate = "2017-02-01"
+* recordedDate = "2019-09-25"
 
 //MedikationStatement
 
@@ -1004,7 +1026,7 @@ Usage: #inline
 
 * medicationReference.reference = "urn:uuid:5a27bacd-1db6-43c8-8fad-18b898a29480"
 
-* effectiveDateTime = "2017-01-01"
+* effectiveDateTime = "2019-10-01"
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
@@ -1064,8 +1086,8 @@ Usage: #example
 //* appointmentType.coding.system = $v2-0276
 * appointmentType.coding.version = "2.0.0"
 
-* start = "2017-05-23T09:00:00+08:00"
-* end = "2017-05-23T10:00:00+08:00"
+* start = "2019-11-01T09:00:00+08:00"
+* end = "2017-11-01T10:00:00+08:00"
 
 * participant[0].actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
 * participant[=].actor.type = "Practitioner"
@@ -1099,7 +1121,7 @@ Usage: #example
 
 * patient.reference = "4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"  // Reference to the Patient resource
 
-* occurrenceDateTime = "2017-01-01T09:00:00+08:00"
+* occurrenceDateTime = "2019-10-01T09:00:00+08:00"
 
 * lotNumber = "12345678"  // Vaccine lot number
 

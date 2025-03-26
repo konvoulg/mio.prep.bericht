@@ -20,8 +20,8 @@
     "fshName": "86bfcbb1-741d-48af-9d0b-062d76e3e5f9",
     "fshType": "Instance",
     "fshFile": "Examples\\bundle.fsh",
-    "startLine": 1050,
-    "endLine": 1075
+    "startLine": 1073,
+    "endLine": 1098
   },
   {
     "outputFile": "Bundle-d317ce08-1da0-48d4-8dd7-8edbe88d51f3.json",
@@ -100,8 +100,8 @@
     "fshName": "f8e1b41b-2830-49ff-8038-5636e9f2d0cd",
     "fshType": "Instance",
     "fshFile": "Examples\\bundle.fsh",
-    "startLine": 1079,
-    "endLine": 1111
+    "startLine": 1102,
+    "endLine": 1134
   },
   {
     "outputFile": "Medication-5a27bacd-1db6-43c8-8fad-18b898a29473.json",
