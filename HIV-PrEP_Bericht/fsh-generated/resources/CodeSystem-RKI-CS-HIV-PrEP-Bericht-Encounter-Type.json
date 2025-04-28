@@ -6,6 +6,7 @@
   "id": "RKI-CS-HIV-PrEP-Bericht-Encounter-Type",
   "title": "Art der Begegnung",
   "description": "Dieses CodeSystem enthält die EBM-Codes für Bezeichner für die Begegnungstypen im Rahmen der HIV-Präexpositionsprophylaxe. Dafür wird der Einheitliche Bewertungsmaßstab (EBM) verwendet. Da ein EBM-FHIR-CodeSystem noch nicht existiert, wird hier ein temporäres CodeSystem dazu bereitgestellt.",
+  "version": "1.0.0",
   "url": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type",
   "concept": [
     {
@@ -21,7 +22,6 @@
       "display": "Kontrolle im Rahmen der Präexpositionsprophylaxe"
     }
   ],
-  "version": "1.0.0",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [

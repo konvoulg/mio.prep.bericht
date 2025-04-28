@@ -5,8 +5,8 @@
   "id": "RKI-VS-HIV-PrEP-Bericht-HIV-Lab-Study-LOINC",
   "title": "HIV Laboruntersuchung LOINC",
   "description": "Dieses ValueSet beinhaltet Loinc-Codes zur Laboruntersuchung von Humanem Immundefizienz-Virus (HIV).",
-  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_HIV_Lab_Study_LOINC",
   "version": "1.0.0",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_HIV_Lab_Study_LOINC",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [

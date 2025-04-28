@@ -5,8 +5,8 @@
   "id": "RKI-VS-HIV-PrEP-Bericht-Observation-Units-GFR-UCUM",
   "title": "GFR Observation Units UCUM",
   "description": "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung der Glomerulären Filtrationsrate.",
-  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM",
   "version": "1.0.0",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_GFR_UCUM",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [

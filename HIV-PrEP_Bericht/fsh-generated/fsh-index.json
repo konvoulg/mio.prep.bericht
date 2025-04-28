@@ -16,16 +16,8 @@
     "endLine": 32
   },
   {
-    "outputFile": "Appointment-86bfcbb1-741d-48af-9d0b-062d76e3e5f9.json",
-    "fshName": "86bfcbb1-741d-48af-9d0b-062d76e3e5f9",
-    "fshType": "Instance",
-    "fshFile": "Examples\\bundle.fsh",
-    "startLine": 1050,
-    "endLine": 1075
-  },
-  {
-    "outputFile": "Bundle-d317ce08-1da0-48d4-8dd7-8edbe88d51f3.json",
-    "fshName": "d317ce08-1da0-48d4-8dd7-8edbe88d51f3",
+    "outputFile": "Bundle-d317ce08-1da0-48d4-8dd7-8edbe88d51c3.json",
+    "fshName": "d317ce08-1da0-48d4-8dd7-8edbe88d51c3",
     "fshType": "Instance",
     "fshFile": "Examples\\bundle.fsh",
     "startLine": 1,
@@ -94,14 +86,6 @@
     "fshFile": "Examples\\immunization.fsh",
     "startLine": 1,
     "endLine": 33
-  },
-  {
-    "outputFile": "Immunization-f8e1b41b-2830-49ff-8038-5636e9f2d0cd.json",
-    "fshName": "f8e1b41b-2830-49ff-8038-5636e9f2d0cd",
-    "fshType": "Instance",
-    "fshFile": "Examples\\bundle.fsh",
-    "startLine": 1079,
-    "endLine": 1111
   },
   {
     "outputFile": "Medication-5a27bacd-1db6-43c8-8fad-18b898a29473.json",
@@ -174,14 +158,6 @@
     "fshFile": "Examples\\prep-indication-observation.fsh",
     "startLine": 1,
     "endLine": 23
-  },
-  {
-    "outputFile": "Observation-be552245-9130-4363-8699-44eb481740ab.json",
-    "fshName": "be552245-9130-4363-8699-44eb481740ab",
-    "fshType": "Instance",
-    "fshFile": "Examples\\bundle.fsh",
-    "startLine": 566,
-    "endLine": 588
   },
   {
     "outputFile": "Observation-c72db78e-5bd4-4b58-a897-aed3d5a9632c.json",
@@ -278,14 +254,6 @@
     "fshFile": "Examples\\questionnaireresponse.fsh",
     "startLine": 1,
     "endLine": 38
-  },
-  {
-    "outputFile": "QuestionnaireResponse-e772935d-66ef-4afc-ad7b-60d26df4d85d.json",
-    "fshName": "e772935d-66ef-4afc-ad7b-60d26df4d85d",
-    "fshType": "Instance",
-    "fshFile": "Examples\\bundle.fsh",
-    "startLine": 525,
-    "endLine": 562
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance.json",
