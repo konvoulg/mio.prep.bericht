@@ -14,7 +14,8 @@ Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $data_absent = http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
-
+Alias: $RelevanceVS = https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Relevance
+Alias: $RelevanceCS = https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Relevance
 
 //Aliases Questionnaire
 
