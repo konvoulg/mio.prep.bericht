@@ -44,7 +44,7 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "version": "0.1.0",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241130",
         "code": "260385009",
         "display": "Negative (qualifier value)"
       }

@@ -5,7 +5,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Practitioner
 Parent: KBV_PR_Base_Practitioner
 Id: RKI-PR-HIV-PrEP-Bericht-Practitioner
 Title: "RKI_PR_HIV-PrEP_Practitioner"
-Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen ärztlichen, aber auch nicht ärztlichen Hintergrund besitzen."
+Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen ärztlichen, aber auch nicht-ärztlichen Hintergrund haben."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
 
 * insert Meta-Profile
@@ -18,7 +18,7 @@ Description: "Dieses Element beschreibt die behandelnde Person. Diese kann einen
 * meta.profile ^slicing.discriminator.path = "$this"
 * meta.profile ^slicing.rules = #open
 * meta.profile contains mioProfile 0..*
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner|0.1.0"
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
 //* meta.security ..0
 //* meta.tag ..0
 

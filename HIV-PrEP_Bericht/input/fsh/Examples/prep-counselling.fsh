@@ -8,10 +8,10 @@ Usage: #example
 
 * status = #completed
 
-* code.coding[ops].system = "http://fhir.de/CodeSystem/bfarm/ops"
-* code.coding[ops].code = #5-470
-* code.coding[ops].display = "5-470"
-* code.coding[ops].version = "2024"
+* code.coding[snomed].system = "http://snomed.info/sct"
+* code.coding[snomed].code = #409063005 
+* code.coding[snomed].display = "Beratung"
+* code.coding[snomed].version = "http://snomed.info/sct/11000274103/version/20241115"
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
 
@@ -21,9 +21,9 @@ Usage: #example
 
 * performer.actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8113"
 * performer.actor.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
-* performer.actor.identifier.value = "543210"
+* performer.actor.identifier.value = "123456789"
 
 * reasonCode.coding.system = "http://snomed.info/sct"
-* reasonCode.coding.version = "0.1.0"
+* reasonCode.coding.version = "http://snomed.info/sct/11000274103/version/20241115"
 * reasonCode.coding.code = #710534005
 * reasonCode.coding.display = "Education about treatment regime (procedure)"

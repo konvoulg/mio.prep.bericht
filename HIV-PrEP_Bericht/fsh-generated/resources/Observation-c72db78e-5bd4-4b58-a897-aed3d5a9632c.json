@@ -26,7 +26,7 @@
     "coding": [
       {
         "system": "http://loinc.org",
-        "version": "1.0.0",
+        "version": "2.73",
         "code": "77140-2",
         "display": "Creatinine [Moles/volume] in Serum, Plasma or Blood"
       }

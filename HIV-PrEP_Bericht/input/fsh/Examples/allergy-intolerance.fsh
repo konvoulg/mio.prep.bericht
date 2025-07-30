@@ -9,13 +9,13 @@ Title: "Example Allergy Intolerance for PrEP"
 Description: "This is an example allergy intolerance instance for HIV PrEP reporting"
 Usage: #example
 
-* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance|0.1.0"
+* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance"
 
 * code.coding[0].version = "http://snomed.info/sct/11000274103/version/20231115"
-* code.coding[=] = $sct#227493005 "Cashew nut (substance)"
-* code.coding[+].version = "1.4.0"
-* code.coding[=] = $ask#11849 "ausgedacht"
-* code.text = "Cashewnüsse"
+* code.coding[=] = $sct#372478003 "Doxycyclin"
+//* code.coding[+].version = "http://snomed.info/sct/11000274103/version/20241115"
+//* code.coding[=] = $ask#11849 "ausgedacht"
+* code.text = "Doxycyclin"
 
 * extension[0].url = "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_AllergyIntolerance_Abatement"
 * extension[=].valueDateTime = "2012"

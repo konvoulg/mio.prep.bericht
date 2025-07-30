@@ -4,7 +4,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free
 Parent: KBV_PR_Base_MedicationStatement
 Id: RKI-PR-HIV-PrEP-Bericht-MedicationStatement-Free
 Title: "RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free"
-Description: "Dieses Profil bildet die Medikationsinformation ab."
+Description: "Dieses Profil bildet die Angaben zur Einnahme bzw. Verabreichung eines bestimmten Arzneimittels ab."
 * ^abstract = true
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free"
 * insert Meta-Profile
@@ -34,7 +34,7 @@ Description: "Dieses Profil bildet die Medikationsinformation ab."
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier ^comment = "Das MustSupport gilt nur für die vordefinierten Slices."
-* identifier contains zeilenId 1..1 MS
+* identifier contains zeilenId 0..1 MS
 * identifier[zeilenId] only $KBV_PR_MIO_EMP_Identifier_Line_Item
 * identifier[zeilenId] ^definition = "Für eine eindeutige Identifizierung der Medikations-Information bzw. des Zeileneintrags, auf den sich die Medikationsinformation bezieht, wird diese hier als UUID abgebildet."
 

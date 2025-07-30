@@ -2,7 +2,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea
 Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Gonorrhea
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
-Description: "In diesem Profil kann eine Laboruntersuchung der Gonorrhoe Infektion dokumentiert werden."
+Description: "In diesem Profil kann eine Laboruntersuchung einer Gonorrhoe dokumentiert werden."
 
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
 
@@ -150,6 +150,9 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Gonorrhoe Infekti
 //* valueCodeableConcept.coding contains snomedCode named snomedCode 0..*
 * valueCodeableConcept.coding contains snomed_CT 0..1 MS
 //* valueCodeableConcept.coding ^mustSupport = true
+*/
+* valueCodeableConcept.coding[snomed_CT] from RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT (required)
+/*
 * valueCodeableConcept.coding[snomed_CT].system 1.. MS
 * valueCodeableConcept.coding[snomed_CT].system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[snomed_CT].version 1.. MS
@@ -176,13 +179,15 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Gonorrhoe Infekti
 * valueRatio.denominator.system = "http://unitsofmeasure.org"
 * valueRatio.denominator.system MS
 * valueRatio.denominator.code MS
-
+*/
+/*
 * valueRange only Range
 * valueRange MS
 * valueRange ^sliceName = "valueRange"
 * valueRange.low 1.. MS
 * valueRange.low.value 1.. MS
 * valueRange.low.unit 1.. MS
+
 * valueRange.low.system 1.. MS
 * valueRange.low.system = "http://unitsofmeasure.org"
 * valueRange.low.code 1.. MS

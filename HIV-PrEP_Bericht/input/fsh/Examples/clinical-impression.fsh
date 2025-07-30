@@ -19,7 +19,8 @@ Usage: #example
 
 * problem = Reference(urn:uuid:4f0fdac3-335a-4907-a6da-d072dff0c75a)
 
-* investigation.code = #271336007
+* investigation.code = $sct#84100007 "Anamneseerhebung"
+* investigation.code.coding.version = "http://snomed.info/sct/11000274103/version/20241115"
 
 // reference to body weight observation
 * investigation.item[0] = Reference(urn:uuid:d24a5fdb-51bb-470c-bca8-a3c8e90a6265)
@@ -29,3 +30,5 @@ Usage: #example
 
 // reference to the prep indication observation
 * finding.itemReference = Reference(urn:uuid:be552245-9130-4363-8699-44eb481731ab)
+
+//"code":"84100007","system":"http://snomed.info/sct","display":"Anamneseerhebung"

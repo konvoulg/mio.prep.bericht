@@ -2,7 +2,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Encounter_General
 Parent: KBV_PR_Base_Encounter
 Id: RKI-PR-HIV-PrEP-Bericht-Encounter-General
 Title: "RKI_PR_HIV-PrEP_Bericht_Encounter_General"
-Description: "Hier werden Begegnungen bzw. Aufenthalte, Arzt-Patientenkontakte mit Interaktionen zwischen behandelter und behandelnder Person mit Datum abgebildet. Dies kann zum Beispiel ein vergangene Termin zur PrEP-Beratung, PrEP-Einleitung oder PrEP-Kontrolle sein. "
+Description: "Hier werden Begegnungen bzw. Aufenthalte mit Interaktionen zwischen behandelter und behandelnder Person (Arzt-Patientenkontakte) mit Datum abgebildet. Dies kann zum Beispiel ein vergangener Termin zur PrEP-Beratung, PrEP-Einleitung oder PrEP-Kontrolle sein."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
 
 * insert Meta-Profile
@@ -25,22 +25,24 @@ Description: "Hier werden Begegnungen bzw. Aufenthalte, Arzt-Patientenkontakte m
 
 //* contained ..0
 //* identifier ..0
-
+* status MS
 * status = #finished (exactly)
 //* statusHistory ..0
 
 * class MS
-* class.system 1..
+* class.system 1.. MS
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode" (exactly)
-* class.version 1..
+* class.version 1.. MS
 * class.version = "2.0.0" (exactly)
-* class.code 1..
+* class.code 1.. MS
 * class.code = #AMB (exactly)
-* class.display 1..
+* class.display 1.. MS
 * class.display = "ambulatory" (exactly)
-//* class.userSelected ..0
+* class.userSelected ..0
 //* classHistory ..0
-* type MS
+* type 1.. MS
+* type ^short = "Typ der Begegnung"
+* type ^definition = "Hier wird der Typ der Begegnung angegeben. Im Rahmen des HIV PrEP werden nach EBM drei begegnugstypen unterschieden: Beratung, Einleitung und Kontrolle."
 * type.coding 1..1 MS
 * type.coding from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Encounter_Type (required)
 * type.coding.code 1..1 MS

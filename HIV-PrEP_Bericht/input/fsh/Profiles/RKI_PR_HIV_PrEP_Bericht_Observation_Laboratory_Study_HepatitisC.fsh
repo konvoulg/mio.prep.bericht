@@ -2,7 +2,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC
 Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisC
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC"
-Description: "In diesem Profil kann eine Laboruntersuchung der Hepatitis C Infektion dokumentiert werden."
+Description: "In diesem Profil kann eine Laboruntersuchung einer Hepatitis-C-Infektion dokumentiert werden."
 
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC"
 
@@ -123,6 +123,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Hepatitis C Infek
 * valueQuantity 0..1
 //* valueQuantity = $unitsofmeasure#mL/min/{1.73_m2} "milliliter per minute per 1.73 square meter"
 */
+* valueQuantity MS
 * valueQuantity from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_HepatitisC_UCUM (required)
 /*
 * valueQuantity ^definition = "Hier wird das Messergebnis als quantitativer Wert abgebildet."

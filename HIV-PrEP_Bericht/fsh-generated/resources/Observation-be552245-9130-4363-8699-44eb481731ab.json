@@ -1,0 +1,34 @@
+{
+  "resourceType": "Observation",
+  "id": "be552245-9130-4363-8699-44eb481731ab",
+  "meta": {
+    "profile": [
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "370782005",
+        "display": "Assessment of susceptibility for infection (procedure)",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241130"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20241130",
+        "code": "230165009",
+        "display": "Indication of (contextual qualifier) (qualifier value)"
+      }
+    ]
+  },
+  "status": "final",
+  "effectiveDateTime": "2024-12-12"
+}

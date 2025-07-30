@@ -4,9 +4,9 @@
   "name": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_HIV_UCUM",
   "id": "RKI-VS-HIV-PrEP-Bericht-Observation-Units-HIV-UCUM",
   "title": "HIV Units UCUM",
-  "description": "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung HIV",
-  "version": "0.1.0",
+  "description": "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung von HIV.",
   "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_HIV_UCUM",
+  "version": "1.0.0",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [

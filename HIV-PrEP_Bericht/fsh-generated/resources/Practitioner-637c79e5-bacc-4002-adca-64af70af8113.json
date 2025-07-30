@@ -18,7 +18,7 @@
         ]
       },
       "system": "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR",
-      "value": "543210"
+      "value": "123456789"
     }
   ],
   "name": [
@@ -54,7 +54,7 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "+49 0123456789"
+      "value": "+490123456789"
     }
   ],
   "address": [

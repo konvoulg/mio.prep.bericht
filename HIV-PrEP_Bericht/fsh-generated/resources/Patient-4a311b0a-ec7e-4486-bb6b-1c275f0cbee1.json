@@ -18,7 +18,7 @@
         ]
       },
       "system": "http://fhir.de/sid/gkv/kvid-10",
-      "value": "G123456789"
+      "value": "X123456789"
     }
   ],
   "extension": [

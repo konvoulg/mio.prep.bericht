@@ -9,7 +9,7 @@ Usage: #example
 * identifier[ANR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[ANR].type.coding.code = #LANR
 * identifier[ANR].system = "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"
-* identifier[ANR].value = "543210"
+* identifier[ANR].value = "123456789"
 
 * name[name].family = "Poppins"
 * name[name].family.extension[nachname].valueString = "Poppins"
@@ -18,7 +18,7 @@ Usage: #example
 * name[name].prefix = "Dr."
 
 * telecom.system = #phone
-* telecom.value = "+49 0123456789"
+* telecom.value = "+490123456789"
 
 * address[Strassenanschrift].line = "Einestraße 5"
 * address[Strassenanschrift].line.extension[Strasse].valueString = "Einestraße"

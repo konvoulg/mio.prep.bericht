@@ -1,7 +1,7 @@
 ValueSet: Gender_Identity_SNOMEDCT
 Id: Gender-Identity-SNOMEDCT
 Title: "Gender Identity SNOMEDCT"
-Description: "Das ValueSet Gender_Identity_SNOMEDCT enthält die Codes für die verschiedenen Geschlechtsidentitäten"
+Description: "Das ValueSet Gender_Identity_SNOMEDCT enthält die Codes für die verschiedenen Geschlechtsidentitäten."
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Gender_Identity_SNOMEDCT"
 * insert MetadataTerminology
 * ^date = "2024-09-09"

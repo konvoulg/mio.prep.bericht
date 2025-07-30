@@ -3,7 +3,7 @@
 ValueSet: RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT
 Id: RKI-VS-HIV-PrEP-Bericht-Lab-Study-Result-Qualitative-SNOMEDCT
 Title: "Laboruntersuchungsergebnis Qualitativ SNOMEDCT"
-Description: "Dieses ValueSet beinhaltet SNOMED CT Kodes zum qualitative Laboruntersuchungsergebnis"
+Description: "Dieses ValueSet beinhaltet SNOMED-CT-Codes zu qualitativen Laboruntersuchungsergebnissen."
 * ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT"
 * insert MetadataTerminology
 * ^date = "2024-09-10"

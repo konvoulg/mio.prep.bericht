@@ -4,7 +4,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status
 Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy-Status
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status"
-Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten Person eine Schwangerschaft besteht."
+Description: "In diesem Profil kann dokumentiert werden, ob bei der versicherten Person eine Schwangerschaft besteht."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status"
 
 
@@ -37,6 +37,7 @@ Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten 
 * code.coding[loinc].system MS
 * code.coding[loinc].version MS
 * code.coding[loinc].code MS
+* code.coding[loinc].code = $loinc#82810-3 "Pregnancy status"
 * code.coding[loinc].display MS
 /*
 * subject 1.. MS
@@ -59,10 +60,12 @@ Description: "In diesem Profil kann dokumentiert werden ob bei der versicherten 
 */
 * value[x] only CodeableConcept
 * value[x] MS
+* valueCodeableConcept 1..1 MS
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept MS
+//* valueCodeableConcept MS
 * valueCodeableConcept ^definition = "Hier wird angeben, ob eine Schwangerschaft vorliegt."
 * valueCodeableConcept.coding MS
+* valueCodeableConcept.coding from RKI_VS_HIV_PrEP_Bericht_Pregnancy_Status_LOINC (required)
 /*
 * valueCodeableConcept.coding[loinc] MS
 * valueCodeableConcept.coding[loinc] ^definition = "Hier wird das Ergebnis als LOINC®-Code aus einem vorgegebenen Valueset angegeben."

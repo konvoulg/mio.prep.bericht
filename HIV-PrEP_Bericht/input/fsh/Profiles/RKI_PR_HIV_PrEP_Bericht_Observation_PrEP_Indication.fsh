@@ -4,7 +4,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication
 Parent: Observation
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-PrEP-Indication
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication"
-Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. Eine Laboruntersuchung beschreibt die quantitative oder qualitative Untersuchung eines spezifischen Laborparameters in einem definierten Probenmaterial."
+Description: "In diesem Profil kann eine Indikation zur HIV-PrEP-Einnahme dokumentiert werden."
 
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication"
 
@@ -69,9 +69,9 @@ Description: "In diesem Profil kann eine Laboruntersuchung dokumentiert werden. 
 * code.coding[snomed].system = "http://snomed.info/sct"
 * code.coding[snomed].version 1.. MS
 * code.coding[snomed].code 1.. MS
-* code.coding[snomed].code = #370782005 (exactly)
+* code.coding[snomed].code = #370782005
 * code.coding[snomed].display 1.. MS
-* code.coding[snomed].display = "Assessment of susceptibility for infection (procedure)" (exactly)
+* code.coding[snomed].display = "Assessment of susceptibility for infection (procedure)" 
 
 
 * code.text MS

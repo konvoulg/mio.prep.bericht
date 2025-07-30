@@ -2,14 +2,41 @@
   "resourceType": "StructureDefinition",
   "id": "RKI-PR-HIV-PrEP-Bericht-Composition",
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "name": "RKI_PR_HIV_PrEP_Bericht_Composition",
   "title": "RKI_PR_HIV_PrEP_Bericht_Composition",
   "status": "draft",
   "publisher": "Robert Koch Institut",
-  "description": "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht.",
+  "description": "Dieses Profil bündelt die Informationen zum HIV-PrEP-Bericht.",
   "copyright": "Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, Alpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation.",
   "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
   "kind": "resource",
   "abstract": false,
   "type": "Composition",
@@ -177,7 +204,8 @@
               "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Composition.date",
@@ -192,7 +220,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole|0.1.0"
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole"
             ]
           }
         ],
@@ -220,7 +248,8 @@
       {
         "id": "Composition.title",
         "path": "Composition.title",
-        "patternString": "HIV PrEP Bericht"
+        "patternString": "HIV PrEP Bericht",
+        "mustSupport": true
       },
       {
         "id": "Composition.custodian",
@@ -230,7 +259,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0"
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization"
             ]
           }
         ],
@@ -282,7 +311,7 @@
         "id": "Composition.section:behandelndePersonEinrichtung.title",
         "path": "Composition.section.title",
         "min": 1,
-        "fixedString": "Behandelnde Person / Einrichtung",
+        "patternString": "Behandelnde Person / Einrichtung",
         "mustSupport": true
       },
       {
@@ -301,24 +330,24 @@
       {
         "id": "Composition.section:behandelndePersonEinrichtung.code.coding.system",
         "path": "Composition.section.code.coding.system",
-        "max": "0"
+        "patternUri": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+        "mustSupport": true
       },
       {
         "id": "Composition.section:behandelndePersonEinrichtung.code.coding.version",
         "path": "Composition.section.code.coding.version",
-        "max": "0"
+        "mustSupport": true
       },
       {
         "id": "Composition.section:behandelndePersonEinrichtung.code.coding.code",
         "path": "Composition.section.code.coding.code",
         "min": 1,
-        "fixedCode": "SectionBehandelndePersonEinrichtung",
+        "patternCode": "SectionBehandelndePersonEinrichtung",
         "mustSupport": true
       },
       {
         "id": "Composition.section:behandelndePersonEinrichtung.code.coding.display",
         "path": "Composition.section.code.coding.display",
-        "min": 1,
         "patternString": "Behandelnde Person / Einrichtung",
         "mustSupport": true
       },
@@ -366,7 +395,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0",
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization",
               "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner",
               "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole"
             ]
@@ -487,7 +516,7 @@
         "id": "Composition.section:beratung.title",
         "path": "Composition.section.title",
         "min": 1,
-        "fixedString": "HIV PrEP Beratung",
+        "patternString": "HIV PrEP Beratung",
         "mustSupport": true
       },
       {
@@ -595,7 +624,7 @@
           "coding": [
             {
               "code": "SectionPrEPInit",
-              "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+              "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
               "display": "HIV Präexpositionsprophylaxe Initiierung"
             }
           ]
@@ -618,7 +647,6 @@
       {
         "id": "Composition.section:beratung.section:prepinitiierung.code.coding.version",
         "path": "Composition.section.section.code.coding.version",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -630,7 +658,6 @@
       {
         "id": "Composition.section:beratung.section:prepinitiierung.code.coding.display",
         "path": "Composition.section.section.code.coding.display",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -724,7 +751,7 @@
         "id": "Composition.section:laboruntersuchungen.title",
         "path": "Composition.section.title",
         "min": 1,
-        "fixedString": "Laboruntersuchungen",
+        "patternString": "Laboruntersuchungen",
         "mustSupport": true
       },
       {
@@ -740,7 +767,7 @@
         "max": "1",
         "patternCoding": {
           "code": "SectionLaboruntersuchungen",
-          "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+          "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
           "display": "Laboruntersuchungen"
         },
         "mustSupport": true
@@ -754,7 +781,6 @@
       {
         "id": "Composition.section:laboruntersuchungen.code.coding.version",
         "path": "Composition.section.code.coding.version",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -766,7 +792,6 @@
       {
         "id": "Composition.section:laboruntersuchungen.code.coding.display",
         "path": "Composition.section.code.coding.display",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -884,7 +909,7 @@
         "max": "1",
         "patternCoding": {
           "code": "SectionStiDiagnosen",
-          "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+          "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
           "display": "STI Diagnosen"
         },
         "mustSupport": true
@@ -898,7 +923,6 @@
       {
         "id": "Composition.section:diagnosen.code.coding.version",
         "path": "Composition.section.code.coding.version",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -910,7 +934,6 @@
       {
         "id": "Composition.section:diagnosen.code.coding.display",
         "path": "Composition.section.code.coding.display",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -955,13 +978,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Tracomatis",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Gonokokkeninfektion",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisB",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisC",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HIV",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Syphilis",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free"
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
             ]
           }
         ],
@@ -1147,7 +1164,7 @@
           "coding": [
             {
               "code": "SectionPrEPMedikation",
-              "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+              "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
               "display": "HIV PrEP Medikation"
             }
           ]
@@ -1170,7 +1187,6 @@
       {
         "id": "Composition.section:medikation.section:prepMedikation.code.coding.version",
         "path": "Composition.section.section.code.coding.version",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -1182,7 +1198,6 @@
       {
         "id": "Composition.section:medikation.section:prepMedikation.code.coding.display",
         "path": "Composition.section.section.code.coding.display",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -1292,7 +1307,7 @@
           "coding": [
             {
               "code": "SectionBehandlungsrelevanteMedikation",
-              "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+              "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
               "display": "Behandlungsrelevante Medikation"
             }
           ]
@@ -1309,12 +1324,13 @@
       {
         "id": "Composition.section:medikation.section:behandlungsrelevanteMedikation.code.coding.system",
         "path": "Composition.section.section.code.coding.system",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Composition.section:medikation.section:behandlungsrelevanteMedikation.code.coding.version",
         "path": "Composition.section.section.code.coding.version",
-        "min": 1
+        "mustSupport": true
       },
       {
         "id": "Composition.section:medikation.section:behandlungsrelevanteMedikation.code.coding.code",
@@ -1324,7 +1340,7 @@
       {
         "id": "Composition.section:medikation.section:behandlungsrelevanteMedikation.code.coding.display",
         "path": "Composition.section.section.code.coding.display",
-        "min": 1
+        "mustSupport": true
       },
       {
         "id": "Composition.section:medikation.section:behandlungsrelevanteMedikation.code.coding.userSelected",
@@ -1427,9 +1443,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "56446-8",
-              "system": "http://loinc.org",
-              "display": "Appointment summary Document"
+              "code": "SectionTermine",
+              "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+              "display": "Termine"
             }
           ]
         },
@@ -1451,7 +1467,6 @@
       {
         "id": "Composition.section:termine.code.coding.version",
         "path": "Composition.section.code.coding.version",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -1463,7 +1478,6 @@
       {
         "id": "Composition.section:termine.code.coding.display",
         "path": "Composition.section.code.coding.display",
-        "min": 1,
         "mustSupport": true
       },
       {
@@ -1504,16 +1518,7 @@
       {
         "id": "Composition.section:termine.entry",
         "path": "Composition.section.entry",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp",
-              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
-            ]
-          }
-        ],
-        "mustSupport": true
+        "max": "0"
       },
       {
         "id": "Composition.section:termine.emptyReason",
@@ -1523,6 +1528,302 @@
       {
         "id": "Composition.section:termine.section",
         "path": "Composition.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "closed"
+        },
+        "max": "2",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung",
+        "path": "Composition.section.section",
+        "sliceName": "begegnung",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.title",
+        "path": "Composition.section.section.title",
+        "min": 1,
+        "patternString": "Begegnung",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.code",
+        "path": "Composition.section.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "866144008",
+              "system": "http://snomed.info/sct",
+              "display": "Encounter note (record artifact)"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.code.coding.system",
+        "path": "Composition.section.section.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.code.coding.version",
+        "path": "Composition.section.section.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.code.coding.code",
+        "path": "Composition.section.section.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.code.coding.display",
+        "path": "Composition.section.section.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.code.coding.userSelected",
+        "path": "Composition.section.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.code.text",
+        "path": "Composition.section.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.author",
+        "path": "Composition.section.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.focus",
+        "path": "Composition.section.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.text",
+        "path": "Composition.section.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.mode",
+        "path": "Composition.section.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.orderedBy",
+        "path": "Composition.section.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.entry",
+        "path": "Composition.section.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.entry.reference",
+        "path": "Composition.section.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.entry.type",
+        "path": "Composition.section.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.entry.identifier",
+        "path": "Composition.section.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.entry.display",
+        "path": "Composition.section.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.emptyReason",
+        "path": "Composition.section.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:begegnung.section",
+        "path": "Composition.section.section.section",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin",
+        "path": "Composition.section.section",
+        "sliceName": "naechsterTermin",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.title",
+        "path": "Composition.section.section.title",
+        "min": 1,
+        "patternString": "Naechster Termin",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.code",
+        "path": "Composition.section.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "39084006",
+              "system": "http://snomed.info/sct",
+              "display": "Naechster Termin"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.code.coding.system",
+        "path": "Composition.section.section.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.code.coding.version",
+        "path": "Composition.section.section.code.coding.version",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.code.coding.code",
+        "path": "Composition.section.section.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.code.coding.display",
+        "path": "Composition.section.section.code.coding.display",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.code.coding.userSelected",
+        "path": "Composition.section.section.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.code.text",
+        "path": "Composition.section.section.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.author",
+        "path": "Composition.section.section.author",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.focus",
+        "path": "Composition.section.section.focus",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.text",
+        "path": "Composition.section.section.text",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.mode",
+        "path": "Composition.section.section.mode",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.orderedBy",
+        "path": "Composition.section.section.orderedBy",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.entry",
+        "path": "Composition.section.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.entry.reference",
+        "path": "Composition.section.section.entry.reference",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.entry.type",
+        "path": "Composition.section.section.entry.type",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.entry.identifier",
+        "path": "Composition.section.section.entry.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.entry.display",
+        "path": "Composition.section.section.entry.display",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.emptyReason",
+        "path": "Composition.section.section.emptyReason",
+        "max": "0"
+      },
+      {
+        "id": "Composition.section:termine.section:naechsterTermin.section",
+        "path": "Composition.section.section.section",
         "max": "0"
       },
       {
@@ -1689,7 +1990,7 @@
           "coding": [
             {
               "code": "SectionDokumentenverweisAnhang",
-              "system": "https://fhir.kbv.de/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
+              "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_SectionCodes",
               "display": "Dokumentenverweis/Anhang"
             }
           ]

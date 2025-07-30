@@ -4,7 +4,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling
 Parent: https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Procedure
 Id: RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Counselling
 Title: "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
-Description: "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
+Description: "Hier wird eine HIV-PrEP-Beratung dokumentiert."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
 
 * insert Meta-Profile
@@ -37,15 +37,15 @@ Description: "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
 //* category ..0
 * code 1.. MS
 * code.coding 1..1 MS
-* code.coding.system 1.. MS
-* code.coding.system = "http://snomed.info/sct" (exactly)
-* code.coding.version 1.. MS
+* code.coding[snomed] 1..1 MS
+* code.coding[snomed].system 1.. MS
+* code.coding[snomed].version 1.. MS
 //* code.coding.version = "http://snomed.info/sct/11000274103/version/20240515" (exactly)
-* code.coding.code 1.. MS
-* code.coding.code = #409063005 (exactly)
-* code.coding.display 1.. MS
-* code.coding.display = "Beratung"
-* code.coding.userSelected ..0
+* code.coding[snomed].code 1.. MS
+* code.coding[snomed].code = $sct#409063005 "Beratung"
+* code.coding[snomed].display 1.. MS
+* code.coding[snomed].display = "Beratung"
+* code.coding[snomed].userSelected ..0
 //* code.text ..0
 * subject only Reference($PrEPatient)
 * subject MS
@@ -81,6 +81,8 @@ Description: "RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
 //* performer.onBehalfOf ..0
 //* location ..0
 * reasonCode MS
+* reasonCode ^short = "Beratungspunkte"
+* reasonCode ^definition = "Hier werden die Themen der Beratung dokumentiert"
 * reasonCode.coding 1..1 MS
 * reasonCode.coding from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Counselling_SNOMEDCT (extensible)
 * reasonCode.coding.system 1.. MS

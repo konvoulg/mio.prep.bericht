@@ -5,7 +5,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_PractitionerRole
 Parent: KBV_PR_Base_PractitionerRole
 Id: RKI-PR-HIV-PrEP-Bericht-PractitionerRole
 Title: "RKI_PR_HIV-PrEP_PractitionerRole"
-Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug zu einer Einrichtung beschrieben."
+Description: "Hier wird eine (ggf. zeitlich definierte) Rolle einer behandelnden Person in Bezug zu einer Einrichtung beschrieben."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole"
 
 * insert Meta-Profile
@@ -38,7 +38,7 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 
 //* period ..0
 
-* practitioner only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner|0.1.0)
+* practitioner only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner)
 * practitioner MS
 * practitioner.reference MS
 * practitioner.identifier only $identifier-anr or $identifier-telematik-id
@@ -46,7 +46,7 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 //* practitioner.type ..0
 * practitioner.identifier 
 * practitioner.display ..0
-* organization only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0)
+* organization only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization)
 * organization MS
 * organization.reference MS
 //* organization.type ..0
@@ -55,6 +55,7 @@ Description: "Hier wird eine temporäre Rolle einer behandelnden Person in Bezug
 //* organization.display ..0
 * code MS
 * code from https://fhir.kbv.de/ValueSet/KBV_VS_Base_Role_Care (required)
+* code.coding[RolleDerEinrichtung] ^mustSupport = true
 * code.coding 1..1 MS
 * code.coding.system 1.. MS
 * code.coding.version 1.. MS

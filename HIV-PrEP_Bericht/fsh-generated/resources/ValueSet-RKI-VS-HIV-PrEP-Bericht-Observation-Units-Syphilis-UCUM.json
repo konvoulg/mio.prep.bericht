@@ -4,9 +4,9 @@
   "name": "RKI_VS_HIV_PrEP_Bericht_Observation_Units_Syphilis_UCUM",
   "id": "RKI-VS-HIV-PrEP-Bericht-Observation-Units-Syphilis-UCUM",
   "title": "Syphilis Units UCUM",
-  "description": "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung Syphilis",
-  "version": "0.1.0",
+  "description": "Dieses ValueSet beinhaltet UCUM-Einheiten für die Laboruntersuchung von Syphilis.",
   "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Syphilis_UCUM",
+  "version": "1.0.0",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [

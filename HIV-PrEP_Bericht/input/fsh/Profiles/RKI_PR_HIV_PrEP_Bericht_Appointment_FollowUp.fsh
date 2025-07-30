@@ -25,20 +25,21 @@ Description: "Hier werden geplante Termine zwischen behandelter und behandelnder
 * text ^definition = "In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
 //* contained ..0
 //* identifier ..0
-
+* status MS
 * status = #booked (exactly)
 //* cancelationReason ..0
 //* serviceCategory ..0
 //* serviceType ..0
 //* specialty ..0
 * appointmentType 1.. MS
+* appointmentType.coding MS
 * appointmentType from $v2-0276 (required)
 * appointmentType.coding.code 1..1 MS
 * appointmentType.coding.code = #FOLLOWUP (exactly)
 * appointmentType.coding.system 1..1 MS
 * appointmentType.coding.system = $v2-0276
-* appointmentType.coding.version 1..1 MS
-* appointmentType.coding.display 1..1 MS
+* appointmentType.coding.version MS
+* appointmentType.coding.display MS
 * appointmentType.coding.display = "A follow up visit from a previous appointment"
 //* reasonCode ..0
 //* reasonReference ..0

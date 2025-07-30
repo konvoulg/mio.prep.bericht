@@ -3,7 +3,7 @@
   "id": "81eacc87-e116-4505-a4e2-02404a022039",
   "meta": {
     "profile": [
-      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0"
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization"
     ]
   },
   "identifier": [
@@ -18,7 +18,7 @@
         ]
       },
       "system": "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR",
-      "value": "123456"
+      "value": "123456700"
     }
   ],
   "type": [
@@ -36,10 +36,15 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "+49 0123456789"
+      "value": "+490123456789"
     }
   ],
   "address": [
+    {
+      "line": [
+        "Einestraße 5"
+      ]
+    },
     {
       "type": "both",
       "city": "Einstadt",

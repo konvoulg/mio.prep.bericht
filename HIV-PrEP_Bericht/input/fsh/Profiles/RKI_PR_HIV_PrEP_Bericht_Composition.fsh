@@ -1,18 +1,9 @@
-/*
-Alias: $sct = http://snomed.info/sct
-Alias: $loinc = http://loinc.org
-Alias: $KBV_CS_MIO_KHE_Section_Codes = https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_KHE_Section_Codes
-Alias: $KBV_EX_MIO_KHE_Reference_PractitionerRole_Leading_Person = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_KHE_Reference_PractitionerRole_Leading_Person
-Alias: $KBV_EX_MIO_KHE_Reference_PractitionerRole_Person_In_Charge = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_KHE_Reference_PractitionerRole_Person_In_Charge
-Alias: $KBV_EX_MIO_KHE_Reference_Practitioner = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_KHE_Reference_Practitioner
-Alias: $KBV_EX_MIO_KHE_Reference_HealthcareService_Contact_Discharge_Management = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_KHE_Reference_HealthcareService_Contact_Discharge_Management
-Alias: $KBV_EX_MIO_KHE_Recipient = https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_KHE_Recipient
-*/
+
 Profile: RKI_PR_HIV_PrEP_Bericht_Composition
 Parent: Composition
 Id: RKI-PR-HIV-PrEP-Bericht-Composition
 Title: "RKI_PR_HIV_PrEP_Bericht_Composition"
-Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
+Description: "Dieses Profil bündelt die Informationen zum HIV-PrEP-Bericht."
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition"
 * insert Meta-Profile
 
@@ -54,20 +45,22 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 //* subject.type ..0
 //* subject.identifier ..0
 //* subject.display ..0
+* encounter MS
 * encounter only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General)
 * date MS
 * author ..1 MS
-* author only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole|0.1.0)
+* author only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole)
 * author.reference 1.. MS
 //* author.type ..0
 * author.identifier 0..1 MS
 * author.identifier only $identifier-telematik-id
 //* author.display ..0
+* title MS
 * title = "HIV PrEP Bericht"
 //* confidentiality ..0
 //* attester ..0
 * custodian 1.. MS
-* custodian only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0)
+* custodian only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization)
 * custodian.reference 1.. MS
 //* custodian.type ..0
 * custodian.identifier 0..1 MS
@@ -91,16 +84,18 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
     immunisierungen 0..1 MS and
     dokumentenverweisAnhang 0..1 MS
 * section[behandelndePersonEinrichtung].title 1.. MS
-* section[behandelndePersonEinrichtung].title = "Behandelnde Person / Einrichtung" (exactly)
+* section[behandelndePersonEinrichtung].title = "Behandelnde Person / Einrichtung" 
 * section[behandelndePersonEinrichtung].code 1.. MS
 * section[behandelndePersonEinrichtung].code.coding 1..1 MS
 //* section[behandelndePersonEinrichtung].code.coding = $loinc#75218-8 "Case report"
 //* section[behandelndePersonEinrichtung].code.coding ^patternCoding.version = "2.71"
-* section[behandelndePersonEinrichtung].code.coding.system ..0
-* section[behandelndePersonEinrichtung].code.coding.version ..0
+* section[behandelndePersonEinrichtung].code.coding.system MS
+* section[behandelndePersonEinrichtung].code.coding.version MS
 * section[behandelndePersonEinrichtung].code.coding.code 1.. MS
-* section[behandelndePersonEinrichtung].code.coding.code = $sectioncodes#SectionBehandelndePersonEinrichtung (exactly)
-* section[behandelndePersonEinrichtung].code.coding.display 1.. MS
+//* section[behandelndePersonEinrichtung].code.coding
+* section[behandelndePersonEinrichtung].code.coding.code = $sectioncodes#SectionBehandelndePersonEinrichtung 
+* section[behandelndePersonEinrichtung].code.coding.system = $sectioncodes
+* section[behandelndePersonEinrichtung].code.coding.display MS
 * section[behandelndePersonEinrichtung].code.coding.display = "Behandelnde Person / Einrichtung"
 * section[behandelndePersonEinrichtung].code.coding.userSelected ..0
 * section[behandelndePersonEinrichtung].code.text ..0
@@ -112,7 +107,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 
 
 * section[behandelndePersonEinrichtung].entry 1..3 MS
-* section[behandelndePersonEinrichtung].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization|0.1.0 or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole)
+* section[behandelndePersonEinrichtung].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole)
 * section[behandelndePersonEinrichtung].entry.reference 1.. MS
 //* section[behandelndePersonEinrichtung].entry.type ..0
 * section[behandelndePersonEinrichtung].entry.identifier ..1
@@ -147,7 +142,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 //* section[anamnese].section MS
 
 * section[beratung].title 1.. MS
-* section[beratung].title = "HIV PrEP Beratung" (exactly)
+* section[beratung].title = "HIV PrEP Beratung" 
 * section[beratung].code 1.. MS
 * section[beratung].code.coding 1..1 MS
 * section[beratung].code.coding = $sct#409063005 "Counseling (procedure)"
@@ -183,9 +178,9 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 //* section[beratung].section[prepinitiierung].code ^patternCodeableConcept.coding.version = "1.0.0"
 * section[beratung].section[prepinitiierung].code.coding 1..1 MS
 * section[beratung].section[prepinitiierung].code.coding.system 1.. MS
-* section[beratung].section[prepinitiierung].code.coding.version 1.. MS
+* section[beratung].section[prepinitiierung].code.coding.version MS
 * section[beratung].section[prepinitiierung].code.coding.code 1.. MS
-* section[beratung].section[prepinitiierung].code.coding.display 1.. MS
+* section[beratung].section[prepinitiierung].code.coding.display MS
 * section[beratung].section[prepinitiierung].code.coding.userSelected ..0
 * section[beratung].section[prepinitiierung].code.text ..0
 * section[beratung].section[prepinitiierung].author ..0
@@ -203,15 +198,15 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[beratung].section[prepinitiierung].section ..0
 
 * section[laboruntersuchungen].title 1.. MS
-* section[laboruntersuchungen].title = "Laboruntersuchungen" (exactly)
+* section[laboruntersuchungen].title = "Laboruntersuchungen"
 * section[laboruntersuchungen].code 1.. MS
 * section[laboruntersuchungen].code.coding 1..1 MS
 * section[laboruntersuchungen].code.coding = $sectioncodes#SectionLaboruntersuchungen "Laboruntersuchungen"
 //* section[laboruntersuchungen].code.coding ^patternCoding.version = "1.0.0"
 * section[laboruntersuchungen].code.coding.system 1.. MS
-* section[laboruntersuchungen].code.coding.version 1.. MS
+* section[laboruntersuchungen].code.coding.version MS
 * section[laboruntersuchungen].code.coding.code 1.. MS
-* section[laboruntersuchungen].code.coding.display 1.. MS
+* section[laboruntersuchungen].code.coding.display MS
 * section[laboruntersuchungen].code.coding.userSelected ..0
 * section[laboruntersuchungen].code.text ..0
 * section[laboruntersuchungen].author ..0
@@ -235,9 +230,9 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[diagnosen].code.coding = $sectioncodes#SectionStiDiagnosen "STI Diagnosen"
 //* section[diagnosen].code.coding ^patternCoding.version = "http://snomed.info/sct/900000000000207008/version/20220531"
 * section[diagnosen].code.coding.system 1.. MS
-* section[diagnosen].code.coding.version 1.. MS
+* section[diagnosen].code.coding.version MS
 * section[diagnosen].code.coding.code 1.. MS
-* section[diagnosen].code.coding.display 1.. MS
+* section[diagnosen].code.coding.display MS
 * section[diagnosen].code.coding.userSelected ..0
 * section[diagnosen].code.text ..0
 * section[diagnosen].author ..0
@@ -245,7 +240,7 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[diagnosen].text ..0
 * section[diagnosen].mode ..0
 * section[diagnosen].orderedBy ..0
-* section[diagnosen].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Chlamydia_Tracomatis or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Gonokokkeninfektion or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisB or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HepatitisC or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_HIV or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Syphilis or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis_Free)
+* section[diagnosen].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis)
 * section[diagnosen].entry MS
 * section[diagnosen].entry.reference 1.. MS
 * section[diagnosen].entry.type ..0
@@ -287,9 +282,9 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 //* section[medikation].section[prepMedikation].code ^patternCodeableConcept.coding.version = "1.0.0"
 * section[medikation].section[prepMedikation].code.coding 1..1 MS
 * section[medikation].section[prepMedikation].code.coding.system 1.. MS
-* section[medikation].section[prepMedikation].code.coding.version 1.. MS
+* section[medikation].section[prepMedikation].code.coding.version MS
 * section[medikation].section[prepMedikation].code.coding.code 1.. MS
-* section[medikation].section[prepMedikation].code.coding.display 1.. MS
+* section[medikation].section[prepMedikation].code.coding.display MS
 * section[medikation].section[prepMedikation].code.coding.userSelected ..0
 * section[medikation].section[prepMedikation].code.text ..0
 * section[medikation].section[prepMedikation].author ..0
@@ -311,10 +306,10 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[medikation].section[behandlungsrelevanteMedikation].code MS
 //* section[medikation].section[behandlungsrelevanteMedikation].code ^patternCodeableConcept.coding.version = "1.0.0"
 * section[medikation].section[behandlungsrelevanteMedikation].code.coding 1..1 MS
-* section[medikation].section[behandlungsrelevanteMedikation].code.coding.system 1..
-* section[medikation].section[behandlungsrelevanteMedikation].code.coding.version 1..
+* section[medikation].section[behandlungsrelevanteMedikation].code.coding.system 1.. MS
+* section[medikation].section[behandlungsrelevanteMedikation].code.coding.version MS
 * section[medikation].section[behandlungsrelevanteMedikation].code.coding.code 1..
-* section[medikation].section[behandlungsrelevanteMedikation].code.coding.display 1..
+* section[medikation].section[behandlungsrelevanteMedikation].code.coding.display MS
 * section[medikation].section[behandlungsrelevanteMedikation].code.coding.userSelected ..0
 * section[medikation].section[behandlungsrelevanteMedikation].code.text ..0
 * section[medikation].section[behandlungsrelevanteMedikation].author ..0
@@ -332,15 +327,15 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[medikation].section[behandlungsrelevanteMedikation].section ..0
 
 * section[termine].title 1.. MS
-* section[termine].title = "Termine"
+* section[termine].title = "Termine" 
 * section[termine].code 1.. MS
-* section[termine].code = $loinc#56446-8 "Appointment summary Document"
+* section[termine].code = $sectioncodes#SectionTermine "Termine"
 //* section[termine].code ^patternCodeableConcept.coding.version = "2.71"
 * section[termine].code.coding 1..1 MS
 * section[termine].code.coding.system 1.. MS
-* section[termine].code.coding.version 1.. MS
+* section[termine].code.coding.version MS
 * section[termine].code.coding.code 1.. MS
-* section[termine].code.coding.display 1.. MS
+* section[termine].code.coding.display MS
 * section[termine].code.coding.userSelected ..0
 * section[termine].code.text ..0
 * section[termine].author ..0
@@ -348,10 +343,64 @@ Description: "Dieses Profil bündelt die Informationen zum HIV PrEP Bericht."
 * section[termine].text ..0
 * section[termine].mode ..0
 * section[termine].orderedBy ..0
-* section[termine].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General)
-* section[termine].entry MS
+* section[termine].entry ..0
 * section[termine].emptyReason ..0
-* section[termine].section ..0
+* section[termine].section ..2 MS
+* section[termine].section ^slicing.discriminator.type = #pattern
+* section[termine].section ^slicing.discriminator.path = "code"
+* section[termine].section ^slicing.rules = #closed
+* section[termine].section contains
+    begegnung 0..1 MS and
+    naechsterTermin 0..1 MS
+* section[termine].section[begegnung].title 1.. MS
+* section[termine].section[begegnung].title = "Begegnung"
+* section[termine].section[begegnung].code = $sct#866144008 "Encounter note (record artifact)"
+* section[termine].section[begegnung].code MS
+* section[termine].section[begegnung].code.coding 1..1 MS
+* section[termine].section[begegnung].code.coding.system 1.. MS
+* section[termine].section[begegnung].code.coding.version 1.. MS
+* section[termine].section[begegnung].code.coding.code 1.. MS
+* section[termine].section[begegnung].code.coding.display MS
+* section[termine].section[begegnung].code.coding.userSelected ..0
+* section[termine].section[begegnung].code.text ..0
+* section[termine].section[begegnung].author ..0
+* section[termine].section[begegnung].focus ..0
+* section[termine].section[begegnung].text ..0
+* section[termine].section[begegnung].mode ..0
+* section[termine].section[begegnung].orderedBy ..0
+* section[termine].section[begegnung].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General)
+* section[termine].section[begegnung].entry MS
+* section[termine].section[begegnung].entry.reference 1.. MS
+* section[termine].section[begegnung].entry.type ..0
+* section[termine].section[begegnung].entry.identifier ..0
+* section[termine].section[begegnung].entry.display ..0
+* section[termine].section[begegnung].emptyReason ..0
+* section[termine].section[begegnung].section ..0
+* section[termine].section[naechsterTermin].title 1.. MS
+* section[termine].section[naechsterTermin].title = "Naechster Termin"
+* section[termine].section[naechsterTermin].code = $sct#39084006 "Naechster Termin"
+* section[termine].section[naechsterTermin].code MS
+* section[termine].section[naechsterTermin].code.coding 1..1 MS
+* section[termine].section[naechsterTermin].code.coding.system 1.. MS
+* section[termine].section[naechsterTermin].code.coding.version MS
+* section[termine].section[naechsterTermin].code.coding.code 1..
+* section[termine].section[naechsterTermin].code.coding.display MS
+* section[termine].section[naechsterTermin].code.coding.userSelected ..0
+* section[termine].section[naechsterTermin].code.text ..0
+* section[termine].section[naechsterTermin].author ..0
+* section[termine].section[naechsterTermin].focus ..0
+* section[termine].section[naechsterTermin].text ..0
+* section[termine].section[naechsterTermin].mode ..0
+* section[termine].section[naechsterTermin].orderedBy ..0
+* section[termine].section[naechsterTermin].entry only Reference(https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp)
+* section[termine].section[naechsterTermin].entry MS
+* section[termine].section[naechsterTermin].entry.reference 1.. MS
+* section[termine].section[naechsterTermin].entry.type ..0
+* section[termine].section[naechsterTermin].entry.identifier ..0
+* section[termine].section[naechsterTermin].entry.display ..0
+* section[termine].section[naechsterTermin].emptyReason ..0
+* section[termine].section[naechsterTermin].section ..0
+
 
 * section[immunisierungen].title 1..1 MS 
 * section[immunisierungen].title = "Immunisierungen"

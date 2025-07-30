@@ -2,7 +2,7 @@ Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis
 Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
 Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis
 Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis"
-Description: "In diesem Profil kann eine Laboruntersuchung des Humanes Treponema Pallidum-Virus (Syphilis) dokumentiert werden."
+Description: "In diesem Profil kann eine Laboruntersuchung einer Syphilis bzw. ihres Erregers Treponema Pallidum dokumentiert werden."
 
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis"
 
@@ -123,6 +123,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung des Humanes Treponema
 * valueQuantity 0..1
 //* valueQuantity = $unitsofmeasure#mL/min/{1.73_m2} "milliliter per minute per 1.73 square meter"
 */
+* valueQuantity MS
 * valueQuantity from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Observation_Units_Syphilis_UCUM (required)
 /*
 * valueQuantity ^definition = "Hier wird das Messergebnis als quantitativer Wert abgebildet."
