@@ -43,6 +43,50 @@
         "max": "*"
       },
       {
+        "id": "Medication.meta.tag",
+        "path": "Medication.meta.tag",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.meta.tag:relevance",
+        "path": "Medication.meta.tag",
+        "sliceName": "relevance",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Relevance"
+        }
+      },
+      {
+        "id": "Medication.meta.tag:relevance.system",
+        "path": "Medication.meta.tag.system",
+        "min": 1,
+        "patternUri": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Relevance",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.meta.tag:relevance.code",
+        "path": "Medication.meta.tag.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.meta.tag:relevance.display",
+        "path": "Medication.meta.tag.display",
+        "mustSupport": true
+      },
+      {
         "id": "Medication.text",
         "path": "Medication.text",
         "definition": "In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."

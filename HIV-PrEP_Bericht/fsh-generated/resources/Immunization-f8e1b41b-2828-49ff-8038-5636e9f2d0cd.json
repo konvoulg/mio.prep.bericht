@@ -4,6 +4,13 @@
   "meta": {
     "profile": [
       "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
+    ],
+    "tag": [
+      {
+        "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Relevance",
+        "code": "PrEPRelevant",
+        "display": "Relevant für PrEP"
+      }
     ]
   },
   "vaccineCode": {

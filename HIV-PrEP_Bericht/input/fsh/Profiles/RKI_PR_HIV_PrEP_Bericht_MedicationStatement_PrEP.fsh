@@ -32,6 +32,8 @@ Description: "Dieses Profil bildet die Angaben zur Einnahme bzw. Verabreichung e
 */
 * meta.profile[mioProfile] ^mustSupport = true
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP"
+
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 /*
 * text ^definition = "In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
 * text.status = #extensions

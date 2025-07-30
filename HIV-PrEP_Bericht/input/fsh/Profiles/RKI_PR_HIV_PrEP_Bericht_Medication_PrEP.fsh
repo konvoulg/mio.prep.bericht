@@ -21,6 +21,9 @@ Description: "Dieses Profil bildet der HIV PrEP Arzneimittel ab."
 * meta.profile contains mioProfile 0..*
 */
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_PrEP"
+
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
+
 * text ^definition = "In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."
 * text.status = #extensions (exactly)
 * code 1..

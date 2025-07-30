@@ -11,7 +11,7 @@ Usage: #example
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 * extension[Feststellungsdatum].valueDateTime = "2017-01-01"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G

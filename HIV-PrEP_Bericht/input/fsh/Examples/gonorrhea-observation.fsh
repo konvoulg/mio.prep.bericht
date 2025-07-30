@@ -9,6 +9,9 @@ Description: "This is an example gonorrhea observation instance"
 Usage: #example
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
+
+
 
 * extension[dokumentationszeitpunkt].valueDateTime = "2017-02-02"
 

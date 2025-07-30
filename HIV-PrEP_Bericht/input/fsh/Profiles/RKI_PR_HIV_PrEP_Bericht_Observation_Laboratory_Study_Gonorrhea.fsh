@@ -25,7 +25,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung einer Gonorrhoe dokum
 //*/
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
 
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 //* implicitRules ..0
 
 //* language ..0

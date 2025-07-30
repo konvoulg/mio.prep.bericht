@@ -77,6 +77,16 @@
         "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR"
       },
       {
+        "id": "Observation.meta.tag:relevance",
+        "path": "Observation.meta.tag",
+        "sliceName": "relevance",
+        "patternCoding": {
+          "code": "PrEP",
+          "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Relevance",
+          "display": "PrEP Spezifisch"
+        }
+      },
+      {
         "id": "Observation.code",
         "path": "Observation.code",
         "definition": "Hier wird die Laboruntersuchung zur Bestimmung der Glomerulären Filtrationsrate (GFR) mittels eines spezifischen Codes definiert."

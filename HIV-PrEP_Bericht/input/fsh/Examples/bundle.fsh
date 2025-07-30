@@ -718,7 +718,7 @@ Description: "This is an example creatinine observation instance"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 * extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 
 * status = #final
@@ -771,7 +771,7 @@ Description: "This is an example chlamydia-trachomatis observation instance"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis"
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 * extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 
 * status = #final
@@ -811,7 +811,7 @@ Description: "This is an example gonorrhea observation instance"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 * extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 
 * status = #final
@@ -849,7 +849,7 @@ Description: "This is an example hepatitisB observation instance"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 * extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 
 * status = #final
@@ -908,7 +908,7 @@ Description: "This is an example hepatitisB observation instance"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 * extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 
 * status = #final
@@ -967,7 +967,7 @@ Description: "This is an example hepatitisB observation instance"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 * extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 
 * status = #final
@@ -1032,7 +1032,7 @@ Description: "This is an example hepatitisB observation instance"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC"
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 * extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25T09:00:00+08:00"
 
 * status = #final
@@ -1069,7 +1069,7 @@ Description: "This is an example hiv observation instance"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV"
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 * extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25T09:00:00+08:00"
 
 * status = #final
@@ -1145,7 +1145,7 @@ Description: "This is an example chlamydia tracomatis instance"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
 * extension[Feststellungsdatum].valueDateTime = "2019-09-25T09:00:00+08:00"
 
@@ -1182,7 +1182,7 @@ Description: "This is an example medication statement instance for HIV PrEP repo
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP"
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 //* identifier[zeilenId].value = "1234567"
 
 * status = #active
@@ -1208,7 +1208,7 @@ Description: "This is an example medication instance for HIV PrEP reporting"
 Usage: #inline
 
 * status = #active
-
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 * code.coding[atc-de].system = "http://fhir.de/CodeSystem/bfarm/atc"
 * code.coding[atc-de].version = "2024"
 * code.coding[atc-de].display = "Tenofovirdisoproxil und Emtricitabin"
@@ -1269,7 +1269,7 @@ Description: "This is an example immunization instance for HIV PrEP reporting"
 Usage: #example
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
-
+* meta.tag[relevance] = $RelevanceCS#PrEPRelevant "Relevant für PrEP"
 * status = #completed
 
 * vaccineCode.coding[snomed_CT].system = "http://snomed.info/sct"

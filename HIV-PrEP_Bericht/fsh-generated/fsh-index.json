@@ -64,6 +64,14 @@
     "endLine": 30
   },
   {
+    "outputFile": "CodeSystem-Relevance.json",
+    "fshName": "Relevance",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems\\RKI_CS_HIV_PrEP_Bericht_Relevance.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
     "outputFile": "Composition-9a9ba169-33fe-41de-ab02-ddebf1cce45b.json",
     "fshName": "9a9ba169-33fe-41de-ab02-ddebf1cce45b",
     "fshType": "Instance",
@@ -93,7 +101,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\immunization.fsh",
     "startLine": 1,
-    "endLine": 33
+    "endLine": 34
   },
   {
     "outputFile": "Immunization-f8e1b41b-2830-49ff-8038-5636e9f2d0cd.json",
@@ -125,7 +133,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\hepatitisB-observation.fsh",
     "startLine": 5,
-    "endLine": 36
+    "endLine": 37
   },
   {
     "outputFile": "Observation-3e97326d-9401-4fca-b416-4e9aa8346f5a.json",
@@ -133,7 +141,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\gonorrhea-observation.fsh",
     "startLine": 5,
-    "endLine": 37
+    "endLine": 40
   },
   {
     "outputFile": "Observation-4a7fea51-25ea-4862-9fc1-4b677b03ec1b.json",
@@ -141,7 +149,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\hepatitisC-observation.fsh",
     "startLine": 5,
-    "endLine": 37
+    "endLine": 38
   },
   {
     "outputFile": "Observation-548dd131-3f58-4426-9e44-3d9ce3b6db72.json",
@@ -149,7 +157,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\gfr-observation.fsh",
     "startLine": 5,
-    "endLine": 44
+    "endLine": 46
   },
   {
     "outputFile": "Observation-793671d7-db7b-44fb-94a6-27f7acd332be.json",
@@ -157,7 +165,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\chlamydia-observation.fsh",
     "startLine": 5,
-    "endLine": 37
+    "endLine": 39
   },
   {
     "outputFile": "Observation-abeb63fe-e33d-4e72-832d-7bdbec7d9b69.json",
@@ -165,7 +173,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\hiv-observation.fsh",
     "startLine": 5,
-    "endLine": 37
+    "endLine": 38
   },
   {
     "outputFile": "Observation-be552245-9130-4363-8699-44eb481731ab.json",
@@ -189,7 +197,7 @@
     "fshType": "Instance",
     "fshFile": "Examples\\creatinine-observation.fsh",
     "startLine": 5,
-    "endLine": 48
+    "endLine": 50
   },
   {
     "outputFile": "Observation-d24a5fdb-51bb-470c-bca8-a3c8e90a6265.json",
@@ -293,7 +301,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance.fsh",
     "startLine": 3,
-    "endLine": 225
+    "endLine": 226
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Appointment-FollowUp.json",
@@ -333,7 +341,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis.fsh",
     "startLine": 1,
-    "endLine": 207
+    "endLine": 209
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Condition-History-Present.json",
@@ -365,7 +373,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Immunization.fsh",
     "startLine": 5,
-    "endLine": 161
+    "endLine": 163
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Medication-Free.json",
@@ -381,7 +389,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Medication_PrEP.fsh",
     "startLine": 3,
-    "endLine": 126
+    "endLine": 129
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-MedicationStatement-Free.json",
@@ -389,7 +397,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free.fsh",
     "startLine": 3,
-    "endLine": 537
+    "endLine": 538
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-MedicationStatement-PrEP.json",
@@ -397,7 +405,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP.fsh",
     "startLine": 3,
-    "endLine": 159
+    "endLine": 161
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight.json",
@@ -429,7 +437,7 @@
     "fshType": "Profile",
     "fshFile": "Profiles\\RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free.fsh",
     "startLine": 3,
-    "endLine": 309
+    "endLine": 310
   },
   {
     "outputFile": "StructureDefinition-RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-GFR.json",
@@ -694,6 +702,14 @@
     "fshFile": "ValueSets\\RKI_VS_HIV_PrEP_Bericht_Syphilis_Lab_Study_LOINC.fsh",
     "startLine": 1,
     "endLine": 104
+  },
+  {
+    "outputFile": "ValueSet-Relevance.json",
+    "fshName": "Relevance",
+    "fshType": "ValueSet",
+    "fshFile": "CodeSystems\\RKI_CS_HIV_PrEP_Bericht_Relevance.fsh",
+    "startLine": 16,
+    "endLine": 24
   },
   {
     "outputFile": "ValueSet-Sexual-Orientation-SNOMEDCT.json",

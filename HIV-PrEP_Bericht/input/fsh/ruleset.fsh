@@ -11,3 +11,15 @@ RuleSet: MetadataTerminology
 * ^contact.name = "Robert Koch-Institut"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://rki.de"
+
+RuleSet: ProfileMetaTags
+* meta.tag MS
+* meta.tag ^slicing.discriminator.type = #pattern
+* meta.tag ^slicing.discriminator.path = "system"
+* meta.tag ^slicing.rules = #open
+* meta.tag contains relevance 0..* MS
+* meta.tag[relevance] from $RelevanceVS (required)
+* meta.tag[relevance].system 1.. MS
+* meta.tag[relevance].system = $RelevanceCS
+* meta.tag[relevance].code 1.. MS
+* meta.tag[relevance].display MS

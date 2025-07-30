@@ -29,6 +29,16 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationStatement.meta.tag:relevance",
+        "path": "MedicationStatement.meta.tag",
+        "sliceName": "relevance",
+        "patternCoding": {
+          "code": "PrEP",
+          "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Relevance",
+          "display": "PrEP Spezifisch"
+        }
+      },
+      {
         "id": "MedicationStatement.medication[x]:medicationReference",
         "path": "MedicationStatement.medication[x]",
         "sliceName": "medicationReference",

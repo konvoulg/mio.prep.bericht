@@ -4,6 +4,13 @@
   "meta": {
     "profile": [
       "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR"
+    ],
+    "tag": [
+      {
+        "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Relevance",
+        "code": "PrEP",
+        "display": "PrEP Spezifisch"
+      }
     ]
   },
   "category": [

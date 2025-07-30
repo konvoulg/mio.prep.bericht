@@ -9,6 +9,8 @@ Description: "This is an example chlamydia-trachomatis observation instance"
 Usage: #example
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis"
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
+
 
 * extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 

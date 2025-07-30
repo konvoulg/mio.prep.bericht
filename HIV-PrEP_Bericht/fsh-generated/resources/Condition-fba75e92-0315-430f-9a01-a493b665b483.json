@@ -4,6 +4,13 @@
   "meta": {
     "profile": [
       "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
+    ],
+    "tag": [
+      {
+        "system": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Relevance",
+        "code": "PrEP",
+        "display": "PrEP Spezifisch"
+      }
     ]
   },
   "extension": [

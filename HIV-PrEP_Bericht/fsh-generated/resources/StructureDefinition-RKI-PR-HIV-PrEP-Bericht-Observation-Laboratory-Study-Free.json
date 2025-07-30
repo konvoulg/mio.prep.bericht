@@ -99,6 +99,50 @@
         "max": "*"
       },
       {
+        "id": "Observation.meta.tag",
+        "path": "Observation.meta.tag",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.meta.tag:relevance",
+        "path": "Observation.meta.tag",
+        "sliceName": "relevance",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Relevance"
+        }
+      },
+      {
+        "id": "Observation.meta.tag:relevance.system",
+        "path": "Observation.meta.tag.system",
+        "min": 1,
+        "patternUri": "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Relevance",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.meta.tag:relevance.code",
+        "path": "Observation.meta.tag.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.meta.tag:relevance.display",
+        "path": "Observation.meta.tag.display",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.text",
         "path": "Observation.text",
         "definition": "In diesem Element können die in der Instanz enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."

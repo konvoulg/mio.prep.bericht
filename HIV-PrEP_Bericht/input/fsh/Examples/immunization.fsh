@@ -5,6 +5,7 @@ Description: "This is an example immunization instance for HIV PrEP reporting"
 Usage: #example
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
+* meta.tag[relevance] = $RelevanceCS#PrEPRelevant "Relevant für PrEP"
 
 * status = #completed
 

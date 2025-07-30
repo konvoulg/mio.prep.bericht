@@ -9,6 +9,8 @@ Description: "This is an example Glomerular filtration rate instance"
 Usage: #example
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_GFR"
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
+
 
 * status = #final
 
