@@ -9,7 +9,7 @@
   "extension": [
     {
       "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Documentation_Date",
-      "valueDateTime": "2017-02-02"
+      "valueDateTime": "2019-09-25"
     }
   ],
   "category": [
@@ -51,5 +51,5 @@
     ]
   },
   "status": "final",
-  "effectiveDateTime": "2017-01-01"
+  "effectiveDateTime": "2019-09-25"
 }

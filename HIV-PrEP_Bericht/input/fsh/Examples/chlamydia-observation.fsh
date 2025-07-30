@@ -10,7 +10,7 @@ Usage: #example
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis"
 
-* extension[dokumentationszeitpunkt].valueDateTime = "2017-02-02"
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
 
 * status = #final
 
@@ -23,7 +23,7 @@ Usage: #example
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
 
-* effectiveDateTime = "2017-01-01"
+* effectiveDateTime = "2019-09-25"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-828d-cf24d33717eb" // Reference to the Practitioner
 /*
