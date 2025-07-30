@@ -66,57 +66,66 @@ Usage: #example
 * entry[11].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_Beratung/9a8ba8af-39a4-497b-bbeb-47f97b7d940d"
 * entry[11].resource = 9a8ba8af-39a4-497b-bbeb-47f97b7d940d
 
-// Encounter
-* entry[12].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/c4269483-dd6e-4a26-a69e-3d060f6c60fe"
-* entry[12].resource = c4269483-dd6e-4a26-a69e-3d060f6c60fe
+// Encounter1
+* entry[12].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/c4269483-dd6e-4a26-a69e-3d060f6c60fd"
+* entry[12].resource = c4269483-dd6e-4a26-a69e-3d060f6c60fd
+// Encounter2
+* entry[13].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/c4269483-dd6e-4a26-a69e-3d060f6c60fe"
+* entry[13].resource = c4269483-dd6e-4a26-a69e-3d060f6c60fe
 
 // Laboruntersuchung Creatinine
-* entry[13].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Creatinine/c72db78e-5bd4-4b58-a897-aed3d5a9640c"
-* entry[13].resource = c72db78e-5bd4-4b58-a897-aed3d5a9640c
+* entry[14].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Creatinine/c72db78e-5bd4-4b58-a897-aed3d5a9640c"
+* entry[14].resource = c72db78e-5bd4-4b58-a897-aed3d5a9640c
 
 // Laboruntersuchung Chlamydia
-* entry[14].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Chlamydia/793671d7-db7b-44fb-94a6-27f7acd440be"
-* entry[14].resource = 793671d7-db7b-44fb-94a6-27f7acd440be
+* entry[15].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Chlamydia/793671d7-db7b-44fb-94a6-27f7acd440be"
+* entry[15].resource = 793671d7-db7b-44fb-94a6-27f7acd440be
 
 // Laboruntersuchung Gonorrhoe
-* entry[15].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Gonorrhoe/4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
-* entry[15].resource = 4a311b0a-ec7e-4486-bb6b-1a257f0bbee1
+* entry[16].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Gonorrhoe/3e97326d-9401-4fca-b416-4e9aa8350f5a"
+* entry[16].resource = 3e97326d-9401-4fca-b416-4e9aa8350f5a
 
-// Laboruntersuchung Hepatitis B
-* entry[16].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Hepatitis_B/39a8b719-ee89-4400-9078-1227bd31fe70"
-* entry[16].resource = 39a8b719-ee89-4400-9078-1227bd31fe70
+// Laboruntersuchung Hepatitis B1
+* entry[17].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Hepatitis_B/39a8b719-ee89-4400-9078-1227bd31fe70"
+* entry[17].resource = 39a8b719-ee89-4400-9078-1227bd31fe70
+
+* entry[18].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Hepatitis_B/39a8b719-ee89-4400-9078-1227bd31fe71"
+* entry[18].resource = 39a8b719-ee89-4400-9078-1227bd31fe71
+
+* entry[19].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Hepatitis_B/39a8b719-ee89-4400-9078-1227bd31fe72"
+* entry[19].resource = 39a8b719-ee89-4400-9078-1227bd31fe72
 
 // Laboruntersuchung Hepatitis C
-* entry[17].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Hepatitis_C/4a7fea51-25ea-4862-9fc1-4b677b04ec1b"
-* entry[17].resource = 4a7fea51-25ea-4862-9fc1-4b677b04ec1b
+* entry[20].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Hepatitis_C/4a7fea51-25ea-4862-9fc1-4b677b04ec1b"
+* entry[20].resource = 4a7fea51-25ea-4862-9fc1-4b677b04ec1b
 
 // Laboruntersuchung HIV
-* entry[18].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_HIV/abeb63fe-e33d-4e72-840d-7bdbec7d9b69"
-* entry[18].resource = abeb63fe-e33d-4e72-840d-7bdbec7d9b69
+* entry[21].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_HIV/abeb63fe-e33d-4e72-840d-7bdbec7d9b69"
+* entry[21].resource = abeb63fe-e33d-4e72-840d-7bdbec7d9b69
 
 // Laborarzt
-* entry[19].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/e9ee4679-1e5b-4f04-830d-cf24d33717eb"
-* entry[19].resource = e9ee4679-1e5b-4f04-830d-cf24d33717eb
+* entry[22].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/e9ee4679-1e5b-4f04-830d-cf24d33717eb"
+* entry[22].resource = e9ee4679-1e5b-4f04-830d-cf24d33717eb
 
 // Diagnose Chlamydia
-* entry[20].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition/fba75e92-0315-430f-9a01-a493b665b500"
-* entry[20].resource = fba75e92-0315-430f-9a01-a493b665b500
+* entry[23].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition/fba75e92-0315-430f-9a01-a493b665b500"
+* entry[23].resource = fba75e92-0315-430f-9a01-a493b665b500
 
 // MedikationStatement
-* entry[21].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/0ac9e5ae-fe98-47f1-b580-a9dbb2d9f2220"
-* entry[21].resource = 0ac9e5ae-fe98-47f1-b580-a9dbb2d9f2220
+* entry[24].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/0ac9e5ae-fe98-47f1-b580-a9dbb2d9f2220"
+* entry[24].resource = 0ac9e5ae-fe98-47f1-b580-a9dbb2d9f2220
 
 // Medication
-* entry[22].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication/5a27bacd-1db6-43c8-8fad-18b898a29480"
-* entry[22].resource = 5a27bacd-1db6-43c8-8fad-18b898a29480
+* entry[25].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication/5a27bacd-1db6-43c8-8fad-18b898a29480"
+* entry[25].resource = 5a27bacd-1db6-43c8-8fad-18b898a29480
 
 // Nächster Termin - Appointment
-* entry[23].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/86bfcbb1-741d-48af-9d0b-062d76e3e5f9"
-* entry[23].resource = 86bfcbb1-741d-48af-9d0b-062d76e3e5f9
+* entry[26].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/86bfcbb1-741d-48af-9d0b-062d76e3e5f9"
+* entry[26].resource = 86bfcbb1-741d-48af-9d0b-062d76e3e5f9
 
 // Immunisierung
-* entry[24].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization/f8e1b41b-2830-49ff-8038-5636e9f2d0cd"
-* entry[24].resource = f8e1b41b-2830-49ff-8038-5636e9f2d0cd
+* entry[27].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization/f8e1b41b-2830-49ff-8038-5636e9f2d0cd"
+* entry[27].resource = f8e1b41b-2830-49ff-8038-5636e9f2d0cd
 
 
 //Composition
@@ -178,13 +187,15 @@ Usage: #inline
 // Laboruntersuchung Chlamydia
 * section[laboruntersuchungen].entry[1] = Reference(urn:uuid:793671d7-db7b-44fb-94a6-27f7acd440be)
 // Laboruntersuchung Gonorrhoe
-* section[laboruntersuchungen].entry[2] = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)
+* section[laboruntersuchungen].entry[2] = Reference(urn:uuid:3e97326d-9401-4fca-b416-4e9aa8350f5a)
 // Laboruntersuchung Hepatitis B
 * section[laboruntersuchungen].entry[3] = Reference(urn:uuid:39a8b719-ee89-4400-9078-1227bd31fe70)
+* section[laboruntersuchungen].entry[4] = Reference(urn:uuid:39a8b719-ee89-4400-9078-1227bd31fe71)
+* section[laboruntersuchungen].entry[5] = Reference(urn:uuid:39a8b719-ee89-4400-9078-1227bd31fe72)
 // Laboruntersuchung Hepatitis C
-* section[laboruntersuchungen].entry[4] = Reference(urn:uuid:4a7fea51-25ea-4862-9fc1-4b677b04ec1b)
+* section[laboruntersuchungen].entry[6] = Reference(urn:uuid:4a7fea51-25ea-4862-9fc1-4b677b04ec1b)
 // Laboruntersuchung HIV
-* section[laboruntersuchungen].entry[5] = Reference(urn:uuid:abeb63fe-e33d-4e72-840d-7bdbec7d9b69)
+* section[laboruntersuchungen].entry[7] = Reference(urn:uuid:abeb63fe-e33d-4e72-840d-7bdbec7d9b69)
 
 
 * section[diagnosen].title = "STI Diagnosen"
@@ -211,7 +222,8 @@ Usage: #inline
 //* section[termine].code.coding.version = "4.0.1"
 * section[termine].code.coding.code = #SectionTermine
 * section[termine].code.coding.display = "Termine"
-* section[termine].section[begegnung].entry = Reference(urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fe)
+* section[termine].section[begegnung].entry[0] = Reference(urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fe)
+* section[termine].section[begegnung].entry[1] = Reference(urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fd)
 * section[termine].section[begegnung].title = "Begegnung"
 * section[termine].section[begegnung].code.coding.system = $sct
 * section[termine].section[begegnung].code.coding.version = "http://snomed.info/sct/11000274103/version/20241115"
@@ -464,8 +476,8 @@ Usage: #inline
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[ICD-10-GM].version = "0.1.0"
-* code.coding[ICD-10-GM].code = #M79.04
-* code.coding[ICD-10-GM].display = "Rheumatismus, nicht näher bezeichnet Hand"
+* code.coding[ICD-10-GM].code = #J45.1
+* code.coding[ICD-10-GM].display = "Vorwiegend allergisches Asthma bronchiale Als teilweise kontrolliert und nicht schwer bezeichnet"
 
 * subject = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
@@ -549,8 +561,8 @@ Usage: #example
 * item[+].linkId = "1993731509843"
 * item[=].answer.valueCoding = $sct#373067005 "No"
 
-* item[+].linkId = "5407091313032"
-* item[=].answer.valueCoding = $sct#373067005 "No"
+* item[+].linkId = "5407091313032" 
+* item[=].answer.valueCoding = $data_absent#unknown "Unbekannt"
 
 * item[+].linkId = "7294102201786"
 * item[=].answer.valueCoding = $sct#38628009 "Homosexual"
@@ -630,9 +642,37 @@ Usage: #inline
 * reasonCode[2].coding.code = #410123007
 * reasonCode[2].coding.display = "Medication regimen compliance education (procedure)"
 
+//Encounter 1
+Instance: c4269483-dd6e-4a26-a69e-3d060f6c60fd
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Encounter-General
+Title: "Example of a general encounter"
+Description: "This is an example general encounter instance for HIV PrEP reporting"
 
+Usage: #inline
 
-//Encounter
+* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
+
+* status = #finished
+
+* type.coding.system = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type"
+* type.coding.version = "1.0.0"
+* type.coding.code = #01920
+* type.coding.display = "Beratung vor Präexpositionsprophylaxe"
+
+* class.version = "2.0.0"
+* class = $v3-ActCode#AMB "ambulatory"
+
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+* subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
+* subject.identifier.value = "X987654321"
+
+* period.start = "2019-09-23"
+
+* serviceProvider.reference = "urn:uuid:81eacc87-e116-4505-a4e2-02404a022040"
+* serviceProvider.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* serviceProvider.identifier.value = "123456"
+
+//Encounter 2
 
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
@@ -798,7 +838,7 @@ Usage: #inline
 * valueCodeableConcept.coding.code = #260385009
 * valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
-// Observation Hepatitis B
+// Observation Hepatitis B 1
 
 
 
@@ -818,8 +858,8 @@ Usage: #inline
 
 * code.coding[loinc].system = "http://loinc.org"
 * code.coding[loinc].version = "2.73"
-* code.coding[loinc].code = #29610-3
-* code.coding[loinc].display = "Hepatitis B virus DNA [Presence] in Serum or Plasma by NAA with probe detection"
+* code.coding[loinc].code = #5196-1
+* code.coding[loinc].display = "Hepatitis-B-Virus-surface Antigen [Nachweis] in Serum oder Plasma mittels Immunoassay"
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
@@ -856,6 +896,129 @@ Usage: #inline
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * valueCodeableConcept.coding.code = #260385009
 * valueCodeableConcept.coding.display = "Negative (qualifier value)"
+
+// Observation Hepatitis B 2
+
+
+
+Instance: 39a8b719-ee89-4400-9078-1227bd31fe71
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisB
+Title: "Example of a HepatitisB Observation"
+Description: "This is an example hepatitisB observation instance"
+Usage: #inline
+
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
+
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
+
+* status = #final
+
+* category = $secondary-finding#laboratory
+
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version = "2.73"
+* code.coding[loinc].code = #13952-7
+* code.coding[loinc].display = "Hepatitis-B-Virus-Core Antikörper [Nachweis] in Serum oder Plasma mittels Immunoassay"
+
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+
+* effectiveDateTime = "2019-09-25T09:00:00+08:00"
+
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
+/*
+* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* performer.identifier.value = "123456"
+*/
+/*
+* valueQuantity.value = 0.9
+* valueQuantity.unit = "mg/dL"
+* valueQuantity.code = #mg/dL
+* valueQuantity.system = "http://unitsofmeasure.org"
+
+* interpretation.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+* interpretation.coding[0].version = "1.4.0"
+* interpretation.coding[0].code = #N
+* interpretation.coding[0].display = "Normal"
+
+* referenceRange.low = 0.6 'mg/dL'
+* referenceRange.low.unit = "mg/dL"
+* referenceRange.high = 1.2 'mg/dL'
+* referenceRange.high.unit = "mg/dL"
+* referenceRange.type.coding.system = "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+* referenceRange.type.coding.version = "1.0.1"
+* referenceRange.type.coding.code = #type
+* referenceRange.type.coding.display = "Type"
+* referenceRange.appliesTo = $sct#248152002 "male"
+* referenceRange.appliesTo.text = "male"
+*/
+* valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
+* valueCodeableConcept.coding.code = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
+
+
+
+// Observation Hepatitis B 3
+
+Instance: 39a8b719-ee89-4400-9078-1227bd31fe72
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisB
+Title: "Example of a HepatitisB Observation"
+Description: "This is an example hepatitisB observation instance"
+Usage: #inline
+
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
+
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-25"
+
+* status = #final
+
+* category = $secondary-finding#laboratory
+
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version = "2.73"
+* code.coding[loinc].code = #22322-2
+* code.coding[loinc].display = "Hepatitis-B-Virus-surface Antikörper [Nachweis] in Serum"
+
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+
+* effectiveDateTime = "2019-09-25T09:00:00+08:00"
+
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
+/*
+* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* performer.identifier.value = "123456"
+*/
+/*
+* valueQuantity.value = 0.9
+* valueQuantity.unit = "mg/dL"
+* valueQuantity.code = #mg/dL
+* valueQuantity.system = "http://unitsofmeasure.org"
+
+* interpretation.coding[0].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+* interpretation.coding[0].version = "1.4.0"
+* interpretation.coding[0].code = #N
+* interpretation.coding[0].display = "Normal"
+
+* referenceRange.low = 0.6 'mg/dL'
+* referenceRange.low.unit = "mg/dL"
+* referenceRange.high = 1.2 'mg/dL'
+* referenceRange.high.unit = "mg/dL"
+* referenceRange.type.coding.system = "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+* referenceRange.type.coding.version = "1.0.1"
+* referenceRange.type.coding.code = #type
+* referenceRange.type.coding.display = "Type"
+* referenceRange.appliesTo = $sct#248152002 "male"
+* referenceRange.appliesTo.text = "male"
+*/
+* valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
+* valueCodeableConcept.coding.code = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
+
+
+
+
+
 
 // Observation Hepatitis C
 Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
@@ -915,8 +1078,8 @@ Usage: #inline
 
 * code.coding[loinc].system = "http://loinc.org"
 * code.coding[loinc].version = "2.73"
-* code.coding[loinc].code = #25835-0
-* code.coding[loinc].display = "HIV 1 RNA [Presence] in Serum or Plasma by NAA with probe detection"
+* code.coding[loinc].code = #5223-3
+* code.coding[loinc].display = "HIV-1+2 Ak:Arbiträre Konzentration:Zeitpunkt:Serum oder Plasma:Quantitativ:Immunoassay"
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
@@ -996,7 +1159,7 @@ Usage: #inline
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* onsetDateTime = "2019-09-25T09:00:00+08:00"
+* onsetDateTime = "2019-09-25T09:00:00+01:00"
 
 * clinicalStatus.coding = $con-clinical#active "Active"
 * clinicalStatus.coding.version = "3.0.0"
@@ -1086,8 +1249,8 @@ Usage: #example
 //* appointmentType.coding.system = $v2-0276
 * appointmentType.coding.version = "2.0.0"
 
-* start = "2019-11-01T09:00:00+08:00"
-* end = "2017-11-01T10:00:00+08:00"
+* start = "2019-10-22T09:00:00+01:00"
+* end = "2019-10-22T10:00:00+01:00"
 
 * participant[0].actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
 * participant[=].actor.type = "Practitioner"
@@ -1110,18 +1273,18 @@ Usage: #example
 * status = #completed
 
 * vaccineCode.coding[snomed_CT].system = "http://snomed.info/sct"
-* vaccineCode.coding[snomed_CT].code = #836374004  // Replace with actual SNOMED CT code
-* vaccineCode.coding[snomed_CT].display = "Vaccine product containing Hepatitis B virus antigen (medicinal product)"
+* vaccineCode.coding[snomed_CT].code = #871803007 
+* vaccineCode.coding[snomed_CT].display = "Impfstoff gegen Hepatitis-A- und B-Virus"
 * vaccineCode.coding[snomed_CT].version = "1.1.0"
-* vaccineCode.text = "Vaccine product containing Hepatitis B virus antigen (medicinal product)"
+* vaccineCode.text = "Impfstoff gegen Hepatitis-A- und B-Virus"
 * vaccineCode.coding[atc].system = "http://fhir.de/CodeSystem/dimdi/atc"
 * vaccineCode.coding[atc].version = "0.9.12"
-* vaccineCode.coding[atc].code = #J07BC01
-* vaccineCode.coding[atc].display = "Hepatitis B, gereinigtes Antigen"
+* vaccineCode.coding[atc].code = #J07BC20
+* vaccineCode.coding[atc].display = "Kombinationen (Hepatitis A + Hepatitis B)"
 
 * patient.reference = "4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"  // Reference to the Patient resource
 
-* occurrenceDateTime = "2019-10-01T09:00:00+08:00"
+* occurrenceDateTime = "2019-10-01T09:00:00+01:00"
 
 * lotNumber = "12345678"  // Vaccine lot number
 
@@ -1129,6 +1292,6 @@ Usage: #example
 * protocolApplied.targetDisease.coding.code = #66071002
 * protocolApplied.targetDisease.coding.display = "Viral hepatitis type B (disorder)"
 * protocolApplied.targetDisease.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130" 
-* protocolApplied.doseNumberString = "1 of 3"
+* protocolApplied.doseNumberString = "1 von 3"
 
 * note[hinweis].text = "Bei einer ungewöhnlichen Impfreaktion sollte die impfende ärztliche Person benachrichtigt werden. Die ärztlich tätige Person hat, wenn der Verdacht einer gesundheitlichen Schädigung besteht, die über das übliche Ausmaß einer Impfreaktion hinaus geht verpflichtet, den Verdacht dem zuständigen Gesundheitsamt namentlich zu melden (§ 6 Absatz 1 Nr 3 des lnfektionsschutzgesetzes • lfSG) Im Falle eines Impfschadens besteht unter den Voraussetzungen des § 60 Absatz 1 lfSG ein Anspruch auf Entschädigung in entsprechender Anwendung der Vorschriften des Bundesversorgungsgesetzes. Der Antrag ist bei der für die Durchführung des Bundesversorgungsgesetzes zuständigen Behörde (§ 64 Absatz 1 lfSG, i.d.R. 'Versorgungsamt') zu stellen. Weitere Auskünfte erteilt das zuständige Gesundheitsamt."
