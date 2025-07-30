@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "RKI_VS_HIV_PrEP_Bericht_Indication_PrEP_SNOMEDCT",
+  "id": "RKI-VS-HIV-PrEP-Bericht-Indication-PrEP-SNOMEDCT",
+  "title": "Gender Identity SNOMEDCT",
+  "description": "Das ValueSet Gender_Identity_SNOMEDCT enthält die Codes für die verschiedenen Geschlechtsidentitäten",
+  "version": "0.1.0",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Indication_PrEP_SNOMEDCT",
+  "experimental": false,
+  "publisher": "Robert Koch-Institut",
+  "contact": [
+    {
+      "name": "Robert Koch-Institut",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://rki.de"
+        }
+      ]
+    }
+  ],
+  "date": "2024-10-16",
+  "immutable": false,
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "230165009",
+            "display": "Indication of (contextual qualifier) (qualifier value)"
+          },
+          {
+            "code": "71653005",
+            "display": "No indication of (contextual qualifier) (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

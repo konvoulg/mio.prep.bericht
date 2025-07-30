@@ -1,0 +1,55 @@
+{
+  "resourceType": "Observation",
+  "id": "3e97326d-9401-4fca-b416-4e9aa8346f5a",
+  "meta": {
+    "profile": [
+      "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_LAB_Documentation_Date",
+      "valueDateTime": "2017-02-02"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "1.0.0",
+        "code": "60256-5",
+        "display": "Neisseria gonorrhoeae rRNA [Presence] in Urine by NAA with probe detection"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "urn:uuid:4a311b0a-ec7e-4486-bb6b-1c275f0cbee1"
+  },
+  "performer": [
+    {
+      "reference": "urn:uuid:e9ee4679-1e5b-4f04-828d-cf24d33717eb"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "0.1.0",
+        "code": "260385009",
+        "display": "Negative (qualifier value)"
+      }
+    ]
+  },
+  "status": "final",
+  "effectiveDateTime": "2017-01-01"
+}

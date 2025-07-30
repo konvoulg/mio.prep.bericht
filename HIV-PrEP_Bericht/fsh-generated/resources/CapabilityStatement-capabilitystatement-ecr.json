@@ -1,0 +1,593 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "capabilitystatement-ecr",
+  "url": "http://hl7.org/fhir/us/ecr/CapabilityStatement/capabilitystatement-ecr",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pher"
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/pher"
+        }
+      ],
+      "name": "HL7 International / Public Health"
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166",
+          "display": "United States of America"
+        }
+      ],
+      "text": "United States of America"
+    }
+  ],
+  "format": [
+    "application/xml",
+    "application/json"
+  ],
+  "implementationGuide": [
+    "http://hl7.org/fhir/us/ecr/ImplementationGuide/hl7-fhir-us-ecr"
+  ],
+  "rest": [
+    {
+      "resource": [
+        {
+          "supportedProfile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition"
+          ],
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Composition instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Composition instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Composition instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Composition instances"
+            }
+          ],
+          "type": "Composition"
+        },
+        {
+          "supportedProfile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-responsible-agency-organization",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-rules-authoring-agency-organization",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-routing-entity-organization"
+          ],
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Organization instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Organization instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Organization instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Organization instances"
+            }
+          ],
+          "type": "Organization"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Encounter instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Encounter instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Encounter instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Encounter instances"
+            }
+          ],
+          "type": "Encounter",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-encounter"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Location instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Location instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Location instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Location instances"
+            }
+          ],
+          "type": "Location",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-location"
+        },
+        {
+          "supportedProfile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-travel-history",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-reason-observation",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-observation",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-pregnancy-outcome-observation",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-pregnancy-status-observation",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-postpartum-status",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-relevant-reportable-condition-observation",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-summary",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation"
+          ],
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Observation instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Observation instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Observation instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Observation instances"
+            }
+          ],
+          "type": "Observation"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Patient instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Patient instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Patient instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Patient instances"
+            }
+          ],
+          "type": "Patient",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of PractitionerRole instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific PractitionerRole instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of PractitionerRole instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of PractitionerRole instances"
+            }
+          ],
+          "type": "PractitionerRole",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-practitionerrole"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of ServiceRequest instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific ServiceRequest instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of ServiceRequest instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of ServiceRequest instances"
+            }
+          ],
+          "type": "ServiceRequest",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-servicerequest"
+        },
+        {
+          "supportedProfile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-document-bundle",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-document-bundle",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-reporting-bundle"
+          ],
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Bundle instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Bundle instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Bundle instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Bundle instances"
+            }
+          ],
+          "type": "Bundle"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of MessageHeader instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific MessageHeader instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of MessageHeader instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of MessageHeader instances"
+            }
+          ],
+          "type": "MessageHeader",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/ecr-messageheader"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Practitioner instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Practitioner instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Practitioner instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Practitioner instances"
+            }
+          ],
+          "type": "Practitioner",
+          "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+        }
+      ],
+      "mode": "server",
+      "documentation": "This section describes the expected capabilities for the server participating in eCR exchange."
+    },
+    {
+      "resource": [
+        {
+          "supportedProfile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-composition"
+          ],
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Composition instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Composition instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Composition instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Composition instances"
+            }
+          ],
+          "type": "Composition"
+        },
+        {
+          "supportedProfile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-responsible-agency-organization",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-rules-authoring-agency-organization",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-routing-entity-organization"
+          ],
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Organization instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Organization instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Organization instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Organization instances"
+            }
+          ],
+          "type": "Organization"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Encounter instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Encounter instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Encounter instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Encounter instances"
+            }
+          ],
+          "type": "Encounter",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-encounter"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Location instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Location instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Location instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Location instances"
+            }
+          ],
+          "type": "Location",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-location"
+        },
+        {
+          "supportedProfile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-travel-history",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-reason-observation",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-eicr-processing-status-observation",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-pregnancy-outcome-observation",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-pregnancy-status-observation",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-postpartum-status",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-relevant-reportable-condition-observation",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-summary",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-reportability-information-observation"
+          ],
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Observation instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Observation instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Observation instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Observation instances"
+            }
+          ],
+          "type": "Observation"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Patient instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Patient instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Patient instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Patient instances"
+            }
+          ],
+          "type": "Patient",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of PractitionerRole instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific PractitionerRole instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of PractitionerRole instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of PractitionerRole instances"
+            }
+          ],
+          "type": "PractitionerRole",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-practitionerrole"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of ServiceRequest instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific ServiceRequest instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of ServiceRequest instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of ServiceRequest instances"
+            }
+          ],
+          "type": "ServiceRequest",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-servicerequest"
+        },
+        {
+          "supportedProfile": [
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-document-bundle",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/rr-document-bundle",
+            "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-reporting-bundle"
+          ],
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Bundle instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Bundle instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Bundle instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Bundle instances"
+            }
+          ],
+          "type": "Bundle"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of MessageHeader instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific MessageHeader instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of MessageHeader instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of MessageHeader instances"
+            }
+          ],
+          "type": "MessageHeader",
+          "profile": "http://hl7.org/fhir/us/ecr/StructureDefinition/ecr-messageheader"
+        },
+        {
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "Allows creation of Practitioner instances"
+            },
+            {
+              "code": "read",
+              "documentation": "Allows retrieval of a specific Practitioner instance"
+            },
+            {
+              "code": "update",
+              "documentation": "Allows update of Practitioner instances"
+            },
+            {
+              "code": "delete",
+              "documentation": "Allows deletion of Practitioner instances"
+            }
+          ],
+          "type": "Practitioner",
+          "profile": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+        }
+      ],
+      "mode": "client",
+      "documentation": "This section describes the expected capabilities for the client participating in eCR exchange."
+    }
+  ],
+  "version": "2.1.2",
+  "name": "CapabilityStatement_eCR",
+  "title": "Capability Statement eCR",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-06-25",
+  "publisher": "HL7 International / Public Health",
+  "description": "This resource defines the expected capabilities for both client and server participating in eCR exchange.",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1"
+}

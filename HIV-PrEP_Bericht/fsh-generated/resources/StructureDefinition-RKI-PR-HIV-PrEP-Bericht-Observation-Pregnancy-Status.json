@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RKI-PR-HIV-PrEP-Bericht-Observation-Pregnancy-Status",
+  "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status",
+  "version": "0.1.0",
+  "name": "RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status",
+  "title": "RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status",
+  "status": "draft",
+  "description": "In diesem Profil kann dokumentiert werden ob bei der versicherten Person eine Schwangerschaft besteht.",
+  "copyright": "Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® SNOMED CT® which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from Loinc http://loinc.org. Loinc is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes Loinc Committee and is available at no cost under the license at http://loinc.org/license. Loinc® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures UCUM Organization. All rights reserved. THE UCUM TABLE IN ALL FORMATS, UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED \"AS IS.\" ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "definition": "In diesem Profil kann dokumentiert werden ob bei der versicherten Person eine Schwangerschaft besteht.",
+        "constraint": [
+          {
+            "key": "obs-emp-1",
+            "human": "At least year, month and day are needed",
+            "source": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status",
+            "severity": "error",
+            "expression": "effectiveDateTime.toString().length() >= 10"
+          },
+          {
+            "key": "obs-emp-2",
+            "human": "If it is a valid Observation it must have a value otherwise it must not have a value",
+            "source": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status",
+            "severity": "error",
+            "expression": "(Observation.value.exists() implies (Observation.status in ('final' | 'amended' | 'corrected' | 'preliminary')))"
+          }
+        ]
+      },
+      {
+        "id": "Observation.meta.profile:mioProfile",
+        "path": "Observation.meta.profile",
+        "sliceName": "mioProfile",
+        "patternCanonical": "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Pregnancy_Status"
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "definition": "Hier wird ein Code aus dem FHIR ValueSet http://hl7.org/fhir/ValueSet/observation-status angegeben."
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "definition": "Die Codes in diesem Abschnitt beschreiben das Konzept \"Schwangerschaftsstatus\"."
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "definition": "Der Code in diesem Abschnitt beschreibt das Konzept \"Schwangerschaftsstatus\"."
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1
+      },
+      {
+        "id": "Observation.effective[x]:effectiveDateTime",
+        "path": "Observation.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "definition": "Hier wird angeben, ob eine Schwangerschaft vorliegt.",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method.coding",
+        "path": "Observation.method.coding",
+        "comment": "Das MustSupport gilt nur für die vordefinierten Slices.",
+        "mustSupport": true
+      }
+    ]
+  }
+}
