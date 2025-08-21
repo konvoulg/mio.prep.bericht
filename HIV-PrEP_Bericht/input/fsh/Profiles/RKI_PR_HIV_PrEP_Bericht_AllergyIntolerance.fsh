@@ -1,10 +1,11 @@
 //Abgeleitet von KBV Basis 1.5.0 - MS, Kardinalitäten, CodeSysteme von mio Medikatonsplan
 
 Profile: RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance
-Parent: KBV_PR_Base_AllergyIntolerance
+Parent: https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_AllergyIntolerance
 Id: RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance
 Title: "RKI_PR_HIV-PrEP_Bericht_AllergyIntolerance"
 Description: "Hier kann eine einzelne Allergie oder Unverträglichkeit abgebildet werden."
+
 
 * ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance"
 

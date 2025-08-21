@@ -111,4 +111,3 @@ Alias: $unitsofmeasure = http://unitsofmeasure.org
 
 //Aliases emp MedicationStatement
 Alias: $KBV_PR_MIO_EMP_Identifier_Line_Item = https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_EMP_Identifier_Line_Item
-

@@ -5,8 +5,8 @@
   "id": "RKI-VS-HIV-PrEP-Bericht-Lab-Study-Result-Qualitative-SNOMEDCT",
   "title": "Laboruntersuchungsergebnis Qualitativ SNOMEDCT",
   "description": "Dieses ValueSet beinhaltet SNOMED-CT-Codes zu qualitativen Laboruntersuchungsergebnissen.",
-  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT",
   "version": "1.0.0",
+  "url": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Lab_Study_Result_Qualitative_SNOMEDCT",
   "experimental": false,
   "publisher": "Robert Koch-Institut",
   "contact": [
