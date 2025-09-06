@@ -11,8 +11,8 @@ Usage: #example
 * identifier.value  = "urn:uuid:d317ce08-1da0-48d4-8dd7-8edbe88d51f3"
 * timestamp = "2019-10-01T09:50:00+01:00"
 // === Composition ===
-* entry[0].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/9a9ba169-33fe-41de-ab02-ddebf1cce45b"
-* entry[0].resource = 9a9ba169-33fe-41de-ab02-ddebf1cce45b
+* entry[0].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/9a9ba169-33fe-41de-ab02-dda4f1cce45b"
+* entry[0].resource = 9a9ba169-33fe-41de-ab02-dda4f1cce45b
 
 // === Subject (Patient) ===
 * entry[1].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient/4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
@@ -43,7 +43,7 @@ Usage: #example
 * entry[8].resource = be552245-9130-4363-8699-44eb481740ab
 
 // === Beratung ===
-* entry[9].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_Beratung/9a8ba8af-39a4-497b-bbeb-47f97b7d940d"
+* entry[9].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling/9a8ba8af-39a4-497b-bbeb-47f97b7d940d"
 * entry[9].resource = 9a8ba8af-39a4-497b-bbeb-47f97b7d940d
 
 * entry[10].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/c4269483-dd6e-4a26-a69e-3d060f6c60fd"
@@ -80,119 +80,87 @@ Usage: #example
 
 //Composition
 
+// --------------------------
+// Composition (Beratung bundle — corrected to profile)
+// --------------------------
+
 Alias: $snomed = http://snomed.info/sct
+
 
 Instance: 9a9ba169-33fe-41de-ab02-dda4f1cce45b
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Composition
 Title: "Example Composition for PrEP for Journey 1"
-Description: "This is an example composition instance for HIV PrEP reporting"
+Description: "Beratung-scope composition: Anamnese, Beratung, Labor, Diagnosen"
 Usage: #inline
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition"
 
 * status = #final
 
-* type.coding = $snomed#22131000087102 "Electronic report (record artifact)"
+// Document type (fixed in profile)
+* type.coding.system = $snomed
 * type.coding.version = "http://snomed.info/sct/900000000000207008/version/20240930"
+* type.coding.code = #22131000087102
+* type.coding.display = "Electronic report (record artifact)"
 
-* subject = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)
+// Core metadata
+* subject   = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)   // Patient
+* encounter = Reference(urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fd)   // Encounter in Beratung-bundle
+* author[0] = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648530)   // PractitionerRole
+* custodian = Reference(urn:uuid:81eacc87-e116-4505-a4e2-02404a022040)   // Organization
 
-* encounter = Reference(urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fe)
-
-* date = "2019-10-01"
-
-* author = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648530)
-
+* date  = "2019-10-01"
 * title = "HIV PrEP Bericht"
 
-* custodian = Reference(urn:uuid:81eacc87-e116-4505-a4e2-02404a022040)
+// --------------------------
+// Sections (Beratung scope)
+// --------------------------
 
+// REQUIRED by profile: Behandelnde Person / Einrichtung (1..1)
 * section[behandelndePersonEinrichtung].title = "Behandelnde Person / Einrichtung"
 * section[behandelndePersonEinrichtung].code.coding.system = $sectioncodes
 * section[behandelndePersonEinrichtung].code.coding.code = #SectionBehandelndePersonEinrichtung
 * section[behandelndePersonEinrichtung].code.coding.display = "Behandelnde Person / Einrichtung"
-* section[behandelndePersonEinrichtung].entry = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648530)
+* section[behandelndePersonEinrichtung].entry[0] = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648530) // PractitionerRole
 
+// Anamnese — exactly ONE entry: ClinicalImpression_PrEP
 * section[anamnese].title = "Anamnese"
-* section[anamnese].code.coding.system = "http://snomed.info/sct"
+* section[anamnese].code.coding.system  = $sct
 * section[anamnese].code.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
-* section[anamnese].code.coding.code = #1003642006
+* section[anamnese].code.coding.code    = #1003642006
 * section[anamnese].code.coding.display = "Past medical history section (record artifact)"
-* section[anamnese].entry = Reference(urn:uuid:bb5004d3-251a-4cd2-8ba1-973279777540)
+* section[anamnese].entry[0] = Reference(urn:uuid:bb5004d3-251a-4cd2-8ba1-973279777540) // ClinicalImpression (PrEP)
 
+// HIV PrEP Beratung — entries only Procedure_PrEP_Counselling
 * section[beratung].title = "HIV PrEP Beratung"
-* section[beratung].code.coding.system = "http://snomed.info/sct"
+* section[beratung].code.coding.system  = $sct
 * section[beratung].code.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
-* section[beratung].code.coding.code = #409063005
+* section[beratung].code.coding.code    = #409063005
 * section[beratung].code.coding.display = "Counseling (procedure)"
-* section[beratung].entry = Reference(urn:uuid:9a8ba8af-39a4-497b-bbeb-47f97b7d940d)
+* section[beratung].entry[0] = Reference(urn:uuid:9a8ba8af-39a4-497b-bbeb-47f97b7d940d) // Procedure - PrEP Counselling
 
+// Laboruntersuchungen — Observations per lab profile
 * section[laboruntersuchungen].title = "Laboruntersuchungen"
-* section[laboruntersuchungen].code.coding.system = $sectioncodes
-//* section[laboruntersuchungen].code.coding.version = "4.0.1"
-* section[laboruntersuchungen].code.coding.code = #SectionLaboruntersuchungen
+* section[laboruntersuchungen].code.coding.system  = $sectioncodes
+* section[laboruntersuchungen].code.coding.code    = #SectionLaboruntersuchungen
 * section[laboruntersuchungen].code.coding.display = "Laboruntersuchungen"
-// Laboruntersuchung Creatinine
-* section[laboruntersuchungen].entry[0] = Reference(urn:uuid:c72db78e-5bd4-4b58-a897-aed3d5a9640c)
-// Laboruntersuchung Chlamydia
-* section[laboruntersuchungen].entry[1] = Reference(urn:uuid:793671d7-db7b-44fb-94a6-27f7acd440be)
-// Laboruntersuchung Gonorrhoe
-* section[laboruntersuchungen].entry[2] = Reference(urn:uuid:3e97326d-9401-4fca-b416-4e9aa8350f5a)
-// Laboruntersuchung Hepatitis B
-* section[laboruntersuchungen].entry[3] = Reference(urn:uuid:39a8b719-ee89-4400-9078-1227bd31fe70)
-* section[laboruntersuchungen].entry[4] = Reference(urn:uuid:39a8b719-ee89-4400-9078-1227bd31fe71)
-* section[laboruntersuchungen].entry[5] = Reference(urn:uuid:39a8b719-ee89-4400-9078-1227bd31fe72)
-// Laboruntersuchung Hepatitis C
-* section[laboruntersuchungen].entry[6] = Reference(urn:uuid:4a7fea51-25ea-4862-9fc1-4b677b04ec1b)
-// Laboruntersuchung HIV
-* section[laboruntersuchungen].entry[7] = Reference(urn:uuid:abeb63fe-e33d-4e72-840d-7bdbec7d9b69)
+* section[laboruntersuchungen].entry[0] = Reference(urn:uuid:c72db78e-5bd4-4b58-a897-aed3d5a9640c) // Creatinine
+* section[laboruntersuchungen].entry[1] = Reference(urn:uuid:793671d7-db7b-44fb-94a6-27f7acd440be) // Chlamydia
+* section[laboruntersuchungen].entry[2] = Reference(urn:uuid:3e97326d-9401-4fca-b416-4e9aa8350f5a) // Gonorrhoe
+* section[laboruntersuchungen].entry[3] = Reference(urn:uuid:39a8b719-ee89-4400-9078-1227bd31fe70) // Hep B (HBsAg)
+* section[laboruntersuchungen].entry[4] = Reference(urn:uuid:39a8b719-ee89-4400-9078-1227bd31fe71) // Hep B (Anti-HBc)
+* section[laboruntersuchungen].entry[5] = Reference(urn:uuid:39a8b719-ee89-4400-9078-1227bd31fe72) // Hep B (Anti-HBs)
+* section[laboruntersuchungen].entry[6] = Reference(urn:uuid:4a7fea51-25ea-4862-9fc1-4b677b04ec1b) // Hep C
+* section[laboruntersuchungen].entry[7] = Reference(urn:uuid:abeb63fe-e33d-4e72-840d-7bdbec7d9b69) // HIV
 
+// Diagnosen — Conditions per diagnosis profile
 * section[diagnosen].title = "STI Diagnosen"
-* section[diagnosen].code.coding.system = $sectioncodes
-//* section[diagnosen].code.coding.version = "4.0.1"
-* section[diagnosen].code.coding.code = #SectionStiDiagnosen
+* section[diagnosen].code.coding.system  = $sectioncodes
+* section[diagnosen].code.coding.code    = #SectionStiDiagnosen
 * section[diagnosen].code.coding.display = "STI Diagnosen"
-* section[diagnosen].entry = Reference(urn:uuid:fba75e92-0315-430f-9a01-a493b665b500)
+* section[diagnosen].entry[0] = Reference(urn:uuid:90d60737-f216-4f0e-889f-a80b12b7db5a)
+* section[diagnosen].entry[1] = Reference(urn:uuid:e545f9fd-b6d9-4111-a20e-7c192e5d8429)
 
-* section[medikation].title = "Medikation"
-* section[medikation].code.coding.system = "http://loinc.org"
-* section[medikation].code.coding.version = "2.78"
-* section[medikation].code.coding.code = #56445-0
-* section[medikation].code.coding.display = "Medication summary Document"
-
-* section[medikation].section[prepMedikation].title = "HIV PrEP Medikation"
-* section[medikation].section[prepMedikation].code.coding.system = $sectioncodes
-// section[medikation].section[prepMedikation].code.coding.version = "4.0.1"
-* section[medikation].section[prepMedikation].code.coding.code = #SectionPrEPMedikation
-* section[medikation].section[prepMedikation].code.coding.display = "HIV PrEP Medikation"
-
-* section[termine].title = "Termine"
-* section[termine].code.coding.system = $sectioncodes
-//* section[termine].code.coding.version = "4.0.1"
-* section[termine].code.coding.code = #SectionTermine
-* section[termine].code.coding.display = "Termine"
-* section[termine].section[begegnung].entry[0] = Reference(urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fe)
-* section[termine].section[begegnung].entry[1] = Reference(urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fd)
-* section[termine].section[begegnung].title = "Begegnung"
-* section[termine].section[begegnung].code.coding.system = $sct
-* section[termine].section[begegnung].code.coding.version = "http://snomed.info/sct/11000274103/version/20241115"
-* section[termine].section[begegnung].code.coding.code = $sct#866144008 
-* section[termine].section[begegnung].code.coding.display = "Encounter note (record artifact)"
-
-* section[termine].section[naechsterTermin].entry = Reference(urn:uuid:86bfcbb1-741d-48af-9d0b-062d76e3e5f9)
-* section[termine].section[naechsterTermin].title = "Naechster Termin"
-* section[termine].section[naechsterTermin].code.coding.system = $sct
-* section[termine].section[naechsterTermin].code.coding.version = "http://snomed.info/sct/11000274103/version/20241115"
-* section[termine].section[naechsterTermin].code.coding.code = $sct#39084006
-* section[termine].section[naechsterTermin].code.coding.display = "Naechster Termin"
-
-
-* section[immunisierungen].title = "Immunisierungen"
-* section[immunisierungen].code.coding.system = "http://snomed.info/sct"
-* section[immunisierungen].code.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
-* section[immunisierungen].code.coding.code = #713404003
-* section[immunisierungen].code.coding.display = "Vaccination given (situation)"
-* section[immunisierungen].entry = Reference(urn:uuid:f8e1b41b-2830-49ff-8038-5636e9f2d0cd)
 
 //Composition Subject (Patient)
 
@@ -552,42 +520,52 @@ Usage: #example
 * valueCodeableConcept.coding.display = "With indication"
 
 
-// Beratung
-
+// Procedure: PrEP Counselling
 Instance: 9a8ba8af-39a4-497b-bbeb-47f97b7d940d
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Counselling
-Title: "Example of a prep indication observation procedure"
-Description: "This is an example prep counselling instance for HIV PrEP reporting"
+Title: "Example of a PrEP counselling procedure"
+Description: "This is an example PrEP counselling instance for HIV PrEP reporting"
 Usage: #inline
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
 
 * status = #completed
 
+// Main code for the procedure
 * code.coding[snomed].system = "http://snomed.info/sct"
-* code.coding[snomed].code = #409063005 
-* code.coding[snomed].display = "Beratung"
 * code.coding[snomed].version = "http://snomed.info/sct/11000274103/version/20241115"
+* code.coding[snomed].code = #409063005
+* code.coding[snomed].display = "Beratung"
 
+// Patient reference
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
+// Encounter reference
 * encounter.reference = "urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fe"
 
+// Performed date
 * performedDateTime = "2019-09-23"
 
+// Performer (practitioner)
 * performer.actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
 * performer.actor.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * performer.actor.identifier.value = "123456789"
 
-* reasonCode[0].coding.system = "http://snomed.info/sct"
-* reasonCode[0].coding.version = "http://snomed.info/sct/11000274103/version/20241115"
-* reasonCode[0].coding.code = #710737001 
-* reasonCode[0].coding.display = " Education about risk reduction technique (procedure)"
+// --- Counselling topics (reasonCodes) ---
 
+// Topic 1: Risk reduction education
 * reasonCode[0].coding.system = "http://snomed.info/sct"
-* reasonCode[0].coding.version = "http://snomed.info/sct/11000274103/version/20241115"
-* reasonCode[0].coding.code = #<<386053000:363702006=432678004>>     // Post-coordinated SNOMED CT expression: "Evaluation procedure (386053000)" refined by "Has focus (363702006)" with target "Indication for procedure (432678004)" → represents "Evaluation procedure with focus on indication for procedure" (i.e., Überprüfung der Indikationsstellung)
-* reasonCode[0].coding.display = "Evaluation procedure with focus on indication for procedure"
+* reasonCode[0].coding.version = "http://snomed.info/sct/900000000000207008/version/20210731"
+* reasonCode[0].coding.code = #710737001
+* reasonCode[0].coding.display = "Education about risk reduction technique (procedure)"
+
+// Topic 2: Evaluation procedure with focus on indication
+* reasonCode[+].coding.system = "http://snomed.info/sct"
+* reasonCode[=].coding.version = "http://snomed.info/sct/900000000000207008/version/20210731"
+* reasonCode[=].coding.code = #386053000
+* reasonCode[=].coding.display = "Evaluation procedure"
+* reasonCode[=].text = "Evaluation procedure with focus on indication for procedure (363702006=432678004)"
+
 
 //Encounter 1
 Instance: c4269483-dd6e-4a26-a69e-3d060f6c60fd
