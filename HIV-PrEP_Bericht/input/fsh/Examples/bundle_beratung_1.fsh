@@ -49,34 +49,37 @@ Usage: #example
 * entry[10].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/c4269483-dd6e-4a26-a69e-3d060f6c60fd"
 * entry[10].resource = c4269483-dd6e-4a26-a69e-3d060f6c60fd
 
-// === Laboruntersuchungen ===
-* entry[11].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Creatinine/c72db78e-5bd4-4b58-a897-aed3d5a9640c"
+// === laboruntersuchungen ===
+* entry[11].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine/c72db78e-5bd4-4b58-a897-aed3d5a9640c"
 * entry[11].resource = c72db78e-5bd4-4b58-a897-aed3d5a9640c
 
-* entry[12].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Chlamydia/793671d7-db7b-44fb-94a6-27f7acd440be"
+* entry[12].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia/793671d7-db7b-44fb-94a6-27f7acd440be"
 * entry[12].resource = 793671d7-db7b-44fb-94a6-27f7acd440be
 
-* entry[13].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Gonorrhoe/3e97326d-9401-4fca-b416-4e9aa8350f5a"
+* entry[13].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhoe/3e97326d-9401-4fca-b416-4e9aa8350f5a"
 * entry[13].resource = 3e97326d-9401-4fca-b416-4e9aa8350f5a
 
-* entry[14].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Hepatitis_B/39a8b719-ee89-4400-9078-1227bd31fe70"
+* entry[14].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB/39a8b719-ee89-4400-9078-1227bd31fe70"
 * entry[14].resource = 39a8b719-ee89-4400-9078-1227bd31fe70   // HBsAg
 
-* entry[15].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Hepatitis_B/39a8b719-ee89-4400-9078-1227bd31fe71"
+* entry[15].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB/39a8b719-ee89-4400-9078-1227bd31fe71"
 * entry[15].resource = 39a8b719-ee89-4400-9078-1227bd31fe71   // Anti-HBc
 
-* entry[16].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Hepatitis_B/39a8b719-ee89-4400-9078-1227bd31fe72"
+* entry[16].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB/39a8b719-ee89-4400-9078-1227bd31fe72"
 * entry[16].resource = 39a8b719-ee89-4400-9078-1227bd31fe72   // Anti-HBs
 
-* entry[17].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_Hepatitis_C/4a7fea51-25ea-4862-9fc1-4b677b04ec1b"
+* entry[17].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC/4a7fea51-25ea-4862-9fc1-4b677b04ec1b"
 * entry[17].resource = 4a7fea51-25ea-4862-9fc1-4b677b04ec1b
 
-* entry[18].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboruntersuchung_HIV/abeb63fe-e33d-4e72-840d-7bdbec7d9b69"
+* entry[18].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/abeb63fe-e33d-4e72-840d-7bdbec7d9b69"
 * entry[18].resource = abeb63fe-e33d-4e72-840d-7bdbec7d9b69
 
+* entry[19].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis/12fd476e-fd59-434e-8da2-b57243fb11fe"
+* entry[19].resource = 12fd476e-fd59-434e-8da2-b57243fb11fe
+
 // === Laboratory Practitioner (performer) ===
-* entry[19].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/e9ee4679-1e5b-4f04-830d-cf24d33717eb"
-* entry[19].resource = e9ee4679-1e5b-4f04-830d-cf24d33717eb
+* entry[20].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/e9ee4679-1e5b-4f04-830d-cf24d33717eb"
+* entry[20].resource = e9ee4679-1e5b-4f04-830d-cf24d33717eb
 
 //Composition
 
@@ -139,10 +142,10 @@ Usage: #inline
 * section[beratung].code.coding.display = "Counseling (procedure)"
 * section[beratung].entry[0] = Reference(urn:uuid:9a8ba8af-39a4-497b-bbeb-47f97b7d940d) // Procedure - PrEP Counselling
 
-// Laboruntersuchungen — Observations per lab profile
+// laboruntersuchungen — Observations per lab profile
 * section[laboruntersuchungen].title = "Laboruntersuchungen"
-* section[laboruntersuchungen].code.coding.system  = $sectioncodes
-* section[laboruntersuchungen].code.coding.code    = #SectionLaboruntersuchungen
+* section[laboruntersuchungen].code.coding.system = $sectioncodes
+* section[laboruntersuchungen].code.coding.code = #SectionLaboruntersuchungen
 * section[laboruntersuchungen].code.coding.display = "Laboruntersuchungen"
 * section[laboruntersuchungen].entry[0] = Reference(urn:uuid:c72db78e-5bd4-4b58-a897-aed3d5a9640c) // Creatinine
 * section[laboruntersuchungen].entry[1] = Reference(urn:uuid:793671d7-db7b-44fb-94a6-27f7acd440be) // Chlamydia
@@ -152,7 +155,7 @@ Usage: #inline
 * section[laboruntersuchungen].entry[5] = Reference(urn:uuid:39a8b719-ee89-4400-9078-1227bd31fe72) // Hep B (Anti-HBs)
 * section[laboruntersuchungen].entry[6] = Reference(urn:uuid:4a7fea51-25ea-4862-9fc1-4b677b04ec1b) // Hep C
 * section[laboruntersuchungen].entry[7] = Reference(urn:uuid:abeb63fe-e33d-4e72-840d-7bdbec7d9b69) // HIV
-
+* section[laboruntersuchungen].entry[8] = Reference(urn:uuid:12fd476e-fd59-434e-8da2-b57243fb11fe) // Syphilis
 // Diagnosen — Conditions per diagnosis profile
 * section[diagnosen].title = "STI Diagnosen"
 * section[diagnosen].code.coding.system  = $sectioncodes
@@ -473,7 +476,7 @@ Usage: #example
 * author = Reference(urn:uuid:637c79e5-bacc-4002-adca-64af70af8114)
 
 * item[0].linkId = "357318092995"
-* item[0].answer.valueCoding = $sct#373066001 "Yes"
+* item[0].answer.valueCoding = $sct#373066001 "No"
 
 * item[+].linkId = "7742571432941"
 * item[=].answer.valueCoding = $sct#373067005 "No"
@@ -568,37 +571,47 @@ Usage: #inline
 
 
 //Encounter 1
+// Encounter — Beratung vor Präexpositionsprophylaxe
+Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+
 Instance: c4269483-dd6e-4a26-a69e-3d060f6c60fd
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Encounter-General
 Title: "Example of a general encounter"
-Description: "This is an example general encounter instance for HIV PrEP reporting"
-
+Description: "Encounter: Beratung vor Präexpositionsprophylaxe"
 Usage: #inline
 
+* id = "c4269483-dd6e-4a26-a69e-3d060f6c60fd"
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
 
 * status = #finished
-   
-* type.coding.system = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type"
-* type.coding.version = "1.0.0"
-* type.coding.code = #01920
-* type.coding.display = "Beratung vor Präexpositionsprophylaxe"
 
-* class.version = "2.0.0"
-* class = $v3-ActCode#AMB "ambulatory"
+// Class should use the HL7 v3-ActCode system; 'AMB' = ambulatory
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* class.code   = #AMB
+* class.display = "ambulatory"
 
+// Local encounter type as in your profile/code system
+* type.coding[0].system  = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type"
+* type.coding[0].version = "1.0.0"
+* type.coding[0].code    = #01920
+* type.coding[0].display = "Beratung vor Präexpositionsprophylaxe"
+
+// Patient (subject)
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
-* subject.identifier.value = "X987654321"
+* subject.identifier.value  = "X987654321"
 
+// When — same day as your other resources; date is sufficient per your example
 * period.start = "2019-09-23"
 
+// Provider org
 * serviceProvider.reference = "urn:uuid:81eacc87-e116-4505-a4e2-02404a022040"
 * serviceProvider.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
-* serviceProvider.identifier.value = "123456"
+* serviceProvider.identifier.value  = "123456"
 
 
-//Laboruntersuchungen
+
+//laboruntersuchungen
 
 // Observation Creatinine
 
@@ -671,6 +684,57 @@ Usage: #inline
 * component[0].valueQuantity.system = "http://unitsofmeasure.org"
 * component[0].valueQuantity.code = #mL/min/{1.73_m2}
 
+// Obervation Syphilis-AK (ELISA/Immunoassay), Treponema pall. IgG-AK, Treponema pall. IgM-AK
+// Nur TPHA, TPPA, VDRL (wenn vorher jemals positiv)
+
+// Observation Syphilis-AK (ELISA/Immunoassay), Treponema pall. IgG-AK, Treponema pall. IgM-AK
+// Nur TPHA, TPPA, VDRL (wenn vorher jemals positiv)
+
+Alias: $sct   = http://snomed.info/sct
+Alias: $loinc = http://loinc.org
+
+Instance: 12fd476e-fd59-434e-8da2-b57243fb11fe
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis
+Title: "Example of a Syphilis Observation"
+Description: "Syphilis-AK (ELISA/Immunoassay) incl. IgG/IgM — all negative"
+Usage: #example
+
+// If you prefer, you can keep this explicit profile line; it's also fine to omit
+// because InstanceOf already applies the profile.
+// * meta.profile[0] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis"
+
+// Documentation timestamp (keep exactly one value)
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-23"
+
+// Status & category
+* status = #final
+* category = $secondary-finding#laboratory
+
+// Observation code — matches your profile’s LOINC slice requirements
+* code.coding[loinc].system  = $loinc
+* code.coding[loinc].version = "2.74"
+* code.coding[loinc].code    = #22587-0
+* code.coding[loinc].display = "Treponema pallidum Ab [Presence] in Serum"
+
+// Subject, timing, performer (kept from your example)
+* subject.reference   = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+* effectiveDateTime   = "2019-09-23T09:00:00+08:00"
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb"
+
+// Overall qualitative result
+* valueCodeableConcept.coding.system  = $sct
+* valueCodeableConcept.coding.code    = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
+
+// Detail components (both negative) — 
+* component[0].code = $loinc#47238-1 "Treponema pallidum IgG Ab [Presence] in Serum by Immunoassay"
+* component[0].valueCodeableConcept = $sct#260385009 "Negative (qualifier value)"
+
+* component[1].code = $loinc#47237-3 "Treponema pallidum IgM Ab [Presence] in Serum by Immunoassay"
+* component[1].valueCodeableConcept = $sct#260385009 "Negative (qualifier value)"
+
+// Optional documentation text
+* note.text = "Syphilis-AK (ELISA/Immunoassay), Treponema pall. IgG-AK, Treponema pall. IgM-AK: all negative. Only TPHA, TPPA, VDRL if ever previously positive."
 
 // Observation Chlamydia
 
