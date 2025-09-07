@@ -167,14 +167,14 @@ Usage: #inline
 
 //Composition Subject (Patient)
 
-Instance: 4a311b0a-ec7e-4486-bb6b-1a257f0bbee1
+Instance: Patient_PrEP
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Patient
 Title: "Example Patient for PrEP for Journey 1"
 Description: "This is an example patient instance for HIV PrEP reporting"
 Usage: #inline
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient|0.1.0"
-
+* id = "4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 * identifier[0].system = "http://fhir.de/sid/gkv/kvid-10"
 * identifier[0].value = "X987654321"
 * identifier[0].type.coding[0].system = "http://fhir.de/CodeSystem/identifier-type-de-basis"
@@ -195,7 +195,7 @@ Usage: #inline
 
 * birthDate = "1981-09-06"
 
-* address[0].line[0] = "Seestr. 0"
+* address[0].line[0] = "Seestr. 10"
 * address[0].city = "Berlin"
 * address[0].postalCode = "13353"
 * address[0].country = "D"
