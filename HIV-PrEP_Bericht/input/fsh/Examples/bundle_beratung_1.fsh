@@ -212,14 +212,14 @@ Usage: #inline
 
 //Composition Author (PractitionerRole)
 
-Instance: aec32544-52fd-4243-8626-32db47648530
+Instance: PractitionerRole
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-PractitionerRole
 Title: "Example PractitionerRole for PrEP"
 Description: "This is an example practitioner role instance for HIV PrEP reporting"
 Usage: #inline
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole|0.1.0"
-
+* id = "aec32544-52fd-4243-8626-32db47648530"
 * practitioner.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
 
 * organization.reference = "urn:uuid:81eacc87-e116-4505-a4e2-02404a022040"
@@ -236,14 +236,14 @@ Usage: #inline
 
 //Practitioner
 
-Instance: 637c79e5-bacc-4002-adca-64af70af8114
+Instance: Practitioner
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Practitioner
 Title: "Example Practitioner for PrEP"
 Description: "This is an example practitioner instance for HIV PrEP reporting"
 Usage: #inline
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
-
+* id = "637c79e5-bacc-4002-adca-64af70af8114"
 * identifier[ANR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[ANR].type.coding.code = #LANR
 * identifier[ANR].system = "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"
@@ -272,14 +272,14 @@ Usage: #inline
 
 //Composition Custodian (Organization)
 
-Instance: 81eacc87-e116-4505-a4e2-02404a022040
+Instance: Organization
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Organization
 Title: "Example of an Organization"
 Description: "This is an example organization instance for HIV PrEP reporting"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization"
-
+* id = "81eacc87-e116-4505-a4e2-02404a022040"
 * name = "Praxis Treehaus"
 
 * identifier[Betriebsstaettennummer].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
@@ -308,14 +308,14 @@ Usage: #inline
 
 //Section Anamnese Clinical Impression
 
-Instance: bb5004d3-251a-4cd2-8ba1-973279777540
+Instance: Anamnese_Clinical_Impression
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-ClinicalImpression-PrEP
 Title: "Clinical Impression – Anamnese bzgl. STI-Symptomen"
 Description: "Example clinical impression instance for Anamnese regarding STI symptoms in HIV PrEP reporting"
 Usage: #inline
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_ClinicalImpression_PrEP"
-
+* id = "bb5004d3-251a-4cd2-8ba1-973279777540"
 * status = #completed
 
 * code.coding.version = "2.78"
@@ -352,14 +352,14 @@ Alias: $ask = http://fhir.de/CodeSystem/ask
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
-Instance: 4f0fdac3-335a-4907-a6da-d072dff0c76b
+Instance: ClinicalImpression_AllergyIntolerance
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance
 Title: "Example Allergy Intolerance for PrEP"
 Description: "This is an example allergy intolerance instance for HIV PrEP reporting"
 Usage: #inline
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance"
-
+* id = "4f0fdac3-335a-4907-a6da-d072dff0c76b"
 * code.coding[0].version = "http://snomed.info/sct/11000274103/version/20241115"
 * code.coding[=] = $sct#91936005 "Allergie gegen Penicillin"
 //* code.coding[+].version = "http://snomed.info/sct/11000274103/version/20241115"
@@ -386,14 +386,14 @@ Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
 Alias: $con-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ver-clinical = http://terminology.hl7.org/CodeSystem/condition-ver-status
 
-Instance: fba75e92-0315-430f-9a01-a493b665b490
+Instance: ClinicalImpression_Condition_History
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-History-Present
 Title: "Example of a Condition History Present"
 Description: "This is an example condition history present instance for HIV PrEP reporting"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present"
-
+* id = "fba75e92-0315-430f-9a01-a493b665b490"
 * extension[Feststellungsdatum].valueDateTime = "2019-10-01"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
@@ -420,14 +420,14 @@ Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 
-Instance: d24a5fdb-51bb-470c-bca8-a3c8e90a6270
+Instance: ClinicalImpression_BodyWeight
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight
 Title: "Example of a Body weight Observation"
 Description: "This is an example body weight observation instance"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight"
-
+* id = "d24a5fdb-51bb-470c-bca8-a3c8e90a6270"
 * status = #final
 * extension[dokumentationszeitpunkt].valueDateTime = "2019-09-23"
 * category = $secondary-finding#laboratory
@@ -457,7 +457,7 @@ Usage: #inline
 
 // ClinicalImpression QuestionnaireResponse
 
-Instance: e772935d-66ef-4afc-ad7b-60d26df4d85d
+Instance: ClinicalImpression_QuestionnaireResponse_Journey1
 InstanceOf: https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse
 Title: "Example of a Questionnaire Response"
 Description: "This is an example questionnaire response instance for HIV PrEP reporting"
@@ -466,7 +466,7 @@ Description: "This is an example questionnaire response instance for HIV PrEP re
 Usage: #example
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse"
-
+* id = "e772935d-66ef-4afc-ad7b-60d26df4d85d"
 * status = #completed
 
 * questionnaire = "RKI-PR-PrEP-Bericht-Questionnaire"
@@ -498,14 +498,14 @@ Usage: #example
 
 //ClinicalImpression finding itemReference Prep Indication
 
-Instance: be552245-9130-4363-8699-44eb481740ab
+Instance: ClinicalImpression_PrEP_Indication_Journey1
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-PrEP-Indication
 Title: "Example of a prep indication observation procedure"
 Description: "This is an example prep indication observation procedure instance for HIV PrEP reporting"
 Usage: #example
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication"
-
+* id = "be552245-9130-4363-8699-44eb481740ab"
 * status = #final
 
 * code.coding[snomed].system = "http://snomed.info/sct"
@@ -521,7 +521,6 @@ Usage: #example
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * valueCodeableConcept.coding.code = #230165009
 * valueCodeableConcept.coding.display = "With indication"
-
 
 // Procedure: PrEP Counselling
 Instance: 9a8ba8af-39a4-497b-bbeb-47f97b7d940d
@@ -544,7 +543,7 @@ Usage: #inline
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
 // Encounter reference
-* encounter.reference = "urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fe"
+* encounter.reference = "urn:uuid:c4269483-dd6e-4a26-a69e-3d060f6c60fd"
 
 // Performed date
 * performedDateTime = "2019-09-23"
@@ -563,11 +562,11 @@ Usage: #inline
 * reasonCode[0].coding.display = "Education about risk reduction technique (procedure)"
 
 // Topic 2: Evaluation procedure with focus on indication
-* reasonCode[+].coding.system = "http://snomed.info/sct"
-* reasonCode[=].coding.version = "http://snomed.info/sct/900000000000207008/version/20210731"
-* reasonCode[=].coding.code = #386053000
-* reasonCode[=].coding.display = "Evaluation procedure"
-* reasonCode[=].text = "Evaluation procedure with focus on indication for procedure (363702006=432678004)"
+* reasonCode[1].coding.system = "http://snomed.info/sct"
+* reasonCode[1].coding.version = "http://snomed.info/sct/900000000000207008/version/20210731"
+* reasonCode[1].coding.code = #386053000
+* reasonCode[1].coding.display = "Evaluation procedure"
+* reasonCode[1].text = "Evaluation procedure with focus on indication for procedure (363702006=432678004)"
 
 
 //Encounter 1
@@ -1069,13 +1068,14 @@ Usage: #inline
 
 // Laborarzt
 
-Instance: e9ee4679-1e5b-4f04-830d-cf24d33717eb
+Instance: Laborarzt
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Practitioner
 Title: "Example of a Lab Practitioner"
 Description: "This is an example laboratory practitioner instance for HIV PrEP reporting"
 Usage: #inline
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
+* id = "e9ee4679-1e5b-4f04-830d-cf24d33717eb"
 
 * identifier[ANR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * identifier[ANR].type.coding.code = #LANR
@@ -1108,7 +1108,7 @@ Alias: $con-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ver-clinical = http://terminology.hl7.org/CodeSystem/condition-ver-status
 
 // Diagnose - Condition: HIV-Präexpositionsprophylaxe
-Instance: 90d60737-f216-4f0e-889f-a80b12b7db5a  // https://www.uuidgenerator.net/version4
+Instance: HIV_Praexpositionsprophylaxe  // https://www.uuidgenerator.net/version4
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
 Title: "Condition: HIV-Präexpositionsprophylaxe"
 Description: "HIV-Präexpositionsprophylaxe"
@@ -1116,7 +1116,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-
+* id = "90d60737-f216-4f0e-889f-a80b12b7db5a"
 * extension[Feststellungsdatum].valueDateTime = "2019-09-23"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
