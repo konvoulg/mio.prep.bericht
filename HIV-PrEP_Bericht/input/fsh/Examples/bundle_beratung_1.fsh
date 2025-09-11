@@ -1,4 +1,4 @@
-Instance: d317ce08-1da0-48d4-8dd7-8edbe88d51f3
+Instance: c1064ac4-970c-44d6-bbce-4b6162739b2f
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Bundle
 Title: "HIV-PrEP Bericht Bundle"
 Description: "An example instance of an HIV-PrEP report bundle based on the RKI_PR_HIV_PrEP_Bericht_Bundle profile."
@@ -8,7 +8,7 @@ Usage: #example
 * meta.profile[0] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Bundle"
 * type = #document
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value  = "urn:uuid:d317ce08-1da0-48d4-8dd7-8edbe88d51f3"
+* identifier.value  = "urn:uuid:c1064ac4-970c-44d6-bbce-4b6162739b2f"
 * timestamp = "2019-10-01T09:50:00+01:00"
 // === Composition ===
 * entry[0].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/9a9ba169-33fe-41de-ab02-dda4f1cce45b"
@@ -70,9 +70,6 @@ Usage: #example
 
 * entry[17].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC/4a7fea51-25ea-4862-9fc1-4b677b04ec1b"
 * entry[17].resource = 4a7fea51-25ea-4862-9fc1-4b677b04ec1b
-
-* entry[18].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/abeb63fe-e33d-4e72-840d-7bdbec7d9b69"
-* entry[18].resource = abeb63fe-e33d-4e72-840d-7bdbec7d9b69
 
 * entry[19].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis/12fd476e-fd59-434e-8da2-b57243fb11fe"
 * entry[19].resource = 12fd476e-fd59-434e-8da2-b57243fb11fe
@@ -463,7 +460,7 @@ Title: "Example of a Questionnaire Response"
 Description: "This is an example questionnaire response instance for HIV PrEP reporting"
 
 
-Usage: #example
+Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse"
 * id = "e772935d-66ef-4afc-ad7b-60d26df4d85d"
@@ -502,7 +499,7 @@ Instance: ClinicalImpression_PrEP_Indication_Journey1
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-PrEP-Indication
 Title: "Example of a prep indication observation procedure"
 Description: "This is an example prep indication observation procedure instance for HIV PrEP reporting"
-Usage: #example
+Usage: #inline
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication"
 * id = "be552245-9130-4363-8699-44eb481740ab"
@@ -696,7 +693,7 @@ Instance: 12fd476e-fd59-434e-8da2-b57243fb11fe
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis
 Title: "Example of a Syphilis Observation"
 Description: "Syphilis-AK (ELISA/Immunoassay) incl. IgG/IgM — all negative"
-Usage: #example
+Usage: #inline
 
 // If you prefer, you can keep this explicit profile line; it's also fine to omit
 // because InstanceOf already applies the profile.
@@ -869,7 +866,6 @@ Usage: #inline
 * valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
 // Observation Hepatitis B 2
-
 
  
 Instance: 39a8b719-ee89-4400-9078-1227bd31fe71
@@ -1108,7 +1104,7 @@ Alias: $con-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ver-clinical = http://terminology.hl7.org/CodeSystem/condition-ver-status
 
 // Diagnose - Condition: HIV-Präexpositionsprophylaxe
-Instance: HIV_Praexpositionsprophylaxe  // https://www.uuidgenerator.net/version4
+Instance: 90d60737-f216-4f0e-889f-a80b12b7db5a  // https://www.uuidgenerator.net/version4
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
 Title: "Condition: HIV-Präexpositionsprophylaxe"
 Description: "HIV-Präexpositionsprophylaxe"
@@ -1116,8 +1112,9 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-* id = "90d60737-f216-4f0e-889f-a80b12b7db5a"
-* extension[Feststellungsdatum].valueDateTime = "2019-09-23"
+
+* extension[http://hl7.org/fhir/StructureDefinition/condition-assertedDate].valueDateTime = "2019-09-23T00:00:00+00:00"
+
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"

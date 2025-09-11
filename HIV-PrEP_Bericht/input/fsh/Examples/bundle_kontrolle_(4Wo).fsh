@@ -1,4 +1,4 @@
-Instance: e2cad687-7fba-458e-9ddf-f027b9a75d4c
+Instance: 88b763ac-5e93-4a23-8201-5670822dd7b0
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Bundle
 Title: "HIV-PrEP Bericht Bundle"
 Description: "An example instance of an HIV-PrEP report bundle based on the RKI_PR_HIV_PrEP_Bericht_Bundle profile."
@@ -8,89 +8,92 @@ Usage: #example
 * meta.profile[0] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Bundle"
 * type = #document
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value  = "urn:uuid:e2cad687-7fba-458e-9ddf-f027b9a75d4c"
+* identifier.value  = "urn:uuid:88b763ac-5e93-4a23-8201-5670822dd7b0"
 * timestamp = "2019-10-01T09:50:00+01:00"
-// === Composition (Einleitung) ===
-* entry[0].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/d7fb54dd-303a-41c2-a765-8f67229a690d"
-* entry[0].resource = d7fb54dd-303a-41c2-a765-8f67229a690d
-
+// === Composition (Kontrolle 4 Wo ) ===
+* entry[0].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/9f978489-54de-49f4-ba57-a63fd463a064"
+* entry[0].resource = 9f978489-54de-49f4-ba57-a63fd463a064
 
 // === Subject (Patient) ===
-* entry[1].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient/Patient_PrEP_Journey2"
-* entry[1].resource = Patient_PrEP_Journey2
+* entry[1].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient/Patient_PrEP_Journey3"
+* entry[1].resource = Patient_PrEP_Journey3
 
 // === Author ===
-* entry[2].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole/PractitionerRole_Journey2"
-* entry[2].resource = PractitionerRole_Journey2
+* entry[2].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole/PractitionerRole_Journey3"
+* entry[2].resource = PractitionerRole_Journey3
 
-* entry[3].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Practitioner_Journey2"
-* entry[3].resource = Practitioner_Journey2
+* entry[3].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Practitioner_Journey3"
+* entry[3].resource = Practitioner_Journey3
 
-* entry[4].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization/Organization_Journey2"
-* entry[4].resource = Organization_Journey2
+* entry[4].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization/Organization_Journey3"
+* entry[4].resource = Organization_Journey3
 
 // === Diagnosen (Conditions) ===
-* entry[5].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/992534df-ee6c-400a-a46d-ae19f57abbde"
-* entry[5].resource = 992534df-ee6c-400a-a46d-ae19f57abbde   // HIV-PrEP (Z29.22)
+* entry[5].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/3c109005-5008-45a8-8422-cbff600ea3f8"
+* entry[5].resource = 3c109005-5008-45a8-8422-cbff600ea3f8   // HIV-PrEP (Z29.22)
 
-* entry[6].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/5f1d5b61-fa3d-4742-82f7-a49418c4bcef"
-* entry[6].resource = 5f1d5b61-fa3d-4742-82f7-a49418c4bcef   // Gonokokkeninfektion, nicht näher bezeichnet
+* entry[6].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/27569f86-553e-49e2-9c57-f3d1103b08d2"
+* entry[6].resource = 27569f86-553e-49e2-9c57-f3d1103b08d2   // Gonokokkeninfektion, nicht näher bezeichnet
 
-* entry[7].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/88fd3773-6875-4a0a-b855-e0674feace4d"
-* entry[7].resource = 88fd3773-6875-4a0a-b855-e0674feace4d   // Notwendigkeit der Impfung gegen Virushepatitis
+* entry[7].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/77da54dd-f813-46ff-9d3c-6a519bee2e85"
+* entry[7].resource = 77da54dd-f813-46ff-9d3c-6a519bee2e85   // Notwendigkeit der Impfung gegen Virushepatitis
 
 // === Anamnese ===
-* entry[8].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_ClinicalImpression/Anamnese_Clinical_Impression_Journey2"
-* entry[8].resource = Anamnese_Clinical_Impression_Journey2
+* entry[8].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_ClinicalImpression/Anamnese_Clinical_Impression_Journey3"
+* entry[8].resource = Anamnese_Clinical_Impression_Journey3
 
-* entry[9].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication/ClinicalImpression_PrEP_Indication_Journey2"
-* entry[9].resource = ClinicalImpression_PrEP_Indication_Journey2
+* entry[9].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication/ClinicalImpression_PrEP_Indication_Journey3"
+* entry[9].resource = ClinicalImpression_PrEP_Indication_Journey3
 
-* entry[10].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse/ClinicalImpression_QuestionnaireResponse_Journey2"
-* entry[10].resource = ClinicalImpression_QuestionnaireResponse_Journey2
+* entry[10].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse/ClinicalImpression_QuestionnaireResponse_Journey3"
+* entry[10].resource = ClinicalImpression_QuestionnaireResponse_Journey3
 
-* entry[11].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance/ClinicalImpression_AllergyIntolerance_Journey2"
-* entry[11].resource = ClinicalImpression_AllergyIntolerance_Journey2
+* entry[11].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance/ClinicalImpression_AllergyIntolerance_Journey3"
+* entry[11].resource = ClinicalImpression_AllergyIntolerance_Journey3
 
-* entry[12].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present/ClinicalImpression_Condition_History_Journey2"
-* entry[12].resource = ClinicalImpression_Condition_History_Journey2
+* entry[12].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present/ClinicalImpression_Condition_History_Journey3"
+* entry[12].resource = ClinicalImpression_Condition_History_Journey3
 
-* entry[13].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight/ClinicalImpression_BodyWeight_Journey2"
-* entry[13].resource = ClinicalImpression_BodyWeight_Journey2
+* entry[13].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight/ClinicalImpression_BodyWeight_Journey3"
+* entry[13].resource = ClinicalImpression_BodyWeight_Journey3
 
 // === Beratung ===
-* entry[14].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling/a77b5c5d-74fb-476e-9654-851bbe2c1098"
-* entry[14].resource = a77b5c5d-74fb-476e-9654-851bbe2c1098 // PrEP Counselling Antibiotic Therapy
 
-* entry[15].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/74b0d8fe-060a-4ac6-b024-4a09148c48e9"
-* entry[15].resource = 74b0d8fe-060a-4ac6-b024-4a09148c48e9
+* entry[14].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/52c04f7c-2f59-4541-aabe-a7856644abd9"
+* entry[14].resource = 52c04f7c-2f59-4541-aabe-a7856644abd9
 
 // MedikationStatement
-* entry[15].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/1887368a-185c-4c76-8967-1a25124933b4"
-* entry[15].resource = 1887368a-185c-4c76-8967-1a25124933b4
+* entry[15].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/837360b0-ad83-4f4b-80b7-d5a95e375f6a"
+* entry[15].resource = 837360b0-ad83-4f4b-80b7-d5a95e375f6a
 
-* entry[16].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/3c9e2d5c-3d8a-4c79-8b73-2b6d1e0c9a11"
-* entry[16].resource = 3c9e2d5c-3d8a-4c79-8b73-2b6d1e0c9a11 
 
 // Medication
-* entry[17].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/5a27bacd-1db6-43c8-8fad-18b898a29480"
-* entry[17].resource = 5a27bacd-1db6-43c8-8fad-18b898a29480
-
-* entry[18].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/0f9f3e51-6f9a-4c3d-8b22-a5d1b5e9f4a2"
-* entry[18].resource = 0f9f3e51-6f9a-4c3d-8b22-a5d1b5e9f4a2
+* entry[16].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/637636e8-97e2-4f4f-8bb1-23b4d5768b89"
+* entry[16].resource = 637636e8-97e2-4f4f-8bb1-23b4d5768b89
 
 // Immunisierung
-* entry[19].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
-* entry[19].resource = f8e1b41b-2830-49ff-8038-5636e9f2d0cd
+* entry[17].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
+* entry[17].resource = d42bbe3a-b92b-458d-aec0-a6612ae3fdee
+
+// Observation Lab 
+* entry[18].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhoe/0de862c8-fbee-47e5-9f7c-53bb7536a757"
+* entry[18].resource = 0de862c8-fbee-47e5-9f7c-53bb7536a757
+
+* entry[19].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/3c109005-5008-45a8-8422-cbff600ea3f8"
+* entry[19].resource = 3c109005-5008-45a8-8422-cbff600ea3f8
+
+// === Laboratory Practitioner (performer) ===
+* entry[20].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Laborarzt_Journey3"
+* entry[20].resource = Laborarzt_Journey3
 
 // --------------------------
-// Composition (Einleitung bundle — corrected to profile)
+// Composition (Kontrolle_(4 Wochen) bundle — corrected to profile)
 // --------------------------
 
 Alias: $sct = http://snomed.info/sct
 
 
-Instance: d7fb54dd-303a-41c2-a765-8f67229a690d
+Instance: 9f978489-54de-49f4-ba57-a63fd463a064
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Composition
 Title: "Example Composition for PrEP for Journey 2"
 Description: "Einleitung-scope composition: Anamnese, Beratung, Medikation, Diagnosen"
@@ -116,7 +119,7 @@ Usage: #inline
 * title = "HIV PrEP Bericht"   // <- fixed in profile, so must remain the same
 
 // --------------------------
-// Sections (Einleitung scope)
+// Sections (Kontrolle (4 Wochen) scope)
 // --------------------------
 
 // REQUIRED: Behandelnde Person / Einrichtung
@@ -135,14 +138,6 @@ Usage: #inline
 * section[anamnese].entry[0] = Reference(urn:uuid:bb5004d3-251a-4cd2-8ba1-973279777540) // ClinicalImpression (Anamnese)
 
 
-// HIV PrEP Beratung — entries only Procedure_PrEP_Counselling
-* section[beratung].title = "HIV PrEP Beratung"
-* section[beratung].code.coding.system  = $sct
-* section[beratung].code.coding.code    = #409063005
-* section[beratung].code.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
-* section[beratung].code.coding.display = "Counseling (procedure)"
-* section[beratung].entry[0] = Reference(urn:uuid:a77b5c5d-74fb-476e-9654-851bbe2c1099) // Procedure - PrEP Counselling
-
 // Medikation — PrEP + Antibiotics
 // Parent section: Medikation
 // Parent section
@@ -157,15 +152,7 @@ Usage: #inline
 * section[medikation].section[prepMedikation].code.coding.system  = $sectioncodes
 * section[medikation].section[prepMedikation].code.coding.code    = #SectionPrEPMedikation
 * section[medikation].section[prepMedikation].code.coding.display = "HIV PrEP Medikation"
-* section[medikation].section[prepMedikation].entry[0].reference  = "urn:uuid:1887368a-185c-4c76-8967-1a25124933b5" // FTC/TDF
-
-// Child subsection: Behandlungsrelevante Medikation
-* section[medikation].section[behandlungsrelevanteMedikation].title = "Behandlungsrelevante Medikation"
-* section[medikation].section[behandlungsrelevanteMedikation].code.coding.system  = $sectioncodes
-* section[medikation].section[behandlungsrelevanteMedikation].code.coding.code    = #SectionBehandlungsrelevanteMedikation
-* section[medikation].section[behandlungsrelevanteMedikation].code.coding.display = "Behandlungsrelevante Medikation"
-* section[medikation].section[behandlungsrelevanteMedikation].entry[0].reference  = "urn:uuid:3c9e2d5c-3d8a-4c79-8b73-2b6d1e0c9a12" // Azithromycin
-* section[medikation].section[behandlungsrelevanteMedikation].entry[1].reference  = "urn:uuid:bf21f7de-7f94-45e4-bb89-12d9a5d5cc10" // Ceftriaxon
+* section[medikation].section[prepMedikation].entry[0].reference  = "urn:uuid:637636e8-97e2-4f4f-8bb1-23b4d5768b89" // FTC/TDF
 
 // Diagnosen — Conditions per diagnosis profile
 * section[diagnosen].title = "STI Diagnosen"
@@ -173,20 +160,19 @@ Usage: #inline
 //* section[diagnosen].code.coding.version = "4.0.1"
 * section[diagnosen].code.coding.code = #SectionStiDiagnosen
 * section[diagnosen].code.coding.display = "STI Diagnosen"
-* section[diagnosen].entry[0] = Reference(urn:uuid:90d60737-f216-4f0e-889f-a80b12b7db5b) // HIV-PrEP (Z29.22)
-* section[diagnosen].entry[1] = Reference(urn:uuid:5f1d5b61-fa3d-4742-82f7-a49418c4bcf0) // Other STI diagnosis
-* section[diagnosen].entry[2] = Reference(urn:uuid:88fd3773-6875-4a0a-b855-e0674feace4e) // Another diagnosis
+* section[diagnosen].entry[0] = Reference(urn:uuid:856bb329-a080-44c6-945a-277de74ca0a2) // HIV (Z29.22)
+* section[diagnosen].entry[1] = Reference(urn:uuid:77da54dd-f813-46ff-9d3c-6a519bee2e85) // Other STI diagnosis
+* section[diagnosen].entry[2] = Reference(urn:uuid:27569f86-553e-49e2-9c57-f3d1103b08d2) // Another diagnosis
 
 * section[immunisierungen].title = "Immunisierungen"
 * section[immunisierungen].code.coding.system = "http://snomed.info/sct"
 * section[immunisierungen].code.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * section[immunisierungen].code.coding.code = #713404003
 * section[immunisierungen].code.coding.display = "Vaccination given (situation)"
-* section[immunisierungen].entry = Reference(urn:uuid:f8e1b41b-2830-49ff-8038-5636e9f2d0cd)
-
+* section[immunisierungen].entry = Reference(urn:uuid:d42bbe3a-b92b-458d-aec0-a6612ae3fdee)
 //Composition Subject (Patient)
 
-Instance: Patient_PrEP_Journey2
+Instance: Patient_PrEP_Journey3
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Patient
 Title: "Example Patient for PrEP for Journey 2"
 Description: "This is an example patient instance for HIV PrEP reporting"
@@ -231,7 +217,7 @@ Usage: #inline
 
 //Composition Author (PractitionerRole)
 
-Instance: PractitionerRole_Journey2
+Instance: PractitionerRole_Journey3
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-PractitionerRole
 Title: "Example PractitionerRole for PrEP"
 Description: "This is an example practitioner role instance for HIV PrEP reporting"
@@ -255,7 +241,7 @@ Usage: #inline
 
 //Practitioner
 
-Instance: Practitioner_Journey2
+Instance: Practitioner_Journey3
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Practitioner
 Title: "Example Practitioner for PrEP"
 Description: "This is an example practitioner instance for HIV PrEP reporting"
@@ -291,7 +277,7 @@ Usage: #inline
 
 //Composition Custodian (Organization)
 
-Instance: Organization_Journey2
+Instance: Organization_Journey3
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Organization
 Title: "Example of an Organization"
 Description: "This is an example organization instance for HIV PrEP reporting"
@@ -324,7 +310,7 @@ Usage: #inline
 
 //Section Anamnese Clinical Impression
 
-Instance: Anamnese_Clinical_Impression_Journey2
+Instance: Anamnese_Clinical_Impression_Journey3
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-ClinicalImpression-PrEP
 Title: "Clinical Impression – Anamnese bzgl. STI-Symptomen"
 Description: "Example clinical impression instance for Anamnese regarding STI symptoms in HIV PrEP reporting"
@@ -360,7 +346,7 @@ Usage: #inline
 // Indication assessment finding
 * finding.itemReference = Reference(urn:uuid:be552245-9130-4363-8699-44eb481740ac)
 
-Instance: ClinicalImpression_AllergyIntolerance_Journey2
+Instance: ClinicalImpression_AllergyIntolerance_Journey3
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance
 Title: "Example Allergy Intolerance for PrEP"
 Description: "This is an example allergy intolerance instance for HIV PrEP reporting"
@@ -394,7 +380,7 @@ Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
 Alias: $con-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ver-clinical = http://terminology.hl7.org/CodeSystem/condition-ver-status
 
-Instance: ClinicalImpression_Condition_History_Journey2
+Instance: ClinicalImpression_Condition_History_Journey3
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-History-Present
 Title: "Example of a Condition History Present"
 Description: "This is an example condition history present instance for HIV PrEP reporting"
@@ -428,7 +414,7 @@ Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 
-Instance: ClinicalImpression_BodyWeight_Journey2
+Instance: ClinicalImpression_BodyWeight_Journey3
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight
 Title: "Example of a Body weight Observation"
 Description: "This is an example body weight observation instance"
@@ -460,7 +446,7 @@ Usage: #inline
 
 // ClinicalImpression QuestionnaireResponse
 
-Instance: ClinicalImpression_QuestionnaireResponse_Journey2
+Instance: ClinicalImpression_QuestionnaireResponse_Journey3
 InstanceOf: https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse
 Title: "Example of a Questionnaire Response"
 Description: "This is an example questionnaire response instance for HIV PrEP reporting"
@@ -501,7 +487,7 @@ Usage: #inline
 
 //ClinicalImpression finding item Reference Prep Indication
 
-Instance: ClinicalImpression_PrEP_Indication_Journey2
+Instance: ClinicalImpression_PrEP_Indication_Journey3
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-PrEP-Indication
 Title: "Example of a prep indication observation procedure"
 Description: "This is an example prep indication observation procedure instance for HIV PrEP reporting"
@@ -525,53 +511,51 @@ Usage: #inline
 * valueCodeableConcept.coding.code = #230165009
 * valueCodeableConcept.coding.display = "With indication"
 
-// Procedure: PrEP Counselling
-Instance: a77b5c5d-74fb-476e-9654-851bbe2c1098
-InstanceOf: RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Counselling
-Title: "Example of a PrEP counselling procedure"
-Description: "This is an example PrEP counselling instance for HIV PrEP reporting"
+// Laborarzt
+
+Instance: Laborarzt_Journey3
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Practitioner
+Title: "Example of a Lab Practitioner"
+Description: "This is an example laboratory practitioner instance for HIV PrEP reporting"
 Usage: #inline
 
-* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling"
+* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner"
+* id = "e9ee4679-1e5b-4f04-830d-cf24d33717eb"
 
-* status = #completed
+* identifier[ANR].type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier[ANR].type.coding.code = #LANR
+* identifier[ANR].system = "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"
+* identifier[ANR].value = "123456789"
 
-// Main code for the procedure
-* code.coding[snomed].system = "http://snomed.info/sct"
-* code.coding[snomed].version = "http://snomed.info/sct/11000274103/version/20241115"
-* code.coding[snomed].code = #409063005
-* code.coding[snomed].display = "Beratung"
+* name[name].family = "Scott"
+* name[name].family.extension[nachname].valueString = "Scott"
+* name[name].given = "Mike"
+* name[name].prefix.extension[prefix-qualifier].valueCode = #AC
+* name[name].prefix = "Dr."
 
-// Patient reference
-* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+* telecom.system = #phone
+* telecom.value = "+4901234548599"
 
-// Encounter reference
-* encounter.reference = "urn:uuid:74b0d8fe-060a-4ac6-b024-4a09148c48e9"
+* address[Strassenanschrift].line = "Einestraße 10"
+* address[Strassenanschrift].line.extension[Strasse].valueString = "Einestraße"
+* address[Strassenanschrift].line.extension[Hausnummer].valueString = "10"
+* address[Strassenanschrift].type = #both
+* address[Strassenanschrift].city = "Einstadt"
+* address[Strassenanschrift].postalCode = "12345"
 
-// Performed date
-* performedDateTime = "2019-09-24"
-
-// Performer (practitioner)
-* performer.actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
-* performer.actor.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
-* performer.actor.identifier.value = "123456789"
-
-// --- Counselling topics (reasonCodes) ---
-
-// Topic 1: Antibiotic therapy education
-* reasonCode[0].coding.system = "http://snomed.info/sct"
-* reasonCode[0].coding.version = "http://snomed.info/sct/900000000000207008/version/20210731"
-* reasonCode[0].coding.code = #281789004
-* reasonCode[0].coding.display = "Antibiotic therapy (procedure)"
+* qualification.code.coding.system = "urn:oid:1.2.276.0.76.5.514"
+* qualification.code.coding.display = "FA Laboratoriumsmedizin"
+* qualification.code.coding.code = #171001
+* qualification.code.coding.version = "1.5.0"
 
 //Encounter 2
-// Encounter — Einleitung vor Präexpositionsprophylaxe
+// Encounter — Kontrolle im Rahmen der Präexpositionsprophylaxe
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
-Instance: 74b0d8fe-060a-4ac6-b024-4a09148c48e9
+Instance: 52c04f7c-2f59-4541-aabe-a7856644abd9
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Encounter-General
 Title: "Example of a general encounter"
-Description: "Encounter: Einleitung vor Präexpositionsprophylaxe"
+Description: "Encounter: Kontrolle im Rahmen der Präexpositionsprophylaxe"
 Usage: #inline
 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
@@ -586,8 +570,8 @@ Usage: #inline
 // Local encounter type as in your profile/code system
 * type.coding[0].system  = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type"
 * type.coding[0].version = "1.0.0"
-* type.coding[0].code    = #01921
-* type.coding[0].display = "Einleitung vor Präexpositionsprophylaxe"
+* type.coding[0].code    = #01922
+* type.coding[0].display = "Kontrolle im Rahmen der Präexpositionsprophylaxe"
 
 // Patient (subject)
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
@@ -595,15 +579,94 @@ Usage: #inline
 * subject.identifier.value  = "X987654321"
 
 // Start period date
-* period.start = "2019-09-24"
+* period.start = "2019-10-21"
 
 // Provider org
 * serviceProvider.reference = "urn:uuid:81eacc87-e116-4505-a4e2-02404a022040"
 * serviceProvider.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * serviceProvider.identifier.value  = "123456"
+// Observation HIV
+
+Instance: 3c109005-5008-45a8-8422-cbff600ea3f8
+InstanceOf: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV
+Title: "Example of an HIV Observation"
+Description: "This is an example hiv observation instance"
+Usage: #inline
+
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV"
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-23T09:00:00+08:00"
+
+* status = #final
+
+* category = $secondary-finding#laboratory
+
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version = "2.73"
+* code.coding[loinc].code = #5223-3
+* code.coding[loinc].display = "HIV-1+2 Ak:Arbiträre Konzentration:Zeitpunkt:Serum oder Plasma:Quantitativ:Immunoassay"  // https://loinc.org/5224-1  ??????
+
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+
+* effectiveDateTime = "2019-10-21T09:00:00+08:00"
+
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
+/*
+* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* performer.identifier.value = "123456"
+*/
+
+* valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20161130"
+* valueCodeableConcept.coding.code = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
+
+* note.text = "PrEP Kontrolle nach 4 Wochen"
+
+// Observation Gonorrhoe
+
+Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
+Alias: $sct = http://snomed.info/sct
+Alias: $loinc = http://loinc.org
+
+Instance: 0de862c8-fbee-47e5-9f7c-53bb7536a757
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Gonorrhea
+Title: "Example of a Gonorrhea Observation"
+Description: "This is an example gonorrhea observation instance"
+Usage: #inline
+
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-10-21"
+
+* status = #final
+
+* category = $secondary-finding#laboratory
+
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version = "2.73"
+* code.coding[loinc].code = #60256-5
+* code.coding[loinc].display = "Neisseria gonorrhoeae rRNA [Presence] in Urine by NAA with probe detection"
+
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+
+* effectiveDateTime = "2019-10-21T09:00:00+08:00"
+
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
+/*
+* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* performer.identifier.value = "123456"
+*/
+
+* valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
+* valueCodeableConcept.coding.code = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
+
+* note.text = "Kontrolle nach Antibiose 4-6 Wochen nach Therapie"
 
 // Diagnose - Condition: HIV-Präexpositionsprophylaxe
-Instance: 992534df-ee6c-400a-a46d-ae19f57abbde  // https://www.uuidgenerator.net/version4
+Instance: 856bb329-a080-44c6-945a-277de74ca0a2  
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
 Title: "Condition: HIV-Präexpositionsprophylaxe"
 Description: "HIV-Präexpositionsprophylaxe"
@@ -612,7 +675,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
-* extension[Feststellungsdatum].valueDateTime = "2019-09-24"
+* extension[Feststellungsdatum].valueDateTime = "2019-10-21"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
@@ -624,17 +687,17 @@ Usage: #inline
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* onsetDateTime = "2019-09-24"
+* onsetDateTime = "2019-10-21"
 
 * clinicalStatus.coding = $con-clinical#active "Active" // https://terminology.hl7.org/6.3.0/CodeSystem-condition-clinical.html
 * clinicalStatus.coding.version = "3.0.0"
 * verificationStatus.coding = $ver-clinical#confirmed "Confirmed"
 * verificationStatus.coding.version = "4.0.1"
 
-* recordedDate = "2019-09-24"
+* recordedDate = "2019-10-21"
 
 // Diagnose - Condition: Gonokokkeninfektion, nicht näher bezeichnet
-Instance: 5f1d5b61-fa3d-4742-82f7-a49418c4bcef  // https://www.uuidgenerator.net/version4
+Instance: 27569f86-553e-49e2-9c57-f3d1103b08d2  // https://www.uuidgenerator.net/version4
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
 Title: "Condition: Gonokokkeninfektion, nicht näher bezeichnet"
 Description: "Gonokokkeninfektion, nicht näher bezeichnet"
@@ -643,7 +706,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
-* extension[Feststellungsdatum].valueDateTime = "2019-09-24"
+* extension[Feststellungsdatum].valueDateTime = "2019-10-21"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
@@ -655,10 +718,11 @@ Usage: #inline
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* onsetDateTime = "2019-09-24"
+* onsetDateTime = "2019-10-21"
+
 
 // Diagnose - Condition: Notwendigkeit der Impfung gegen Virushepatitis
-Instance: 88fd3773-6875-4a0a-b855-e0674feace4d  // https://www.uuidgenerator.net/version4
+Instance: 77da54dd-f813-46ff-9d3c-6a519bee2e85  // https://www.uuidgenerator.net/version4
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
 Title: "Condition: Virushepatitis"
 Description: "Virushepatitis"
@@ -667,7 +731,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
-* extension[Feststellungsdatum].valueDateTime = "2019-09-24"
+* extension[Feststellungsdatum].valueDateTime = "2019-10-21"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
@@ -675,18 +739,19 @@ Usage: #inline
 * code.coding[ICD-10-GM].code = #Z24.6   // https://www.icd-code.de/icd/code/Z24.6.html
 * code.coding[ICD-10-GM].display = "Notwendigkeit der Impfung gegen Virushepatitis"
 
+
 * subject = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* onsetDateTime = "2019-09-24"
+* onsetDateTime = "2019-10-21"
 
 
 // MedicationStatement – Tenofovirdisoproxil/Emtricitabin (FTC/TDF)
 
 Alias: $sct = http://snomed.info/sct
 
-Instance: 1887368a-185c-4c76-8967-1a25124933b4
+Instance: 837360b0-ad83-4f4b-80b7-d5a95e375f6a
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free
 Usage: #inline
 
@@ -694,8 +759,8 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
-* medicationReference.reference = "urn:uuid:5a27bacd-1db6-43c8-8fad-18b898a29480"
-* effectiveDateTime = "2019-09-24"
+* medicationReference.reference = "urn:uuid:637636e8-97e2-4f4f-8bb1-23b4d5768b89"
+* effectiveDateTime = "2019-10-21"
 
 // subject: use identifier only (to meet profile requirement)
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
@@ -712,11 +777,11 @@ Usage: #inline
 
 
 
-// Medication – Tenofovirdisoproxil/Emtricitabin (FTC/TDF) 200 mg/245 mg, 30 St
+// Medication – Tenofovirdisoproxil/Emtricitabin (FTC/TDF) 200 mg/245 mg, 90 St
 
 Alias: $sct = http://snomed.info/sct
 
-Instance: 5a27bacd-1db6-43c8-8fad-18b898a29480
+Instance: 637636e8-97e2-4f4f-8bb1-23b4d5768b89
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Medication_Free
 Usage: #inline
 
@@ -735,7 +800,7 @@ Usage: #inline
 * form.coding[kbvDarreichungsform].display = "Filmtabletten"
 
 // Medication total amount (per package)
-* amount.numerator.value = 30
+* amount.numerator.value = 90
 * amount.numerator.unit  = "Tablet"
 * amount.numerator.system = "http://unitsofmeasure.org"
 * amount.numerator.code   = #1        // each tablet counts as 1
@@ -767,97 +832,12 @@ Usage: #inline
 * ingredient[1].strength.denominator.code   = #1
 
 
-// AZITHROMYCIN – 1.5 g total (3×500 mg) p.o., once
 
-
-Alias: $sct = http://snomed.info/sct
-
-// MedicationStatement – Azithromycin
-Instance: 3c9e2d5c-3d8a-4c79-8b73-2b6d1e0c9a11
-InstanceOf: RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free
-Usage: #inline
-
-* status = #completed
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free"
-* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-* medicationReference.reference = "urn:uuid:0f9f3e51-6f9a-4c3d-8b22-a5d1b5e9f4a2"
-
-* effectiveDateTime = "2019-09-24"
-
-* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
-* subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
-* subject.identifier.value = "X987654321"
-// Dosage
-* dosage[0].text  = "Azithromycin 1,5 g gesamt (3×500 mg) p.o., Einmaldosis"
-* dosage[0].route = $sct#26643006 "Oraler Verabreichungsweg"
-// count of tablets taken
-* dosage.doseAndRate.doseQuantity = $kbv#1 "Stück"
-* dosage.doseAndRate.doseQuantity.value = 3.0
-
-// Medication – Azithromycin
-Instance: 0f9f3e51-6f9a-4c3d-8b22-a5d1b5e9f4a2
-InstanceOf: RKI_PR_HIV_PrEP_Bericht_Medication_Free
-Usage: #inline
-
-* status = #active
-* code.coding[atc-de].system  = "http://fhir.de/CodeSystem/bfarm/atc"
-* code.coding[atc-de].version = "2024"
-* code.coding[atc-de].code    = #J01FA10
-* code.coding[atc-de].display = "Azithromycin"
-// optional pack info if you dispensed a 3-tablet pack:
-* amount.numerator.value  = 3
-* amount.numerator.unit   = "tablet"
-* amount.numerator.system = "http://unitsofmeasure.org"
-* amount.numerator.code   = #1     
-
-* amount.denominator.value  = 1
-* amount.denominator.unit   = "package"
-* amount.denominator.system = "http://unitsofmeasure.org"
-* amount.denominator.code   = #1    
-
-// (optional) form if you use KBV darreichungsform
-* form.coding[kbvDarreichungsform].system  = "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"
-* form.coding[kbvDarreichungsform].version = "1.14"
-* form.coding[kbvDarreichungsform].code    = #FTA
-* form.coding[kbvDarreichungsform].display = "Filmtabletten"
-
-
-// CEFTRIAXONE – 2 g i.v. in 50 ml NaCl, once
+// Immunization — Hep A/B combo, dose 2 von 3, i.m.
 
 Alias: $sct = http://snomed.info/sct
 
-// MedicationStatement – Ceftriaxone
-Instance: b77a0e79-9a6e-4ed2-9f83-0d8a0b5e0d33
-InstanceOf: RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free
-Usage: #inline
-
-* status = #completed
-* medicationReference.reference = "urn:uuid:7e3b2c6f-6a80-4f3c-9a2b-9f6d42b7d0b9"
-* subject.reference = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient/4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
-* effectiveDateTime = "2019-09-24"
-* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
-* subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
-* subject.identifier.value = "X987654321"
-* dateAsserted      = "2019-09-24"
-* dosage[0].text  = "Ceftriaxon 2 g i.v. in 50 ml NaCl, Einmaldosis"
-* dosage[0].route = $sct#47625008 "Intravenöser Verabreichungsweg"
-
-// Medication – Ceftriaxone
-Instance: 7e3b2c6f-6a80-4f3c-9a2b-9f6d42b7d0b9
-InstanceOf: RKI_PR_HIV_PrEP_Bericht_Medication_Free
-Usage: #inline
-
-* status = #active
-* code.coding[atc-de].system  = "http://fhir.de/CodeSystem/bfarm/atc"
-* code.coding[atc-de].version = "2024"
-* code.coding[atc-de].code    = #J01DD04
-* code.coding[atc-de].display = "Ceftriaxon"
-
-// Immunization — Hep A/B combo, dose 1 von 3, i.m.
-
-Alias: $sct = http://snomed.info/sct
-
-Instance: f8e1b41b-2830-49ff-8038-5636e9f2d0cd
+Instance: d42bbe3a-b92b-458d-aec0-a6612ae3fdee
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Immunization
 Usage: #inline
 
@@ -878,14 +858,14 @@ Usage: #inline
 
 // Patient + time
 * patient.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
-* occurrenceDateTime = "2019-10-01T09:00:00+01:00"
+* occurrenceDateTime = "2019-10-21T09:00:00+01:00"
 
 // Lot/site
 * lotNumber = "12345678"
 // * site = $sct#368208006 "Struktur der Deltaregion (Körperstruktur)"
 
 // Series / dose info
-* protocolApplied[0].doseNumberPositiveInt = 1
+* protocolApplied[0].doseNumberPositiveInt = 2
 * protocolApplied[0].seriesDosesPositiveInt = 3
 
 // Target diseases → one entry per disease
@@ -900,6 +880,5 @@ Usage: #inline
 * protocolApplied[0].targetDisease[1].coding[0].display = "Viral hepatitis type A (disorder)"
 
 // Optional note
-* note[0].text = "Impfstoff Hep A+B i.m.; 1. Dosis von 3."
-
+* note[0].text = "Impfstoff Hep A+B i.m.; 2. Dosis von 3 (4–6 Wochen nach 1.)."
 
