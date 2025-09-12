@@ -95,7 +95,7 @@ Alias: $sct = http://snomed.info/sct
 
 Instance: 9f978489-54de-49f4-ba57-a63fd463a064
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Composition
-Title: "Example Composition for PrEP for Journey 2"
+Title: "Example Composition for PrEP for Journey 3"
 Description: "Einleitung-scope composition: Anamnese, Beratung, Medikation, Diagnosen"
 Usage: #inline
 
@@ -129,7 +129,7 @@ Usage: #inline
 * section[behandelndePersonEinrichtung].code.coding.display = "Behandelnde Person / Einrichtung"
 * section[behandelndePersonEinrichtung].entry[0] = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648530) // PractitionerRole
 
-// Anamnese — multiple entries (Journey 2)
+// Anamnese — multiple entries (Journey 3)
 * section[anamnese].title = "Anamnese"
 * section[anamnese].code.coding.system  = $sct
 * section[anamnese].code.coding.code    = #1003642006
@@ -174,7 +174,7 @@ Usage: #inline
 
 Instance: Patient_PrEP_Journey3
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Patient
-Title: "Example Patient for PrEP for Journey 2"
+Title: "Example Patient for PrEP for Journey 3"
 Description: "This is an example patient instance for HIV PrEP reporting"
 Usage: #inline
 
