@@ -129,7 +129,7 @@ Usage: #inline
 * section[behandelndePersonEinrichtung].code.coding.display = "Behandelnde Person / Einrichtung"
 * section[behandelndePersonEinrichtung].entry[0] = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648530) // PractitionerRole
 
-// Anamnese — multiple entries (Journey 3)
+// Anamnese — multiple entries (Journey)
 * section[anamnese].title = "Anamnese"
 * section[anamnese].code.coding.system  = $sct
 * section[anamnese].code.coding.code    = #1003642006
