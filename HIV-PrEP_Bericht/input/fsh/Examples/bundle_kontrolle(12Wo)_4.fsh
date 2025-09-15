@@ -14,7 +14,6 @@ Usage: #example
 * entry[0].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/1c352c2b-1fae-4263-b4c6-979ebfe5b1fe"
 * entry[0].resource = 1c352c2b-1fae-4263-b4c6-979ebfe5b1fe
 
-
 // === Subject (Patient) ===
 * entry[1].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient/Patient_PrEP_Journey4"
 * entry[1].resource = Patient_PrEP_Journey4
