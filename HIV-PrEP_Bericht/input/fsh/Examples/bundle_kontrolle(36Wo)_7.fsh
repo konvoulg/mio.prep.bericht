@@ -1,4 +1,4 @@
-Instance: bc40aec8-500d-4d3f-b476-ca44290ad9ef
+Instance: 54cc84ae-d770-4e95-bf1a-49d3464a939d
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Bundle
 Title: "HIV-PrEP Bericht Bundle"
 Description: "An example instance of an HIV-PrEP report bundle based on the RKI_PR_HIV_PrEP_Bericht_Bundle profile."
@@ -8,93 +8,93 @@ Usage: #example
 * meta.profile[0] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Bundle"
 * type = #document
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value  = "urn:uuid:bc40aec8-500d-4d3f-b476-ca44290ad9ef"
-* timestamp = "2020-04-13T09:50:00+01:00"
+* identifier.value  = "urn:uuid:54cc84ae-d770-4e95-bf1a-49d3464a939d"
+* timestamp = "2020-07-20T09:50:00+01:00"
 // === Composition ===
-* entry[0].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/20fa5bcf-73d7-4883-80a0-efbb0d94e566"
-* entry[0].resource = 20fa5bcf-73d7-4883-80a0-efbb0d94e566
+* entry[0].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/697abba9-90f5-425f-8eab-6cde7f6f73b4"
+* entry[0].resource = 697abba9-90f5-425f-8eab-6cde7f6f73b4
 
 // === Subject (Patient) ===
-* entry[1].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient/Patient_PrEP_Journey6"
-* entry[1].resource = Patient_PrEP_Journey6
+* entry[1].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient/Patient_PrEP_Journey7"
+* entry[1].resource = Patient_PrEP_Journey7 
 
 // === Author ===
-* entry[2].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole/PractitionerRole_Journey6"
-* entry[2].resource = PractitionerRole_Journey6
+* entry[2].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_PractitionerRole/PractitionerRole_Journey7"
+* entry[2].resource = PractitionerRole_Journey7
 
-* entry[3].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Practitioner_Journey6"
-* entry[3].resource = Practitioner_Journey6
+* entry[3].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Practitioner_Journey7"
+* entry[3].resource = Practitioner_Journey7
 
-* entry[4].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization/Organization_Journey6"
-* entry[4].resource = Organization_Journey6
+* entry[4].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization/Organization_Journey7"
+* entry[4].resource = Organization_Journey7
 
 // === Diagnosen (Conditions) ===
-* entry[5].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/0c512880-9806-4ba2-8628-32c2f1b5cb48"
-* entry[5].resource = 0c512880-9806-4ba2-8628-32c2f1b5cb48   // HIV-PrEP (Z29.22)
+* entry[5].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/a4513f28-ceb8-4b30-8787-be1e6819f241"
+* entry[5].resource = a4513f28-ceb8-4b30-8787-be1e6819f241   // HIV-PrEP (Z29.22)
 
 // === Anamnese ===
-* entry[6].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_ClinicalImpression/Anamnese_Clinical_Impression_Journey6"
-* entry[6].resource = Anamnese_Clinical_Impression_Journey6
+* entry[6].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_ClinicalImpression/Anamnese_Clinical_Impression_Journey7"
+* entry[6].resource = Anamnese_Clinical_Impression_Journey7
 
-* entry[7].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication/ClinicalImpression_PrEP_Indication_Journey6"
-* entry[7].resource = ClinicalImpression_PrEP_Indication_Journey6
+* entry[7].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_PrEP_Indication/ClinicalImpression_PrEP_Indication_Journey7"
+* entry[7].resource = ClinicalImpression_PrEP_Indication_Journey7
 
-* entry[8].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse/ClinicalImpression_QuestionnaireResponse_Journey6"
-* entry[8].resource = ClinicalImpression_QuestionnaireResponse_Journey6
+* entry[8].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse/ClinicalImpression_QuestionnaireResponse_Journey7"
+* entry[8].resource = ClinicalImpression_QuestionnaireResponse_Journey7
 
-* entry[9].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance/ClinicalImpression_AllergyIntolerance_Journey6"
-* entry[9].resource = ClinicalImpression_AllergyIntolerance_Journey6
+* entry[9].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance/ClinicalImpression_AllergyIntolerance_Journey7"
+* entry[9].resource = ClinicalImpression_AllergyIntolerance_Journey7
 
-* entry[10].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present/ClinicalImpression_Condition_History_Journey6"
-* entry[10].resource = ClinicalImpression_Condition_History_Journey6
+* entry[10].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present/ClinicalImpression_Condition_History_Journey7"
+* entry[10].resource = ClinicalImpression_Condition_History_Journey7
 
-* entry[11].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight/ClinicalImpression_BodyWeight_Journey6"
-* entry[11].resource = ClinicalImpression_BodyWeight_Journey6
+* entry[11].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight/ClinicalImpression_BodyWeight_Journey7"
+* entry[11].resource = ClinicalImpression_BodyWeight_Journey7
 
 // === Beratung ===
-* entry[9].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling/b16fce31-ff70-4ffa-9729-9682b51e170d"
-* entry[9].resource = b16fce31-ff70-4ffa-9729-9682b51e170d
+* entry[9].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling/b5e3280e-08f4-4eb5-8735-a27ccb442283"
+* entry[9].resource = b5e3280e-08f4-4eb5-8735-a27ccb442283
 
-* entry[10].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/4b933433-992b-462c-8034-454053bdbd4b"
-* entry[10].resource = 4b933433-992b-462c-8034-454053bdbd4b
+* entry[10].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/c37eb235-53d4-40c3-83f6-a6f9d002e2d5"
+* entry[10].resource = c37eb235-53d4-40c3-83f6-a6f9d002e2d5
 
 // === laboruntersuchungen ===
-* entry[11].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine/2355a8e3-5deb-49b5-ab38-d71f0b5fa4ca"
-* entry[11].resource = 2355a8e3-5deb-49b5-ab38-d71f0b5fa4ca
+* entry[11].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine/e29e39b3-7566-4c9c-b95d-6da548a76a15"
+* entry[11].resource = e29e39b3-7566-4c9c-b95d-6da548a76a15
 
-* entry[12].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis/6aa669d3-81b4-4400-b85a-3d15b936067f"
-* entry[12].resource = 6aa669d3-81b4-4400-b85a-3d15b936067f
+* entry[12].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia/64b209f4-28e0-4ff4-a358-ea841485c3da"
+* entry[12].resource = 64b209f4-28e0-4ff4-a358-ea841485c3da
 
-* entry[13].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/d8570cd1-b092-43f7-9921-2148112129e5"
-* entry[13].resource = d8570cd1-b092-43f7-9921-2148112129e5
+* entry[13].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhoe/6afc1f2f-7976-4c61-a4d9-6b8bf63edc44"
+* entry[13].resource = 6afc1f2f-7976-4c61-a4d9-6b8bf63edc44
+
+* entry[14].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis/136fc584-616a-4c0c-a74d-460560bd35f5"
+* entry[14].resource = 136fc584-616a-4c0c-a74d-460560bd35f5
+
+* entry[15].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/3c4e9c2b-0011-4a6b-9020-079647bd5010"
+* entry[15].resource = 3c4e9c2b-0011-4a6b-9020-079647bd5010
 
 // === Laboratory Practitioner (performer) ===
-* entry[14].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Laborarzt_Journey6"
-* entry[14].resource = Laborarzt_Journey6
+* entry[16].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Laborarzt_Journey7"
+* entry[16].resource = Laborarzt_Journey7
 
 // MedikationStatement
-* entry[15].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/2319d1b2-e5d2-4b87-866a-613ed48f0013"
-* entry[15].resource = 2319d1b2-e5d2-4b87-866a-613ed48f0013
+* entry[17].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/123906d4-93d6-47eb-824c-7f317da6d2d4"
+* entry[17].resource = 123906d4-93d6-47eb-824c-7f317da6d2d4
 
 // Medication
-* entry[16].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/b5b924ba-7fd2-4bd0-9f20-30407a56b74a"
-* entry[16].resource = b5b924ba-7fd2-4bd0-9f20-30407a56b74a
+* entry[18].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/5af0e66a-fb78-4e64-ba0e-03f37d803f77"
+* entry[18].resource = 5af0e66a-fb78-4e64-ba0e-03f37d803f77
 
 // === Diagnosen (Conditions) ===
-* entry[17].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/c7e69f5-3e00-44cb-9fa2-ee8cad37de0a"
-* entry[17].resource = c7e69f5-3e00-44cb-9fa2-ee8cad37de0a   // Z24.6 G.  Notwendigkeit der Impfung gegen Virushepatitis
+* entry[19].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/9400a3c3-e8d4-4d04-afaf-0bad63dfd4ea"
+* entry[19].resource = 9400a3c3-e8d4-4d04-afaf-0bad63dfd4ea   // 54.9 Z.n. Gonokokkeninfektion, nicht näher bezeichnet
 
-// === Diagnosen (Conditions) ===
-* entry[18].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/362bbebc-e646-4f98-a062-43720a4ddb5c"
-* entry[18].resource = 362bbebc-e646-4f98-a062-43720a4ddb5c   // 54.9 Z.n. Gonokokkeninfektion, nicht näher bezeichnet
+* entry[20].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC/1d66b91c-cb06-46a9-986d-6d879df946ac"
+* entry[20].resource = 1d66b91c-cb06-46a9-986d-6d879df946ac
 
-// === Diagnosen (Conditions) ===
-* entry[19].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/05808eeb-0ef8-4ca2-94e8-0270f0c1d031"
-* entry[19].resource = 05808eeb-0ef8-4ca2-94e8-0270f0c1d031   // A51.9 G. Frühsyphilis, nicht näher bezeichnet 
-
-// Immunisierung
-* entry[20].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
-* entry[20].resource = 032e6088-27db-403a-be51-029f4498dd28
+* entry[21].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB/1c340a55-54f1-4dca-9c99-2f953df56dde"
+* entry[21].resource = 1c340a55-54f1-4dca-9c99-2f953df56dde
 // --------------------------
 // Composition (Beratung bundle — corrected to profile)
 // --------------------------
@@ -102,9 +102,9 @@ Usage: #example
 Alias: $snomed = http://snomed.info/sct
 
 
-Instance: 20fa5bcf-73d7-4883-80a0-efbb0d94e566
+Instance: 697abba9-90f5-425f-8eab-6cde7f6f73b4
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Composition
-Title: "Example Composition for PrEP for Journey 6"
+Title: "Example Composition for PrEP for Journey 7"
 Description: "Beratung-scope composition: Anamnese, Beratung, Labor, Diagnosen"
 Usage: #inline
 
@@ -120,11 +120,11 @@ Usage: #inline
 
 // Core metadata
 * subject   = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)   // Patient
-* encounter = Reference(urn:uuid:4b933433-992b-462c-8034-454053bdbd4b)   // Encounter in Beratung-bundle
+* encounter = Reference(urn:uuid:c37eb235-53d4-40c3-83f6-a6f9d002e2d5)   // Encounter in Beratung-bundle
 * author[0] = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648530)   // PractitionerRole
 * custodian = Reference(urn:uuid:81eacc87-e116-4505-a4e2-02404a022040)   // Organization
 
-* date  = "2019-10-01"
+* date  = "2020-07-20" 
 * title = "HIV PrEP Bericht"
 
 // --------------------------
@@ -152,25 +152,27 @@ Usage: #inline
 * section[beratung].code.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * section[beratung].code.coding.code    = #409063005
 * section[beratung].code.coding.display = "Counseling (procedure)"
-* section[beratung].entry[0] = Reference(urn:uuid:b16fce31-ff70-4ffa-9729-9682b51e170d) // Procedure - PrEP Counselling
+* section[beratung].entry[0] = Reference(urn:uuid:b5e3280e-08f4-4eb5-8735-a27ccb442283) // Procedure - PrEP Counselling
 
 // laboruntersuchungen — Observations per lab profile
 * section[laboruntersuchungen].title = "Laboruntersuchungen"
 * section[laboruntersuchungen].code.coding.system = $sectioncodes
 * section[laboruntersuchungen].code.coding.code = #SectionLaboruntersuchungen
 * section[laboruntersuchungen].code.coding.display = "Laboruntersuchungen"
-* section[laboruntersuchungen].entry[0] = Reference(urn:uuid:2355a8e3-5deb-49b5-ab38-d71f0b5fa4ca) // Creatinine
-* section[laboruntersuchungen].entry[1] = Reference(urn:uuid:d8570cd1-b092-43f7-9921-2148112129e5) // HIV
-* section[laboruntersuchungen].entry[2] = Reference(urn:uuid:6aa669d3-81b4-4400-b85a-3d15b936067f) // Syphilis
+* section[laboruntersuchungen].entry[0] = Reference(urn:uuid:e29e39b3-7566-4c9c-b95d-6da548a76a15) // Creatinine
+* section[laboruntersuchungen].entry[1] = Reference(urn:uuid:64b209f4-28e0-4ff4-a358-ea841485c3da) // Chlamydia
+* section[laboruntersuchungen].entry[2] = Reference(urn:uuid:6afc1f2f-7976-4c61-a4d9-6b8bf63edc44) // Gonorrhoe
+* section[laboruntersuchungen].entry[3] = Reference(urn:uuid:3c4e9c2b-0011-4a6b-9020-079647bd5010) // HIV
+* section[laboruntersuchungen].entry[4] = Reference(urn:uuid:136fc584-616a-4c0c-a74d-460560bd35f5) // Syphilis
+* section[laboruntersuchungen].entry[5] = Reference(urn:uuid:1d66b91c-cb06-46a9-986d-6d879df946ac) // Hepatitis C
+* section[laboruntersuchungen].entry[6] = Reference(urn:uuid:1c340a55-54f1-4dca-9c99-2f953df56dde) // Hepatitis B
 // Diagnosen — Conditions per diagnosis profile
 * section[diagnosen].title = "STI Diagnosen"
 * section[diagnosen].code.coding.system  = $sectioncodes
 * section[diagnosen].code.coding.code    = #SectionStiDiagnosen
 * section[diagnosen].code.coding.display = "STI Diagnosen"
-* section[diagnosen].entry[0] = Reference(urn:uuid:0c512880-9806-4ba2-8628-32c2f1b5cb48)
-* section[diagnosen].entry[1] = Reference(urn:uuid:c7e69f5-3e00-44cb-9fa2-ee8cad37de0a)
-* section[diagnosen].entry[2] = Reference(urn:uuid:362bbebc-e646-4f98-a062-43720a4ddb5c)
-* section[diagnosen].entry[3] = Reference(urn:uuid:05808eeb-0ef8-4ca2-94e8-0270f0c1d031)
+* section[diagnosen].entry[0] = Reference(urn:uuid:a4513f28-ceb8-4b30-8787-be1e6819f241)
+* section[diagnosen].entry[1] = Reference(urn:uuid:9400a3c3-e8d4-4d04-afaf-0bad63dfd4ea)
 
 // Medikation — PrEP + Antibiotics
 // Parent section: Medikation
@@ -186,20 +188,13 @@ Usage: #inline
 * section[medikation].section[prepMedikation].code.coding.system  = $sectioncodes
 * section[medikation].section[prepMedikation].code.coding.code    = #SectionPrEPMedikation
 * section[medikation].section[prepMedikation].code.coding.display = "HIV PrEP Medikation"
-* section[medikation].section[prepMedikation].entry[0].reference  = "urn:uuid:b5b924ba-7fd2-4bd0-9f20-30407a56b74a" // FTC/TDF
+* section[medikation].section[prepMedikation].entry[0].reference  = "urn:uuid:5af0e66a-fb78-4e64-ba0e-03f37d803f77" // FTC/TDF
 
-//: Immunisierungen
-* section[immunisierungen].title = "Immunisierungen"
-* section[immunisierungen].code.coding.system = "http://snomed.info/sct"
-* section[immunisierungen].code.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
-* section[immunisierungen].code.coding.code = #713404003
-* section[immunisierungen].code.coding.display = "Vaccination given (situation)"
-* section[immunisierungen].entry = Reference(urn:uuid:032e6088-27db-403a-be51-029f4498dd28)
 //Composition Subject (Patient)
 
-Instance: Patient_PrEP_Journey6
+Instance: Patient_PrEP_Journey7
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Patient
-Title: "Example Patient for PrEP for Journey 6"
+Title: "Example Patient for PrEP for Journey 7" 
 Description: "This is an example patient instance for HIV PrEP reporting"
 Usage: #inline
 
@@ -242,7 +237,7 @@ Usage: #inline
 
 //Composition Author (PractitionerRole)
 
-Instance: PractitionerRole_Journey6
+Instance: PractitionerRole_Journey7
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-PractitionerRole
 Title: "Example PractitionerRole for PrEP"
 Description: "This is an example practitioner role instance for HIV PrEP reporting"
@@ -266,7 +261,7 @@ Usage: #inline
 
 //Practitioner
 
-Instance: Practitioner_Journey6
+Instance: Practitioner_Journey7
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Practitioner
 Title: "Example Practitioner for PrEP"
 Description: "This is an example practitioner instance for HIV PrEP reporting"
@@ -302,7 +297,7 @@ Usage: #inline
 
 //Composition Custodian (Organization)
 
-Instance: Organization_Journey6
+Instance: Organization_Journey7
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Organization
 Title: "Example of an Organization"
 Description: "This is an example organization instance for HIV PrEP reporting"
@@ -333,12 +328,9 @@ Usage: #inline
 * address[Strassenanschrift].city = "Einstadt"
 * address[Strassenanschrift].postalCode = "12345"
 
-
 //Section Anamnese Clinical Impression
 
-//Section Anamnese Clinical Impression
-
-Instance: Anamnese_Clinical_Impression_Journey6
+Instance: Anamnese_Clinical_Impression_Journey7
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-ClinicalImpression-PrEP
 Title: "Clinical Impression – Anamnese bzgl. STI-Symptomen"
 Description: "Example clinical impression instance for Anamnese regarding STI symptoms in HIV PrEP reporting"
@@ -382,7 +374,7 @@ Alias: $ask = http://fhir.de/CodeSystem/ask
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
-Instance: ClinicalImpression_AllergyIntolerance_Journey6
+Instance: ClinicalImpression_AllergyIntolerance_Journey7
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance
 Title: "Example Allergy Intolerance for PrEP"
 Description: "This is an example allergy intolerance instance for HIV PrEP reporting"
@@ -394,7 +386,7 @@ Usage: #inline
 * code.coding[=] = $sct#91936005 "Allergie gegen Penicillin"
 //* code.coding[+].version = "http://snomed.info/sct/11000274103/version/20241115"
 //* code.coding[=] = $ask#11849 "ausgedacht"
-* code.text = "Allergie gegen Penicillin"   //No information available for patient Journey 6 in the data source
+* code.text = "Allergie gegen Penicillin"   //No information available for patient Journey 7 in the data source
 
 * extension[0].url = "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_AllergyIntolerance_Abatement"
 * extension[=].valueDateTime = "2012"
@@ -412,11 +404,12 @@ Usage: #inline
 * patient = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)
 
 // ClinicalImpression problem 1 Condition History Present
+
 Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
 Alias: $con-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ver-clinical = http://terminology.hl7.org/CodeSystem/condition-ver-status
 
-Instance: ClinicalImpression_Condition_History_Journey6
+Instance: ClinicalImpression_Condition_History_Journey7
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-History-Present
 Title: "Example of a Condition History Present"
 Description: "This is an example condition history present instance for HIV PrEP reporting"
@@ -424,7 +417,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present"
 * id = "fba75e92-0315-430f-9a01-a493b665b490"
-* extension[Feststellungsdatum].valueDateTime = "2019-10-01"
+* extension[Feststellungsdatum].valueDateTime = "2020-07-20"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
@@ -443,14 +436,15 @@ Usage: #inline
 * verificationStatus.coding = $ver-clinical#confirmed "Confirmed"
 * verificationStatus.coding.version = "4.0.1"
 
-* recordedDate = "2020-04-13"
+* recordedDate = "2020-01-20"
 
 //ClinicalImpression investigation item 0 Observation Body Weight
+
 Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 
-Instance: ClinicalImpression_BodyWeight_Journey6
+Instance: ClinicalImpression_BodyWeight_Journey7
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Body-Weight
 Title: "Example of a Body weight Observation"
 Description: "This is an example body weight observation instance"
@@ -459,7 +453,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight"
 * id = "d24a5fdb-51bb-470c-bca8-a3c8e90a6270"
 * status = #final
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-04-13"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20"
 * category = $secondary-finding#laboratory
 
 * code.coding[loinc].system = "http://loinc.org"
@@ -471,7 +465,7 @@ Usage: #inline
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* effectiveDateTime = "2020-04-13"
+* effectiveDateTime = "2020-01-20"
 
 * performer.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114" // Reference to the Practitioner
 
@@ -487,11 +481,10 @@ Usage: #inline
 
 // ClinicalImpression QuestionnaireResponse
 
-Instance: ClinicalImpression_QuestionnaireResponse_Journey6
+Instance: ClinicalImpression_QuestionnaireResponse_Journey7
 InstanceOf: https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse
 Title: "Example of a Questionnaire Response"
 Description: "This is an example questionnaire response instance for HIV PrEP reporting"
-
 
 Usage: #inline
 
@@ -505,38 +498,30 @@ Usage: #inline
 
 * author = Reference(urn:uuid:637c79e5-bacc-4002-adca-64af70af8114)
 
-// Vorherige STI Infektion
 * item[0].linkId = "357318092995"
 * item[0].answer.valueCoding = $sct#373066001 "No"
 
-// Kondomnutzung
 * item[+].linkId = "7742571432941"
 * item[=].answer.valueCoding = $sct#373067005 "No"
 
-// Drogen intravenös
 * item[+].linkId = "1993731509843"
 * item[=].answer.valueCoding = $sct#373067005 "No"
 
-// Serodiskordante Konstellation (keine Angabe → unknown)
-* item[+].linkId = "5407091313032"
+* item[+].linkId = "5407091313032" 
 * item[=].answer.valueCoding = $data_absent#unknown "Unbekannt"
 
-// Sexuelle Orientierung = MSM
 * item[+].linkId = "7294102201786"
 * item[=].answer.valueCoding = $sct#38628009 "Homosexual"
 
-// Geschlechtsidentität
 * item[+].linkId = "6401616433112"
 * item[=].answer.valueCoding = $sct#446151000124109 "Identifies as male gender"
 
-// Erstes mal HIV-PrEP?
 * item[+].linkId = "2142215437593"
 * item[=].answer.valueCoding = $sct#373066001 "Yes"
 
-
 //ClinicalImpression finding itemReference Prep Indication
 
-Instance: ClinicalImpression_PrEP_Indication_Journey6
+Instance: ClinicalImpression_PrEP_Indication_Journey7
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-PrEP-Indication
 Title: "Example of a prep indication observation procedure"
 Description: "This is an example prep indication observation procedure instance for HIV PrEP reporting"
@@ -553,7 +538,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2020-04-13"
+* effectiveDateTime = "2020-01-20"
 
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
@@ -561,7 +546,8 @@ Usage: #inline
 * valueCodeableConcept.coding.display = "With indication"
 
 // Procedure: PrEP Counselling
-Instance: b16fce31-ff70-4ffa-9729-9682b51e170d
+
+Instance: b5e3280e-08f4-4eb5-8735-a27ccb442283
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Procedure-PrEP-Counselling
 Title: "Example of a PrEP counselling procedure"
 Description: "This is an example PrEP counselling instance for HIV PrEP reporting"
@@ -581,10 +567,10 @@ Usage: #inline
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
 // Encounter reference
-* encounter.reference = "urn:uuid:4b933433-992b-462c-8034-454053bdbd4b"
+* encounter.reference = "urn:uuid:c37eb235-53d4-40c3-83f6-a6f9d002e2d5"
 
 // Performed date
-* performedDateTime = "2020-04-13"
+* performedDateTime = "2020-01-20"
 
 // Performer (practitioner)
 * performer.actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
@@ -611,13 +597,13 @@ Usage: #inline
 // Encounter — Kontrolle im Rahmen der Präexpositionsprophylaxe
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
-Instance: 4b933433-992b-462c-8034-454053bdbd4b
+Instance: c37eb235-53d4-40c3-83f6-a6f9d002e2d5
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Encounter-General
 Title: "Example of a general encounter"
 Description: "Encounter: Kontrolle im Rahmen der Präexpositionsprophylaxe"
 Usage: #inline
 
-* id = "4b933433-992b-462c-8034-454053bdbd4b"
+* id = "c37eb235-53d4-40c3-83f6-a6f9d002e2d5"
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter_General"
 
 * status = #finished
@@ -639,7 +625,7 @@ Usage: #inline
 * subject.identifier.value  = "X987654321"
 
 // When — same day as your other resources; date is sufficient per your example
-* period.start = "2020-04-13" 
+* period.start = "2020-01-20" 
 
 // Provider org
 * serviceProvider.reference = "urn:uuid:81eacc87-e116-4505-a4e2-02404a022040"
@@ -654,7 +640,7 @@ Usage: #inline
 
 Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
 
-Instance: 2355a8e3-5deb-49b5-ab38-d71f0b5fa4ca
+Instance: e29e39b3-7566-4c9c-b95d-6da548a76a15
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Creatinine
 Title: "Example of a Creatinine Observation"
 Description: "This is an example creatinine observation instance"
@@ -662,7 +648,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-04-13"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20"
 
 * status = #final
 
@@ -675,7 +661,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2020-04-13T09:00:00+08:00"
+* effectiveDateTime = "2020-01-20T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
@@ -725,51 +711,134 @@ Usage: #inline
 // Obervation Syphilis-AK (ELISA/Immunoassay), Treponema pall. IgG-AK, Treponema pall. IgM-AK
 // Nur TPHA, TPPA, VDRL (wenn vorher jemals positiv)
 
+
 Alias: $sct   = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 
-Instance: 6aa669d3-81b4-4400-b85a-3d15b936067f
+Instance: 136fc584-616a-4c0c-a74d-460560bd35f5
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis
-Title: "Syphilis Observation – VDRL negativ, TPPA-Titer >1:80"
-Description: "Syphilis serology: VDRL negative, TPPA Titer >1:80"
+Title: "Example of a Syphilis Observation"
+Description: "Syphilis-AK (ELISA/Immunoassay) incl. IgG/IgM — all negative"
 Usage: #inline
 
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-02-13"
+// If you prefer, you can keep this explicit profile line; it's also fine to omit
+// because InstanceOf already applies the profile.
+// * meta.profile[0] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis"
 
+// Documentation timestamp (keep exactly one value)
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20"
+
+// Status & category
 * status = #final
 * category = $secondary-finding#laboratory
 
-// Panel-level code
+// Observation code — matches your profile’s LOINC slice requirements
 * code.coding[loinc].system  = $loinc
 * code.coding[loinc].version = "2.74"
-* code.coding[loinc].code    = #24312-1
-* code.coding[loinc].display = "Treponema pallidum Ab panel - Serum"
+* code.coding[loinc].code    = #22587-0
+* code.coding[loinc].display = "Treponema pallidum Ab [Presence] in Serum"
 
-// Subject, timing, performer
+// Subject, timing, performer (kept from your example)
 * subject.reference   = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
-* effectiveDateTime   = "2020-02-13T09:00:00+08:00"
+* effectiveDateTime   = "2020-01-20T09:00:00+08:00"
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb"
 
-// ----------------- Components -----------------
-// VDRL negativ
-* component[0].code = $loinc#50690-7 "Reagin Ab [Presence] in Serum by VDRL"
-* component[0].valueCodeableConcept.coding.system  = "http://snomed.info/sct"
-* component[0].valueCodeableConcept.coding.code    = #260385009
-* component[0].valueCodeableConcept.coding.display = "Negative (qualifier value)"
+// Overall qualitative result
+* valueCodeableConcept.coding.system  = $sct
+* valueCodeableConcept.coding.code    = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
-// TPPA-Titer >1:80
-* component[1].code = $loinc#22587-0 "Treponema pallidum Ab [Titer] in Serum by TPPA"
-* component[1].valueRatio.numerator.value   = 1
-* component[1].valueRatio.numerator.unit    = "{titer}"
-* component[1].valueRatio.denominator.value = 80
+// Detail components (both negative) — 
+* component[0].code = $loinc#47238-1 "Treponema pallidum IgG Ab [Presence] in Serum by Immunoassay"
+* component[0].valueCodeableConcept = $sct#260385009 "Negative (qualifier value)"
 
-// Optional note for raw text
-* note[0].text = "VDRL negativ, TPPA-Titer >1:80"
+* component[1].code = $loinc#47237-3 "Treponema pallidum IgM Ab [Presence] in Serum by Immunoassay"
+* component[1].valueCodeableConcept = $sct#260385009 "Negative (qualifier value)"
+
+// Optional documentation text
+* note[0].text = "Syphilis-AK (ELISA/Immunoassay), Treponema pall. IgG-AK, Treponema pall. IgM-AK: all negative. Only TPHA, TPPA, VDRL if ever previously positive."
+
+// Observation Chlamydia
+
+Instance: 64b209f4-28e0-4ff4-a358-ea841485c3da
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Chlamydia
+Title: "Example of a Chlamydia-Trachomatis Observation"
+Description: "This is an example chlamydia-trachomatis observation instance"
+Usage: #inline
+
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis"
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20"
+
+* status = #final
+
+* category = $secondary-finding#laboratory
+
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version = "2.73"
+* code.coding[loinc].code = #43304-5
+* code.coding[loinc].display = "Chlamydia trachomatis rRNA [Presence] in Specimen by NAA with probe detection"
+
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+
+* effectiveDateTime = "2020-01-20T09:00:00+08:00"
+
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
+/*
+* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* performer.identifier.value = "123456"
+*/
+* note.text = "PrEP Kontrolle nach 3 Monaten"
+
+* valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
+* valueCodeableConcept.coding.code = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
+
+// Observation Gonorrhoe
+
+Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
+Alias: $sct = http://snomed.info/sct
+Alias: $loinc = http://loinc.org
+
+Instance: 6afc1f2f-7976-4c61-a4d9-6b8bf63edc44
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Gonorrhea
+Title: "Example of a Gonorrhea Observation"
+Description: "This is an example gonorrhea observation instance"
+Usage: #inline
+
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20"
+
+* status = #final
+
+* category = $secondary-finding#laboratory
+
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version = "2.73"
+* code.coding[loinc].code = #60256-5
+* code.coding[loinc].display = "Neisseria gonorrhoeae rRNA [Presence] in Urine by NAA with probe detection"
+
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+
+* effectiveDateTime = "2020-01-20T09:00:00+08:00"
+
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
+/*
+* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* performer.identifier.value = "123456"
+*/
+* note.text = "PrEP Kontrolle nach 3 Monaten"
+* valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
+* valueCodeableConcept.coding.code = #10828004
+* valueCodeableConcept.coding.display = "Positive (qualifier value)"
 
 
 // Observation HIV
 
-Instance: d8570cd1-b092-43f7-9921-2148112129e5
+Instance: 3c4e9c2b-0011-4a6b-9020-079647bd5010
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV
 Title: "Example of an HIV Observation"
 Description: "This is an example hiv observation instance"
@@ -777,7 +846,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-04-13T09:00:00+08:00"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20T09:00:00+08:00"
 
 * status = #final
 
@@ -790,7 +859,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2020-04-13T09:00:00+08:00"
+* effectiveDateTime = "2020-01-20T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
@@ -803,9 +872,87 @@ Usage: #inline
 * valueCodeableConcept.coding.code = #260385009
 * valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
+// Hepatitis C Observation
+Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
+Alias: $sct = http://snomed.info/sct
+Alias: $loinc = http://loinc.org
+
+Instance: 1d66b91c-cb06-46a9-986d-6d879df946ac
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisC
+Title: "Example of a HepatitisC Observation"
+Description: "This is an example hepatitisC observation instance"
+Usage: #inline
+
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC"
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-07-20T09:00:00+08:00"  
+
+* status = #final
+
+* category = $secondary-finding#laboratory
+
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version = "2.73"
+* code.coding[loinc].code = #11259-9
+* code.coding[loinc].display = "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
+
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+
+* effectiveDateTime = "2020-07-20T09:00:00+08:00"
+
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
+/*
+* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* performer.identifier.value = "123456"
+*/
+
+* valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
+* valueCodeableConcept.coding.code = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
+
+
+// Hepatitis B Observation
+Instance: 1c340a55-54f1-4dca-9c99-2f953df56dde
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisB
+Title: "Example of a HepatitisB Observation"
+Description: "Hepatitis B observation with >10000 U/L and interpreted as Positive"
+Usage: #inline
+
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB"
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-07-20"
+
+* status = #final
+* category = $secondary-finding#laboratory
+
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version = "2.73"
+* code.coding[loinc].code = #22322-2
+* code.coding[loinc].display = "Hepatitis-B-Virus-surface Antikörper [Nachweis] in Serum"
+
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+* effectiveDateTime = "2020-07-20T09:00:00+08:00"
+
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb"
+
+// Quantitative value
+* valueQuantity.value = 10000
+* valueQuantity.comparator = #>
+* valueQuantity.unit = "U/L"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #U/L
+
+// Qualitative interpretation
+* interpretation.coding.system  = "http://snomed.info/sct"
+* interpretation.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
+* interpretation.coding.code    = #10828004
+* interpretation.coding.display = "Positive (qualifier value)"
+
+
 // Laborarzt
 
-Instance: Laborarzt_Journey6
+Instance: Laborarzt_Journey7
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Practitioner
 Title: "Example of a Lab Practitioner"
 Description: "This is an example laboratory practitioner instance for HIV PrEP reporting"
@@ -845,7 +992,7 @@ Alias: $con-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ver-clinical = http://terminology.hl7.org/CodeSystem/condition-ver-status
 
 // Diagnose - Condition: HIV-Präexpositionsprophylaxe
-Instance: 0c512880-9806-4ba2-8628-32c2f1b5cb48  // https://www.uuidgenerator.net/version4
+Instance: a4513f28-ceb8-4b30-8787-be1e6819f241  // https://www.uuidgenerator.net/version4
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
 Title: "Condition: HIV-Präexpositionsprophylaxe"
 Description: "HIV-Präexpositionsprophylaxe"
@@ -854,7 +1001,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
-* extension[http://hl7.org/fhir/StructureDefinition/condition-assertedDate].valueDateTime = "2020-04-13T00:00:00+00:00"
+* extension[http://hl7.org/fhir/StructureDefinition/condition-assertedDate].valueDateTime = "2020-01-20T00:00:00+00:00"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
@@ -866,17 +1013,17 @@ Usage: #inline
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* onsetDateTime = "2020-04-13"
+* onsetDateTime = "2020-01-20"
 
 * clinicalStatus.coding = $con-clinical#active "Active" // https://terminology.hl7.org/6.3.0/CodeSystem-condition-clinical.html
 * clinicalStatus.coding.version = "3.0.0"
 * verificationStatus.coding = $ver-clinical#confirmed "Confirmed"
 * verificationStatus.coding.version = "4.0.1"
 
-* recordedDate = "2020-04-13"
+* recordedDate = "2020-01-20"
 
 // Diagnose - Condition: Gonokokkeninfektion, nicht näher bezeichnet
-Instance: c7e69f5-3e00-44cb-9fa2-ee8cad37de0a  // https://www.uuidgenerator.net/version4
+Instance: 9400a3c3-e8d4-4d04-afaf-0bad63dfd4ea  // https://www.uuidgenerator.net/version4
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
 Title: "Condition: Gonokokkeninfektion, nicht näher bezeichnet"
 Description: "Gonokokkeninfektion, nicht näher bezeichnet"
@@ -885,7 +1032,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
-* extension[Feststellungsdatum].valueDateTime = "2020-04-13"
+* extension[Feststellungsdatum].valueDateTime = "2020-07-20"
 
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
@@ -898,71 +1045,12 @@ Usage: #inline
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* onsetDateTime = "2020-04-13"
-
-
-// Diagnose - Condition: Notwendigkeit der Impfung gegen Virushepatitis
-Instance: 362bbebc-e646-4f98-a062-43720a4ddb5c  // https://www.uuidgenerator.net/version4
-InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
-Title: "Condition: Virushepatitis"
-Description: "Virushepatitis"
-Usage: #inline
-
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
-* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-
-* extension[Feststellungsdatum].valueDateTime = "2020-04-13"
-
-
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
-* code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
-* code.coding[ICD-10-GM].version = "2025" // or your IG version
-* code.coding[ICD-10-GM].code = #Z24.6   // https://www.icd-code.de/icd/code/Z24.6.html
-* code.coding[ICD-10-GM].display = "Notwendigkeit der Impfung gegen Virushepatitis"
-
-
-* subject = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)
-* subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
-* subject.identifier.value = "X987654321"
-
-* onsetDateTime = "2020-04-13"
-
-// Diagnose - Condition: A51.9 G. Frühsyphilis, nicht näher bezeichnet 
-Instance: 05808eeb-0ef8-4ca2-94e8-0270f0c1d031  // https://www.uuidgenerator.net/version4
-InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
-Title: "Condition: A51.9 G. Frühsyphilis, nicht näher bezeichnet"
-Description: "Frühsyphilis, nicht näher bezeichnet"
-Usage: #inline
-
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
-* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-
-* extension[http://hl7.org/fhir/StructureDefinition/condition-assertedDate].valueDateTime = "2020-04-13T00:00:00+00:00"
-
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
-* code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
-* code.coding[ICD-10-GM].version = "2025" // or your IG version
-* code.coding[ICD-10-GM].code = #A51.9  // https://www.icd-code.de/icd/code/A51.9.html
-* code.coding[ICD-10-GM].display = "Frühsyphilis, nicht näher bezeichnet"
-
-* subject = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)
-* subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
-* subject.identifier.value = "X987654321"
-
-* onsetDateTime = "2020-04-13"
-
-* clinicalStatus.coding = $con-clinical#active "Active" // https://terminology.hl7.org/6.3.0/CodeSystem-condition-clinical.html
-* clinicalStatus.coding.version = "3.0.0"
-* verificationStatus.coding = $ver-clinical#confirmed "Confirmed"
-* verificationStatus.coding.version = "4.0.1"
-
-* recordedDate = "2020-04-13"
-
+* onsetDateTime = "2020-07-20" 
 // MedicationStatement – Tenofovirdisoproxil/Emtricitabin (FTC/TDF)
 
 Alias: $sct = http://snomed.info/sct
 
-Instance: 2319d1b2-e5d2-4b87-866a-613ed48f0013
+Instance: 123906d4-93d6-47eb-824c-7f317da6d2d4
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free
 Usage: #inline
 
@@ -970,9 +1058,8 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
-* medicationReference.reference = "urn:uuid:b5b924ba-7fd2-4bd0-9f20-30407a56b74a"
-* effectiveDateTime = "2020-04-13"
-
+* medicationReference.reference = "urn:uuid:5af0e66a-fb78-4e64-ba0e-03f37d803f77"
+* effectiveDateTime = "2019-10-21"
 
 // subject: use identifier only (to meet profile requirement)
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
@@ -993,7 +1080,7 @@ Usage: #inline
 
 Alias: $sct = http://snomed.info/sct
 
-Instance: b5b924ba-7fd2-4bd0-9f20-30407a56b74a
+Instance: 5af0e66a-fb78-4e64-ba0e-03f37d803f77
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Medication_Free
 Usage: #inline
 
@@ -1042,55 +1129,6 @@ Usage: #inline
 * ingredient[1].strength.denominator.unit   = "Tablet"
 * ingredient[1].strength.denominator.system = "http://unitsofmeasure.org"
 * ingredient[1].strength.denominator.code   = #1
-
-// Immunization — Hep A/B combo, dose 2 von 3, i.m.
-
-Alias: $sct = http://snomed.info/sct
-
-Instance: 032e6088-27db-403a-be51-029f4498dd28
-InstanceOf: RKI_PR_HIV_PrEP_Bericht_Immunization
-Usage: #inline
-
-* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
-* status = #completed
-
-// Vaccine code (SNOMED + ATC)
-* vaccineCode.coding[snomed_CT].system  = "http://snomed.info/sct"
-* vaccineCode.coding[snomed_CT].version = "http://snomed.info/sct/900000000000207008/version/20241130"
-* vaccineCode.coding[snomed_CT].code    = #871803007 
-* vaccineCode.coding[snomed_CT].display = "Impfstoff gegen Hepatitis-A- und B-Virus"
-* vaccineCode.text = "Impfstoff gegen Hepatitis-A- und B-Virus"
-
-* vaccineCode.coding[atc].system  = "http://fhir.de/CodeSystem/dimdi/atc"
-* vaccineCode.coding[atc].version = "0.9.12"
-* vaccineCode.coding[atc].code    = #J07BC20
-* vaccineCode.coding[atc].display = "Kombinationen (Hepatitis A + Hepatitis B)"
-
-// Patient + time
-* patient.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
-* occurrenceDateTime = "2020-04-13T09:00:00+01:00"
-
-// Lot/site
-* lotNumber = "12345678"
-// * site = $sct#368208006 "Struktur der Deltaregion (Körperstruktur)"
-
-// Series / dose info
-* protocolApplied[0].doseNumberPositiveInt = 3
-* protocolApplied[0].seriesDosesPositiveInt = 3
-
-// Target diseases → one entry per disease
-* protocolApplied[0].targetDisease[0].coding[0].system  = "http://snomed.info/sct"
-* protocolApplied[0].targetDisease[0].coding[0].version = "http://snomed.info/sct/900000000000207008/version/20241130"
-* protocolApplied[0].targetDisease[0].coding[0].code    = #66071002
-* protocolApplied[0].targetDisease[0].coding[0].display = "Viral hepatitis type B (disorder)"
-
-* protocolApplied[0].targetDisease[1].coding[0].system  = "http://snomed.info/sct"
-* protocolApplied[0].targetDisease[1].coding[0].version = "http://snomed.info/sct/900000000000207008/version/20241130"
-* protocolApplied[0].targetDisease[1].coding[0].code    = #40468003
-* protocolApplied[0].targetDisease[1].coding[0].display = "Viral hepatitis type A (disorder)"
-
-// Optional note
-* note[0].text = "Impfstoff gegen Hepatitis-A- und B-Virus i.m"
 
 
 

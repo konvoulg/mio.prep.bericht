@@ -76,6 +76,7 @@ Usage: #example
 
 * entry[15].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/7738f901-8bcf-4443-b035-ae7727e96b10"
 * entry[15].resource = 7738f901-8bcf-4443-b035-ae7727e96b10 
+
 // === Laboratory Practitioner (performer) ===
 * entry[16].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Laborarzt_Journey5"
 * entry[16].resource = Laborarzt_Journey5
@@ -87,6 +88,10 @@ Usage: #example
 // Medication
 * entry[18].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/5295ad8b-3e77-4e43-8da4-22c6caac0ec4"
 * entry[18].resource = 5295ad8b-3e77-4e43-8da4-22c6caac0ec4
+
+// Hepatitis C Observation
+* entry[19].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC/e382d2f4-6688-4883-aac3-b9e218475391"
+* entry[19].resource = e382d2f4-6688-4883-aac3-b9e218475391 
 //Composition
 
 // --------------------------
@@ -158,6 +163,7 @@ Usage: #inline
 * section[laboruntersuchungen].entry[2] = Reference(urn:uuid:3d6023f1-a493-45e6-a3e0-937e05afd573) // HIV
 * section[laboruntersuchungen].entry[3] = Reference(urn:uuid:05a340e4-893c-4e47-be4f-1b7a70c8fb10) // Syphilis
 * section[laboruntersuchungen].entry[4] = Reference(urn:uuid:7738f901-8bcf-4443-b035-ae7727e96b10) // HIV PCR
+* section[laboruntersuchungen].entry[5] = Reference(urn:uuid:e382d2f4-6688-4883-aac3-b9e218475391) // Hepatitis C
 // Diagnosen — Conditions per diagnosis profile
 * section[diagnosen].title = "STI Diagnosen"
 * section[diagnosen].code.coding.system  = $sectioncodes
@@ -620,6 +626,7 @@ Usage: #inline
 
 // Obervation Syphilis-AK (ELISA/Immunoassay), Treponema pall. IgG-AK, Treponema pall. IgM-AK
 // Nur TPHA, TPPA, VDRL (wenn vorher jemals positiv)
+
 Alias: $sct   = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 
@@ -819,6 +826,45 @@ Usage: #inline
 
 // Clinical context
 * note[0].text = "Akute Beschwerden"
+
+// Hepatitis C Observation
+Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding
+Alias: $sct = http://snomed.info/sct
+Alias: $loinc = http://loinc.org
+
+Instance: e382d2f4-6688-4883-aac3-b9e218475391
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisC
+Title: "Example of a HepatitisC Observation"
+Description: "This is an example hepatitisC observation instance"
+Usage: #inline
+
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC"
+* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-02-13T09:00:00+08:00"
+
+* status = #final
+
+* category = $secondary-finding#laboratory
+
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version = "2.73"
+* code.coding[loinc].code = #11259-9
+* code.coding[loinc].display = "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
+
+* subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+
+* effectiveDateTime = "2020-02-13T09:00:00+08:00"
+
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
+/*
+* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
+* performer.identifier.value = "123456"
+*/
+
+* valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
+* valueCodeableConcept.coding.code = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
 // Laborarzt
 
