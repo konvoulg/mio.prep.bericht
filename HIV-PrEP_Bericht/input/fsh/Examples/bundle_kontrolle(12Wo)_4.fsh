@@ -85,7 +85,10 @@ Usage: #example
 // Medication
 * entry[18].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/fd53a061-1f41-43a0-be16-53bb9d1d770b"
 * entry[18].resource = fd53a061-1f41-43a0-be16-53bb9d1d770b
-//Composition
+
+// Nächster Termin - Appointment
+* entry[19].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/3f30ce8c-8132-418a-a530-3bbbfd0bcf4f"
+* entry[19].resource = 3f30ce8c-8132-418a-a530-3bbbfd0bcf4f
 
 // --------------------------
 // Composition (Beratung bundle — corrected to profile)
@@ -156,6 +159,7 @@ Usage: #inline
 * section[laboruntersuchungen].entry[2] = Reference(urn:uuid:a8622d74-a716-41bb-adda-cf2deac29cae) // Gonorrhoe
 * section[laboruntersuchungen].entry[3] = Reference(urn:uuid:4f1ccd13-c748-4310-bcfa-67c88cb83751) // HIV
 * section[laboruntersuchungen].entry[4] = Reference(urn:uuid:e96dd770-d282-490d-95e9-5ec1563d0c9f) // Syphilis
+
 // Diagnosen — Conditions per diagnosis profile
 * section[diagnosen].title = "STI Diagnosen"
 * section[diagnosen].code.coding.system  = $sectioncodes
@@ -179,8 +183,13 @@ Usage: #inline
 * section[medikation].section[prepMedikation].code.coding.display = "HIV PrEP Medikation"
 * section[medikation].section[prepMedikation].entry[0].reference  = "urn:uuid:fd53a061-1f41-43a0-be16-53bb9d1d770b" // FTC/TDF
 
+* section[termine].section[naechsterTermin].entry = Reference(urn:uuid:3f30ce8c-8132-418a-a530-3bbbfd0bcf4f)
+* section[termine].section[naechsterTermin].title = "Naechster Termin"
+* section[termine].section[naechsterTermin].code.coding.system = $sct
+* section[termine].section[naechsterTermin].code.coding.version = "http://snomed.info/sct/11000274103/version/20241115"
+* section[termine].section[naechsterTermin].code.coding.code = $sct#39084006
+* section[termine].section[naechsterTermin].code.coding.display = "Naechster Termin"
 //Composition Subject (Patient)
-
 Instance: Patient_PrEP_Journey4
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Patient
 Title: "Example Patient for PrEP for Journey 4"
@@ -1018,7 +1027,36 @@ Usage: #inline
 * ingredient[1].strength.denominator.system = "http://unitsofmeasure.org"
 * ingredient[1].strength.denominator.code   = #1
 
+// Appointent
 
+Alias: $v2 = http://terminology.hl7.org/CodeSystem/v2-0276
+
+Instance: 3f30ce8c-8132-418a-a530-3bbbfd0bcf4f
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Appointment-FollowUp
+Title: "Example of a follow-up appointment"
+Description: "This is an example follow-up appointment instance for HIV PrEP reporting"
+
+Usage: #example
+
+* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp"
+
+* status = #booked
+
+* appointmentType.coding.code = #FOLLOWUP "A follow up visit from a previous appointment"
+* appointmentType.coding.display = "A follow up visit from a previous appointment"
+//* appointmentType.coding.system = $v2-0276
+* appointmentType.coding.version = "2.0.0"
+
+* start = "2020-04-13T09:00:00+01:00"
+* end = "2020-04-13T10:00:00+01:00"
+
+* participant[0].actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
+* participant[=].actor.type = "Practitioner"
+* participant[=].status = #accepted
+
+* participant[+].actor.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+* participant[=].actor.type = "Patient"
+* participant[=].status = #accepted
 
 
 

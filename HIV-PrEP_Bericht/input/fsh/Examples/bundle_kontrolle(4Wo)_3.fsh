@@ -86,6 +86,9 @@ Usage: #example
 * entry[20].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Laborarzt_Journey3"
 * entry[20].resource = Laborarzt_Journey3
 
+// Nächster Termin - Appointment
+* entry[21].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/c3094015-0ede-4240-b070-3bf66b4c61b2"
+* entry[21].resource = c3094015-0ede-4240-b070-3bf66b4c61b2
 // --------------------------
 // Composition (Kontrolle_(4 Wochen) bundle — corrected to profile)
 // --------------------------
@@ -170,6 +173,14 @@ Usage: #inline
 * section[immunisierungen].code.coding.code = #713404003
 * section[immunisierungen].code.coding.display = "Vaccination given (situation)"
 * section[immunisierungen].entry = Reference(urn:uuid:d42bbe3a-b92b-458d-aec0-a6612ae3fdee)
+
+* section[termine].section[naechsterTermin].entry = Reference(urn:uuid:c3094015-0ede-4240-b070-3bf66b4c61b2)
+* section[termine].section[naechsterTermin].title = "Naechster Termin"
+* section[termine].section[naechsterTermin].code.coding.system = $sct
+* section[termine].section[naechsterTermin].code.coding.version = "http://snomed.info/sct/11000274103/version/20241115"
+* section[termine].section[naechsterTermin].code.coding.code = $sct#39084006
+* section[termine].section[naechsterTermin].code.coding.display = "Naechster Termin"
+
 //Composition Subject (Patient)
 
 Instance: Patient_PrEP_Journey3
@@ -882,3 +893,33 @@ Usage: #inline
 // Optional note
 * note[0].text = "Impfstoff Hep A+B i.m.; 2. Dosis von 3 (4–6 Wochen nach 1.)."
 
+// Appointent
+
+Alias: $v2 = http://terminology.hl7.org/CodeSystem/v2-0276
+
+Instance: c3094015-0ede-4240-b070-3bf66b4c61b2
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Appointment-FollowUp
+Title: "Example of a follow-up appointment"
+Description: "This is an example follow-up appointment instance for HIV PrEP reporting"
+
+Usage: #example
+
+* meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment_FollowUp"
+
+* status = #booked
+
+* appointmentType.coding.code = #FOLLOWUP "A follow up visit from a previous appointment"
+* appointmentType.coding.display = "A follow up visit from a previous appointment"
+//* appointmentType.coding.system = $v2-0276
+* appointmentType.coding.version = "2.0.0"
+
+* start = "2020-01-20T09:00:00+01:00"
+* end = "2020-01-20T10:00:00+01:00"
+
+* participant[0].actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
+* participant[=].actor.type = "Practitioner"
+* participant[=].status = #accepted
+
+* participant[+].actor.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
+* participant[=].actor.type = "Patient"
+* participant[=].status = #accepted

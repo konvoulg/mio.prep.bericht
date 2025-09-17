@@ -7,17 +7,17 @@ Description: "Die Kodiersystematik Relevance definiert Konzepte, die den Relevan
 
 * ^date = "2025-07-30"
 
-* ^valueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Relevance"
+* ^valueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_RelevanceVS"
 
 * #PrEP "PrEP Spezifisch"
 * #PrEPRelevant "Relevant für PrEP"
 //* #UserCreated "Durch OEGD angelegt"
 
-ValueSet: Relevance
-Id: Relevance
+ValueSet: RelevanceVS
+Id: RelevanceVS
 Title: "Relevanz (Werteliste)"
 Description: "Werteliste mit Konzepten, die die Relevanz der Ressourcen für verschiedene Use Cases kennzeichnen."
-* ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Relevance"
+* ^url = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_RelevanceVS"
 * insert MetadataTerminology
 
 * ^date = "2025-07-30"
