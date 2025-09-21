@@ -9,7 +9,7 @@ Usage: #example
 * type = #document
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value  = "urn:uuid:bc40aec8-500d-4d3f-b476-ca44290ad9ef"
-* timestamp = "2020-04-13T09:50:00+01:00"
+* timestamp = "2020-04-13T09:50:00+01:00"   
 // === Composition ===
 * entry[0].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/20fa5bcf-73d7-4883-80a0-efbb0d94e566"
 * entry[0].resource = 20fa5bcf-73d7-4883-80a0-efbb0d94e566
@@ -128,7 +128,7 @@ Usage: #inline
 * author[0] = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648530)   // PractitionerRole
 * custodian = Reference(urn:uuid:81eacc87-e116-4505-a4e2-02404a022040)   // Organization
 
-* date  = "2019-10-01"
+* date  = "2020-04-13" 
 * title = "HIV PrEP Bericht"
 
 // --------------------------
@@ -435,7 +435,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present"
 * id = "fba75e92-0315-430f-9a01-a493b665b490"
-* extension[Feststellungsdatum].valueDateTime = "2019-10-01"
+* extension[Feststellungsdatum].valueDateTime = "2020-04-13"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"

@@ -9,7 +9,7 @@ Usage: #example
 * type = #document
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value  = "urn:uuid:e2cad687-7fba-458e-9ddf-f027b9a75d4c"
-* timestamp = "2019-10-01T09:50:00+01:00"
+* timestamp = "2019-09-24T09:50:00+01:00"
 // === Composition (Einleitung) ===
 * entry[0].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/d7fb54dd-303a-41c2-a765-8f67229a690d"
 * entry[0].resource = d7fb54dd-303a-41c2-a765-8f67229a690d
@@ -115,7 +115,7 @@ Usage: #inline
 * author[0] = Reference(urn:uuid:aec32544-52fd-4243-8626-32db47648530)   // PractitionerRole
 * custodian = Reference(urn:uuid:81eacc87-e116-4505-a4e2-02404a022040)   // Organization
 
-* date  = "2019-10-01"
+* date  = "2019-09-24"
 * title = "HIV PrEP Bericht"   // <- fixed in profile, so must remain the same
 
 // --------------------------
@@ -411,7 +411,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_History_Present"
 * id = "fba75e92-0315-430f-9a01-a493b665b490"
-* extension[Feststellungsdatum].valueDateTime = "2019-10-01"
+* extension[Feststellungsdatum].valueDateTime = "2019-09-24"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
@@ -887,7 +887,7 @@ Usage: #inline
 
 // Patient + time
 * patient.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
-* occurrenceDateTime = "2019-10-01T09:00:00+01:00"
+* occurrenceDateTime = "2019-09-24T09:00:00+01:00" 
 
 // Lot/site
 * lotNumber = "12345678"
@@ -931,7 +931,7 @@ Usage: #example
 //* appointmentType.coding.system = $v2-0276
 * appointmentType.coding.version = "2.0.0"
 
-* start = "2019-10-21T09:00:00+01:00"
+* start = "2019-10-21T09:00:00+01:00" 
 * end = "2019-10-21T10:00:00+01:00"
 
 * participant[0].actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
