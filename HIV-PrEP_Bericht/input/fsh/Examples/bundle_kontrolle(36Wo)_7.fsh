@@ -636,7 +636,7 @@ Usage: #inline
 * subject.identifier.value  = "X987654321"
 
 // When — same day as your other resources; date is sufficient per your example
-* period.start = "2020-01-20" 
+* period.start = "2020-07-20" 
 
 // Provider org
 * serviceProvider.reference = "urn:uuid:81eacc87-e116-4505-a4e2-02404a022040"
