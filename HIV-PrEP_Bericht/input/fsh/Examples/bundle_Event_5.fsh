@@ -615,8 +615,8 @@ Usage: #inline
 // PrEP Encounter type required by profile
 * type.coding.system = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type"
 * type.coding.version = "1.0.0"
-* type.coding.code = #01920
-* type.coding.display = "Beratung vor Präexpositionsprophylaxe"
+* type.coding.code = #01922
+* type.coding.display = "Kontrolle im Rahmen der Präexpositionsprophylaxe"
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
