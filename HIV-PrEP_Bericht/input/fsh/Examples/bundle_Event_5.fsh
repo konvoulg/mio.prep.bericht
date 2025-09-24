@@ -94,8 +94,8 @@ Usage: #example
 * entry[22].resource = e382d2f4-6688-4883-aac3-b9e218475391 
 
 // Nächster Termin - Appointment
-* entry[24].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/81dbd37e-5a75-41b8-ba25-0d6f0719b0c6"
-* entry[24].resource = 81dbd37e-5a75-41b8-ba25-0d6f0719b0c6
+* entry[23].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/81dbd37e-5a75-41b8-ba25-0d6f0719b0c6"
+* entry[23].resource = 81dbd37e-5a75-41b8-ba25-0d6f0719b0c6
 
 //Composition
 
