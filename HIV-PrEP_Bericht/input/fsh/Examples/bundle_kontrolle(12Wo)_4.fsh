@@ -1047,8 +1047,8 @@ Usage: #example
 //* appointmentType.coding.system = $v2-0276
 * appointmentType.coding.version = "2.0.0"
 
-* start = "2020-04-13T09:00:00+01:00"
-* end = "2020-04-13T10:00:00+01:00"
+* start = "2020-02-13T09:00:00+01:00"
+* end = "2020-02-13T10:00:00+01:00"
 
 * participant[0].actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
 * participant[=].actor.type = "Practitioner"
