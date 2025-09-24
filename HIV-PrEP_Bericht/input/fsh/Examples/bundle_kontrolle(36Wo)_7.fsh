@@ -447,7 +447,7 @@ Usage: #inline
 * verificationStatus.coding = $ver-clinical#confirmed "Confirmed"
 * verificationStatus.coding.version = "4.0.1"
 
-* recordedDate = "2020-01-20"
+* recordedDate = "2020-07-20" 
 
 //ClinicalImpression investigation item 0 Observation Body Weight
 
@@ -464,7 +464,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Body_Weight"
 * id = "d24a5fdb-51bb-470c-bca8-a3c8e90a6270"
 * status = #final
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-07-20"
 * category = $secondary-finding#laboratory
 
 * code.coding[loinc].system = "http://loinc.org"
@@ -476,7 +476,7 @@ Usage: #inline
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* effectiveDateTime = "2020-01-20"
+* effectiveDateTime = "2020-07-20"
 
 * performer.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114" // Reference to the Practitioner
 
@@ -549,7 +549,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2020-01-20"
+* effectiveDateTime = "2020-07-20"
 
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
@@ -581,7 +581,7 @@ Usage: #inline
 * encounter.reference = "urn:uuid:c37eb235-53d4-40c3-83f6-a6f9d002e2d5"
 
 // Performed date
-* performedDateTime = "2020-01-20"
+* performedDateTime = "2020-07-20"
 
 // Performer (practitioner)
 * performer.actor.reference = "urn:uuid:637c79e5-bacc-4002-adca-64af70af8114"
@@ -659,7 +659,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-07-20"
 
 * status = #final
 
@@ -672,7 +672,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2020-01-20T09:00:00+08:00"
+* effectiveDateTime = "2020-07-20T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
@@ -737,7 +737,7 @@ Usage: #inline
 // * meta.profile[0] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis"
 
 // Documentation timestamp (keep exactly one value)
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-07-20"
 
 // Status & category
 * status = #final
@@ -751,7 +751,7 @@ Usage: #inline
 
 // Subject, timing, performer (kept from your example)
 * subject.reference   = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
-* effectiveDateTime   = "2020-01-20T09:00:00+08:00"
+* effectiveDateTime   = "2020-07-20T09:00:00+08:00"
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb"
 
 // Overall qualitative result
@@ -779,7 +779,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia_Trachomatis"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-07-20"
 
 * status = #final
 
@@ -792,7 +792,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2020-01-20T09:00:00+08:00"
+* effectiveDateTime = "2020-07-20T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
@@ -820,7 +820,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhea"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-07-20"
 
 * status = #final
 
@@ -833,7 +833,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2020-01-20T09:00:00+08:00"
+* effectiveDateTime = "2020-07-20T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
@@ -857,7 +857,7 @@ Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-01-20T09:00:00+08:00"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-07-20T09:00:00+08:00"
 
 * status = #final
 
@@ -870,7 +870,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2020-01-20T09:00:00+08:00"
+* effectiveDateTime = "2020-07-20T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
 /*
@@ -1012,7 +1012,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
-* extension[http://hl7.org/fhir/StructureDefinition/condition-assertedDate].valueDateTime = "2020-01-20T00:00:00+00:00"
+* extension[http://hl7.org/fhir/StructureDefinition/condition-assertedDate].valueDateTime = "2020-07-20T00:00:00+00:00"
 
 * code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
@@ -1024,14 +1024,14 @@ Usage: #inline
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
 * subject.identifier.value = "X987654321"
 
-* onsetDateTime = "2020-01-20"
+* onsetDateTime = "2020-07-20"
 
 * clinicalStatus.coding = $con-clinical#active "Active" // https://terminology.hl7.org/6.3.0/CodeSystem-condition-clinical.html
 * clinicalStatus.coding.version = "3.0.0"
 * verificationStatus.coding = $ver-clinical#confirmed "Confirmed"
 * verificationStatus.coding.version = "4.0.1"
 
-* recordedDate = "2020-01-20"
+* recordedDate = "2020-07-20"
 
 // Diagnose - Condition: Gonokokkeninfektion, nicht näher bezeichnet
 Instance: 9400a3c3-e8d4-4d04-afaf-0bad63dfd4ea  // https://www.uuidgenerator.net/version4
