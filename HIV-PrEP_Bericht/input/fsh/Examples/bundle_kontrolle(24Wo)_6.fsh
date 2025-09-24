@@ -52,53 +52,53 @@ Usage: #example
 * entry[11].resource = ClinicalImpression_BodyWeight_Journey6
 
 // === Beratung ===
-* entry[9].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling/b16fce31-ff70-4ffa-9729-9682b51e170d"
-* entry[9].resource = b16fce31-ff70-4ffa-9729-9682b51e170d
+* entry[12].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling/b16fce31-ff70-4ffa-9729-9682b51e170d"
+* entry[12].resource = b16fce31-ff70-4ffa-9729-9682b51e170d
 
-* entry[10].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/4b933433-992b-462c-8034-454053bdbd4b"
-* entry[10].resource = 4b933433-992b-462c-8034-454053bdbd4b
+* entry[13].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/4b933433-992b-462c-8034-454053bdbd4b"
+* entry[13].resource = 4b933433-992b-462c-8034-454053bdbd4b
 
 // === laboruntersuchungen ===
-* entry[11].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine/2355a8e3-5deb-49b5-ab38-d71f0b5fa4ca"
-* entry[11].resource = 2355a8e3-5deb-49b5-ab38-d71f0b5fa4ca
+* entry[14].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Creatinine/2355a8e3-5deb-49b5-ab38-d71f0b5fa4ca"
+* entry[14].resource = 2355a8e3-5deb-49b5-ab38-d71f0b5fa4ca
 
-* entry[12].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis/6aa669d3-81b4-4400-b85a-3d15b936067f"
-* entry[12].resource = 6aa669d3-81b4-4400-b85a-3d15b936067f
+* entry[15].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis/6aa669d3-81b4-4400-b85a-3d15b936067f"
+* entry[15].resource = 6aa669d3-81b4-4400-b85a-3d15b936067f
 
-* entry[13].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/d8570cd1-b092-43f7-9921-2148112129e5"
-* entry[13].resource = d8570cd1-b092-43f7-9921-2148112129e5
+* entry[16].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/d8570cd1-b092-43f7-9921-2148112129e5"
+* entry[16].resource = d8570cd1-b092-43f7-9921-2148112129e5
 
 // === Laboratory Practitioner (performer) ===
-* entry[14].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Laborarzt_Journey6"
-* entry[14].resource = Laborarzt_Journey6
+* entry[17].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Laborarzt_Journey6"
+* entry[17].resource = Laborarzt_Journey6
 
 // MedikationStatement
-* entry[15].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/2319d1b2-e5d2-4b87-866a-613ed48f0013"
-* entry[15].resource = 2319d1b2-e5d2-4b87-866a-613ed48f0013
+* entry[18].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/2319d1b2-e5d2-4b87-866a-613ed48f0013"
+* entry[18].resource = 2319d1b2-e5d2-4b87-866a-613ed48f0013
 
 // Medication
-* entry[16].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/b5b924ba-7fd2-4bd0-9f20-30407a56b74a"
-* entry[16].resource = b5b924ba-7fd2-4bd0-9f20-30407a56b74a
+* entry[19].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/b5b924ba-7fd2-4bd0-9f20-30407a56b74a"
+* entry[19].resource = b5b924ba-7fd2-4bd0-9f20-30407a56b74a
 
 // === Diagnosen (Conditions) ===
-* entry[17].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/c7e69f5-3e00-44cb-9fa2-ee8cad37de0a"
-* entry[17].resource = c7e69f5-3e00-44cb-9fa2-ee8cad37de0a   // Z24.6 G.  Notwendigkeit der Impfung gegen Virushepatitis
+* entry[20].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/c7e69f5-3e00-44cb-9fa2-ee8cad37de0a"
+* entry[20].resource = c7e69f5-3e00-44cb-9fa2-ee8cad37de0a   // Z24.6 G.  Notwendigkeit der Impfung gegen Virushepatitis
 
 // === Diagnosen (Conditions) ===
-* entry[18].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/362bbebc-e646-4f98-a062-43720a4ddb5c"
-* entry[18].resource = 362bbebc-e646-4f98-a062-43720a4ddb5c   // 54.9 Z.n. Gonokokkeninfektion, nicht näher bezeichnet
+* entry[21].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/362bbebc-e646-4f98-a062-43720a4ddb5c"
+* entry[21].resource = 362bbebc-e646-4f98-a062-43720a4ddb5c   // 54.9 Z.n. Gonokokkeninfektion, nicht näher bezeichnet
 
 // === Diagnosen (Conditions) ===
-* entry[19].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/05808eeb-0ef8-4ca2-94e8-0270f0c1d031"
-* entry[19].resource = 05808eeb-0ef8-4ca2-94e8-0270f0c1d031   // A51.9 G. Frühsyphilis, nicht näher bezeichnet 
+* entry[22].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/05808eeb-0ef8-4ca2-94e8-0270f0c1d031"
+* entry[22].resource = 05808eeb-0ef8-4ca2-94e8-0270f0c1d031   // A51.9 G. Frühsyphilis, nicht näher bezeichnet 
 
 // Immunisierung
-* entry[20].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
-* entry[20].resource = 032e6088-27db-403a-be51-029f4498dd28
+* entry[23].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
+* entry[23].resource = 032e6088-27db-403a-be51-029f4498dd28
 
 // Nächster Termin - Appointment
-* entry[21].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/0f92c284-1ab7-486a-92ca-b1a08ed8eeb9"
-* entry[21].resource = 0f92c284-1ab7-486a-92ca-b1a08ed8eeb9
+* entry[24].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/0f92c284-1ab7-486a-92ca-b1a08ed8eeb9"
+* entry[24].resource = 0f92c284-1ab7-486a-92ca-b1a08ed8eeb9
 // --------------------------
 // Composition (Beratung bundle — corrected to profile)
 // --------------------------

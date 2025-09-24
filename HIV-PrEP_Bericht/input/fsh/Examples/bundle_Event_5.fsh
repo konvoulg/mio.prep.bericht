@@ -55,47 +55,47 @@ Usage: #example
 * entry[11].resource = ClinicalImpression_BodyWeight_Journey5
 
 // === Beratung ===
-* entry[9].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling/bda5ec2d-d54b-43bd-abb1-f0f4f7d70368"
-* entry[9].resource = bda5ec2d-d54b-43bd-abb1-f0f4f7d70368
+* entry[12].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Procedure_PrEP_Counselling/bda5ec2d-d54b-43bd-abb1-f0f4f7d70368"
+* entry[12].resource = bda5ec2d-d54b-43bd-abb1-f0f4f7d70368
 
-* entry[10].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/ec606ec2-085e-443a-a70d-3b333808e530"
-* entry[10].resource = ec606ec2-085e-443a-a70d-3b333808e530
+* entry[13].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Encounter/ec606ec2-085e-443a-a70d-3b333808e530"
+* entry[13].resource = ec606ec2-085e-443a-a70d-3b333808e530
 
 // === laboruntersuchungen ===
-* entry[11].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia/52ddd0ae-6e39-4074-8708-4170cc397ac9"
-* entry[11].resource = 52ddd0ae-6e39-4074-8708-4170cc397ac9
+* entry[14].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Chlamydia/52ddd0ae-6e39-4074-8708-4170cc397ac9"
+* entry[14].resource = 52ddd0ae-6e39-4074-8708-4170cc397ac9
 
-* entry[12].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhoe/4c65d7b7-fdaf-41d4-9a60-24d1873c6813"
-* entry[12].resource = 4c65d7b7-fdaf-41d4-9a60-24d1873c6813
+* entry[15].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Gonorrhoe/4c65d7b7-fdaf-41d4-9a60-24d1873c6813"
+* entry[15].resource = 4c65d7b7-fdaf-41d4-9a60-24d1873c6813
 
-* entry[13].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis/05a340e4-893c-4e47-be4f-1b7a70c8fb10"
-* entry[13].resource = 05a340e4-893c-4e47-be4f-1b7a70c8fb10
+* entry[16].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis/05a340e4-893c-4e47-be4f-1b7a70c8fb10"
+* entry[16].resource = 05a340e4-893c-4e47-be4f-1b7a70c8fb10
 
-* entry[14].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/3d6023f1-a493-45e6-a3e0-937e05afd573"
-* entry[14].resource = 3d6023f1-a493-45e6-a3e0-937e05afd573 
+* entry[17].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/3d6023f1-a493-45e6-a3e0-937e05afd573"
+* entry[17].resource = 3d6023f1-a493-45e6-a3e0-937e05afd573 
 
-* entry[15].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/7738f901-8bcf-4443-b035-ae7727e96b10"
-* entry[15].resource = 7738f901-8bcf-4443-b035-ae7727e96b10 
+* entry[18].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/7738f901-8bcf-4443-b035-ae7727e96b10"
+* entry[18].resource = 7738f901-8bcf-4443-b035-ae7727e96b10 
 
 // === Laboratory Practitioner (performer) ===
-* entry[16].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Laborarzt_Journey5"
-* entry[16].resource = Laborarzt_Journey5
+* entry[19].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Practitioner/Laborarzt_Journey5"
+* entry[19].resource = Laborarzt_Journey5 
 
 // MedikationStatement
-* entry[17].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/b321ed16-5a61-466d-bbd5-9976fe0c39dc"
-* entry[17].resource = b321ed16-5a61-466d-bbd5-9976fe0c39dc
+* entry[20].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/b321ed16-5a61-466d-bbd5-9976fe0c39dc"
+* entry[20].resource = b321ed16-5a61-466d-bbd5-9976fe0c39dc
 
 // Medication
-* entry[18].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/5295ad8b-3e77-4e43-8da4-22c6caac0ec4"
-* entry[18].resource = 5295ad8b-3e77-4e43-8da4-22c6caac0ec4
+* entry[21].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/5295ad8b-3e77-4e43-8da4-22c6caac0ec4"
+* entry[21].resource = 5295ad8b-3e77-4e43-8da4-22c6caac0ec4
 
 // Hepatitis C Observation
-* entry[19].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC/e382d2f4-6688-4883-aac3-b9e218475391"
-* entry[19].resource = e382d2f4-6688-4883-aac3-b9e218475391 
+* entry[22].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC/e382d2f4-6688-4883-aac3-b9e218475391"
+* entry[22].resource = e382d2f4-6688-4883-aac3-b9e218475391 
 
 // Nächster Termin - Appointment
-* entry[20].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/81dbd37e-5a75-41b8-ba25-0d6f0719b0c6"
-* entry[20].resource = 81dbd37e-5a75-41b8-ba25-0d6f0719b0c6
+* entry[24].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/81dbd37e-5a75-41b8-ba25-0d6f0719b0c6"
+* entry[24].resource = 81dbd37e-5a75-41b8-ba25-0d6f0719b0c6
 
 //Composition
 
