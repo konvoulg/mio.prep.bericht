@@ -527,7 +527,7 @@ Usage: #inline
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
-* effectiveDateTime = "2019-09-23"
+* effectiveDateTime = "2019-09-24"
 
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
