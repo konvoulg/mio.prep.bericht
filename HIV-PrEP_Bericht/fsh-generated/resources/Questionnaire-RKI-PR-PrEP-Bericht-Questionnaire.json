@@ -25,7 +25,7 @@
         }
       ],
       "type": "choice",
-      "linkId": "357318092995",
+      "linkId": "previousSTI",
       "text": "Vorherige STI Infektion",
       "required": false,
       "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
@@ -53,7 +53,7 @@
         }
       ],
       "type": "choice",
-      "linkId": "7742571432941",
+      "linkId": "condomUse",
       "text": "Kondomnutzung",
       "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
     },
@@ -80,7 +80,7 @@
         }
       ],
       "type": "choice",
-      "linkId": "1993731509843",
+      "linkId": "drugUse",
       "text": "Drogen Intravenös",
       "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
     },
@@ -100,7 +100,7 @@
         }
       ],
       "type": "choice",
-      "linkId": "5407091313032",
+      "linkId": "partnerHIVStatus",
       "text": "Serodiskordante Konstellation",
       "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
     },
@@ -127,7 +127,7 @@
         }
       ],
       "type": "choice",
-      "linkId": "7294102201786",
+      "linkId": "sexualOrientation",
       "text": "Sexuelle Orientierung",
       "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT"
     },
@@ -166,7 +166,7 @@
         }
       ],
       "type": "choice",
-      "linkId": "6401616433112",
+      "linkId": "genderId",
       "text": "Geschlechtsidentitaet",
       "definition": "Patient.extension:Geschlechtsidentitaet",
       "answerValueSet": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.32"
@@ -186,16 +186,66 @@
           }
         }
       ],
+      "item": [
+        {
+          "enableWhen": [
+            {
+              "question": "firstTimePrep",
+              "operator": "=",
+              "answerCoding": {
+                "code": "373067005",
+                "system": "http://snomed.info/sct",
+                "display": "No (qualifier value)"
+              }
+            }
+          ],
+          "linkId": "whenFirstTimePrep",
+          "text": "Wann würde HIV-PrEP erstmals genommen?",
+          "type": "date"
+        }
+      ],
       "type": "choice",
-      "linkId": "2142215437593",
+      "linkId": "firstTimePrep",
       "text": "Erstes mal HIV-PrEP?",
       "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
     },
     {
-      "type": "date",
-      "linkId": "367085263815",
-      "text": "Wann würde HIV-PrEP erstmals genommen?",
-      "enableBehavior": "all"
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "radio-button",
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "display": "Radio Button"
+              }
+            ]
+          }
+        }
+      ],
+      "item": [
+        {
+          "enableWhen": [
+            {
+              "question": "previousPrep",
+              "operator": "=",
+              "answerCoding": {
+                "code": "373067001",
+                "system": "http://snomed.info/sct",
+                "display": "Yes (qualifier value)"
+              }
+            }
+          ],
+          "linkId": "whenPreviousPrep",
+          "text": "Wann war die früheste bekannte PrEP-Einnahme?",
+          "type": "date"
+        }
+      ],
+      "type": "choice",
+      "linkId": "previousPrep",
+      "text": "Gab es früher schon PrEP-Einnahme?",
+      "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
     }
   ],
   "url": "https://rki.de/fhir/StructureDefinition/RKI_PR_PrEP_Bericht_Questionnaire",

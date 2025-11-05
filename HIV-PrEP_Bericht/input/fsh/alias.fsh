@@ -111,3 +111,6 @@ Alias: $unitsofmeasure = http://unitsofmeasure.org
 
 //Aliases emp MedicationStatement
 Alias: $KBV_PR_MIO_EMP_Identifier_Line_Item = https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_EMP_Identifier_Line_Item
+
+//Aliases yesOrNoAnswer 
+Alias: $yesOrNoAnswer = https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information

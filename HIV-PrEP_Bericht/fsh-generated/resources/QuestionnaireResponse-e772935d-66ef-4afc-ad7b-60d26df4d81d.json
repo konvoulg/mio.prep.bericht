@@ -14,11 +14,25 @@
       "answer": [
         {
           "valueCoding": {
-            "code": "373066001"
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes (qualifier value)"
           }
         }
       ],
-      "linkId": "357318092995"
+      "linkId": "previousSTI"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No (qualifier value)"
+          }
+        }
+      ],
+      "linkId": "condomUse"
     },
     {
       "answer": [
@@ -28,57 +42,87 @@
           }
         }
       ],
-      "linkId": "7742571432941"
+      "linkId": "drugUse"
     },
     {
       "answer": [
         {
           "valueCoding": {
-            "code": "373067005"
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No (qualifier value)"
           }
         }
       ],
-      "linkId": "1993731509843"
+      "linkId": "partnerHIVStatus"
     },
     {
       "answer": [
         {
           "valueCoding": {
-            "code": "373067005"
+            "code": "38628009",
+            "system": "http://snomed.info/sct",
+            "display": "Homosexual (finding)"
           }
         }
       ],
-      "linkId": "5407091313032"
+      "linkId": "SexualOrientation"
     },
     {
       "answer": [
         {
           "valueCoding": {
-            "code": "38628009"
+            "code": "446151000124109",
+            "system": "http://snomed.info/sct",
+            "display": "Identifies as male gender (finding)"
           }
         }
       ],
-      "linkId": "7294102201786"
+      "linkId": "genderId"
     },
     {
       "answer": [
         {
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueDateTime": "2015-02-11"
+                }
+              ],
+              "linkId": "whenFirstTimePrep"
+            }
+          ],
           "valueCoding": {
-            "code": "446151000124109"
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes (qualifier value)"
           }
         }
       ],
-      "linkId": "6401616433112"
+      "linkId": "firstTimePrep"
     },
     {
       "answer": [
         {
+          "item": [
+            {
+              "answer": [
+                {
+                  "valueDateTime": "2015-02-11"
+                }
+              ],
+              "linkId": "whenPreviousPrep"
+            }
+          ],
           "valueCoding": {
-            "code": "373066001"
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes (qualifier value)"
           }
         }
       ],
-      "linkId": "2142215437593"
+      "linkId": "previousPrep"
     }
   ],
   "status": "completed",
