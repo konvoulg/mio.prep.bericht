@@ -8,7 +8,8 @@ Usage: #example
 * status = #draft
 * publisher = "Robert Koch Institut"
 * description = "Dieser Frageboggen bildet die Sexualanamnese ab"
-* item[0].type = #choice
+
+* item[+].type = #choice
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension.valueCodeableConcept = $questionnaire-item-control#radio-button "Radio Button"
 * item[=].linkId = "previousSTI"
@@ -16,6 +17,7 @@ Usage: #example
 * item[=].text = "Vorherige STI Infektion"
 * item[=].required = false
 * item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
+
 * item[+].type = #choice
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension.valueCodeableConcept = $questionnaire-item-control#radio-button "Radio Button"
@@ -23,6 +25,7 @@ Usage: #example
 * item[=].code = $11000274103#161775000 "History of sheath usage (situation)"
 * item[=].text = "Kondomnutzung"
 * item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
+
 * item[+].type = #choice
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension.valueCodeableConcept = $questionnaire-item-control#radio-button "Radio Button"
@@ -30,12 +33,14 @@ Usage: #example
 * item[=].code = $11000274103#228388006 "Intravenous drug user (finding)"
 * item[=].text = "Drogen Intravenös"
 * item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
+
 * item[+].type = #choice
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension.valueCodeableConcept = $questionnaire-item-control#radio-button "Radio Button"
 * item[=].linkId = "partnerHIVStatus"
 * item[=].text = "Serodiskordante Konstellation"
 * item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
+
 * item[+].type = #choice
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension.valueCodeableConcept = $questionnaire-item-control#drop-down "Drop down"
@@ -43,6 +48,7 @@ Usage: #example
 * item[=].code = $11000274103#66621004 "Sexual orientation (observable entity)"
 * item[=].text = "Sexuelle Orientierung"
 * item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Sexual_Orientation_SNOMEDCT"
+
 /*
 * item[=].answerOption[0].valueCoding = $sct#42035005 "Bisexual (finding)"
 * item[=].answerOption[+].valueCoding = $sct#20430005 "Heterosexual (finding)"
@@ -50,6 +56,7 @@ Usage: #example
 * item[=].answerOption[+].valueCoding = $v3-NullFlavor#OTH "other"
 * item[=].answerOption[+].valueCoding = $v3-NullFlavor#UNK "unknown"
 */
+
 * item[+].type = #choice
 * item[=].extension[0].url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].extension[=].valueCodeableConcept = $questionnaire-item-control#drop-down "Drop down"
@@ -99,7 +106,3 @@ Usage: #example
 * item[=].item[=].enableWhen.question = "previousPrep"
 * item[=].item[=].enableWhen.operator = #=
 * item[=].item[=].enableWhen.answerCoding = $sct#373067001 "Yes (qualifier value)"
-
-
-
-
