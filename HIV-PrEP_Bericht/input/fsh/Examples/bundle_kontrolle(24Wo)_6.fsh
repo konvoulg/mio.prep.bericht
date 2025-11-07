@@ -517,7 +517,7 @@ Usage: #inline
 * author = Reference(urn:uuid:637c79e5-bacc-4002-adca-64af70af8114)
 
 * item[0].linkId = "previousSTI"
-* item[0].answer.valueCoding = $sct#373066005 "No (qualifier value)"
+* item[0].answer.valueCoding = $sct#373067005 "No (qualifier value)"
 
 * item[+].linkId = "condomUse"
 * item[=].answer.valueCoding = $sct#373067005 "No (qualifier value)"
@@ -538,7 +538,7 @@ Usage: #inline
 * item[=].answer.valueCoding = $sct#373066001 "Yes (qualifier value)"
 
 * item[=].answer.item.linkId = "whenPreviousPrep"
-* item[=].answer.item.answer.valueDateTime = "2015-02-11"
+* item[=].answer.item.answer.valueDateTime = "2015-02-11" 
 
 
 //ClinicalImpression finding itemReference Prep Indication

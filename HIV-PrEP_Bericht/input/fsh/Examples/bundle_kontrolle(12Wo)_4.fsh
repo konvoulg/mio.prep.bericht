@@ -189,6 +189,7 @@ Usage: #inline
 * section[termine].section[naechsterTermin].code.coding.version = "http://snomed.info/sct/11000274103/version/20241115"
 * section[termine].section[naechsterTermin].code.coding.code = $sct#39084006
 * section[termine].section[naechsterTermin].code.coding.display = "Naechster Termin"
+
 //Composition Subject (Patient)
 Instance: Patient_PrEP_Journey4
 InstanceOf: RKI_PR_HIV_PrEP_Bericht_Patient
@@ -499,7 +500,7 @@ Usage: #inline
 * author = Reference(urn:uuid:637c79e5-bacc-4002-adca-64af70af8114)
 
 * item[0].linkId = "previousSTI"
-* item[0].answer.valueCoding = $sct#373066005 "No (qualifier value)"
+* item[0].answer.valueCoding = $sct#373067005 "No (qualifier value)"
 
 * item[+].linkId = "condomUse"
 * item[=].answer.valueCoding = $sct#373067005 "No (qualifier value)"
@@ -520,7 +521,7 @@ Usage: #inline
 * item[=].answer.valueCoding = $sct#373066001 "Yes (qualifier value)"
 
 * item[=].answer.item.linkId = "whenPreviousPrep"
-* item[=].answer.item.answer.valueDateTime = "2015-02-11"
+* item[=].answer.item.answer.valueDateTime = "2015-02-11" 
 
 //ClinicalImpression finding itemReference Prep Indication
 

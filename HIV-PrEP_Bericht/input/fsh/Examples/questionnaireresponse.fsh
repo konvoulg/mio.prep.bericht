@@ -17,7 +17,7 @@ Usage: #example
 * author = Reference(urn:uuid:637c79e5-bacc-4002-adca-64af70af8113)
 
 * item[0].linkId = "previousSTI"
-* item[0].answer.valueCoding = $sct#373066005 "No (qualifier value)"
+* item[0].answer.valueCoding = $sct#373067005 "No (qualifier value)"
 
 * item[+].linkId = "condomUse"
 * item[=].answer.valueCoding = $sct#373067005 "No (qualifier value)"
