@@ -14,9 +14,9 @@
       "answer": [
         {
           "valueCoding": {
-            "code": "373066001",
+            "code": "373066005",
             "system": "http://snomed.info/sct",
-            "display": "Yes (qualifier value)"
+            "display": "No (qualifier value)"
           }
         }
       ],
@@ -38,7 +38,9 @@
       "answer": [
         {
           "valueCoding": {
-            "code": "373067005"
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No (qualifier value)"
           }
         }
       ],
@@ -48,9 +50,9 @@
       "answer": [
         {
           "valueCoding": {
-            "code": "373067005",
+            "code": "261665006",
             "system": "http://snomed.info/sct",
-            "display": "No (qualifier value)"
+            "display": "Unbekannt"
           }
         }
       ],
@@ -79,28 +81,6 @@
         }
       ],
       "linkId": "genderId"
-    },
-    {
-      "answer": [
-        {
-          "item": [
-            {
-              "answer": [
-                {
-                  "valueDateTime": "2015-02-11"
-                }
-              ],
-              "linkId": "whenFirstTimePrep"
-            }
-          ],
-          "valueCoding": {
-            "code": "373066001",
-            "system": "http://snomed.info/sct",
-            "display": "Yes (qualifier value)"
-          }
-        }
-      ],
-      "linkId": "firstTimePrep"
     },
     {
       "answer": [

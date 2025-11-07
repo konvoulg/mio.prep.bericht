@@ -509,26 +509,29 @@ Usage: #inline
 
 * author = Reference(urn:uuid:637c79e5-bacc-4002-adca-64af70af8114)
 
-* item[0].linkId = "357318092995"
-* item[0].answer.valueCoding = $sct#373066001 "No"
+* item[0].linkId = "previousSTI"
+* item[0].answer.valueCoding = $sct#373066005 "No (qualifier value)"
 
-* item[+].linkId = "7742571432941"
-* item[=].answer.valueCoding = $sct#373067005 "No"
+* item[+].linkId = "condomUse"
+* item[=].answer.valueCoding = $sct#373067005 "No (qualifier value)"
 
-* item[+].linkId = "1993731509843"
-* item[=].answer.valueCoding = $sct#373067005 "No"
+* item[+].linkId = "drugUse"
+* item[=].answer.valueCoding = $sct#373067005 "No (qualifier value)"
 
-* item[+].linkId = "5407091313032" 
-* item[=].answer.valueCoding = $data_absent#unknown "Unbekannt"
+* item[+].linkId = "partnerHIVStatus"
+* item[=].answer.valueCoding = $sct#261665006  "Unbekannt"
 
-* item[+].linkId = "7294102201786"
-* item[=].answer.valueCoding = $sct#38628009 "Homosexual"
+* item[+].linkId = "SexualOrientation"
+* item[=].answer.valueCoding = $sct#38628009 "Homosexual (finding)"
 
-* item[+].linkId = "6401616433112"
-* item[=].answer.valueCoding = $sct#446151000124109 "Identifies as male gender"
+* item[+].linkId = "genderId"
+* item[=].answer.valueCoding = $sct#446151000124109 "Identifies as male gender (finding)"
 
-* item[+].linkId = "2142215437593"
-* item[=].answer.valueCoding = $sct#373066001 "Yes"
+* item[+].linkId = "previousPrep"
+* item[=].answer.valueCoding = $sct#373066001 "Yes (qualifier value)"
+
+* item[=].answer.item.linkId = "whenPreviousPrep"
+* item[=].answer.item.answer.valueDateTime = "2015-02-11"
 
 //ClinicalImpression finding itemReference Prep Indication
 

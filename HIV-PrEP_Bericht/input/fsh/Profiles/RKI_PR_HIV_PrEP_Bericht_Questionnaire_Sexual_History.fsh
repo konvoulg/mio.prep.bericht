@@ -79,19 +79,6 @@ Usage: #example
 * item[=].extension[=].valueExpression.language = #text/fhirpath
 * item[=].extension[=].valueExpression.expression = "%patient"
 
-* item[+].type = #choice
-* item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-* item[=].extension.valueCodeableConcept = $questionnaire-item-control#drop-down "Drop down"
-* item[=].linkId = "firstTimePrep"
-* item[=].text = "Erstes mal HIV-PrEP?"
-* item[=].answerValueSet = "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
-
-* item[=].item[+].linkId = "whenFirstTimePrep"
-* item[=].item[=].text = "Wann würde HIV-PrEP erstmals genommen?"
-* item[=].item[=].type = #date
-* item[=].item[=].enableWhen.question = "firstTimePrep"
-* item[=].item[=].enableWhen.operator = #=
-* item[=].item[=].enableWhen.answerCoding = $sct#373067005 "No (qualifier value)"
 
 * item[+].type = #choice
 * item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"

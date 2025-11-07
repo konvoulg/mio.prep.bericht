@@ -178,44 +178,6 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "code": "drop-down",
-                "system": "http://hl7.org/fhir/questionnaire-item-control",
-                "display": "Drop down"
-              }
-            ]
-          }
-        }
-      ],
-      "item": [
-        {
-          "enableWhen": [
-            {
-              "question": "firstTimePrep",
-              "operator": "=",
-              "answerCoding": {
-                "code": "373067005",
-                "system": "http://snomed.info/sct",
-                "display": "No (qualifier value)"
-              }
-            }
-          ],
-          "linkId": "whenFirstTimePrep",
-          "text": "Wann würde HIV-PrEP erstmals genommen?",
-          "type": "date"
-        }
-      ],
-      "type": "choice",
-      "linkId": "firstTimePrep",
-      "text": "Erstes mal HIV-PrEP?",
-      "answerValueSet": "https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Yes_No_Information"
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-          "valueCodeableConcept": {
-            "coding": [
-              {
                 "code": "radio-button",
                 "system": "http://hl7.org/fhir/questionnaire-item-control",
                 "display": "Radio Button"
