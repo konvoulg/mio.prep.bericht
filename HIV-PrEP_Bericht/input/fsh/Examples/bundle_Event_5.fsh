@@ -999,7 +999,7 @@ Usage: #inline
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
-* medicationReference.reference = "urn:uuid:med-benzathin-penicillin"
+* medicationReference.reference = "urn:uuid:5295ad8b-3e77-4e43-8da4-22c6caac0ec4"
 * effectiveDateTime = "2020-02-13"
 
 // subject identifier (as required by profile)
