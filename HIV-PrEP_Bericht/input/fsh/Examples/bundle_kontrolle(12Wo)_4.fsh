@@ -960,7 +960,7 @@ Usage: #inline
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
 * medicationReference.reference = "urn:uuid:fd53a061-1f41-43a0-be16-53bb9d1d770b"
-* effectiveDateTime = "2019-10-21"
+* effectiveDateTime = "2020-01-20"
 
 // subject: use identifier only (to meet profile requirement)
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
