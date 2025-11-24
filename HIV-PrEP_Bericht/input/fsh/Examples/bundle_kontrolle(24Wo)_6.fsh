@@ -741,7 +741,7 @@ Title: "Syphilis Observation – VDRL negativ, TPPA-Titer >1:80"
 Description: "Syphilis serology: VDRL negative, TPPA Titer >1:80"
 Usage: #inline
 
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-02-13"
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-04-13"
 
 * status = #final
 * category = $secondary-finding#laboratory
@@ -754,8 +754,13 @@ Usage: #inline
 
 // Subject, timing, performer
 * subject.reference   = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
-* effectiveDateTime   = "2020-02-13T09:00:00+08:00"
+* effectiveDateTime   = "2020-04-13T09:00:00+08:00"
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb"
+
+// Primary result for UI
+* valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding.code = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
 // ----------------- Components -----------------
 // VDRL negativ
