@@ -9,7 +9,7 @@ Usage: #example
 * type = #document
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value  = "urn:uuid:bc40aec8-500d-4d3f-b476-ca44290ad9ef"
-* timestamp = "2020-04-13T09:50:00+01:00"   
+* timestamp = "2020-04-13T09:50:00+01:00"       
 // === Composition ===
 * entry[0].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Composition/20fa5bcf-73d7-4883-80a0-efbb0d94e566"
 * entry[0].resource = 20fa5bcf-73d7-4883-80a0-efbb0d94e566

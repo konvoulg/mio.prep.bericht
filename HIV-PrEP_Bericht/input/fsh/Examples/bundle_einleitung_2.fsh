@@ -86,6 +86,14 @@ Usage: #example
 // Nächster Termin - Appointment
 * entry[21].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/a10a5b36-f125-413d-855e-d9730c395fa0"
 * entry[21].resource = a10a5b36-f125-413d-855e-d9730c395fa0
+
+// MedikationStatement
+* entry[21].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement/b77a0e79-9a6e-4ed2-9f83-0d8a0b5e0d33"
+* entry[21].resource = b77a0e79-9a6e-4ed2-9f83-0d8a0b5e0d33
+
+// Medication
+* entry[18].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/5a27bacd-1db6-43c8-8fad-18b898a29480"
+* entry[18].resource = 7e3b2c6f-6a80-4f3c-9a2b-9f6d42b7d0b9
 // --------------------------
 // Composition (Einleitung bundle — corrected to profile)
 // --------------------------
@@ -167,8 +175,8 @@ Usage: #inline
 * section[medikation].section[behandlungsrelevanteMedikation].code.coding.system  = $sectioncodes
 * section[medikation].section[behandlungsrelevanteMedikation].code.coding.code    = #SectionBehandlungsrelevanteMedikation
 * section[medikation].section[behandlungsrelevanteMedikation].code.coding.display = "Behandlungsrelevante Medikation"
-* section[medikation].section[behandlungsrelevanteMedikation].entry[0].reference  = "urn:uuid:3c9e2d5c-3d8a-4c79-8b73-2b6d1e0c9a12" // Azithromycin
-* section[medikation].section[behandlungsrelevanteMedikation].entry[1].reference  = "urn:uuid:bf21f7de-7f94-45e4-bb89-12d9a5d5cc10" // Ceftriaxon
+* section[medikation].section[behandlungsrelevanteMedikation].entry[0].reference  = "urn:uuid:0f9f3e51-6f9a-4c3d-8b22-a5d1b5e9f4a2" // Azithromycin
+* section[medikation].section[behandlungsrelevanteMedikation].entry[1].reference  = "urn:uuid:7e3b2c6f-6a80-4f3c-9a2b-9f6d42b7d0b9" // Ceftriaxon
 
 // Diagnosen — Conditions per diagnosis profile
 * section[diagnosen].title = "STI Diagnosen"
