@@ -29,8 +29,8 @@ Usage: #example
 * entry[4].resource = Organization_Journey3
 
 // === Diagnosen (Conditions) ===
-* entry[5].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/3c109005-5008-45a8-8422-cbff600ea3f8"
-* entry[5].resource = 3c109005-5008-45a8-8422-cbff600ea3f8   // HIV-PrEP (Z29.22)
+* entry[5].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/856bb329-a080-44c6-945a-277de74ca0a2"
+* entry[5].resource = 856bb329-a080-44c6-945a-277de74ca0a2   // HIV-PrEP (Z29.22)
 
 * entry[6].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/27569f86-553e-49e2-9c57-f3d1103b08d2"
 * entry[6].resource = 27569f86-553e-49e2-9c57-f3d1103b08d2   // Gonokokkeninfektion, nicht näher bezeichnet
@@ -722,7 +722,7 @@ Usage: #inline
 
 * extension[Feststellungsdatum].valueDateTime = "2019-10-21"
 
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
+* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #Z.n.
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[ICD-10-GM].version = "2025" // or your IG version 
 * code.coding[ICD-10-GM].code = #A54.9   // https://www.icd-code.de/icd/code/A54.9.html

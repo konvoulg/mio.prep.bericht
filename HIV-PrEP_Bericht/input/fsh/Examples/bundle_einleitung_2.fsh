@@ -92,8 +92,8 @@ Usage: #example
 * entry[21].resource = b77a0e79-9a6e-4ed2-9f83-0d8a0b5e0d33
 
 // Medication
-* entry[18].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/5a27bacd-1db6-43c8-8fad-18b898a29480"
-* entry[18].resource = 7e3b2c6f-6a80-4f3c-9a2b-9f6d42b7d0b9
+* entry[22].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/7e3b2c6f-6a80-4f3c-9a2b-9f6d42b7d0b9"
+* entry[22].resource = 7e3b2c6f-6a80-4f3c-9a2b-9f6d42b7d0b9
 // --------------------------
 // Composition (Einleitung bundle — corrected to profile)
 // --------------------------

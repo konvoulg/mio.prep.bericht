@@ -29,10 +29,6 @@ Usage: #example
 * entry[4].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Organization/Organization_Journey5"
 * entry[4].resource = Organization_Journey5
 
-// === Diagnosen (Conditions) ===
-* entry[5].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/c8b0c309-1299-4398-ac12-61e760692b11"
-* entry[5].resource = c8b0c309-1299-4398-ac12-61e760692b11   // Z20.2 V.a. Kontakt mit und Exposition gegenüber Infektionen, die vorwiegend durch Geschlechtsverkehr übertragen werden
-
 * entry[5].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/c8b0c309-1299-4398-ac12-61e760692b10"
 * entry[5].resource = c8b0c309-1299-4398-ac12-61e760692b10   // A51.9 G. Frühsyphilis, nicht näher bezeichnet 
 // === Anamnese ===
@@ -99,8 +95,11 @@ Usage: #example
 
 * entry[24].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse/ClinicalImpression_QuestionnaireResponse_Journey2"
 * entry[24].resource = ClinicalImpression_QuestionnaireResponse_Journey5
-//Composition
+// === Diagnosen (Conditions) ===
+* entry[25].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/c8b0c309-1299-4398-ac12-61e760692b11"
+* entry[25].resource = c8b0c309-1299-4398-ac12-61e760692b11   // Z20.2 V.a. Kontakt mit und Exposition gegenüber Infektionen, die vorwiegend durch Geschlechtsverkehr übertragen werden
 
+//Composition
 // --------------------------
 // Composition (Beratung bundle — corrected to profile)
 // --------------------------
@@ -648,48 +647,67 @@ Alias: $loinc = http://loinc.org
 
 Instance: 05a340e4-893c-4e47-be4f-1b7a70c8fb10
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis
-Title: "Syphilis Observation with Titer Results"
-Description: "Syphilis serology with quantitative titers and overall positive result"
+Title: "Syphilis Observation – Full Panel"
+Description: "Syphilis-AK (ELISA), IgG, IgM, TPHA, TPPA, VDRL — all positive"
 Usage: #inline
 
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-02-13"
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-23"
 
 * status = #final
 * category = $secondary-finding#laboratory
 
-// Panel-level code
+// Main Observation Code
 * code.coding[loinc].system  = $loinc
 * code.coding[loinc].version = "2.74"
 * code.coding[loinc].code    = #22587-0
 * code.coding[loinc].display = "Treponema pallidum Ab [Presence] in Serum"
 
-// Subject, timing, performer
+// Patient, timing, performer
 * subject.reference   = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 * effectiveDateTime   = "2020-02-13T09:00:00+08:00"
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb"
 
-// ----------------- Overall qualitative result -----------------
-* valueCodeableConcept.coding.system  = "http://snomed.info/sct"
-* valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
+// Overall qualitative result
+* valueCodeableConcept.coding.system  = $sct
 * valueCodeableConcept.coding.code    = #10828004
 * valueCodeableConcept.coding.display = "Positive (qualifier value)"
 
-// ----------------- Components -----------------
+// ---------------------------------------------------------
+// COMPONENTS — FULL SYPHILIS PANEL
+// ---------------------------------------------------------
+
+// 0 — Treponema pallidum IgG (ELISA/IA)
+* component[0].code = $loinc#47238-1 "Treponema pallidum IgG Ab [Presence] in Serum by Immunoassay"
+* component[0].valueCodeableConcept = $sct#10828004 "Positive (qualifier value)"
+
+// 1 — Treponema pallidum IgM (ELISA/IA)
+* component[1].code = $loinc#47237-3 "Treponema pallidum IgM Ab [Presence] in Serum by Immunoassay"
+* component[1].valueCodeableConcept = $sct#10828004 "Positive (qualifier value)"
+
+// 2 — Syphilis-AK (ELISA/Immunoassay) 
+* component[2].code = $loinc#24110-9 "Treponema pallidum Ab [Presence] in Serum by Immunoassay"
+* component[2].valueCodeableConcept = $sct#10828004 "Positive (qualifier value)"
+
+// TPHA Titer
+* component[3].code = $loinc#26009-1 "Treponema pallidum Ab [Titer] in Serum by Hemagglutination"
+* component[3].valueQuantity.value = 1
+* component[3].valueQuantity.unit = ":1024"
+* component[3].valueQuantity.system = "http://unitsofmeasure.org"
+
+// 4 — TPPA
+* component[4].code = $loinc#71793-4 "Treponema pallidum Ab [Titer] in Serum by Agglutination"
+* component[4].valueQuantity.value = 1
+* component[4].valueQuantity.unit = ":1024"
+* component[4].valueQuantity.system = "http://unitsofmeasure.org"
 
 // VDRL Titer
-* component[0].code = $loinc#50690-7 "Reagin Ab [Titer] in Serum by VDRL"
-* component[0].valueRatio.numerator.value = 1
-* component[0].valueRatio.numerator.unit  = "{titer}"
-* component[0].valueRatio.denominator.value = 16
+* component[5].code = $loinc#50690-7 "Reagin Ab [Titer] in Serum by VDRL"
+* component[5].valueRatio.numerator.value = 1
+* component[5].valueRatio.numerator.unit  = "{titer}"
+* component[5].valueRatio.denominator.value = 16
 
-// TPHA/TPPA Titer
-* component[1].code = $loinc#22587-0 "Treponema pallidum Ab [Titer] in Serum by TPHA/TPPA"
-* component[1].valueRatio.numerator.value = 1
-* component[1].valueRatio.numerator.unit  = "{titer}"
-* component[1].valueRatio.denominator.value = 1024
-
-// Optional human-readable
-* note[0].text = "Overall Positive. VDRL 1:16, TPHA/TPPA 1:1024"
+// Optional note
+* note[0].text = "Full Syphilis panel (ELISA, IgG, IgM, TPHA, TPPA, VDRL): all positive."
 
 // Observation Chlamydia
 Instance: 52ddd0ae-6e39-4074-8708-4170cc397ac9
@@ -764,8 +782,8 @@ Usage: #inline
 * note.text = "PrEP Kontrolle nach 3 Monaten"
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
-* valueCodeableConcept.coding.code = #10828004
-* valueCodeableConcept.coding.display = "Positive (qualifier value)"
+* valueCodeableConcept.coding.code = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
 
 // Observation HIV
@@ -864,8 +882,8 @@ Usage: #inline
 
 * code.coding[loinc].system = "http://loinc.org"
 * code.coding[loinc].version = "2.73"
-* code.coding[loinc].code = #11259-9
-* code.coding[loinc].display = "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
+* code.coding[loinc].code = #13955-0
+* code.coding[loinc].display = "Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay"
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
@@ -935,7 +953,7 @@ Usage: #inline
 
 * extension[http://hl7.org/fhir/StructureDefinition/condition-assertedDate].valueDateTime = "2020-02-13T00:00:00+00:00"
 
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
+* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #V.a.
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[ICD-10-GM].version = "2025" // or your IG version
 * code.coding[ICD-10-GM].code = #Z20.2  // https://www.icd-code.de/icd/code/Z20.2.html
