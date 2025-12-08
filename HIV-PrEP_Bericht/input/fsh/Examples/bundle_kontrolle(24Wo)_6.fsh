@@ -82,11 +82,11 @@ Usage: #example
 
 // === Diagnosen (Conditions) ===
 * entry[20].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/c7e69f5-3e00-44cb-9fa2-ee8cad37de0a"
-* entry[20].resource = c7e69f5-3e00-44cb-9fa2-ee8cad37de0a   // Z24.6 G.  Notwendigkeit der Impfung gegen Virushepatitis
+* entry[20].resource = c7e69f5-3e00-44cb-9fa2-ee8cad37de0a // 54.9 Z.n. Gonokokkeninfektion, nicht näher bezeichnet   
 
 // === Diagnosen (Conditions) ===
 * entry[21].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/362bbebc-e646-4f98-a062-43720a4ddb5c"
-* entry[21].resource = 362bbebc-e646-4f98-a062-43720a4ddb5c   // 54.9 Z.n. Gonokokkeninfektion, nicht näher bezeichnet
+* entry[21].resource = 362bbebc-e646-4f98-a062-43720a4ddb5c    // Z24.6 G.  Notwendigkeit der Impfung gegen Virushepatitis
 
 // === Diagnosen (Conditions) ===
 * entry[22].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/05808eeb-0ef8-4ca2-94e8-0270f0c1d031"
@@ -731,14 +731,10 @@ Usage: #inline
 
 // Obervation Syphilis-AK (ELISA/Immunoassay), Treponema pall. IgG-AK, Treponema pall. IgM-AK
 // Nur TPHA, TPPA, VDRL (wenn vorher jemals positiv)
-
-Alias: $sct   = http://snomed.info/sct
-Alias: $loinc = http://loinc.org
-
 Instance: 6aa669d3-81b4-4400-b85a-3d15b936067f
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis
-Title: "Syphilis Observation – VDRL negativ, TPPA-Titer >1:80"
-Description: "Syphilis serology: VDRL negative, TPPA Titer >1:80"
+Title: "Syphilis Observation – Full Panel"
+Description: "TPPA - positive, VDRL — negative"
 Usage: #inline
 
 * extension[dokumentationszeitpunkt].valueDateTime = "2020-04-13"
@@ -746,37 +742,42 @@ Usage: #inline
 * status = #final
 * category = $secondary-finding#laboratory
 
-// Panel-level code
+// Main Observation Code
 * code.coding[loinc].system  = $loinc
 * code.coding[loinc].version = "2.74"
-* code.coding[loinc].code    = #24312-1
-* code.coding[loinc].display = "Treponema pallidum Ab panel - Serum"
+* code.coding[loinc].code    = #22587-0
+* code.coding[loinc].display = "Treponema pallidum Ab [Presence] in Serum"
 
-// Subject, timing, performer
+// Patient, timing, performer
 * subject.reference   = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 * effectiveDateTime   = "2020-04-13T09:00:00+08:00"
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb"
 
-// Primary result for UI
-* valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.code = #260385009
+// Overall qualitative result
+* valueCodeableConcept.coding.system  = $sct
+* valueCodeableConcept.coding.code    = #260385009
 * valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
-// ----------------- Components -----------------
-// VDRL negativ
-* component[0].code = $loinc#50690-7 "Reagin Ab [Presence] in Serum by VDRL"
-* component[0].valueCodeableConcept.coding.system  = "http://snomed.info/sct"
-* component[0].valueCodeableConcept.coding.code    = #260385009
-* component[0].valueCodeableConcept.coding.display = "Negative (qualifier value)"
+// ---------------------------------------------------------
+// COMPONENTS — FULL SYPHILIS PANEL
+// ---------------------------------------------------------
+// TPHA
+* component[0].code = $loinc#8041-6 "Treponema pallidum Ab [Presence] in Serum by Hemagglutination"
+* component[0].valueQuantity.value = 1
+* component[0].valueQuantity.unit = ":80"
+* component[0].valueQuantity.system = "http://unitsofmeasure.org"
 
-// TPPA-Titer >1:80
-* component[1].code = $loinc#22587-0 "Treponema pallidum Ab [Titer] in Serum by TPPA"
-* component[1].valueRatio.numerator.value   = 1
-* component[1].valueRatio.numerator.unit    = "{titer}"
-* component[1].valueRatio.denominator.value = 80
+// TPPA
+* component[1].code = $loinc#71793-4 "Treponema pallidum Ab [Titer] in Serum by Agglutination"
+* component[1].valueQuantity.value = 1
+* component[1].valueQuantity.unit = ":80"
+* component[1].valueQuantity.system = "http://unitsofmeasure.org"
 
-// Optional note for raw text
-* note[0].text = "VDRL negativ, TPPA-Titer >1:80"
+// VDRL Titer
+* component[2].code = $loinc#50690-7 "Reagin Ab [Titer] in Serum by VDRL"
+* component[2].valueCodeableConcept = $sct#260385009 "Negative (qualifier value)"
+// Optional note
+* note[0].text = "Full Syphilis panel (ELISA, IgG, IgM, TPHA, TPPA, VDRL): all positive."
 
 
 // Observation HIV
@@ -900,7 +901,7 @@ Usage: #inline
 * extension[Feststellungsdatum].valueDateTime = "2020-04-13"
 
 
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
+* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #Z.n.
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[ICD-10-GM].version = "2025" // or your IG version 
 * code.coding[ICD-10-GM].code = #A54.9   // https://www.icd-code.de/icd/code/A54.9.html
@@ -951,7 +952,7 @@ Usage: #inline
 
 * extension[http://hl7.org/fhir/StructureDefinition/condition-assertedDate].valueDateTime = "2020-04-13T00:00:00+00:00"
 
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
+* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #Z.n.
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[ICD-10-GM].version = "2025" // or your IG version
 * code.coding[ICD-10-GM].code = #A51.9  // https://www.icd-code.de/icd/code/A51.9.html

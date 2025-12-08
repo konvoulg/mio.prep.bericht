@@ -724,35 +724,25 @@ Usage: #inline
 
 // Obervation Syphilis-AK (ELISA/Immunoassay), Treponema pall. IgG-AK, Treponema pall. IgM-AK
 // Nur TPHA, TPPA, VDRL (wenn vorher jemals positiv)
-
-
-Alias: $sct   = http://snomed.info/sct
-Alias: $loinc = http://loinc.org
-
 Instance: 136fc584-616a-4c0c-a74d-460560bd35f5
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Syphilis
-Title: "Example of a Syphilis Observation"
-Description: "Syphilis-AK (ELISA/Immunoassay) incl. IgG/IgM — all negative"
+Title: "Syphilis Observation – Full Panel"
+Description: "TPPA - positive, VDRL — negative"
 Usage: #inline
-
-// If you prefer, you can keep this explicit profile line; it's also fine to omit
-// because InstanceOf already applies the profile.
-// * meta.profile[0] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Syphilis"
 
 // Documentation timestamp (keep exactly one value)
 * extension[dokumentationszeitpunkt].valueDateTime = "2020-07-20"
 
-// Status & category
 * status = #final
 * category = $secondary-finding#laboratory
 
-// Observation code — matches your profile’s LOINC slice requirements
+// Main Observation Code
 * code.coding[loinc].system  = $loinc
 * code.coding[loinc].version = "2.74"
 * code.coding[loinc].code    = #22587-0
 * code.coding[loinc].display = "Treponema pallidum Ab [Presence] in Serum"
 
-// Subject, timing, performer (kept from your example)
+// Patient, timing, performer
 * subject.reference   = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 * effectiveDateTime   = "2020-07-20T09:00:00+08:00"
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb"
@@ -762,15 +752,26 @@ Usage: #inline
 * valueCodeableConcept.coding.code    = #260385009
 * valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
-// Detail components (both negative) — 
-* component[0].code = $loinc#47238-1 "Treponema pallidum IgG Ab [Presence] in Serum by Immunoassay"
-* component[0].valueCodeableConcept = $sct#260385009 "Negative (qualifier value)"
+// ---------------------------------------------------------
+// COMPONENTS — FULL SYPHILIS PANEL
+// ---------------------------------------------------------
+// TPHA
+* component[0].code = $loinc#8041-6 "Treponema pallidum Ab [Presence] in Serum by Hemagglutination"
+* component[0].valueQuantity.value = 1
+* component[0].valueQuantity.unit = ":80"
+* component[0].valueQuantity.system = "http://unitsofmeasure.org"
 
-* component[1].code = $loinc#47237-3 "Treponema pallidum IgM Ab [Presence] in Serum by Immunoassay"
-* component[1].valueCodeableConcept = $sct#260385009 "Negative (qualifier value)"
+// TPPA
+* component[1].code = $loinc#71793-4 "Treponema pallidum Ab [Titer] in Serum by Agglutination"
+* component[1].valueQuantity.value = 1
+* component[1].valueQuantity.unit = ":80"
+* component[1].valueQuantity.system = "http://unitsofmeasure.org"
 
-// Optional documentation text
-* note[0].text = "Syphilis-AK (ELISA/Immunoassay), Treponema pall. IgG-AK, Treponema pall. IgM-AK: all negative. Only TPHA, TPPA, VDRL if ever previously positive."
+// VDRL Titer
+* component[2].code = $loinc#50690-7 "Reagin Ab [Titer] in Serum by VDRL"
+* component[2].valueCodeableConcept = $sct#260385009 "Negative (qualifier value)"
+// Optional note
+* note[0].text = "Full Syphilis panel (ELISA, IgG, IgM, TPHA, TPPA, VDRL): all positive."
 
 // Observation Chlamydia
 
@@ -893,13 +894,13 @@ Alias: $loinc = http://loinc.org
 
 Instance: 1d66b91c-cb06-46a9-986d-6d879df946ac
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisC
-Title: "Example of a HepatitisC Observation"
-Description: "This is an example hepatitisC observation instance"
+Title: "Example of a HepatitisB Observation"
+Description: "This is an example hepatitisB observation instance"
 Usage: #inline
 
 * meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-* extension[dokumentationszeitpunkt].valueDateTime = "2020-07-20T09:00:00+08:00"  
+* extension[dokumentationszeitpunkt].valueDateTime = "2020-07-20T09:00:00+08:00" 
 
 * status = #final
 
@@ -907,24 +908,19 @@ Usage: #inline
 
 * code.coding[loinc].system = "http://loinc.org"
 * code.coding[loinc].version = "2.73"
-* code.coding[loinc].code = #11259-9
-* code.coding[loinc].display = "Hepatitis C virus RNA [Presence] in Serum or Plasma by NAA with probe detection"
+* code.coding[loinc].code = #13955-0
+* code.coding[loinc].display = "Hepatitis C virus Ab [Presence] in Serum or Plasma by Immunoassay"
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 
 * effectiveDateTime = "2020-07-20T09:00:00+08:00"
 
 * performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-830d-cf24d33717eb" // Reference to the Practitioner
-/*
-* performer.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
-* performer.identifier.value = "123456"
-*/
 
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * valueCodeableConcept.coding.code = #260385009
 * valueCodeableConcept.coding.display = "Negative (qualifier value)"
-
 
 // Hepatitis B Observation
 Instance: 1c340a55-54f1-4dca-9c99-2f953df56dde
@@ -1049,7 +1045,7 @@ Usage: #inline
 * extension[Feststellungsdatum].valueDateTime = "2020-07-20"
 
 
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #G
+* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #Z.n.
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[ICD-10-GM].version = "2025" // or your IG version 
 * code.coding[ICD-10-GM].code = #A54.9   // https://www.icd-code.de/icd/code/A54.9.html

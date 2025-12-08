@@ -916,8 +916,6 @@ Usage: #inline
 * valueCodeableConcept.coding.code = #260385009
 * valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
-
-
 // Observation Hepatitis B 3
 
 Instance: 39a8b719-ee89-4400-9078-1227bd31fe72
