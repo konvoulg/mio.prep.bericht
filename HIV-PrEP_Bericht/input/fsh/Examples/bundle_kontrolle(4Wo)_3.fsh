@@ -722,7 +722,7 @@ Usage: #inline
 
 * extension[Feststellungsdatum].valueDateTime = "2019-10-21"
 
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #Z.n.
+* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #Z
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[ICD-10-GM].version = "2025" // or your IG version 
 * code.coding[ICD-10-GM].code = #A54.9   // https://www.icd-code.de/icd/code/A54.9.html

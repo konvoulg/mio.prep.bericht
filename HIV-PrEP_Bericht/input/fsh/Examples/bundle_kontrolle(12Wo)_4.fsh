@@ -835,8 +835,8 @@ Usage: #inline
 * note.text = "PrEP Kontrolle nach 3 Monaten"
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
-* valueCodeableConcept.coding.code = #10828004
-* valueCodeableConcept.coding.display = "Positive (qualifier value)"
+* valueCodeableConcept.coding.code = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
 
 // Observation HIV

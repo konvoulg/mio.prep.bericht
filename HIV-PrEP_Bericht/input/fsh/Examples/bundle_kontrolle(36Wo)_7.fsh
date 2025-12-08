@@ -87,18 +87,16 @@ Usage: #example
 * entry[21].resource = 5af0e66a-fb78-4e64-ba0e-03f37d803f77
 
 // === Diagnosen (Conditions) ===
-* entry[22].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/9400a3c3-e8d4-4d04-afaf-0bad63dfd4ea"
-* entry[22].resource = 9400a3c3-e8d4-4d04-afaf-0bad63dfd4ea   // 54.9 Z.n. Gonokokkeninfektion, nicht näher bezeichnet
 
-* entry[23].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC/1d66b91c-cb06-46a9-986d-6d879df946ac"
-* entry[23].resource = 1d66b91c-cb06-46a9-986d-6d879df946ac
+* entry[22].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisC/1d66b91c-cb06-46a9-986d-6d879df946ac"
+* entry[22].resource = 1d66b91c-cb06-46a9-986d-6d879df946ac
 
-* entry[24].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB/1c340a55-54f1-4dca-9c99-2f953df56dde"
-* entry[24].resource = 1c340a55-54f1-4dca-9c99-2f953df56dde
+* entry[23].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HepatitisB/1c340a55-54f1-4dca-9c99-2f953df56dde"
+* entry[23].resource = 1c340a55-54f1-4dca-9c99-2f953df56dde
 
 // Nächster Termin - Appointment
-* entry[25].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/fb34a3b6-495e-4610-9f93-9a1fa3756229"
-* entry[25].resource = fb34a3b6-495e-4610-9f93-9a1fa3756229
+* entry[24].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/fb34a3b6-495e-4610-9f93-9a1fa3756229"
+* entry[24].resource = fb34a3b6-495e-4610-9f93-9a1fa3756229
 // --------------------------
 // Composition (Beratung bundle — corrected to profile)
 // --------------------------
@@ -177,7 +175,6 @@ Usage: #inline
 * section[diagnosen].code.coding.code    = #SectionStiDiagnosen
 * section[diagnosen].code.coding.display = "STI Diagnosen"
 * section[diagnosen].entry[0] = Reference(urn:uuid:a4513f28-ceb8-4b30-8787-be1e6819f241)
-* section[diagnosen].entry[1] = Reference(urn:uuid:9400a3c3-e8d4-4d04-afaf-0bad63dfd4ea)
 
 // Medikation — PrEP + Antibiotics
 // Parent section: Medikation
@@ -847,8 +844,8 @@ Usage: #inline
 * note.text = "PrEP Kontrolle nach 3 Monaten"
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
-* valueCodeableConcept.coding.code = #10828004
-* valueCodeableConcept.coding.display = "Positive (qualifier value)"
+* valueCodeableConcept.coding.code = #260385009
+* valueCodeableConcept.coding.display = "Negative (qualifier value)"
 
 
 // Observation HIV
@@ -1032,30 +1029,7 @@ Usage: #inline
 
 * recordedDate = "2020-07-20"
 
-// Diagnose - Condition: Gonokokkeninfektion, nicht näher bezeichnet
-Instance: 9400a3c3-e8d4-4d04-afaf-0bad63dfd4ea  // https://www.uuidgenerator.net/version4
-InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
-Title: "Condition: Gonokokkeninfektion, nicht näher bezeichnet"
-Description: "Gonokokkeninfektion, nicht näher bezeichnet"
-Usage: #inline
 
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
-* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-
-* extension[Feststellungsdatum].valueDateTime = "2020-07-20"
-
-
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #Z.n.
-* code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
-* code.coding[ICD-10-GM].version = "2025" // or your IG version 
-* code.coding[ICD-10-GM].code = #A54.9   // https://www.icd-code.de/icd/code/A54.9.html
-* code.coding[ICD-10-GM].display = "Gonokokkeninfektion, nicht näher bezeichnet"
-
-* subject = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)
-* subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
-* subject.identifier.value = "X987654321"
-
-* onsetDateTime = "2020-07-20" 
 // MedicationStatement – Tenofovirdisoproxil/Emtricitabin (FTC/TDF)
 
 Alias: $sct = http://snomed.info/sct

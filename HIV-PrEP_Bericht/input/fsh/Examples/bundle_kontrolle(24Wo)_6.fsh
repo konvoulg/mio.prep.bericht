@@ -78,27 +78,23 @@ Usage: #example
 
 // Medication
 * entry[19].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/b5b924ba-7fd2-4bd0-9f20-30407a56b74a"
-* entry[19].resource = b5b924ba-7fd2-4bd0-9f20-30407a56b74a
+* entry[19].resource = b5b924ba-7fd2-4bd0-9f20-30407a56b74a 
 
 // === Diagnosen (Conditions) ===
-* entry[20].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/c7e69f5-3e00-44cb-9fa2-ee8cad37de0a"
-* entry[20].resource = c7e69f5-3e00-44cb-9fa2-ee8cad37de0a // 54.9 Z.n. Gonokokkeninfektion, nicht näher bezeichnet   
+* entry[20].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/362bbebc-e646-4f98-a062-43720a4ddb5c"
+* entry[20].resource = 362bbebc-e646-4f98-a062-43720a4ddb5c    // Z24.6 G.  Notwendigkeit der Impfung gegen Virushepatitis
 
 // === Diagnosen (Conditions) ===
-* entry[21].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/362bbebc-e646-4f98-a062-43720a4ddb5c"
-* entry[21].resource = 362bbebc-e646-4f98-a062-43720a4ddb5c    // Z24.6 G.  Notwendigkeit der Impfung gegen Virushepatitis
-
-// === Diagnosen (Conditions) ===
-* entry[22].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/05808eeb-0ef8-4ca2-94e8-0270f0c1d031"
-* entry[22].resource = 05808eeb-0ef8-4ca2-94e8-0270f0c1d031   // A51.9 G. Frühsyphilis, nicht näher bezeichnet 
+* entry[21].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/05808eeb-0ef8-4ca2-94e8-0270f0c1d031"
+* entry[21].resource = 05808eeb-0ef8-4ca2-94e8-0270f0c1d031   // A51.9 G. Frühsyphilis, nicht näher bezeichnet 
 
 // Immunisierung
-* entry[23].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
-* entry[23].resource = 032e6088-27db-403a-be51-029f4498dd28
+* entry[22].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Immunization"
+* entry[22].resource = 032e6088-27db-403a-be51-029f4498dd28
 
 // Nächster Termin - Appointment
-* entry[24].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/0f92c284-1ab7-486a-92ca-b1a08ed8eeb9"
-* entry[24].resource = 0f92c284-1ab7-486a-92ca-b1a08ed8eeb9
+* entry[23].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/0f92c284-1ab7-486a-92ca-b1a08ed8eeb9"
+* entry[23].resource = 0f92c284-1ab7-486a-92ca-b1a08ed8eeb9
 // --------------------------
 // Composition (Beratung bundle — corrected to profile)
 // --------------------------
@@ -172,9 +168,8 @@ Usage: #inline
 * section[diagnosen].code.coding.code    = #SectionStiDiagnosen
 * section[diagnosen].code.coding.display = "STI Diagnosen"
 * section[diagnosen].entry[0] = Reference(urn:uuid:0c512880-9806-4ba2-8628-32c2f1b5cb48)
-* section[diagnosen].entry[1] = Reference(urn:uuid:c7e69f5-3e00-44cb-9fa2-ee8cad37de0a)
-* section[diagnosen].entry[2] = Reference(urn:uuid:362bbebc-e646-4f98-a062-43720a4ddb5c)
-* section[diagnosen].entry[3] = Reference(urn:uuid:05808eeb-0ef8-4ca2-94e8-0270f0c1d031)
+* section[diagnosen].entry[1] = Reference(urn:uuid:362bbebc-e646-4f98-a062-43720a4ddb5c)
+* section[diagnosen].entry[2] = Reference(urn:uuid:05808eeb-0ef8-4ca2-94e8-0270f0c1d031)
 
 // Medikation — PrEP + Antibiotics
 // Parent section: Medikation
@@ -888,32 +883,6 @@ Usage: #inline
 
 * recordedDate = "2020-04-13"
 
-// Diagnose - Condition: Gonokokkeninfektion, nicht näher bezeichnet
-Instance: c7e69f5-3e00-44cb-9fa2-ee8cad37de0a  // https://www.uuidgenerator.net/version4
-InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
-Title: "Condition: Gonokokkeninfektion, nicht näher bezeichnet"
-Description: "Gonokokkeninfektion, nicht näher bezeichnet"
-Usage: #inline
-
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis"
-* meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
-
-* extension[Feststellungsdatum].valueDateTime = "2020-04-13"
-
-
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #Z.n.
-* code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
-* code.coding[ICD-10-GM].version = "2025" // or your IG version 
-* code.coding[ICD-10-GM].code = #A54.9   // https://www.icd-code.de/icd/code/A54.9.html
-* code.coding[ICD-10-GM].display = "Gonokokkeninfektion, nicht näher bezeichnet"
-
-* subject = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)
-* subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
-* subject.identifier.value = "X987654321"
-
-* onsetDateTime = "2020-04-13"
-
-
 // Diagnose - Condition: Notwendigkeit der Impfung gegen Virushepatitis
 Instance: 362bbebc-e646-4f98-a062-43720a4ddb5c  // https://www.uuidgenerator.net/version4
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Condition-Diagnosis
@@ -952,7 +921,7 @@ Usage: #inline
 
 * extension[http://hl7.org/fhir/StructureDefinition/condition-assertedDate].valueDateTime = "2020-04-13T00:00:00+00:00"
 
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #Z.n.
+* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #Z
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[ICD-10-GM].version = "2025" // or your IG version
 * code.coding[ICD-10-GM].code = #A51.9  // https://www.icd-code.de/icd/code/A51.9.html

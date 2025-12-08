@@ -1108,7 +1108,7 @@ Usage: #inline
 
 * extension[Feststellungsdatum].valueDateTime = "2019-09-23"
 
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #V.a.
+* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #V
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[ICD-10-GM].version = "2025"
 * code.coding[ICD-10-GM].code = #Z20.2  // https://gesund.bund.de/icd-code-suche/z20-2

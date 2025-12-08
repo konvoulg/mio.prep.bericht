@@ -620,7 +620,7 @@ Usage: #inline
 * type.coding.system = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type"
 * type.coding.version = "1.0.0"
 * type.coding.code = #01922
-* type.coding.display = "Kontrolle im Rahmen der Präexpositionsprophylaxe"
+* type.coding.display = "-"
 
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"
 * subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
@@ -953,7 +953,7 @@ Usage: #inline
 
 * extension[http://hl7.org/fhir/StructureDefinition/condition-assertedDate].valueDateTime = "2020-02-13T00:00:00+00:00"
 
-* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #V.a.
+* code.coding[ICD-10-GM].extension[Diagnosesicherheit].valueCoding = #V
 * code.coding[ICD-10-GM].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[ICD-10-GM].version = "2025" // or your IG version
 * code.coding[ICD-10-GM].code = #Z20.2  // https://www.icd-code.de/icd/code/Z20.2.html
@@ -1025,7 +1025,7 @@ Usage: #inline
 * subject.identifier.value = "X987654321"
 
 // Dosage
-* dosage[0].text  = "2,4 Mio. IE intramuskulär, 1x gesamt, je 1,2 Mio. IE links/rechts gluteal"
+* dosage[0].text  = "2,4 Mio. IE intramuskulär, 1x gesamt, je 1,2 Mio."
 * dosage[0].route = $sct#78421000 "Intramuskuläre Verabreichung"
 
 * dosage[0].doseAndRate[0].doseQuantity.value  = 2.4
