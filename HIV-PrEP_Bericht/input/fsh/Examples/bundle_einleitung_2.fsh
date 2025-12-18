@@ -607,7 +607,7 @@ Usage: #inline
 * type.coding[0].system  = "https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type"
 * type.coding[0].version = "1.0.0"
 * type.coding[0].code    = #01921
-* type.coding[0].display = "Einleitung vor Präexpositionsprophylaxe"
+* type.coding[0].display = "Einleitung der Präexpositionsprophylaxe"
 
 // Patient (subject)
 * subject.reference = "urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1"

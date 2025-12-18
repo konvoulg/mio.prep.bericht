@@ -594,7 +594,7 @@ Usage: #inline
 * reasonCode[0].coding.system = "http://snomed.info/sct"
 * reasonCode[0].coding.version = "http://snomed.info/sct/900000000000207008/version/20210731"
 * reasonCode[0].coding.code = #710737001
-* reasonCode[0].coding.display = "Education about risk reduction technique (procedure)"
+* reasonCode[0].coding.display = "Edukation über Technik zur Risikosenkung"
 
 // Topic 2: Evaluation procedure with focus on indication
 * reasonCode[1].coding.system = "http://snomed.info/sct"

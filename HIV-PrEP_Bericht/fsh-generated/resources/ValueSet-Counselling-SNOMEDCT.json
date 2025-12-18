@@ -45,8 +45,8 @@
             "display": "Safe sex education (procedure)"
           },
           {
-            "code": "410264007",
-            "display": "Medication action/side effects education, guidance, and counseling (procedure)"
+            "code": "396080005",
+            "display": "Edukation zu Arzneimittelnebenwirkungen"
           },
           {
             "code": "313077009",
@@ -54,7 +54,7 @@
           },
           {
             "code": "710737001",
-            "display": "Education about risk reduction technique (procedure)"
+            "display": "Edukation über Technik zur Risikosenkung"
           },
           {
             "code": "410123007",

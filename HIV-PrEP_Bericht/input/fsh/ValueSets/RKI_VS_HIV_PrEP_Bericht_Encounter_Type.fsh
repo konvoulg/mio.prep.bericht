@@ -8,3 +8,4 @@ Description: "Das ValueSet HIV_PrEP_Encounter_Type enthält die Codes für die A
 * ^immutable = false
 
 * include codes from system https://rki.de/fhir/CodeSystem/RKI_CS_HIV_PrEP_Bericht_Encounter_Type
+* $sct#74964007 "Sonstige"
