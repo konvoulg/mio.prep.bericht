@@ -27,13 +27,13 @@ Description: "Hier können nach Ermessen der behandelnden Person anamnestisch be
 * extension ^min = 0*/
 
 //* extension[Feststellungsdatum] ^sliceName = "Feststellungsdatum"
-* extension[Feststellungsdatum] ^min = 0
+//* extension[Feststellungsdatum] ^min = 0
 * extension[Feststellungsdatum] ^mustSupport = true
 * extension[Feststellungsdatum].value[x] MS
-* extension[Feststellungsdatum].value[x] ^slicing.discriminator.type = #type
-* extension[Feststellungsdatum].value[x] ^slicing.discriminator.path = "$this"
-* extension[Feststellungsdatum].value[x] ^slicing.rules = #closed
-* extension[Feststellungsdatum].valueDateTime 1.. MS
+//* extension[Feststellungsdatum].value[x] ^slicing.discriminator.type = #type
+//* extension[Feststellungsdatum].value[x] ^slicing.discriminator.path = "$this"
+//* extension[Feststellungsdatum].value[x] ^slicing.rules = #closed
+* extension[Feststellungsdatum].valueDateTime MS
 //* extension[Feststellungsdatum].valueDateTime ^sliceName = "valueDateTime"*/
 //* identifier ..0
 * clinicalStatus MS

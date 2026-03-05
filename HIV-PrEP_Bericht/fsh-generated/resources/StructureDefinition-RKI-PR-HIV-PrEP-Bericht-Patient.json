@@ -64,20 +64,6 @@
         "patternCode": "extensions"
       },
       {
-        "id": "Patient.extension",
-        "path": "Patient.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Patient.extension:Geschlechtsidentitaet",
         "path": "Patient.extension",
         "sliceName": "Geschlechtsidentitaet",

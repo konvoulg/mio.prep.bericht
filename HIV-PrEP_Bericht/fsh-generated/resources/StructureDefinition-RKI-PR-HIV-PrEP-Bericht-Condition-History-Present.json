@@ -72,15 +72,6 @@
       {
         "id": "Condition.extension:Feststellungsdatum.value[x]",
         "path": "Condition.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "closed"
-        },
         "mustSupport": true
       },
       {

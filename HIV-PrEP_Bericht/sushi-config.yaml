@@ -3,17 +3,17 @@ version: 0.1.0
 fhirVersion: 4.0.1
 
 dependencies:
-  de.basisprofil.r4: 1.4.0-snapshots
+  de.basisprofil.r4: 1.4.0
   #de.ihe-d.terminology: 3.0.0
-  kbv.basis: 1.5.0
+  kbv.basis: 1.4.0
   kbv.mio.laborbefund: 1.0.0-kommentierung
   kbv.mio.impfpass: 1.1.0
   kbv.mio.emp: 1.0.0-kommentierung.1
   hl7.fhir.us.core: 6.1.0
   de.gematik.epa.medication: 1.1.0-rc1
-  hl7.fhir.uv.tools.r4: 0.8.0
-  hl7.terminology.r4: 6.5.0 
-  hl7.fhir.uv.extensions: 5.3.0-ballot-tc1
+  #hl7.fhir.uv.tools.r4: 0.8.0
+  #hl7.terminology.r4: 6.5.0 
+  #hl7.fhir.uv.extensions: 5.3.0-ballot-tc1
   # REMOVE draft/comment builds – they usually lack snapshots:
   # kbv.mio.laborbefund: 1.0.0-kommentierung
   # kbv.mio.emp: 1.0.0-kommentierung.1
