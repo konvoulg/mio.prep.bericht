@@ -381,14 +381,15 @@ InstanceOf: RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance
 Title: "Example Allergy Intolerance for PrEP"
 Description: "This is an example allergy intolerance instance for HIV PrEP reporting"
 Usage: #inline
-
+ 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance"
 * id = "4f0fdac3-335a-4907-a6da-d072dff0c76b"
-* code.coding[0].version = "http://snomed.info/sct/11000274103/version/20241115"
-* code.coding[=] = $sct#91936005 "Allergie gegen Penicillin"
+
+* code.coding[0].version = "http://snomed.info/sct/11000274103/version/20231115"
+* code.coding[=] = $sct#372478003 "Doxycyclin"
 //* code.coding[+].version = "http://snomed.info/sct/11000274103/version/20241115"
 //* code.coding[=] = $ask#11849 "ausgedacht"
-* code.text = "Allergie gegen Penicillin"   //No information available for patient Journey 1 in the data source
+* code.text = "Doxycyclin"   //No information available for patient Journey 1 in the data source
 
 * extension[0].url = "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_AllergyIntolerance_Abatement"
 * extension[=].valueDateTime = "2012"

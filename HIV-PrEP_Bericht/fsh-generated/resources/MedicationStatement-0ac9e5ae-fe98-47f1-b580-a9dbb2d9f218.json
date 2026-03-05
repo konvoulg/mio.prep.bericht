@@ -27,7 +27,8 @@
             "value": 1
           }
         }
-      ]
+      ],
+      "asNeededBoolean": true
     }
   ],
   "status": "active",

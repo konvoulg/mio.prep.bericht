@@ -93,7 +93,7 @@ Usage: #example
 * entry[23].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Appointment/81dbd37e-5a75-41b8-ba25-0d6f0719b0c6"
 * entry[23].resource = 81dbd37e-5a75-41b8-ba25-0d6f0719b0c6
 
-* entry[24].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse/ClinicalImpression_QuestionnaireResponse_Journey2"
+* entry[24].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_QuestionnaireResponse/ClinicalImpression_QuestionnaireResponse_Journey5"
 * entry[24].resource = ClinicalImpression_QuestionnaireResponse_Journey5
 // === Diagnosen (Conditions) ===
 * entry[25].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Condition_Diagnosis/c8b0c309-1299-4398-ac12-61e760692b11"
@@ -392,14 +392,15 @@ InstanceOf: RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance
 Title: "Example Allergy Intolerance for PrEP"
 Description: "This is an example allergy intolerance instance for HIV PrEP reporting"
 Usage: #inline
-
+ 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance"
 * id = "4f0fdac3-335a-4907-a6da-d072dff0c76b"
-* code.coding[0].version = "http://snomed.info/sct/11000274103/version/20241115"
-* code.coding[=] = $sct#91936005 "Allergie gegen Penicillin"
+
+* code.coding[0].version = "http://snomed.info/sct/11000274103/version/20231115"
+* code.coding[=] = $sct#372478003 "Doxycyclin"
 //* code.coding[+].version = "http://snomed.info/sct/11000274103/version/20241115"
 //* code.coding[=] = $ask#11849 "ausgedacht"
-* code.text = "Allergie gegen Penicillin"   //No information available for patient Journey 5 in the data source
+* code.text = "Doxycyclin"   //No information available for patient Journey 1 in the data source
 
 * extension[0].url = "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_AllergyIntolerance_Abatement"
 * extension[=].valueDateTime = "2012"

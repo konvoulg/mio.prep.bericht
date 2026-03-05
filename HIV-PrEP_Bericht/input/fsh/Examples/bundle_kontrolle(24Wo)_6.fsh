@@ -77,7 +77,7 @@ Usage: #example
 * entry[18].resource = 2319d1b2-e5d2-4b87-866a-613ed48f0013
 
 // Medication
-* entry[19].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_Free/b5b924ba-7fd2-4bd0-9f20-30407a56b74a"
+* entry[19].fullUrl = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Medication_PrEP/b5b924ba-7fd2-4bd0-9f20-30407a56b74a"
 * entry[19].resource = b5b924ba-7fd2-4bd0-9f20-30407a56b74a 
 
 // === Diagnosen (Conditions) ===
@@ -393,14 +393,15 @@ InstanceOf: RKI-PR-HIV-PrEP-Bericht-AllergyIntolerance
 Title: "Example Allergy Intolerance for PrEP"
 Description: "This is an example allergy intolerance instance for HIV PrEP reporting"
 Usage: #inline
-
+ 
 * meta.profile = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_AllergyIntolerance"
 * id = "4f0fdac3-335a-4907-a6da-d072dff0c76b"
-* code.coding[0].version = "http://snomed.info/sct/11000274103/version/20241115"
-* code.coding[=] = $sct#91936005 "Allergie gegen Penicillin"
+
+* code.coding[0].version = "http://snomed.info/sct/11000274103/version/20231115"
+* code.coding[=] = $sct#372478003 "Doxycyclin"
 //* code.coding[+].version = "http://snomed.info/sct/11000274103/version/20241115"
 //* code.coding[=] = $ask#11849 "ausgedacht"
-* code.text = "Allergie gegen Penicillin"   //No information available for patient Journey 6 in the data source
+* code.text = "Doxycyclin"   //No information available for patient Journey 1 in the data source
 
 * extension[0].url = "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_AllergyIntolerance_Abatement"
 * extension[=].valueDateTime = "2012"
@@ -945,11 +946,11 @@ Usage: #inline
 Alias: $sct = http://snomed.info/sct
 
 Instance: 2319d1b2-e5d2-4b87-866a-613ed48f0013
-InstanceOf: RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free
+InstanceOf: RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP
 Usage: #inline
 
 * status = #active
-* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_Free"
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_MedicationStatement_PrEP"
 * meta.tag[relevance] = $RelevanceCS#PrEP "PrEP Spezifisch"
 
 * medicationReference.reference = "urn:uuid:b5b924ba-7fd2-4bd0-9f20-30407a56b74a"
@@ -968,6 +969,7 @@ Usage: #inline
 * dosage[0].doseAndRate[0].doseQuantity.unit   = "1"
 * dosage[0].doseAndRate[0].doseQuantity.system = "http://unitsofmeasure.org"
 * dosage[0].doseAndRate[0].doseQuantity.code   = #1
+* dosage[0].asNeededBoolean = false
 
 
 
@@ -976,7 +978,7 @@ Usage: #inline
 Alias: $sct = http://snomed.info/sct
 
 Instance: b5b924ba-7fd2-4bd0-9f20-30407a56b74a
-InstanceOf: RKI_PR_HIV_PrEP_Bericht_Medication_Free
+InstanceOf: RKI_PR_HIV_PrEP_Bericht_Medication_PrEP
 Usage: #inline
 
 * status = #active
