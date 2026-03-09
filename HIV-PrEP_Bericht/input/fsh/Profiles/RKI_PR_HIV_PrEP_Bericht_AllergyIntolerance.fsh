@@ -99,7 +99,7 @@ Description: "Hier kann eine einzelne Allergie oder Unverträglichkeit abgebilde
 * code.coding[atc-de].display 1.. MS
 * code.text MS
 
-* patient only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient|1.5.0 or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
+* patient only Reference(https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient|1.4.0 or https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Patient)
 * patient MS
 * patient.identifier 0.. MS
 * patient.identifier only $identifier-kvid-10

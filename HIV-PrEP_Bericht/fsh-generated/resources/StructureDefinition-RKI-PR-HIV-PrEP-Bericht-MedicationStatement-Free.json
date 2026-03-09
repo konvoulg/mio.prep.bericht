@@ -964,12 +964,24 @@
       {
         "id": "MedicationStatement.dosage.timing.repeat.when",
         "path": "MedicationStatement.dosage.timing.repeat.when",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
         "id": "MedicationStatement.dosage.timing.repeat.when:Tageszeit",
         "path": "MedicationStatement.dosage.timing.repeat.when",
         "sliceName": "Tageszeit",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_EventTiming"
@@ -979,6 +991,9 @@
         "id": "MedicationStatement.dosage.timing.repeat.when:Mahlzeiten-Schlafzeiten",
         "path": "MedicationStatement.dosage.timing.repeat.when",
         "sliceName": "Mahlzeiten-Schlafzeiten",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_Base_TimingEvent"
@@ -987,6 +1002,7 @@
       {
         "id": "MedicationStatement.dosage.timing.repeat.offset",
         "path": "MedicationStatement.dosage.timing.repeat.offset",
+        "definition": "Hier wird der Zeitabstand der Verabreichung/Einnahme eines Arzneimittels zu einer Mahlzeit oder der Schlafzeit in Minuten angegeben.",
         "mustSupport": true
       },
       {

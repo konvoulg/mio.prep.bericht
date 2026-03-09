@@ -552,6 +552,19 @@
         "mustSupport": true
       },
       {
+        "id": "Immunization.protocolApplied.extension",
+        "path": "Immunization.protocolApplied.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
         "id": "Immunization.protocolApplied.extension:datum_der_Folgeimpfung",
         "path": "Immunization.protocolApplied.extension",
         "sliceName": "datum_der_Folgeimpfung",
