@@ -3,7 +3,7 @@ Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 
 Instance: 548dd131-3f58-4426-9e44-3d9ce3b6ac45
-InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Leber-ALT
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-ALT
 Title: "Example of a Leber-ALT Observation"
 Description: "This is an example Leber-ALT instance"
 Usage: #example

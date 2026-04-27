@@ -1,10 +1,10 @@
-Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Leber_ALT
+Profile: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_ALT
 Parent: RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Free
-Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Leber-ALT
-Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Leber_ALT"
-Description: "In diesem Profil kann eine Laboruntersuchung der Leber-ALT (Alanin-Aminotransferase) dokumentiert werden."
+Id: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-ALT
+Title: "RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_ALT"
+Description: "In diesem Profil kann eine Laboruntersuchung der ALT (Alanin-Aminotransferase) dokumentiert werden."
 
-* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Leber_ALT"
+* ^url = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_ALT"
 
 * insert Meta-Profile
 
@@ -62,7 +62,7 @@ Description: "In diesem Profil kann eine Laboruntersuchung der Leber-ALT (Alanin
 * code.coding contains loinc 1..1 MS
 */
 //* code.coding[loinc] from https://rki.de/fhir/ValueSet/RKI_VS_HIV_PrEP_Bericht_Chlamydia_Trachomatis_Lab_Study_LOINC (extensible)
-* code.coding[loinc] ^definition = "Hier wird die Laboruntersuchung zur Bestimmung der Chalmydia Trachomatis Infektion mittels eines spezifischen Codes definiert."
+* code.coding[loinc] ^definition = "Hier wird die Laboruntersuchung zur Bestimmung der ALT (Alanine aminotransferase) Wert mittels eines spezifischen Codes definiert."
 * code.coding[loinc].system = "http://loinc.org"
 * code.coding[loinc].version = "2.73"
 * code.coding[loinc].code = #1742-6 //ALT (Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma)
