@@ -281,10 +281,10 @@
               "http://hl7.org/fhir/StructureDefinition/Patient",
               "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
               "http://hl7.org/fhir/StructureDefinition/Organization",
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Organization|1.5.0",
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_RelatedPerson|1.5.0",
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Practitioner|1.5.0",
-              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient|1.5.0"
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Organization|1.4.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_RelatedPerson|1.4.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Practitioner|1.4.0",
+              "https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient|1.4.0"
             ]
           }
         ]

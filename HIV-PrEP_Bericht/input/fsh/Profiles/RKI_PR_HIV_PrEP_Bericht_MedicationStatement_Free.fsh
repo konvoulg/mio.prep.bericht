@@ -304,13 +304,13 @@ Description: "Dieses Profil bildet die Angaben zur Einnahme bzw. Verabreichung e
 * dosage.timing.repeat.timeOfDay MS
 //* dosage.timing.repeat.timeOfDay ^definition = "Hier wird die Anzahl der Verabreichungen/Einnahmen innerhalb der definierten Zeitspanne angegeben. Dies entspricht dem Zähler bei der Frequenzangabe."
 * dosage.timing.repeat.when MS
-//* dosage.timing.repeat.when ^slicing.discriminator.type = #value
-//* dosage.timing.repeat.when ^slicing.discriminator.path = "$this"
-//* dosage.timing.repeat.when ^slicing.rules = #open
+* dosage.timing.repeat.when ^slicing.discriminator.type = #value
+* dosage.timing.repeat.when ^slicing.discriminator.path = "$this"
+* dosage.timing.repeat.when ^slicing.rules = #open
 //* dosage.timing.repeat.when ^definition = "Hier werden Tageszeiten angegeben, zu denen das Arzneimittel verabreicht/eingenommen wird. Es ist darauf zu achten, dass diese Informationen logisch zu den Angaben bei der Wiederholungsfrequenz passen."
-//* dosage.timing.repeat.when contains
-//    Tageszeit 0..*  MS and
-//    Mahlzeiten-Schlafzeiten 0..* MS
+* dosage.timing.repeat.when contains
+    Tageszeit 0..*  MS and
+    Mahlzeiten-Schlafzeiten 0..* MS
 * dosage.timing.repeat.when[Tageszeit] from $KBV_VS_Base_EventTiming (required)
 * dosage.timing.repeat.when[Mahlzeiten-Schlafzeiten] from $KBV_VS_Base_TimingEvent (required)
 * dosage.timing.repeat.offset MS

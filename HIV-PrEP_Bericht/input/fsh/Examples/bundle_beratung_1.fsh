@@ -97,7 +97,9 @@ Usage: #example
 * entry[25].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_HIV/abeb63fe-e33d-4e72-840d-7bdbec7d9b69"
 * entry[25].resource = abeb63fe-e33d-4e72-840d-7bdbec7d9b69
 
-
+// === laboruntersuchungen ===
+* entry[26].fullUrl  = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Leber_ALT/8ca9baa1-1539-4269-b16e-4a6efde84687"
+* entry[26].resource = 8ca9baa1-1539-4269-b16e-4a6efde84687
 //Composition
 
 // --------------------------
@@ -173,6 +175,7 @@ Usage: #inline
 * section[laboruntersuchungen].entry[6] = Reference(urn:uuid:4a7fea51-25ea-4862-9fc1-4b677b04ec1b) // Hep C
 * section[laboruntersuchungen].entry[7] = Reference(urn:uuid:abeb63fe-e33d-4e72-840d-7bdbec7d9b69) // HIV
 * section[laboruntersuchungen].entry[8] = Reference(urn:uuid:12fd476e-fd59-434e-8da2-b57243fb11fe) // Syphilis
+* section[laboruntersuchungen].entry[9] = Reference(urn:uuid:8ca9baa1-1539-4269-b16e-4a6efde84687) // ALT
 
 // Diagnosen — Conditions per diagnosis profile
 * section[diagnosen].title = "STI Diagnosen"
@@ -636,8 +639,6 @@ Usage: #inline
 * serviceProvider.identifier.system = "https://gematik.de/fhir/sid/telematik-id"
 * serviceProvider.identifier.value  = "123456"
 
-
-
 //laboruntersuchungen
 
 // Observation Creatinine
@@ -710,6 +711,52 @@ Usage: #inline
 * component[0].valueQuantity.unit = "mL/min/1.73m2"
 * component[0].valueQuantity.system = "http://unitsofmeasure.org"
 * component[0].valueQuantity.code = #mL/min/{1.73_m2}
+
+// ALT Laboratory Result
+// Corrected ALT Laboratory Result Instance
+Instance: 8ca9baa1-1539-4269-b16e-4a6efde84687
+InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-Leber-ALT
+Title: "ALT Laboratory Result - PrEP Monitoring"
+Description: "Alanin-Aminotransferase (ALT) lab result for the patient's PrEP initial assessment."
+Usage: #example
+
+* meta.profile[mioProfile] = "https://rki.de/fhir/StructureDefinition/RKI_PR_HIV_PrEP_Bericht_Observation_Laboratory_Study_Leber_ALT"
+* meta.tag[relevance] = $RelevanceCS#PrEPRelevant "Relevant für PrEP"
+
+* status = #final
+* category = $secondary-finding#laboratory
+
+* extension[dokumentationszeitpunkt].valueDateTime = "2019-09-23T10:30:00+02:00"
+
+* code.coding[loinc].system = "http://loinc.org"
+* code.coding[loinc].version = "2.73"
+* code.coding[loinc].code = #1742-6
+* code.coding[loinc].display = "Alanin-Aminotransferase [Enzymaktivität/Volumen] in Serum oder Plasma"
+
+* subject = Reference(urn:uuid:4a311b0a-ec7e-4486-bb6b-1a257f0bbee1)
+* subject.identifier.system = "http://fhir.de/sid/gkv/kvid-10"
+* subject.identifier.value = "X987654321"
+
+* effectiveDateTime = "2019-09-23"
+
+* performer.reference = "urn:uuid:e9ee4679-1e5b-4f04-828d-cf24d33717eb"
+
+// FIXED: Matching the profile's expected "Units per liter" string
+* valueQuantity.value = 28
+* valueQuantity.unit = "Units per liter"
+* valueQuantity.code = #U/L
+* valueQuantity.system = "http://unitsofmeasure.org"
+
+// FIXED: Matching the profile's expected "U/L" string
+* referenceRange.high.value = 50
+* referenceRange.high.unit = "U/L"
+* referenceRange.high.code = #U/L
+* referenceRange.high.system = "http://unitsofmeasure.org"
+
+* referenceRange.type.coding.system = "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+* referenceRange.type.coding.code = #normal
+* referenceRange.type.coding.display = "Normal range"
+* referenceRange.type.coding.version = "1.0.1"
 
 // Obervation Syphilis-AK (ELISA/Immunoassay), Treponema pall. IgG-AK, Treponema pall. IgM-AK
 // Nur TPHA, TPPA, VDRL (wenn vorher jemals positiv)
@@ -887,7 +934,6 @@ Usage: #inline
 
 // Observation Hepatitis B 2
 
- 
 Instance: 39a8b719-ee89-4400-9078-1227bd31fe71
 InstanceOf: RKI-PR-HIV-PrEP-Bericht-Observation-Laboratory-Study-HepatitisB
 Title: "Example of a HepatitisB Observation"
@@ -947,7 +993,6 @@ Usage: #inline
 * valueCodeableConcept.coding.version = "http://snomed.info/sct/900000000000207008/version/20241130"
 * valueCodeableConcept.coding.code = #260385009
 * valueCodeableConcept.coding.display = "Negative (qualifier value)"
-
 
 // Observation Hepatitis C
 Alias: $secondary-finding = http://hl7.org/fhir/secondary-finding

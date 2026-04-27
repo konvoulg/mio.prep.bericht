@@ -561,6 +561,19 @@
         "id": "Practitioner.qualification.code.coding.display",
         "path": "Practitioner.qualification.code.coding.display",
         "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.code.coding.display.extension",
+        "path": "Practitioner.qualification.code.coding.display.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
       }
     ]
   }
